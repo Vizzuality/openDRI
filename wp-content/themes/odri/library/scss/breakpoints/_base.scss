@@ -153,11 +153,13 @@ HEADER STYLES
 *********************/
 
 .header {
-	background-color: $black;
+	background-color: $white;
+	border-bottom: 1px solid #efefef;
+	height: 83px;
 }
 
 	#logo {
-		margin: 0.75em 0;
+		margin: 0.5em 0;
 
 		a {
 			color: $white;
