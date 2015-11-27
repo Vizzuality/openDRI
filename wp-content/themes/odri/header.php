@@ -27,7 +27,7 @@
 		<?php // or, set /favicon.ico for IE10 win ?>
 		<meta name="msapplication-TileColor" content="#f01d4f">
 		<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/library/images/win8-tile-icon.png">
-            <meta name="theme-color" content="#121212">
+	        <meta name="theme-color" content="#121212">
 
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
@@ -38,41 +38,28 @@
 		<?php // drop Google Analytics Here ?>
 		<?php // end analytics ?>
 
-<link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" />
+		<link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" />
 	</head>
 
 	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
-
 		<div id="container">
-
 			<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
-<!-- <div id="map" style="height:400px"></div>
- -->				<div id="inner-header" class="wrap cf">
+				<!-- <div id="map" style="height:400px"></div> -->				
+ 				<div id="inner-header" class="wrap cf">
 
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
 					<p id="logo" class="h1" itemscope itemtype="http://schema.org/Organization"><a href="<?php echo home_url(); ?>" rel="nofollow"> <img src="<?php echo home_url(); ?>/wp-content/themes/odri/logo-extended.svg" alt="<?php bloginfo('name'); ?>"> </a></p>
-
 					<?php // if you'd like to use the site description you can un-comment it below ?>
 					<?php // bloginfo('description'); ?>
-
-
+					<span class='hr'></span>
 					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
-						<?php wp_nav_menu(array(
-    					         'container' => false,                           // remove nav container
-    					         'container_class' => 'menu cf',                 // class of container (should you choose to use it)
-    					         'menu' => __( 'The Main Menu', 'bonestheme' ),  // nav name
-    					         'menu_class' => 'nav top-nav cf',               // adding custom nav class
-    					         'theme_location' => 'main-nav',                 // where it's located in the theme
-    					         'before' => '',                                 // before the menu
-        			               'after' => '',                                  // after the menu
-        			               'link_before' => '',                            // before each link
-        			               'link_after' => '',                             // after each link
-        			               'depth' => 0,                                   // limit the depth of the nav
-    					         'fallback_cb' => ''                             // fallback function (if there is one)
-						)); ?>
-
+						<span>projects</span>
+						<span>resources</span>
+						<span>about</span>
+						<span>news</span>
+						<span class="search-input">
+							<input type="text">
+						</span>
 					</nav>
-
 				</div>
-
 			</header>
