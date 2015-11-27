@@ -155,16 +155,40 @@ HEADER STYLES
 .header {
 	background-color: $white;
 	border-bottom: 1px solid #efefef;
-	height: 83px;
-}
-
+	height: 163px;
+	nav {
+		display: flex;
+		justify-content: space-around;
+		height: 73px;
+		width: 70%;
+		margin: 0 auto;
+		align-items: center;
+		span {
+			text-transform: uppercase;
+			color: #555555;
+			font-size: 16px;
+			letter-spacing: 1.1px;
+		}
+		input {
+			display: none;
+		}
+	}
+	.hr {
+		box-shadow: 0px 1px #efefef;
+	    display: block;
+	    height: 1px;
+	    width: 100%;
+	    position: absolute;
+	    left: 0;
+	}
 	#logo {
-		margin: 0.5em 0;
+		margin: 0.4em 0;
 
 		a {
 			color: $white;
 		}
 	}
+}
 
 /*********************
 NAVIGATION STYLES
