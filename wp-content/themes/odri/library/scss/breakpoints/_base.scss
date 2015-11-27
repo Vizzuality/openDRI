@@ -333,9 +333,35 @@ POSTS & CONTENT STYLES
     }
 }
 .index-row {
-	 display: flex;
+	display: flex;
     height: 350px;
     margin: 130px 0;
+    .card-third {
+    	h3 {
+    		font-size: 48px;
+		    text-transform: capitalize;
+		    color: #555;
+		    margin: 15px 0;
+    	}
+    	p {
+			margin: 0;
+		    color: #555;
+		    font-size: 15px;
+		    line-height: 23px;    		
+    	}
+    	span {
+    		width: 200px;
+		    background: #db0033;
+		    height: 50px;
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    text-transform: uppercase;
+		    color: #fff;
+		    font-size: 15px;
+		    font-weight: bold;
+    	}
+    }
 }
 #content {
 	// margin-top: 1.5em;
