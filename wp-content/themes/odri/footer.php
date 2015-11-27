@@ -31,6 +31,12 @@
 			window.onload = function() {
 			  cartodb.createVis('map', 'http://documentation.cartodb.com/api/v2/viz/2b13c956-e7c1-11e2-806b-5404a6a683d5/viz.json');
 			}
+		  // Twitter
+		  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+		  window.setTimeout(
+		    function(){
+		      $(".twitter-timeline").contents().find('.stream').attr("style", "overflow-y: visible !important; height: 100%");
+		    },5000);
 		</script>
 		<?php wp_footer(); ?>
 
