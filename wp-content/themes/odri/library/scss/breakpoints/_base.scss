@@ -332,11 +332,21 @@ POSTS & CONTENT STYLES
 	    font-weight: bold;
     }
 }
+
 .index-row {
 	display: flex;
-    height: 350px;
     margin: 130px 0;
+    .row-container {
+    	display: flex;
+    	flex-wrap: wrap;
+    }
+    article {
+    	max-width: 315px;
+	    margin: 0 15px 50px;
+    }
     .card-third {
+    	max-width: 315px;
+	    margin: 0 15px 50px;
     	h3 {
     		font-size: 48px;
 		    text-transform: capitalize;
@@ -360,6 +370,7 @@ POSTS & CONTENT STYLES
 		    color: #fff;
 		    font-size: 15px;
 		    font-weight: bold;
+		    margin-top: 20px;
     	}
     }
 }
