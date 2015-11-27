@@ -25,12 +25,12 @@
 	<div id="content">
 		<div id="inner-content" class="wrap cf">
 			<div id="news" class="m-all cf index-row" role="news" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
-				<div class="card-third">
-					<h3>news</h3>
-					<p>Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Ullam id dolor.</p>
-					<span>view all news</span>
-				</div>
 				<div class="row-container">
+					<div class="card-third">
+						<h3>news</h3>
+						<p>Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Ullam id dolor.</p>
+						<span>view all news</span>
+					</div>
 					<?php 
 						$NEWS_COUNT = 1;
 						$news_i = 0;
@@ -84,13 +84,19 @@
 		        </div>
 			</div>
 			<div id="projects" class="m-all cf index-row" role="projects" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
-				<div class="card-third">
-					<h3>projects</h3>
-					<p>Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Ullam id dolor.</p>
-					<span>view all projects</span>
-				</div>
 				<div class="row-container">
+					<div class="card-third">
+						<h3>projects</h3>
+						<p>Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Ullam id dolor.</p>
+						<span>view all projects</span>
+					</div>
+					<?php 
+						$NEWS_COUNT = 5;
+						$news_i = 0;
+					?>
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+					<?php if ($news_i < $NEWS_COUNT) { ?>
+					<?php $news_i++; ?>
 					<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
 						<header class="article-header">
 							<h1 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
@@ -114,6 +120,7 @@
 	     					 <?php the_tags( '<p class="footer-tags tags"><span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '</p>' ); ?>
 						</footer>
 					</article>
+					<? } ?>
 					<?php endwhile; ?>
 							<?php bones_page_navi(); ?>
 					<?php else : ?>
@@ -138,7 +145,13 @@
 					<span>view all resources</span>
 				</div>
 				<div class="row-container">
+					<?php 
+						$NEWS_COUNT = 1;
+						$news_i = 0;
+					?>
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+					<?php if ($news_i < $NEWS_COUNT) { ?>
+					<?php $news_i++; ?>
 					<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
 						<header class="article-header">
 							<h1 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
@@ -162,6 +175,7 @@
 	     					 <?php the_tags( '<p class="footer-tags tags"><span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '</p>' ); ?>
 						</footer>
 					</article>
+					<? } ?>
 					<?php endwhile; ?>
 							<?php bones_page_navi(); ?>
 					<?php else : ?>
