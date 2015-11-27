@@ -1364,12 +1364,32 @@ HEADER STYLES
 .header {
   background-color: #fff;
   border-bottom: 1px solid #efefef;
-  height: 83px; }
-
-#logo {
-  margin: 0.75em 0; }
-  #logo a {
-    color: #fff; }
+  height: 163px; }
+  .header nav {
+    display: flex;
+    justify-content: space-around;
+    height: 73px;
+    width: 70%;
+    margin: 0 auto;
+    align-items: center; }
+    .header nav span {
+      text-transform: uppercase;
+      color: #555555;
+      font-size: 16px;
+      letter-spacing: 1.1px; }
+    .header nav input {
+      display: none; }
+  .header .hr {
+    box-shadow: 0px 1px #efefef;
+    display: block;
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    left: 0; }
+  .header #logo {
+    margin: 0.4em 0; }
+    .header #logo a {
+      color: #fff; }
 
 /*********************
 NAVIGATION STYLES

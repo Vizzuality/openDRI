@@ -1,0 +1,426 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"displ",
+				"display_ny"
+			],
+			[
+				"upda",
+				"update_BRAIND_holders"
+			],
+			[
+				"inde",
+				"index_of"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 67.0,
+		"selected_items":
+		[
+			[
+				"blame",
+				"Git: Blame"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instla",
+				"Package Control: Install Local Dependency"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"pacins",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/berkeley/prj/gfw-climate/app/views/map/embed.html.slim",
+		"/Users/berkeley/prj/gfw-climate/app/assets/images/logo-new.svg",
+		"/Users/berkeley/prj/gfw-climate/app/assets/javascripts/countries/views/show/reports/NationalView.js",
+		"/Users/berkeley/prj/gfw-climate/.env",
+		"/Users/berkeley/prj/gfw-climate/app/assets/javascripts/abstract/layer/ImageMaptypeLayerClass.js",
+		"/Users/berkeley/prj/gfw-climate/app/assets/javascripts/abstract/layer/ImageLayerClass.js",
+		"/Users/berkeley/prj/gfw-climate/app/assets/javascripts/map/helpers/layersHelper.js",
+		"/Users/berkeley/prj/gfw-climate/app/assets/javascripts/map/views/layers/CarbonLayer.js",
+		"/Users/berkeley/prj/gfw-climate/app/assets/javascripts/map/presenters/layers/UMDLossLayerPresenter.js",
+		"/Users/berkeley/prj/gfw-climate/app/assets/javascripts/map/views/layers/BiomassLossLayer.js",
+		"/Users/berkeley/prj/gfw-climate/Gemfile",
+		"/Users/berkeley/prj/gfw-climate/app/assets/javascripts/map/views/layers/Forest2000Layer.js",
+		"/Users/berkeley/prj/gfw-climate/app/assets/javascripts/map/models/LayerSpecModel.js",
+		"/Users/berkeley/prj/gfw-climate/app/assets/javascripts/map/services/LayerSpecService.js",
+		"/Users/berkeley/prj/gfw-climate/app/assets/javascripts/map/services/PlaceService.js",
+		"/Users/berkeley/prj/gfw-climate/app/assets/javascripts/services/PlaceService.js",
+		"/Users/berkeley/prj/gfw-climate/app/assets/javascripts/map/templates/layersNav.handlebars",
+		"/Users/berkeley/prj/gfw-climate/public/pantropicalTESTING.csv"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"*.scss",
+			"",
+			"*.scss",
+			"",
+			"*.scss",
+			"",
+			"*.js",
+			"*.scss"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"#year-picker-label",
+			"      \n",
+			"_play_pause",
+			"$years",
+			"element",
+			"this.$years",
+			"_this",
+			"setTimeout",
+			"yearsPickerLabel",
+			"_set_year",
+			"that",
+			"_this",
+			"display_by_ny",
+			"display_ny",
+			"display_group_all",
+			"display_all",
+			"display_group_all",
+			"hide_years",
+			"removecl",
+			"get_values_array",
+			"set_years",
+			"display_country",
+			".duration(",
+			".duration(50)",
+			"end\"",
+			"end'",
+			"end",
+			"'end",
+			"display_by_change",
+			"display_change",
+			"this.force",
+			"transition",
+			"mandatorySort",
+			"filter",
+			"stop",
+			"is-loading",
+			"is-loa",
+			"})\n",
+			"is-loa",
+			"noSpinner",
+			"set_loading",
+			"Date now()",
+			"is-lo",
+			"each",
+			"urthecast",
+			"carbon_stocks",
+			"people",
+			"carbon-density",
+			"people-category-num",
+			"people",
+			"carbon-density",
+			"Biomass",
+			"Biomass Lo",
+			"Biomass Loss",
+			"carbon",
+			"CarbonstocksLayer",
+			"SoilOrganicCarbonDLayer",
+			"ImageLayerClass",
+			"hwsd",
+			"CarbonLayer",
+			"biomass_loss",
+			"get_coordinates",
+			"generateCircles",
+			"tick",
+			"display_by_country",
+			"get_values_array",
+			"sort_desc",
+			"generateCircles",
+			"get_coordinates",
+			"calculate_average",
+			"get_values_array",
+			"set_years",
+			"display_by_country",
+			"defaultCharge",
+			"display_by_country",
+			".year-dropdown",
+			"display_country",
+			"set_loading",
+			"spinner",
+			"show_details",
+			"tooltip",
+			"compareGrid.handlebars",
+			"lock-mode",
+			"layout-header-bottom",
+			"bottom-chart",
+			"toggle_view",
+			"display_by_country",
+			"display_country",
+			"960",
+			".height",
+			"country",
+			"\"country",
+			"'country",
+			".country",
+			"BiomassLoss",
+			"debugg",
+			"filterCanvasImgdata",
+			"BiomassLoss",
+			"biomass_loss",
+			"baselayers",
+			"getBaselayers",
+			"forest_clearing",
+			"baselayers",
+			"basel",
+			"layersHelper",
+			"carbon_stocks",
+			"biomass_loss",
+			"yearLoss",
+			"VALID_NAMES",
+			"valid_",
+			"display_by_country",
+			"\n              ",
+			"VALID_NAMES",
+			"valid_names",
+			"mandatorySort",
+			"non_",
+			"non-",
+			"mandatorySort",
+			"display_by_ny",
+			"move_towards_center",
+			"node",
+			"move_towards_center",
+			"d.value ",
+			"display_group_all",
+			"103",
+			"104",
+			"value",
+			"year_to_compare"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.474279021505,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"embed",
+				"app/views/map/embed.html.slim"
+			],
+			[
+				"logo-new",
+				"app/assets/images/logo-new.svg"
+			],
+			[
+				"pantr",
+				"app/views/countries/pantropical.html.slim"
+			],
+			[
+				"pantropi",
+				"app/assets/javascripts/countries/views/CountryPantropicalView.js"
+			],
+			[
+				"nationalvie",
+				"app/assets/javascripts/countries/views/show/reports/NationalView.js"
+			],
+			[
+				".env",
+				".env"
+			],
+			[
+				"image",
+				"app/assets/javascripts/abstract/layer/ImageLayerClass.js"
+			],
+			[
+				"imagemaptypelayerclass",
+				"app/assets/javascripts/abstract/layer/ImageMaptypeLayerClass.js"
+			],
+			[
+				"soilorganiccarbondlayer",
+				"app/assets/javascripts/map/views/layers/SoilOrganicCarbonDLayer.js"
+			],
+			[
+				"carbon",
+				"app/assets/javascripts/map/views/layers/CarbonStocksLayer.js"
+			],
+			[
+				"umdlosslayerpresenter",
+				"app/assets/javascripts/map/presenters/layers/UMDLossLayerPresenter.js"
+			],
+			[
+				"biomassloss",
+				"app/assets/javascripts/map/views/layers/BiomassLossLayer.js"
+			],
+			[
+				"layershe",
+				"app/assets/javascripts/map/helpers/layersHelper.js"
+			],
+			[
+				"layesn",
+				"app/assets/javascripts/map/templates/layersNav.handlebars"
+			],
+			[
+				"biomass",
+				"app/assets/javascripts/map/views/layers/BiomassLossLayer.js"
+			],
+			[
+				"produ",
+				"config/environments/production.rb"
+			],
+			[
+				"place",
+				"app/assets/javascripts/map/services/PlaceService.js"
+			],
+			[
+				"placeser",
+				"app/assets/javascripts/services/PlaceService.js"
+			],
+			[
+				"layersna",
+				"app/assets/javascripts/map/templates/layersNav.handlebars"
+			],
+			[
+				"carbonst",
+				"app/assets/javascripts/map/views/layers/CarbonStocksLayer.js"
+			],
+			[
+				"pantro",
+				"public/pantropicalTESTING.csv"
+			],
+			[
+				"pan",
+				"public/pantropicalTESTING.csv"
+			],
+			[
+				"vis.js",
+				"app/assets/javascripts/countries/views/pantropical/vis.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 371.0,
+	"status_bar_visible": true
+}
