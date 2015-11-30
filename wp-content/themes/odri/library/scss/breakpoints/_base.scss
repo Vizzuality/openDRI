@@ -340,13 +340,16 @@ POSTS & CONTENT STYLES
     	display: flex;
     	flex-wrap: wrap;
     }
-    article {
-    	max-width: 315px;
-	    margin: 0 15px 50px;
-    }
+    article,
     .card-third {
     	max-width: 315px;
 	    margin: 0 15px 50px;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: space-around;
+	    height: 350px;
+    }
+    .card-third {
     	h3 {
     		font-size: 48px;
 		    text-transform: capitalize;
@@ -372,6 +375,9 @@ POSTS & CONTENT STYLES
 		    font-weight: bold;
 		    margin-top: 20px;
     	}
+    .twitter {
+    	overflow: scroll;
+    }
     }
 }
 #content {
@@ -384,7 +390,7 @@ POSTS & CONTENT STYLES
 	margin-bottom: 1.5em;
 	border: 1px solid $border-color;
 	> .img {
-		height: 170px;
+		height: 100%;
 	    width: 100%;
 	    display: block;
 	    background-position: 50% 50%;
@@ -406,7 +412,7 @@ POSTS & CONTENT STYLES
 	}
 
 	footer {
-		padding: 0 1.5em;
+		margin: 15px;
 		border-top: 1px solid $light-gray;
 
 		p {
@@ -455,6 +461,16 @@ POSTS & CONTENT STYLES
 
 	p {
 		margin: 0 0 1.5em;
+		display: block;
+	    display: -webkit-box; // fallback for non-webkit
+	    max-width: 400px;
+	    height: calc(15 * 1.2 * 4px); // fallback for non-webkit
+	    font-size: 15px;
+	    line-height: 1.2;
+	    -webkit-line-clamp: 4;
+	    -webkit-box-orient: vertical;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
 	}
 
 
