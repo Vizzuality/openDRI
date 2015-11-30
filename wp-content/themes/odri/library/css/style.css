@@ -1308,12 +1308,12 @@ LAYOUT & GRID STYLES
 LINK STYLES
 *********************/
 a, a:visited {
-  color: #f01d4f;
+  color: #fff;
   /* on hover */
   /* on click */
   /* mobile tap color */ }
   a:hover, a:focus, a:visited:hover, a:visited:focus {
-    color: #d10e3c; }
+    color: #e8e8e8; }
   a:link, a:visited:link {
     /*
     this highlights links on iPhones/iPads.
@@ -1526,7 +1526,12 @@ POSTS & CONTENT STYLES
   border: 1px solid #ccc; }
   .hentry header {
     border-bottom: 1px solid #f8f9fa;
-    padding: 1.5em; }
+    padding: 1.5em;
+    background: #1477c9;
+    width: 280px;
+    margin: 0 auto; }
+    .hentry header a {
+      font-size: 15px; }
   .hentry footer {
     padding: 1.5em;
     border-top: 1px solid #f8f9fa; }
@@ -1675,9 +1680,9 @@ PAGE NAVI STYLES
     padding: 0.75em;
     min-width: 1em;
     display: block;
-    color: #2980b9; }
+    color: #fff; }
     .pagination a:hover, .pagination a:focus, .pagination span:hover, .pagination span:focus {
-      background-color: #2980b9;
+      background-color: #fff;
       color: #fff; }
   .pagination .current {
     cursor: default;
