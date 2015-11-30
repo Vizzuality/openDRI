@@ -1525,22 +1525,25 @@ POSTS & CONTENT STYLES
   margin-bottom: 1.5em;
   border: 1px solid #ccc; }
   .hentry > .img {
-    height: 166px;
+    height: 170px;
     width: 100%;
-    display: block; }
+    display: block;
+    background-position: 50% 50%;
+    background-size: cover; }
   .hentry header {
     border-bottom: 1px solid #f8f9fa;
     background: #1477c9;
     width: 280px;
-    margin: 0 auto;
+    margin: 0 auto -20px;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    transform: translate(0, -33%); }
     .hentry header a {
       font-size: 15px;
       text-transform: uppercase; }
   .hentry footer {
-    padding: 1.5em;
+    padding: 0 1.5em;
     border-top: 1px solid #f8f9fa; }
     .hentry footer p {
       margin: 0; }
@@ -1568,7 +1571,7 @@ POSTS & CONTENT STYLES
 
 /* entry content */
 .entry-content {
-  padding: 1.5em 1.5em 0;
+  padding: 15px;
   /*
   image alignment on a screen this size may be
   a bit difficult. It's set to start aligning
