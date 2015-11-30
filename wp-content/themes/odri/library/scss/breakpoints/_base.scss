@@ -383,13 +383,22 @@ POSTS & CONTENT STYLES
 	border-radius: 3px;
 	margin-bottom: 1.5em;
 	border: 1px solid $border-color;
-
+	> .img {
+		height: 166px;
+	    width: 100%;
+	    display: block;
+	    background-position: 50% 50%;
+    	background-size: cover;
+	}
 	header {
 		border-bottom: 1px solid $light-gray;
-		padding: 1.5em;
 		background: $text-bkg-blue;
 		width: 280px;
-		margin: 0 auto;
+		margin: 0 auto -20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transform: translate(0, -33%);
 		a {
 			font-size: 15px;
 			text-transform: uppercase;
