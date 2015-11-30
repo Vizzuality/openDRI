@@ -1524,14 +1524,21 @@ POSTS & CONTENT STYLES
   border-radius: 3px;
   margin-bottom: 1.5em;
   border: 1px solid #ccc; }
+  .hentry > .img {
+    height: 166px;
+    width: 100%;
+    display: block; }
   .hentry header {
     border-bottom: 1px solid #f8f9fa;
-    padding: 1.5em;
     background: #1477c9;
     width: 280px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
     .hentry header a {
-      font-size: 15px; }
+      font-size: 15px;
+      text-transform: uppercase; }
   .hentry footer {
     padding: 1.5em;
     border-top: 1px solid #f8f9fa; }
