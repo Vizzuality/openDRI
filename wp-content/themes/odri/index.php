@@ -42,7 +42,6 @@
 						<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
 							$image = ($image[0]) ? $image[0] : home_url().'/wp-content/themes/odri/library/images/red-cross.jpg';
 						?>
-
             			<span class="img" style="background-image:url(<?php echo $image; ?>)"></span>
 
 						<header class="article-header">
@@ -55,7 +54,7 @@
 							<p class="byline entry-meta vcard">
 	                            <?php printf( __( '', 'bonestheme' ).' %1$s %2$s',
 	   								/* the author of the post */
-	   								'<span class="by">'.__( '', 'bonestheme').'</span> <span class="entry-author author" itemprop="author" itemscope itemptype="http://schema.org/Person">' . get_the_author_link( get_the_author_meta( 'ID' ) ) . '</span>',
+	   								'<span class="entry-author author" itemprop="author" itemscope itemptype="http://schema.org/Person">' . get_the_author_link( get_the_author_meta( 'ID' ) ) . '</span>',
 	   								/* the time the post was published */
 	   								'<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time('d M') . '</time>'
 								); ?>
@@ -79,10 +78,12 @@
 							</article>
 					<?php endif; ?>
 				</div>
-		        <div class="twitter mod-tweets">
-		          <h3>follow us</h3>
-		          <a id="twitter-timeline-link" class="twitter-timeline" href="https://twitter.com/gfdrr" data-widget-id="452107742602219521" data-chrome="nofooter noheader noscrollbar transparent" width="280" height="470">Tweets by @gfdrr</a>
-		        </div>
+				<div class="card-third">
+			        <div class="twitter mod-tweets">
+			          <h3>follow us</h3>
+			          <a id="twitter-timeline-link" class="twitter-timeline" href="https://twitter.com/gfdrr" data-widget-id="452107742602219521" data-chrome="nofooter noheader noscrollbar transparent" width="280" height="470">Tweets by @gfdrr</a>
+			        </div>
+				</div>
 			</div>
 			<div id="projects" class="m-all cf index-row" role="projects" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 				<div class="row-container">
@@ -99,6 +100,10 @@
 					<?php if ($news_i < $NEWS_COUNT) { ?>
 					<?php $news_i++; ?>
 					<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
+						<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+							$image = ($image[0]) ? $image[0] : home_url().'/wp-content/themes/odri/library/images/red-cross.jpg';
+						?>
+            			<span class="img" style="background-image:url(<?php echo $image; ?>)"></span>
 						<header class="article-header">
 							<h1 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
 						</header>
@@ -143,6 +148,10 @@
 					<?php if ($news_i < $NEWS_COUNT) { ?>
 					<?php $news_i++; ?>
 					<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
+						<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+							$image = ($image[0]) ? $image[0] : home_url().'/wp-content/themes/odri/library/images/red-cross.jpg';
+						?>
+            			<span class="img" style="background-image:url(<?php echo $image; ?>)"></span>
 						<header class="article-header">
 							<h1 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
 							<p class="byline entry-meta vcard">
