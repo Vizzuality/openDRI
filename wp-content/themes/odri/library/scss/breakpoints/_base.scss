@@ -384,7 +384,7 @@ POSTS & CONTENT STYLES
 	margin-bottom: 1.5em;
 	border: 1px solid $border-color;
 	> .img {
-		height: 166px;
+		height: 170px;
 	    width: 100%;
 	    display: block;
 	    background-position: 50% 50%;
@@ -406,7 +406,7 @@ POSTS & CONTENT STYLES
 	}
 
 	footer {
-		padding: 1.5em;
+		padding: 0 1.5em;
 		border-top: 1px solid $light-gray;
 
 		p {
@@ -451,7 +451,7 @@ POSTS & CONTENT STYLES
 
 /* entry content */
 .entry-content {
-	padding: 1.5em 1.5em 0;
+	padding: 15px;
 
 	p {
 		margin: 0 0 1.5em;
