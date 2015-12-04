@@ -1,25 +1,29 @@
 			<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
-
 				<div id="inner-footer" class="wrap cf">
-
-					<nav role="navigation">
-						<?php wp_nav_menu(array(
-    					'container' => 'div',                           // enter '' to remove nav container (just make sure .footer-links in _base.scss isn't wrapping)
-    					'container_class' => 'footer-links cf',         // class of container (should you choose to use it)
-    					'menu' => __( 'Footer Links', 'bonestheme' ),   // nav name
-    					'menu_class' => 'nav footer-nav cf',            // adding custom nav class
-    					'theme_location' => 'footer-links',             // where it's located in the theme
-    					'before' => '',                                 // before the menu
-    					'after' => '',                                  // after the menu
-    					'link_before' => '',                            // before each link
-    					'link_after' => '',                             // after each link
-    					'depth' => 0,                                   // limit the depth of the nav
-    					'fallback_cb' => 'bones_footer_links_fallback'  // fallback function
-						)); ?>
+					<div class="-ft-content">
+						<div class="-ft-coorporate">
+							<div class="-ft-logo">
+								An initiative of <a href="https://www.gfdrr.org/" title="The Global Facility for Disaster Reduction and Recovery website"><img src="<?php echo home_url(); ?>/wp-content/themes/odri/gfdrr-logo.png" alt="The Global Facility for Disaster Reduction and Recovery logo"></a>
+							</div>
+							<div class="-ft-newsletter">
+								Sign up for our newsletter: <input type="email" placeholder="your.email@here">
+							</div>
+						</div>
+						<nav>
+							<a href="#" class="-i-link">projects</a>
+							<a href="#" class="-i-link">resources</a>
+							<a href="#" class="-i-link">about</a>
+							<a href="#" class="-i-link">news</a>
+						</nav>
+					</div>
+					<p class="source-org copyright">
+						<span class="hr"></span>
+					</p>
+					<nav class="-ft-legal">
+						<span>&copy; Copyright Open DRI</span>
+						<span>Privacy Policy</span>
+						<span>Site</span>
 					</nav>
-
-					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
-
 				</div>
 
 			</footer>

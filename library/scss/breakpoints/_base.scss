@@ -1019,26 +1019,77 @@ FOOTER STYLES
 	clear: both;
 	background-color: $black;
 	color: $light-gray;
-}
+	height: 270px;
+	display: flex;
+	flex-direction: column;
+	align-items: space-between;
 
-	/*
-	if you checked out the link above:
-	http://www.alistapart.com/articles/organizing-mobile/
-	you'll want to style the footer nav
-	a bit more in-depth. Remember to keep
-	it simple because you'll have to
-	override these styles for the desktop
-	view.
-	*/
-	.footer-links {
-
-		ul {
-
-			li {}
-
+	.-ft-content {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		margin: 2.5rem 0;
+		.-ft-coorporate,
+		nav {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			.-i-link {
+				margin: 0.4rem 0;
+			    text-decoration: none;
+			    text-transform: uppercase;
+			    text-align: right;
+			    color: rgba(120,120,120,1);
+			    &:hover {
+				    color: lighten(rgba(120,120,120,1), 50%);
+			    }
+			}
 		}
-
-	} /* end .footer-links */
-
-
-	.copyright {}
+		img {
+			vertical-align: middle;
+			position: relative;
+			left: 8px;
+		}
+		.-ft-newsletter {
+			font-size: 13px;
+			border: 1px solid rgba(151,151,151,0.50);
+			padding: 10px 20px;
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+		}
+		input {
+			width: 120px;
+		    line-height: 13px;
+		    height: 22px;
+		    background: transparent;
+		    position: relative;
+    		left: -7px;
+    		top: 8px;
+		}
+	}
+	
+	.copyright {
+		.hr {
+			box-shadow: 0px 1px rgba(250,250,250,0.20);
+		    display: block;
+		    height: 1px;
+		    width: 100%;
+		    position: absolute;
+		    left: 0;
+		}
+	}
+	.-ft-legal {
+		display: flex;
+	    justify-content: space-between;
+	    width: 40%;
+	    height: 40px;
+	    align-items: center;
+	    span {
+    		color: rgba(120,120,120,1);
+		    &:hover {
+			    color: lighten(rgba(120,120,120,1), 50%);
+		    }
+	    }
+	}
+}
