@@ -3,7 +3,7 @@
 					<div class="-ft-content">
 						<div class="-ft-coorporate">
 							<div class="-ft-logo">
-								An initiative of <a href="https://www.gfdrr.org/" title="The Global Facility for Disaster Reduction and Recovery website"><img src="<?php echo home_url(); ?>/wp-content/themes/odri/gfdrr-logo.png" alt="The Global Facility for Disaster Reduction and Recovery logo"></a>
+								An initiative of <a href="https://www.gfdrr.org/" title="The Global Facility for Disaster Reduction and Recovery website"><img src="<?php echo get_template_directory_uri(); ?>/gfdrr-logo.png" alt="The Global Facility for Disaster Reduction and Recovery logo"></a>
 							</div>
 							<div class="-ft-newsletter">
 								Sign up for our newsletter: <input type="email" placeholder="your.email@here">
