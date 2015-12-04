@@ -20,9 +20,9 @@
 						<span class="hr"></span>
 					</p>
 					<nav class="-ft-legal">
-						<span>&copy; Copyright Open DRI</span>
-						<span>Privacy Policy</span>
-						<span>Site</span>
+						<span>&copy; <?php echo date('Y'); ?> Copyright Open DRI</span>
+						<a href="#">Privacy Policy</a>
+						<a href="#">Site</a>
 					</nav>
 				</div>
 

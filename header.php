@@ -58,6 +58,7 @@
 						<span>about</span>
 						<span>news</span>
 						<span class="search-input">
+							<img src="<?php echo get_template_directory_uri(); ?>/library/images/search.svg">
 							<input type="text">
 						</span>
 					</nav>
