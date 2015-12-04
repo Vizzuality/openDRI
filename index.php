@@ -40,7 +40,7 @@
 					<?php $news_i++; ?>
 					<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
 						<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
-							$image = ($image[0]) ? $image[0] : home_url().'/wp-content/themes/odri/library/images/red-cross.jpg';
+							$image = ($image[0]) ? $image[0] : get_template_directory_uri().'/library/images/red-cross.jpg';
 						?>
             			<span class="img" style="background-image:url(<?php echo $image; ?>)"></span>
 
@@ -101,7 +101,7 @@
 					<?php $news_i++; ?>
 					<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
 						<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
-							$image = ($image[0]) ? $image[0] : home_url().'/wp-content/themes/odri/library/images/red-cross.jpg';
+							$image = ($image[0]) ? $image[0] : get_template_directory_uri().'/library/images/red-cross.jpg';
 						?>
             			<span class="img" style="background-image:url(<?php echo $image; ?>)"></span>
 						<header class="article-header">
@@ -149,7 +149,7 @@
 					<?php $news_i++; ?>
 					<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
 						<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
-							$image = ($image[0]) ? $image[0] : home_url().'/wp-content/themes/odri/library/images/red-cross.jpg';
+							$image = ($image[0]) ? $image[0] : get_template_directory_uri().'/library/images/red-cross.jpg';
 						?>
             			<span class="img" style="background-image:url(<?php echo $image; ?>)"></span>
 						<header class="article-header">
