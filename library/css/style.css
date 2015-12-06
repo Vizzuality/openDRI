@@ -1562,6 +1562,40 @@ POSTS & CONTENT STYLES
     flex-direction: column;
     justify-content: space-around;
     height: 350px; }
+    .index-row article.resource-cont,
+    .index-row .card-third.resource-cont {
+      position: relative;
+      max-width: 675px;
+      height: 345px;
+      width: 675px;
+      margin: 0;
+      justify-content: center;
+      flex-direction: row;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.2); }
+      .index-row article.resource-cont:after,
+      .index-row .card-third.resource-cont:after {
+        content: "";
+        background: url(../images/red-sky.jpg);
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+        background-size: cover; }
+      .index-row article.resource-cont section,
+      .index-row .card-third.resource-cont section {
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase; }
+        .index-row article.resource-cont section h3,
+        .index-row .card-third.resource-cont section h3 {
+          font-size: 32px;
+          margin: 10px 0; }
+        .index-row article.resource-cont section hr,
+        .index-row .card-third.resource-cont section hr {
+          width: 40%; }
   .index-row .card-third h3 {
     font-size: 48px;
     text-transform: capitalize;
