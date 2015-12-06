@@ -1394,9 +1394,32 @@ HEADER STYLES
       text-transform: uppercase;
       color: #555555;
       font-size: 16px;
-      letter-spacing: 1.1px; }
+      letter-spacing: 1.1px;
+      cursor: pointer; }
+    .header nav a {
+      text-decoration: none;
+      color: inherit; }
+      .header nav a:hover {
+        color: black; }
+    .header nav img {
+      opacity: 0.6;
+      position: relative;
+      top: 4px;
+      transform: scale(1.3); }
+      .header nav img:hover {
+        opacity: 0.8; }
     .header nav input {
       display: none; }
+      .header nav input.visible {
+        background: transparent;
+        border-bottom: 1px dotted lightgray;
+        height: 15px;
+        width: 120px;
+        display: inline;
+        position: relative;
+        top: 10px;
+        left: 5px;
+        padding: 0; }
   .header .hr {
     box-shadow: 0px 1px #efefef;
     display: block;
@@ -1455,17 +1478,18 @@ POSTS & CONTENT STYLES
 #map-fake {
   height: 656px;
   display: flex;
-  background: lightblue;
+  background: url(../images/IMG_4001.JPG);
   flex-direction: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  background-size: cover; }
   #map-fake .what-list {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 457px;
     justify-content: center;
-    background: #0e5fa2;
+    background: rgba(14, 95, 162, 0.8);
     color: #fff;
     width: 70%;
     padding: 0 10%;
@@ -1487,6 +1511,25 @@ POSTS & CONTENT STYLES
         text-transform: uppercase;
         font-size: 17px;
         letter-spacing: 0.7px; }
+        #map-fake .what-list > nav span i {
+          height: 100px;
+          background-size: 70px;
+          width: 100px;
+          border-radius: 100%;
+          background-repeat: no-repeat;
+          background-color: white;
+          border: 0;
+          background-position: 50%, 50%;
+          display: block;
+          margin: 0px auto 10px; }
+          #map-fake .what-list > nav span i.img-pile-1 {
+            background-image: url("../images/pile-1.png"); }
+          #map-fake .what-list > nav span i.img-pile-2 {
+            background-image: url("../images/pile-2.png"); }
+          #map-fake .what-list > nav span i.img-pile-3 {
+            background-image: url("../images/pile-3.png"); }
+          #map-fake .what-list > nav span i.img-pile-4 {
+            background-image: url("../images/pile-4.png"); }
   #map-fake .what-explore {
     background: white;
     font-size: 20px;
@@ -1501,6 +1544,9 @@ POSTS & CONTENT STYLES
     align-items: center;
     text-transform: uppercase;
     font-weight: bold; }
+    #map-fake .what-explore a {
+      text-decoration: none;
+      color: inherit; }
 
 .index-row {
   display: flex;
@@ -1948,10 +1994,11 @@ FOOTER STYLES
     width: 40%;
     height: 40px;
     align-items: center; }
-    .footer .-ft-legal span {
-      color: #787878; }
-      .footer .-ft-legal span:hover {
-        color: #f8f8f8; }
+    .footer .-ft-legal a, .footer .-ft-legal span {
+      color: #787878;
+      text-decoration: none; }
+    .footer .-ft-legal a:hover {
+      color: #f8f8f8; }
 
 /*********************
 LARGER MOBILE DEVICES

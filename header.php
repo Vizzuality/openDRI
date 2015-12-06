@@ -53,11 +53,12 @@
 					<?php // bloginfo('description'); ?>
 					<span class='hr'></span>
 					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
-						<span>projects</span>
-						<span>resources</span>
-						<span>about</span>
-						<span>news</span>
+						<span><a href="#">projects</a></span>
+						<span><a href="#">resources</a></span>
+						<span><a href="#">about</a></span>
+						<span><a href="#">news</a></span>
 						<span class="search-input">
+							<img src="<?php echo get_template_directory_uri(); ?>/library/images/search.svg">
 							<input type="text">
 						</span>
 					</nav>
