@@ -47,7 +47,7 @@
 			var $input   = $('#searchODRI'),
 				$s_input = $('.search-input');
 
-			$('.search-input').on('click', function(e) {
+			$s_input.on('click', function(e) {
 			    e.preventDefault();
 			    e.stopPropagation();
 			    $input.addClass('visible').focus();
@@ -58,6 +58,9 @@
 			            $(document).one('click', closeMenu);
 			        }
 			    });
+			}).on('keyup', function(e){
+				if(e.keyCode == 13)
+			    	location = location.pathname + '?s=' + $input.val();
 			});
 		</script>
 
