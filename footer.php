@@ -44,8 +44,20 @@
 		</script>
 		<?php wp_footer(); ?>
 		<script type="text/javascript">
-			$('.search-input').on('click', function(e){
-				$(this).find('input').toggleClass('visible');
+			var $input   = $('#searchODRI'),
+				$s_input = $('.search-input');
+
+			$('.search-input').on('click', function(e) {
+			    e.preventDefault();
+			    e.stopPropagation();
+			    $input.addClass('visible').focus();
+			    $(document).one('click', function closeMenu (e){
+			        if($s_input.has(e.target).length === 0){
+			             $input.removeClass('visible');
+			        } else {
+			            $(document).one('click', closeMenu);
+			        }
+			    });
 			});
 		</script>
 

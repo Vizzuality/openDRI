@@ -59,7 +59,7 @@
 						<span><a href="#">news</a></span>
 						<span class="search-input">
 							<img src="<?php echo get_template_directory_uri(); ?>/library/images/search.svg">
-							<input type="text">
+							<input type="text" id="searchODRI">
 						</span>
 					</nav>
 				</div>
