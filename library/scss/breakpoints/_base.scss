@@ -399,6 +399,40 @@ POSTS & CONTENT STYLES
 	    flex-direction: column;
 	    justify-content: space-around;
 	    height: 350px;
+	    &.resource-cont {
+	    	&:after {
+				content: "";
+				background: url(../images/red-sky.jpg);
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				position: absolute;
+				z-index: -1;   
+				background-size: cover;
+			}
+  			    position: relative;
+			    max-width: 675px;
+			    height: 345px;
+			    width: 675px;
+			    margin: 0;
+			    justify-content: center;
+			    flex-direction: row;
+			    align-items: center;
+			    background-color: rgba(0,0,0,0.2);
+			    section {
+			    	color: $white;
+			    	text-align: center;
+    				text-transform: uppercase;
+    				h3 {
+    					font-size: 32px;
+    					margin: 10px 0;
+    				}
+    				hr {
+    					width: 40%;
+    				}
+			    }
+	    }
     }
     .card-third {
     	h3 {
