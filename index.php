@@ -4,22 +4,21 @@
 			<h2>what is open data for resilience initiative?</h2>
 			<h3>Morbi leo risus, porta ac consectetur ac, vestibulum at faucibus mollis interdum.</h3>
 			<nav>
-				<span>
-					<img src="">
-					open data platforms
-				</span>
-				<span>
-					<img src="">
-					community mapping
-				</span>
-				<span>
-					<img src="">
-					risk visualization
-				</span>
+				<?
+				$titles = ['open data platforms','community mapping','risk visualization'];
+				for ($i = 0; $i < count($titles); $i++) {
+					echo '<span>';
+						echo '<i class="img-pile-'.($i+1).'"></i>';
+						echo $titles[$i];
+					echo '</span>';
+				}
+
+				?>
+
 			</nav>
 		</div>
 		<div class="what-explore">
-			explore projects
+			<a href="/explore">explore projects</a>
 		</div>
 	</div>
 	<div id="content">
