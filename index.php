@@ -157,6 +157,18 @@
 							<h3>opendri mentoring guide</h3>
 						</section>
 					</article>
+					<ul class="resource-list">
+						<li>
+							<p><span class="title">Resource name</span><span class="format">pdf</span></p>
+							<p><span class="name">topic/issue</span><span class="size">128kb</span>
+							</p>
+						</li>
+						<li>
+							<p><span class="title">Resource name</span><span class="format">pdf</span></p>
+							<p><span class="name">topic/issue</span><span class="size">128kb</span>
+							</p>
+						</li>
+					</ul>
 				</div>
 			</div>
 			<?php /* get_sidebar(); */ ?>
