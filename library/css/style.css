@@ -1601,6 +1601,33 @@ POSTS & CONTENT STYLES
         .index-row article.resource-cont section hr,
         .index-row .card-third.resource-cont section hr {
           width: 40%; }
+  .index-row .resource-list {
+    margin: 0px 15px;
+    width: 315px;
+    background: #fff;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.2); }
+    .index-row .resource-list li {
+      margin: 0 10px 0px;
+      padding: 5px; }
+      .index-row .resource-list li:hover {
+        background: #f7f7f7;
+        cursor: pointer; }
+    .index-row .resource-list p {
+      margin: 5px 0;
+      display: flex;
+      justify-content: space-between;
+      font-size: 15px; }
+      .index-row .resource-list p .title {
+        color: #1477c9;
+        text-transform: capitalize; }
+      .index-row .resource-list p .format {
+        color: #555555;
+        text-transform: uppercase; }
+      .index-row .resource-list p .name,
+      .index-row .resource-list p .size {
+        font-size: 13px;
+        color: rgba(85, 85, 85, 0.5);
+        text-transform: uppercase; }
   .index-row .card-third h3 {
     font-size: 48px;
     text-transform: capitalize;
