@@ -1554,6 +1554,8 @@ POSTS & CONTENT STYLES
   .index-row .row-container {
     display: flex;
     flex-wrap: wrap; }
+  .index-row.last-resources {
+    margin: -120px 0 120px 0; }
   .index-row article,
   .index-row .card-third {
     max-width: 315px;
@@ -1584,6 +1586,9 @@ POSTS & CONTENT STYLES
         position: absolute;
         z-index: -1;
         background-size: cover; }
+      .index-row article.resource-cont.--scnd-img:after,
+      .index-row .card-third.resource-cont.--scnd-img:after {
+        background-image: url(../images/map-resource.jpg); }
       .index-row article.resource-cont section,
       .index-row .card-third.resource-cont section {
         color: #fff;
