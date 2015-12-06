@@ -43,6 +43,11 @@
 		    },5000);
 		</script>
 		<?php wp_footer(); ?>
+		<script type="text/javascript">
+			$('.search-input').on('click', function(e){
+				$(this).find('input').toggleClass('visible');
+			});
+		</script>
 
 	</body>
 
