@@ -148,6 +148,17 @@
 					</article>
 				</div>
 			</div>
+			<div class="m-all cf index-row last-resources" role="resources" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+				<div class="row-container">
+					<article class="resource-cont --scnd-img">
+						<section>
+							<span>featured resouurce</span>
+							<hr>
+							<h3>opendri mentoring guide</h3>
+						</section>
+					</article>
+				</div>
+			</div>
 			<?php /* get_sidebar(); */ ?>
 		</div>
 	</div>
