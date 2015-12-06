@@ -440,6 +440,40 @@ POSTS & CONTENT STYLES
 		    }
 	    }
     }
+    .resource-list {
+    	margin: 0px 15px;
+	    width: 315px;
+	    background: #fff;
+	    box-shadow: 0 0 7px rgba(0,0,0,0.20);
+	    li {
+    	    margin: 0 10px 0px;
+			padding: 5px;
+    		&:hover {
+    			background: darken($white, 3%);
+    			cursor: pointer;
+    		}
+	    }
+	    p {
+	    	margin: 5px 0;
+	    	display: flex;
+    		justify-content: space-between;
+    		font-size: 15px;
+    		.title {
+    			color: #1477c9;
+    			text-transform: capitalize;
+    		}
+    		.format {
+    			color: #555555;
+    			text-transform: uppercase;
+    		}
+    		.name,
+    		.size {
+    			font-size: 13px;
+    			color: rgba(#555555, 0.5);
+    			text-transform: uppercase;
+    		}
+	    }
+    }
     .card-third {
     	h3 {
     		font-size: 48px;
