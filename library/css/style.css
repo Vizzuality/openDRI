@@ -496,6 +496,24 @@ FONT FACE (IN YOUR FACE)
       font-style: normal;
   }
 */
+@font-face {
+  font-family: 'Bariol_Regular';
+  src: url("fonts/Bariol_Regular.otf");
+  src: url("fonts/Bariol_Regular.otf?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Bariol_Light';
+  src: url("fonts/Bariol_Light.otf");
+  src: url("fonts/Bariol_Light.otf?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Bariol_Bold';
+  src: url("fonts/Bariol_Bold.otf");
+  src: url("fonts/Bariol_Bold.otf?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }
 /*
 The following is based of Typebase:
 https://github.com/devinhunt/typebase.css
@@ -989,7 +1007,7 @@ textarea,
   border: 0;
   width: 100%;
   max-width: 400px;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Bariol_Regular", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #d8d8d8;
   -webkit-transition: background-color 0.24s ease-in-out;
   transition: background-color 0.24s ease-in-out; }
@@ -1250,7 +1268,7 @@ and will be used across all viewports.
 GENERAL STYLES
 *********************/
 body {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Bariol_Regular", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 100%;
   line-height: 1.5;
   color: #5c6b80;
