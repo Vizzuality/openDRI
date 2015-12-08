@@ -44,7 +44,6 @@
 	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
 		<div id="container" class="<? if(is_home() === false) {?>no-home<?}?>">
 			<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
-				<!-- <div id="map" style="height:400px"></div> -->				
  				<div id="inner-header" class="wrap cf">
 					<p id="logo" class="h1" itemscope itemtype="http://schema.org/Organization">
 						<a href="<?php echo home_url(); ?>" rel="nofollow"> <img src="<?php echo get_template_directory_uri(); ?>/logo<? if(is_home()) {?>-extended<?}?>.svg" alt="<?php bloginfo('name'); ?>"> </a>

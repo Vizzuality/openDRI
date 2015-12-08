@@ -6,6 +6,8 @@
 			<div id="pic-banner" style="background-image:url(<? echo $image ?>)">
 				<!-- <img src="<? echo $image ?>" alt="Picture for <?php the_title(); ?>" title="Imagery for <?php the_title(); ?>" /> -->
 			</div>
+			<div id="map" class="cdbmap"></div>
+
 			<div id="content">
 
 				<div id="inner-content" class="wrap cf">
@@ -104,4 +106,10 @@
 				</div>
 			</section>
 		</div>
+		<script type="text/javascript">
+			if ('<? echo $CAT_NAME?>' === 'projects') {
+				document.getElementById('pic-banner').style.display = 'none';
+				document.getElementById('map').style.display 		= 'block';
+			}	
+		</script>
 <?php get_footer(); ?>
