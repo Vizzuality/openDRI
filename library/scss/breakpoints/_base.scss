@@ -404,6 +404,9 @@ POSTS & CONTENT STYLES
     .row-container {
     	display: flex;
     	flex-wrap: wrap;
+    	> a {
+    		text-decoration: none;
+    	}
     }
     &.last-resources {
     	margin: -120px 0 120px 0;
