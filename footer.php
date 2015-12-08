@@ -10,10 +10,10 @@
 							</div>
 						</div>
 						<nav>
-							<a href="#" class="-i-link">projects</a>
-							<a href="#" class="-i-link">resources</a>
-							<a href="#" class="-i-link">about</a>
-							<a href="#" class="-i-link">news</a>
+							<a href="<?php echo home_url(); ?>/category/projects" class="-i-link">projects</a>
+							<a href="<?php echo home_url(); ?>/resources" class="-i-link">resources</a>
+							<a href="<?php echo home_url(); ?>/about" class="-i-link">about</a>
+							<a href="<?php echo home_url(); ?>/category/news" class="-i-link">news</a>
 						</nav>
 					</div>
 					<p class="source-org copyright">
