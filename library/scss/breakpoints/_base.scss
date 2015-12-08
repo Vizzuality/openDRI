@@ -604,7 +604,35 @@ POSTS & CONTENT STYLES
     		justify-content: space-between;
 		}
 	}
-
+	&.post {
+		padding: 2.5rem;
+		border: 0;
+		box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+		h1 {
+			color: #1477c9;
+			font-size: 48px;
+			line-height: 43px;
+		}
+		.byline {
+			text-transform: uppercase;
+		    font-style: normal;
+		    color: rgba(#555,0.5);
+		    font-size: 13px;
+		    margin: 25px 0 15px;
+		}
+		.entry-content {
+			padding: 0;
+			p {
+				margin: 0 0 1.5em;
+			    display: inline;
+			    max-width: none;
+			    height: auto;
+			    font-size: 17px;
+			    line-height: 28px;
+			    color: #555;
+			}
+		}
+	}
 } /* end .hentry */
 
 .single-title,
@@ -829,7 +857,19 @@ POSTS & CONTENT STYLES
 .tags {
 margin: 0;
 }
-
+#pic-banner {
+	height: 245px;
+    width: 100%;
+    background-size: cover;
+    display: block;
+    position: relative;
+    background-position: 70% 50%;
+    margin: 0 0 -70px;
+    z-index: 0;
+}
+.-md-post {
+	position: relative;
+}
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
