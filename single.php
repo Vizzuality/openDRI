@@ -15,7 +15,7 @@
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 						<?
 							$cats 		= get_the_category();
-							$CAT_NAME   = $cats[0]->name
+							$CAT_NAME   = $cats[0]->name;
 						?>
 							<?php
 								/*
@@ -93,5 +93,15 @@
 				</div>
 
 			</div>
-
+		<div id="explore-more">
+			<section>
+				<article>
+					<h2>CONTENT HERE</h2>
+					<h3>MORE CONTENT HERE</h3>
+				</article>
+				<div class="what-explore">
+					<a href="<?php echo home_url(); ?>/category/projects">explore projects</a>
+				</div>
+			</section>
+		</div>
 <?php get_footer(); ?>
