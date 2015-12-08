@@ -18,7 +18,7 @@
 			</nav>
 		</div>
 		<div class="what-explore">
-			<a href="/explore">explore projects</a>
+			<a href="<?php echo home_url(); ?>/category/projects">explore projects</a>
 		</div>
 	</div>
 	<div id="content">
