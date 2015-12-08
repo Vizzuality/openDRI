@@ -100,7 +100,7 @@
 					<h3>MORE CONTENT HERE</h3>
 				</article>
 				<div class="what-explore">
-					<a href="<?php echo home_url(); ?>/category/projects">explore projects</a>
+					<a href="<?php echo home_url(); ?>/category/<? echo $CAT_NAME?>">explore <? echo $CAT_NAME?></a>
 				</div>
 			</section>
 		</div>
