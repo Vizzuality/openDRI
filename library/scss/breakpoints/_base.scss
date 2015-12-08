@@ -156,6 +156,10 @@ HEADER STYLES
 	background-color: $white;
 	border-bottom: 1px solid #efefef;
 	height: 163px;
+	.no-home & {
+		height: 80px;
+		display: list-item;
+	}
 	nav {
 		display: flex;
 		justify-content: space-around;
@@ -163,6 +167,12 @@ HEADER STYLES
 		width: 70%;
 		margin: 0 auto;
 		align-items: center;
+		.no-home & {
+			display: inline-flex;
+		    position: relative;
+		    float: right;
+		    height: 100%;
+		}
 		span {
 			text-transform: uppercase;
 			color: #555555;
@@ -210,10 +220,15 @@ HEADER STYLES
 	    width: 100%;
 	    position: absolute;
 	    left: 0;
+	    .no-home & {
+	    	display: none;
+	    }
 	}
 	#logo {
 		margin: 0.4em 0;
-
+		.no-home & {
+			display: inline;
+		}
 		a {
 			color: $white;
 		}
