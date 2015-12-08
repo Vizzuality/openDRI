@@ -53,7 +53,7 @@
 							<h3>Recent news</h3>
 							<div class="row-container">
 								<?php
-									$args = array( 'numberposts' => '3' );
+									$args = array( 'numberposts' => '3', 'category' => 'news' );
 									$recent_posts = wp_get_recent_posts( $args );
 									foreach( $recent_posts as $recent ){  // start loop
 								?>
@@ -73,7 +73,7 @@
 												<p class="byline entry-meta vcard">
 						                            <?php printf( __( '', 'bonestheme' ).' %1$s %2$s',
 						   								/* the author of the post */
-						   								'<span class="entry-author author" itemprop="author" itemscope itemptype="http://schema.org/Person">' . get_the_author_link( get_the_author_meta( 'ID' ) ) . '</span>',
+						   								'<span class="entry-author author" itemprop="author" itemscope itemptype="http://schema.org/Person">' . get_the_author_meta('display_name', $recent['post_author'] ) . '</span>',
 						   								/* the time the post was published */
 						   								'<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time('d M') . '</time>'
 													); ?>
