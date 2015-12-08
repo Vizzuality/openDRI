@@ -329,7 +329,10 @@ POSTS & CONTENT STYLES
     align-items: center;
     justify-content: center;
     background-size: cover;
-    background-color: rgba(255,255,255,0.2);
+    transition: background-color 0.2s ease;
+    &:hover {
+    	background-color: rgba(0,0,0,0.1);
+    }
     &:after {
 		content: "";
 		background: url(../images/IMG_4001.JPG);
@@ -392,27 +395,75 @@ POSTS & CONTENT STYLES
 		    }
 	    }
     }
-    .what-explore {
-    	background: white;
-	    font-size: 20px;
-	    letter-spacing: 0.6px;
-	    color: #1477c9;
-	    position: relative;
-	    top: -24px;
-	    height: 48px;
-	    display: flex;
-	    width: 220px;
-	    justify-content: center;
-	    align-items: center;
-	    text-transform: uppercase;
-	    font-weight: bold;
-	    a {
-	    	text-decoration: none;
-	    	color: inherit;
-	    }
+}
+.what-explore {
+	background: white;
+    font-size: 20px;
+    letter-spacing: 0.6px;
+    color: #1477c9;
+    position: relative;
+    top: -24px;
+    height: 48px;
+    display: flex;
+    width: 220px;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    a {
+    	text-decoration: none;
+    	color: inherit;
     }
 }
-
+#explore-more {
+	height: 360px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-color: rgba(255,255,255,0.2);
+    transition: background-color 0.2s ease;
+    &:hover {
+    	background-color: rgba(255,255,255,0.1);
+    }
+    &:after {
+		content: "";
+		background: url(../images/map-resource.jpg);
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		position: absolute;
+		z-index: -1;   
+		background-size: cover;
+	}
+	section {
+		width: 70%;
+	    height: 60%;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
+	    background: rgba(#1477c9, 0.8);
+	    color: white;
+	    text-align: center;
+	 	.what-explore {
+	 		top: 34px;
+	 	}
+	 	h2 {
+	    	font-size: 49px;
+	    	line-height: 40px;
+	    	text-transform: uppercase;
+	    }
+	    h3 {
+	    	font-size: 22px;
+	    	line-height: 25px;
+	    	letter-spacing: 0.6px;
+	    }
+	}
+}
 .index-row {
 	display: flex;
     margin: 130px 0;

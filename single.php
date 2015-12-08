@@ -13,7 +13,10 @@
 					<main id="main" class="m-all -md-post" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
+						<?
+							$cats 		= get_the_category();
+							$CAT_NAME   = $cats[0]->name;
+						?>
 							<?php
 								/*
 								 * Ah, post formats. Nature's greatest mystery (aside from the sloth).
@@ -53,7 +56,7 @@
 							<h3>Recent news</h3>
 							<div class="row-container">
 								<?php
-									$args = array( 'numberposts' => '3' );
+									$args = array( 'numberposts' => '3', 'category' => $CAT_NAME );
 									$recent_posts = wp_get_recent_posts( $args );
 									foreach( $recent_posts as $recent ){  // start loop
 								?>
@@ -67,13 +70,13 @@
 												<h1 class="h2 entry-title"><a href="<?php echo $recent["guid"]; ?>" rel="bookmark" title="<?php echo $recent["post_title"]; ?>"><?php echo $recent["post_title"]; ?></a></h1>
 											</header>
 											<section class="entry-content cf">
-												<?php echo $recent["post_content"]; ?>
+												<p><?php echo $recent["post_content"]; ?></p>
 											</section>
 											<footer class="article-footer cf">
 												<p class="byline entry-meta vcard">
 						                            <?php printf( __( '', 'bonestheme' ).' %1$s %2$s',
 						   								/* the author of the post */
-						   								'<span class="entry-author author" itemprop="author" itemscope itemptype="http://schema.org/Person">' . get_the_author_link( get_the_author_meta( 'ID' ) ) . '</span>',
+						   								'<span class="entry-author author" itemprop="author" itemscope itemptype="http://schema.org/Person">' . get_the_author_meta('display_name', $recent['post_author'] ) . '</span>',
 						   								/* the time the post was published */
 						   								'<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time('d M') . '</time>'
 													); ?>
@@ -90,5 +93,15 @@
 				</div>
 
 			</div>
-
+		<div id="explore-more">
+			<section>
+				<article>
+					<h2>CONTENT HERE</h2>
+					<h3>MORE CONTENT HERE</h3>
+				</article>
+				<div class="what-explore">
+					<a href="<?php echo home_url(); ?>/category/<? echo $CAT_NAME?>">explore <? echo $CAT_NAME?></a>
+				</div>
+			</section>
+		</div>
 <?php get_footer(); ?>
