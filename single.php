@@ -13,7 +13,10 @@
 					<main id="main" class="m-all -md-post" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
+						<?
+							$cats 		= get_the_category();
+							$CAT_NAME   = $cats[0]->name
+						?>
 							<?php
 								/*
 								 * Ah, post formats. Nature's greatest mystery (aside from the sloth).
@@ -53,7 +56,7 @@
 							<h3>Recent news</h3>
 							<div class="row-container">
 								<?php
-									$args = array( 'numberposts' => '3', 'category' => 'news' );
+									$args = array( 'numberposts' => '3', 'category' => $CAT_NAME );
 									$recent_posts = wp_get_recent_posts( $args );
 									foreach( $recent_posts as $recent ){  // start loop
 								?>
