@@ -67,7 +67,7 @@
 												<h1 class="h2 entry-title"><a href="<?php echo $recent["guid"]; ?>" rel="bookmark" title="<?php echo $recent["post_title"]; ?>"><?php echo $recent["post_title"]; ?></a></h1>
 											</header>
 											<section class="entry-content cf">
-												<?php echo $recent["post_content"]; ?>
+												<p><?php echo $recent["post_content"]; ?></p>
 											</section>
 											<footer class="article-footer cf">
 												<p class="byline entry-meta vcard">
