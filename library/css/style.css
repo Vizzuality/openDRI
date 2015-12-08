@@ -1677,7 +1677,11 @@ POSTS & CONTENT STYLES
     transform: translate(0, -33%); }
     .hentry header a {
       font-size: 15px;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      display: inline-block; }
   .hentry footer {
     margin: 15px;
     border-top: 1px solid #f8f9fa; }
@@ -1688,7 +1692,9 @@ POSTS & CONTENT STYLES
 .single-title,
 .page-title,
 .entry-title {
-  margin: 0; }
+  margin: 0;
+  width: 100%;
+  height: 100%; }
 
 /* want to style individual post classes? Booya! */
 /* post by id (i.e. post-3) */

@@ -536,6 +536,10 @@ POSTS & CONTENT STYLES
 		a {
 			font-size: 15px;
 			text-transform: uppercase;
+			text-align: center;
+			width: 100%;
+		    height: 100%;
+		    display: inline-block;
 		}
 	}
 
@@ -545,6 +549,8 @@ POSTS & CONTENT STYLES
 
 		p {
 			margin: 0;
+			display: flex;
+    		justify-content: space-between;
 		}
 	}
 
@@ -554,6 +560,8 @@ POSTS & CONTENT STYLES
 .page-title,
 .entry-title {
 	margin: 0;
+	width: 100%;
+	height: 100%;
 }
 
 .single-title {}
