@@ -1574,6 +1574,12 @@ POSTS & CONTENT STYLES
 .index-row {
   display: flex;
   margin: 130px 0; }
+  .index-row.more-content {
+    display: block; }
+    .index-row.more-content .row-container {
+      justify-content: space-between; }
+      .index-row.more-content .row-container article {
+        margin: 0; }
   .index-row .row-container {
     display: flex;
     flex-wrap: wrap; }
