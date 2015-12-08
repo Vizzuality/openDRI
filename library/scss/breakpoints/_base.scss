@@ -416,6 +416,15 @@ POSTS & CONTENT STYLES
 .index-row {
 	display: flex;
     margin: 130px 0;
+    &.more-content {
+    	display: block;
+    	.row-container {
+    		justify-content: space-between;
+    		article {
+    			margin: 0;
+    		}
+    	}
+    }
     .row-container {
     	display: flex;
     	flex-wrap: wrap;
