@@ -83,9 +83,9 @@ a, a:visited {
 	color: $link-color;
 
 	/* on hover */
-	&:hover, &:focus {
-		color: $link-hover;
-	}
+	// &:hover, &:focus {
+	// 	color: $link-hover;
+	// }
 
 	/* on click */
 	&:active {
@@ -173,6 +173,7 @@ HEADER STYLES
 		a {
 			text-decoration: none;
 			color: inherit;
+			transition: color 0.3s ease;
 			&:hover{
 				color: darken(#555, 50%);
 			}
@@ -182,6 +183,7 @@ HEADER STYLES
 		    position: relative;
 		    top: 4px;
 		    transform: scale(1.3);
+		    transition: opacity 0.3s ease;
 		    &:hover {
 		    	opacity: 0.8;
 		    }
@@ -307,11 +309,23 @@ POSTS & CONTENT STYLES
 #map-fake {
 	height: 656px;
     display: flex;
-    background: url(../images/IMG_4001.JPG);
+    position: relative;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-size: cover;
+    background-color: rgba(255,255,255,0.2);
+    &:after {
+		content: "";
+		background: url(../images/IMG_4001.JPG);
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		position: absolute;
+		z-index: -1;   
+		background-size: cover;
+	}
     .what-list {
     	display: flex;
 	    flex-direction: column;
@@ -429,6 +443,10 @@ POSTS & CONTENT STYLES
 		    flex-direction: row;
 		    align-items: center;
 		    background-color: rgba(0,0,0,0.2);
+		    transition: background-color 0.2s ease;
+		    &:hover {
+		    	background-color: rgba(0,0,0,0.1);
+		    }
 		    section {
 		    	color: $white;
 		    	text-align: center;
@@ -451,6 +469,8 @@ POSTS & CONTENT STYLES
 	    li {
     	    margin: 0 10px 0px;
 			padding: 5px;
+			background: inherit;
+			transition: background 0.3s ease;
     		&:hover {
     			background: darken($white, 3%);
     			cursor: pointer;
@@ -490,7 +510,12 @@ POSTS & CONTENT STYLES
 		    font-size: 15px;
 		    line-height: 23px;    		
     	}
+    	a {
+    		text-decoration: none;
+    		cursor: default;
+    	}
     	span {
+    		cursor: pointer;
     		width: 200px;
 		    background: #db0033;
 		    height: 50px;
@@ -502,6 +527,10 @@ POSTS & CONTENT STYLES
 		    font-size: 15px;
 		    font-weight: bold;
 		    margin-top: 20px;
+		    transition: background 0.3s ease;
+    		&:hover {
+				background: lighten(#db0033,10%)
+    		}
     	}
     .twitter {
     	overflow: scroll;
@@ -533,9 +562,17 @@ POSTS & CONTENT STYLES
 		justify-content: center;
 		align-items: center;
 		transform: translate(0, -33%);
+		transition: background 0.3s ease;
+		&:hover {
+			background: lighten($text-bkg-blue,10%);
+		}
 		a {
 			font-size: 15px;
 			text-transform: uppercase;
+			text-align: center;
+			width: 100%;
+		    height: 100%;
+		    display: inline-block;
 		}
 	}
 
@@ -545,6 +582,8 @@ POSTS & CONTENT STYLES
 
 		p {
 			margin: 0;
+			display: flex;
+    		justify-content: space-between;
 		}
 	}
 
@@ -554,6 +593,8 @@ POSTS & CONTENT STYLES
 .page-title,
 .entry-title {
 	margin: 0;
+	width: 100%;
+	height: 100%;
 }
 
 .single-title {}
@@ -1168,6 +1209,7 @@ FOOTER STYLES
 			    text-transform: uppercase;
 			    text-align: right;
 			    color: rgba(120,120,120,1);
+			    transition: color 0.3s ease;
 			    &:hover {
 				    color: lighten(rgba(120,120,120,1), 50%);
 			    }
