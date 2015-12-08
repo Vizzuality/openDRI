@@ -28,7 +28,7 @@
 					<div class="card-third">
 						<h3>news</h3>
 						<p>Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Ullam id dolor.</p>
-						<span>view all news</span>
+						<a href="<?php echo home_url(); ?>/news"><span>view all news</span></a>
 					</div>
 					<?php 
 						$NEWS_COUNT = 1;
@@ -89,7 +89,7 @@
 					<div class="card-third">
 						<h3>projects</h3>
 						<p>Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Ullam id dolor.</p>
-						<span>view all projects</span>
+						<a href="<?php echo home_url(); ?>/projects"><span>view all projects</span></a>
 					</div>
 					<?php 
 						$NEWS_COUNT = 5;
@@ -136,7 +136,7 @@
 				<div class="card-third">
 					<h3>resources</h3>
 					<p>Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Ullam id dolor.</p>
-					<span>view all resources</span>
+					<a href="<?php echo home_url(); ?>/resources"><span>view all resources</span></a>
 				</div>
 				<div class="row-container">
 					<article class="resource-cont">
