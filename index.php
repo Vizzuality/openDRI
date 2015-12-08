@@ -28,7 +28,7 @@
 					<div class="card-third">
 						<h3>news</h3>
 						<p>Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Ullam id dolor.</p>
-						<a href="<?php echo home_url(); ?>/news"><span>view all news</span></a>
+						<a href="<?php echo home_url(); ?>/category/news"><span>view all news</span></a>
 					</div>
 					<?php
 						$args = array( 'numberposts' => '1', 'category' => 'news' );
