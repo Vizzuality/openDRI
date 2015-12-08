@@ -1483,7 +1483,7 @@ POSTS & CONTENT STYLES
   align-items: center;
   justify-content: center;
   background-size: cover;
-  background-color: rgba(255, 255, 255, 0.1); }
+  background-color: rgba(255, 255, 255, 0.2); }
   #map-fake:after {
     content: "";
     background: url(../images/IMG_4001.JPG);
@@ -1565,6 +1565,8 @@ POSTS & CONTENT STYLES
   .index-row .row-container {
     display: flex;
     flex-wrap: wrap; }
+    .index-row .row-container > a {
+      text-decoration: none; }
   .index-row.last-resources {
     margin: -120px 0 120px 0; }
   .index-row article {
