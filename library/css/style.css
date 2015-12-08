@@ -1008,7 +1008,7 @@ textarea,
   width: 100%;
   max-width: 400px;
   font-family: "Bariol_Regular", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #d8d8d8;
+  background-color: #F0F0F0;
   -webkit-transition: background-color 0.24s ease-in-out;
   transition: background-color 0.24s ease-in-out; }
   input[type="text"]:focus, input[type="text"]:active,
@@ -1044,7 +1044,7 @@ textarea,
   textarea:active,
   .field:focus,
   .field:active {
-    background-color: #e2e2e2;
+    background-color: #fafafa;
     outline: none; }
   input[type="text"].error, input[type="text"].is-invalid,
   input[type="password"].error,
@@ -1272,7 +1272,7 @@ body {
   font-size: 100%;
   line-height: 1.5;
   color: #5c6b80;
-  background-color: #d8d8d8;
+  background-color: #F0F0F0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -1556,6 +1556,8 @@ POSTS & CONTENT STYLES
     flex-wrap: wrap; }
   .index-row.last-resources {
     margin: -120px 0 120px 0; }
+  .index-row article {
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.2); }
   .index-row article,
   .index-row .card-third {
     max-width: 315px;
@@ -1726,7 +1728,7 @@ POSTS & CONTENT STYLES
     text-overflow: ellipsis; }
   .entry-content table {
     width: 100%;
-    border: 1px solid #d8d8d8;
+    border: 1px solid #F0F0F0;
     margin-bottom: 1.5em; }
     .entry-content table caption {
       margin: 0 0 7px;
@@ -1735,18 +1737,18 @@ POSTS & CONTENT STYLES
       text-transform: uppercase;
       letter-spacing: 1px; }
   .entry-content tr {
-    border-bottom: 1px solid #d8d8d8; }
+    border-bottom: 1px solid #F0F0F0; }
     .entry-content tr:nth-child(even) {
       background-color: #f8f9fa; }
   .entry-content td {
     padding: 7px;
-    border-right: 1px solid #d8d8d8; }
+    border-right: 1px solid #F0F0F0; }
     .entry-content td:last-child {
       border-right: 0; }
   .entry-content th {
     background-color: #f8f9fa;
-    border-bottom: 1px solid #d8d8d8;
-    border-right: 1px solid #d8d8d8; }
+    border-bottom: 1px solid #F0F0F0;
+    border-right: 1px solid #F0F0F0; }
     .entry-content th:last-child {
       border-right: 0; }
   .entry-content blockquote {
@@ -1823,7 +1825,7 @@ PAGE NAVI STYLES
     float: left;
     display: inline;
     overflow: hidden;
-    border-right: 1px solid #d8d8d8; }
+    border-right: 1px solid #F0F0F0; }
   .pagination a, .pagination span {
     margin: 0;
     text-decoration: none;
