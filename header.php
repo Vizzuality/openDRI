@@ -42,23 +42,19 @@
 	</head>
 
 	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
-		<div id="container">
+		<div id="container" class="<? if(is_home() === false) {?>no-home<?}?>">
 			<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 				<!-- <div id="map" style="height:400px"></div> -->				
  				<div id="inner-header" class="wrap cf">
-
-					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
 					<p id="logo" class="h1" itemscope itemtype="http://schema.org/Organization">
-						<a href="<?php echo home_url(); ?>" rel="nofollow"> <img src="<?php echo get_template_directory_uri(); ?>/logo-extended.svg" alt="<?php bloginfo('name'); ?>"> </a>
+						<a href="<?php echo home_url(); ?>" rel="nofollow"> <img src="<?php echo get_template_directory_uri(); ?>/logo<? if(is_home()) {?>-extended<?}?>.svg" alt="<?php bloginfo('name'); ?>"> </a>
 					</p>
-					<?php // if you'd like to use the site description you can un-comment it below ?>
-					<?php // bloginfo('description'); ?>
 					<span class='hr'></span>
 					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
-						<span><a href="#">projects</a></span>
-						<span><a href="#">resources</a></span>
-						<span><a href="#">about</a></span>
-						<span><a href="#">news</a></span>
+						<span><a href="<?php echo home_url(); ?>/projects">projects</a></span>
+						<span><a href="<?php echo home_url(); ?>/resources">resources</a></span>
+						<span><a href="<?php echo home_url(); ?>/about">about</a></span>
+						<span><a href="<?php echo home_url(); ?>/news">news</a></span>
 						<span class="search-input">
 							<img src="<?php echo get_template_directory_uri(); ?>/library/images/search.svg">
 							<input type="text" id="searchODRI">
