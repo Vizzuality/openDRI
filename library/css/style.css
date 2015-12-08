@@ -1478,11 +1478,22 @@ POSTS & CONTENT STYLES
 #map-fake {
   height: 656px;
   display: flex;
-  background: url(../images/IMG_4001.JPG);
+  position: relative;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-size: cover; }
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.1); }
+  #map-fake:after {
+    content: "";
+    background: url(../images/IMG_4001.JPG);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-size: cover; }
   #map-fake .what-list {
     display: flex;
     flex-direction: column;
