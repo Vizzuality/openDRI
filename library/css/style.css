@@ -1574,6 +1574,12 @@ POSTS & CONTENT STYLES
 .index-row {
   display: flex;
   margin: 130px 0; }
+  .index-row.more-content {
+    display: block; }
+    .index-row.more-content .row-container {
+      justify-content: space-between; }
+      .index-row.more-content .row-container article {
+        margin: 0; }
   .index-row .row-container {
     display: flex;
     flex-wrap: wrap; }
@@ -1730,23 +1736,23 @@ POSTS & CONTENT STYLES
       margin: 0;
       display: flex;
       justify-content: space-between; }
-  .hentry.post {
+  .hentry.--odri-post {
     padding: 2.5rem;
     border: 0;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.2); }
-    .hentry.post h1 {
+    .hentry.--odri-post h1 {
       color: #1477c9;
       font-size: 48px;
       line-height: 43px; }
-    .hentry.post .byline {
+    .hentry.--odri-post .byline {
       text-transform: uppercase;
       font-style: normal;
       color: rgba(85, 85, 85, 0.5);
       font-size: 13px;
       margin: 25px 0 15px; }
-    .hentry.post .entry-content {
+    .hentry.--odri-post .entry-content {
       padding: 0; }
-      .hentry.post .entry-content p {
+      .hentry.--odri-post .entry-content p {
         margin: 0 0 1.5em;
         display: inline;
         max-width: none;

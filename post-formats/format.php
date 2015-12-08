@@ -14,7 +14,7 @@
                 */
               ?>
 
-              <article id="post-<?php the_ID(); ?>" <?php post_class('cf'); ?> role="article" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+              <article id="post-<?php the_ID(); ?>" <?php post_class('cf --odri-post'); ?> role="article" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
                   <h1 class="entry-title single-title" itemprop="headline" rel="bookmark"><?php the_title(); ?></h1>
 
                   <p class="byline entry-meta vcard">
