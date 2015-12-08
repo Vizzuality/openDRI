@@ -1330,8 +1330,6 @@ a, a:visited {
   /* on hover */
   /* on click */
   /* mobile tap color */ }
-  a:hover, a:focus, a:visited:hover, a:visited:focus {
-    color: #e8e8e8; }
   a:link, a:visited:link {
     /*
     this highlights links on iPhones/iPads.
@@ -1398,14 +1396,16 @@ HEADER STYLES
       cursor: pointer; }
     .header nav a {
       text-decoration: none;
-      color: inherit; }
+      color: inherit;
+      transition: color 0.3s ease; }
       .header nav a:hover {
         color: black; }
     .header nav img {
       opacity: 0.6;
       position: relative;
       top: 4px;
-      transform: scale(1.3); }
+      transform: scale(1.3);
+      transition: opacity 0.3s ease; }
       .header nav img:hover {
         opacity: 0.8; }
     .header nav input {
@@ -1576,7 +1576,8 @@ POSTS & CONTENT STYLES
       justify-content: center;
       flex-direction: row;
       align-items: center;
-      background-color: rgba(0, 0, 0, 0.2); }
+      background-color: rgba(0, 0, 0, 0.2);
+      transition: background-color 0.2s ease; }
       .index-row article.resource-cont:after,
       .index-row .card-third.resource-cont:after {
         content: "";
@@ -1591,6 +1592,9 @@ POSTS & CONTENT STYLES
       .index-row article.resource-cont.--scnd-img:after,
       .index-row .card-third.resource-cont.--scnd-img:after {
         background-image: url(../images/map-resource.jpg); }
+      .index-row article.resource-cont:hover,
+      .index-row .card-third.resource-cont:hover {
+        background-color: rgba(0, 0, 0, 0.1); }
       .index-row article.resource-cont section,
       .index-row .card-third.resource-cont section {
         color: #fff;
@@ -1610,7 +1614,9 @@ POSTS & CONTENT STYLES
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.2); }
     .index-row .resource-list li {
       margin: 0 10px 0px;
-      padding: 5px; }
+      padding: 5px;
+      background: inherit;
+      transition: background 0.3s ease; }
       .index-row .resource-list li:hover {
         background: #f7f7f7;
         cursor: pointer; }
@@ -1640,7 +1646,11 @@ POSTS & CONTENT STYLES
     color: #555;
     font-size: 15px;
     line-height: 23px; }
+  .index-row .card-third a {
+    text-decoration: none;
+    cursor: default; }
   .index-row .card-third span {
+    cursor: pointer;
     width: 200px;
     background: #db0033;
     height: 50px;
@@ -1651,7 +1661,10 @@ POSTS & CONTENT STYLES
     color: #fff;
     font-size: 15px;
     font-weight: bold;
-    margin-top: 20px; }
+    margin-top: 20px;
+    transition: background 0.3s ease; }
+    .index-row .card-third span:hover {
+      background: #ff0f47; }
   .index-row .card-third .twitter {
     overflow: scroll; }
 
@@ -1674,7 +1687,10 @@ POSTS & CONTENT STYLES
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translate(0, -33%); }
+    transform: translate(0, -33%);
+    transition: background 0.3s ease; }
+    .hentry header:hover {
+      background: #2791e9; }
     .hentry header a {
       font-size: 15px;
       text-transform: uppercase;
@@ -1686,7 +1702,9 @@ POSTS & CONTENT STYLES
     margin: 15px;
     border-top: 1px solid #f8f9fa; }
     .hentry footer p {
-      margin: 0; }
+      margin: 0;
+      display: flex;
+      justify-content: space-between; }
 
 /* end .hentry */
 .single-title,
@@ -2032,7 +2050,8 @@ FOOTER STYLES
         text-decoration: none;
         text-transform: uppercase;
         text-align: right;
-        color: #787878; }
+        color: #787878;
+        transition: color 0.3s ease; }
         .footer .-ft-content .-ft-coorporate .-i-link:hover,
         .footer .-ft-content nav .-i-link:hover {
           color: #f8f8f8; }
