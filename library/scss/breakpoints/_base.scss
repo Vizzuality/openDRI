@@ -917,7 +917,8 @@ POSTS & CONTENT STYLES
 .tags {
 margin: 0;
 }
-#pic-banner {
+#pic-banner,
+.cdbmap {
 	height: 245px;
     width: 100%;
     background-size: cover;
@@ -926,6 +927,9 @@ margin: 0;
     background-position: 70% 50%;
     margin: 0 0 -70px;
     z-index: 0;
+}
+.cdbmap {
+	display: none;
 }
 .-md-post {
 	position: relative;
