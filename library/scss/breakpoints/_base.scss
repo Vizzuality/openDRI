@@ -394,6 +394,9 @@ POSTS & CONTENT STYLES
     &.last-resources {
     	margin: -120px 0 120px 0;
     }
+    article {
+    	box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+    }
     article,
     .card-third {
     	max-width: 315px;
