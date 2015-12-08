@@ -1,10 +1,16 @@
 <?php get_header(); ?>
-
+	<?php 
+		$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); 
+		$image = ($image[0]) ? $image[0] : get_template_directory_uri().'/library/images/red-cross.jpg';
+	?>
+			<div id="pic-banner" style="background-image:url(<? echo $image ?>)">
+				<!-- <img src="<? echo $image ?>" alt="Picture for <?php the_title(); ?>" title="Imagery for <?php the_title(); ?>" /> -->
+			</div>
 			<div id="content">
 
 				<div id="inner-content" class="wrap cf">
 
-					<main id="main" class="m-all t-2of3 d-5of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+					<main id="main" class="m-all -md-post" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
