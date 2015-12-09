@@ -931,7 +931,8 @@ margin: 0;
 .cdbmap {
 	display: none;
 }
-.archive {
+.archive,
+.page {
 	.cdbmap {
 		display: block;
 		height: 600px;
@@ -947,6 +948,27 @@ margin: 0;
 	    background-size: cover;
 	    right: 0px;
 	    top: 20px;
+	}
+	.card-third {
+		height: auto;
+	}
+	.index-row {
+		margin: 60px 0;
+		.resource-list {
+			width: 100%;
+			-webkit-columns: 300px;
+   			-moz-columns: 	 300px;
+        		columns: 	 300px;
+		}
+		.row-container {
+			width: 100%;
+		    flex-wrap: wrap;
+		    justify-content: space-between;
+		}
+		.resource-cont {
+			width: 485px;
+			height: 270px;
+		}
 	}
 }
 .category-news #main{
