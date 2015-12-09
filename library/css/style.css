@@ -1500,7 +1500,7 @@ POSTS & CONTENT STYLES
     background-color: rgba(0, 0, 0, 0.1); }
   #map-fake:after {
     content: "";
-    background: url(../images/IMG_4001.JPG);
+    background: url(../images/bg-home-header);
     top: 0;
     left: 0;
     bottom: 0;
@@ -1538,7 +1538,7 @@ POSTS & CONTENT STYLES
         letter-spacing: 0.7px; }
         #map-fake .what-list > nav span i {
           height: 100px;
-          background-size: 70px;
+          background-size: 50px;
           width: 100px;
           border-radius: 100%;
           background-repeat: no-repeat;
