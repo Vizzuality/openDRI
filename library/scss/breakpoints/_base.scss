@@ -931,6 +931,16 @@ margin: 0;
 .cdbmap {
 	display: none;
 }
+.archive {
+	.cdbmap {
+		display: block;
+		height: 600px;
+		margin: 0 0 90px;
+	}
+}
+#list-content {
+	margin: 0;
+}
 .-md-post {
 	position: relative;
 }
