@@ -1958,6 +1958,27 @@ POSTS & CONTENT STYLES
   background-size: cover;
   right: 0px;
   top: 20px; }
+.archive .card-third,
+.page .card-third {
+  height: auto; }
+.archive .index-row,
+.page .index-row {
+  margin: 60px 0; }
+  .archive .index-row .resource-list,
+  .page .index-row .resource-list {
+    width: 100%;
+    -webkit-columns: 300px;
+    -moz-columns: 300px;
+    columns: 300px; }
+  .archive .index-row .row-container,
+  .page .index-row .row-container {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .archive .index-row .resource-cont,
+  .page .index-row .resource-cont {
+    width: 485px;
+    height: 270px; }
 
 .category-news #main {
   margin: 50px 0 0 0; }
