@@ -1942,11 +1942,13 @@ POSTS & CONTENT STYLES
 .cdbmap {
   display: none; }
 
-.archive .cdbmap {
+.archive .cdbmap,
+.page .cdbmap {
   display: block;
   height: 600px;
   margin: 0 0 90px; }
-.archive .corner-map {
+.archive .corner-map,
+.page .corner-map {
   height: 460px;
   width: 650px;
   z-index: -1;
