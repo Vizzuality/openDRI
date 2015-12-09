@@ -1942,6 +1942,35 @@ POSTS & CONTENT STYLES
 .cdbmap {
   display: none; }
 
+.archive .cdbmap {
+  display: block;
+  height: 600px;
+  margin: 0 0 90px; }
+.archive .corner-map {
+  height: 460px;
+  width: 650px;
+  z-index: -1;
+  position: absolute;
+  background-image: url(../images/bg-mapamundi.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  right: 0px;
+  top: 20px; }
+
+.category-news #main {
+  margin: 50px 0 0 0; }
+  .category-news #main > h1,
+  .category-news #main > h3 {
+    max-width: 35%; }
+    .category-news #main > h1::first-letter,
+    .category-news #main > h3::first-letter {
+      text-transform: uppercase; }
+  .category-news #main > h3 {
+    margin: 0 0 70px; }
+
+#list-content {
+  margin: 0; }
+
 .-md-post {
   position: relative; }
 

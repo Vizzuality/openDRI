@@ -931,6 +931,40 @@ margin: 0;
 .cdbmap {
 	display: none;
 }
+.archive {
+	.cdbmap {
+		display: block;
+		height: 600px;
+		margin: 0 0 90px;
+	}
+	.corner-map {
+	    height: 460px;
+	    width: 650px;
+	    z-index: -1;
+	    position: absolute;
+	    background-image: url(../images/bg-mapamundi.png);
+	    background-position: 50% 50%;
+	    background-size: cover;
+	    right: 0px;
+	    top: 20px;
+	}
+}
+.category-news #main{
+	margin: 50px 0 0 0 ;
+	>h1,
+	>h3{
+		max-width: 35%;
+		&::first-letter {
+			text-transform: uppercase;
+		}
+	}
+	>h3 {
+		margin: 0 0 70px;
+	}
+}
+#list-content {
+	margin: 0;
+}
 .-md-post {
 	position: relative;
 }

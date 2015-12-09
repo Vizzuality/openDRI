@@ -33,7 +33,7 @@
 		<script src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
 		<script>
 			window.onload = function() {
-			  cartodb.createVis('map', 'http://documentation.cartodb.com/api/v2/viz/2b13c956-e7c1-11e2-806b-5404a6a683d5/viz.json');
+			  cartodb.createVis('map', 'https://simbiotica.cartodb.com/api/v2/viz/a33b76fe-1a91-11e5-89c2-0e853d047bba/viz.json');
 			}
 		  // Twitter
 		  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
