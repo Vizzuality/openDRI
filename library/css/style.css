@@ -1500,7 +1500,7 @@ POSTS & CONTENT STYLES
     background-color: rgba(0, 0, 0, 0.1); }
   #map-fake:after {
     content: "";
-    background: url(../images/bg-home-header);
+    background: url(../images/bg-home-header.jpg);
     top: 0;
     left: 0;
     bottom: 0;
