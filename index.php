@@ -72,7 +72,7 @@
 					<div class="card-third">
 						<h3>projects</h3>
 						<p>Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Ullam id dolor.</p>
-						<a href="<?php echo home_url(); ?>/projects"><span>view all projects</span></a>
+						<a href="<?php echo home_url(); ?>/category/projects"><span>view all projects</span></a>
 					</div>
 					<?php
 						$args = array( 'numberposts' => '5', 'category' => 'projects' );
