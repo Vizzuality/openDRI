@@ -7,7 +7,13 @@
 						<main id="main" class="m-all t-2of3 d-5of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
 							<?php
-							the_archive_title( '<h1 class="page-title">', '</h1>' );
+							// the_archive_title( '<h1 class="page-title">', '</h1>' );
+							if ( is_category() ) {
+								$title = sprintf( __( '%s' ), 	   single_cat_title( '', false ) );
+							} elseif ( is_tag() ) {
+								$title = sprintf( __( 'Tag: %s' ), single_tag_title( '', false ) );
+							}
+							echo '<h1 class="page-title">'.$title.'</h1>';
 							the_archive_description( '<div class="taxonomy-description">', '</div>' );
 							?>
 							
@@ -65,7 +71,7 @@
 
 						</main>
 
-					<?php get_sidebar(); ?>
+					<?php // get_sidebar(); ?>
 
 				</div>
 
