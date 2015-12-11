@@ -12,7 +12,7 @@
 						<nav>
 							<a href="<?php echo home_url(); ?>/category/projects" class="-i-link">projects</a>
 							<a href="<?php echo home_url(); ?>/resources" class="-i-link">resources</a>
-							<a href="<?php echo home_url(); ?>/#" class="-i-link">about</a>
+							<a href="<?php echo home_url(); ?>/about" class="-i-link">about</a>
 							<a href="<?php echo home_url(); ?>/category/news" class="-i-link">news</a>
 						</nav>
 					</div>
