@@ -125,9 +125,18 @@ elseif ( is_page( 'about' ) ) {
 							<div id="" class="m-all cf index-row contents-img">
 								<span class="img-bridge"></span>
 							</div>
-							<div class="m-all cf index-row last-resources">
+							<div class="p-info">
+								<h4>open data platforms</h4>
+								<p>
+									To increase public access to risk information, OpenDRI engages in dialogue with governments on the value of open data through working groups, pilot projects that evolve into long-term locally owned open data projects. OpenDRI provides technical solutions and assistance for the project implementation through GeoNode, a free and open source data sharing platform.
+								</p>
 							</div>
-
+							<div class="p-info">
+								<h4>community mapping and crowdsourcing</h4>
+								<p>
+									To engage communities in the creation of accurate and timely data about the rapidly evolving urban and rural environments in the place they live, OpenDRI works with governments and local communities to utilize simple, collaborative, crowdsourcing mapping tools such as OpenStreetMap (OSM). OpenDRI has also created and is supervising the Open Cities Project (http://www.opencitiesproject.org/) that facilitates community-mapping activities.
+								</p>
+							</div>
 						</main>
 
 						<?php /* get_sidebar();*/ ?>
