@@ -948,6 +948,22 @@ margin: 0;
 	    background-size: cover;
 	    right: 0px;
 	    top: 20px;
+	    &.about {
+	    	top: 680px;
+	    }
+	}
+	#about {
+		.card-third {
+			max-width: none;
+			p {
+		 -webkit-columns:    340px;
+   			-moz-columns: 	 340px;
+        		 columns: 	 340px;
+			}
+		}
+		h3 {
+			color: #1477c9;
+		}
 	}
 	.card-third {
 		height: auto;
@@ -956,9 +972,9 @@ margin: 0;
 		margin: 60px 0;
 		.resource-list {
 			width: 100%;
-			-webkit-columns: 300px;
+		 -webkit-columns:    300px;
    			-moz-columns: 	 300px;
-        		columns: 	 300px;
+        		 columns: 	 300px;
 		}
 		.row-container {
 			width: 100%;
