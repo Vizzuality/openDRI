@@ -949,12 +949,13 @@ margin: 0;
 	    right: 0px;
 	    top: 20px;
 	    &.about {
-	    	top: 680px;
+	    	top: 730px;
 	    }
 	}
 	#about {
 		.card-third {
 			max-width: none;
+			margin: 0 15px;
 			p {
 		 -webkit-columns:    340px;
    			-moz-columns: 	 340px;
@@ -965,11 +966,36 @@ margin: 0;
 			color: #1477c9;
 		}
 	}
+	.img-bridge {
+		width: 100%;
+		height: 280px;
+		position: relative;
+		&:after {
+			content: "";
+			background: url(../images/bridge.jpg);
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			position: absolute;
+			z-index: -1;   
+			background-size: cover;
+			background-position: 50% 50%;
+		}
+		background-color: rgba(0,0,0,0.2);
+	    transition: background-color 0.2s ease;
+	    &:hover {
+	    	background-color: rgba(0,0,0,0.1);
+	    }
+	}
 	.card-third {
 		height: auto;
 	}
 	.index-row {
 		margin: 60px 0;
+		&.contents-image {
+			margin: 0;
+		}
 		.resource-list {
 			width: 100%;
 		 -webkit-columns:    300px;
