@@ -949,7 +949,12 @@ margin: 0;
 	    right: 0px;
 	    top: 20px;
 	    &.about {
-	    	top: 730px;
+	    	    top: 730px;
+			    height: 890px;
+			    right: -60%;
+			    background-size: cover;
+			    background-repeat: no-repeat;
+			    width: 1340px;
 	    }
 	}
 	#about {
@@ -964,6 +969,21 @@ margin: 0;
 		}
 		h3 {
 			color: #1477c9;
+		}
+	}
+	.p-info {
+		display: flex;
+		justify-content: center;
+		position: relative;
+		margin: 0 0 45px;
+		h4 {
+			position: absolute;
+			left: 0;
+			margin: 0;
+		}
+		p {
+			margin: 0;
+			width: 315px;
 		}
 	}
 	.img-bridge {
