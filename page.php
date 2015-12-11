@@ -105,6 +105,34 @@ if ( is_page( 'resources' ) ) {
 				</div>
 
 			</div>
-<? } // end about?>
+<? } // end resources
 
+elseif ( is_page( 'about' ) ) {
+?>
+
+<span class="corner-map about"></span>
+			<div id="content">
+
+				<div id="inner-content" class="wrap cf">
+
+						<main id="main" class="m-all cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+							<div id="about" class="m-all cf index-row">
+								<div class="card-third">
+									<h3>OpenDRI background</h3>
+									<p>In 2011, GFDRR launched the Open Data for Resilience Initiative (OpenDRI) to apply the concepts of the global open data movement to the challenges of reducing vulnerability to natural hazards and the impacts of climate change. OpenDRI supports World Bank Regional Disaster Risk Management Teams to build capacity and long-term ownership of open data projects with client countries that are tailored to meet specific needs and goals of stakeholders. OpenDRI engages with client governments in three main areas:</p>
+								</div>
+							</div>
+							<div id="" class="m-all cf index-row">
+							</div>
+							<div class="m-all cf index-row last-resources">
+							</div>
+
+						</main>
+
+						<?php /* get_sidebar();*/ ?>
+
+				</div>
+
+			</div>
+<? } // end about?>
 <?php get_footer(); ?>
