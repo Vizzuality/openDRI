@@ -1958,6 +1958,20 @@ POSTS & CONTENT STYLES
   background-size: cover;
   right: 0px;
   top: 20px; }
+  .archive .corner-map.about,
+  .page .corner-map.about {
+    top: 680px; }
+.archive #about .card-third,
+.page #about .card-third {
+  max-width: none; }
+  .archive #about .card-third p,
+  .page #about .card-third p {
+    -webkit-columns: 340px;
+    -moz-columns: 340px;
+    columns: 340px; }
+.archive #about h3,
+.page #about h3 {
+  color: #1477c9; }
 .archive .card-third,
 .page .card-third {
   height: auto; }
