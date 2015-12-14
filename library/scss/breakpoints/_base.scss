@@ -991,6 +991,10 @@ margin: 0;
 	#contact {
 		display: flex;
 		justify-content: space-between;
+		align-items: flex-start;
+		.index-row {
+			margin: 0;
+		}
 		.contact-form {
 			background: $white;
 			box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
@@ -1015,6 +1019,13 @@ margin: 0;
 				width: 60%;
 				height: 150px;
 				box-shadow: 0px 1px 4px #eee;
+			}
+			.contact-submit {
+				text-align: right;
+				.pushbutton-wide {
+					border: 0;
+    				color: rgba(85,85,85,0.3);
+				}
 			}
 		}
 	}
