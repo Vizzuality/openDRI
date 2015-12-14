@@ -1998,7 +1998,11 @@ POSTS & CONTENT STYLES
 .archive #contact,
 .page #contact {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: flex-start; }
+  .archive #contact .index-row,
+  .page #contact .index-row {
+    margin: 0; }
   .archive #contact .contact-form,
   .page #contact .contact-form {
     background: #fff;
@@ -2027,6 +2031,13 @@ POSTS & CONTENT STYLES
       width: 60%;
       height: 150px;
       box-shadow: 0px 1px 4px #eee; }
+    .archive #contact .contact-form .contact-submit,
+    .page #contact .contact-form .contact-submit {
+      text-align: right; }
+      .archive #contact .contact-form .contact-submit .pushbutton-wide,
+      .page #contact .contact-form .contact-submit .pushbutton-wide {
+        border: 0;
+        color: rgba(85, 85, 85, 0.3); }
 .archive .-m-disclaimer h3,
 .page .-m-disclaimer h3 {
   color: #1477c9; }
