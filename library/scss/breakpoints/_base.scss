@@ -948,17 +948,154 @@ margin: 0;
 	    background-size: cover;
 	    right: 0px;
 	    top: 20px;
+	    &.about {
+	    	    top: 730px;
+			    height: 890px;
+			    right: 0px;
+			    background-size: cover;
+			    background-repeat: no-repeat;
+			    width: 800px;
+			    background-position: 0;
+	    }
+	}
+	.about-content {
+		.card-third {
+			max-width: none;
+			margin: 0 15px;
+			p {
+		 -webkit-columns:    340px;
+   			-moz-columns: 	 340px;
+        		 columns: 	 340px;
+			}
+			ol {
+				list-style: decimal;
+			    display: flex;
+			    flex-direction: column;
+			    flex-wrap: wrap;
+			    height: 300px;
+    			width: 150%;
+			    li {
+			    	width: 80%;
+			    }
+			    h4 {
+			    	margin: 5px 0;
+				    color: #555;
+				    font-weight: 600;
+			    }
+			}
+		}
+		h3 {
+			color: #1477c9;
+		}
+	}
+	#contact {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		.index-row {
+			margin: 0;
+		}
+		.contact-form {
+			background: $white;
+			box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+			padding: 20px;
+			label,
+			input,
+			textarea {
+				display: inline;
+				font-size: 15px;
+				box-shadow: 0px 1px 0 #eee;
+				background: transparent;
+			}
+			label {
+				text-transform: uppercase;
+				width: 200px;
+			    float: left;
+			    text-align: right;
+			    padding: 13px 15px 0px 0;
+			    box-shadow: 0 0 0 transparent;
+			}
+			textarea {
+				width: 60%;
+				height: 150px;
+				box-shadow: 0px 1px 4px #eee;
+			}
+			.contact-submit {
+				text-align: right;
+				.pushbutton-wide {
+					border: 0;
+    				color: rgba(85,85,85,0.3);
+				}
+			}
+		}
+	}
+	.-m-disclaimer {
+		h3 {
+			color: #1477c9;
+		}
+	}
+	.p-info {
+		display: flex;
+		justify-content: center;
+		position: relative;
+		margin: 0 0 45px;
+		&.double {
+			justify-content: flex-start;
+			p {
+				width: calc(100%/3 *2); // 66%
+			}
+		}
+		h4 {
+			position: absolute;
+			left: 0;
+			margin: 0;
+			color: #1477c9;
+			text-transform: uppercase;
+			font-size: 17px;
+			width: 315px;
+		}
+		p {
+			margin: 0;
+			line-height: 23px;
+			font-size: 15px;
+			width: 315px;
+		}
+	}
+	.img-bridge {
+		width: 100%;
+		height: 280px;
+		position: relative;
+		&:after {
+			content: "";
+			background: url(../images/bridge.jpg);
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			position: absolute;
+			z-index: -1;   
+			background-size: cover;
+			background-position: 50% 50%;
+		}
+		background-color: rgba(0,0,0,0.2);
+	    transition: background-color 0.2s ease;
+	    &:hover {
+	    	background-color: rgba(0,0,0,0.1);
+	    }
 	}
 	.card-third {
 		height: auto;
 	}
 	.index-row {
 		margin: 60px 0;
+		&.contents-image {
+			margin: 0;
+		}
 		.resource-list {
 			width: 100%;
-			-webkit-columns: 300px;
+		 -webkit-columns:    300px;
    			-moz-columns: 	 300px;
-        		columns: 	 300px;
+        		 columns: 	 300px;
 		}
 		.row-container {
 			width: 100%;

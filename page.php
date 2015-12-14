@@ -105,6 +105,106 @@ if ( is_page( 'resources' ) ) {
 				</div>
 
 			</div>
-<? } // end about?>
+<? } // end resources
 
+elseif ( is_page( 'about' ) ) {
+?>
+
+<span class="corner-map about"></span>
+			<div id="content">
+
+				<div id="inner-content" class="wrap cf">
+
+						<main id="main" class="m-all cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+							<div id="about" class="m-all cf index-row about-content">
+								<div class="card-third">
+									<h3>OpenDRI background</h3>
+									<p>In 2011, GFDRR launched the Open Data for Resilience Initiative (OpenDRI) to apply the concepts of the global open data movement to the challenges of reducing vulnerability to natural hazards and the impacts of climate change. OpenDRI supports World Bank Regional Disaster Risk Management Teams to build capacity and long-term ownership of open data projects with client countries that are tailored to meet specific needs and goals of stakeholders. OpenDRI engages with client governments in three main areas:</p>
+								</div>
+							</div>
+							<div id="" class="m-all cf index-row contents-img">
+								<span class="img-bridge"></span>
+							</div>
+							<div class="p-info">
+								<h4>open data platforms</h4>
+								<p>
+									To increase public access to risk information, OpenDRI engages in dialogue with governments on the value of open data through working groups, pilot projects that evolve into long-term locally owned open data projects. OpenDRI provides technical solutions and assistance for the project implementation through GeoNode, a free and open source data sharing platform.
+								</p>
+							</div>
+							<div class="p-info">
+								<h4>community mapping and crowdsourcing</h4>
+								<p>
+									To engage communities in the creation of accurate and timely data about the rapidly evolving urban and rural environments in the place they live, OpenDRI works with governments and local communities to utilize simple, collaborative, crowdsourcing mapping tools such as OpenStreetMap (OSM). OpenDRI has also created and is supervising the Open Cities Project (http://www.opencitiesproject.org/) that facilitates community-mapping activities.
+								</p>
+							</div>
+							<div class="p-info">
+								<h4>risk cisualizaion and communication</h4>
+								<p>
+									To communicate risk more effectively to decision-makers in planning, preparedness and response activities, OpenDRI works with governments and partners to develop InaSAFE software. By combining data from scientists, local governments and communities, InaSAFE provides insights into the likely effects of disaster events.
+								</p>
+							</div>
+							<div class="p-info double">
+								<p>
+									The OpenDRI team, in partnership with international and national agencies, has developed this suite of complementary tools to improve risk information through better access to data. These tools have global developer and user communities, all of whom contribute to the ongoing use and development of the tools – all of which are aimed at providing better information for decision makers at all levels to take action to reduce, prepare for, and recover from disaster risks. While engaging with government to leverage the usage of these tools, the OpenDRI also strive to create local communities of user and developers involving government agencies, universities, NGOs, innovation hub to create sustainable capacity.
+								</p>
+							</div>
+							<div id="" class="m-all cf index-row about-content">
+								<div class="card-third">
+									<h3>Our principles</h3>
+									<ol>
+										<li><h4>Open by default</h4>
+											Relevant caveats about privacy etc Collect once, use many times.
+										</li>
+										<li><h4>Accesible</h4>
+											Relevant caveats about privacy etc Collect once, use many times.
+										</li>
+										<li><h4>Co-Creation</h4>
+											Relevant caveats about privacy etc Collect once, use many times.
+										</li>
+										<li><h4>Partnership</h4>
+											Relevant caveats about privacy etc Collect once, use many times.
+										</li>
+										<li><h4>Licensed</h4>
+											Relevant caveats about privacy etc Collect once, use many times.
+										</li>
+										<li><h4>Documented</h4>
+											Relevant caveats about privacy etc Collect once, use many times.
+										</li>
+										<li><h4>Local ownsership</h4>
+											Relevant caveats about privacy etc Collect once, use many times.
+										</li>
+										<li><h4>Open source</h4>
+											Relevant caveats about privacy etc Collect once, use many times.
+										</li>
+										<li><h4>Open data communities</h4>
+											Relevant caveats about privacy etc Collect once, use many times.
+										</li>
+										<li><h4>Build tools</h4>
+											Relevant caveats about privacy etc Collect once, use many times.
+										</li>
+									</ol>
+								</div>
+							</div>
+							<div id="contact">
+								<div class="-m-disclaimer m-all cf index-row">
+									<div class="card-third">
+										<h3>Contact</h3>
+										<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+										<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum.</p>
+									</div>
+								</div>
+								<div class="-m-form">
+									<?php if (have_posts()) : while (have_posts()) : the_post();
+										the_content();
+									endwhile; endif; ?>
+								</div>
+							</div>
+						</main>
+
+						<?php /* get_sidebar();*/ ?>
+
+				</div>
+
+			</div>
+<? } // end about?>
 <?php get_footer(); ?>
