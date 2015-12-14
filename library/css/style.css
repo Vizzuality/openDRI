@@ -1962,10 +1962,11 @@ POSTS & CONTENT STYLES
   .page .corner-map.about {
     top: 730px;
     height: 890px;
-    right: -60%;
+    right: 0px;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 1340px; }
+    width: 800px;
+    background-position: 0; }
 .archive .about-content .card-third,
 .page .about-content .card-third {
   max-width: none;
@@ -1975,8 +1976,59 @@ POSTS & CONTENT STYLES
     -webkit-columns: 340px;
     -moz-columns: 340px;
     columns: 340px; }
+  .archive .about-content .card-third ol,
+  .page .about-content .card-third ol {
+    list-style: decimal;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 150%; }
+    .archive .about-content .card-third ol li,
+    .page .about-content .card-third ol li {
+      width: 80%; }
+    .archive .about-content .card-third ol h4,
+    .page .about-content .card-third ol h4 {
+      margin: 5px 0;
+      color: #555;
+      font-weight: 600; }
 .archive .about-content h3,
 .page .about-content h3 {
+  color: #1477c9; }
+.archive #contact,
+.page #contact {
+  display: flex;
+  justify-content: space-between; }
+  .archive #contact .contact-form,
+  .page #contact .contact-form {
+    background: #fff;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+    padding: 20px; }
+    .archive #contact .contact-form label,
+    .archive #contact .contact-form input,
+    .archive #contact .contact-form textarea,
+    .page #contact .contact-form label,
+    .page #contact .contact-form input,
+    .page #contact .contact-form textarea {
+      display: inline;
+      font-size: 15px;
+      box-shadow: 0px 1px 0 #eee;
+      background: transparent; }
+    .archive #contact .contact-form label,
+    .page #contact .contact-form label {
+      text-transform: uppercase;
+      width: 200px;
+      float: left;
+      text-align: right;
+      padding: 13px 15px 0px 0;
+      box-shadow: 0 0 0 transparent; }
+    .archive #contact .contact-form textarea,
+    .page #contact .contact-form textarea {
+      width: 60%;
+      height: 150px;
+      box-shadow: 0px 1px 4px #eee; }
+.archive .-m-disclaimer h3,
+.page .-m-disclaimer h3 {
   color: #1477c9; }
 .archive .p-info,
 .page .p-info {
