@@ -151,7 +151,52 @@ elseif ( is_page( 'about' ) ) {
 							<div id="" class="m-all cf index-row about-content">
 								<div class="card-third">
 									<h3>Our principles</h3>
-									<p>In 2011, GFDRR launched the Open Data for Resilience Initiative (OpenDRI) to apply the concepts of the global open data movement to the challenges of reducing vulnerability to natural hazards and the impacts of climate change. OpenDRI supports World Bank Regional Disaster Risk Management Teams to build capacity and long-term ownership of open data projects with client countries that are tailored to meet specific needs and goals of stakeholders. OpenDRI engages with client governments in three main areas:</p>
+									<ol>
+										<li><h4>Open by default</h4>
+											Relevant caveats about privacy etc Collect once, use many times.
+										</li>
+										<li><h4>Accesible</h4>
+											Relevant caveats about privacy etc Collect once, use many times.
+										</li>
+										<li><h4>Co-Creation</h4>
+											Relevant caveats about privacy etc Collect once, use many times.
+										</li>
+										<li><h4>Partnership</h4>
+											Relevant caveats about privacy etc Collect once, use many times.
+										</li>
+										<li><h4>Licensed</h4>
+											Relevant caveats about privacy etc Collect once, use many times.
+										</li>
+										<li><h4>Documented</h4>
+											Relevant caveats about privacy etc Collect once, use many times.
+										</li>
+										<li><h4>Local ownsership</h4>
+											Relevant caveats about privacy etc Collect once, use many times.
+										</li>
+										<li><h4>Open source</h4>
+											Relevant caveats about privacy etc Collect once, use many times.
+										</li>
+										<li><h4>Open data communities</h4>
+											Relevant caveats about privacy etc Collect once, use many times.
+										</li>
+										<li><h4>Build tools</h4>
+											Relevant caveats about privacy etc Collect once, use many times.
+										</li>
+									</ol>
+								</div>
+							</div>
+							<div id="contact">
+								<div class="-m-disclaimer m-all cf index-row">
+									<div class="card-third">
+										<h3>Contact</h3>
+										<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+										<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum.</p>
+									</div>
+								</div>
+								<div class="-m-form">
+									<?php if (have_posts()) : while (have_posts()) : the_post();
+										the_content();
+									endwhile; endif; ?>
 								</div>
 							</div>
 						</main>
