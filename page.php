@@ -200,10 +200,10 @@ elseif ( is_page( 'about' ) ) {
 								</div>
 							</div>
 							<div id="more-content" class="index-row more-content">
-							<div class="card-third">
-								<h3>Related web pages</h3>
-							</div>
-							<div class="row-container">
+								<div class="card-third">
+									<h3>Related web pages</h3>
+								</div>
+								<div class="row-container">
 								<?php
 									$args = array( 'numberposts' => '3', 'category' => $CAT_NAME );
 									$recent_posts = wp_get_recent_posts( $args );
@@ -234,6 +234,21 @@ elseif ( is_page( 'about' ) ) {
 										</article>
 								<?}	// end loop?>
 							</div>
+						</div>
+						<div id="members" class="index-row more-content">
+								<div class="card-third">
+									<h3>Team members</h3>
+								</div>
+								<div class="row-container">
+									<div class="-m-team-member">
+										<img src="">
+										<div class="-m-info">
+											<span class="name">Francis Ghesquiere</span>
+											<span class="title">Head of GFDRR</span>
+											<p>Mr. Ghesquiere has extensive experience on policies and instruments to mainstream disaster risk management in development strategies and programs. He has participated in numerous post disaster operations and spent more than ten years building the World Bank disaster risk management practice in Latin America and the Caribbean and in South Asia. He is known for his leadership on a number of flagship initiatives, including the Caribbean Catastrophe Risk Insurance Facility (CCRIF), the Central America Probabilistic Risk Modeling Initiative, and the Understanding Risk Forum (UR). He was also key in the design of new policy instruments to help accelerate World Bank response to disasters, including the policy on emergency operations and innovative contingent financing instruments such as the CAT-DDO and Contingency Components. Mr. Ghesquiere holds a Master Degree from the Harvard Kennedy School of Government and an Engineering Degree from the University of Louvain. He also studied Finance and Economics at New York University, ESADE Barcelona and HEC Paris.</p>
+										</div>
+									</div>
+								</div>
 						</div>
 						</main>
 
