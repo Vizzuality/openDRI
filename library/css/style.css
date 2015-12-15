@@ -1982,7 +1982,7 @@ POSTS & CONTENT STYLES
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 300px;
+    height: 320px;
     width: 150%; }
     .archive .about-content .card-third ol li,
     .page .about-content .card-third ol li {
@@ -2038,6 +2038,10 @@ POSTS & CONTENT STYLES
       .page #contact .contact-form .contact-submit .pushbutton-wide {
         border: 0;
         color: rgba(85, 85, 85, 0.3); }
+.archive #more-content h3,
+.page #more-content h3 {
+  color: #1477c9;
+  width: 150%; }
 .archive .-m-disclaimer h3,
 .page .-m-disclaimer h3 {
   color: #1477c9; }
