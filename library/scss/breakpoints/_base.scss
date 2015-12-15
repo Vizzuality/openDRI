@@ -1029,10 +1029,38 @@ margin: 0;
 			}
 		}
 	}
-	#more-content {
+	#more-content,
+	#members {
 		h3 {
 			color: #1477c9;
     		width: 150%;
+		}
+	}
+	#members {
+		.card-third {
+			margin: 0;
+		}
+		.-m-team-member {
+			display: flex;
+			img {
+				height: 213px;
+			    width: 180px;
+			    background: lightgrey;
+			}
+			.-m-info {
+				display: flex;
+				flex-direction: column;
+				width: 70%;
+    			margin: 0 0 0 40px;
+    			.name {
+    				font-weight: 600;
+				    font-size: 20px;
+				    line-height: 28px;
+    			}
+    			.title {
+    				font-style: italic;
+    			}
+			}
 		}
 	}
 	.-m-disclaimer {
