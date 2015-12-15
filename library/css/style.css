@@ -2039,9 +2039,36 @@ POSTS & CONTENT STYLES
         border: 0;
         color: rgba(85, 85, 85, 0.3); }
 .archive #more-content h3,
-.page #more-content h3 {
+.archive #members h3,
+.page #more-content h3,
+.page #members h3 {
   color: #1477c9;
   width: 150%; }
+.archive #members .card-third,
+.page #members .card-third {
+  margin: 0; }
+.archive #members .-m-team-member,
+.page #members .-m-team-member {
+  display: flex; }
+  .archive #members .-m-team-member img,
+  .page #members .-m-team-member img {
+    height: 213px;
+    width: 180px;
+    background: lightgrey; }
+  .archive #members .-m-team-member .-m-info,
+  .page #members .-m-team-member .-m-info {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 0 0 40px; }
+    .archive #members .-m-team-member .-m-info .name,
+    .page #members .-m-team-member .-m-info .name {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 28px; }
+    .archive #members .-m-team-member .-m-info .title,
+    .page #members .-m-team-member .-m-info .title {
+      font-style: italic; }
 .archive .-m-disclaimer h3,
 .page .-m-disclaimer h3 {
   color: #1477c9; }
