@@ -2156,6 +2156,9 @@ POSTS & CONTENT STYLES
       text-transform: uppercase; }
   .category-news #main > h3 {
     margin: 0 0 70px; }
+  .category-news #main .row-container article {
+    max-width: 490px;
+    width: 490px; }
 
 #list-content {
   margin: 0; }
