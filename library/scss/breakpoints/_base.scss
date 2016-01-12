@@ -1142,7 +1142,7 @@ margin: 0;
 		}
 	}
 }
-.category-news #main{
+.category-news #main {
 	margin: 50px 0 0 0 ;
 	>h1,
 	>h3{
@@ -1153,6 +1153,10 @@ margin: 0;
 	}
 	>h3 {
 		margin: 0 0 70px;
+	}
+	.row-container article {
+		max-width: 490px;
+		width: 490px;
 	}
 }
 #list-content {
