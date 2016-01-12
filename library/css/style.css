@@ -1642,7 +1642,8 @@ POSTS & CONTENT STYLES
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 350px; }
+    height: 350px;
+    position: relative; }
     .index-row article.resource-cont,
     .index-row .card-third.resource-cont {
       position: relative;
@@ -1743,7 +1744,35 @@ POSTS & CONTENT STYLES
     .index-row .card-third span:hover {
       background: #ff0f47; }
   .index-row .card-third .twitter {
-    overflow: scroll; }
+    overflow: hidden;
+    padding: 1rem;
+    background: white;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+    display: table-row;
+    position: relative;
+    margin-top: 20px; }
+    .index-row .card-third .twitter > span {
+      background-color: #1477c9;
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      top: -20px;
+      left: 10px; }
+      .index-row .card-third .twitter > span .twt-img {
+        background-color: white;
+        width: 60px;
+        height: 60px;
+        transform: scale(0.6);
+        display: block;
+        -webkit-mask: url(../images/twitter-logo.svg) no-repeat 50% 50%;
+        mask: url(../images/twitter-logo.svg) no-repeat 50% 50%; }
+    .index-row .card-third .twitter > h3 {
+      text-align: right;
+      text-transform: uppercase;
+      font-size: 13px;
+      line-height: 23px;
+      color: rgba(85, 85, 85, 0.5);
+      margin: 10px 5px; }
 
 .hentry {
   background-color: #fff;
