@@ -64,7 +64,7 @@
 			        <div class="twitter mod-tweets">
 			          <span><i class="twt-img"></i></span>
 			          <h3>follow us</h3>
-			          <a id="twitter-timeline-link" class="twitter-timeline" href="https://twitter.com/gfdrr" data-widget-id="452107742602219521" data-chrome="nofooter noheader noscrollbar transparent" width="280" height="470">Tweets by @gfdrr</a>
+			          <a id="twitter-timeline-link" class="twitter-timeline" href="https://twitter.com/gfdrr" data-widget-id="452107742602219521" data-chrome="nofooter noheader noscrollbar transparent" width="280" height="260">Tweets by @gfdrr</a>
 			        </div>
 				</div>
 			</div>
