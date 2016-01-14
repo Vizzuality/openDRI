@@ -39,6 +39,10 @@
 		<?php // end analytics ?>
 
 		<link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" />
+		<script type="text/javascript">
+			var LAT_VIS   = null;
+			var LONG_VIS  = null;
+		</script>
 	</head>
 
 	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
@@ -50,7 +54,7 @@
 					</p>
 					<span class='hr'></span>
 					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
-						<span><a href="<?php echo home_url(); ?>/category/projects">projects</a></span>
+						<span><a href="<?php echo home_url(); ?>/project">projects</a></span>
 						<span><a href="<?php echo home_url(); ?>/resources">resources</a></span>
 						<span><a href="<?php echo home_url(); ?>/about">about</a></span>
 						<span><a href="<?php echo home_url(); ?>/category/news">news</a></span>
