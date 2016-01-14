@@ -10,7 +10,7 @@
 							</div>
 						</div>
 						<nav>
-							<a href="<?php echo home_url(); ?>/category/projects" class="-i-link">projects</a>
+							<a href="<?php echo home_url(); ?>/project" class="-i-link">projects</a>
 							<a href="<?php echo home_url(); ?>/resources" class="-i-link">resources</a>
 							<a href="<?php echo home_url(); ?>/about" class="-i-link">about</a>
 							<a href="<?php echo home_url(); ?>/category/news" class="-i-link">news</a>
@@ -33,7 +33,7 @@
 		<script src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
 		<script>
 			window.onload = function() {
-			  cartodb.createVis('map', 'https://simbiotica.cartodb.com/api/v2/viz/a33b76fe-1a91-11e5-89c2-0e853d047bba/viz.json');
+			  cartodb.createVis('map', 'https://opendri.cartodb.com/api/v2/viz/2a76c010-badd-11e5-9ed5-0ecd1babdde5/viz.json');
 			}
 		  // Twitter
 		  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
