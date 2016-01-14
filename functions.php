@@ -149,7 +149,34 @@ function bones_theme_customizer($wp_customize) {
 }
 
 add_action( 'customize_register', 'bones_theme_customizer' );
+function save_on_cartodb( $post_id ) {
 
+  // If this is just a revision, don't send the email.
+  if ( wp_is_post_revision( $post_id ) )
+    return;
+  
+  $cdb_api_key = get_option('CDB_API_KEY');
+  
+  if ($cdb_api_key) {
+    $url = "https://opendri.cartodb.com/api/v2/sql?q=";
+    $api_bit = "&api_key=$cdb_api_key";
+    $geodata__lat       = $_REQUEST["_wppl_lat"];
+    $geodata__long      = $_REQUEST["_wppl_long"];
+    $geodata__title     = $_REQUEST["post_title"];
+    $geodata__address   = $_REQUEST['_wppl_address'];
+
+    if ($_REQUEST["original_publish"] != 'Update') {
+      // insert new row
+      $query = "INSERT INTO wp_projects (wp_post_id, the_geom, name, location) VALUES ($post_id, ST_SetSRID(ST_Point($geodata__long, $geodata__lat),4326), '$geodata__title', '$geodata__address')"; 
+    } else {
+      // update existing row
+      $query = "UPDATE wp_projects SET the_geom = ST_SetSRID(ST_Point($geodata__long, $geodata__lat),4326), name = '$geodata__title', location = '$geodata__address' WHERE wp_post_id = $post_id "; 
+    }
+    $url .= urlencode($query).$api_bit;
+    $response = wp_remote_get($url);
+  }
+}
+add_action( 'save_post', 'save_on_cartodb', 10, 3  );
 /************* ACTIVE SIDEBARS ********************/
 
 // Sidebars & Widgetizes Areas
