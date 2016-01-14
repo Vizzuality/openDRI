@@ -18,6 +18,10 @@
 						<?
 							$cats 		= get_the_category();
 							$CAT_NAME   = $cats[0]->name;
+							$thispostid = get_the_ID();
+							$geodata = $GLOBALS['wpdb']->get_row( "SELECT * FROM wp_places_locator WHERE post_id = $thispostid ;", ARRAY_A );
+							$geodata__lat       = $geodata['lat'];
+    						$geodata__long      = $geodata['long'];
 						?>
 							<?php
 								/*
@@ -107,6 +111,8 @@
 			</section>
 		</div>
 		<script type="text/javascript">
+			LAT_VIS   = '<? echo $geodata__lat ?>';
+			LONG_VIS  = '<? echo $geodata__long ?>';
 			if ('<? echo $CAT_NAME?>' === 'projects' || '<? echo get_post_type( get_the_ID() )?>' === 'project') {
 				document.getElementById('pic-banner').style.display = 'none';
 				document.getElementById('map').style.display 		= 'block';

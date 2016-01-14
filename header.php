@@ -39,6 +39,10 @@
 		<?php // end analytics ?>
 
 		<link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" />
+		<script type="text/javascript">
+			var LAT_VIS   = null;
+			var LONG_VIS  = null;
+		</script>
 	</head>
 
 	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
