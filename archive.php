@@ -8,8 +8,7 @@ if ( is_category() ) {
 } elseif ( is_tag() ) {
 	$title = sprintf( __( 'Tag: %s' ), single_tag_title( '', false ) );
 }
-
-if(is_category() && $title ==='projects') {
+if(is_post_type_archive()) {
 	echo '<div id="map" class="cdbmap"></div>';
 } elseif (is_category() && $title === 'news') {
 	echo '<span class="corner-map"></span>';
