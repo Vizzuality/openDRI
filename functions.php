@@ -154,7 +154,6 @@ function save_on_cartodb( $post_id ) {
   // If this is just a revision, don't send the email.
   if ( wp_is_post_revision( $post_id ) )
     return;
-  
   $cdb_api_key = get_option('CDB_API_KEY');
   
   if ($cdb_api_key) {
