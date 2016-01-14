@@ -107,7 +107,7 @@
 			</section>
 		</div>
 		<script type="text/javascript">
-			if ('<? echo $CAT_NAME?>' === 'projects') {
+			if ('<? echo $CAT_NAME?>' === 'projects' || '<? echo get_post_type( get_the_ID() )?>' === 'project') {
 				document.getElementById('pic-banner').style.display = 'none';
 				document.getElementById('map').style.display 		= 'block';
 			}	

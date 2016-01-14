@@ -50,7 +50,7 @@
 					</p>
 					<span class='hr'></span>
 					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
-						<span><a href="<?php echo home_url(); ?>/category/projects">projects</a></span>
+						<span><a href="<?php echo home_url(); ?>/project">projects</a></span>
 						<span><a href="<?php echo home_url(); ?>/resources">resources</a></span>
 						<span><a href="<?php echo home_url(); ?>/about">about</a></span>
 						<span><a href="<?php echo home_url(); ?>/category/news">news</a></span>
