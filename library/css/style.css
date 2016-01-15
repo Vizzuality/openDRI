@@ -1824,6 +1824,9 @@ POSTS & CONTENT STYLES
     padding: 2.5rem;
     border: 0;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.2); }
+    .hentry.--odri-post.category-news {
+      display: inline-block;
+      width: 70%; }
     .hentry.--odri-post h1 {
       color: #1477c9;
       font-size: 48px;
@@ -2444,6 +2447,14 @@ COMMENT FORM STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
+.sidebar {
+  display: inline-block;
+  float: right;
+  margin-top: 4rem; }
+  .sidebar a {
+    color: #1477c9;
+    text-decoration: none; }
+
 .widget ul li {
   /* deep nesting */ }
 
@@ -2729,7 +2740,7 @@ you can add resource intensive styles.
   SIDEBARS & ASIDES
   *********************/
   .sidebar {
-    margin-top: 2.2em; }
+    margin-top: 4em; }
 
   .widgettitle {
     border-bottom: 2px solid #444;
