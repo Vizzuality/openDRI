@@ -747,7 +747,7 @@ POSTS & CONTENT STYLES
 
 .entry-title {}
 
-.archive-title {}
+.archive-title { color: #1477c9}
 
 /* want to style individual post classes? Booya! */
 .post-id {}         /* post by id (i.e. post-3) */
@@ -1670,7 +1670,8 @@ FOOTER STYLES
 	    }
 	}
 }
-#post-not-found {
+#post-not-found,
+.no-results {
 	background: transparent;
 	border: none;
 	h1 {
