@@ -1694,7 +1694,9 @@ POSTS & CONTENT STYLES
       margin: 0 10px 0px;
       padding: 5px;
       background: inherit;
-      transition: background 0.3s ease; }
+      transition: background 0.3s ease;
+      display: inline-block;
+      width: 100%; }
       .index-row .resource-list li:hover {
         background: #f7f7f7; }
       .index-row .resource-list li > p,
