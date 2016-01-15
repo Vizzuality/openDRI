@@ -203,7 +203,7 @@ HEADER STYLES
 			&.visible {
 				background: transparent;
 			    border-bottom: 1px dotted lightgray;
-			    height: 15px;
+			    height: 20px;
 			    width: 120px;
 			    display: inline;
 			    position: relative;
@@ -1668,5 +1668,32 @@ FOOTER STYLES
 		 a:hover {
 		    color: lighten(rgba(120,120,120,1), 50%);
 	    }
+	}
+}
+#post-not-found {
+	background: transparent;
+	border: none;
+	h1 {
+		color: #1477c9;
+	}
+	input {
+		border-bottom: 1px solid #979797;
+    	display: inline;
+	}
+	.home-404{
+		width: 170px;
+	    background: #db0033;
+	    color: white;
+	    height: 50px;
+	    line-height: 50px;
+	    text-align: center;
+	    text-transform: uppercase;
+	    display: block;
+    	text-decoration: none;
+	}
+	form {
+		#searchsubmit,label {
+			display: none;
+		}
 	}
 }
