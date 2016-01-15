@@ -35,7 +35,8 @@
 			window.onload = function() {
 				if ( !!LAT_VIS && !!LONG_VIS ) {
 					var options = {
-						center : [LAT_VIS,LONG_VIS]
+						center : [LAT_VIS,LONG_VIS],
+						zoom: 6
 					}
 				} else {
 					var options = {}
