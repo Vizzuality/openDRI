@@ -1421,7 +1421,7 @@ HEADER STYLES
       .header nav input.visible {
         background: transparent;
         border-bottom: 1px dotted lightgray;
-        height: 15px;
+        height: 20px;
         width: 120px;
         display: inline;
         position: relative;
@@ -2521,6 +2521,27 @@ FOOTER STYLES
       text-decoration: none; }
     .footer .-ft-legal a:hover {
       color: #f8f8f8; }
+
+#post-not-found {
+  background: transparent;
+  border: none; }
+  #post-not-found h1 {
+    color: #1477c9; }
+  #post-not-found input {
+    border-bottom: 1px solid #979797;
+    display: inline; }
+  #post-not-found .home-404 {
+    width: 170px;
+    background: #db0033;
+    color: white;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    text-decoration: none; }
+  #post-not-found form #searchsubmit, #post-not-found form label {
+    display: none; }
 
 /*********************
 LARGER MOBILE DEVICES
