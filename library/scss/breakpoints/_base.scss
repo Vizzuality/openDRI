@@ -1068,17 +1068,20 @@ margin: 0;
 		}
 	}
 	#more-content,
-	#members {
+	#members,
+	#partners {
 		h3 {
 			color: #1477c9;
     		width: 150%;
 		}
 	}
-	#members {
+	#members,
+	#partners {
 		.card-third {
 			margin: 0;
 		}
-		.-m-team-member {
+		.-m-team-member,
+		.-m-partner {
 			display: flex;
 			img {
 				height: 213px;
@@ -1098,6 +1101,18 @@ margin: 0;
     			.title {
     				font-style: italic;
     			}
+			}
+		}
+		.-m-partner {
+			flex-direction: column;
+			width: 49%;
+			img {
+				height: 155px;
+    			width: 315px;
+			}
+			.-m-info {
+				margin: 0;
+				width: 90%;
 			}
 		}
 	}
