@@ -550,30 +550,36 @@ POSTS & CONTENT STYLES
 			padding: 5px;
 			background: inherit;
 			transition: background 0.3s ease;
+			display: inline-block;
+    		width: 100%;
     		&:hover {
     			background: darken($white, 3%);
-    			cursor: pointer;
     		}
-	    }
-	    p {
-	    	margin: 5px 0;
-	    	display: flex;
-    		justify-content: space-between;
-    		font-size: 15px;
-    		.title {
-    			color: #1477c9;
-    			text-transform: capitalize;
-    		}
-    		.format {
-    			color: #555555;
-    			text-transform: uppercase;
-    		}
-    		.name,
-    		.size {
-    			font-size: 13px;
-    			color: rgba(#555555, 0.5);
-    			text-transform: uppercase;
-    		}
+
+		    >p,
+		    >div p {
+		    	margin: 5px 0;
+		    	display: flex;
+	    		justify-content: space-between;
+	    		font-size: 15px;
+	    		.title {
+	    			color: #1477c9;
+	    			text-transform: capitalize;
+	    			a {
+	    				color: inherit;
+	    			}
+	    		}
+	    		.format {
+	    			color: #555555;
+	    			text-transform: uppercase;
+	    		}
+	    		.name,
+	    		.size {
+	    			font-size: 13px;
+	    			color: rgba(#555555, 0.5);
+	    			text-transform: uppercase;
+	    		}
+		    }
 	    }
     }
     .card-third {
