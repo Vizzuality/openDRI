@@ -1696,24 +1696,31 @@ POSTS & CONTENT STYLES
       background: inherit;
       transition: background 0.3s ease; }
       .index-row .resource-list li:hover {
-        background: #f7f7f7;
-        cursor: pointer; }
-    .index-row .resource-list p {
-      margin: 5px 0;
-      display: flex;
-      justify-content: space-between;
-      font-size: 15px; }
-      .index-row .resource-list p .title {
-        color: #1477c9;
-        text-transform: capitalize; }
-      .index-row .resource-list p .format {
-        color: #555555;
-        text-transform: uppercase; }
-      .index-row .resource-list p .name,
-      .index-row .resource-list p .size {
-        font-size: 13px;
-        color: rgba(85, 85, 85, 0.5);
-        text-transform: uppercase; }
+        background: #f7f7f7; }
+      .index-row .resource-list li > p,
+      .index-row .resource-list li > div p {
+        margin: 5px 0;
+        display: flex;
+        justify-content: space-between;
+        font-size: 15px; }
+        .index-row .resource-list li > p .title,
+        .index-row .resource-list li > div p .title {
+          color: #1477c9;
+          text-transform: capitalize; }
+          .index-row .resource-list li > p .title a,
+          .index-row .resource-list li > div p .title a {
+            color: inherit; }
+        .index-row .resource-list li > p .format,
+        .index-row .resource-list li > div p .format {
+          color: #555555;
+          text-transform: uppercase; }
+        .index-row .resource-list li > p .name,
+        .index-row .resource-list li > p .size,
+        .index-row .resource-list li > div p .name,
+        .index-row .resource-list li > div p .size {
+          font-size: 13px;
+          color: rgba(85, 85, 85, 0.5);
+          text-transform: uppercase; }
   .index-row .card-third h3 {
     font-size: 48px;
     text-transform: capitalize;
