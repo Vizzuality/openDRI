@@ -1696,7 +1696,7 @@ POSTS & CONTENT STYLES
       background: inherit;
       transition: background 0.3s ease;
       display: inline-block;
-      width: 100%; }
+      width: 95%; }
       .index-row .resource-list li:hover {
         background: #f7f7f7; }
       .index-row .resource-list li > p,
