@@ -2078,35 +2078,87 @@ POSTS & CONTENT STYLES
         color: rgba(85, 85, 85, 0.3); }
 .archive #more-content h3,
 .archive #members h3,
+.archive #partners h3,
 .page #more-content h3,
-.page #members h3 {
+.page #members h3,
+.page #partners h3 {
   color: #1477c9;
   width: 150%; }
 .archive #members .card-third,
-.page #members .card-third {
+.archive #partners .card-third,
+.page #members .card-third,
+.page #partners .card-third {
   margin: 0; }
 .archive #members .-m-team-member,
-.page #members .-m-team-member {
+.archive #members .-m-partner,
+.archive #partners .-m-team-member,
+.archive #partners .-m-partner,
+.page #members .-m-team-member,
+.page #members .-m-partner,
+.page #partners .-m-team-member,
+.page #partners .-m-partner {
   display: flex; }
   .archive #members .-m-team-member img,
-  .page #members .-m-team-member img {
+  .archive #members .-m-partner img,
+  .archive #partners .-m-team-member img,
+  .archive #partners .-m-partner img,
+  .page #members .-m-team-member img,
+  .page #members .-m-partner img,
+  .page #partners .-m-team-member img,
+  .page #partners .-m-partner img {
     height: 213px;
     width: 180px;
     background: lightgrey; }
   .archive #members .-m-team-member .-m-info,
-  .page #members .-m-team-member .-m-info {
+  .archive #members .-m-partner .-m-info,
+  .archive #partners .-m-team-member .-m-info,
+  .archive #partners .-m-partner .-m-info,
+  .page #members .-m-team-member .-m-info,
+  .page #members .-m-partner .-m-info,
+  .page #partners .-m-team-member .-m-info,
+  .page #partners .-m-partner .-m-info {
     display: flex;
     flex-direction: column;
     width: 70%;
     margin: 0 0 0 40px; }
     .archive #members .-m-team-member .-m-info .name,
-    .page #members .-m-team-member .-m-info .name {
+    .archive #members .-m-partner .-m-info .name,
+    .archive #partners .-m-team-member .-m-info .name,
+    .archive #partners .-m-partner .-m-info .name,
+    .page #members .-m-team-member .-m-info .name,
+    .page #members .-m-partner .-m-info .name,
+    .page #partners .-m-team-member .-m-info .name,
+    .page #partners .-m-partner .-m-info .name {
       font-weight: 600;
       font-size: 20px;
       line-height: 28px; }
     .archive #members .-m-team-member .-m-info .title,
-    .page #members .-m-team-member .-m-info .title {
+    .archive #members .-m-partner .-m-info .title,
+    .archive #partners .-m-team-member .-m-info .title,
+    .archive #partners .-m-partner .-m-info .title,
+    .page #members .-m-team-member .-m-info .title,
+    .page #members .-m-partner .-m-info .title,
+    .page #partners .-m-team-member .-m-info .title,
+    .page #partners .-m-partner .-m-info .title {
       font-style: italic; }
+.archive #members .-m-partner,
+.archive #partners .-m-partner,
+.page #members .-m-partner,
+.page #partners .-m-partner {
+  flex-direction: column;
+  width: 49%; }
+  .archive #members .-m-partner img,
+  .archive #partners .-m-partner img,
+  .page #members .-m-partner img,
+  .page #partners .-m-partner img {
+    height: 155px;
+    width: 315px; }
+  .archive #members .-m-partner .-m-info,
+  .archive #partners .-m-partner .-m-info,
+  .page #members .-m-partner .-m-info,
+  .page #partners .-m-partner .-m-info {
+    margin: 0;
+    width: 90%; }
 .archive .-m-disclaimer h3,
 .page .-m-disclaimer h3 {
   color: #1477c9; }
