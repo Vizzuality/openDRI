@@ -1853,6 +1853,9 @@ POSTS & CONTENT STYLES
   width: 100%;
   height: 100%; }
 
+.archive-title {
+  color: #1477c9; }
+
 /* want to style individual post classes? Booya! */
 /* post by id (i.e. post-3) */
 /* general post style */
@@ -2522,15 +2525,19 @@ FOOTER STYLES
     .footer .-ft-legal a:hover {
       color: #f8f8f8; }
 
-#post-not-found {
+#post-not-found,
+.no-results {
   background: transparent;
   border: none; }
-  #post-not-found h1 {
+  #post-not-found h1,
+  .no-results h1 {
     color: #1477c9; }
-  #post-not-found input {
+  #post-not-found input,
+  .no-results input {
     border-bottom: 1px solid #979797;
     display: inline; }
-  #post-not-found .home-404 {
+  #post-not-found .home-404,
+  .no-results .home-404 {
     width: 170px;
     background: #db0033;
     color: white;
@@ -2540,7 +2547,9 @@ FOOTER STYLES
     text-transform: uppercase;
     display: block;
     text-decoration: none; }
-  #post-not-found form #searchsubmit, #post-not-found form label {
+  #post-not-found form #searchsubmit, #post-not-found form label,
+  .no-results form #searchsubmit,
+  .no-results form label {
     display: none; }
 
 /*********************
