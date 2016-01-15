@@ -706,6 +706,10 @@ POSTS & CONTENT STYLES
 		padding: 2.5rem;
 		border: 0;
 		box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+		&.category-news {
+			display: inline-block;
+			width: 70%;
+		}
 		h1 {
 			color: #1477c9;
 			font-size: 48px;
@@ -1552,7 +1556,15 @@ COMMENT FORM STYLES
 SIDEBARS & ASIDES
 *********************/
 
-.sidebar {}
+.sidebar {
+	display: inline-block;
+    float: right;
+    margin-top: 4rem;
+    a {
+    	color: #1477c9;
+    	text-decoration: none;
+    }
+}
 
 	.widgettitle {}
 
