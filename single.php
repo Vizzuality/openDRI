@@ -38,8 +38,11 @@
 								 * replace the function below with the contents of the "format.php" file.
 								*/
 								get_template_part( 'post-formats/format', get_post_format() );
-							?>
 
+							if (get_post_type() != 'project') {
+								get_sidebar();
+							}
+							?>
 						<?php endwhile; ?>
 
 						<?php else : ?>
@@ -90,11 +93,12 @@
 											</footer>
 										</article>
 								<?}	// end loop?>
+
 							</div>
 						</div>
 					</main>
 
-					<?php /*get_sidebar(); */?>
+					
 
 				</div>
 
