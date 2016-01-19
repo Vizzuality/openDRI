@@ -87,6 +87,7 @@
 				}
 				if (!! top_principles) {
 					var tab_option = 5;
+					scroll += 80;
 					if (scroll > top_principles) tab_option = 0;
 					if (scroll > top_contact) 	 tab_option = 1;
 					if (scroll > top_more) 	 	 tab_option = 2;
