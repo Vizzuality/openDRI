@@ -2595,6 +2595,8 @@ FOOTER STYLES
       .blue-bar-top .wrapper span.current {
         background-color: white;
         color: #1477c9; }
+        .blue-bar-top .wrapper span.current:hover {
+          background-color: white; }
       .blue-bar-top .wrapper span:hover {
         background-color: rgba(255, 255, 255, 0.2); }
       .blue-bar-top .wrapper span a {
@@ -2610,7 +2612,10 @@ FOOTER STYLES
         margin: 0; }
       .blue-bar-top .wrapper .region-filter li {
         max-width: 160px;
-        padding: 8px; }
+        padding: 8px;
+        cursor: pointer; }
+        .blue-bar-top .wrapper .region-filter li:hover {
+          background-color: rgba(255, 255, 255, 0.2); }
 
 /*********************
 LARGER MOBILE DEVICES
