@@ -1743,6 +1743,9 @@ FOOTER STYLES
 	    	&.current {
 	    		background-color: white;
 			    color: #1477c9;
+			    &:hover {
+		    		background-color: white;
+		    	}
 	    	}
 	    	&:hover {
 	    		background-color: rgba(255,255,255,0.2);
@@ -1765,6 +1768,10 @@ FOOTER STYLES
 	    	li {
 			    max-width: 160px;
 			    padding: 8px;
+			    cursor: pointer;
+			    &:hover {
+			    	background-color: rgba(#fff, 0.2);
+			    }
    	    	}
 	    }
 	}
