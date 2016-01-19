@@ -1752,5 +1752,20 @@ FOOTER STYLES
 	    		color: currentColor;
 	    	}
 	    }
+	    &.filters {}
+	    .region-filter {
+	    	display: none;
+	    	position: absolute;
+    		background-color: rgba(#005ca3,0.8);
+    		top: 28px;
+	    	input {
+	    		background-color: rgba(#000,0.2);
+	    		margin: 0;
+	    	}
+	    	li {
+			    max-width: 160px;
+			    padding: 8px;
+   	    	}
+	    }
 	}
 }
