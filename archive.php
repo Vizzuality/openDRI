@@ -10,12 +10,25 @@ if ( is_category() ) {
 }
 if(is_post_type_archive()) {
 	echo '				<div class="blue-bar-top" id="blue-bar">
-					<div class="wrap wrapper">
-						<span><a href="#principles">our principles</a></span>
-						<span><a href="#contact">contact</a></span>
-						<span><a href="#more-content">related web pages</a></span>
-						<span><a href="#partners">partners</a></span>
-						<span><a href="#members">team members</a></span>
+					<div class="wrap wrapper filters">
+							<div>
+								<span class="title">filter by pillar:</span>
+								<span><a href="#"><i></i>open data platforms</a></span>
+								<span><a href="#"><i></i>community mapping</a></span>
+								<span><a href="#"><i></i>risk visualization</a></span>
+							</div>
+							<div>
+								<span class="title">filter by region</span>
+								<ul class="region-filter">
+									<li><input type="text" id="searchCountries" placeholder="Search country"></li>
+									<li>africa</li>
+									<li>east asia pacific</li>
+									<li>europe and central asia</li>
+									<li>middle east and north africa</li>
+									<li>non wb countries</li>
+									<li>south asia</li>
+								</ul>
+							</div>
 					</div>
 				</div>';
 	echo '<div id="map" class="cdbmap"></div>';
