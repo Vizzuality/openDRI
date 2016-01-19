@@ -70,6 +70,40 @@
 				if(e.keyCode == 13)
 			    	location = location.pathname + '?s=' + $input.val();
 			});
+
+
+			var $bar = $('#blue-bar');
+			var top_principles = $("#principles").offset().top,
+				top_contact	   = $('#contact').offset().top,
+				top_more	   = $('#more-content').offset().top,
+				top_partners   = $('#partners').offset().top,
+				top_members	   = $('#members').offset().top;
+			$(document).scroll(function() {
+				var scroll = $(this).scrollTop();
+				if (scroll > 80) {
+					$bar.addClass("fixed");
+				} else {
+					$bar.removeClass("fixed");
+				}
+				if (!! top_principles) {
+					var tab_option = 5;
+					if (scroll > top_principles) tab_option = 0;
+					if (scroll > top_contact) 	 tab_option = 1;
+					if (scroll > top_more) 	 	 tab_option = 2;
+					if (scroll > top_partners) 	 tab_option = 3;
+					if (scroll > top_members) 	 tab_option = 4;
+
+					if (tab_option < 5) {
+						$bar.find('.current').removeClass('current');
+						$bar.find('.wrapper span')[tab_option].classList.add("current");
+					}
+				}
+			});
+			$bar.on('click', 'span',function(e) {
+				$bar.find('.current').removeClass('current');
+				$(e.target).closest('span').addClass('current');
+			});
+
 		</script>
 
 	</body>
