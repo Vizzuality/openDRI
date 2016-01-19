@@ -2600,6 +2600,17 @@ FOOTER STYLES
       .blue-bar-top .wrapper span a {
         text-decoration: none;
         color: currentColor; }
+    .blue-bar-top .wrapper .region-filter {
+      display: none;
+      position: absolute;
+      background-color: rgba(0, 92, 163, 0.8);
+      top: 28px; }
+      .blue-bar-top .wrapper .region-filter input {
+        background-color: rgba(0, 0, 0, 0.2);
+        margin: 0; }
+      .blue-bar-top .wrapper .region-filter li {
+        max-width: 160px;
+        padding: 8px; }
 
 /*********************
 LARGER MOBILE DEVICES
