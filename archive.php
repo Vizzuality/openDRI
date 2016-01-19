@@ -18,7 +18,7 @@ if(is_post_type_archive()) {
 								<span><a href="#"><i></i>risk visualization</a></span>
 							</div>
 							<div>
-								<span class="title">filter by region</span>
+								<span class="title" id="toggle-filter-region">filter by region</span>
 								<ul class="region-filter">
 									<li><input type="text" id="searchCountries" placeholder="Search country"></li>
 									<li>africa</li>
