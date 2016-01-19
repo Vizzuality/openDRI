@@ -9,6 +9,15 @@ if ( is_category() ) {
 	$title = sprintf( __( 'Tag: %s' ), single_tag_title( '', false ) );
 }
 if(is_post_type_archive()) {
+	echo '				<div class="blue-bar-top" id="blue-bar">
+					<div class="wrap wrapper">
+						<span><a href="#principles">our principles</a></span>
+						<span><a href="#contact">contact</a></span>
+						<span><a href="#more-content">related web pages</a></span>
+						<span><a href="#partners">partners</a></span>
+						<span><a href="#members">team members</a></span>
+					</div>
+				</div>';
 	echo '<div id="map" class="cdbmap"></div>';
 } elseif (is_category() && $title === 'news') {
 	echo '<span class="corner-map"></span>';
