@@ -47,13 +47,13 @@ elseif ( is_page( 'about' ) ) {
 ?>
 <span class="corner-map about"></span>
 			<div id="content">
-				<div class="blue-bar-top">
+				<div class="blue-bar-top" id="blue-bar">
 					<div class="wrap wrapper">
-						<span>our principles</span>
-						<span>contact</span>
-						<span>related web pages</span>
-						<span>partners</span>
-						<span>team members</span>
+						<span><a href="#principles">our principles</a></span>
+						<span><a href="#contact">contact</a></span>
+						<span><a href="#more-content">related web pages</a></span>
+						<span><a href="#partners">partners</a></span>
+						<span><a href="#members">team members</a></span>
 					</div>
 				</div>
 
