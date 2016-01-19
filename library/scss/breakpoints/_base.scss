@@ -169,6 +169,7 @@ HEADER STYLES
 		align-items: center;
 		.no-home & {
 			display: inline-flex;
+			justify-content: space-between;
 		    position: relative;
 		    float: right;
 		    height: 100%;
@@ -655,6 +656,35 @@ POSTS & CONTENT STYLES
 }
 #content {
 	// margin-top: 1.5em;
+	.blue-bar-top {
+		background-color: #1477c9;
+	    box-shadow: 1px 1px 7px rgba(0,0,0,0.2);
+	    height: 43px;
+	    display: flex;
+    	align-items: center;
+    	.wrapper {
+    		color: white;
+		    text-transform: uppercase;
+		    font-size: 15px;
+		    font-weight: bold;
+		    display: flex;
+		    justify-content: space-between;
+		    span {
+				border-radius: 5px;
+    			padding: 3px 10px;
+		    	cursor: pointer;
+		    	background-color: inherit;
+		    	transition: background-color 0.35s ease;
+		    	&.current {
+		    		background-color: white;
+				    color: #1477c9;
+		    	}
+		    	&:hover {
+		    		background-color: rgba(255,255,255,0.2);
+		    	}
+		    }
+    	}
+	}
 }
 
 .hentry {
