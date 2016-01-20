@@ -2597,11 +2597,43 @@ FOOTER STYLES
         color: #1477c9; }
         .blue-bar-top .wrapper span.current:hover {
           background-color: white; }
+        .blue-bar-top .wrapper span.current i {
+          background-color: #1477c9; }
       .blue-bar-top .wrapper span:hover {
         background-color: rgba(255, 255, 255, 0.2); }
       .blue-bar-top .wrapper span a {
         text-decoration: none;
         color: currentColor; }
+        .blue-bar-top .wrapper span a i {
+          height: 17px;
+          width: 19px;
+          background-repeat: no-repeat;
+          border: 0;
+          background-position: 50%, 50%;
+          display: inline-block;
+          margin: 0px 5px 0 0px;
+          position: relative;
+          top: 3px;
+          background-color: white; }
+          .blue-bar-top .wrapper span a i.img-pile-1 {
+            -webkit-mask: url("../images/white-pile-1.svg");
+            mask: url("../images/white-pile-1.svg"); }
+          .blue-bar-top .wrapper span a i.img-pile-2 {
+            -webkit-mask: url("../images/white-pile-2.svg");
+            mask: url("../images/white-pile-2.svg"); }
+          .blue-bar-top .wrapper span a i.img-pile-3 {
+            -webkit-mask: url("../images/white-pile-3.svg");
+            mask: url("../images/white-pile-3.svg"); }
+          .blue-bar-top .wrapper span a i.img-pile-4 {
+            -webkit-mask: url("../images/white-pile-4.svg");
+            mask: url("../images/white-pile-4.svg"); }
+          .blue-bar-top .wrapper span a i.img-pile-1 {
+            height: 15px;
+            width: 13px;
+            top: 2px; }
+      .blue-bar-top .wrapper span.title.current, .blue-bar-top .wrapper span.title:hover {
+        background-color: #1477c9;
+        color: white; }
     .blue-bar-top .wrapper .region-filter {
       display: none;
       position: absolute;
@@ -2611,11 +2643,18 @@ FOOTER STYLES
         background-color: rgba(0, 0, 0, 0.2);
         margin: 0; }
       .blue-bar-top .wrapper .region-filter li {
-        max-width: 160px;
+        max-width: 180px;
         padding: 8px;
         cursor: pointer; }
-        .blue-bar-top .wrapper .region-filter li:hover {
+        .blue-bar-top .wrapper .region-filter li:hover, .blue-bar-top .wrapper .region-filter li.selected {
           background-color: rgba(255, 255, 255, 0.2); }
+
+#toggle-filter-region {
+  display: block;
+  width: 180px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
 
 /*********************
 LARGER MOBILE DEVICES
