@@ -32,17 +32,56 @@
 
 		<script src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
 		<script>
-			window.onload = function() {
-				if ( !!LAT_VIS && !!LONG_VIS ) {
-					var options = {
-						center : [LAT_VIS,LONG_VIS],
-						zoom: 6
-					}
-				} else {
-					var options = {}
-				}
-			  cartodb.createVis('map', 'https://opendri.cartodb.com/api/v2/viz/2a76c010-badd-11e5-9ed5-0ecd1babdde5/viz.json', options );
-			}
+			// window.onload = function() {
+			// 	if ( !!LAT_VIS && !!LONG_VIS ) {
+			// 		var options = {
+			// 			center : [LAT_VIS,LONG_VIS],
+			// 			zoom: 6
+			// 		}
+			// 	} else {
+			// 		var options = {}
+			// 	}
+			//   cartodb.createVis('map', 'https://opendri.cartodb.com/api/v2/viz/2a76c010-badd-11e5-9ed5-0ecd1babdde5/viz.json', options );
+			// }
+
+	var map;
+    window.onload = function() {
+		if ( !!LAT_VIS && !!LONG_VIS ) {
+			map = new L.Map('map', {
+				center : [LAT_VIS,LONG_VIS],
+				zoom: 6
+			})
+		} else {
+			map = new L.Map('map', { 
+	        center: [40,-98],
+	        zoom: 3
+	      })
+		}
+      L.tileLayer('https://cartocdn_{s}.global.ssl.fastly.net/base-flatblue/{z}/{x}/{y}.png', {
+        attribution: 'Mapbox <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>'
+      }).addTo(map);
+
+      var layerUrl = 'https://opendri.cartodb.com/api/v2/viz/2a76c010-badd-11e5-9ed5-0ecd1babdde5/viz.json';
+
+      // change the query for the first layer
+      var subLayerOptions = {
+        sql: "SELECT * FROM wp_projects",
+      }
+
+      cartodb.createLayer(map, layerUrl)
+        .addTo(map)
+        .on('done', function(layer) {
+          layer.getSubLayer(0).set(subLayerOptions);
+        }).on('error', function() {
+          //log the error
+        });
+    }
+
+
+
+
+
+
 		  // Twitter
 		  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 		  window.setTimeout(
