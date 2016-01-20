@@ -73,11 +73,13 @@
 
 
 			var $bar = $('#blue-bar');
-			var top_principles = $("#principles").offset().top,
-				top_contact	   = $('#contact').offset().top,
-				top_more	   = $('#more-content').offset().top,
-				top_partners   = $('#partners').offset().top,
-				top_members	   = $('#members').offset().top;
+			if ($bar.hasClass('about')) {			
+				var top_principles = $("#principles").offset().top || null,
+					top_contact	   = $('#contact').offset().top,
+					top_more	   = $('#more-content').offset().top,
+					top_partners   = $('#partners').offset().top,
+					top_members	   = $('#members').offset().top;
+			}
 			$(document).scroll(function() {
 				var scroll = $(this).scrollTop();
 				if (scroll > 80) {
@@ -87,6 +89,7 @@
 				}
 				if (!! top_principles) {
 					var tab_option = 5;
+					scroll += 80;
 					if (scroll > top_principles) tab_option = 0;
 					if (scroll > top_contact) 	 tab_option = 1;
 					if (scroll > top_more) 	 	 tab_option = 2;
@@ -103,7 +106,9 @@
 				$bar.find('.current').removeClass('current');
 				$(e.target).closest('span').addClass('current');
 			});
-
+			$('#toggle-filter-region').on('click', function(e){
+				$bar.find('.region-filter').toggle();
+			});
 		</script>
 
 	</body>

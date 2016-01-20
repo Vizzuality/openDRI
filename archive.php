@@ -9,6 +9,28 @@ if ( is_category() ) {
 	$title = sprintf( __( 'Tag: %s' ), single_tag_title( '', false ) );
 }
 if(is_post_type_archive()) {
+	echo '				<div class="blue-bar-top" id="blue-bar">
+					<div class="wrap wrapper filters">
+							<div>
+								<span class="title">filter by pillar:</span>
+								<span><a href="#"><i></i>open data platforms</a></span>
+								<span><a href="#"><i></i>community mapping</a></span>
+								<span><a href="#"><i></i>risk visualization</a></span>
+							</div>
+							<div>
+								<span class="title" id="toggle-filter-region">filter by region</span>
+								<ul class="region-filter">
+									<li><input type="text" id="searchCountries" placeholder="Search country"></li>
+									<li>africa</li>
+									<li>east asia pacific</li>
+									<li>europe and central asia</li>
+									<li>middle east and north africa</li>
+									<li>non wb countries</li>
+									<li>south asia</li>
+								</ul>
+							</div>
+					</div>
+				</div>';
 	echo '<div id="map" class="cdbmap"></div>';
 } elseif (is_category() && $title === 'news') {
 	echo '<span class="corner-map"></span>';
