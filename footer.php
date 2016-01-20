@@ -91,6 +91,10 @@
 				    sublayers[0].setSQL( queryTemplate += "'europe'");
 				    return true;
 				  },
+				  latam: function(){
+				    sublayers[0].setSQL( queryTemplate += "'latam'");
+				    return true;
+				  },
 				  middleeast: function(){
 				    sublayers[0].setSQL( queryTemplate += "'middleeast'");
 				    return true;
@@ -108,12 +112,15 @@
 					$(this).siblings().removeClass('selected');
 					if (!! $(this).hasClass('selected')) {
 						var option = 'all';
+						var latlong = [40,-98];
 					} else {
 				    	$(this).addClass('selected');
-				    	var option = $(this).data('option');
+				    	var option  = $(this).data('option');
+				    	var latlong = [$(this).data('lat'), $(this).data('lng')];
 					}
 				    //this gets the id of the different buttons and calls to LayerActions which responds according to the selected id
 				    LayerActions[option]();
+				    map.panTo(latlong);
 				  });
 			}
 			window.onload = function() {
