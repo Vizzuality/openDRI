@@ -45,15 +45,19 @@
 			        zoom: 3
 			      })
 				}
-				L.tileLayer('https://cartocdn_{s}.global.ssl.fastly.net/base-flatblue/{z}/{x}/{y}.png', {
-				attribution: 'Mapbox <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>'
+				var basemap = 'https://cartocdn_{s}.global.ssl.fastly.net/base-flatblue/{z}/{x}/{y}.png';
+				if (window.matchMedia("(-webkit-device-pixel-ratio: 2)").matches) {
+				  basemap = 'https://cartocdn_{s}.global.ssl.fastly.net/base-flatblue/{z}/{x}/{y}@2x.png';
+				}
+				L.tileLayer(basemap, {
+					attribution: '&copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
 				}).addTo(map);
 
 				var layerUrl = 'https://opendri.cartodb.com/api/v2/viz/2a76c010-badd-11e5-9ed5-0ecd1babdde5/viz.json';
 
 				// change the query for the first layer
 				var subLayerOptions = {
-				sql: "SELECT * FROM wp_projects",
+					sql: "SELECT * FROM wp_projects",
 				}
 
 				cartodb.createLayer(map, layerUrl)
@@ -65,7 +69,7 @@
 				});
 			}
 			// end map
-			
+
 
 			// Twitter
 			!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
