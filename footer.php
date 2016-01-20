@@ -33,7 +33,7 @@
 		<script src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
 		<script>
 			var map;
-		    window.onload = function() {
+		    function init(){
 				if ( !!LAT_VIS && !!LONG_VIS ) {
 					map = new L.Map('map', {
 						center : [LAT_VIS,LONG_VIS],
@@ -53,24 +53,72 @@
 					attribution: '&copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
 				}).addTo(map);
 
+				var query 		  = "SELECT * FROM wp_projects",
+					queryTemplate = query + " WHERE region = ";
 				var layerUrl = 'https://opendri.cartodb.com/api/v2/viz/2a76c010-badd-11e5-9ed5-0ecd1babdde5/viz.json';
-
-				// change the query for the first layer
-				var subLayerOptions = {
-					sql: "SELECT * FROM wp_projects",
-				}
-
+				var sublayers = [];
 				cartodb.createLayer(map, layerUrl)
 				.addTo(map)
 				.on('done', function(layer) {
-				  layer.getSubLayer(0).set(subLayerOptions);
-				}).on('error', function() {
-				  //log the error
-				});
+				    // change the query for the first layer
+				    var subLayerOptions = {
+				      sql: "SELECT * FROM wp_projects",
+				    }
+
+				    var sublayer = layer.getSubLayer(0);
+
+				    sublayer.set(subLayerOptions);
+
+				    sublayers.push(sublayer);
+				  }).on('error', function() {
+				    console.error('Error while loading map. Please check footer file')
+				  });
+				// end map
+				var LayerActions = {
+				  all: function(){
+				    sublayers[0].setSQL("SELECT * FROM wp_projects");
+				    return true;
+				  },
+				  africa: function(){
+				    sublayers[0].setSQL( queryTemplate += "'africa'");
+				    return true;
+				  },
+				  eastasia: function(){
+				    sublayers[0].setSQL( queryTemplate += "'eastasia'");
+				    return true;
+				  },
+				  europe: function(){
+				    sublayers[0].setSQL( queryTemplate += "'europe'");
+				    return true;
+				  },
+				  middleeast: function(){
+				    sublayers[0].setSQL( queryTemplate += "'middleeast'");
+				    return true;
+				  },			
+				  nonwp: function(){
+				    sublayers[0].setSQL( queryTemplate += "'nonwp'");
+				    return true;
+				  },	
+				  southasia: function(){
+				    sublayers[0].setSQL( queryTemplate += "'southasia'");
+				    return true;
+				  },				  			  	  				  
+				}
+				$('#pick-region').on('click', '.pickable', function() {
+					$(this).siblings().removeClass('selected');
+					if (!! $(this).hasClass('selected')) {
+						var option = 'all';
+					} else {
+				    	$(this).addClass('selected');
+				    	var option = $(this).data('option');
+					}
+				    //this gets the id of the different buttons and calls to LayerActions which responds according to the selected id
+				    LayerActions[option]();
+				  });
 			}
-			// end map
-
-
+			window.onload = function() {
+			  init();
+			};
 			// Twitter
 			!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 			window.setTimeout(

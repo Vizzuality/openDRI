@@ -19,14 +19,14 @@ if(is_post_type_archive()) {
 							</div>
 							<div>
 								<span class="title" id="toggle-filter-region">filter by region</span>
-								<ul class="region-filter">
+								<ul class="region-filter" id="pick-region">
 									<li><input type="text" id="searchCountries" placeholder="Search country"></li>
-									<li>africa</li>
-									<li>east asia pacific</li>
-									<li>europe and central asia</li>
-									<li>middle east and north africa</li>
-									<li>non wb countries</li>
-									<li>south asia</li>
+									<li class="pickable" data-option="africa">africa</li>
+									<li class="pickable" data-option="eastasia">east asia pacific</li>
+									<li class="pickable" data-option="europe">europe and central asia</li>
+									<li class="pickable" data-option="middleeast">middle east and north africa</li>
+									<li class="pickable" data-option="nonwp">non wb countries</li>
+									<li class="pickable" data-option="southasia">south asia</li>
 								</ul>
 							</div>
 					</div>
