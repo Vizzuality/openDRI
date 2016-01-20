@@ -1746,6 +1746,9 @@ FOOTER STYLES
 			    &:hover {
 		    		background-color: white;
 		    	}
+		    	i {
+		    		background-color: #1477c9;
+		    	}
 	    	}
 	    	&:hover {
 	    		background-color: rgba(255,255,255,0.2);
@@ -1753,6 +1756,37 @@ FOOTER STYLES
 	    	a {
 	    		text-decoration: none;
 	    		color: currentColor;
+	    		i {
+				    height: 17px;
+				    width: 19px;
+				    background-repeat: no-repeat;
+				    border: 0;
+				    background-position: 50%, 50%;
+				    display: inline-block;
+				    margin: 0px 5px 0 0px;
+				    position: relative;
+				    top: 3px;
+				    background-color: white;
+				    $class-slug: img-pile !default;
+					@for $i from 1 through 4 {
+					  &.#{$class-slug}-#{$i} {
+					    -webkit-mask:  url("../images/white-pile-"+ $i +".svg");
+					    mask: url("../images/white-pile-"+ $i +".svg");
+					  }
+					}
+					&.img-pile-1 {
+						height: 15px;
+						width: 13px;
+						top: 2px;
+					}
+			    }
+	    	}
+	    	&.title {
+	    		&.current,
+	    		&:hover {
+	    			background-color: #1477c9;
+	    			color: white;
+	    		}
 	    	}
 	    }
 	    &.filters {}
@@ -1766,13 +1800,21 @@ FOOTER STYLES
 	    		margin: 0;
 	    	}
 	    	li {
-			    max-width: 160px;
+			    max-width: 180px;
 			    padding: 8px;
 			    cursor: pointer;
-			    &:hover {
+			    &:hover,
+			    &.selected {
 			    	background-color: rgba(#fff, 0.2);
 			    }
    	    	}
 	    }
 	}
+}
+#toggle-filter-region {
+	display: block;
+    width: 180px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

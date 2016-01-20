@@ -111,15 +111,19 @@
 				$('#pick-region').on('click', '.pickable', function() {
 					$(this).siblings().removeClass('selected');
 					if (!! $(this).hasClass('selected')) {
-						var option = 'all';
+						var option 	= 'all';
 						var latlong = [40,-98];
-						var zoom = 3;
+						var text 	= 'filter by region';
+						var classe  = 'title';
 					} else {
 				    	$(this).addClass('selected');
 				    	var option  = $(this).data('option');
 				    	var latlong = [$(this).data('lat'), $(this).data('lng')];
-				    	var zoom	= 4;
+				    	var text 	= $(this).text();
+						var classe  = '';
 					}
+					$(this).parent().fadeOut();
+					$('#toggle-filter-region').removeClass('title').addClass(classe).text(text);
 				    LayerActions[option]();
 				    map.panTo(latlong);
 				  });

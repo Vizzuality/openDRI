@@ -13,9 +13,9 @@ if(is_post_type_archive()) {
 					<div class="wrap wrapper filters">
 							<div>
 								<span class="title">filter by pillar:</span>
-								<span><a href="#"><i></i>open data platforms</a></span>
-								<span><a href="#"><i></i>community mapping</a></span>
-								<span><a href="#"><i></i>risk visualization</a></span>
+								<span><a href="#" data-option="open"><i class="img-pile-1"></i>open data platforms</a></span>
+								<span><a href="#" data-option="community"><i class="img-pile-2"></i>community mapping</a></span>
+								<span><a href="#" data-option="risk"><i class="img-pile-3"></i>risk visualization</a></span>
 							</div>
 							<div>
 								<span class="title" id="toggle-filter-region">filter by region</span>
