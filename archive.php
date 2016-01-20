@@ -9,6 +9,29 @@ if ( is_category() ) {
 	$title = sprintf( __( 'Tag: %s' ), single_tag_title( '', false ) );
 }
 if(is_post_type_archive()) {
+	echo '				<div class="blue-bar-top" id="blue-bar">
+					<div class="wrap wrapper filters">
+							<div>
+								<span class="title">filter by pillar:</span>
+								<span><a href="#" data-option="open"><i class="img-pile-1"></i>open data platforms</a></span>
+								<span><a href="#" data-option="community"><i class="img-pile-2"></i>community mapping</a></span>
+								<span><a href="#" data-option="risk"><i class="img-pile-3"></i>risk visualization</a></span>
+							</div>
+							<div>
+								<span class="title" id="toggle-filter-region">filter by region</span>
+								<ul class="region-filter" id="pick-region">
+									<li><input type="text" id="searchCountries" placeholder="Search country"></li>
+									<li class="pickable" data-option="africa" data-lat="7" data-lng="21">africa</li>
+									<li class="pickable" data-option="eastasia" data-lat="35" data-lng="103">east asia pacific</li>
+									<li class="pickable" data-option="europe" data-lat="55" data-lng="25">europe and central asia</li>
+									<li class="pickable" data-option="latam" data-lat="13" data-lng="-59">latin america and caribbean</li>
+									<li class="pickable" data-option="middleeast" data-lat="29" data-lng="41">middle east and north africa</li>
+									<li class="pickable" data-option="all" data-lat="0" data-lng="0">non wb countries</li>
+									<li class="pickable" data-option="southasia" data-lat="27" data-lng="72">south asia</li>
+								</ul>
+							</div>
+					</div>
+				</div>';
 	echo '<div id="map" class="cdbmap"></div>';
 } elseif (is_category() && $title === 'news') {
 	echo '<span class="corner-map"></span>';

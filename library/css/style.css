@@ -1388,11 +1388,12 @@ HEADER STYLES
     display: flex;
     justify-content: space-around;
     height: 73px;
-    width: 70%;
+    width: 50%;
     margin: 0 auto;
     align-items: center; }
     .no-home .header nav {
       display: inline-flex;
+      justify-content: space-between;
       position: relative;
       float: right;
       height: 100%; }
@@ -1727,7 +1728,7 @@ POSTS & CONTENT STYLES
     font-size: 48px;
     text-transform: capitalize;
     color: #555;
-    margin: 15px 0; }
+    margin: 25px 0; }
   .index-row .card-third p {
     margin: 0;
     color: #555;
@@ -2171,6 +2172,7 @@ POSTS & CONTENT STYLES
 .archive .p-info,
 .page .p-info {
   display: flex;
+  clear: both;
   justify-content: center;
   position: relative;
   margin: 0 0 45px; }
@@ -2562,6 +2564,97 @@ FOOTER STYLES
   .no-results form #searchsubmit,
   .no-results form label {
     display: none; }
+
+.blue-bar-top {
+  background-color: #1477c9;
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.2);
+  height: 43px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: -43px;
+  z-index: 1; }
+  .blue-bar-top.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0.97; }
+  .blue-bar-top .wrapper {
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between; }
+    .blue-bar-top .wrapper span {
+      border-radius: 5px;
+      padding: 3px 10px;
+      cursor: pointer;
+      background-color: inherit;
+      transition: background-color 0.35s ease; }
+      .blue-bar-top .wrapper span.current {
+        background-color: white;
+        color: #1477c9; }
+        .blue-bar-top .wrapper span.current:hover {
+          background-color: white; }
+        .blue-bar-top .wrapper span.current i {
+          background-color: #1477c9; }
+      .blue-bar-top .wrapper span:hover {
+        background-color: rgba(255, 255, 255, 0.2); }
+      .blue-bar-top .wrapper span a {
+        text-decoration: none;
+        color: currentColor; }
+        .blue-bar-top .wrapper span a i {
+          height: 17px;
+          width: 19px;
+          background-repeat: no-repeat;
+          border: 0;
+          background-position: 50%, 50%;
+          display: inline-block;
+          margin: 0px 5px 0 0px;
+          position: relative;
+          top: 3px;
+          background-color: white; }
+          .blue-bar-top .wrapper span a i.img-pile-1 {
+            -webkit-mask: url("../images/white-pile-1.svg");
+            mask: url("../images/white-pile-1.svg"); }
+          .blue-bar-top .wrapper span a i.img-pile-2 {
+            -webkit-mask: url("../images/white-pile-2.svg");
+            mask: url("../images/white-pile-2.svg"); }
+          .blue-bar-top .wrapper span a i.img-pile-3 {
+            -webkit-mask: url("../images/white-pile-3.svg");
+            mask: url("../images/white-pile-3.svg"); }
+          .blue-bar-top .wrapper span a i.img-pile-4 {
+            -webkit-mask: url("../images/white-pile-4.svg");
+            mask: url("../images/white-pile-4.svg"); }
+          .blue-bar-top .wrapper span a i.img-pile-1 {
+            height: 15px;
+            width: 13px;
+            top: 2px; }
+      .blue-bar-top .wrapper span.title.current, .blue-bar-top .wrapper span.title:hover {
+        background-color: #1477c9;
+        color: white; }
+    .blue-bar-top .wrapper .region-filter {
+      display: none;
+      position: absolute;
+      background-color: rgba(0, 92, 163, 0.85);
+      top: 28px; }
+      .blue-bar-top .wrapper .region-filter input {
+        background-color: rgba(0, 0, 0, 0.2);
+        margin: 0; }
+      .blue-bar-top .wrapper .region-filter li {
+        max-width: 180px;
+        padding: 8px;
+        cursor: pointer; }
+        .blue-bar-top .wrapper .region-filter li:hover, .blue-bar-top .wrapper .region-filter li.selected {
+          background-color: rgba(255, 255, 255, 0.2); }
+
+#toggle-filter-region {
+  display: block;
+  width: 180px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
 
 /*********************
 LARGER MOBILE DEVICES

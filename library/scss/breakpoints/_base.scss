@@ -164,11 +164,12 @@ HEADER STYLES
 		display: flex;
 		justify-content: space-around;
 		height: 73px;
-		width: 70%;
+		width: 50%;
 		margin: 0 auto;
 		align-items: center;
 		.no-home & {
 			display: inline-flex;
+			justify-content: space-between;
 		    position: relative;
 		    float: right;
 		    height: 100%;
@@ -587,7 +588,7 @@ POSTS & CONTENT STYLES
     		font-size: 48px;
 		    text-transform: capitalize;
 		    color: #555;
-		    margin: 15px 0;
+		    margin: 25px 0;
     	}
     	p {
 			margin: 0;
@@ -1127,6 +1128,7 @@ margin: 0;
 	}
 	.p-info {
 		display: flex;
+		clear: both;
 		justify-content: center;
 		position: relative;
 		margin: 0 0 45px;
@@ -1709,4 +1711,110 @@ FOOTER STYLES
 			display: none;
 		}
 	}
+}
+.blue-bar-top {
+	background-color: #1477c9;
+    box-shadow: 1px 1px 7px rgba(0,0,0,0.2);
+    height: 43px;
+    display: flex;
+	align-items: center;
+	position: relative;
+	margin-bottom: -43px;
+	z-index: 1;
+	&.fixed {
+		position: fixed;
+	    top: 0;
+	    width: 100%;
+	    opacity: 0.97;
+	}
+	.wrapper {
+		color: white;
+	    text-transform: uppercase;
+	    font-size: 15px;
+	    font-weight: bold;
+	    display: flex;
+	    justify-content: space-between;
+	    span {
+			border-radius: 5px;
+			padding: 3px 10px;
+	    	cursor: pointer;
+	    	background-color: inherit;
+	    	transition: background-color 0.35s ease;
+	    	&.current {
+	    		background-color: white;
+			    color: #1477c9;
+			    &:hover {
+		    		background-color: white;
+		    	}
+		    	i {
+		    		background-color: #1477c9;
+		    	}
+	    	}
+	    	&:hover {
+	    		background-color: rgba(255,255,255,0.2);
+	    	}
+	    	a {
+	    		text-decoration: none;
+	    		color: currentColor;
+	    		i {
+				    height: 17px;
+				    width: 19px;
+				    background-repeat: no-repeat;
+				    border: 0;
+				    background-position: 50%, 50%;
+				    display: inline-block;
+				    margin: 0px 5px 0 0px;
+				    position: relative;
+				    top: 3px;
+				    background-color: white;
+				    $class-slug: img-pile !default;
+					@for $i from 1 through 4 {
+					  &.#{$class-slug}-#{$i} {
+					    -webkit-mask:  url("../images/white-pile-"+ $i +".svg");
+					    mask: url("../images/white-pile-"+ $i +".svg");
+					  }
+					}
+					&.img-pile-1 {
+						height: 15px;
+						width: 13px;
+						top: 2px;
+					}
+			    }
+	    	}
+	    	&.title {
+	    		&.current,
+	    		&:hover {
+	    			background-color: #1477c9;
+	    			color: white;
+	    		}
+	    	}
+	    }
+	    &.filters {}
+	    .region-filter {
+	    	display: none;
+	    	position: absolute;
+    		background-color: rgba(#005ca3,0.85);
+    		top: 28px;
+	    	input {
+	    		background-color: rgba(#000,0.2);
+	    		margin: 0;
+	    	}
+	    	li {
+			    max-width: 180px;
+			    padding: 8px;
+			    cursor: pointer;
+			    &:hover,
+			    &.selected {
+			    	background-color: rgba(#fff, 0.2);
+			    }
+   	    	}
+	    }
+	}
+}
+#toggle-filter-region {
+	display: block;
+    width: 180px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

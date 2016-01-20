@@ -45,9 +45,17 @@ if ( is_page( 'resources' ) ) {
 
 elseif ( is_page( 'about' ) ) {
 ?>
-
 <span class="corner-map about"></span>
 			<div id="content">
+				<div class="blue-bar-top about" id="blue-bar">
+					<div class="wrap wrapper">
+						<span><a href="#principles">our principles</a></span>
+						<span><a href="#contact">contact</a></span>
+						<span><a href="#more-content">related web pages</a></span>
+						<span><a href="#partners">partners</a></span>
+						<span><a href="#members">team members</a></span>
+					</div>
+				</div>
 
 				<div id="inner-content" class="wrap cf">
 				<?php if (have_posts()) : while (have_posts()) : the_post();
