@@ -47,18 +47,23 @@
 					map = new L.Map('map', {
 						center : [LAT_VIS,LONG_VIS],
 						zoom: 6,
-						scrollWheelZoom: false
+						scrollWheelZoom: false,
+						zoomControl: false
 					})
 				} else {
 					map = new L.Map('map', { 
 			        center: [40,-98],
 			        zoom: 3,
-			        scrollWheelZoom: false
+			        scrollWheelZoom: false,
+			        zoomControl: false
 			      })
 				}
-				var basemap = 'https://cartocdn_{s}.global.ssl.fastly.net/base-flatblue/{z}/{x}/{y}.png';
+				L.control.zoom({
+				     position:'topright'
+				}).addTo(map);
+				var basemap = 'https://a.tiles.mapbox.com/v4/opendri.0ouhqxkv/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoib3BlbmRyaSIsImEiOiJjaWpvZjcwbTYwMHVldG9tNXlhajMwb2dyIn0.fWimK0QhrBpQVX5Zu2bWNg';
 				if (window.matchMedia("(-webkit-device-pixel-ratio: 2)").matches) {
-				  basemap = 'https://cartocdn_{s}.global.ssl.fastly.net/base-flatblue/{z}/{x}/{y}@2x.png';
+				  basemap = 'https://a.tiles.mapbox.com/v4/opendri.0ouhqxkv/{z}/{x}/{y}@2x.png?access_token=pk.eyJ1Ijoib3BlbmRyaSIsImEiOiJjaWpvZjcwbTYwMHVldG9tNXlhajMwb2dyIn0.fWimK0QhrBpQVX5Zu2bWNg';
 				}
 				L.tileLayer(basemap, {
 					attribution: '&copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
@@ -74,6 +79,7 @@
 				    // change the query for the first layer
 				    var subLayerOptions = {
 				      sql: "SELECT * FROM wp_projects",
+				      cartocss: "#wp_projects{  marker-fill-opacity: 1;  marker-line-color: #000000;  marker-line-width: 1;  marker-line-opacity: 0.2;  marker-placement: point;  marker-type: ellipse;  marker-width: 15;  marker-fill: #FFFFFF;  marker-allow-overlap: true;}"
 				    }
 
 				    var sublayer = layer.getSubLayer(0);
