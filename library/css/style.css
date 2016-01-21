@@ -2634,6 +2634,9 @@ FOOTER STYLES
       .blue-bar-top .wrapper span.title.current, .blue-bar-top .wrapper span.title:hover {
         background-color: #1477c9;
         color: white; }
+    .blue-bar-top .wrapper.filters span {
+      position: relative;
+      top: 1px; }
     .blue-bar-top .wrapper .region-filter {
       display: none;
       position: absolute;
@@ -2654,7 +2657,8 @@ FOOTER STYLES
   width: 180px;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis; }
+  text-overflow: ellipsis;
+  top: -1px; }
 
 /*********************
 LARGER MOBILE DEVICES
