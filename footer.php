@@ -46,12 +46,14 @@
 				if ( !!LAT_VIS && !!LONG_VIS ) {
 					map = new L.Map('map', {
 						center : [LAT_VIS,LONG_VIS],
-						zoom: 6
+						zoom: 6,
+						scrollWheelZoom: false
 					})
 				} else {
 					map = new L.Map('map', { 
 			        center: [40,-98],
-			        zoom: 3
+			        zoom: 3,
+			        scrollWheelZoom: false
 			      })
 				}
 				var basemap = 'https://cartocdn_{s}.global.ssl.fastly.net/base-flatblue/{z}/{x}/{y}.png';
