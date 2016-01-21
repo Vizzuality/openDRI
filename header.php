@@ -54,10 +54,10 @@
 					</p>
 					<span class='hr'></span>
 					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
-						<span class="menu-option-projects"><a href="<?php echo home_url(); ?>/project">projects</a></span>
-						<span class="menu-option-resources"><a href="<?php echo home_url(); ?>/resources">resources</a></span>
-						<span class="menu-option-about"><a href="<?php echo home_url(); ?>/about">about</a></span>
-						<span class="menu-option-news"><a href="<?php echo home_url(); ?>/category/news">news</a></span>
+						<span id="menu-option-projects"><a href="<?php echo home_url(); ?>/project">projects</a></span>
+						<span id="menu-option-resources"><a href="<?php echo home_url(); ?>/resources">resources</a></span>
+						<span id="menu-option-about"><a href="<?php echo home_url(); ?>/about">about</a></span>
+						<span id="menu-option-news"><a href="<?php echo home_url(); ?>/category/news">news</a></span>
 						<span class="search-input">
 							<img src="<?php echo get_template_directory_uri(); ?>/library/images/search.svg">
 							<input type="text" id="searchODRI">
