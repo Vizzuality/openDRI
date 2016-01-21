@@ -66,7 +66,6 @@
 				  basemap = 'https://a.tiles.mapbox.com/v4/opendri.0ouhqxkv/{z}/{x}/{y}@2x.png?access_token=pk.eyJ1Ijoib3BlbmRyaSIsImEiOiJjaWpvZjcwbTYwMHVldG9tNXlhajMwb2dyIn0.fWimK0QhrBpQVX5Zu2bWNg';
 				}
 				L.tileLayer(basemap, {
-					attribution: '&copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
 				}).addTo(map);
 
 				var query 		  = "SELECT * FROM wp_projects",
@@ -79,7 +78,8 @@
 				    // change the query for the first layer
 				    var subLayerOptions = {
 				      sql: "SELECT * FROM wp_projects",
-				      cartocss: "#wp_projects{  marker-fill-opacity: 1;  marker-line-color: #000000;  marker-line-width: 1;  marker-line-opacity: 0.2;  marker-placement: point;  marker-type: ellipse;  marker-width: 15;  marker-fill: #FFFFFF;  marker-allow-overlap: true;}"
+				      cartocss: "#wp_projects{  marker-fill-opacity: 1;  marker-line-color: #000000;  marker-line-width: 1;  marker-line-opacity: 0.2;  marker-placement: point;  marker-type: ellipse;  marker-width: 15;  marker-fill: #FFFFFF;  marker-allow-overlap: true;}",
+				      interactivity: 'cartodb_id'
 				    }
 
 				    var sublayer = layer.getSubLayer(0);
@@ -87,6 +87,8 @@
 				    sublayer.set(subLayerOptions);
 
 				    sublayers.push(sublayer);
+				    cdb.vis.Vis.addInfowindow(map, sublayer, ['cartodb_id'],{});
+				    sublayer.setInteraction(true);
 				  }).on('error', function() {
 				    console.error('Error while loading map. Please check footer file')
 				  });
