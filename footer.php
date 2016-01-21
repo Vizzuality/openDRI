@@ -47,14 +47,12 @@
 					map = new L.Map('map', {
 						center : [LAT_VIS,LONG_VIS],
 						zoom: 6,
-						scrollWheelZoom: false,
 						zoomControl: false
 					})
 				} else {
 					map = new L.Map('map', { 
-			        center: [40,-98],
-			        zoom: 3,
-			        scrollWheelZoom: false,
+			        center: [20,0],
+			        zoom: 2,
 			        zoomControl: false
 			      })
 				}
@@ -66,12 +64,11 @@
 				  basemap = 'https://a.tiles.mapbox.com/v4/opendri.0ouhqxkv/{z}/{x}/{y}@2x.png?access_token=pk.eyJ1Ijoib3BlbmRyaSIsImEiOiJjaWpvZjcwbTYwMHVldG9tNXlhajMwb2dyIn0.fWimK0QhrBpQVX5Zu2bWNg';
 				}
 				L.tileLayer(basemap, {
-					attribution: '&copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
 				}).addTo(map);
 
 				var query 		  = "SELECT * FROM wp_projects",
 					queryTemplate = query + " WHERE region = ";
-				var layerUrl = 'https://opendri.cartodb.com/api/v2/viz/2a76c010-badd-11e5-9ed5-0ecd1babdde5/viz.json';
+				var layerUrl = 'https://opendri.cartodb.com/api/v2/viz/0e130a1a-c068-11e5-a22c-0ecd1babdde5/viz.json';
 				var sublayers = [];
 				cartodb.createLayer(map, layerUrl)
 				.addTo(map)
@@ -79,7 +76,6 @@
 				    // change the query for the first layer
 				    var subLayerOptions = {
 				      sql: "SELECT * FROM wp_projects",
-				      cartocss: "#wp_projects{  marker-fill-opacity: 1;  marker-line-color: #000000;  marker-line-width: 1;  marker-line-opacity: 0.2;  marker-placement: point;  marker-type: ellipse;  marker-width: 15;  marker-fill: #FFFFFF;  marker-allow-overlap: true;}"
 				    }
 
 				    var sublayer = layer.getSubLayer(0);
@@ -125,6 +121,7 @@
 				    return true;
 				  },				  			  	  				  
 				}
+				jsonValues = JSON.parse(jsonValues);
 				$('#pick-region').on('click', '.pickable', function() {
 					$(this).siblings().removeClass('selected');
 					if (!! $(this).hasClass('selected')) {
@@ -132,15 +129,19 @@
 						var latlong = [40,-98];
 						var text 	= 'filter by region';
 						var classe  = 'title';
+						var title 	= 'Projects';
 					} else {
 				    	$(this).addClass('selected');
 				    	var option  = $(this).data('option');
 				    	var latlong = [$(this).data('lat'), $(this).data('lng')];
 				    	var text 	= $(this).text();
 						var classe  = '';
+						var prjsn	= (~~jsonValues[option] > 0)? ~~jsonValues[option] : 0;
+						var title   = text + ': ' + prjsn.toString() + ' projects';
 					}
 					$(this).parent().fadeOut();
 					$('#toggle-filter-region').removeClass('title').addClass(classe).text(text);
+					$('.page-title').text(title).css('text-transform','capitalize');
 				    LayerActions[option]();
 				    map.panTo(latlong);
 				  });
