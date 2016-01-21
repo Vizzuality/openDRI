@@ -10,6 +10,32 @@ if ( is_category() ) {
 }
 if(is_post_type_archive()) {
 	$title = 'Projects';
+	$postsInAfrica = get_term_by('slug','africa','category');
+	$postsInAfrica = $postsInAfrica->count;
+	$postsIneastasia = get_term_by('slug','east-asia-pacific','category');
+	$postsIneastasia = $postsIneastasia->count;
+	$postsIneurope = get_term_by('slug','europe-and-central-asia','category');
+	$postsIneurope = $postsInEurope->count;
+	$postsInlatam = get_term_by('slug','latin-america-and-caribbean','category');
+	$postsInlatam = $postsInlatam->count;
+	$postsInmiddleeast = get_term_by('slug','middle-east-and-north-africa','category');
+	$postsInmiddleeast = $postsInmiddleeast->count;
+	$postsInall = get_term_by('slug','non-wb-countries','category');
+	$postsInall = $postsInall->count;
+	$postsInsouthasia = get_term_by('slug','south-asia','category');
+	$postsInsouthasia = $postsInsouthasia->count;
+
+	$postsInTotal = array('africa' => $postsInAfrica,
+						  'eastasia' => $postsIneastasia,
+						  'europe' => $postsInEurope,
+						  'latam' => $postsInlatam,
+						  'middleeast' => $postsInmiddleeast,
+						  'all' => $postsInall,
+						  'southasia' => $postsInsouthasia);
+
+	echo '<script>var jsonValues = \''.json_encode($postsInTotal).'\'</script>';
+
+
 	echo '				<div class="blue-bar-top" id="blue-bar">
 					<div class="wrap wrapper filters">
 							<div>
