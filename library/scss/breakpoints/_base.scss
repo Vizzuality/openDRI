@@ -1789,7 +1789,12 @@ FOOTER STYLES
 	    		}
 	    	}
 	    }
-	    &.filters {}
+	    &.filters {
+	    	span {
+	    		position: relative;
+	    		top: 1px;
+	    	}
+	    }
 	    .region-filter {
 	    	display: none;
 	    	position: absolute;
@@ -1817,4 +1822,5 @@ FOOTER STYLES
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    top: -1px;
 }
