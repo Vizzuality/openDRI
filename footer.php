@@ -51,8 +51,8 @@
 					})
 				} else {
 					map = new L.Map('map', { 
-			        center: [40,-98],
-			        zoom: 3,
+			        center: [20,0],
+			        zoom: 2,
 			        zoomControl: false
 			      })
 				}
@@ -128,15 +128,18 @@
 						var latlong = [40,-98];
 						var text 	= 'filter by region';
 						var classe  = 'title';
+						var title 	= 'Projects'
 					} else {
 				    	$(this).addClass('selected');
 				    	var option  = $(this).data('option');
 				    	var latlong = [$(this).data('lat'), $(this).data('lng')];
 				    	var text 	= $(this).text();
 						var classe  = '';
+						var title   = text;
 					}
 					$(this).parent().fadeOut();
 					$('#toggle-filter-region').removeClass('title').addClass(classe).text(text);
+					$('.page-title').text(title).css('text-transform','capitalize');
 				    LayerActions[option]();
 				    map.panTo(latlong);
 				  });

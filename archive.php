@@ -9,6 +9,7 @@ if ( is_category() ) {
 	$title = sprintf( __( 'Tag: %s' ), single_tag_title( '', false ) );
 }
 if(is_post_type_archive()) {
+	$title = 'Projects';
 	echo '				<div class="blue-bar-top" id="blue-bar">
 					<div class="wrap wrapper filters">
 							<div>
