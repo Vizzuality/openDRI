@@ -47,14 +47,12 @@
 					map = new L.Map('map', {
 						center : [LAT_VIS,LONG_VIS],
 						zoom: 6,
-						scrollWheelZoom: false,
 						zoomControl: false
 					})
 				} else {
 					map = new L.Map('map', { 
 			        center: [40,-98],
 			        zoom: 3,
-			        scrollWheelZoom: false,
 			        zoomControl: false
 			      })
 				}
@@ -70,7 +68,7 @@
 
 				var query 		  = "SELECT * FROM wp_projects",
 					queryTemplate = query + " WHERE region = ";
-				var layerUrl = 'https://opendri.cartodb.com/api/v2/viz/2a76c010-badd-11e5-9ed5-0ecd1babdde5/viz.json';
+				var layerUrl = 'https://opendri.cartodb.com/api/v2/viz/0e130a1a-c068-11e5-a22c-0ecd1babdde5/viz.json';
 				var sublayers = [];
 				cartodb.createLayer(map, layerUrl)
 				.addTo(map)
@@ -78,8 +76,6 @@
 				    // change the query for the first layer
 				    var subLayerOptions = {
 				      sql: "SELECT * FROM wp_projects",
-				      cartocss: "#wp_projects{  marker-fill-opacity: 1;  marker-line-color: #000000;  marker-line-width: 1;  marker-line-opacity: 0.2;  marker-placement: point;  marker-type: ellipse;  marker-width: 15;  marker-fill: #FFFFFF;  marker-allow-overlap: true;}",
-				      interactivity: 'cartodb_id'
 				    }
 
 				    var sublayer = layer.getSubLayer(0);
@@ -87,8 +83,6 @@
 				    sublayer.set(subLayerOptions);
 
 				    sublayers.push(sublayer);
-				    cdb.vis.Vis.addInfowindow(map, sublayer, ['cartodb_id'],{});
-				    sublayer.setInteraction(true);
 				  }).on('error', function() {
 				    console.error('Error while loading map. Please check footer file')
 				  });
