@@ -136,7 +136,7 @@
 				    	var latlong = [$(this).data('lat'), $(this).data('lng')];
 				    	var text 	= $(this).text();
 						var classe  = '';
-						var title   = text + ': 'jsonValues[option] + ' projects';
+						var title   = text + ': ' + jsonValues[option] + ' projects';
 					}
 					$(this).parent().fadeOut();
 					$('#toggle-filter-region').removeClass('title').addClass(classe).text(text);
