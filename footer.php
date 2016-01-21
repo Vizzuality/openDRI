@@ -21,8 +21,7 @@
 					</p>
 					<nav class="-ft-legal">
 						<span>&copy; <?php echo date('Y'); ?> Copyright Open DRI</span>
-						<a href="#">Privacy Policy</a>
-						<a href="#">Site</a>
+						<a href="<?php echo home_url(); ?>//privacy-policy">Privacy Policy</a>
 					</nav>
 				</div>
 
