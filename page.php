@@ -63,5 +63,21 @@ elseif ( is_page( 'about' ) ) {
 									endwhile; endif; ?></div>
 
 			</div>
-<? } // end about?>
+<? } // end about 
+	// default
+	else {
+		?>
+		<div id="content">
+
+				<div id="inner-content" class="wrap cf">
+			<h1><?php echo get_the_title(); ?></h1>
+		<? if (have_posts()) : while (have_posts()) : the_post();
+				the_content();
+			endwhile;
+		endif;
+	}
+?>
+</div>
+
+			</div>
 <?php get_footer(); ?>
