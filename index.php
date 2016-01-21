@@ -114,38 +114,46 @@
 				</div>
 				<div class="row-container">
 					<a href="#">
+						<a href="https://www.youtube.com/watch?v=EkfjEFpv_Zc" target="_blank">
 						<article class="resource-cont">
-							<section>
-								<span>topic</span>
-								<hr>
-								<h3>training materials</h3>
-							</section>
-						</article>
+								<section>
+									<span>video</span>
+									<hr>
+									<h3>Inasafe Introduction</h3>
+								</section>
+							</article>
+						</a>
 					</a>
 				</div>
 			</div>
 			<div class="m-all cf index-row last-resources" role="resources" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 				<div class="row-container">
 					<a href="#">
-						<article class="resource-cont --scnd-img">
-							<section>
-								<span>featured resource</span>
-								<hr>
-								<h3>opendri mentoring guide</h3>
-							</section>
-						</article>
+						<a href="https://www.gfdrr.org/sites/gfdrr/files/publication/GFDRR_AR12_low_0.pdf" target="_blank">
+							<article class="resource-cont --scnd-img">
+								<section>
+									<span>PDF</span>
+									<hr>
+									<h3>GFDRR Annual Report 2012</h3>
+								</section>
+							</article>
+						</a>
 					</a>
 					<ul class="resource-list">
-						<li>
-							<p><span class="title">Resource name</span><span class="format">pdf</span></p>
-							<p><span class="name">topic/issue</span><span class="size">128kb</span>
-							</p>
-						</li>
-						<li>
-							<p><span class="title">Resource name</span><span class="format">pdf</span></p>
-							<p><span class="name">topic/issue</span><span class="size">128kb</span>
-							</p>
-						</li>
+						<a href="https://www.gfdrr.org/sites/default/files/publication/OpenDRI_Overview_2013.pdf" target="_blank"></a>
+							<li>
+								<p><span class="title">Open DRI Overview 2013</span><span class="format">pdf</span></p>
+								<p><span class="name">-</span><span class="size">3.6MB</span>
+								</p>
+							</li>
+						</a>
+						<a href="https://www.youtube.com/watch?v=A1P4phxRghM" target="_blank">
+							<li>
+								<p><span class="title">Building Resilience with GeoNode</span><span class="format">video</span></p>
+								<p><span class="name">-</span><span class="size">128kb</span>
+								</p>
+							</li>
+						</a>
 					</ul>
 				</div>
 			</div>
