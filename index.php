@@ -129,7 +129,7 @@
 			<div class="m-all cf index-row last-resources" role="resources" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 				<div class="row-container">
 					<a href="#">
-						<a href="https://www.youtube.com/watch?v=EkfjEFpv_Zc" target="_blank">
+						<a href="https://www.gfdrr.org/sites/gfdrr/files/publication/GFDRR_AR12_low_0.pdf" target="_blank">
 							<article class="resource-cont --scnd-img">
 								<section>
 									<span>PDF</span>

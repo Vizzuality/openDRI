@@ -13,21 +13,21 @@ if ( is_page( 'resources' ) ) {
 							endwhile; endif; ?>
 							<div class="m-all cf index-row last-resources">
 								<div class="row-container">
-									<a href="#">
+									<a href="https://www.youtube.com/watch?v=EkfjEFpv_Zc" target="_blank">
 										<article class="resource-cont --scnd-img">
 											<section>
-												<span>featured resource</span>
+												<span>video</span>
 												<hr>
-												<h3>opendri mentoring guide</h3>
+												<h3>Inasafe Introduction</h3>
 											</section>
 										</article>
 									</a>
-									<a href="#">
+									<a href="https://www.gfdrr.org/sites/gfdrr/files/publication/GFDRR_AR12_low_0.pdf" target="_blank">
 										<article class="resource-cont">
 											<section>
-												<span>topic</span>
+												<span>PDF</span>
 												<hr>
-												<h3>training materials</h3>
+												<h3>GFDRR Annual Report 2012</h3>
 											</section>
 										</article>
 									</a>
