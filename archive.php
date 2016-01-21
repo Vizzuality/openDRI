@@ -34,6 +34,30 @@ if(is_post_type_archive()) {
 				</div>';
 	echo '<div id="map" class="cdbmap"></div>';
 } elseif (is_category() && $title === 'news') {
+	echo '				<div class="blue-bar-top" id="blue-bar">
+					<div class="wrap wrapper filters">
+							<div>
+								<span class="title" id="toggle-filter-region">region</span>
+								<ul class="region-filter" id="pick-region">
+									<li class="pickable" data-option="africa" data-lat="7" data-lng="21">africa</li>
+									<li class="pickable" data-option="eastasia" data-lat="35" data-lng="103">east asia pacific</li>
+									<li class="pickable" data-option="europe" data-lat="55" data-lng="25">europe and central asia</li>
+									<li class="pickable" data-option="latam" data-lat="13" data-lng="-59">latin america and caribbean</li>
+									<li class="pickable" data-option="middleeast" data-lat="29" data-lng="41">middle east and north africa</li>
+									<li class="pickable" data-option="all" data-lat="0" data-lng="0">non wb countries</li>
+									<li class="pickable" data-option="southasia" data-lat="27" data-lng="72">south asia</li>
+								</ul>
+							</div>
+							<div>
+								<span class="title" id="toggle-filter-region">pillar</span>
+								<ul class="region-filter" id="pick-pillar">
+									<li class="pickable" data-option="open">open data platforms</li>
+									<li class="pickable" data-option="community">community mapping</li>
+									<li class="pickable" data-option="risk">risk visualization</li>
+								</ul>
+							</div>
+					</div>
+				</div>';
 	echo '<span class="corner-map"></span>';
 }
 
