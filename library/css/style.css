@@ -2666,6 +2666,9 @@ FOOTER STYLES
   text-overflow: ellipsis;
   top: -1px; }
 
+.leaflet-top .leaflet-control {
+  margin-top: 60px !important; }
+
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
