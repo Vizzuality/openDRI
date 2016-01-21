@@ -30,6 +30,16 @@
 		</div>
 
 		<script src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+		<script type="text/javascript">
+		// set current section if any
+		var checkUrl = function() {
+			if 		 (location.pathname.includes('/about')) document.getElementById('menu-option-about').classList.add("current");
+			else if  (location.pathname.includes('/project')) document.getElementById('menu-option-projects').classList.add("current");
+			else if  (location.pathname.includes('/news')) document.getElementById('menu-option-news').classList.add("current");
+			else if  (location.pathname.includes('/resources')) document.getElementById('menu-option-resources').classList.add("current");
+		}
+		checkUrl();
+		</script>
 		<script>
 			var map;
 		    function init(){
