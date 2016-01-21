@@ -121,9 +121,9 @@
 				    return true;
 				  },				  			  	  				  
 				}
+				jsonValues = JSON.parse(jsonValues);
 				$('#pick-region').on('click', '.pickable', function() {
 					$(this).siblings().removeClass('selected');
-					jsonValues = JSON.parse(jsonValues);
 					if (!! $(this).hasClass('selected')) {
 						var option 	= 'all';
 						var latlong = [40,-98];
@@ -136,7 +136,8 @@
 				    	var latlong = [$(this).data('lat'), $(this).data('lng')];
 				    	var text 	= $(this).text();
 						var classe  = '';
-						var title   = text + ': ' + jsonValues[option] + ' projects';
+						var prjsn	= (~~jsonValues[option] > 0)? ~~jsonValues[option] : 0;
+						var title   = text + ': ' + prjsn.toString() + ' projects';
 					}
 					$(this).parent().fadeOut();
 					$('#toggle-filter-region').removeClass('title').addClass(classe).text(text);
