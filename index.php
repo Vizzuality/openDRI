@@ -140,16 +140,20 @@
 						</a>
 					</a>
 					<ul class="resource-list">
-						<li>
-							<p><span class="title">Resource name</span><span class="format">pdf</span></p>
-							<p><span class="name">topic/issue</span><span class="size">128kb</span>
-							</p>
-						</li>
-						<li>
-							<p><span class="title">Resource name</span><span class="format">pdf</span></p>
-							<p><span class="name">topic/issue</span><span class="size">128kb</span>
-							</p>
-						</li>
+						<a href="https://www.gfdrr.org/sites/default/files/publication/OpenDRI_Overview_2013.pdf" target="_blank"></a>
+							<li>
+								<p><span class="title">Open DRI Overview 2013</span><span class="format">pdf</span></p>
+								<p><span class="name">-</span><span class="size">3.6MB</span>
+								</p>
+							</li>
+						</a>
+						<a href="https://www.youtube.com/watch?v=A1P4phxRghM" target="_blank">
+							<li>
+								<p><span class="title">Building Resilience with GeoNode</span><span class="format">video</span></p>
+								<p><span class="name">-</span><span class="size">128kb</span>
+								</p>
+							</li>
+						</a>
 					</ul>
 				</div>
 			</div>
