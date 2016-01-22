@@ -40,6 +40,24 @@
 		}
 		checkUrl();
 		</script>
+		<script type="infowindow/html" id="infowindow_template">
+		  <div class="cartodb-popup v2">
+		    <a href="#close" class="cartodb-popup-close-button close">x</a>
+		     <div class="cartodb-popup-content-wrapper">
+		       <div class="cartodb-popup-header">
+		         <h1>{{content.data.name}}</h1>
+		       </div>
+		       <div class="cartodb-popup-content">
+		         <!-- content.data contains the field info -->
+		         <p>{{content.data.iso}}</p>
+		         <p>{{content.data.description}}</p>
+		     	<span class="popup-link-project"><a href="<? echo home_url(); ?>/project/{{content.data.url}}">VIEW PROJECT</a></span>
+		       </div>
+		     </div>
+		     <div class="cartodb-popup-tip-container">
+		     </div>
+		  </div>
+		</script>
 		<script>
 			var map;
 		    function init(){
@@ -68,6 +86,7 @@
 
 				var query 		  = "SELECT * FROM wp_projects",
 					queryTemplate = query + " WHERE region = ";
+					visible 	  = ' AND visible = true'
 				var layerUrl = 'https://opendri.cartodb.com/api/v2/viz/0e130a1a-c068-11e5-a22c-0ecd1babdde5/viz.json';
 				var sublayers = [];
 				cartodb.createLayer(map, layerUrl)
@@ -75,7 +94,7 @@
 				.on('done', function(layer) {
 				    // change the query for the first layer
 				    var subLayerOptions = {
-				      sql: "SELECT * FROM wp_projects",
+				      sql: "SELECT * FROM wp_projects where visible = true",
 				    }
 
 				    var sublayer = layer.getSubLayer(0);
@@ -83,6 +102,7 @@
 				    sublayer.set(subLayerOptions);
 
 				    sublayers.push(sublayer);
+				    sublayer.infowindow.set('template', $('#infowindow_template').html());
 				  }).on('error', function() {
 				    console.error('Error while loading map. Please check footer file')
 				  });
@@ -93,31 +113,31 @@
 				    return true;
 				  },
 				  africa: function(){
-				    sublayers[0].setSQL( queryTemplate += "'africa'");
+				    sublayers[0].setSQL( queryTemplate += "'africa'" + visible);
 				    return true;
 				  },
 				  eastasia: function(){
-				    sublayers[0].setSQL( queryTemplate += "'eastasia'");
+				    sublayers[0].setSQL( queryTemplate += "'eastasia'" + visible);
 				    return true;
 				  },
 				  europe: function(){
-				    sublayers[0].setSQL( queryTemplate += "'europe'");
+				    sublayers[0].setSQL( queryTemplate += "'europe'" + visible);
 				    return true;
 				  },
 				  latam: function(){
-				    sublayers[0].setSQL( queryTemplate += "'latam'");
+				    sublayers[0].setSQL( queryTemplate += "'latam'" + visible);
 				    return true;
 				  },
 				  middleeast: function(){
-				    sublayers[0].setSQL( queryTemplate += "'middleeast'");
+				    sublayers[0].setSQL( queryTemplate += "'middleeast'" + visible);
 				    return true;
 				  },			
 				  nonwp: function(){
-				    sublayers[0].setSQL( queryTemplate += "'nonwp'");
+				    sublayers[0].setSQL( queryTemplate += "'nonwp'" + visible);
 				    return true;
 				  },	
 				  southasia: function(){
-				    sublayers[0].setSQL( queryTemplate += "'southasia'");
+				    sublayers[0].setSQL( queryTemplate += "'southasia'" + visible);
 				    return true;
 				  },				  			  	  				  
 				}
