@@ -36,13 +36,13 @@ if(is_post_type_archive()) {
 	echo '<script>var jsonValues = \''.json_encode($postsInTotal).'\'</script>';
 
 
-	echo '				<div class="blue-bar-top" id="blue-bar">
+	echo '		<div class="blue-bar-top" id="blue-bar">
 					<div class="wrap wrapper filters">
-							<div>
+							<div id="blue-bar-pick-pillar">
 								<span class="title">filter by pillar:</span>
-								<span><a href="#" data-option="open"><i class="img-pile-1"></i>open data platforms</a></span>
-								<span><a href="#" data-option="community"><i class="img-pile-2"></i>community mapping</a></span>
-								<span><a href="#" data-option="risk"><i class="img-pile-3"></i>risk visualization</a></span>
+								<span class="option-pillar" data-option="open"><a href="#" data-option="open"><i class="img-pile-1"></i>open data platforms</a></span>
+								<span class="option-pillar" data-option="community"><a href="#" data-option="community"><i class="img-pile-2"></i>community mapping</a></span>
+								<span class="option-pillar" data-option="risk"><a href="#" data-option="risk"><i class="img-pile-3"></i>risk visualization</a></span>
 							</div>
 							<div>
 								<span class="title" id="toggle-filter-region">filter by region</span>

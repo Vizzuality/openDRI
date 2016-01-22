@@ -86,6 +86,7 @@
 
 				var query 		  = "SELECT * FROM wp_projects",
 					queryTemplate = query + " WHERE region = ";
+					queryTPillar  = query + " WHERE pillar like "
 					visible 	  = ' AND visible = true'
 				var layerUrl = 'https://opendri.cartodb.com/api/v2/viz/0e130a1a-c068-11e5-a22c-0ecd1babdde5/viz.json';
 				var sublayers = [];
@@ -139,7 +140,19 @@
 				  southasia: function(){
 				    sublayers[0].setSQL( queryTemplate += "'southasia'" + visible);
 				    return true;
-				  },				  			  	  				  
+				  },
+				  open: function(){
+				    sublayers[0].setSQL( "SELECT * FROM wp_projects WHERE pillar like '%open data platforms%'" + visible);
+				    return true;
+				  },
+				  community: function(){
+				    sublayers[0].setSQL( "SELECT * FROM wp_projects WHERE pillar like '%community mapping%'" + visible);
+				    return true;
+				  },		
+				  risk: function(){
+				    sublayers[0].setSQL( "SELECT * FROM wp_projects WHERE pillar like '%risk visualization%'" + visible);
+				    return true;
+				  },
 				}
 				jsonValues = JSON.parse(jsonValues);
 				$('#pick-region').on('click', '.pickable', function() {
@@ -164,7 +177,10 @@
 					$('.page-title').text(title).css('text-transform','capitalize');
 				    LayerActions[option]();
 				    map.panTo(latlong);
-				  });
+				});
+				$('#blue-bar-pick-pillar').on('click', '.option-pillar', function(){
+					LayerActions[$(this).data('option')]();
+				});
 			}
 			window.onload = function() {
 			  init();
