@@ -252,7 +252,10 @@
 					LayerActions[$(this).data('option')]();
 				});
 				$('#searchCountries').on('keyup', function() {
-					sublayers[0].setSQL('SELECT * FROM wp_projects where country_name like \'%' + $(this).val() + '%\' AND visible = true')
+					if ($(this).val().length < 1) {
+						sublayers[0].setSQL('SELECT * FROM wp_projects where is_region = true');
+					} else 
+						sublayers[0].setSQL('SELECT * FROM wp_projects where country_name like \'%' + $(this).val() + '%\' AND visible = true')
 				})
 				var changeIn_regions = function(id) {
 					if (id < 31 || id > 37) return false;
