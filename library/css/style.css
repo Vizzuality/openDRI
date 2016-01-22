@@ -2705,9 +2705,7 @@ div.cartodb-popup .cartodb-popup-close-button {
 .amount-of-posts {
   font-weight: bold;
   color: #1477c9;
-  font-size: 15px;
-  position: relative !important;
-  top: -10px !important; }
+  font-size: 15px; }
 
 /*********************
 LARGER MOBILE DEVICES
