@@ -199,8 +199,9 @@ function save_on_cartodb( $post_id ) {
     }
     $pillar = implode("|",$pillar);
     $region = implode("|",$region);
-echo '<pre>'.$pillar.'</pre>';
-echo '<pre>'.$region.'</pre>';
+    // echo '<pre>'.$pillar.'</pre>';
+    // echo '<pre>'.$region.'</pre>';
+    
     //check visibility
     if ($visibility != 'public') {
       $visibility = false;
