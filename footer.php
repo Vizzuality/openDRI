@@ -253,9 +253,12 @@
 				});
 				$('#searchCountries').on('keyup', function() {
 					if ($(this).val().length < 1) {
+						$('.amount-of-posts').show();
 						sublayers[0].setSQL('SELECT * FROM wp_projects where is_region = true');
-					} else 
+					} else {
+						$('.amount-of-posts').hide();
 						sublayers[0].setSQL('SELECT * FROM wp_projects where country_name like \'%' + $(this).val() + '%\' AND visible = true')
+					}
 				})
 				var changeIn_regions = function(id) {
 					if (id < 31 || id > 37) return false;
