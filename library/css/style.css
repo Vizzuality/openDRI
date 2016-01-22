@@ -2035,10 +2035,10 @@ POSTS & CONTENT STYLES
     flex-direction: column;
     flex-wrap: wrap;
     height: 320px;
-    width: 150%; }
+    width: 100%; }
     .archive .about-content .card-third ol li,
     .page .about-content .card-third ol li {
-      width: 80%; }
+      width: 50%; }
     .archive .about-content .card-third ol h4,
     .page .about-content .card-third ol h4 {
       margin: 5px 0;
