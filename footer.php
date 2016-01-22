@@ -257,7 +257,30 @@
 						sublayers[0].setSQL('SELECT * FROM wp_projects where is_region = true');
 					} else {
 						$('.amount-of-posts').hide();
-						sublayers[0].setSQL('SELECT * FROM wp_projects where country_name like \'%' + $(this).val() + '%\' AND visible = true')
+						sublayers[0].setSQL('SELECT * FROM wp_projects where country_name like \'%' + $(this).val().toLowerCase() + '%\' AND visible = true');
+						cartodb.createLayer(map, {
+							user_name: 'opendri',
+							type: 'cartodb',
+							cartodb_logo: false,
+							sublayers: [{
+							  sql: "SELECT * FROM country_mask",
+							  cartocss: "\
+							    #country_mask {\
+							      polygon-fill: #c0c0c0;\
+							      polygon-opacity: 0.1;\
+							      line-color: #999;\
+							      line-width: 0;\
+							      line-opacity: 0;\
+							    }\
+							    #country_mask[name='" + $(this).val().charAt(0).toUpperCase() + $(this).val().slice(1) + "'] {\
+							      polygon-opacity: 0;\
+							      line-color: #73707D;\
+							      line-width: 1;\
+							      line-opacity: 1;\
+							    }"
+							}]
+						})
+						.addTo(map)
 					}
 				})
 				var changeIn_regions = function(id) {
