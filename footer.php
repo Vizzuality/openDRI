@@ -257,7 +257,7 @@
 						sublayers[0].setSQL('SELECT * FROM wp_projects where is_region = true');
 					} else {
 						$('.amount-of-posts').hide();
-						sublayers[0].setSQL('SELECT * FROM wp_projects where country_name like \'%' + $(this).val().toLowerCase() + '%\' AND visible = true');
+						sublayers[0].setSQL('SELECT * FROM wp_projects where country_name like \'%' + $(this).val() + '%\' AND visible = true');
 						cartodb.createLayer(map, {
 							user_name: 'opendri',
 							type: 'cartodb',
