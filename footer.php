@@ -123,7 +123,7 @@
 					$postsInlatam = $postsInlatam->count;
 				?>
 				var postsInlatam = '<? echo $postsInlatam ?>';			
-				L.marker(new L.LatLng(13, 59), {icon:createLabelIcon("textLabelclass",postsInlatam)}).addTo(map);
+				L.marker(new L.LatLng(13, -59), {icon:createLabelIcon("textLabelclass",postsInlatam)}).addTo(map);
 
 				<? 
 					$postsInmiddleeast = get_term_by('slug','middle-east-and-north-africa','category','category');
