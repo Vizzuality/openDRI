@@ -156,7 +156,7 @@ function save_on_cartodb( $post_id ) {
   
   $cdb_api_key = get_option('CDB_API_KEY');
   
-  if ($cdb_api_key && $_REQUEST[action] != 'grunion-contact-form') {
+  if ($cdb_api_key && $_REQUEST['action'] != 'grunion-contact-form' && $_REQUEST['post_type'] != 'page') {
 
     // echo '<pre>'.print_r($_REQUEST).'</pre>'; 
 
