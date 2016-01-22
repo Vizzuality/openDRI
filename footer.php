@@ -635,7 +635,7 @@
 			    });
 			}).on('keyup', function(e){
 				if(e.keyCode == 13)
-			    	location = location.hostname + '/?s=' + $input.val();
+			    	location = '<?php echo home_url(); ?>' + '?s=' + $input.val();
 			});
 
 

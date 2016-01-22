@@ -474,6 +474,7 @@ POSTS & CONTENT STYLES
 }
 .index-row {
 	display: flex;
+	flex-direction: column;
     margin: 130px 0;
     &.more-content {
     	display: block;

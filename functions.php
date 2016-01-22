@@ -151,14 +151,13 @@ function bones_theme_customizer($wp_customize) {
 add_action( 'customize_register', 'bones_theme_customizer' );
 function save_on_cartodb( $post_id ) {
 
-  // If this is just a revision, don't send the email.
   if ( wp_is_post_revision( $post_id ) )
     return;
   $cdb_api_key = get_option('CDB_API_KEY');
   
-  if ($cdb_api_key) {
+  if ($cdb_api_key && $_REQUEST[action] != 'grunion-contact-form') {
 
-    // echo '<pre>'.print_r($_REQUEST).'</pre>';
+    // echo '<pre>'.print_r($_REQUEST).'</pre>'; 
 
     $url = "https://opendri.cartodb.com/api/v2/sql?q=";
     $api_bit = "&api_key=$cdb_api_key";
@@ -201,7 +200,7 @@ function save_on_cartodb( $post_id ) {
     $region = implode("|",$region);
     // echo '<pre>'.$pillar.'</pre>';
     // echo '<pre>'.$region.'</pre>';
-    
+
     //check visibility
     if ($visibility != 'public') {
       $visibility = false;
