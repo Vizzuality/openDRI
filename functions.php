@@ -179,23 +179,23 @@ function save_on_cartodb( $post_id ) {
     $region = [];
     if (in_array(7, $categories)) {
         array_push($pillar,'community mapping');
-    } elseif (in_array(6, $categories)) {
+    } if (in_array(6, $categories)) {
       array_push($pillar,'open data platforms');
-    } elseif (in_array(8, $categories)) {
+    } if (in_array(8, $categories)) {
       array_push($pillar,'risk visualization');
-    } elseif (in_array(9, $categories)) {
+    } if (in_array(9, $categories)) {
       array_push($region,'africa');
-    } elseif (in_array(10, $categories)) {
+    } if (in_array(10, $categories)) {
       array_push($region,'eastasia');
-    } elseif (in_array(11, $categories)) {
+    } if (in_array(11, $categories)) {
       array_push($region,'europe');
-    } elseif (in_array(12, $categories)) {
+    } if (in_array(12, $categories)) {
       array_push($region,'latam');
-    } elseif (in_array(13, $categories)) {
+    } if (in_array(13, $categories)) {
       array_push($region,'middleeast');
-    } elseif (in_array(14, $categories)) {
+    } if (in_array(14, $categories)) {
       array_push($region,'nonwp');
-    } elseif (in_array(15, $categories)) {
+    } if (in_array(15, $categories)) {
       array_push($region,'southasia');
     }
     $pillar = implode("|",$pillar);
