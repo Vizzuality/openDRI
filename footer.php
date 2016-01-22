@@ -241,6 +241,320 @@
 						var classe  = '';
 						var prjsn	= (~~jsonValues[option] > 0)? ~~jsonValues[option] : 0;
 						var title   = text + ': ' + prjsn.toString() + ' projects';
+						if (option == 'africa') {						
+							cartodb.createLayer(map, {
+								user_name: 'opendri',
+								type: 'cartodb',
+								cartodb_logo: false,
+								sublayers: [{
+								  sql: "SELECT * FROM country_mask",
+								  cartocss: "\
+								    #country_mask {\
+								      polygon-fill: #c0c0c0;\
+								      polygon-opacity: 0.1;\
+								      line-color: #999;\
+								      line-width: 0;\
+								      line-opacity: 0;\
+								    }\
+								    #country_mask[name='Angola'],\
+								    #country_mask[name='Burundi'],\
+								    #country_mask[name='Benin'],\
+								    #country_mask[name='Burkina Faso'],\
+								    #country_mask[name='Botswana'],\
+								    #country_mask[name='Central African Republic'],\
+								    #country_mask[name='Cameroon'],\
+								    #country_mask[name='Congo'],\
+								    #country_mask[name='Comoros'],\
+								    #country_mask[name='Cabo Verde'],\
+								    #country_mask[name='Algeria'],\
+								    #country_mask[name='Djibouti'],\
+								    #country_mask[name='Egypt'],\
+								    #country_mask[name='Eritrea'],\
+								    #country_mask[name='Ethiopia'],\
+								    #country_mask[name='Gabon'],\
+								    #country_mask[name='Ghana'],\
+								    #country_mask[name='Guinea'],\
+								    #country_mask[name='Gambia'],\
+								    #country_mask[name='Guinea-Bissau'],\
+								    #country_mask[name='Equatorial Guinea'],\
+								    #country_mask[name='Kenya'],\
+								    #country_mask[name='Libya'],\
+								    #country_mask[name='Lesotho'],\
+								    #country_mask[name='Morocco'],\
+								    #country_mask[name='Madagascar'],\
+								    #country_mask[name='Mali'],\
+								    #country_mask[name='Mozambique'],\
+								    #country_mask[name='Mauritania'],\
+								    #country_mask[name='Mauritius'],\
+								    #country_mask[name='Malawi'],\
+								    #country_mask[name='Namibia'],\
+								    #country_mask[name='Niger'],\
+								    #country_mask[name='Nigeria'],\
+								    #country_mask[name='Rwanda'],\
+								    #country_mask[name='Sudan'],\
+								    #country_mask[name='Senegal'],\
+								    #country_mask[name='Sierra Leone'],\
+								    #country_mask[name='Somalia'],\
+								    #country_mask[name='South Sudan'],\
+								    #country_mask[name='Swaziland'],\
+								    #country_mask[name='Seychelles'],\
+								    #country_mask[name='Chad'],\
+								    #country_mask[name='Togo'],\
+								    #country_mask[name='Tunisia'],\
+								    #country_mask[name='Tanzania'],\
+								    #country_mask[name='Uganda'],\
+								    #country_mask[name='South Africa'],\
+								    #country_mask[name='Zambia'],\
+								    #country_mask[name='Zimbabwe']{\
+								      polygon-opacity: 0;\
+								      line-color: #fff;\
+								      line-width: 1;\
+								      line-opacity: 1;\
+								    }"
+								}]
+							})
+							.addTo(map)
+						} else if (option == 'europe') {						
+							cartodb.createLayer(map, {
+								user_name: 'opendri',
+								type: 'cartodb',
+								cartodb_logo: false,
+								sublayers: [{
+								  sql: "SELECT * FROM country_mask",
+								  cartocss: "\
+								    #country_mask {\
+								      polygon-fill: #c0c0c0;\
+								      polygon-opacity: 0.1;\
+								      line-color: #999;\
+								      line-width: 0;\
+								      line-opacity: 0;\
+								    }\
+								    #country_mask[name='Albania'],\
+								    #country_mask[name='Armenia'],\
+								    #country_mask[name='Azerbaijan'],\
+								    #country_mask[name='Bulgaria'],\
+								    #country_mask[name='Bosnia and Herzegovina'],\
+								    #country_mask[name='Belarus'],\
+								    #country_mask[name='Czech Republic'],\
+								    #country_mask[name='Estonia'],\
+								    #country_mask[name='Georgia'],\
+								    #country_mask[name='Croatia'],\
+								    #country_mask[name='Hungary'],\
+								    #country_mask[name='Kazakhstan'],\
+								    #country_mask[name='Kyrgyz Republic'],\
+								    #country_mask[name='Kosovo'],\
+								    #country_mask[name='Lithuania'],\
+								    #country_mask[name='Latvia'],\
+								    #country_mask[name='Moldova'],\
+								    #country_mask[name='Macedonia'],\
+								    #country_mask[name='Malta'],\
+								    #country_mask[name='Montenegro'],\
+								    #country_mask[name='Poland'],\
+								    #country_mask[name='Romania'],\
+								    #country_mask[name='Russia'],\
+								    #country_mask[name='Serbia'],\
+								    #country_mask[name='Slovak Republic'],\
+								    #country_mask[name='Slovenia'],\
+								    #country_mask[name='Tajikistan'],\
+								    #country_mask[name='Turkmenistan'],\
+								    #country_mask[name='Turkey'],\
+								    #country_mask[name='Ukraine'],\
+								    #country_mask[name='Uzbekistan']{\
+								      polygon-opacity: 0;\
+								      line-color: #fff;\
+								      line-width: 1;\
+								      line-opacity: 1;\
+								    }"
+								}]
+							})
+							.addTo(map)
+						} else if (option == 'middleeast') {						
+							cartodb.createLayer(map, {
+								user_name: 'opendri',
+								type: 'cartodb',
+								cartodb_logo: false,
+								sublayers: [{
+								  sql: "SELECT * FROM country_mask",
+								  cartocss: "\
+								    #country_mask {\
+								      polygon-fill: #c0c0c0;\
+								      polygon-opacity: 0.1;\
+								      line-color: #999;\
+								      line-width: 0;\
+								      line-opacity: 0;\
+								    }\
+								    #country_mask[name='Afghanistan'],\
+								    #country_mask[name='Bahrain'],\
+								    #country_mask[name='Algeria'],\
+								    #country_mask[name='Egypt'],\
+								    #country_mask[name='Iran'],\
+								    #country_mask[name='Belarus'],\
+								    #country_mask[name='Iraq'],\
+								    #country_mask[name='Jordan'],\
+								    #country_mask[name='Kuwait'],\
+								    #country_mask[name='Lebanon'],\
+								    #country_mask[name='Libya'],\
+								    #country_mask[name='Morocco'],\
+								    #country_mask[name='Oman'],\
+								    #country_mask[name='Qatar'],\
+								    #country_mask[name='Pakistan'],\
+								    #country_mask[name='Gaza'],\
+								    #country_mask[name='Arabia'],\
+								    #country_mask[name='Syria'],\
+								    #country_mask[name='Tunisia'],\
+								    #country_mask[name='Yemen']{\
+								      polygon-opacity: 0;\
+								      line-color: #fff;\
+								      line-width: 1;\
+								      line-opacity: 1;\
+								    }"
+								}]
+							})
+							.addTo(map)
+						} else if (option == 'latam') {						
+							cartodb.createLayer(map, {
+								user_name: 'opendri',
+								type: 'cartodb',
+								cartodb_logo: false,
+								sublayers: [{
+								  sql: "SELECT * FROM country_mask",
+								  cartocss: "\
+								    #country_mask {\
+								      polygon-fill: #c0c0c0;\
+								      polygon-opacity: 0.1;\
+								      line-color: #999;\
+								      line-width: 0;\
+								      line-opacity: 0;\
+								    }\
+								    #country_mask[name='Aruba'],\
+								    #country_mask[name='Argentina'],\
+								    #country_mask[name='Antigua and Barbuda'],\
+								    #country_mask[name='Bahamas'],\
+								    #country_mask[name='Belize'],\
+								    #country_mask[name='Bolivia'],\
+								    #country_mask[name='Brazil'],\
+								    #country_mask[name='Barbados'],\
+								    #country_mask[name='Chile'],\
+								    #country_mask[name='Colombia'],\
+								    #country_mask[name='Costa Rica'],\
+								    #country_mask[name='Cuba'],\
+								    #country_mask[name='Curacao'],\
+								    #country_mask[name='Cayman'],\
+								    #country_mask[name='Dominica'],\
+								    #country_mask[name='Dominican Republic'],\
+								    #country_mask[name='Ecuador'],\
+								    #country_mask[name='Grenada'],\
+								    #country_mask[name='Guatemala'],\
+								    #country_mask[name='Honduras'],\
+								    #country_mask[name='Haiti'],\
+								    #country_mask[name='Jamaica'],\
+								    #country_mask[name='Mexico'],\
+								    #country_mask[name='Nicaragua'],\
+								    #country_mask[name='Panama'],\
+								    #country_mask[name='Peru'],\
+								    #country_mask[name='Puerto Rico'],\
+								    #country_mask[name='Paraguay'],\
+								    #country_mask[name='El Salvador'],\
+								    #country_mask[name='Suriname'],\
+								    #country_mask[name='Trinidad and Tobago'],\
+								    #country_mask[name='Uruguay'],\
+								    #country_mask[name='Venezuela']{\
+								      polygon-opacity: 0;\
+								      line-color: #fff;\
+								      line-width: 1;\
+								      line-opacity: 1;\
+								    }"
+								}]
+							})
+							.addTo(map)
+						} else if (option == 'eastasia') {						
+							cartodb.createLayer(map, {
+								user_name: 'opendri',
+								type: 'cartodb',
+								cartodb_logo: false,
+								sublayers: [{
+								  sql: "SELECT * FROM country_mask",
+								  cartocss: "\
+								    #country_mask {\
+								      polygon-fill: #c0c0c0;\
+								      polygon-opacity: 0.1;\
+								      line-color: #999;\
+								      line-width: 0;\
+								      line-opacity: 0;\
+								    }\
+								    #country_mask[name='Australia'],\
+								    #country_mask[name='Brunei'],\
+								    #country_mask[name='China'],\
+								    #country_mask[name='Fiji'],\
+								    #country_mask[name='Micronesia'],\
+								    #country_mask[name='Guam'],\
+								    #country_mask[name='Hong Kong'],\
+								    #country_mask[name='Indonesia'],\
+								    #country_mask[name='Japan'],\
+								    #country_mask[name='Cambodia'],\
+								    #country_mask[name='Kiribati'],\
+								    #country_mask[name='Korea'],\
+								    #country_mask[name='Laos'],\
+								    #country_mask[name='Macao'],\
+								    #country_mask[name='Myanmar'],\
+								    #country_mask[name='Mongolia'],\
+								    #country_mask[name='Malaysia'],\
+								    #country_mask[name='New Caledonia'],\
+								    #country_mask[name='New Zealand'],\
+								    #country_mask[name='Philippines'],\
+								    #country_mask[name='Palau'],\
+								    #country_mask[name='Papua New Guinea'],\
+								    #country_mask[name='French Polynesia'],\
+								    #country_mask[name='Singapore'],\
+								    #country_mask[name='Solomon Islands'],\
+								    #country_mask[name='Thailand'],\
+								    #country_mask[name='Timor-Leste'],\
+								    #country_mask[name='Tonga'],\
+								    #country_mask[name='Tuvalu'],\
+								    #country_mask[name='Taiwan'],\
+								    #country_mask[name='Vietnam'],\
+								    #country_mask[name='Vanuatu'],\
+								    #country_mask[name='Samoa']{\
+								      polygon-opacity: 0;\
+								      line-color: #fff;\
+								      line-width: 1;\
+								      line-opacity: 1;\
+								    }"
+								}]
+							})
+							.addTo(map)
+						} else if (option == 'southasia') {						
+							cartodb.createLayer(map, {
+								user_name: 'opendri',
+								type: 'cartodb',
+								cartodb_logo: false,
+								sublayers: [{
+								  sql: "SELECT * FROM country_mask",
+								  cartocss: "\
+								    #country_mask {\
+								      polygon-fill: #c0c0c0;\
+								      polygon-opacity: 0.1;\
+								      line-color: #999;\
+								      line-width: 0;\
+								      line-opacity: 0;\
+								    }\
+								    #country_mask[name='Afghanistan'],\
+								    #country_mask[name='Bangladesh'],\
+								    #country_mask[name='Bhutan'],\
+								    #country_mask[name='India'],\
+								    #country_mask[name='Sri Lanka'],\
+								    #country_mask[name='Maldives'],\
+								    #country_mask[name='Nepal'],\
+								    #country_mask[name='Pakistan']{\
+								      polygon-opacity: 0;\
+								      line-color: #fff;\
+								      line-width: 1;\
+								      line-opacity: 1;\
+								    }"
+								}]
+							})
+							.addTo(map)
+						}
 					}
 					$(this).parent().fadeOut();
 					$('#toggle-filter-region').removeClass('title').addClass(classe).text(text);
@@ -255,32 +569,9 @@
 					if ($(this).val().length < 1) {
 						$('.amount-of-posts').show();
 						sublayers[0].setSQL('SELECT * FROM wp_projects where is_region = true');
-					} else {
+					} else if( $(this).val().length > 4 ) {
 						$('.amount-of-posts').hide();
 						sublayers[0].setSQL('SELECT * FROM wp_projects where country_name like \'%' + $(this).val() + '%\' AND visible = true');
-						cartodb.createLayer(map, {
-							user_name: 'opendri',
-							type: 'cartodb',
-							cartodb_logo: false,
-							sublayers: [{
-							  sql: "SELECT * FROM country_mask",
-							  cartocss: "\
-							    #country_mask {\
-							      polygon-fill: #c0c0c0;\
-							      polygon-opacity: 0.1;\
-							      line-color: #999;\
-							      line-width: 0;\
-							      line-opacity: 0;\
-							    }\
-							    #country_mask[name='" + $(this).val().charAt(0).toUpperCase() + $(this).val().slice(1) + "'] {\
-							      polygon-opacity: 0;\
-							      line-color: #fff;\
-							      line-width: 1;\
-							      line-opacity: 1;\
-							    }"
-							}]
-						})
-						.addTo(map)
 					}
 				})
 				var changeIn_regions = function(id) {
