@@ -67,6 +67,7 @@
 			}
   
 			var map;
+			var currentSublayer;
 		    function init(){
 				if ( !!LAT_VIS && !!LONG_VIS ) {
 					map = new L.Map('map', {
@@ -82,7 +83,7 @@
 			      })
 				}
 				L.control.zoom({
-				     position:'topright'
+				    position:'topright'
 				}).addTo(map);
 				var basemap = 'https://a.tiles.mapbox.com/v4/opendri.0ouhqxkv/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoib3BlbmRyaSIsImEiOiJjaWpvZjcwbTYwMHVldG9tNXlhajMwb2dyIn0.fWimK0QhrBpQVX5Zu2bWNg';
 				if (window.matchMedia("(-webkit-device-pixel-ratio: 2)").matches) {
@@ -139,9 +140,9 @@
 				var postsInsouthasia = '<? echo $postsInsouthasia ?>';			
 				L.marker(new L.LatLng(27, 72), {icon:createLabelIcon("amount-of-posts","<? echo $postsInsouthasia; ?>")}).addTo(map);
 				var query 		  = "SELECT * FROM wp_projects",
-					queryTemplate = query + " WHERE region = ";
-					queryTPillar  = query + " WHERE pillar like "
-					visible 	  = ' AND visible = true'
+					queryTemplate = query + " WHERE region = ",
+					queryTPillar  = query + " WHERE pillar like ",
+					visible 	  = ' AND visible = true';
 				var layerUrl = 'https://opendri.cartodb.com/api/v2/viz/0e130a1a-c068-11e5-a22c-0ecd1babdde5/viz.json';
 				var sublayers = [];
 				cartodb.createLayer(map, layerUrl)
@@ -233,6 +234,7 @@
 						var classe  = 'title';
 						var title 	= 'Projects';
 					} else {
+						if (!! currentSublayer) currentSublayer.remove();
 						$('.amount-of-posts').hide();
 				    	$(this).addClass('selected');
 				    	var option  = $(this).data('option');
@@ -314,6 +316,9 @@
 								}]
 							})
 							.addTo(map)
+							.on('done',function(layer){
+								currentSublayer = layer.getSubLayer(0);
+							});
 						} else if (option == 'europe') {						
 							cartodb.createLayer(map, {
 								user_name: 'opendri',
@@ -411,6 +416,9 @@
 								}]
 							})
 							.addTo(map)
+							.on('done',function(layer){
+								currentSublayer = layer.getSubLayer(0);
+							});
 						} else if (option == 'latam') {						
 							cartodb.createLayer(map, {
 								user_name: 'opendri',
@@ -467,6 +475,9 @@
 								}]
 							})
 							.addTo(map)
+							.on('done',function(layer){
+								currentSublayer = layer.getSubLayer(0);
+							});
 						} else if (option == 'eastasia') {						
 							cartodb.createLayer(map, {
 								user_name: 'opendri',
@@ -523,6 +534,9 @@
 								}]
 							})
 							.addTo(map)
+							.on('done',function(layer){
+								currentSublayer = layer.getSubLayer(0);
+							});
 						} else if (option == 'southasia') {						
 							cartodb.createLayer(map, {
 								user_name: 'opendri',
@@ -554,6 +568,9 @@
 								}]
 							})
 							.addTo(map)
+							.on('done',function(layer){
+								currentSublayer = layer.getSubLayer(0);
+							});
 						}
 					}
 					$(this).parent().fadeOut();
@@ -586,7 +603,7 @@
 					else if (id === 36) $regions.find('[data-option="all"]').trigger('click');
 					else $regions.find('[data-option="southasia"]').trigger('click');
 					return false;
-				}
+				};
 			}
 			window.onload = function() {
 			  init();
