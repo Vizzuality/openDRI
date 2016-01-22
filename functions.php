@@ -157,19 +157,62 @@ function save_on_cartodb( $post_id ) {
   $cdb_api_key = get_option('CDB_API_KEY');
   
   if ($cdb_api_key) {
+
+    echo '<pre>'.print_r($_REQUEST).'</pre>';
+
     $url = "https://opendri.cartodb.com/api/v2/sql?q=";
     $api_bit = "&api_key=$cdb_api_key";
     $geodata__lat       = $_REQUEST["_wppl_lat"];
     $geodata__long      = $_REQUEST["_wppl_long"];
     $geodata__title     = $_REQUEST["post_title"];
+    $geodata__url_title = strtolower(str_replace(" ","-",$geodata__title));
     $geodata__address   = $_REQUEST['_wppl_address'];
+    $geodata__country   = $_REQUEST['_wppl_country'];
+    $geodata__c_name    = $_REQUEST['_wppl_country_long'];
+    $categories         = $_REQUEST['post_category'];
+    $geodata__content   = substr($_REQUEST['content'], 0, 60);
+    $visibility         = $_REQUEST['visibility'];
+
+    //check pillars and regions
+    $pillar = [];
+    $region = [];
+    if (in_array(7, $categories)) {
+        array_push($pillar,'community mapping');
+    } elseif (in_array(6, $categories)) {
+      array_push($pillar,'open data platforms');
+    } elseif (in_array(8, $categories)) {
+      array_push($pillar,'risk visualization');
+    } elseif (in_array(9, $categories)) {
+      array_push($region,'africa');
+    } elseif (in_array(10, $categories)) {
+      array_push($region,'eastasia');
+    } elseif (in_array(11, $categories)) {
+      array_push($region,'europe');
+    } elseif (in_array(12, $categories)) {
+      array_push($region,'latam');
+    } elseif (in_array(13, $categories)) {
+      array_push($region,'middleeast');
+    } elseif (in_array(14, $categories)) {
+      array_push($region,'nonwp');
+    } elseif (in_array(15, $categories)) {
+      array_push($region,'southasia');
+    }
+    $pillar = implode("|",$pillar);
+    $region = implode("|",$region);
+
+    //check visibility
+    if ($visibility != 'public') {
+      $visibility = false;
+    } else {
+      $visibility = true;
+    }
 
     if ($_REQUEST["original_publish"] != 'Update') {
       // insert new row
-      $query = "INSERT INTO wp_projects (wp_post_id, the_geom, name, location) VALUES ($post_id, ST_SetSRID(ST_Point($geodata__long, $geodata__lat),4326), '$geodata__title', '$geodata__address')"; 
+      $query = "INSERT INTO wp_projects (wp_post_id, the_geom, name, location, url, pillar, region, iso, description, visible, country_name) VALUES ($post_id, ST_SetSRID(ST_Point($geodata__long, $geodata__lat),4326), '$geodata__title', '$geodata__address', '$geodata__url_title', '$pillar', '$region', '$geodata__country', '$geodata__content', '$visibility', '$geodata__c_name')"; 
     } else {
       // update existing row
-      $query = "UPDATE wp_projects SET the_geom = ST_SetSRID(ST_Point($geodata__long, $geodata__lat),4326), name = '$geodata__title', location = '$geodata__address' WHERE wp_post_id = $post_id "; 
+      $query = "UPDATE wp_projects SET the_geom = ST_SetSRID(ST_Point($geodata__long, $geodata__lat),4326), name = '$geodata__title', location = '$geodata__address', url = '$geodata__url_title', pillar = '$pillar', region = '$region', iso = '$geodata__country', description = '$geodata__content', visible = '$visibility', country_name = '$geodata__c_name' WHERE wp_post_id = $post_id "; 
     }
     $url .= urlencode($query).$api_bit;
     $response = wp_remote_get($url);
