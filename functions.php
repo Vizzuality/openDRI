@@ -158,7 +158,7 @@ function save_on_cartodb( $post_id ) {
   
   if ($cdb_api_key) {
 
-    echo '<pre>'.print_r($_REQUEST).'</pre>';
+    // echo '<pre>'.print_r($_REQUEST).'</pre>';
 
     $url = "https://opendri.cartodb.com/api/v2/sql?q=";
     $api_bit = "&api_key=$cdb_api_key";
