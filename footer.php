@@ -274,7 +274,7 @@
 							    }\
 							    #country_mask[name='" + $(this).val().charAt(0).toUpperCase() + $(this).val().slice(1) + "'] {\
 							      polygon-opacity: 0;\
-							      line-color: #73707D;\
+							      line-color: #fff;\
 							      line-width: 1;\
 							      line-opacity: 1;\
 							    }"
