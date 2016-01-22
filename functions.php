@@ -200,7 +200,8 @@ function save_on_cartodb( $post_id ) {
     }
     $pillar = implode("|",$pillar);
     $region = implode("|",$region);
-
+echo '<pre>'.print_r($pillar).'</pre>';
+echo '<pre>'.print_r($region).'</pre>';
     //check visibility
     if ($visibility != 'public') {
       $visibility = false;
