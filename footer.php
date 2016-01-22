@@ -49,8 +49,8 @@
 		       </div>
 		       <div class="cartodb-popup-content">
 		         <!-- content.data contains the field info -->
-		         <p>{{content.data.country_name}}</p>
 		         <p>{{content.data.description}}</p>
+		         <p class="meta">{{content.data.country_name}} | {{content.data.pillar}}</p>
 		     	<span class="popup-link-project"><a href="<? echo home_url(); ?>/project/{{content.data.url}}">VIEW PROJECT</a></span>
 		       </div>
 		     </div>

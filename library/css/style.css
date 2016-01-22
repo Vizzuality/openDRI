@@ -2669,6 +2669,38 @@ FOOTER STYLES
 .leaflet-top .leaflet-control {
   margin-top: 60px !important; }
 
+div.cartodb-popup h1 {
+  font-size: 15px !important;
+  text-transform: uppercase !important;
+  color: #0475cc !important;
+  margin: 0 0 15px 0 !important; }
+
+div.cartodb-popup p.meta {
+  font-size: 11px;
+  color: rgba(85, 85, 85, 0.5);
+  text-align: justify; }
+
+div.cartodb-popup .cartodb-popup-close-button {
+  box-shadow: none !important;
+  top: 0px !important;
+  right: 0px !important;
+  transform: scale(1.5) !important;
+  background-color: transparent !important; }
+
+.popup-link-project {
+  background-color: #1477c9;
+  display: block; }
+  .popup-link-project a {
+    color: white !important;
+    text-decoration: none;
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 15px 0 0 0; }
+
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
