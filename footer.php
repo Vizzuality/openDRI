@@ -105,6 +105,9 @@
 
 				    sublayers.push(sublayer);
 				    sublayer.infowindow.set('template', $('#infowindow_template').html());
+				    sublayer.on('featureClick', function(e, latlng, pos, data, subLayerIndex) {
+				    	changeIn_regions(data.cartodb_id);
+				    });
 				  }).on('error', function() {
 				    console.error('Error while loading map. Please check footer file')
 				  });
@@ -166,7 +169,7 @@
 				  },
 				}
 				jsonValues = JSON.parse(jsonValues);
-				$('#pick-region').on('click', '.pickable', function() {
+				$('#pick-region').on('click', '.pickable', function(option) {
 					$(this).siblings().removeClass('selected');
 					if (!! $(this).hasClass('selected')) {
 						var option 	= 'all';
@@ -192,6 +195,19 @@
 				$('#blue-bar-pick-pillar').on('click', '.option-pillar', function(){
 					LayerActions[$(this).data('option')]();
 				});
+
+				var changeIn_regions = function(id) {
+					if (id < 31 || id > 37) return false;
+					var $regions = $('#pick-region');
+					if (id === 31) $regions.find('[data-option="africa"]').trigger('click');
+					else if (id === 32) $regions.find('[data-option="eastasia"]').trigger('click');
+					else if (id === 33) $regions.find('[data-option="europe"]').trigger('click');
+					else if (id === 34) $regions.find('[data-option="latam"]').trigger('click');
+					else if (id === 35) $regions.find('[data-option="middleeast"]').trigger('click');
+					else if (id === 36) $regions.find('[data-option="all"]').trigger('click');
+					else $regions.find('[data-option="southasia"]').trigger('click');
+					return false;
+				}
 			}
 			window.onload = function() {
 			  init();
