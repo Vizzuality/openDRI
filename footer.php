@@ -90,12 +90,53 @@
 				}
 				L.tileLayer(basemap, {
 				}).addTo(map);
-				L.marker(new L.LatLng(0, 0), {icon:createLabelIcon("textLabelclass","<? echo $postsInall; ?>")}).addTo(map);
-				L.marker(new L.LatLng(21, 7), {icon:createLabelIcon("textLabelclass","<? echo $postsInAfrica; ?>")}).addTo(map);
-				L.marker(new L.LatLng(103, 35), {icon:createLabelIcon("textLabelclass","<? echo $postsIneastasia; ?>")}).addTo(map);
-				L.marker(new L.LatLng(25, 55), {icon:createLabelIcon("textLabelclass","<? echo $postsInEurope; ?>")}).addTo(map);
-				L.marker(new L.LatLng(-59, 13), {icon:createLabelIcon("textLabelclass","<? echo $postsInlatam; ?>")}).addTo(map);
-				L.marker(new L.LatLng(41, 29), {icon:createLabelIcon("textLabelclass","<? echo $postsInmiddleeast; ?>")}).addTo(map);
+				<? 
+					$postsInall = get_term_by('slug','non-wb-countries','category');
+					$postsInall = $postsInall->count;
+				?>
+				var postsInall = '<? echo $postsInall ?>';
+				L.marker(new L.LatLng(0, 0), {icon:createLabelIcon("textLabelclass",postsInall)}).addTo(map);
+
+				<? 
+					$postsInAfrica = get_term_by('slug','africa','category');
+					$postsInAfrica = $postsInAfrica->count;
+				?>
+				var postsInAfrica = '<? echo $postsInAfrica ?>';
+				L.marker(new L.LatLng(21, 7), {icon:createLabelIcon("textLabelclass",postsInAfrica)}).addTo(map);
+
+				<? 
+					$postsIneastasia = get_term_by('slug','east-asia-pacific','category');
+					$postsIneastasia = $postsIneastasia->count;
+				?>
+				var postsIneastasia = '<? echo $postsIneastasia ?>';
+				L.marker(new L.LatLng(103, 35), {icon:createLabelIcon("textLabelclass",postsIneastasia)}).addTo(map);
+
+				<? 
+					$postsInEurope = get_term_by('slug','europe-and-central-asia','category');
+					$postsInEurope = $postsInEurope->count;
+				?>
+				var postsInEurope = '<? echo $postsInEurope ?>';
+				L.marker(new L.LatLng(25, 55), {icon:createLabelIcon("textLabelclass",postsInEurope)}).addTo(map);
+
+				<? 
+					$postsInlatam = get_term_by('slug','latin-america-and-caribbean','category');
+					$postsInlatam = $postsInlatam->count;
+				?>
+				var postsInlatam = '<? echo $postsInlatam ?>';			
+				L.marker(new L.LatLng(-59, 13), {icon:createLabelIcon("textLabelclass",postsInlatam)}).addTo(map);
+
+				<? 
+					$postsInmiddleeast = get_term_by('slug','middle-east-and-north-africa','category','category');
+					$postsInmiddleeast = $postsInmiddleeast->count;
+				?>
+				var postsInmiddleeast = '<? echo $postsInmiddleeast ?>';
+				L.marker(new L.LatLng(41, 29), {icon:createLabelIcon("textLabelclass",postsInmiddleeast)}).addTo(map);
+
+				<? 
+					$postsInsouthasia = get_term_by('slug','south-asia','category','category');
+					$postsInsouthasia = $postsInsouthasia->count;
+				?>
+				var postsInsouthasia = '<? echo $postsInsouthasia ?>';			
 				L.marker(new L.LatLng(72, 27), {icon:createLabelIcon("textLabelclass","<? echo $postsInsouthasia; ?>")}).addTo(map);
 				var query 		  = "SELECT * FROM wp_projects",
 					queryTemplate = query + " WHERE region = ";
