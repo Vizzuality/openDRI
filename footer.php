@@ -69,6 +69,7 @@
 			var map;
 			var currentSublayer;
 		    function init(){
+		    	if ($('#map').length == 0) return;
 				if ( !!LAT_VIS && !!LONG_VIS ) {
 					map = new L.Map('map', {
 						center : [LAT_VIS,LONG_VIS],
@@ -634,7 +635,7 @@
 			    });
 			}).on('keyup', function(e){
 				if(e.keyCode == 13)
-			    	location = location.pathname + '?s=' + $input.val();
+			    	location = location.hostname + '/?s=' + $input.val();
 			});
 
 
