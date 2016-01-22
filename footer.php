@@ -251,7 +251,9 @@
 				$('#blue-bar-pick-pillar').on('click', '.option-pillar', function(){
 					LayerActions[$(this).data('option')]();
 				});
-
+				$('#searchCountries').on('keyup', function() {
+					sublayers[0].setSQL('SELECT * FROM wp_projects where country_name like \'%' + $(this).val() + '%\' AND visible = true')
+				})
 				var changeIn_regions = function(id) {
 					if (id < 31 || id > 37) return false;
 					$('.cartodb-infowindow').hide();
@@ -269,6 +271,7 @@
 			window.onload = function() {
 			  init();
 			};
+
 			// Twitter
 			!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 			window.setTimeout(
