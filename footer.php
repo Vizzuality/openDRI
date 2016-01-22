@@ -59,6 +59,13 @@
 		  </div>
 		</script>
 		<script>
+			var createLabelIcon = function(labelClass,labelText){
+			  return L.divIcon({ 
+			    className: labelClass,
+			    html: labelText
+			  })
+			}
+  
 			var map;
 		    function init(){
 				if ( !!LAT_VIS && !!LONG_VIS ) {
@@ -83,7 +90,13 @@
 				}
 				L.tileLayer(basemap, {
 				}).addTo(map);
-
+				L.marker(new L.LatLng(0, 0), {icon:createLabelIcon("textLabelclass","<? echo $postsInall; ?>")}).addTo(map);
+				L.marker(new L.LatLng(21, 7), {icon:createLabelIcon("textLabelclass","<? echo $postsInAfrica; ?>")}).addTo(map);
+				L.marker(new L.LatLng(103, 35), {icon:createLabelIcon("textLabelclass","<? echo $postsIneastasia; ?>")}).addTo(map);
+				L.marker(new L.LatLng(25, 55), {icon:createLabelIcon("textLabelclass","<? echo $postsInEurope; ?>")}).addTo(map);
+				L.marker(new L.LatLng(-59, 13), {icon:createLabelIcon("textLabelclass","<? echo $postsInlatam; ?>")}).addTo(map);
+				L.marker(new L.LatLng(41, 29), {icon:createLabelIcon("textLabelclass","<? echo $postsInmiddleeast; ?>")}).addTo(map);
+				L.marker(new L.LatLng(72, 27), {icon:createLabelIcon("textLabelclass","<? echo $postsInsouthasia; ?>")}).addTo(map);
 				var query 		  = "SELECT * FROM wp_projects",
 					queryTemplate = query + " WHERE region = ";
 					queryTPillar  = query + " WHERE pillar like "
@@ -198,6 +211,7 @@
 
 				var changeIn_regions = function(id) {
 					if (id < 31 || id > 37) return false;
+					$('.cartodb-infowindow').hide();
 					var $regions = $('#pick-region');
 					if (id === 31) $regions.find('[data-option="africa"]').trigger('click');
 					else if (id === 32) $regions.find('[data-option="eastasia"]').trigger('click');
