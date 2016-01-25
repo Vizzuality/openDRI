@@ -70,8 +70,10 @@
 							<div class="row-container">
 								<?php
 									$meta = get_post_meta(get_the_ID(), 'news', true);
-									$meta_content = [];
-									foreach(preg_split("/((\r?\n)|(\r\n?))/", $meta) as $line){
+									$max = 3;
+									foreach(explode("\n", $meta) as $line){
+										if ($max == 0) break;
+										$max --;
 									    $current_post = url_to_postid( $line );
 									    $recent 	  = get_post($current_post);
 								?>
@@ -91,7 +93,7 @@
 												<p class="byline entry-meta vcard">
 						                            <?php printf( __( '', 'bonestheme' ).' %1$s %2$s',
 						   								/* the author of the post */
-						   								'<span class="entry-author author" itemprop="author" itemscope itemptype="http://schema.org/Person">' . get_the_author_meta('display_name', $recent['post_author'] ) . '</span>',
+						   								'<span class="entry-author author" itemprop="author" itemscope itemptype="http://schema.org/Person">' . get_the_author_meta('display_name', $recent->post_author ) . '</span>',
 						   								/* the time the post was published */
 						   								'<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time('d M') . '</time>'
 													); ?>
@@ -103,7 +105,7 @@
 							</div>
 						</div>
 						<?
-							}
+							} else {
 						?>
 						<div id="more-content" class="index-row more-content">
 							<h3>Recent news</h3>
@@ -137,7 +139,8 @@
 												</p>
 											</footer>
 										</article>
-								<?}	// end loop?>
+								<?}	// end loop
+							} // end else ?>
 
 							</div>
 						</div>
