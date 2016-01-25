@@ -75,25 +75,25 @@
 										if ($max == 0) break;
 										$max --;
 									    $current_post = url_to_postid( $line );
-									    $recent 	  = get_post($current_post);
+									    $related 	  = get_post($current_post);
 								?>
-										<article id="post-<?php echo $recent->ID; ?>" <?php post_class( 'cf' ); ?> role="article">
-											<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $recent->ID ), 'single-post-thumbnail' );
+										<article id="post-<?php echo $related->ID; ?>" <?php post_class( 'cf' ); ?> role="article">
+											<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $related->ID ), 'single-post-thumbnail' );
 												$image = ($image[0]) ? $image[0] : get_template_directory_uri().'/library/images/red-cross.jpg';
 											?>
 					            			<span class="img" style="background-image:url(<?php echo $image; ?>)"></span>
 
 											<header class="article-header">
-												<h1 class="h2 entry-title"><a href="<?php echo $recent->guid; ?>" rel="bookmark" title="<?php echo $recent->post_title; ?>"><?php echo $recent->post_title; ?></a></h1>
+												<h1 class="h2 entry-title"><a href="<?php echo $related->guid; ?>" rel="bookmark" title="<?php echo $related->post_title; ?>"><?php echo $related->post_title; ?></a></h1>
 											</header>
 											<section class="entry-content cf">
-												<p><?php echo $recent->post_content; ?></p>
+												<p><?php echo $related->post_content; ?></p>
 											</section>
 											<footer class="article-footer cf">
 												<p class="byline entry-meta vcard">
 						                            <?php printf( __( '', 'bonestheme' ).' %1$s %2$s',
 						   								/* the author of the post */
-						   								'<span class="entry-author author" itemprop="author" itemscope itemptype="http://schema.org/Person">' . get_the_author_meta('display_name', $recent->post_author ) . '</span>',
+						   								'<span class="entry-author author" itemprop="author" itemscope itemptype="http://schema.org/Person">' . get_the_author_meta('display_name', $related->post_author ) . '</span>',
 						   								/* the time the post was published */
 						   								'<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time('d M') . '</time>'
 													); ?>
