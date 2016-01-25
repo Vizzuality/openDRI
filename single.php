@@ -39,7 +39,7 @@
 								*/
 								get_template_part( 'post-formats/format', get_post_format() );
 
-							if (get_post_type() != 'project') {
+							if (get_post_type() != 'resource') {
 								get_sidebar();
 							}
 							?>

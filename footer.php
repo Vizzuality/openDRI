@@ -73,7 +73,7 @@
 				if ( !!LAT_VIS && !!LONG_VIS ) {
 					map = new L.Map('map', {
 						center : [LAT_VIS,LONG_VIS],
-						zoom: 6,
+						zoom: 12,
 						zoomControl: false,
 						scrollWheelZoom: false
 					})
@@ -84,10 +84,10 @@
 			        zoomControl: false,
 			        scrollWheelZoom: false
 			      })
+					L.control.zoom({
+					    position:'topright'
+					}).addTo(map);
 				}
-				L.control.zoom({
-				    position:'topright'
-				}).addTo(map);
 				var basemap = 'https://a.tiles.mapbox.com/v4/opendri.0ouhqxkv/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoib3BlbmRyaSIsImEiOiJjaWpvZjcwbTYwMHVldG9tNXlhajMwb2dyIn0.fWimK0QhrBpQVX5Zu2bWNg';
 				if (window.matchMedia("(-webkit-device-pixel-ratio: 2)").matches) {
 				  basemap = 'https://a.tiles.mapbox.com/v4/opendri.0ouhqxkv/{z}/{x}/{y}@2x.png?access_token=pk.eyJ1Ijoib3BlbmRyaSIsImEiOiJjaWpvZjcwbTYwMHVldG9tNXlhajMwb2dyIn0.fWimK0QhrBpQVX5Zu2bWNg';
@@ -226,7 +226,7 @@
 				    return true;
 				  },
 				}
-				jsonValues = JSON.parse(jsonValues);
+				if (typeof jsonValues != 'undefined') jsonValues = JSON.parse(jsonValues);
 				$('#pick-region').on('click', '.pickable', function(option) {
 					$(this).siblings().removeClass('selected');
 					if (!! $(this).hasClass('selected')) {
