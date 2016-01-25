@@ -176,31 +176,33 @@ function save_on_cartodb( $post_id ) {
     //check pillars and regions
     $pillar = [];
     $region = [];
-    if (in_array(7, $categories)) {
-        array_push($pillar,'community mapping');
-    } if (in_array(6, $categories)) {
-      array_push($pillar,'open data platforms');
-    } if (in_array(8, $categories)) {
-      array_push($pillar,'risk visualization');
-    } if (in_array(9, $categories)) {
-      array_push($region,'africa');
-    } if (in_array(10, $categories)) {
-      array_push($region,'eastasia');
-    } if (in_array(11, $categories)) {
-      array_push($region,'europe');
-    } if (in_array(12, $categories)) {
-      array_push($region,'latam');
-    } if (in_array(13, $categories)) {
-      array_push($region,'middleeast');
-    } if (in_array(14, $categories)) {
-      array_push($region,'nonwp');
-    } if (in_array(15, $categories)) {
-      array_push($region,'southasia');
+    if (is_array($categories)){
+      if (in_array(7, $categories)) {
+          array_push($pillar,'community mapping');
+      } if (in_array(6, $categories)) {
+        array_push($pillar,'open data platforms');
+      } if (in_array(8, $categories)) {
+        array_push($pillar,'risk visualization');
+      } if (in_array(9, $categories)) {
+        array_push($region,'africa');
+      } if (in_array(10, $categories)) {
+        array_push($region,'eastasia');
+      } if (in_array(11, $categories)) {
+        array_push($region,'europe');
+      } if (in_array(12, $categories)) {
+        array_push($region,'latam');
+      } if (in_array(13, $categories)) {
+        array_push($region,'middleeast');
+      } if (in_array(14, $categories)) {
+        array_push($region,'nonwp');
+      } if (in_array(15, $categories)) {
+        array_push($region,'southasia');
+      }
+      $pillar = implode("|",$pillar);
+      $region = implode("|",$region);
+      // echo '<pre>'.$pillar.'</pre>';
+      // echo '<pre>'.$region.'</pre>';
     }
-    $pillar = implode("|",$pillar);
-    $region = implode("|",$region);
-    // echo '<pre>'.$pillar.'</pre>';
-    // echo '<pre>'.$region.'</pre>';
 
     //check visibility
     if ($visibility != 'public') {
