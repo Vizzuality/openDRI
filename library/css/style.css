@@ -1281,6 +1281,9 @@ WORDPRESS BODY CLASSES
 style a page via class
 ********************/
 /* for sites that are read right to left (i.e. hebrew) */
+.home .index-row {
+  flex-direction: row; }
+
 /* home page */
 /* blog template page */
 /* archive page */
