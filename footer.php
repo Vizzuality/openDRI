@@ -74,13 +74,15 @@
 					map = new L.Map('map', {
 						center : [LAT_VIS,LONG_VIS],
 						zoom: 6,
-						zoomControl: false
+						zoomControl: false,
+						scrollWheelZoom: false
 					})
 				} else {
 					map = new L.Map('map', { 
 			        center: [20,0],
 			        zoom: 2,
-			        zoomControl: false
+			        zoomControl: false,
+			        scrollWheelZoom: false
 			      })
 				}
 				L.control.zoom({
