@@ -1636,7 +1636,7 @@ POSTS & CONTENT STYLES
     .index-row.more-content .row-container {
       justify-content: space-between; }
       .index-row.more-content .row-container article {
-        margin: 0; }
+        margin: 10px; }
   .index-row .row-container {
     display: flex;
     flex-wrap: wrap; }
