@@ -116,12 +116,16 @@
 				<?
 					$args = array( 'numberposts' => '1', 'category' => 'highlighted-resource', 'order' => 'DESC', 'post_type' => 'resource' );
 					$featured_col = wp_get_recent_posts( $args );
-					foreach( $featured_col as $recent ) {
+					$image1 = '';
+					$image2 = '';
+					foreach( $featured_col as $featured ) {
+						$image = wp_get_attachment_image_src( get_post_thumbnail_id( $featured["ID"] ), 'single-post-thumbnail' );
+						$image1 = $image[0];
 				?>
-					<a href="<?php echo $recent["guid"]; ?>" target="_blank">
-						<article class="resource-cont">
+					<a href="<?php echo $featured["guid"]; ?>" target="_blank">
+						<article class="resource-cont"  id="firstFeatured">
 							<section>
-								<h3><?php echo $recent["post_title"]; ?></h3>
+								<h3><?php echo $featured["post_title"]; ?></h3>
 							</section>
 						</article>
 					</a>
@@ -133,12 +137,14 @@
 				<?
 					$args = array( 'numberposts' => '1', 'category' => 'highlighted-resource',  'order' => 'DESC', 'offset' => '1', 'post_type' => 'resource' );
 					$featured_col = wp_get_recent_posts( $args );
-					foreach( $featured_col as $recent ) {
+					foreach( $featured_col as $featured ) {
+						$image = wp_get_attachment_image_src( get_post_thumbnail_id( $featured["ID"] ), 'single-post-thumbnail' );
+						$image2 = $image[0];
 				 ?>
-					<a href="<?php echo $recent["guid"]; ?>">
-						<article class="resource-cont --scnd-img">
+					<a href="<?php echo $featured["guid"]; ?>"  target="_blank">
+						<article class="resource-cont --scnd-img"  id="secondFeatured">
 							<section>
-								<h3><?php echo $recent["post_title"]; ?></h3>
+								<h3><?php echo $featured["post_title"]; ?></h3>
 							</section>
 						</article>
 					</a>
@@ -161,6 +167,9 @@
 					</ul>
 				</div>
 			</div>
+			<script type="text/javascript">
+			document.getElementsByTagName('head')[0].innerHTML += '<style>#firstFeatured:after{background-image:url(<? echo $image1 ?>) !important;}#secondFeatured:after{background-image:url(<? echo $image2 ?>) !important;}</style>';
+			</script>
 			<?php /* get_sidebar(); */ ?>
 		</div>
 	</div>
