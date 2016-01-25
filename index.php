@@ -63,7 +63,7 @@
 				<div class="card-third">
 			        <div class="twitter mod-tweets">
 			          <span><i class="twt-img"></i></span>
-			          <h3>follow us</h3>
+			          <h3>Latest tweets</h3>
 			          <a class="twitter-timeline" href="https://twitter.com/search?q=from%3Agfdrr%20OR%20from%3Aunderstandrisk%20%20OR%20%23opendri" data-widget-id="691548436664025089">Tweets sobre from:gfdrr OR from:understandrisk OR #opendri</a>
 			        </div>
 				</div>
