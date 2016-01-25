@@ -113,32 +113,36 @@
 					<a href="<?php echo home_url(); ?>/resources"><span>view all resources</span></a>
 				</div>
 				<div class="row-container">
-					<a href="#">
-						<a href="https://www.youtube.com/watch?v=EkfjEFpv_Zc" target="_blank">
+				<?
+					$args = array( 'numberposts' => '1', 'category' => 'highlighted-resource', 'order' => 'DESC', 'post_type' => 'resource' );
+					$featured_col = wp_get_recent_posts( $args );
+					foreach( $featured_col as $recent ) {
+				?>
+					<a href="<?php echo $recent["guid"]; ?>" target="_blank">
 						<article class="resource-cont">
-								<section>
-									<span>video</span>
-									<hr>
-									<h3>Inasafe Introduction</h3>
-								</section>
-							</article>
-						</a>
+							<section>
+								<h3><?php echo $recent["post_title"]; ?></h3>
+							</section>
+						</article>
 					</a>
+				<? } ?>
 				</div>
 			</div>
 			<div class="m-all cf index-row last-resources" role="resources" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 				<div class="row-container">
-					<a href="#">
-						<a href="https://www.gfdrr.org/sites/gfdrr/files/publication/GFDRR_AR12_low_0.pdf" target="_blank">
-							<article class="resource-cont --scnd-img">
-								<section>
-									<span>PDF</span>
-									<hr>
-									<h3>GFDRR Annual Report 2012</h3>
-								</section>
-							</article>
-						</a>
+				<?
+					$args = array( 'numberposts' => '1', 'category' => 'highlighted-resource',  'order' => 'DESC', 'offset' => '1', 'post_type' => 'resource' );
+					$featured_col = wp_get_recent_posts( $args );
+					foreach( $featured_col as $recent ) {
+				 ?>
+					<a href="<?php echo $recent["guid"]; ?>">
+						<article class="resource-cont --scnd-img">
+							<section>
+								<h3><?php echo $recent["post_title"]; ?></h3>
+							</section>
+						</article>
 					</a>
+				<? } ?>
 					<ul class="resource-list">
 						<a href="https://www.gfdrr.org/sites/default/files/publication/OpenDRI_Overview_2013.pdf" target="_blank"></a>
 							<li>
