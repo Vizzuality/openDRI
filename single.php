@@ -65,7 +65,7 @@
 							<h3>Recent news</h3>
 							<div class="row-container">
 								<?php
-									$args = array( 'numberposts' => '3', 'category' => $CAT_NAME );
+									$args = array( 'numberposts' => '4', 'category' => $CAT_NAME );
 									$recent_posts = wp_get_recent_posts( $args );
 									foreach( $recent_posts as $recent ){  // start loop
 								?>
@@ -117,7 +117,7 @@
 		<script type="text/javascript">
 			LAT_VIS   = '<? echo $geodata__lat ?>';
 			LONG_VIS  = '<? echo $geodata__long ?>';
-			if ('<? echo $CAT_NAME?>' === 'projects' || '<? echo get_post_type( get_the_ID() )?>' === 'project') {
+			if ('<? echo $CAT_NAME ?>' === 'projects' || '<? echo get_post_type( get_the_ID() )?>' === 'project') {
 				document.getElementById('pic-banner').style.display = 'none';
 				document.getElementById('map').style.display 		= 'block';
 			}	
