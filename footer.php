@@ -226,9 +226,9 @@
 								    #country_mask[name='Benin'],\
 								    #country_mask[name='Burkina Faso'],\
 								    #country_mask[name='Botswana'],\
-								    #country_mask[name='Central African Republic'],\
+								    #country_mask[name='Central African Rep.'],\
 								    #country_mask[name='Cameroon'],\
-								    #country_mask[name='Congo'],\
+								    #country_mask[name='Dem. Rep. Congo'],\
 								    #country_mask[name='Comoros'],\
 								    #country_mask[name='Cabo Verde'],\
 								    #country_mask[name='Algeria'],\
@@ -260,7 +260,7 @@
 								    #country_mask[name='Senegal'],\
 								    #country_mask[name='Sierra Leone'],\
 								    #country_mask[name='Somalia'],\
-								    #country_mask[name='South Sudan'],\
+								    #country_mask[name='S. Sudan'],\
 								    #country_mask[name='Swaziland'],\
 								    #country_mask[name='Seychelles'],\
 								    #country_mask[name='Chad'],\
@@ -465,6 +465,8 @@
 								      line-opacity: 0;\
 								    }\
 								    #country_mask[name='Afghanistan'],\
+								    #country_mask[name='Saudi Arabia'],\
+								    #country_mask[name='United Arab Emirates'],\
 								    #country_mask[name='Bahrain'],\
 								    #country_mask[name='Algeria'],\
 								    #country_mask[name='Egypt'],\
@@ -578,6 +580,7 @@
 						var text 	= 'filter by region';
 						var classe  = 'title';
 						var title 	= 'Projects';
+						var zoom 	= 2;
 					} else {
 						if (!! currentSublayer) currentSublayer.remove();
 						$('.amount-of-posts').hide();
@@ -588,12 +591,14 @@
 						var classe  = '';
 						var prjsn	= (~~jsonValues[option] > 0)? ~~jsonValues[option] : 0;
 						var title   = text + ': ' + prjsn.toString() + ' projects';
+						var zoom 	= $(this).data('zoom');
 					}
 					$(this).parent().fadeOut();
 					$('#toggle-filter-region').removeClass('title').addClass(classe).text(text);
 					$('.page-title').text(title).css('text-transform','capitalize');
 				    LayerActions[option]();
-				    map.panTo(latlong);
+				    console.log(latlong)
+				    map.setView(latlong,zoom);
 				});
 				$('#blue-bar-pick-pillar').on('click', '.option-pillar', function(){
 					$(this).siblings().removeClass('current');
