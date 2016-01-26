@@ -67,7 +67,9 @@
 			}
   
 			var map;
-			var currentSublayer;
+			var currentSublayer,
+				currentRegion = '';
+				currentPillar = '';
 		    function init(){
 		    	if ($('#map').length == 0) return;
 				if ( !!LAT_VIS && !!LONG_VIS ) {
@@ -202,7 +204,11 @@
 				    return true;
 				  },
 				  africa: function(){
-				    sublayers[0].setSQL( "SELECT * FROM wp_projects WHERE region = 'africa'" + visible);
+				  	if (currentPillar.length > 0)
+				    	sublayers[0].setSQL("SELECT * FROM wp_projects WHERE region = 'africa' AND pillar LIKE '%" + currentPillar + "%'"+ visible);
+				    else 
+					    sublayers[0].setSQL( "SELECT * FROM wp_projects WHERE region = 'africa'" + visible);
+				    currentRegion = "africa";
 				    sublayers[0].setCartoCSS("#wp_projects{  marker-fill-opacity: 0.9;  marker-line-color: #FFF;  marker-line-width: 2;  marker-line-opacity: 1;  marker-placement: point;  marker-type: ellipse;  marker-width: 10;  marker-fill: #FFFFFF;  marker-allow-overlap: true;}");
 				    sublayers[1].setSQL("SELECT * FROM country_mask");
 				    sublayers[1].setCartoCSS(
@@ -272,7 +278,11 @@
 				    return true;
 				  },
 				  eastasia: function(){
-				    sublayers[0].setSQL( "SELECT * FROM wp_projects WHERE region = 'eastasia'" + visible);
+				  	if (currentPillar.length > 0)
+				    	sublayers[0].setSQL("SELECT * FROM wp_projects WHERE region = 'eastasia' AND pillar LIKE '%" + currentPillar + "%'"+ visible);
+				    else 
+					    sublayers[0].setSQL( "SELECT * FROM wp_projects WHERE region = 'eastasia'" + visible);
+				    currentRegion = "eastasia";
 				    sublayers[0].setCartoCSS("#wp_projects{  marker-fill-opacity: 0.9;  marker-line-color: #FFF;  marker-line-width: 2;  marker-line-opacity: 1;  marker-placement: point;  marker-type: ellipse;  marker-width: 10;  marker-fill: #FFFFFF;  marker-allow-overlap: true;}");
 				    sublayers[1].setSQL("SELECT * FROM country_mask");
 				    sublayers[1].setCartoCSS(
@@ -325,7 +335,11 @@
 				    return true;
 				  },
 				  europe: function(){
-				    sublayers[0].setSQL( "SELECT * FROM wp_projects WHERE region = 'europe'" + visible);
+				  	if (currentPillar.length > 0)
+				    	sublayers[0].setSQL("SELECT * FROM wp_projects WHERE region = 'europe' AND pillar LIKE '%" + currentPillar + "%'"+ visible);
+				    else 
+					    sublayers[0].setSQL( "SELECT * FROM wp_projects WHERE region = 'europe'" + visible);
+				    currentRegion = "europe";
 				    sublayers[0].setCartoCSS("#wp_projects{  marker-fill-opacity: 0.9;  marker-line-color: #FFF;  marker-line-width: 2;  marker-line-opacity: 1;  marker-placement: point;  marker-type: ellipse;  marker-width: 10;  marker-fill: #FFFFFF;  marker-allow-overlap: true;}");
 				    sublayers[1].setSQL("SELECT * FROM country_mask");
 				    sublayers[1].setCartoCSS(
@@ -376,7 +390,12 @@
 				    return true;
 				  },
 				  latam: function(){
-				    sublayers[0].setSQL( "SELECT * FROM wp_projects WHERE region = 'latam'" + visible);
+				  	if (currentPillar.length > 0)
+				    	sublayers[0].setSQL("SELECT * FROM wp_projects WHERE region = 'latam' AND pillar LIKE '%" + currentPillar + "%'"+ visible);
+				    else 
+					    sublayers[0].setSQL( "SELECT * FROM wp_projects WHERE region = 'latam'" + visible);
+				    currentRegion = "latam";
+				    currentQuery = "SELECT * FROM wp_projects WHERE region = 'latam'" + visible;
 				    sublayers[0].setCartoCSS("#wp_projects{  marker-fill-opacity: 0.9;  marker-line-color: #FFF;  marker-line-width: 2;  marker-line-opacity: 1;  marker-placement: point;  marker-type: ellipse;  marker-width: 10;  marker-fill: #FFFFFF;  marker-allow-overlap: true;}");
 				    sublayers[1].setSQL("SELECT * FROM country_mask");
 				    sublayers[1].setCartoCSS(
@@ -429,7 +448,12 @@
 				    return true;
 				  },
 				  middleeast: function(){
-				    sublayers[0].setSQL( "SELECT * FROM wp_projects WHERE region = 'middleeast'" + visible);
+				  	if (currentPillar.length > 0)
+				    	sublayers[0].setSQL("SELECT * FROM wp_projects WHERE region = 'middleeast' AND pillar LIKE '%" + currentPillar + "%'"+ visible);
+				    else 
+					    sublayers[0].setSQL( "SELECT * FROM wp_projects WHERE region = 'middleeast'" + visible);
+				    currentRegion = "middleeast";
+				    currentQuery = "SELECT * FROM wp_projects WHERE region = 'middleeast'" + visible;
 				    sublayers[0].setCartoCSS("#wp_projects{  marker-fill-opacity: 0.9;  marker-line-color: #FFF;  marker-line-width: 2;  marker-line-opacity: 1;  marker-placement: point;  marker-type: ellipse;  marker-width: 10;  marker-fill: #FFFFFF;  marker-allow-overlap: true;}");
 				    sublayers[1].setSQL("SELECT * FROM country_mask");
 				    sublayers[1].setCartoCSS(
@@ -468,7 +492,12 @@
 				    return true;
 				  },			
 				  nonwp: function(){
-				    sublayers[0].setSQL( "SELECT * FROM wp_projects WHERE region = 'nonwp'" + visible);
+				  	if (currentPillar.length > 0)
+				    	sublayers[0].setSQL("SELECT * FROM wp_projects WHERE region = 'nonwp' AND pillar LIKE '%" + currentPillar + "%'"+ visible);
+				    else 
+					    sublayers[0].setSQL( "SELECT * FROM wp_projects WHERE region = 'nonwp'" + visible);
+				    currentRegion = "nonwp";
+				    currentQuery = "SELECT * FROM wp_projects WHERE region = 'nonwp'" + visible;
 				    sublayers[0].setCartoCSS("#wp_projects{  marker-fill-opacity: 0.9;  marker-line-color: #FFF;  marker-line-width: 2;  marker-line-opacity: 1;  marker-placement: point;  marker-type: ellipse;  marker-width: 10;  marker-fill: #FFFFFF;  marker-allow-overlap: true;}");
 				   	sublayers[1].setSQL("SELECT * FROM country_mask");
 					sublayers[1].setCartoCSS(
@@ -482,7 +511,12 @@
 				    return true;
 				  },	
 				  southasia: function(){
-				    sublayers[0].setSQL( "SELECT * FROM wp_projects WHERE region = 'southasia'" + visible);
+				  	if (currentPillar.length > 0)
+				    	sublayers[0].setSQL("SELECT * FROM wp_projects WHERE region = 'southasia' AND pillar LIKE '%" + currentPillar + "%'"+ visible);
+				    else 
+					    sublayers[0].setSQL( "SELECT * FROM wp_projects WHERE region = 'southasia'" + visible);
+				    currentRegion = "southasia";
+				    currentQuery = "SELECT * FROM wp_projects WHERE region = 'southasia'" + visible;
 				    sublayers[0].setCartoCSS("#wp_projects{  marker-fill-opacity: 0.9;  marker-line-color: #FFF;  marker-line-width: 2;  marker-line-opacity: 1;  marker-placement: point;  marker-type: ellipse;  marker-width: 10;  marker-fill: #FFFFFF;  marker-allow-overlap: true;}");
 				    sublayers[1].setSQL("SELECT * FROM country_mask");
 				    sublayers[1].setCartoCSS(
@@ -510,17 +544,29 @@
 				    return true;
 				  },
 				  open: function(){
-				    sublayers[0].setSQL( "SELECT * FROM wp_projects WHERE pillar like '%open data platforms%'" + visible);
+				  	if (currentRegion.length > 0)
+				    	sublayers[0].setSQL("SELECT * FROM wp_projects WHERE pillar like '%open data platforms%' AND region = '" + currentRegion + "' "+ visible);
+				    else 
+				    	sublayers[0].setSQL( "SELECT * FROM wp_projects WHERE pillar like '%open data platforms%'" + visible);
+				    currentPillar = "open data platforms";
 				    sublayers[0].setCartoCSS("#wp_projects{  marker-fill-opacity: 0.9;  marker-line-color: #FFF;  marker-line-width: 2;  marker-line-opacity: 1;  marker-placement: point;  marker-type: ellipse;  marker-width: 10;  marker-fill: #FFFFFF;  marker-allow-overlap: true;}");
 				    return true;
 				  },
 				  community: function(){
-				    sublayers[0].setSQL( "SELECT * FROM wp_projects WHERE pillar like '%community mapping%'" + visible);
+				  	if (currentRegion.length > 0)
+				    	sublayers[0].setSQL("SELECT * FROM wp_projects WHERE pillar like '%community mapping%' AND region = '" + currentRegion + "' "+ visible);
+				    else 
+				    	sublayers[0].setSQL( "SELECT * FROM wp_projects WHERE pillar like '%community mapping%'" + visible);
+				    currentPillar = "community mapping";
 				    sublayers[0].setCartoCSS("#wp_projects{  marker-fill-opacity: 0.9;  marker-line-color: #FFF;  marker-line-width: 2;  marker-line-opacity: 1;  marker-placement: point;  marker-type: ellipse;  marker-width: 10;  marker-fill: #FFFFFF;  marker-allow-overlap: true;}");
 				    return true;
 				  },		
 				  risk: function(){
-				    sublayers[0].setSQL( "SELECT * FROM wp_projects WHERE pillar like '%risk visualization%'" + visible);
+				  	if (currentRegion.length > 0)
+				    	sublayers[0].setSQL("SELECT * FROM wp_projects WHERE pillar like '%risk visualization%' AND region = '" + currentRegion + "' "+ visible);
+				    else 
+				    	sublayers[0].setSQL( "SELECT * FROM wp_projects WHERE pillar like '%risk visualization%'" + visible);
+				    currentPillar = "risk visualization";
 				    sublayers[0].setCartoCSS("#wp_projects{  marker-fill-opacity: 0.9;  marker-line-color: #FFF;  marker-line-width: 2;  marker-line-opacity: 1;  marker-placement: point;  marker-type: ellipse;  marker-width: 10;  marker-fill: #FFFFFF;  marker-allow-overlap: true;}");
 				    return true;
 				  },
