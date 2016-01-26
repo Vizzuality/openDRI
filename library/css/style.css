@@ -2662,6 +2662,8 @@ FOOTER STYLES
         cursor: pointer; }
         .blue-bar-top .wrapper .region-filter li:hover, .blue-bar-top .wrapper .region-filter li.selected {
           background-color: rgba(255, 255, 255, 0.2); }
+        .blue-bar-top .wrapper .region-filter li.clear-map {
+          text-align: center; }
 
 #toggle-filter-region {
   display: block;
