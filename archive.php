@@ -43,8 +43,9 @@ if(is_post_type_archive()) {
 								<span class="option-pillar" data-option="open"><a href="#" data-option="open"><i class="img-pile-1"></i>open data platforms</a></span>
 								<span class="option-pillar" data-option="community"><a href="#" data-option="community"><i class="img-pile-2"></i>community mapping</a></span>
 								<span class="option-pillar" data-option="risk"><a href="#" data-option="risk"><i class="img-pile-3"></i>risk visualization</a></span>
+								<span id="reset-map">Reset</span>
 							</div>
-							<div>
+							<div class="container-region-filter">
 								<span class="title" id="toggle-filter-region">filter by region</span>
 								<ul class="region-filter" id="pick-region">
 									<li><input type="text" id="searchCountries" placeholder="Search country"></li>
