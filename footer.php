@@ -191,7 +191,7 @@
 				  	location.reload();
 				  },
 				  all: function(){
-				  	curre
+				  	currentPillar = currentRegion = '';
 				    sublayers[0].setSQL("SELECT * FROM wp_projects");
 				   	sublayers[1].setSQL("SELECT * FROM country_mask");
 					sublayers[1].setCartoCSS(
@@ -596,7 +596,12 @@
 				    map.panTo(latlong);
 				});
 				$('#blue-bar-pick-pillar').on('click', '.option-pillar', function(){
+					$(this).siblings().removeClass('current');
+					$(this).siblings('.title').text('Clear map').addClass('clear-map');
 					LayerActions[$(this).data('option')]();
+				});
+				$('#blue-bar-pick-pillar').on('click', '.clear-map', function(){
+					location.reload();
 				});
 				$('#searchCountries').on('keyup', function() {
 					if ($(this).val().length < 1) {
