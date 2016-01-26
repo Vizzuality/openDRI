@@ -55,6 +55,7 @@ if(is_post_type_archive()) {
 									<li class="pickable" data-option="middleeast" data-lat="29" data-lng="41">middle east and north africa</li>
 									<li class="pickable" data-option="all" data-lat="0" data-lng="0">non wb countries</li>
 									<li class="pickable" data-option="southasia" data-lat="27" data-lng="72">south asia</li>
+									<li class="pickable clear-map" data-option="reload" data-lat="27" data-lng="72">Clear map</li>
 								</ul>
 							</div>
 					</div>

@@ -185,6 +185,9 @@
 				  });
 				// end map
 				var LayerActions = {
+				  reload: function() {
+				  	location.reload();
+				  },
 				  all: function(){
 				    sublayers[0].setSQL("SELECT * FROM wp_projects");
 				    return true;
@@ -458,6 +461,16 @@
 				  nonwp: function(){
 				    sublayers[0].setSQL( " SELECT * FROM wp_projects WHERE region = 'nonwp'" + visible);
 				    sublayers[0].setCartoCSS("#wp_projects{  marker-fill-opacity: 0.9;  marker-line-color: #FFF;  marker-line-width: 2;  marker-line-opacity: 1;  marker-placement: point;  marker-type: ellipse;  marker-width: 10;  marker-fill: #FFFFFF;  marker-allow-overlap: true;}");
+				   	sublayers[1].setSQL("SELECT * FROM country_mask");
+					sublayers[1].setCartoCSS(
+				    			"\
+								    #country_mask {\
+								      polygon-fill: transparent;\
+								      polygon-opacity: 1;\
+								      line-opacity: 0;\
+								      line-width: 0;\
+								    }\
+								    ");
 				    return true;
 				  },	
 				  southasia: function(){
