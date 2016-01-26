@@ -597,7 +597,6 @@
 					$('#toggle-filter-region').removeClass('title').addClass(classe).text(text);
 					$('.page-title').text(title).css('text-transform','capitalize');
 				    LayerActions[option]();
-				    console.log(latlong)
 				    map.setView(latlong,zoom);
 				});
 				$('#blue-bar-pick-pillar').on('click', '.option-pillar', function(){
