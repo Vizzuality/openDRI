@@ -215,8 +215,8 @@
 				    sublayers[1].setCartoCSS(
 				    			"\
 								    #country_mask {\
-								      polygon-fill: #c0c0c0;\
-								      polygon-opacity: 0.1;\
+								      polygon-fill: #999;\
+								      polygon-opacity: 0.4;\
 								      line-color: #999;\
 								      line-width: 0;\
 								      line-opacity: 0;\
@@ -227,9 +227,11 @@
 								    #country_mask[name='Burkina Faso'],\
 								    #country_mask[name='Botswana'],\
 								    #country_mask[name='Central African Rep.'],\
+								    #country_mask[name='CÃ´te dâIvoire'],\
 								    #country_mask[name='Cameroon'],\
 								    #country_mask[name='Dem. Rep. Congo'],\
 								    #country_mask[name='Comoros'],\
+								    #country_mask[name='Congo'],\
 								    #country_mask[name='Cabo Verde'],\
 								    #country_mask[name='Algeria'],\
 								    #country_mask[name='Djibouti'],\
@@ -239,12 +241,14 @@
 								    #country_mask[name='Gabon'],\
 								    #country_mask[name='Ghana'],\
 								    #country_mask[name='Guinea'],\
+								    #country_mask[name='Eq. Guinea'],\
 								    #country_mask[name='Gambia'],\
 								    #country_mask[name='Guinea-Bissau'],\
 								    #country_mask[name='Equatorial Guinea'],\
 								    #country_mask[name='Kenya'],\
 								    #country_mask[name='Libya'],\
 								    #country_mask[name='Lesotho'],\
+								    #country_mask[name='Liberia'],\
 								    #country_mask[name='Morocco'],\
 								    #country_mask[name='Madagascar'],\
 								    #country_mask[name='Mali'],\
@@ -260,6 +264,7 @@
 								    #country_mask[name='Senegal'],\
 								    #country_mask[name='Sierra Leone'],\
 								    #country_mask[name='Somalia'],\
+								    #country_mask[name='Somaliland'],\
 								    #country_mask[name='S. Sudan'],\
 								    #country_mask[name='Swaziland'],\
 								    #country_mask[name='Seychelles'],\
@@ -269,12 +274,13 @@
 								    #country_mask[name='Tanzania'],\
 								    #country_mask[name='Uganda'],\
 								    #country_mask[name='South Africa'],\
+								    #country_mask[name='W. Sahara'],\
 								    #country_mask[name='Zambia'],\
 								    #country_mask[name='Zimbabwe']{\
 								      polygon-opacity: 0;\
 								      line-color: #fff;\
 								      line-width: 1;\
-								      line-opacity: 1;\
+								      line-opacity: 0.4;\
 								    }");
 				    return true;
 				  },
@@ -289,8 +295,8 @@
 				    sublayers[1].setCartoCSS(
 				    			"\
 								    #country_mask {\
-								      polygon-fill: #c0c0c0;\
-								      polygon-opacity: 0.1;\
+								      polygon-fill: #999;\
+								      polygon-opacity: 0.4;\
 								      line-color: #999;\
 								      line-width: 0;\
 								      line-opacity: 0;\
@@ -331,7 +337,7 @@
 								      polygon-opacity: 0;\
 								      line-color: #fff;\
 								      line-width: 1;\
-								      line-opacity: 1;\
+								      line-opacity: 0.4;\
 								    }");
 				    return true;
 				  },
@@ -346,8 +352,8 @@
 				    sublayers[1].setCartoCSS(
 				    			"\
 								    #country_mask {\
-								      polygon-fill: #c0c0c0;\
-								      polygon-opacity: 0.1;\
+								      polygon-fill: #999;\
+								      polygon-opacity: 0.4;\
 								      line-color: #999;\
 								      line-width: 0;\
 								      line-opacity: 0;\
@@ -386,7 +392,7 @@
 								      polygon-opacity: 0;\
 								      line-color: #fff;\
 								      line-width: 1;\
-								      line-opacity: 1;\
+								      line-opacity: 0.4;\
 								    }");
 				    return true;
 				  },
@@ -401,8 +407,8 @@
 				    sublayers[1].setCartoCSS(
 				    			"\
 								    #country_mask {\
-								      polygon-fill: #c0c0c0;\
-								      polygon-opacity: 0.1;\
+								      polygon-fill: #999;\
+								      polygon-opacity: 0.4;\
 								      line-color: #999;\
 								      line-width: 0;\
 								      line-opacity: 0;\
@@ -443,7 +449,7 @@
 								      polygon-opacity: 0;\
 								      line-color: #fff;\
 								      line-width: 1;\
-								      line-opacity: 1;\
+								      line-opacity: 0.4;\
 								    }");
 				    return true;
 				  },
@@ -458,8 +464,8 @@
 				    sublayers[1].setCartoCSS(
 				    			"\
 								    #country_mask {\
-								      polygon-fill: #c0c0c0;\
-								      polygon-opacity: 0.1;\
+								      polygon-fill: #999;\
+								      polygon-opacity: 0.4;\
 								      line-color: #999;\
 								      line-width: 0;\
 								      line-opacity: 0;\
@@ -488,7 +494,7 @@
 								      polygon-opacity: 0;\
 								      line-color: #fff;\
 								      line-width: 1;\
-								      line-opacity: 1;\
+								      line-opacity: 0.4;\
 								    }");
 				    return true;
 				  },			
@@ -521,8 +527,8 @@
 				    sublayers[1].setCartoCSS(
 				    			"\
 								    #country_mask {\
-								      polygon-fill: #c0c0c0;\
-								      polygon-opacity: 0.1;\
+								      polygon-fill: #999;\
+								      polygon-opacity: 0.4;\
 								      line-color: #999;\
 								      line-width: 0;\
 								      line-opacity: 0;\
@@ -538,7 +544,7 @@
 								      polygon-opacity: 0;\
 								      line-color: #fff;\
 								      line-width: 1;\
-								      line-opacity: 1;\
+								      line-opacity: 0.4;\
 								    }");
 				    return true;
 				  },
