@@ -474,9 +474,7 @@
 					sublayers[1].setCartoCSS(
 				    			"\
 								    #country_mask {\
-								      polygon-fill: #c0c0c0;\
-								      polygon-opacity: 0.1;\
-								      line-color: #999;\
+								      polygon-opacity: 0;\
 								      line-width: 0;\
 								      line-opacity: 0;\
 								    }\
