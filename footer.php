@@ -167,6 +167,19 @@
 				    sublayer.on('featureClick', function(e, latlng, pos, data, subLayerIndex) {
 				    	changeIn_regions(data.cartodb_id);
 				    });
+					cartodb.createLayer(map, {
+									user_name: 'opendri',
+									type: 'cartodb',
+									cartodb_logo: false,
+									sublayers: [{
+									  sql: "SELECT * FROM country_mask",
+									  cartocss: ""
+									}]
+								})
+					.addTo(map)
+					.on('done',function(layer){
+						sublayers.push(layer.getSubLayer(0));
+					});
 				  }).on('error', function() {
 				    console.error('Error while loading map. Please check footer file')
 				  });
@@ -179,82 +192,9 @@
 				  africa: function(){
 				    sublayers[0].setSQL( " SELECT * FROM wp_projects WHERE region = 'africa'" + visible);
 				    sublayers[0].setCartoCSS("#wp_projects{  marker-fill-opacity: 0.9;  marker-line-color: #FFF;  marker-line-width: 2;  marker-line-opacity: 1;  marker-placement: point;  marker-type: ellipse;  marker-width: 10;  marker-fill: #FFFFFF;  marker-allow-overlap: true;}");
-				    return true;
-				  },
-				  eastasia: function(){
-				    sublayers[0].setSQL( " SELECT * FROM wp_projects WHERE region = 'eastasia'" + visible);
-				    sublayers[0].setCartoCSS("#wp_projects{  marker-fill-opacity: 0.9;  marker-line-color: #FFF;  marker-line-width: 2;  marker-line-opacity: 1;  marker-placement: point;  marker-type: ellipse;  marker-width: 10;  marker-fill: #FFFFFF;  marker-allow-overlap: true;}");
-				    return true;
-				  },
-				  europe: function(){
-				    sublayers[0].setSQL( " SELECT * FROM wp_projects WHERE region = 'europe'" + visible);
-				    sublayers[0].setCartoCSS("#wp_projects{  marker-fill-opacity: 0.9;  marker-line-color: #FFF;  marker-line-width: 2;  marker-line-opacity: 1;  marker-placement: point;  marker-type: ellipse;  marker-width: 10;  marker-fill: #FFFFFF;  marker-allow-overlap: true;}");
-				    return true;
-				  },
-				  latam: function(){
-				    sublayers[0].setSQL( " SELECT * FROM wp_projects WHERE region = 'latam'" + visible);
-				    sublayers[0].setCartoCSS("#wp_projects{  marker-fill-opacity: 0.9;  marker-line-color: #FFF;  marker-line-width: 2;  marker-line-opacity: 1;  marker-placement: point;  marker-type: ellipse;  marker-width: 10;  marker-fill: #FFFFFF;  marker-allow-overlap: true;}");
-				    return true;
-				  },
-				  middleeast: function(){
-				    sublayers[0].setSQL( " SELECT * FROM wp_projects WHERE region = 'middleeast'" + visible);
-				    sublayers[0].setCartoCSS("#wp_projects{  marker-fill-opacity: 0.9;  marker-line-color: #FFF;  marker-line-width: 2;  marker-line-opacity: 1;  marker-placement: point;  marker-type: ellipse;  marker-width: 10;  marker-fill: #FFFFFF;  marker-allow-overlap: true;}");
-				    return true;
-				  },			
-				  nonwp: function(){
-				    sublayers[0].setSQL( " SELECT * FROM wp_projects WHERE region = 'nonwp'" + visible);
-				    sublayers[0].setCartoCSS("#wp_projects{  marker-fill-opacity: 0.9;  marker-line-color: #FFF;  marker-line-width: 2;  marker-line-opacity: 1;  marker-placement: point;  marker-type: ellipse;  marker-width: 10;  marker-fill: #FFFFFF;  marker-allow-overlap: true;}");
-				    return true;
-				  },	
-				  southasia: function(){
-				    sublayers[0].setSQL( " SELECT * FROM wp_projects WHERE region = 'southasia'" + visible);
-				    sublayers[0].setCartoCSS("#wp_projects{  marker-fill-opacity: 0.9;  marker-line-color: #FFF;  marker-line-width: 2;  marker-line-opacity: 1;  marker-placement: point;  marker-type: ellipse;  marker-width: 10;  marker-fill: #FFFFFF;  marker-allow-overlap: true;}");
-				    return true;
-				  },
-				  open: function(){
-				    sublayers[0].setSQL( "SELECT * FROM wp_projects WHERE pillar like '%open data platforms%'" + visible);
-				    sublayers[0].setCartoCSS("#wp_projects{  marker-fill-opacity: 0.9;  marker-line-color: #FFF;  marker-line-width: 2;  marker-line-opacity: 1;  marker-placement: point;  marker-type: ellipse;  marker-width: 10;  marker-fill: #FFFFFF;  marker-allow-overlap: true;}");
-				    return true;
-				  },
-				  community: function(){
-				    sublayers[0].setSQL( "SELECT * FROM wp_projects WHERE pillar like '%community mapping%'" + visible);
-				    sublayers[0].setCartoCSS("#wp_projects{  marker-fill-opacity: 0.9;  marker-line-color: #FFF;  marker-line-width: 2;  marker-line-opacity: 1;  marker-placement: point;  marker-type: ellipse;  marker-width: 10;  marker-fill: #FFFFFF;  marker-allow-overlap: true;}");
-				    return true;
-				  },		
-				  risk: function(){
-				    sublayers[0].setSQL( "SELECT * FROM wp_projects WHERE pillar like '%risk visualization%'" + visible);
-				    sublayers[0].setCartoCSS("#wp_projects{  marker-fill-opacity: 0.9;  marker-line-color: #FFF;  marker-line-width: 2;  marker-line-opacity: 1;  marker-placement: point;  marker-type: ellipse;  marker-width: 10;  marker-fill: #FFFFFF;  marker-allow-overlap: true;}");
-				    return true;
-				  },
-				}
-				if (typeof jsonValues != 'undefined') jsonValues = JSON.parse(jsonValues);
-				$('#pick-region').on('click', '.pickable', function(option) {
-					$(this).siblings().removeClass('selected');
-					if (!! $(this).hasClass('selected')) {
-						$('.amount-of-posts').show();
-						var option 	= 'all';
-						var latlong = [40,-98];
-						var text 	= 'filter by region';
-						var classe  = 'title';
-						var title 	= 'Projects';
-					} else {
-						if (!! currentSublayer) currentSublayer.remove();
-						$('.amount-of-posts').hide();
-				    	$(this).addClass('selected');
-				    	var option  = $(this).data('option');
-				    	var latlong = [$(this).data('lat'), $(this).data('lng')];
-				    	var text 	= $(this).text();
-						var classe  = '';
-						var prjsn	= (~~jsonValues[option] > 0)? ~~jsonValues[option] : 0;
-						var title   = text + ': ' + prjsn.toString() + ' projects';
-						if (option == 'africa') {						
-							cartodb.createLayer(map, {
-								user_name: 'opendri',
-								type: 'cartodb',
-								cartodb_logo: false,
-								sublayers: [{
-								  sql: "SELECT * FROM country_mask",
-								  cartocss: "\
+				    sublayers[1].setSQL("SELECT * FROM country_mask");
+				    sublayers[1].setCartoCSS(
+				    			"\
 								    #country_mask {\
 								      polygon-fill: #c0c0c0;\
 								      polygon-opacity: 0.1;\
@@ -316,180 +256,15 @@
 								      line-color: #fff;\
 								      line-width: 1;\
 								      line-opacity: 1;\
-								    }"
-								}]
-							})
-							.addTo(map)
-							.on('done',function(layer){
-								currentSublayer = layer.getSubLayer(0);
-							});
-						} else if (option == 'europe') {						
-							cartodb.createLayer(map, {
-								user_name: 'opendri',
-								type: 'cartodb',
-								cartodb_logo: false,
-								sublayers: [{
-								  sql: "SELECT * FROM country_mask",
-								  cartocss: "\
-								    #country_mask {\
-								      polygon-fill: #c0c0c0;\
-								      polygon-opacity: 0.1;\
-								      line-color: #999;\
-								      line-width: 0;\
-								      line-opacity: 0;\
-								    }\
-								    #country_mask[name='Albania'],\
-								    #country_mask[name='Armenia'],\
-								    #country_mask[name='Azerbaijan'],\
-								    #country_mask[name='Bulgaria'],\
-								    #country_mask[name='Bosnia and Herzegovina'],\
-								    #country_mask[name='Belarus'],\
-								    #country_mask[name='Czech Republic'],\
-								    #country_mask[name='Estonia'],\
-								    #country_mask[name='Georgia'],\
-								    #country_mask[name='Croatia'],\
-								    #country_mask[name='Hungary'],\
-								    #country_mask[name='Kazakhstan'],\
-								    #country_mask[name='Kyrgyz Republic'],\
-								    #country_mask[name='Kosovo'],\
-								    #country_mask[name='Lithuania'],\
-								    #country_mask[name='Latvia'],\
-								    #country_mask[name='Moldova'],\
-								    #country_mask[name='Macedonia'],\
-								    #country_mask[name='Malta'],\
-								    #country_mask[name='Montenegro'],\
-								    #country_mask[name='Poland'],\
-								    #country_mask[name='Romania'],\
-								    #country_mask[name='Russia'],\
-								    #country_mask[name='Serbia'],\
-								    #country_mask[name='Slovak Republic'],\
-								    #country_mask[name='Slovenia'],\
-								    #country_mask[name='Tajikistan'],\
-								    #country_mask[name='Turkmenistan'],\
-								    #country_mask[name='Turkey'],\
-								    #country_mask[name='Ukraine'],\
-								    #country_mask[name='Uzbekistan']{\
-								      polygon-opacity: 0;\
-								      line-color: #fff;\
-								      line-width: 1;\
-								      line-opacity: 1;\
-								    }"
-								}]
-							})
-							.addTo(map)
-						} else if (option == 'middleeast') {						
-							cartodb.createLayer(map, {
-								user_name: 'opendri',
-								type: 'cartodb',
-								cartodb_logo: false,
-								sublayers: [{
-								  sql: "SELECT * FROM country_mask",
-								  cartocss: "\
-								    #country_mask {\
-								      polygon-fill: #c0c0c0;\
-								      polygon-opacity: 0.1;\
-								      line-color: #999;\
-								      line-width: 0;\
-								      line-opacity: 0;\
-								    }\
-								    #country_mask[name='Afghanistan'],\
-								    #country_mask[name='Bahrain'],\
-								    #country_mask[name='Algeria'],\
-								    #country_mask[name='Egypt'],\
-								    #country_mask[name='Iran'],\
-								    #country_mask[name='Belarus'],\
-								    #country_mask[name='Iraq'],\
-								    #country_mask[name='Jordan'],\
-								    #country_mask[name='Kuwait'],\
-								    #country_mask[name='Lebanon'],\
-								    #country_mask[name='Libya'],\
-								    #country_mask[name='Morocco'],\
-								    #country_mask[name='Oman'],\
-								    #country_mask[name='Qatar'],\
-								    #country_mask[name='Pakistan'],\
-								    #country_mask[name='Gaza'],\
-								    #country_mask[name='Arabia'],\
-								    #country_mask[name='Syria'],\
-								    #country_mask[name='Tunisia'],\
-								    #country_mask[name='Yemen']{\
-								      polygon-opacity: 0;\
-								      line-color: #fff;\
-								      line-width: 1;\
-								      line-opacity: 1;\
-								    }"
-								}]
-							})
-							.addTo(map)
-							.on('done',function(layer){
-								currentSublayer = layer.getSubLayer(0);
-							});
-						} else if (option == 'latam') {						
-							cartodb.createLayer(map, {
-								user_name: 'opendri',
-								type: 'cartodb',
-								cartodb_logo: false,
-								sublayers: [{
-								  sql: "SELECT * FROM country_mask",
-								  cartocss: "\
-								    #country_mask {\
-								      polygon-fill: #c0c0c0;\
-								      polygon-opacity: 0.1;\
-								      line-color: #999;\
-								      line-width: 0;\
-								      line-opacity: 0;\
-								    }\
-								    #country_mask[name='Aruba'],\
-								    #country_mask[name='Argentina'],\
-								    #country_mask[name='Antigua and Barbuda'],\
-								    #country_mask[name='Bahamas'],\
-								    #country_mask[name='Belize'],\
-								    #country_mask[name='Bolivia'],\
-								    #country_mask[name='Brazil'],\
-								    #country_mask[name='Barbados'],\
-								    #country_mask[name='Chile'],\
-								    #country_mask[name='Colombia'],\
-								    #country_mask[name='Costa Rica'],\
-								    #country_mask[name='Cuba'],\
-								    #country_mask[name='Curacao'],\
-								    #country_mask[name='Cayman'],\
-								    #country_mask[name='Dominica'],\
-								    #country_mask[name='Dominican Republic'],\
-								    #country_mask[name='Ecuador'],\
-								    #country_mask[name='Grenada'],\
-								    #country_mask[name='Guatemala'],\
-								    #country_mask[name='Honduras'],\
-								    #country_mask[name='Haiti'],\
-								    #country_mask[name='Jamaica'],\
-								    #country_mask[name='Mexico'],\
-								    #country_mask[name='Nicaragua'],\
-								    #country_mask[name='Panama'],\
-								    #country_mask[name='Peru'],\
-								    #country_mask[name='Puerto Rico'],\
-								    #country_mask[name='Paraguay'],\
-								    #country_mask[name='El Salvador'],\
-								    #country_mask[name='Suriname'],\
-								    #country_mask[name='Trinidad and Tobago'],\
-								    #country_mask[name='Uruguay'],\
-								    #country_mask[name='Venezuela']{\
-								      polygon-opacity: 0;\
-								      line-color: #fff;\
-								      line-width: 1;\
-								      line-opacity: 1;\
-								    }"
-								}]
-							})
-							.addTo(map)
-							.on('done',function(layer){
-								currentSublayer = layer.getSubLayer(0);
-							});
-						} else if (option == 'eastasia') {						
-							cartodb.createLayer(map, {
-								user_name: 'opendri',
-								type: 'cartodb',
-								cartodb_logo: false,
-								sublayers: [{
-								  sql: "SELECT * FROM country_mask",
-								  cartocss: "\
+								    }");
+				    return true;
+				  },
+				  eastasia: function(){
+				    sublayers[0].setSQL( " SELECT * FROM wp_projects WHERE region = 'eastasia'" + visible);
+				    sublayers[0].setCartoCSS("#wp_projects{  marker-fill-opacity: 0.9;  marker-line-color: #FFF;  marker-line-width: 2;  marker-line-opacity: 1;  marker-placement: point;  marker-type: ellipse;  marker-width: 10;  marker-fill: #FFFFFF;  marker-allow-overlap: true;}");
+				    sublayers[1].setSQL("SELECT * FROM country_mask");
+				    sublayers[1].setCartoCSS(
+				    			"\
 								    #country_mask {\
 								      polygon-fill: #c0c0c0;\
 								      polygon-opacity: 0.1;\
@@ -534,21 +309,163 @@
 								      line-color: #fff;\
 								      line-width: 1;\
 								      line-opacity: 1;\
-								    }"
-								}]
-							})
-							.addTo(map)
-							.on('done',function(layer){
-								currentSublayer = layer.getSubLayer(0);
-							});
-						} else if (option == 'southasia') {						
-							cartodb.createLayer(map, {
-								user_name: 'opendri',
-								type: 'cartodb',
-								cartodb_logo: false,
-								sublayers: [{
-								  sql: "SELECT * FROM country_mask",
-								  cartocss: "\
+								    }");
+				    return true;
+				  },
+				  europe: function(){
+				    sublayers[0].setSQL( " SELECT * FROM wp_projects WHERE region = 'europe'" + visible);
+				    sublayers[0].setCartoCSS("#wp_projects{  marker-fill-opacity: 0.9;  marker-line-color: #FFF;  marker-line-width: 2;  marker-line-opacity: 1;  marker-placement: point;  marker-type: ellipse;  marker-width: 10;  marker-fill: #FFFFFF;  marker-allow-overlap: true;}");
+				    sublayers[1].setSQL("SELECT * FROM country_mask");
+				    sublayers[1].setCartoCSS(
+				    			"\
+								    #country_mask {\
+								      polygon-fill: #c0c0c0;\
+								      polygon-opacity: 0.1;\
+								      line-color: #999;\
+								      line-width: 0;\
+								      line-opacity: 0;\
+								    }\
+								    #country_mask[name='Albania'],\
+								    #country_mask[name='Armenia'],\
+								    #country_mask[name='Azerbaijan'],\
+								    #country_mask[name='Bulgaria'],\
+								    #country_mask[name='Bosnia and Herzegovina'],\
+								    #country_mask[name='Belarus'],\
+								    #country_mask[name='Czech Republic'],\
+								    #country_mask[name='Estonia'],\
+								    #country_mask[name='Georgia'],\
+								    #country_mask[name='Croatia'],\
+								    #country_mask[name='Hungary'],\
+								    #country_mask[name='Kazakhstan'],\
+								    #country_mask[name='Kyrgyz Republic'],\
+								    #country_mask[name='Kosovo'],\
+								    #country_mask[name='Lithuania'],\
+								    #country_mask[name='Latvia'],\
+								    #country_mask[name='Moldova'],\
+								    #country_mask[name='Macedonia'],\
+								    #country_mask[name='Malta'],\
+								    #country_mask[name='Montenegro'],\
+								    #country_mask[name='Poland'],\
+								    #country_mask[name='Romania'],\
+								    #country_mask[name='Russia'],\
+								    #country_mask[name='Serbia'],\
+								    #country_mask[name='Slovak Republic'],\
+								    #country_mask[name='Slovenia'],\
+								    #country_mask[name='Tajikistan'],\
+								    #country_mask[name='Turkmenistan'],\
+								    #country_mask[name='Turkey'],\
+								    #country_mask[name='Ukraine'],\
+								    #country_mask[name='Uzbekistan']{\
+								      polygon-opacity: 0;\
+								      line-color: #fff;\
+								      line-width: 1;\
+								      line-opacity: 1;\
+								    }");
+				    return true;
+				  },
+				  latam: function(){
+				    sublayers[0].setSQL( " SELECT * FROM wp_projects WHERE region = 'latam'" + visible);
+				    sublayers[0].setCartoCSS("#wp_projects{  marker-fill-opacity: 0.9;  marker-line-color: #FFF;  marker-line-width: 2;  marker-line-opacity: 1;  marker-placement: point;  marker-type: ellipse;  marker-width: 10;  marker-fill: #FFFFFF;  marker-allow-overlap: true;}");
+				    sublayers[1].setSQL("SELECT * FROM country_mask");
+				    sublayers[1].setCartoCSS(
+				    			"\
+								    #country_mask {\
+								      polygon-fill: #c0c0c0;\
+								      polygon-opacity: 0.1;\
+								      line-color: #999;\
+								      line-width: 0;\
+								      line-opacity: 0;\
+								    }\
+								    #country_mask[name='Aruba'],\
+								    #country_mask[name='Argentina'],\
+								    #country_mask[name='Antigua and Barbuda'],\
+								    #country_mask[name='Bahamas'],\
+								    #country_mask[name='Belize'],\
+								    #country_mask[name='Bolivia'],\
+								    #country_mask[name='Brazil'],\
+								    #country_mask[name='Barbados'],\
+								    #country_mask[name='Chile'],\
+								    #country_mask[name='Colombia'],\
+								    #country_mask[name='Costa Rica'],\
+								    #country_mask[name='Cuba'],\
+								    #country_mask[name='Curacao'],\
+								    #country_mask[name='Cayman'],\
+								    #country_mask[name='Dominica'],\
+								    #country_mask[name='Dominican Republic'],\
+								    #country_mask[name='Ecuador'],\
+								    #country_mask[name='Grenada'],\
+								    #country_mask[name='Guatemala'],\
+								    #country_mask[name='Honduras'],\
+								    #country_mask[name='Haiti'],\
+								    #country_mask[name='Jamaica'],\
+								    #country_mask[name='Mexico'],\
+								    #country_mask[name='Nicaragua'],\
+								    #country_mask[name='Panama'],\
+								    #country_mask[name='Peru'],\
+								    #country_mask[name='Puerto Rico'],\
+								    #country_mask[name='Paraguay'],\
+								    #country_mask[name='El Salvador'],\
+								    #country_mask[name='Suriname'],\
+								    #country_mask[name='Trinidad and Tobago'],\
+								    #country_mask[name='Uruguay'],\
+								    #country_mask[name='Venezuela']{\
+								      polygon-opacity: 0;\
+								      line-color: #fff;\
+								      line-width: 1;\
+								      line-opacity: 1;\
+								    }");
+				    return true;
+				  },
+				  middleeast: function(){
+				    sublayers[0].setSQL( " SELECT * FROM wp_projects WHERE region = 'middleeast'" + visible);
+				    sublayers[0].setCartoCSS("#wp_projects{  marker-fill-opacity: 0.9;  marker-line-color: #FFF;  marker-line-width: 2;  marker-line-opacity: 1;  marker-placement: point;  marker-type: ellipse;  marker-width: 10;  marker-fill: #FFFFFF;  marker-allow-overlap: true;}");
+				    sublayers[1].setSQL("SELECT * FROM country_mask");
+				    sublayers[1].setCartoCSS(
+				    			"\
+								    #country_mask {\
+								      polygon-fill: #c0c0c0;\
+								      polygon-opacity: 0.1;\
+								      line-color: #999;\
+								      line-width: 0;\
+								      line-opacity: 0;\
+								    }\
+								    #country_mask[name='Afghanistan'],\
+								    #country_mask[name='Bahrain'],\
+								    #country_mask[name='Algeria'],\
+								    #country_mask[name='Egypt'],\
+								    #country_mask[name='Iran'],\
+								    #country_mask[name='Iraq'],\
+								    #country_mask[name='Jordan'],\
+								    #country_mask[name='Kuwait'],\
+								    #country_mask[name='Lebanon'],\
+								    #country_mask[name='Libya'],\
+								    #country_mask[name='Morocco'],\
+								    #country_mask[name='Oman'],\
+								    #country_mask[name='Qatar'],\
+								    #country_mask[name='Pakistan'],\
+								    #country_mask[name='Gaza'],\
+								    #country_mask[name='Arabia'],\
+								    #country_mask[name='Syria'],\
+								    #country_mask[name='Tunisia'],\
+								    #country_mask[name='Yemen']{\
+								      polygon-opacity: 0;\
+								      line-color: #fff;\
+								      line-width: 1;\
+								      line-opacity: 1;\
+								    }");
+				    return true;
+				  },			
+				  nonwp: function(){
+				    sublayers[0].setSQL( " SELECT * FROM wp_projects WHERE region = 'nonwp'" + visible);
+				    sublayers[0].setCartoCSS("#wp_projects{  marker-fill-opacity: 0.9;  marker-line-color: #FFF;  marker-line-width: 2;  marker-line-opacity: 1;  marker-placement: point;  marker-type: ellipse;  marker-width: 10;  marker-fill: #FFFFFF;  marker-allow-overlap: true;}");
+				    return true;
+				  },	
+				  southasia: function(){
+				    sublayers[0].setSQL( " SELECT * FROM wp_projects WHERE region = 'southasia'" + visible);
+				    sublayers[0].setCartoCSS("#wp_projects{  marker-fill-opacity: 0.9;  marker-line-color: #FFF;  marker-line-width: 2;  marker-line-opacity: 1;  marker-placement: point;  marker-type: ellipse;  marker-width: 10;  marker-fill: #FFFFFF;  marker-allow-overlap: true;}");
+				    sublayers[1].setSQL("SELECT * FROM country_mask");
+				    sublayers[1].setCartoCSS(
+				    			"\
 								    #country_mask {\
 								      polygon-fill: #c0c0c0;\
 								      polygon-opacity: 0.1;\
@@ -568,14 +485,45 @@
 								      line-color: #fff;\
 								      line-width: 1;\
 								      line-opacity: 1;\
-								    }"
-								}]
-							})
-							.addTo(map)
-							.on('done',function(layer){
-								currentSublayer = layer.getSubLayer(0);
-							});
-						}
+								    }");
+				    return true;
+				  },
+				  open: function(){
+				    sublayers[0].setSQL( "SELECT * FROM wp_projects WHERE pillar like '%open data platforms%'" + visible);
+				    sublayers[0].setCartoCSS("#wp_projects{  marker-fill-opacity: 0.9;  marker-line-color: #FFF;  marker-line-width: 2;  marker-line-opacity: 1;  marker-placement: point;  marker-type: ellipse;  marker-width: 10;  marker-fill: #FFFFFF;  marker-allow-overlap: true;}");
+				    return true;
+				  },
+				  community: function(){
+				    sublayers[0].setSQL( "SELECT * FROM wp_projects WHERE pillar like '%community mapping%'" + visible);
+				    sublayers[0].setCartoCSS("#wp_projects{  marker-fill-opacity: 0.9;  marker-line-color: #FFF;  marker-line-width: 2;  marker-line-opacity: 1;  marker-placement: point;  marker-type: ellipse;  marker-width: 10;  marker-fill: #FFFFFF;  marker-allow-overlap: true;}");
+				    return true;
+				  },		
+				  risk: function(){
+				    sublayers[0].setSQL( "SELECT * FROM wp_projects WHERE pillar like '%risk visualization%'" + visible);
+				    sublayers[0].setCartoCSS("#wp_projects{  marker-fill-opacity: 0.9;  marker-line-color: #FFF;  marker-line-width: 2;  marker-line-opacity: 1;  marker-placement: point;  marker-type: ellipse;  marker-width: 10;  marker-fill: #FFFFFF;  marker-allow-overlap: true;}");
+				    return true;
+				  },
+				}
+				if (typeof jsonValues != 'undefined') jsonValues = JSON.parse(jsonValues);
+				$('#pick-region').on('click', '.pickable', function(option) {
+					$(this).siblings().removeClass('selected');
+					if (!! $(this).hasClass('selected')) {
+						$('.amount-of-posts').show();
+						var option 	= 'all';
+						var latlong = [40,-98];
+						var text 	= 'filter by region';
+						var classe  = 'title';
+						var title 	= 'Projects';
+					} else {
+						if (!! currentSublayer) currentSublayer.remove();
+						$('.amount-of-posts').hide();
+				    	$(this).addClass('selected');
+				    	var option  = $(this).data('option');
+				    	var latlong = [$(this).data('lat'), $(this).data('lng')];
+				    	var text 	= $(this).text();
+						var classe  = '';
+						var prjsn	= (~~jsonValues[option] > 0)? ~~jsonValues[option] : 0;
+						var title   = text + ': ' + prjsn.toString() + ' projects';
 					}
 					$(this).parent().fadeOut();
 					$('#toggle-filter-region').removeClass('title').addClass(classe).text(text);
