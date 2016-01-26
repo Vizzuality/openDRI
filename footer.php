@@ -157,7 +157,7 @@
 				    // change the query for the first layer
 				    var subLayerOptions = {
 				      sql: "SELECT * FROM wp_projects where is_region = true",
-				      cartocss: "#wp_projects{  marker-fill-opacity: 0.9;  marker-line-color: #FFF;  marker-line-width: 50;  marker-line-opacity: 1;  marker-placement: point;  marker-type: ellipse;  marker-width: 10;  marker-fill: #FFFFFF;  marker-allow-overlap: true;}"
+				      cartocss: "#wp_projects{  marker-fill-opacity: 1;  marker-line-color: #FFF;  marker-line-width: 10;  marker-line-opacity: 1;  marker-placement: point;  marker-type: ellipse;  marker-width: 40;  marker-fill: #FFFFFF;  marker-allow-overlap: true;}"
 				    }
 
 				    var sublayer = layer.getSubLayer(0);
