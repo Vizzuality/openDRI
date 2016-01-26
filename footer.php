@@ -75,7 +75,8 @@
 						center : [LAT_VIS,LONG_VIS],
 						zoom: 12,
 						zoomControl: false,
-						scrollWheelZoom: false
+						scrollWheelZoom: false,
+						dragging: false
 					})
 				} else {
 					map = new L.Map('map', { 

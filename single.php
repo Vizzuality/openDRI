@@ -13,13 +13,17 @@
 				<div id="inner-content" class="wrap cf">
 
 					<main id="main" class="m-all -md-post" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
-
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 						<?
 							$cats 		= get_the_category();
 							$CAT_NAME   = $cats[0]->name;
 							$thispostid = get_the_ID();
-							$geodata = $GLOBALS['wpdb']->get_row( "SELECT * FROM wp_places_locator WHERE post_id = $thispostid ;", ARRAY_A );
+							if (strpos($_SERVER['HTTP_HOST'], 'localhost') === false) {
+								$geodata = $GLOBALS['wpdb']->get_row( "SELECT * FROM wp_42czsx_places_locator WHERE post_id = $thispostid ;", ARRAY_A );
+							} else {
+								$geodata = $GLOBALS['wpdb']->get_row( "SELECT * FROM wp_places_locator WHERE post_id = $thispostid ;", ARRAY_A );
+
+							}
 							$geodata__lat       = $geodata['lat'];
     						$geodata__long      = $geodata['long'];
 						?>
