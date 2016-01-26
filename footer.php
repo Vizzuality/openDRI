@@ -215,8 +215,8 @@
 				    sublayers[1].setCartoCSS(
 				    			"\
 								    #country_mask {\
-								      polygon-fill: #999;\
-								      polygon-opacity: 0.4;\
+								      polygon-fill: #000;\
+								      polygon-opacity: 0.2;\
 								      line-color: #999;\
 								      line-width: 0;\
 								      line-opacity: 0;\
@@ -295,8 +295,8 @@
 				    sublayers[1].setCartoCSS(
 				    			"\
 								    #country_mask {\
-								      polygon-fill: #999;\
-								      polygon-opacity: 0.4;\
+								      polygon-fill: #000;\
+								      polygon-opacity: 0.2;\
 								      line-color: #999;\
 								      line-width: 0;\
 								      line-opacity: 0;\
@@ -352,8 +352,8 @@
 				    sublayers[1].setCartoCSS(
 				    			"\
 								    #country_mask {\
-								      polygon-fill: #999;\
-								      polygon-opacity: 0.4;\
+								      polygon-fill: #000;\
+								      polygon-opacity: 0.2;\
 								      line-color: #999;\
 								      line-width: 0;\
 								      line-opacity: 0;\
@@ -407,8 +407,8 @@
 				    sublayers[1].setCartoCSS(
 				    			"\
 								    #country_mask {\
-								      polygon-fill: #999;\
-								      polygon-opacity: 0.4;\
+								      polygon-fill: #000;\
+								      polygon-opacity: 0.2;\
 								      line-color: #999;\
 								      line-width: 0;\
 								      line-opacity: 0;\
@@ -464,8 +464,8 @@
 				    sublayers[1].setCartoCSS(
 				    			"\
 								    #country_mask {\
-								      polygon-fill: #999;\
-								      polygon-opacity: 0.4;\
+								      polygon-fill: #000;\
+								      polygon-opacity: 0.2;\
 								      line-color: #999;\
 								      line-width: 0;\
 								      line-opacity: 0;\
@@ -527,8 +527,8 @@
 				    sublayers[1].setCartoCSS(
 				    			"\
 								    #country_mask {\
-								      polygon-fill: #999;\
-								      polygon-opacity: 0.4;\
+								      polygon-fill: #000;\
+								      polygon-opacity: 0.2;\
 								      line-color: #999;\
 								      line-width: 0;\
 								      line-opacity: 0;\
@@ -607,10 +607,9 @@
 				});
 				$('#blue-bar-pick-pillar').on('click', '.option-pillar', function(){
 					$(this).siblings().removeClass('current');
-					$(this).siblings('.title').text('Clear map').addClass('clear-map');
 					LayerActions[$(this).data('option')]();
 				});
-				$('#blue-bar-pick-pillar').on('click', '.clear-map', function(){
+				$('#reset-map').on('click', function(){
 					location.reload();
 				});
 				$('#searchCountries').on('keyup', function() {
