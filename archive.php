@@ -114,7 +114,7 @@ if(is_post_type_archive()) {
 									}
 								?>
 
-								<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf'.implode("-filter-cat ",$cats) ); ?> role="article">
+								<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf '); ?> role="article">
 									<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
 								$image = ($image[0]) ? $image[0] : get_template_directory_uri().'/library/images/red-cross.jpg';
 									?>
