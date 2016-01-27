@@ -209,6 +209,7 @@
 				    return true;
 				  },
 				  africa: function(){
+				  	$filterPosts.hide();
 				  	var $target = $filterPosts.parent().find(filterPillar+'.type-project.category-africa');
 				  	filterRegion = '.category-africa';
 				  	$target.show();
@@ -293,6 +294,7 @@
 				    return true;
 				  },
 				  eastasia: function(){
+				  	$filterPosts.hide();
 				  	var $target = $filterPosts.parent().find(filterPillar+'.type-project.category-east-asia-pacific');
 				  	filterRegion = '.category-east-asia-pacific';
 				  	$target.show();
@@ -354,6 +356,7 @@
 				    return true;
 				  },
 				  europe: function(){
+				  	$filterPosts.hide();
 				  	var $target = $filterPosts.parent().find(filterPillar+'.type-project.category-europe-and-central-asia');
 				  	filterRegion = '.category-europe-and-central-asia';
 				  	$target.show();
@@ -413,6 +416,7 @@
 				    return true;
 				  },
 				  latam: function(){
+				  	$filterPosts.hide();
 				  	var $target = $filterPosts.parent().find(filterPillar+'.type-project.category-latin-america-and-caribbean');
 				  	filterRegion = '.category-latin-america-and-caribbean';
 				  	$target.show();
@@ -474,6 +478,7 @@
 				    return true;
 				  },
 				  middleeast: function(){
+				  	$filterPosts.hide();
 				  	var $target = $filterPosts.parent().find(filterPillar+'.type-project.category-middle-east-and-north-africa');
 				  	filterRegion = '.category-middle-east-and-north-africa';
 				  	$target.show();
@@ -541,6 +546,7 @@
 				    return true;
 				  },	
 				  southasia: function(){
+				  	$filterPosts.hide();
 				  	var $target = $filterPosts.parent().find(filterPillar+'.type-project.category-south-asia');
 				  	filterRegion = '.category-south-asia';
 				  	$target.show();
@@ -577,6 +583,7 @@
 				    return true;
 				  },
 				  open: function(){
+				  	$filterPosts.hide();
 				  	var $target = $filterPosts.parent().find(filterRegion+'.type-project.category-open-data-platforms');
 				  	filterPillar = '.category-open-data-platforms';
 				  	$target.show();
@@ -590,6 +597,7 @@
 				    return true;
 				  },
 				  community: function(){
+				  	$filterPosts.hide();
 				  	var $target = $filterPosts.parent().find(filterRegion+'.type-project.category-community-mapping');
 				  	filterPillar = '.category-community-mapping';
 				  	$target.show();
@@ -603,6 +611,7 @@
 				    return true;
 				  },		
 				  risk: function(){
+				  	$filterPosts.hide();
 				  	var $target = $filterPosts.parent().find(filterRegion+'.type-project.category-risk-visualization');
 				  	filterPillar = '.category-risk-visualization';
 				  	$target.show();
