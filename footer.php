@@ -70,6 +70,7 @@
 			var currentSublayer,
 				currentRegion = '';
 				currentPillar = '';
+				$filterPosts  = $('.type-project');
 		    function init(){
 		    	if ($('#map').length == 0) return;
 				if ( !!LAT_VIS && !!LONG_VIS ) {
@@ -191,6 +192,7 @@
 				  	location.reload();
 				  },
 				  all: function(){
+				  	$filterPosts.show();
 				  	currentPillar = currentRegion = '';
 				    sublayers[0].setSQL("SELECT * FROM wp_projects");
 				   	sublayers[1].setSQL("SELECT * FROM country_mask");
@@ -205,6 +207,7 @@
 				    return true;
 				  },
 				  africa: function(){
+				  	$filterPosts.parent().find('.type-project.category-africa').show();
 				  	if (currentPillar.length > 0)
 				    	sublayers[0].setSQL("SELECT * FROM wp_projects WHERE region = 'africa' AND pillar LIKE '%" + currentPillar + "%'"+ visible);
 				    else 
@@ -285,6 +288,7 @@
 				    return true;
 				  },
 				  eastasia: function(){
+				  	$filterPosts.parent().find('.type-project.category-east-asia-pacific').show();
 				  	if (currentPillar.length > 0)
 				    	sublayers[0].setSQL("SELECT * FROM wp_projects WHERE region = 'eastasia' AND pillar LIKE '%" + currentPillar + "%'"+ visible);
 				    else 
@@ -342,6 +346,7 @@
 				    return true;
 				  },
 				  europe: function(){
+				  	$filterPosts.parent().find('.type-project.category-europe-and-central-asia').show();
 				  	if (currentPillar.length > 0)
 				    	sublayers[0].setSQL("SELECT * FROM wp_projects WHERE region = 'europe' AND pillar LIKE '%" + currentPillar + "%'"+ visible);
 				    else 
@@ -397,6 +402,7 @@
 				    return true;
 				  },
 				  latam: function(){
+				  	$filterPosts.parent().find('.type-project.category-latin-america-and-caribbean').show();
 				  	if (currentPillar.length > 0)
 				    	sublayers[0].setSQL("SELECT * FROM wp_projects WHERE region = 'latam' AND pillar LIKE '%" + currentPillar + "%'"+ visible);
 				    else 
@@ -454,6 +460,7 @@
 				    return true;
 				  },
 				  middleeast: function(){
+				  	$filterPosts.parent().find('.type-project.category-middle-east-and-north-africa').show();
 				  	if (currentPillar.length > 0)
 				    	sublayers[0].setSQL("SELECT * FROM wp_projects WHERE region = 'middleeast' AND pillar LIKE '%" + currentPillar + "%'"+ visible);
 				    else 
@@ -517,6 +524,7 @@
 				    return true;
 				  },	
 				  southasia: function(){
+				  	$filterPosts.parent().find('.type-project.category-south-asia').show();
 				  	if (currentPillar.length > 0)
 				    	sublayers[0].setSQL("SELECT * FROM wp_projects WHERE region = 'southasia' AND pillar LIKE '%" + currentPillar + "%'"+ visible);
 				    else 
@@ -549,6 +557,7 @@
 				    return true;
 				  },
 				  open: function(){
+				  	$filterPosts.parent().find('.type-project.category-open-data-platforms').show();
 				  	if (currentRegion.length > 0)
 				    	sublayers[0].setSQL("SELECT * FROM wp_projects WHERE pillar like '%open data platforms%' AND region = '" + currentRegion + "' "+ visible);
 				    else 
@@ -558,6 +567,7 @@
 				    return true;
 				  },
 				  community: function(){
+				  	$filterPosts.parent().find('.type-project.category-community-mapping').show();
 				  	if (currentRegion.length > 0)
 				    	sublayers[0].setSQL("SELECT * FROM wp_projects WHERE pillar like '%community mapping%' AND region = '" + currentRegion + "' "+ visible);
 				    else 
@@ -567,6 +577,7 @@
 				    return true;
 				  },		
 				  risk: function(){
+				  	$filterPosts.parent().find('.type-project.category-risk-visualization').show();
 				  	if (currentRegion.length > 0)
 				    	sublayers[0].setSQL("SELECT * FROM wp_projects WHERE pillar like '%risk visualization%' AND region = '" + currentRegion + "' "+ visible);
 				    else 
@@ -588,6 +599,7 @@
 						var title 	= 'Projects';
 						var zoom 	= 2;
 						var search 	= false;
+						$filterPosts.show();
 					} else {
 						if (!! currentSublayer) currentSublayer.remove();
 						$('.amount-of-posts').hide();
@@ -600,6 +612,7 @@
 						var title   = text + ': ' + prjsn.toString() + ' projects';
 						var zoom 	= $(this).data('zoom');
 						var search 	= $(this).data('search');
+						$filterPosts.hide();
 					}
 					$(this).parent().fadeOut();
 					$('#toggle-filter-region').removeClass('title').addClass(classe).text(text);
