@@ -616,9 +616,34 @@
 					if ($(this).val().length < 1) {
 						$('.amount-of-posts').show();
 						sublayers[0].setSQL('SELECT * FROM wp_projects where is_region = true');
+						sublayers[1].setSQL("SELECT * FROM country_mask");
+						sublayers[1].setCartoCSS(
+				    			"\
+								    #country_mask {\
+								      polygon-opacity: 0;\
+								      line-width: 0;\
+								      line-opacity: 0;\
+								    }\
+								    ");
 					} else if( $(this).val().length > 4 ) {
 						$('.amount-of-posts').hide();
-						sublayers[0].setSQL('SELECT * FROM wp_projects where country_name like \'%' + $(this).val() + '%\' AND visible = true');
+						sublayers[0].setSQL('SELECT * FROM wp_projects where country_name like \'%' + $(this).val().charAt(0).toUpperCase() + $(this).val().slice(1) + '%\' AND visible = true');
+						sublayers[1].setSQL("SELECT * FROM country_mask");
+				    	sublayers[1].setCartoCSS(
+				    			"\
+								    #country_mask {\
+								      polygon-fill: #000;\
+								      polygon-opacity: 0.2;\
+								      line-color: #999;\
+								      line-width: 0;\
+								      line-opacity: 0;\
+								    }\
+								    #country_mask[name='" + $(this).val().charAt(0).toUpperCase() + $(this).val().slice(1) + "']{\
+								      polygon-opacity: 0;\
+								      line-color: #fff;\
+								      line-width: 1;\
+								      line-opacity: 0.4;\
+								    }");
 					}
 				})
 				var changeIn_regions = function(id) {
