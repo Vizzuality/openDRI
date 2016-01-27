@@ -652,7 +652,7 @@
 					} else if( $(this).val().length > 3 ) {
 						$('.amount-of-posts').hide();
 						var country = $(this).val().charAt(0).toUpperCase() + $(this).val().slice(1);
-						sublayers[0].setSQL('SELECT * FROM wp_projects where country_name like \'%' + country + '%\' AND visible = true');
+						sublayers[0].setSQL('SELECT * FROM wp_projects where LOWER(country_name) like \'%' + country.toLowerCase() + '%\' AND visible = true');
 						sublayers[1].setSQL("SELECT * FROM country_mask");
 				    	sublayers[1].setCartoCSS(
 				    			"\
@@ -669,7 +669,7 @@
 								      line-width: 1;\
 								      line-opacity: 0.4;\
 								    }");
-				    	$.get('https://opendri.cartodb.com/api/v2/sql?q=SELECT%20name,centroid%20FROM%20country_mask%20where%20name%20like%20%27%25'+ country +'%25%27%20', function(data){
+				    	$.get('https://opendri.cartodb.com/api/v2/sql?q=SELECT%20name,centroid%20FROM%20country_mask%20where%20LOWER(name)%20like%20%27%25'+ country.toLowerCase() +'%25%27%20', function(data){
 				    		$('.region-filter').first().find('.pickable').remove();
 				    		if (!!data.rows	> 0) {
 								$region_filter.find('.pickable').remove();
