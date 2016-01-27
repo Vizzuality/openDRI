@@ -63,6 +63,7 @@ if(is_post_type_archive()) {
 				</div>';
 	echo '<div id="map" class="cdbmap"></div>';
 } elseif (is_category() && $title === 'news') {
+	$display_navi = true;
 	// echo '				<div class="blue-bar-top" id="blue-bar">
 	// 				<div class="wrap wrapper filters">
 	// 						<div>
@@ -103,9 +104,17 @@ if(is_post_type_archive()) {
 							<h3>Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Ullam id dolor.</h3>
 							<div id="list-content" class="m-all cf index-row" role="news">
 								<div class="row-container">
-								<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+								<?php if (have_posts()) : while (have_posts()) : the_post();
 
-								<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
+									$cats = array();
+									foreach(wp_get_post_categories($post->ID) as $c)
+									{
+										$cat = get_category($c);
+										array_push($cats,$cat->name);
+									}
+								?>
+
+								<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf'.implode("-filter-cat ",$cats) ); ?> role="article">
 									<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
 								$image = ($image[0]) ? $image[0] : get_template_directory_uri().'/library/images/red-cross.jpg';
 									?>
@@ -132,7 +141,7 @@ if(is_post_type_archive()) {
 								<?php endwhile; ?>
 							</div>
 						</div>
-									<?php bones_page_navi(); ?>
+									<?php if (!!$display_navi){ bones_page_navi();} ?>
 
 							<?php else : ?>
 
