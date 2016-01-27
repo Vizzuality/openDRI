@@ -207,7 +207,9 @@
 				    return true;
 				  },
 				  africa: function(){
-				  	$filterPosts.parent().find('.type-project.category-africa').show();
+				  	var $target = $filterPosts.parent().find('.type-project.category-africa');
+				  	$target.show();
+				  	$('#current-total-post-count').text($target.length);
 				  	if (currentPillar.length > 0)
 				    	sublayers[0].setSQL("SELECT * FROM wp_projects WHERE region = 'africa' AND pillar LIKE '%" + currentPillar + "%'"+ visible);
 				    else 
@@ -288,7 +290,9 @@
 				    return true;
 				  },
 				  eastasia: function(){
-				  	$filterPosts.parent().find('.type-project.category-east-asia-pacific').show();
+				  	var $target = $filterPosts.parent().find('.type-project.category-east-asia-pacific');
+				  	$target.show();
+				  	$('#current-total-post-count').text($target.length);			  	
 				  	if (currentPillar.length > 0)
 				    	sublayers[0].setSQL("SELECT * FROM wp_projects WHERE region = 'eastasia' AND pillar LIKE '%" + currentPillar + "%'"+ visible);
 				    else 
@@ -346,7 +350,9 @@
 				    return true;
 				  },
 				  europe: function(){
-				  	$filterPosts.parent().find('.type-project.category-europe-and-central-asia').show();
+				  	var $target = $filterPosts.parent().find('.type-project.category-europe-and-central-asia');
+				  	$target.show();
+				  	$('#current-total-post-count').text($target.length);
 				  	if (currentPillar.length > 0)
 				    	sublayers[0].setSQL("SELECT * FROM wp_projects WHERE region = 'europe' AND pillar LIKE '%" + currentPillar + "%'"+ visible);
 				    else 
@@ -402,7 +408,9 @@
 				    return true;
 				  },
 				  latam: function(){
-				  	$filterPosts.parent().find('.type-project.category-latin-america-and-caribbean').show();
+				  	var $target = $filterPosts.parent().find('.type-project.category-latin-america-and-caribbean');
+				  	$target.show();
+				  	$('#current-total-post-count').text($target.length);
 				  	if (currentPillar.length > 0)
 				    	sublayers[0].setSQL("SELECT * FROM wp_projects WHERE region = 'latam' AND pillar LIKE '%" + currentPillar + "%'"+ visible);
 				    else 
@@ -460,7 +468,9 @@
 				    return true;
 				  },
 				  middleeast: function(){
-				  	$filterPosts.parent().find('.type-project.category-middle-east-and-north-africa').show();
+				  	var $target = $filterPosts.parent().find('.type-project.category-middle-east-and-north-africa');
+				  	$target.show();
+				  	$('#current-total-post-count').text($target.length);			  	
 				  	if (currentPillar.length > 0)
 				    	sublayers[0].setSQL("SELECT * FROM wp_projects WHERE region = 'middleeast' AND pillar LIKE '%" + currentPillar + "%'"+ visible);
 				    else 
@@ -524,7 +534,9 @@
 				    return true;
 				  },	
 				  southasia: function(){
-				  	$filterPosts.parent().find('.type-project.category-south-asia').show();
+				  	var $target = $filterPosts.parent().find('.type-project.category-south-asia');
+				  	$target.show();
+				  	$('#current-total-post-count').text($target.length); 	
 				  	if (currentPillar.length > 0)
 				    	sublayers[0].setSQL("SELECT * FROM wp_projects WHERE region = 'southasia' AND pillar LIKE '%" + currentPillar + "%'"+ visible);
 				    else 
@@ -557,7 +569,9 @@
 				    return true;
 				  },
 				  open: function(){
-				  	$filterPosts.parent().find('.type-project.category-open-data-platforms').show();
+				  	var $target = $filterPosts.parent().find('.type-project.category-open-data-platforms');
+				  	$target.show();
+				  	$('#current-total-post-count').text($target.length); 			  	
 				  	if (currentRegion.length > 0)
 				    	sublayers[0].setSQL("SELECT * FROM wp_projects WHERE pillar like '%open data platforms%' AND region = '" + currentRegion + "' "+ visible);
 				    else 
@@ -567,7 +581,9 @@
 				    return true;
 				  },
 				  community: function(){
-				  	$filterPosts.parent().find('.type-project.category-community-mapping').show();
+				  	var $target = $filterPosts.parent().find('.type-project.category-community-mapping');
+				  	$target.show();
+				  	$('#current-total-post-count').text($target.length);
 				  	if (currentRegion.length > 0)
 				    	sublayers[0].setSQL("SELECT * FROM wp_projects WHERE pillar like '%community mapping%' AND region = '" + currentRegion + "' "+ visible);
 				    else 
@@ -577,7 +593,9 @@
 				    return true;
 				  },		
 				  risk: function(){
-				  	$filterPosts.parent().find('.type-project.category-risk-visualization').show();
+				  	var $target = $filterPosts.parent().find('.type-project.category-risk-visualization');
+				  	$target.show();
+				  	$('#current-total-post-count').text($target.length);
 				  	if (currentRegion.length > 0)
 				    	sublayers[0].setSQL("SELECT * FROM wp_projects WHERE pillar like '%risk visualization%' AND region = '" + currentRegion + "' "+ visible);
 				    else 
@@ -609,14 +627,14 @@
 				    	var text 	= $(this).text();
 						var classe  = '';
 						var prjsn	= (~~jsonValues[option] > 0)? ~~jsonValues[option] : 0;
-						var title   = text + ': ' + prjsn.toString() + ' projects';
+						var title   = text + ': <span id="current-total-post-count">' + prjsn.toString() + '</span> projects';
 						var zoom 	= $(this).data('zoom');
 						var search 	= $(this).data('search');
 						$filterPosts.hide();
 					}
 					$(this).parent().fadeOut();
 					$('#toggle-filter-region').removeClass('title').addClass(classe).text(text);
-					$('.page-title').text(title).css('text-transform','capitalize');
+					$('.page-title').html(title).css('text-transform','capitalize');
 				    if (!!search) {
 						sublayers[1].setCartoCSS(
 				    			"\
