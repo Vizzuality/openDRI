@@ -649,6 +649,7 @@
 								    ");
 						$region_filter.find('.pickable').remove();
 						$region_filter.append('<li class="pickable" data-option="africa" data-lat="6.3152" data-lng="5.80" data-zoom="3">africa</li><li class="pickable" data-option="eastasia" data-lat="9.968" data-lng="118.3" data-zoom="3">east asia pacific</li><li class="pickable" data-option="europe" data-lat="64.32" data-lng="99.84" data-zoom="3">europe and central asia</li><li class="pickable" data-option="latam" data-lat="-10.314" data-lng="-68.027" data-zoom="3">latin america and caribbean</li><li class="pickable" data-option="middleeast" data-lat="30.75" data-lng="28.03" data-zoom="4">middle east and north africa</li><li class="pickable" data-option="nonwp" data-lat="0" data-lng="0" data-zoom="2">non wb countries</li><li class="pickable" data-option="southasia" data-lat="23.40" data-lng="77.08" data-zoom="4">south asia</li><li class="pickable clear-map" data-option="reload" data-lat="27" data-lng="72">Clear map</li>');
+						$('#toggle-filter-region').addClass('title').text('filter by region');
 					} else if( $(this).val().length > 3 ) {
 						$('.amount-of-posts').hide();
 						var country = $(this).val().charAt(0).toUpperCase() + $(this).val().slice(1);
