@@ -68,9 +68,11 @@
   
 			var map;
 			var currentSublayer,
-				currentRegion = '';
-				currentPillar = '';
-				$filterPosts  = $('.type-project');
+				currentRegion = '',
+				currentPillar = '',
+				$filterPosts  = $('.type-project'),
+				filterRegion  = '',
+				filterPillar  = '';
 		    function init(){
 		    	if ($('#map').length == 0) return;
 				if ( !!LAT_VIS && !!LONG_VIS ) {
@@ -207,7 +209,8 @@
 				    return true;
 				  },
 				  africa: function(){
-				  	var $target = $filterPosts.parent().find('.type-project.category-africa');
+				  	var $target = $filterPosts.parent().find(filterPillar+'.type-project.category-africa');
+				  	filterRegion = '.category-africa';
 				  	$target.show();
 				  	$('#current-total-post-count').text($target.length);
 				  	if (currentPillar.length > 0)
@@ -290,7 +293,8 @@
 				    return true;
 				  },
 				  eastasia: function(){
-				  	var $target = $filterPosts.parent().find('.type-project.category-east-asia-pacific');
+				  	var $target = $filterPosts.parent().find(filterPillar+'.type-project.category-east-asia-pacific');
+				  	filterRegion = '.category-east-asia-pacific';
 				  	$target.show();
 				  	$('#current-total-post-count').text($target.length);			  	
 				  	if (currentPillar.length > 0)
@@ -350,7 +354,8 @@
 				    return true;
 				  },
 				  europe: function(){
-				  	var $target = $filterPosts.parent().find('.type-project.category-europe-and-central-asia');
+				  	var $target = $filterPosts.parent().find(filterPillar+'.type-project.category-europe-and-central-asia');
+				  	filterRegion = '.category-europe-and-central-asia';
 				  	$target.show();
 				  	$('#current-total-post-count').text($target.length);
 				  	if (currentPillar.length > 0)
@@ -408,7 +413,8 @@
 				    return true;
 				  },
 				  latam: function(){
-				  	var $target = $filterPosts.parent().find('.type-project.category-latin-america-and-caribbean');
+				  	var $target = $filterPosts.parent().find(filterPillar+'.type-project.category-latin-america-and-caribbean');
+				  	filterRegion = '.category-latin-america-and-caribbean';
 				  	$target.show();
 				  	$('#current-total-post-count').text($target.length);
 				  	if (currentPillar.length > 0)
@@ -468,7 +474,8 @@
 				    return true;
 				  },
 				  middleeast: function(){
-				  	var $target = $filterPosts.parent().find('.type-project.category-middle-east-and-north-africa');
+				  	var $target = $filterPosts.parent().find(filterPillar+'.type-project.category-middle-east-and-north-africa');
+				  	filterRegion = '.category-middle-east-and-north-africa';
 				  	$target.show();
 				  	$('#current-total-post-count').text($target.length);			  	
 				  	if (currentPillar.length > 0)
@@ -534,7 +541,8 @@
 				    return true;
 				  },	
 				  southasia: function(){
-				  	var $target = $filterPosts.parent().find('.type-project.category-south-asia');
+				  	var $target = $filterPosts.parent().find(filterPillar+'.type-project.category-south-asia');
+				  	filterRegion = '.category-south-asia';
 				  	$target.show();
 				  	$('#current-total-post-count').text($target.length); 	
 				  	if (currentPillar.length > 0)
@@ -569,7 +577,8 @@
 				    return true;
 				  },
 				  open: function(){
-				  	var $target = $filterPosts.parent().find('.type-project.category-open-data-platforms');
+				  	var $target = $filterPosts.parent().find(filterRegion+'.type-project.category-open-data-platforms');
+				  	filterPillar = '.category-open-data-platforms';
 				  	$target.show();
 				  	$('#current-total-post-count').text($target.length); 			  	
 				  	if (currentRegion.length > 0)
@@ -581,7 +590,8 @@
 				    return true;
 				  },
 				  community: function(){
-				  	var $target = $filterPosts.parent().find('.type-project.category-community-mapping');
+				  	var $target = $filterPosts.parent().find(filterRegion+'.type-project.category-community-mapping');
+				  	filterPillar = '.category-community-mapping';
 				  	$target.show();
 				  	$('#current-total-post-count').text($target.length);
 				  	if (currentRegion.length > 0)
@@ -593,7 +603,8 @@
 				    return true;
 				  },		
 				  risk: function(){
-				  	var $target = $filterPosts.parent().find('.type-project.category-risk-visualization');
+				  	var $target = $filterPosts.parent().find(filterRegion+'.type-project.category-risk-visualization');
+				  	filterPillar = '.category-risk-visualization';
 				  	$target.show();
 				  	$('#current-total-post-count').text($target.length);
 				  	if (currentRegion.length > 0)
