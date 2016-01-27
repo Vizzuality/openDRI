@@ -587,6 +587,7 @@
 						var classe  = 'title';
 						var title 	= 'Projects';
 						var zoom 	= 2;
+						var search 	= false;
 					} else {
 						if (!! currentSublayer) currentSublayer.remove();
 						$('.amount-of-posts').hide();
@@ -598,12 +599,32 @@
 						var prjsn	= (~~jsonValues[option] > 0)? ~~jsonValues[option] : 0;
 						var title   = text + ': ' + prjsn.toString() + ' projects';
 						var zoom 	= $(this).data('zoom');
+						var search 	= $(this).data('search');
 					}
 					$(this).parent().fadeOut();
 					$('#toggle-filter-region').removeClass('title').addClass(classe).text(text);
 					$('.page-title').text(title).css('text-transform','capitalize');
-				    LayerActions[option]();
-				    map.setView(latlong,zoom);
+				    if (!!search) {
+						sublayers[1].setCartoCSS(
+				    			"\
+								    #country_mask {\
+								      polygon-fill: #000;\
+								      polygon-opacity: 0.2;\
+								      line-color: #999;\
+								      line-width: 0;\
+								      line-opacity: 0;\
+								    }\
+								    #country_mask[name='" + text + "']{\
+								      polygon-opacity: 0;\
+								      line-color: #fff;\
+								      line-width: 1;\
+								      line-opacity: 0.4;\
+								    }");
+				    	map.setView(latlong,zoom);
+				    } else {
+				    	LayerActions[option]();
+				    	map.setView(latlong,zoom);
+				    }
 				});
 				$('#blue-bar-pick-pillar').on('click', '.option-pillar', function(){
 					$(this).siblings().removeClass('current');
@@ -613,6 +634,7 @@
 					location.reload();
 				});
 				$('#searchCountries').on('keyup', function() {
+					var $region_filter = $('.region-filter').first();
 					if ($(this).val().length < 1) {
 						$('.amount-of-posts').show();
 						sublayers[0].setSQL('SELECT * FROM wp_projects where is_region = true');
@@ -625,9 +647,12 @@
 								      line-opacity: 0;\
 								    }\
 								    ");
-					} else if( $(this).val().length > 4 ) {
+						$region_filter.find('.pickable').remove();
+						$region_filter.append('<li class="pickable" data-option="africa" data-lat="6.3152" data-lng="5.80" data-zoom="3">africa</li><li class="pickable" data-option="eastasia" data-lat="9.968" data-lng="118.3" data-zoom="3">east asia pacific</li><li class="pickable" data-option="europe" data-lat="64.32" data-lng="99.84" data-zoom="3">europe and central asia</li><li class="pickable" data-option="latam" data-lat="-10.314" data-lng="-68.027" data-zoom="3">latin america and caribbean</li><li class="pickable" data-option="middleeast" data-lat="30.75" data-lng="28.03" data-zoom="4">middle east and north africa</li><li class="pickable" data-option="nonwp" data-lat="0" data-lng="0" data-zoom="2">non wb countries</li><li class="pickable" data-option="southasia" data-lat="23.40" data-lng="77.08" data-zoom="4">south asia</li><li class="pickable clear-map" data-option="reload" data-lat="27" data-lng="72">Clear map</li>');
+					} else if( $(this).val().length > 3 ) {
 						$('.amount-of-posts').hide();
-						sublayers[0].setSQL('SELECT * FROM wp_projects where country_name like \'%' + $(this).val().charAt(0).toUpperCase() + $(this).val().slice(1) + '%\' AND visible = true');
+						var country = $(this).val().charAt(0).toUpperCase() + $(this).val().slice(1);
+						sublayers[0].setSQL('SELECT * FROM wp_projects where LOWER(country_name) like \'%' + country.toLowerCase() + '%\' AND visible = true');
 						sublayers[1].setSQL("SELECT * FROM country_mask");
 				    	sublayers[1].setCartoCSS(
 				    			"\
@@ -638,12 +663,22 @@
 								      line-width: 0;\
 								      line-opacity: 0;\
 								    }\
-								    #country_mask[name='" + $(this).val().charAt(0).toUpperCase() + $(this).val().slice(1) + "']{\
+								    #country_mask[name='" + country + "']{\
 								      polygon-opacity: 0;\
 								      line-color: #fff;\
 								      line-width: 1;\
 								      line-opacity: 0.4;\
 								    }");
+				    	$.get('https://opendri.cartodb.com/api/v2/sql?q=SELECT%20name,centroid%20FROM%20country_mask%20where%20LOWER(name)%20like%20%27%25'+ country.toLowerCase() +'%25%27%20', function(data){
+				    		$('.region-filter').first().find('.pickable').remove();
+				    		if (!!data.rows	> 0) {
+								$region_filter.find('.pickable').remove();
+				    			for (var i = 0; i < data.rows.length; i ++) {
+									$region_filter.append("<li class='pickable' data-option='"+data.rows[i].name+"' data-lat='"+JSON.parse(data.rows[i].centroid).coordinates[1]+"' data-lng='"+JSON.parse(data.rows[i].centroid).coordinates[0]+"' data-search='true' data-zoom='5'>"+data.rows[i].name+"</li>");
+				    			}
+				    			$region_filter.append('<li class="pickable clear-map" data-option="reload" data-lat="27" data-lng="72">Clear map</li>');
+				    		}
+				    	});
 					}
 				})
 				var changeIn_regions = function(id) {
