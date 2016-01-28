@@ -498,6 +498,13 @@ POSTS & CONTENT STYLES
     }
     &.last-resources {
     	margin: -120px 0 120px 0;
+    	flex-direction: row;
+	    justify-content: space-between;
+	    align-items: stretch;
+	    width: 100%;
+	    a {
+	    	text-decoration: none;
+	    }
     }
     article {
     	box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
@@ -568,9 +575,7 @@ POSTS & CONTENT STYLES
     		&:hover {
     			background: darken($white, 3%);
     		}
-
-		    >p,
-		    >div p {
+		    div {
 		    	margin: 5px 0;
 		    	display: flex;
 	    		justify-content: space-between;
@@ -580,6 +585,7 @@ POSTS & CONTENT STYLES
 	    			text-transform: capitalize;
 	    			a {
 	    				color: inherit;
+	    				text-decoration: none;
 	    			}
 	    		}
 	    		.format {
