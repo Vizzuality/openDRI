@@ -1643,7 +1643,13 @@ POSTS & CONTENT STYLES
     .index-row .row-container > a {
       text-decoration: none; }
   .index-row.last-resources {
-    margin: -120px 0 120px 0; }
+    margin: -120px 0 120px 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%; }
+    .index-row.last-resources a {
+      text-decoration: none; }
   .index-row article {
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.2); }
   .index-row article,
@@ -1710,27 +1716,22 @@ POSTS & CONTENT STYLES
       width: 95%; }
       .index-row .resource-list li:hover {
         background: #f7f7f7; }
-      .index-row .resource-list li > p,
-      .index-row .resource-list li > div p {
+      .index-row .resource-list li div {
         margin: 5px 0;
         display: flex;
         justify-content: space-between;
         font-size: 15px; }
-        .index-row .resource-list li > p .title,
-        .index-row .resource-list li > div p .title {
+        .index-row .resource-list li div .title {
           color: #1477c9;
           text-transform: capitalize; }
-          .index-row .resource-list li > p .title a,
-          .index-row .resource-list li > div p .title a {
-            color: inherit; }
-        .index-row .resource-list li > p .format,
-        .index-row .resource-list li > div p .format {
+          .index-row .resource-list li div .title a {
+            color: inherit;
+            text-decoration: none; }
+        .index-row .resource-list li div .format {
           color: #555555;
           text-transform: uppercase; }
-        .index-row .resource-list li > p .name,
-        .index-row .resource-list li > p .size,
-        .index-row .resource-list li > div p .name,
-        .index-row .resource-list li > div p .size {
+        .index-row .resource-list li div .name,
+        .index-row .resource-list li div .size {
           font-size: 13px;
           color: rgba(85, 85, 85, 0.5);
           text-transform: uppercase; }
