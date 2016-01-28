@@ -484,7 +484,7 @@ POSTS & CONTENT STYLES
     	display: block;
     	.row-container {
     		justify-content: space-between;
-    		article {
+    		article {#
     			margin: 10px;
     		}
     	}
@@ -1219,7 +1219,8 @@ margin: 0;
 		}
 	}
 }
-.category-news #main {
+.category-news #main,
+.post-type-archive-resource #main {
 	margin: 50px 0 0 0 ;
 	>h1,
 	>h3{

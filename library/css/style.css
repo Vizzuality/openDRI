@@ -1636,7 +1636,8 @@ POSTS & CONTENT STYLES
     .index-row.more-content .row-container {
       justify-content: space-between; }
       .index-row.more-content .row-container article {
-        margin: 10px; }
+        #
+    			margin: 10px; }
   .index-row .row-container {
     display: flex;
     flex-wrap: wrap; }
@@ -2255,17 +2256,24 @@ POSTS & CONTENT STYLES
     width: 485px;
     height: 270px; }
 
-.category-news #main {
+.category-news #main,
+.post-type-archive-resource #main {
   margin: 50px 0 0 0; }
   .category-news #main > h1,
-  .category-news #main > h3 {
+  .category-news #main > h3,
+  .post-type-archive-resource #main > h1,
+  .post-type-archive-resource #main > h3 {
     max-width: 35%; }
     .category-news #main > h1::first-letter,
-    .category-news #main > h3::first-letter {
+    .category-news #main > h3::first-letter,
+    .post-type-archive-resource #main > h1::first-letter,
+    .post-type-archive-resource #main > h3::first-letter {
       text-transform: uppercase; }
-  .category-news #main > h3 {
+  .category-news #main > h3,
+  .post-type-archive-resource #main > h3 {
     margin: 0 0 70px; }
-  .category-news #main .row-container article {
+  .category-news #main .row-container article,
+  .post-type-archive-resource #main .row-container article {
     max-width: 490px;
     width: 490px; }
 
