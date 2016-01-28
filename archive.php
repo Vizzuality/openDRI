@@ -8,7 +8,8 @@ if ( is_category() ) {
 } elseif ( is_tag() ) {
 	$title = sprintf( __( 'Tag: %s' ), single_tag_title( '', false ) );
 }
-if(is_post_type_archive()) {
+	global $post_type;
+if(is_post_type_archive() && $post_type=='project') {
 	$title = 'Projects';
 	$postsInAfrica = get_term_by('slug','africa','category');
 	$postsInAfrica = $postsInAfrica->count;
@@ -89,6 +90,9 @@ if(is_post_type_archive()) {
 	// 				</div>
 	// 			</div>';
 	echo '<span class="corner-map"></span>';
+} elseif (is_post_type_archive() && $post_type=='resource'){
+	$title = 'Resources';
+	echo '<span class="corner-map"></span>';
 }
 
 ?>
@@ -104,41 +108,92 @@ if(is_post_type_archive()) {
 							<h3>Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Ullam id dolor.</h3>
 							<div id="list-content" class="m-all cf index-row" role="news">
 								<div class="row-container">
-								<?php if (have_posts()) : while (have_posts()) : the_post();
-
-									$cats = array();
+									<? if (is_post_type_archive() && $post_type=='resource') : ?>
+									<ul class="resource-list">
+									<? endif; ?> 
+								<? if (have_posts()) : while (have_posts()) : the_post(); ?>
+							 	 <? $cats = array();
 									foreach(wp_get_post_categories($post->ID) as $c)
 									{
 										$cat = get_category($c);
 										array_push($cats,$cat->name);
 									}
 								?>
+								<? if (is_post_type_archive() && $post_type=='resource') : ?>
+								<li>
+									<div>
+										<span class="title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></span>
+									</div>
+									<div>
+										<span class="name">topic/issue</span><span class="size"><?php the_date() ?></span>
+									</div>
+								</li>
+								<? else: ?>
+									<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf '); ?> role="article">
+										<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+									$image = ($image[0]) ? $image[0] : get_template_directory_uri().'/library/images/red-cross.jpg';
+										?>
+		            					<span class="img" style="background-image:url(<?php echo $image; ?>)"></span>
 
-								<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf '); ?> role="article">
-									<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
-								$image = ($image[0]) ? $image[0] : get_template_directory_uri().'/library/images/red-cross.jpg';
-									?>
-	            					<span class="img" style="background-image:url(<?php echo $image; ?>)"></span>
-
-									<header class="article-header">
-										<h1 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
-									</header>
-									<section class="entry-content cf">
-										<?php the_excerpt(); ?>
-									</section>
-									<footer class="article-footer cf">
-										<p class="byline entry-meta vcard">
-				                            <?php printf( __( '', 'bonestheme' ).' %1$s %2$s',
-				   								/* the author of the post */
-				   								'<span class="entry-author author" itemprop="author" itemscope itemptype="http://schema.org/Person">' . get_the_author_link( get_the_author_meta( 'ID' ) ) . '</span>',
-				   								/* the time the post was published */
-				   								'<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time('d M') . '</time>'
-											); ?>
-										</p>
-									</footer>
-								</article>
+										<header class="article-header">
+											<h1 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
+										</header>
+										<section class="entry-content cf">
+											<?php the_excerpt(); ?>
+										</section>
+										<footer class="article-footer cf">
+											<p class="byline entry-meta vcard">
+					                            <?php printf( __( '', 'bonestheme' ).' %1$s %2$s',
+					   								/* the author of the post */
+					   								'<span class="entry-author author" itemprop="author" itemscope itemptype="http://schema.org/Person">' . get_the_author_link( get_the_author_meta( 'ID' ) ) . '</span>',
+					   								/* the time the post was published */
+					   								'<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time('d M') . '</time>'
+												); ?>
+											</p>
+										</footer>
+									</article>
+								<? endif; ?>
 
 								<?php endwhile; ?>
+								<? if (is_post_type_archive() && $post_type=='resource') : ?>
+									</ul>
+									<div class="m-all cf index-row last-resources">
+									<?
+										$args = array( 'numberposts' => '1', 'category' => 'highlighted-resource', 'order' => 'DESC', 'post_type' => 'resource' );
+										$featured_col = wp_get_recent_posts( $args );
+										$image1 = '';
+										$image2 = '';
+										foreach( $featured_col as $featured ) {
+											$image = wp_get_attachment_image_src( get_post_thumbnail_id( $featured["ID"] ), 'single-post-thumbnail' );
+											$image1 = $image[0];
+									?>
+										<a href="<?php echo $featured["guid"]; ?>" target="_blank">
+											<article class="resource-cont"  id="firstFeatured">
+												<section>
+													<h3><?php echo $featured["post_title"]; ?></h3>
+												</section>
+											</article>
+										</a>
+									<? } 
+										$args = array( 'numberposts' => '1', 'category' => 'highlighted-resource',  'order' => 'DESC', 'offset' => '1', 'post_type' => 'resource' );
+										$featured_col = wp_get_recent_posts( $args );
+										foreach( $featured_col as $featured ) {
+											$image = wp_get_attachment_image_src( get_post_thumbnail_id( $featured["ID"] ), 'single-post-thumbnail' );
+											$image2 = $image[0];
+									 ?>
+										<a href="<?php echo $featured["guid"]; ?>"  target="_blank">
+											<article class="resource-cont --scnd-img"  id="secondFeatured">
+												<section>
+													<h3><?php echo $featured["post_title"]; ?></h3>
+												</section>
+											</article>
+										</a>
+									<? } ?>
+									</div>
+									<script type="text/javascript">
+										document.getElementsByTagName('head')[0].innerHTML += '<style>#firstFeatured:after{background-image:url(<? echo $image1 ?>) !important;}#secondFeatured:after{background-image:url(<? echo $image2 ?>) !important;}</style>';
+									</script>
+								<? endif; ?>
 							</div>
 						</div>
 									<?php if (!!$display_navi){ bones_page_navi();} ?>
