@@ -1661,20 +1661,48 @@ FOOTER STYLES
 		}
 		.-ft-newsletter {
 			font-size: 13px;
-			border: 1px solid rgba(151,151,151,0.50);
-			padding: 10px 20px;
 		    display: flex;
-		    align-items: center;
+		    align-items: flex-start;
 		    justify-content: center;
+		    flex-direction: column;
+		}
+		form {
+			border: 1px solid #979797;
+		    width: 300px;
+		    display: flex;
+		    margin-top: 10px;
+		    justify-content: space-between;
+		    position: relative;
 		}
 		input {
-			width: 120px;
+		    width: 220px;
 		    line-height: 13px;
 		    height: 22px;
 		    background: transparent;
 		    position: relative;
-    		left: -7px;
-    		top: 8px;
+		    left: -7px;
+		    top: 8px;
+		    display: inline;
+		}
+		.response {
+		    position: absolute;
+		    top: -2px;
+		    left: 310px;
+		    width: 500px;
+		}
+		#mc-embedded-subscribe {
+		    display: inline;
+		    background-color: #979797;
+		    width: 90px;
+		    position: static;
+		    color: #1B1B1B;
+		    border: none;
+		    margin: 0;
+		    height: 36px;
+		    top: 0;
+		    right: -4px;
+		    text-transform: uppercase;
+		    font-weight: bold;
 		}
 	}
 	

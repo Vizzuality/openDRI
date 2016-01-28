@@ -6,8 +6,20 @@
 								An initiative of <a href="https://www.gfdrr.org/" title="The Global Facility for Disaster Reduction and Recovery website"><img src="<?php echo get_template_directory_uri(); ?>/gfdrr-logo.png" alt="The Global Facility for Disaster Reduction and Recovery logo"></a>
 							</div>
 							<div class="-ft-newsletter">
-								Sign up for our newsletter: <input type="email" placeholder="your.email@here">
+								<span>Sign up for our newsletter:</span> 
+								<form action="//vizzuality.us10.list-manage.com/subscribe/post?u=5450ec66874ec1182c96d7ec7&amp;id=70766ac561" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+									<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="your.email@here">
+									<input type="text" name="b_5450ec66874ec1182c96d7ec7_70766ac561" tabindex="-1" value="" style="display:none">
+									<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+									<div id="mce-responses" class="clear">
+										<div class="response" id="mce-error-response" style="display:none"></div>
+										<div class="response" id="mce-success-response" style="display:none"></div>
+									</div> 
+								</form>
 							</div>
+							<!-- Begin MailChimp Signup Form -->
+							<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+							<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 						</div>
 						<nav>
 							<a href="<?php echo home_url(); ?>/project" class="-i-link">projects</a>
