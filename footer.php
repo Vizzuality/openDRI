@@ -170,10 +170,9 @@
 				.addTo(map)
 				.on('done', function(layer) {
 				    // change the query for the first layer
-				    console.log("SELECT * FROM wp_projects where is_region = true AND wp_post_id = "+ POST_ID);
 				    var subLayerOptions = {
-				      sql: isNaN(POST_ID) ? "SELECT * FROM wp_projects where is_region = true" : "SELECT * FROM wp_projects where visible = true AND wp_post_id = "+ POST_ID,
-				      cartocss:  isNaN(POST_ID) ? "#wp_projects{  marker-fill-opacity: 1;  marker-line-color: #FFF;  marker-line-width: 10;  marker-line-opacity: 1;  marker-placement: point;  marker-type: ellipse;  marker-width: 40;  marker-fill: #FFFFFF;  marker-allow-overlap: true;}" : "#wp_projects{  marker-fill-opacity: 0.9;  marker-line-color: #FFF;  marker-line-width: 2;  marker-line-opacity: 1;  marker-placement: point;  marker-type: ellipse;  marker-width: 10;  marker-fill: #FFFFFF;  marker-allow-overlap: true;}"
+				      sql: (! !!POST_ID || isNaN(POST_ID)) ? "SELECT * FROM wp_projects where is_region = true" : "SELECT * FROM wp_projects where visible = true AND wp_post_id = "+ POST_ID,
+				      cartocss: (! !!POST_ID || isNaN(POST_ID)) ? "#wp_projects{  marker-fill-opacity: 1;  marker-line-color: #FFF;  marker-line-width: 10;  marker-line-opacity: 1;  marker-placement: point;  marker-type: ellipse;  marker-width: 40;  marker-fill: #FFFFFF;  marker-allow-overlap: true;}" : "#wp_projects{  marker-fill-opacity: 0.9;  marker-line-color: #FFF;  marker-line-width: 2;  marker-line-opacity: 1;  marker-placement: point;  marker-type: ellipse;  marker-width: 10;  marker-fill: #FFFFFF;  marker-allow-overlap: true;}"
 				    }
 
 				    var sublayer = layer.getSubLayer(0);
