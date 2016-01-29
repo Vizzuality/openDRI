@@ -689,9 +689,16 @@
 				    	map.setView(latlong,zoom);
 				    }
 				});
-				$('#blue-bar-pick-pillar').on('click', '.option-pillar', function(){
+				$('#blue-bar-pick-pillar').on('click', 'span', function(){
 					$(this).siblings().removeClass('current');
-					LayerActions[$(this).data('option')]();
+					if ($(this).hasClass('option-pillar')) {					
+						$(this).siblings('.title').text('Show all');
+						var option = $(this).data('option');
+					} else {
+						$(this).text('select:');
+						var option = 'all';
+					}
+					LayerActions[option]();
 				});
 				$('#reset-map').on('click', function(){
 					location.reload();
