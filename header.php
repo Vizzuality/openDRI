@@ -42,6 +42,7 @@
 		<script type="text/javascript">
 			var LAT_VIS   = null;
 			var LONG_VIS  = null;
+			var POST_ID   = null;
 		</script>
 	</head>
 
