@@ -169,6 +169,7 @@
 		<script type="text/javascript">
 			LAT_VIS   = '<? echo $geodata__lat ?>';
 			LONG_VIS  = '<? echo $geodata__long ?>';
+			POST_ID   = '<? echo $thispostid ?>';
 			if ('<? echo $CAT_NAME ?>' === 'projects' || '<? echo get_post_type( get_the_ID() )?>' === 'project') {
 				document.getElementById('pic-banner').style.display = 'none';
 				document.getElementById('map').style.display 		= 'block';
