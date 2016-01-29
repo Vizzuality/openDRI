@@ -61,7 +61,8 @@
 						<span id="menu-option-news"><a href="<?php echo home_url(); ?>/category/news">news</a></span>
 						<span class="search-input">
 							<img src="<?php echo get_template_directory_uri(); ?>/library/images/search.svg">
-							<input type="text" id="searchODRI">
+							<input type="text" id="searchODRI" placeholder="Search">
+							<span class='search-container'><span class="search-open-dri"></span></span>
 						</span>
 					</nav>
 				</div>
