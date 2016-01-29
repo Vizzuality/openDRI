@@ -42,22 +42,19 @@ FONT FACE (IN YOUR FACE)
 
 @font-face {
   font-family: 'Bariol_Regular';
-  src: url('fonts/Bariol_Regular.otf');
-  src: url('fonts/Bariol_Regular.otf?#iefix') format('embedded-opentype');
+  src: url('../fonts/Bariol_Regular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Bariol_Light';
-  src: url('fonts/Bariol_Light.otf');
-  src: url('fonts/Bariol_Light.otf?#iefix') format('embedded-opentype');
+  src: url('../fonts/Bariol_Light.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Bariol_Bold';
-  src: url('fonts/Bariol_Bold.otf');
-  src: url('fonts/Bariol_Bold.otf?#iefix') format('embedded-opentype');
+  src: url('../fonts/Bariol_Bold.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
