@@ -779,16 +779,22 @@
 		</script>
 		<?php wp_footer(); ?>
 		<script type="text/javascript">
-			var $input   = $('#searchODRI'),
-				$s_input = $('.search-input');
-
+			var $input     = $('#searchODRI'),
+				$s_input   = $('.search-input'),
+				$i_input   = $s_input.find('.search-open-dri'),
+				$im_input  = $s_input.find('img');
 			$s_input.on('click', function(e) {
 			    e.preventDefault();
 			    e.stopPropagation();
 			    $input.addClass('visible').focus();
+			    $i_input.addClass('visible');
+			    $im_input.hide();
+			    $
 			    $(document).one('click', function closeMenu (e){
 			        if($s_input.has(e.target).length === 0){
 			             $input.removeClass('visible');
+			             $i_input.removeClass('visible');
+			             $im_input.show();
 			        } else {
 			            $(document).one('click', closeMenu);
 			        }
@@ -797,7 +803,9 @@
 				if(e.keyCode == 13)
 			    	location = '<?php echo home_url(); ?>' + '?s=' + $input.val();
 			});
-
+			$i_input.on('click', function(){
+				location = '<?php echo home_url(); ?>' + '?s=' + $input.val();
+			})
 
 			var $bar = $('#blue-bar');
 			if ($bar.hasClass('about')) {			

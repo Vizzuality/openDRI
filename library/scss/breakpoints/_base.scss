@@ -214,15 +214,34 @@ HEADER STYLES
 			display: none;
 			&.visible {
 				background: transparent;
-			    border-bottom: 1px dotted lightgray;
-			    height: 20px;
-			    width: 120px;
+			    border-bottom: 1px dotted #555;
+			    height: 30px;
+			    width: 150px;
 			    display: inline;
 			    position: relative;
-			    top: 10px;
+			    top: 5px;
 			    left: 5px;
 			    padding: 0;
 			}
+		}
+		.search-open-dri {
+			display: none;
+			&.visible {
+				display: inline-block;
+				height: 30px;
+				width: 30px;
+				background-color: #fff;
+			    -webkit-mask:  url("../images/search.svg") no-repeat 50% 50%;
+			    mask: url("../images/search.svg") no-repeat 50% 50%;
+			}	
+		}
+		.search-container {
+		    display: inline-flex;
+		    position: relative;
+		    background-color: #1477c9;
+		    top: 9px;
+		    border-radius: 4px;
+		    left: 4px;
 		}
 	}
 	.hr {
@@ -407,7 +426,7 @@ POSTS & CONTENT STYLES
 		    }
 	    }
     }
-}
+}ƒ
 .what-explore {
 	background: white;
     font-size: 20px;
