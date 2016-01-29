@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! Made with Bones: http://themble.com/bones :) */
 /******************************************************************
 Site Name:
@@ -498,20 +499,17 @@ FONT FACE (IN YOUR FACE)
 */
 @font-face {
   font-family: 'Bariol_Regular';
-  src: url("fonts/Bariol_Regular.otf");
-  src: url("fonts/Bariol_Regular.otf?#iefix") format("embedded-opentype");
+  src: url("../fonts/Bariol_Regular.otf") format("opentype");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'Bariol_Light';
-  src: url("fonts/Bariol_Light.otf");
-  src: url("fonts/Bariol_Light.otf?#iefix") format("embedded-opentype");
+  src: url("../fonts/Bariol_Light.otf") format("opentype");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'Bariol_Bold';
-  src: url("fonts/Bariol_Bold.otf");
-  src: url("fonts/Bariol_Bold.otf?#iefix") format("embedded-opentype");
+  src: url("../fonts/Bariol_Bold.otf") format("opentype");
   font-weight: normal;
   font-style: normal; }
 /*
@@ -1430,14 +1428,30 @@ HEADER STYLES
       display: none; }
       .header nav input.visible {
         background: transparent;
-        border-bottom: 1px dotted lightgray;
-        height: 20px;
-        width: 120px;
+        border-bottom: 1px dotted #555;
+        height: 30px;
+        width: 150px;
         display: inline;
         position: relative;
-        top: 10px;
+        top: 5px;
         left: 5px;
         padding: 0; }
+    .header nav .search-open-dri {
+      display: none; }
+      .header nav .search-open-dri.visible {
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        background-color: #fff;
+        -webkit-mask: url("../images/search.svg") no-repeat 50% 50%;
+        mask: url("../images/search.svg") no-repeat 50% 50%; }
+    .header nav .search-container {
+      display: inline-flex;
+      position: relative;
+      background-color: #1477c9;
+      top: 9px;
+      border-radius: 4px;
+      left: 4px; }
   .header .hr {
     box-shadow: 0px 1px #efefef;
     display: block;
@@ -1566,6 +1580,7 @@ POSTS & CONTENT STYLES
           #map-fake .what-list > nav span i.img-pile-4 {
             background-image: url("../images/pile-4.png"); }
 
+ƒ
 .what-explore {
   background: white;
   font-size: 20px;
@@ -1580,6 +1595,7 @@ POSTS & CONTENT STYLES
   align-items: center;
   text-transform: uppercase;
   font-weight: bold; }
+  ƒ
   .what-explore a {
     text-decoration: none;
     color: inherit; }
