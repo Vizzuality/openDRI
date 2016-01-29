@@ -1703,6 +1703,10 @@ FOOTER STYLES
 		    right: -4px;
 		    text-transform: uppercase;
 		    font-weight: bold;
+		    transition: background-color 0.3s ease;
+		    &:hover {
+		    	background-color: #fff;
+		    }
 		}
 	}
 	
