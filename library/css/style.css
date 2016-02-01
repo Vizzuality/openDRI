@@ -2622,7 +2622,9 @@ FOOTER STYLES
     text-align: center;
     text-transform: uppercase;
     display: block;
-    text-decoration: none; }
+    text-decoration: none; 
+    cursor: pointer;
+    margin: 0 0 150px;}
   #post-not-found form #searchsubmit, #post-not-found form label,
   .no-results form #searchsubmit,
   .no-results form label {
