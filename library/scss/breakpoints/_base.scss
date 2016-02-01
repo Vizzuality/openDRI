@@ -1022,13 +1022,13 @@ margin: 0;
 	}
 	.corner-map {
 	    height: 460px;
-	    width: 650px;
+	    width: 800px;
 	    z-index: -1;
 	    position: absolute;
 	    background-image: url(../images/bg-mapamundi.png);
 	    background-position: 50% 50%;
 	    background-size: cover;
-	    right: 0px;
+	    left: calc(5% + 480px);
 	    top: 20px;
 	    &.about {
 	    	    top: 730px;
