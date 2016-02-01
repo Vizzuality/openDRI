@@ -1922,7 +1922,7 @@ POSTS & CONTENT STYLES
     display: block;
     display: -webkit-box;
     max-width: 400px;
-    height: calc(15 * 1.2 * 4px);
+    height: calc(14 * 1.2 * 4px);
     font-size: 15px;
     line-height: 1.2;
     -webkit-line-clamp: 4;
