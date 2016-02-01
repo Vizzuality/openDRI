@@ -1877,6 +1877,7 @@ POSTS & CONTENT STYLES
         height: auto;
         font-size: 17px;
         line-height: 28px;
+        font-feature-settings: "liga" 0;
         color: #555; }
 
 /* end .hentry */
