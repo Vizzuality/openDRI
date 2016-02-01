@@ -1520,8 +1520,6 @@ POSTS & CONTENT STYLES
   justify-content: center;
   background-size: cover;
   transition: background-color 0.2s ease; }
-  #map-fake:hover {
-    background-color: rgba(0, 0, 0, 0.1); }
   #map-fake:after {
     content: "";
     background: url(../images/bg-home-header.jpg);
@@ -1538,7 +1536,7 @@ POSTS & CONTENT STYLES
     align-items: center;
     height: 457px;
     justify-content: center;
-    background: rgba(14, 95, 162, 0.8);
+    background: rgba(14, 95, 162, 0.3);
     color: #fff;
     width: 70%;
     padding: 0 10%;
