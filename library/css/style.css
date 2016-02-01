@@ -1841,6 +1841,8 @@ POSTS & CONTENT STYLES
       text-align: center;
       width: 100%;
       height: 100%;
+      font-family: Bariol_Bold;
+      padding: 15px 0;
       display: inline-block; }
   .hentry footer {
     margin: 15px;
