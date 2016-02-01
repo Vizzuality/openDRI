@@ -47,7 +47,8 @@
 				<div id="inner-content" class="wrap cf">
 
 					<main id="main" class="m-all t-2of3 d-5of7 cf no-results" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
-
+						<h2> We're sorry, there are not results for <em><?php echo esc_attr(get_search_query()); ?></em></h2>
+						<h3>Try anything different instead</h3>
 							<section class="search">
 
 									<p><?php get_search_form(); ?></p>
