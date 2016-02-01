@@ -2256,7 +2256,7 @@ POSTS & CONTENT STYLES
   height: auto; }
 .archive .index-row,
 .page .index-row {
-  margin: 60px 0; }
+  margin: 60px -15px; }
   .archive .index-row.contents-image,
   .page .index-row.contents-image {
     margin: 0; }
