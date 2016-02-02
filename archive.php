@@ -68,9 +68,9 @@ if(is_post_type_archive() && $post_type=='project') {
 					<div class="wrap wrapper filters">
 							<div id="blue-bar-pick-pillar">
 								<span class="title">Select:</span>
-								<span class="option-pillar" data-option="open"><a href="'.home_url()'./category/pillars/open-data-platforms/" data-option="open"><i class="img-pile-1"></i>open data platforms</a></span>
-								<span class="option-pillar" data-option="community"><a href="'.home_url()'./category/pillars/community-mapping/" data-option="community"><i class="img-pile-2"></i>community mapping</a></span>
-								<span class="option-pillar" data-option="risk"><a href="'.home_url()'./category/pillars/risk-visualizations/" data-option="risk"><i class="img-pile-3"></i>risk visualization</a></span>
+								<span class="option-pillar" data-option="open"><a href="'.home_url().'/category/pillars/open-data-platforms/" data-option="open"><i class="img-pile-1"></i>open data platforms</a></span>
+								<span class="option-pillar" data-option="community"><a href="'.home_url().'/category/pillars/community-mapping/" data-option="community"><i class="img-pile-2"></i>community mapping</a></span>
+								<span class="option-pillar" data-option="risk"><a href="'.home_url().'/category/pillars/risk-visualizations/" data-option="risk"><i class="img-pile-3"></i>risk visualization</a></span>
 							</div>
 							<div class="container-region-filter">
 								<span class="title" id="toggle-filter-region">filter by region</span>
