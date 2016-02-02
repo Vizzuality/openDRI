@@ -1852,6 +1852,9 @@ POSTS & CONTENT STYLES
       margin: 0;
       display: flex;
       justify-content: space-between; }
+    .hentry footer .tags {
+      display: inline;
+      font-feature-settings: "liga" 0; }
   .hentry.--odri-post {
     padding: 2.5rem;
     border: 0;
