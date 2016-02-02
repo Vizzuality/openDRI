@@ -75,13 +75,13 @@ if(is_post_type_archive() && $post_type=='project') {
 							<div class="container-region-filter">
 								<span class="title" id="toggle-filter-region">filter by region</span>
 								<ul class="region-filter" id="pick-region">
-									<li class="pickable" data-option="africa" ><a href="'.home_url().'/category/regions/africa/">Africa</a></li>
-									<li class="pickable" data-option="eastasia" >east asia pacific</li>
-									<li class="pickable" data-option="europe" >europe and central asia</li>
-									<li class="pickable" data-option="latam" >latin america and caribbean</li>
-									<li class="pickable" data-option="middleeast" >middle east and north africa</li>
-									<li class="pickable" data-option="nonwp" >non wb countries</li>
-									<li class="pickable" data-option="southasia" >south asia</li>
+									<li class="pickable" data-option="africa"><a href="'.home_url().'/category/regions/africa/">Africa</a></li>
+									<li class="pickable" data-option="eastasia"><a href="'.home_url().'/category/regions/east-asia-pacific/">east asia pacific</a></li>
+									<li class="pickable" data-option="europe"><a href="'.home_url().'/category/regions/europe-and-central-asia/">europe and central asia</a></li>
+									<li class="pickable" data-option="latam"><a href="'.home_url().'/category/regions/latin-america-and-caribbean/">latin america and caribbean</a></li>
+									<li class="pickable" data-option="middleeast"><a href="'.home_url().'/category/regions/middle-east-and-north-africa/">middle east and north africa</a></li>
+									<li class="pickable" data-option="nonwp"><a href="'.home_url().'/category/regions/non-wb-countries/">non wb countries</a></li>
+									<li class="pickable" data-option="southasia"><a href="'.home_url().'/category/regions/south-asia/">south asia</a></li>
 								</ul>
 							</div>
 					</div>
