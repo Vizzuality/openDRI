@@ -740,7 +740,10 @@ POSTS & CONTENT STYLES
 			display: flex;
     		justify-content: space-between;
 		}
-	}
+		.tags {
+	      display: inline;
+	      font-feature-settings: "liga" 0; }
+		}
 	&.--odri-post {
 		padding: 2.5rem;
 		border: 0;
