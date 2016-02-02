@@ -142,6 +142,13 @@ if(is_post_type_archive() && $post_type=='project') {
 										</section>
 										<footer class="article-footer cf">
 											<p class="byline entry-meta vcard">
+												<span>
+													<?php
+													foreach((get_the_category()) as $category) { 
+													    echo '<a href="'.esc_url( get_category_link( $category->term_id ) ).'">'.$category->cat_name . '</a> '; 
+													} 
+													?>
+												</span>
 					                            <?php printf( __( '', 'bonestheme' ).' %1$s',
 					   								/* the time the post was published */
 					   								'<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time('d M') . '</time>'
