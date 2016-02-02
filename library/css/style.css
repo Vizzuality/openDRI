@@ -1855,6 +1855,7 @@ POSTS & CONTENT STYLES
     .hentry footer p a {
       color: rgba(85,85,85,0.5);
       text-decoration: none;
+      font-feature-settings: "liga" 0;
       text-transform: capitalize;}
     .hentry footer .tags {
       display: inline;
