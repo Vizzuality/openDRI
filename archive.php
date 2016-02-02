@@ -75,7 +75,7 @@ if(is_post_type_archive() && $post_type=='project') {
 							<div class="container-region-filter">
 								<span class="title" id="toggle-filter-region">filter by region</span>
 								<ul class="region-filter" id="pick-region">
-									<li class="pickable" data-option="africa" ><a href="'.home_url().'/category/regions/africa/">Africa</li>
+									<li class="pickable" data-option="africa" ><a href="'.home_url().'/category/regions/africa/">Africa</a></li>
 									<li class="pickable" data-option="eastasia" >east asia pacific</li>
 									<li class="pickable" data-option="europe" >europe and central asia</li>
 									<li class="pickable" data-option="latam" >latin america and caribbean</li>
