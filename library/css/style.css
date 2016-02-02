@@ -1852,6 +1852,10 @@ POSTS & CONTENT STYLES
       margin: 0;
       display: flex;
       justify-content: space-between; }
+    .hentry footer p a {
+      color: rgba(85,85,85,0.5);
+      text-decoration: none;
+      text-transform: capitalize;}
     .hentry footer .tags {
       display: inline;
       font-feature-settings: "liga" 0; }

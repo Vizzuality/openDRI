@@ -739,10 +739,15 @@ POSTS & CONTENT STYLES
 			margin: 0;
 			display: flex;
     		justify-content: space-between;
+    		a {
+			    color: rgba(85,85,85,0.5);
+			    text-decoration: none;
+			    text-transform: capitalize;
+    		}
 		}
 		.tags {
 	      display: inline;
-	      font-feature-settings: "liga" 0; }
+	      font-feature-settings: "liga" 0;
 		}
 	&.--odri-post {
 		padding: 2.5rem;
