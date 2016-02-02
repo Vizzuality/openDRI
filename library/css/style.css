@@ -1873,14 +1873,16 @@ POSTS & CONTENT STYLES
       padding: 0; }
       .hentry.--odri-post .entry-content p {
         margin: 0 0 1.5em;
-        display: inline;
+        display: block;
         max-width: none;
         height: auto;
         font-size: 17px;
         line-height: 28px;
         font-feature-settings: "liga" 0;
         color: #555; }
-
+        .hentry.--odri-post .entry-content p a {
+          color: #1477c9;
+        }
 /* end .hentry */
 .single-title,
 .page-title,
