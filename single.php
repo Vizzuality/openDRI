@@ -95,9 +95,14 @@
 											</section>
 											<footer class="article-footer cf">
 												<p class="byline entry-meta vcard">
-						                            <?php printf( __( '', 'bonestheme' ).' %1$s %2$s',
-						   								/* the author of the post */
-						   								'<span class="entry-author author" itemprop="author" itemscope itemptype="http://schema.org/Person">' . get_the_author_meta('display_name', $related->post_author ) . '</span>',
+													<span>
+													<?php
+													foreach((get_the_category()) as $category) { 
+													    echo '<a href="'.esc_url( get_category_link( $category->term_id ) ).'">'.$category->cat_name . '</a> '; 
+													} 
+													?>
+													</span>
+						                            <?php printf( __( '', 'bonestheme' ).' %1$s',
 						   								/* the time the post was published */
 						   								'<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time('d M') . '</time>'
 													); ?>
