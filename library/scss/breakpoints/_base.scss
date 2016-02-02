@@ -628,7 +628,8 @@ POSTS & CONTENT STYLES
 			margin: 0;
 		    color: #555;
 		    font-size: 15px;
-		    line-height: 23px;    		
+		    line-height: 23px;
+		    font-feature-settings: "liga" 0;	
     	}
     	a {
     		text-decoration: none;

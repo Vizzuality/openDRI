@@ -1759,6 +1759,7 @@ POSTS & CONTENT STYLES
     margin: 0;
     color: #555;
     font-size: 15px;
+    font-feature-settings: "liga" 0;
     line-height: 23px; }
   .index-row .card-third a {
     text-decoration: none;
