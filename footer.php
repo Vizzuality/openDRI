@@ -82,7 +82,7 @@
 			var currentSublayer,
 				currentRegion = '',
 				currentPillar = '',
-				$filterPosts  = $('.type-project'),
+				$filterPosts  = ($('.type-project').length > 0) ? $('.type-project') : $('.type-post'),
 				filterRegion  = '',
 				filterPillar  = '';
 		    function init(){
