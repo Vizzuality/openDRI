@@ -1067,6 +1067,7 @@ margin: 0;
 			}
 			ol {
 				list-style: decimal;
+				list-style-position: inside;
 			    display: flex;
 			    flex-direction: column;
 			    flex-wrap: wrap;
@@ -1089,6 +1090,9 @@ margin: 0;
 		align-items: flex-start;
 		.index-row {
 			margin: 0;
+			.card-third {
+				margin: 0;
+			}
 		}
 		.contact-form {
 			background: $white;

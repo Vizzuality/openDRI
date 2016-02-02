@@ -2070,6 +2070,7 @@ POSTS & CONTENT STYLES
   .archive .about-content .card-third ol,
   .page .about-content .card-third ol {
     list-style: decimal;
+    list-style-position: inside;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -2089,6 +2090,7 @@ POSTS & CONTENT STYLES
   justify-content: space-between;
   align-items: flex-start; }
   .archive #contact .index-row,
+  .page #contact .index-row .card-third,
   .page #contact .index-row {
     margin: 0; }
   .archive #contact .contact-form,
