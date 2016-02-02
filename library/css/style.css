@@ -1658,7 +1658,7 @@ POSTS & CONTENT STYLES
     .index-row .row-container > a {
       text-decoration: none; }
   .index-row.last-resources {
-    margin: -120px 0 120px 0;
+    margin: -120px 0 120px -50px;
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
