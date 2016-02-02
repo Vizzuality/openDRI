@@ -2078,9 +2078,6 @@ POSTS & CONTENT STYLES
       margin: 5px 0;
       color: #555;
       font-weight: 600; }
-.archive .about-content h3,
-.page .about-content h3 {
-  color: #1477c9; }
 .archive #contact,
 .page #contact {
   display: flex;
