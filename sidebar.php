@@ -28,3 +28,6 @@
 					<?php // endif; ?>
 
 				</div>
+			<script type="text/javascript">
+			document.getElementsByTagName('head')[0].innerHTML += '<style>#firstFeatured:after{background-image:url(<? echo $image1 ?>) !important;}#secondFeatured:after{background-image:url(<? echo $image2 ?>) !important;}</style>';
+			</script>
