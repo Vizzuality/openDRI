@@ -431,13 +431,14 @@ POSTS & CONTENT STYLES
     color: #1477c9;
     position: relative;
     top: -24px;
-    height: 48px;
+    height: 60px;
     display: flex;
     width: 220px;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
     font-weight: bold;
+    line-height: 20px;
     a {
     	text-decoration: none;
     	color: inherit;
@@ -1996,7 +1997,6 @@ div.cartodb-popup .cartodb-popup-close-button {
     left: 2px !important;
 }
 @media (max-width: 1024px) {
-@media (max-width: 1024px) {
   .home .header nav {width: 100%;}
   .home .index-row {flex-direction: column; margin: 20px 0;}
   .home .index-row.last-resources {margin: -40px 0 20px; width: 100%;}
@@ -2012,5 +2012,6 @@ div.cartodb-popup .cartodb-popup-close-button {
   .home .index-row article.resource-cont, .index-row .card-third.resource-cont {width: 100vh; margin: 30px 0;}
   .home .index-row .resource-list {width: 89%}
   .blue-bar-top .wrapper span {font-size: 14px; padding: 3px 1px;}
-}
+  .archive .corner-map, .page .corner-map {top: 0; left: 0;}
+  .post-type-archive-resource #main .row-container article {margin: 0 auto;}
 }
