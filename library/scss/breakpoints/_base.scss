@@ -1996,7 +1996,8 @@ div.cartodb-popup .cartodb-popup-close-button {
     left: 2px !important;
 }
 @media (max-width: 1024px) {
-  .header nav {width: 100%;}
+@media (max-width: 1024px) {
+  .home .header nav {width: 100%;}
   .home .index-row {flex-direction: column; margin: 20px 0;}
   .home .index-row.last-resources {margin: -40px 0 20px; width: 100%;}
   .home .index-row .row-container {justify-content: center;}
@@ -2010,4 +2011,6 @@ div.cartodb-popup .cartodb-popup-close-button {
   .home .footer .-ft-content .-ft-logo a {display: block;}
   .home .index-row article.resource-cont, .index-row .card-third.resource-cont {width: 100vh; margin: 30px 0;}
   .home .index-row .resource-list {width: 89%}
+  .blue-bar-top .wrapper span {font-size: 14px; padding: 3px 1px;}
+}
 }
