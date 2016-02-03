@@ -3212,4 +3212,6 @@ be set to display none.
   .archive .corner-map, .page .corner-map {top: 0; left: 0;}
   .post-type-archive-resource #main .row-container article {margin: 10px auto;}
   .post-type-archive-resource #main .index-row {flex-direction: column;}
+  .page .about-content .card-third ol {height: 100%;}
+  .page .about-content .card-third ol li {width: 100%;}
 }
