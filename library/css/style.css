@@ -1280,8 +1280,8 @@ style a page via class
 ********************/
 /* for sites that are read right to left (i.e. hebrew) */
 .home .index-row {
-  flex-direction: row; }
-
+  flex-direction: row;
+}
 /* home page */
 /* blog template page */
 /* archive page */
@@ -3192,3 +3192,17 @@ be set to display none.
     display: none; } }
 
 /*# sourceMappingURL=style.css.map */
+@media (max-width: 1024px) {
+  .header nav {width: 100%;}
+  .home .index-row {flex-direction: column; margin: 20px 0;}
+  .home .index-row.last-resources {margin: -40px 0 20px; width: 100%;}
+  .index-row .row-container {justify-content: center;}
+  #map-fake .what-list h2 {font-size: 29px;}
+  #map-fake .what-list h3 {font-size: 18px;}
+  .what-explore {top: 50px;}
+  #map-fake .what-list > nav span i {height: 80px; width: 80px;}
+  .footer .-ft-legal {width: 100%;}
+  .footer .-ft-content form {width: 210px;}
+  .footer .-ft-content img {left: 0;}
+  .footer .-ft-content .-ft-logo a {display: block;}
+}
