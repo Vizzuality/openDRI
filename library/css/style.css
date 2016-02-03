@@ -3196,15 +3196,15 @@ be set to display none.
   .header nav {width: 100%;}
   .home .index-row {flex-direction: column; margin: 20px 0;}
   .home .index-row.last-resources {margin: -40px 0 20px; width: 100%;}
-  .index-row .row-container {justify-content: center;}
-  #map-fake .what-list h2 {font-size: 29px;}
-  #map-fake .what-list h3 {font-size: 18px;}
-  .what-explore {top: 50px;}
-  #map-fake .what-list > nav span i {height: 80px; width: 80px;}
-  .footer .-ft-legal {width: 100%;}
-  .footer .-ft-content form {width: 210px;}
-  .footer .-ft-content img {left: 0;}
-  .footer .-ft-content .-ft-logo a {display: block;}
-  .index-row article.resource-cont, .index-row .card-third.resource-cont {width: 100%; margin: 30px 0;}
-  .index-row .resource-list {width: 85%;}
+  .home .index-row .row-container {justify-content: center;}
+  .home #map-fake .what-list h2 {font-size: 29px;}
+  .home #map-fake .what-list h3 {font-size: 18px;}
+  .home .what-explore {top: 50px;}
+  .home #map-fake .what-list > nav span i {height: 80px; width: 80px;}
+  .home .footer .-ft-legal {width: 100%;}
+  .home .footer .-ft-content form {width: 210px;}
+  .home .footer .-ft-content img {left: 0;}
+  .home .footer .-ft-content .-ft-logo a {display: block;}
+  .home .index-row article.resource-cont, .index-row .card-third.resource-cont {width: 100vh; margin: 30px 0;}
+  .home .index-row .resource-list {width: 89%}
 }
