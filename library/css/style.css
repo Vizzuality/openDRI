@@ -3269,9 +3269,11 @@ be set to display none.
   .page .about-content .card-third ol {height: 100%;}
   .page .about-content .card-third ol li {width: 100%;}
   .page .about-content .card-third p { -webkit-columns: 1; columns: 1;}
+  .blue-bar-top .wrapper.filters span.title {display: none;}
 }
 @media (max-width: 768px) {
   .archive .cdbmap, .page .cdbmap {display: none;}
   .header nav span.current {display: none;}
-
+  .no-home .header nav {width: 100%;}
+  .no-home .header {height: 120px;}
 }
