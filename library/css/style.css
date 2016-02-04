@@ -3256,10 +3256,10 @@ be set to display none.
   .home #map-fake .what-list h3 {font-size: 18px;}
   .home .what-explore {top: 50px;}
   .home #map-fake .what-list > nav span i {height: 80px; width: 80px;}
-  .home .footer .-ft-legal {width: 100%;}
-  .home .footer .-ft-content form {width: 210px;}
-  .home .footer .-ft-content img {left: 0;}
-  .home .footer .-ft-content .-ft-logo a {display: block;}
+  .footer .-ft-legal {width: 100%;}
+  .footer .-ft-content form {width: 210px;}
+  .footer .-ft-content img {left: 0;}
+  .footer .-ft-content .-ft-logo a {display: block;}
   .home .index-row article.resource-cont, .index-row .card-third.resource-cont {width: 100vh; margin: 30px 0;}
   .home .index-row .resource-list {width: 89%}
   .blue-bar-top .wrapper span {font-size: 14px; padding: 3px 1px;}
@@ -3291,4 +3291,6 @@ be set to display none.
   .archive .p-info h4, .page .p-info h4 { width: 100%; top: -25px;}
   .archive .index-row .row-container, .page .index-row .row-container {-webkit-flex-direction: column; flex-direction: column;}
   .page #partners .-m-partner {width: 100%;}
+  .archive #contact, .page #contact {display: table;}
+  .archive .corner-map.about, .page .corner-map.about {display: none}
 }
