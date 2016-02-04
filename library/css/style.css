@@ -3281,7 +3281,7 @@ be set to display none.
   .blue-bar-top {height: 240px; margin: 0 0 30px;}
   .blue-bar-top .wrapper {-webkit-flex-direction: column; flex-direction: column;}
   .blue-bar-top .wrapper .region-filter li {display: inline; padding: 0 10px 0 0;}
-  .blue-bar-top .wrapper .region-filter {position: relative;display: inline !important;}
+  .blue-bar-top .wrapper .region-filter {position: relative;display: inline !important; background-color: transparent;}
   #toggle-filter-region {display: none; width: 100%;}
   .blue-bar-top .wrapper .region-filter li.clear-map {display: none;}
   .blue-bar-top .wrapper .region-filter li::first-child {padding: 0;}
