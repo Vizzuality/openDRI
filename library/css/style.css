@@ -3293,4 +3293,5 @@ be set to display none.
   .page #partners .-m-partner {width: 100%;}
   .archive #contact, .page #contact {display: table;}
   .archive .corner-map.about, .page .corner-map.about {display: none}
+  .page #more-content h3 {width: 100%;}
 }
