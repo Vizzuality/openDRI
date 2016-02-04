@@ -1998,9 +1998,9 @@ div.cartodb-popup .cartodb-popup-close-button {
 }
 @media (max-width: 1024px) {
   .home .header nav {width: 100%;}
-  .home .index-row {flex-direction: column; margin: 20px 0;}
+  .home .index-row {-webkit-flex-direction: column; flex-direction: column; margin: 20px 0;}
   .home .index-row.last-resources {margin: -40px 0 20px; width: 100%;}
-  .home .index-row .row-container {justify-content: center;}
+  .home .index-row .row-container {justify-content: center;-webkit-justify-content: center;}
   .home #map-fake .what-list h2 {font-size: 29px;}
   .home #map-fake .what-list h3 {font-size: 18px;}
   .home .what-explore {top: 50px;}
@@ -2014,8 +2014,13 @@ div.cartodb-popup .cartodb-popup-close-button {
   .blue-bar-top .wrapper span {font-size: 14px; padding: 3px 1px;}
   .archive .corner-map, .page .corner-map {top: 0; left: 0;}
   .post-type-archive-resource #main .row-container article {margin: 10px auto;}
-  .post-type-archive-resource #main .index-row {flex-direction: column;}
+  .post-type-archive-resource #main .index-row {-webkit-flex-direction: column; flex-direction: column;}
   .page .about-content .card-third ol {height: 100%;}
   .page .about-content .card-third ol li {width: 100%;}
   .page .about-content .card-third p { -webkit-columns: 1; columns: 1;}
+}
+@media (max-width: 768px) {
+  .archive .cdbmap, .page .cdbmap {display: none;}
+  .header nav span.current {display: none;}
+
 }
