@@ -2035,4 +2035,5 @@ div.cartodb-popup .cartodb-popup-close-button {
   .blue-bar-top .wrapper .region-filter li.clear-map {display: none;}
   .blue-bar-top .wrapper .region-filter li::first-child {padding: 0;}
   .blue-bar-top .wrapper .region-filter input { position: relative; top: -10px;}
+  .blue-bar-top.fixed {  position: inherit; top: inherit;  width: inherit; opacity: inherit;}
 }
