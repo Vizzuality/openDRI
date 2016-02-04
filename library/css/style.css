@@ -3276,4 +3276,13 @@ be set to display none.
   .header nav span.current {display: none;}
   .no-home .header nav {width: 100%;}
   .no-home .header {height: 120px;}
+  .blue-bar-top .wrapper.filters span {top: 0;}
+  #blue-bar-pick-pillar {height: 100%; border: none;}
+  .blue-bar-top {height: 100%;}
+  .blue-bar-top .wrapper {-webkit-flex-direction: column; flex-direction: column;}
+  .blue-bar-top .wrapper .region-filter li {display: inline; padding: 0;}
+  .blue-bar-top .wrapper .region-filter {position: relative;display: inline !important;}
+  #toggle-filter-region {display: none; width: 100%;}
+  .blue-bar-top .wrapper .region-filter li.clear-map {display: none;}
+
 }
