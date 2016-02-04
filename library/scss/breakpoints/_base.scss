@@ -2019,6 +2019,7 @@ div.cartodb-popup .cartodb-popup-close-button {
   .page .about-content .card-third ol li {width: 100%;}
   .page .about-content .card-third p { -webkit-columns: 1; columns: 1;}
   .blue-bar-top .wrapper.filters span.title {display: none;}
+  .archive .p-info h4, .page .p-info h4 {width: 255px;}
 }
 @media (max-width: 768px) {
   .archive .cdbmap, .page .cdbmap {display: none;}
@@ -2036,4 +2037,7 @@ div.cartodb-popup .cartodb-popup-close-button {
   .blue-bar-top .wrapper .region-filter li::first-child {padding: 0;}
   .blue-bar-top .wrapper .region-filter input { position: relative; top: -10px;}
   .blue-bar-top.fixed {  position: inherit; top: inherit;  width: inherit; opacity: inherit;}
+  .archive .p-info h4, .page .p-info h4 { width: 100%; top: -25px;}
+  .archive .index-row .row-container, .page .index-row .row-container {-webkit-flex-direction: column; flex-direction: column;}
+  .page #partners .-m-partner {width: 100%;}
 }
