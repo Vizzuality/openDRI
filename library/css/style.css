@@ -3270,7 +3270,8 @@ be set to display none.
   .page .about-content .card-third ol li {width: 100%;}
   .page .about-content .card-third p { -webkit-columns: 1; columns: 1;}
 }
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .archive .cdbmap, .page .cdbmap {display: none;}
   .header nav span.current {display: none;}
+
 }
