@@ -1280,7 +1280,7 @@ style a page via class
 ********************/
 /* for sites that are read right to left (i.e. hebrew) */
 .home .index-row {
-  flex-direction: row;
+  -webkit-flex-direction: row; flex-direction: row;
 }
 /* home page */
 /* blog template page */
@@ -1387,7 +1387,9 @@ HEADER STYLES
     display: list-item; }
   .header nav {
     display: flex;
+    display: -webkit-flex;
     justify-content: space-around;
+    -webkit-justify-content:: space-around;
     height: 73px;
     width: 50%;
     margin: 0 auto;
@@ -1395,6 +1397,7 @@ HEADER STYLES
     .no-home .header nav {
       display: inline-flex;
       justify-content: space-between;
+      -webkit-justify-content:: space-between;
       position: relative;
       float: right;
       height: 100%; }
@@ -1514,10 +1517,12 @@ POSTS & CONTENT STYLES
 #map-fake {
   height: 656px;
   display: flex;
+  display: -webkit-flex;
   position: relative;
-  flex-direction: column;
+  -webkit-flex-direction: column; flex-direction: column;
   align-items: center;
   justify-content: center;
+  -webkit-justify-content: center;
   background-size: cover;
   transition: background-color 0.2s ease; }
   #map-fake:after {
@@ -1532,10 +1537,12 @@ POSTS & CONTENT STYLES
     background-size: cover; }
   #map-fake .what-list {
     display: flex;
-    flex-direction: column;
+    display: -webkit-flex;
+    -webkit-flex-direction: column; flex-direction: column;
     align-items: center;
     height: 457px;
     justify-content: center;
+    -webkit-justify-content:: center;
     background: rgba(14, 95, 162, 0.3);
     color: #fff;
     width: 70%;
@@ -1551,7 +1558,9 @@ POSTS & CONTENT STYLES
       letter-spacing: 0.6px; }
     #map-fake .what-list > nav {
       display: flex;
+      display: -webkit-flex;
       justify-content: space-around;
+      -webkit-justify-content:: space-around;
       width: 100%; }
       #map-fake .what-list > nav span {
         width: 110px;
@@ -1588,8 +1597,10 @@ POSTS & CONTENT STYLES
   top: -24px;
   height: 60px;
   display: flex;
+  display: -webkit-flex;
   width: 220px;
   justify-content: center;
+  -webkit-justify-content:: center;
   align-items: center;
   text-transform: uppercase;
   font-weight: bold;
@@ -1602,10 +1613,12 @@ POSTS & CONTENT STYLES
 #explore-more {
   height: 360px;
   display: flex;
+  display: -webkit-flex;
   position: relative;
-  flex-direction: column;
+  -webkit-flex-direction: column; flex-direction: column;
   align-items: center;
   justify-content: center;
+  -webkit-justify-content: center;
   background-size: cover;
   background-color: rgba(255, 255, 255, 0.2);
   transition: background-color 0.2s ease; }
@@ -1625,7 +1638,8 @@ POSTS & CONTENT STYLES
     width: 70%;
     height: 60%;
     display: flex;
-    flex-direction: column;
+    display: -webkit-flex;
+    -webkit-flex-direction: column; flex-direction: column;
     justify-content: center;
     align-items: center;
     background: rgba(20, 119, 201, 0.8);
@@ -1644,24 +1658,28 @@ POSTS & CONTENT STYLES
 
 .index-row {
   display: flex;
-  flex-direction: column;
+  display: -webkit-flex;
+  -webkit-flex-direction: column; flex-direction: column;
   margin: 130px 0; }
   .index-row.more-content {
     display: block; }
     .index-row.more-content .row-container {
-      justify-content: space-between; }
+      justify-content: space-between;
+      -webkit-justify-content: space-between; }
       .index-row.more-content .row-container article {
         #
     			margin: 10px; }
   .index-row .row-container {
     display: flex;
+    display: -webkit-flex;
     flex-wrap: wrap; }
     .index-row .row-container > a {
       text-decoration: none; }
   .index-row.last-resources {
     margin: -120px 0 120px -50px;
-    flex-direction: row;
+    -webkit-flex-direction: row; flex-direction: row;
     justify-content: space-between;
+    -webkit-justify-content:: space-between;
     align-items: stretch;
     width: 110%; }
     .index-row.last-resources a {
@@ -1673,8 +1691,10 @@ POSTS & CONTENT STYLES
     max-width: 315px;
     margin: 0 15px 50px;
     display: flex;
-    flex-direction: column;
+    display: -webkit-flex;
+    -webkit-flex-direction: column; flex-direction: column;
     justify-content: space-around;
+    -webkit-justify-content: space-around;
     height: 350px;
     position: relative; }
     .index-row article.resource-cont,
@@ -1685,6 +1705,8 @@ POSTS & CONTENT STYLES
       width: 675px;
       margin: 0;
       justify-content: center;
+      -webkit-justify-content: center;
+      -webkit-flex-direction: row; 
       flex-direction: row;
       align-items: center;
       background-color: rgba(0, 0, 0, 0.2);
@@ -1735,7 +1757,9 @@ POSTS & CONTENT STYLES
       .index-row .resource-list li div {
         margin: 5px 0;
         display: flex;
+        display: -webkit-flex;
         justify-content: space-between;
+        -webkit-justify-content: space-between;
         font-size: 15px; }
         .index-row .resource-list li div .title {
           color: #1477c9;
@@ -1771,7 +1795,9 @@ POSTS & CONTENT STYLES
     background: #db0033;
     height: 50px;
     display: flex;
+    display: -webkit-flex;
     justify-content: center;
+    -webkit-justify-content: center;
     align-items: center;
     text-transform: uppercase;
     color: #fff;
@@ -1829,7 +1855,9 @@ POSTS & CONTENT STYLES
     width: 280px;
     margin: 0 auto -20px;
     display: flex;
+    display: -webkit-flex;
     justify-content: center;
+    -webkit-justify-content: center;
     align-items: center;
     transform: translate(0, -33%);
     transition: background 0.3s ease; }
@@ -1852,7 +1880,9 @@ POSTS & CONTENT STYLES
     .hentry footer p {
       margin: 0;
       display: flex;
-      justify-content: space-between; }
+      display: -webkit-flex;
+      justify-content: space-between; 
+      -webkit-justify-content: space-between;}
     .hentry footer p a {
       color: rgba(85,85,85,0.5);
       text-decoration: none;
@@ -2073,7 +2103,8 @@ POSTS & CONTENT STYLES
     list-style: decimal;
     list-style-position: inside;
     display: flex;
-    flex-direction: column;
+    display: -webkit-flex;
+    -webkit-flex-direction: column; flex-direction: column;
     flex-wrap: wrap;
     height: 320px;
     width: 100%; }
@@ -2088,7 +2119,9 @@ POSTS & CONTENT STYLES
 .archive #contact,
 .page #contact {
   display: flex;
+  display: -webkit-flex;
   justify-content: space-between;
+  -webkit-justify-content:: space-between;
   align-items: flex-start; }
   .archive #contact .index-row,
   .page #contact .index-row .card-third,
@@ -2155,6 +2188,7 @@ POSTS & CONTENT STYLES
 .page #partners .-m-team-member,
 .page #partners .-m-partner {
   display: flex; }
+  display: -webkit-flex;
   .archive #members .-m-team-member img,
   .archive #members .-m-partner img,
   .archive #partners .-m-team-member img,
@@ -2175,7 +2209,8 @@ POSTS & CONTENT STYLES
   .page #partners .-m-team-member .-m-info,
   .page #partners .-m-partner .-m-info {
     display: flex;
-    flex-direction: column;
+    display: -webkit-flex;
+    -webkit-flex-direction: column; flex-direction: column;
     width: 70%;
     margin: 0 0 0 40px; }
     .archive #members .-m-team-member .-m-info .name,
@@ -2202,7 +2237,7 @@ POSTS & CONTENT STYLES
 .archive #partners .-m-partner,
 .page #members .-m-partner,
 .page #partners .-m-partner {
-  flex-direction: column;
+  -webkit-flex-direction: column; flex-direction: column;
   width: 49%; }
   .archive #members .-m-partner img,
   .archive #partners .-m-partner img,
@@ -2222,13 +2257,16 @@ POSTS & CONTENT STYLES
 .archive .p-info,
 .page .p-info {
   display: flex;
+  display: -webkit-flex;
   clear: both;
   justify-content: center;
+  -webkit-justify-content:: center;
   position: relative;
   margin: 0 0 45px; }
   .archive .p-info.double,
   .page .p-info.double {
-    justify-content: flex-start; }
+    justify-content: flex-start; 
+    -webkit-justify-content: flex-start}
     .archive .p-info.double p,
     .page .p-info.double p {
       width: calc(100%/3 *2); }
@@ -2288,7 +2326,8 @@ POSTS & CONTENT STYLES
   .page .index-row .row-container {
     width: 100%;
     flex-wrap: wrap;
-    justify-content: space-between; }
+    justify-content: space-between; 
+    -webkit-justify-content: space-between;}
   .archive .index-row .resource-cont,
   .page .index-row .resource-cont {
     width: 485px;
@@ -2534,18 +2573,23 @@ FOOTER STYLES
   color: #f8f9fa;
   height: 270px;
   display: flex;
-  flex-direction: column;
+  display: -webkit-flex;
+  -webkit-flex-direction: column; flex-direction: column;
   align-items: space-between; }
   .footer .-ft-content {
     width: 100%;
     display: flex;
+    display: -webkit-flex;
     justify-content: space-between;
+    -webkit-justify-content: space-between;
     margin: 2.5rem 0; }
     .footer .-ft-content .-ft-coorporate,
     .footer .-ft-content nav {
       display: flex;
-      flex-direction: column;
-      justify-content: space-around; }
+      display: -webkit-flex;
+      -webkit-flex-direction: column; flex-direction: column;
+      justify-content: space-around; 
+      -webkit-justify-content: space-around;}
       .footer .-ft-content .-ft-coorporate .-i-link,
       .footer .-ft-content nav .-i-link {
         margin: 0.4rem 0;
@@ -2564,15 +2608,19 @@ FOOTER STYLES
     .footer .-ft-content .-ft-newsletter {
       font-size: 13px;
       display: flex;
+      display: -webkit-flex;
       align-items: flex-start;
       justify-content: center;
-      flex-direction: column; }
+      -webkit-justify-content: center;
+      -webkit-flex-direction: column; flex-direction: column; }
     .footer .-ft-content form {
       border: 1px solid #979797;
       width: 300px;
       display: flex;
+      display: -webkit-flex;
       margin-top: 10px;
       justify-content: space-between;
+      -webkit-justify-content: space-between;
       position: relative; }
     .footer .-ft-content input {
       width: 220px;
@@ -2613,7 +2661,9 @@ FOOTER STYLES
     left: 0; }
   .footer .-ft-legal {
     display: flex;
+    display: -webkit-flex;
     justify-content: space-between;
+    -webkit-justify-content: space-between;
     width: 40%;
     height: 40px;
     align-items: center; }
@@ -2661,6 +2711,7 @@ FOOTER STYLES
   box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.2);
   height: 43px;
   display: flex;
+  display: -webkit-flex;
   align-items: center;
   position: relative;
   margin-bottom: -43px;
@@ -2676,7 +2727,10 @@ FOOTER STYLES
     font-size: 15px;
     font-weight: bold;
     display: flex;
-    justify-content: space-between; }
+    display: -webkit-flex;
+    justify-content: space-between; 
+    -webkit-justify-content: space-between;
+  }
     .blue-bar-top .wrapper span {
       border-radius: 5px;
       padding: 3px 10px;
@@ -3195,9 +3249,9 @@ be set to display none.
 /*# sourceMappingURL=style.css.map */
 @media (max-width: 1024px) {
   .home .header nav {width: 100%;}
-  .home .index-row {flex-direction: column; margin: 20px 0;}
+  .home .index-row {-webkit-flex-direction: column; flex-direction: column; margin: 20px 0;}
   .home .index-row.last-resources {margin: -40px 0 20px; width: 100%;}
-  .home .index-row .row-container {justify-content: center;}
+  .home .index-row .row-container {justify-content: center;-webkit-justify-content: center;}
   .home #map-fake .what-list h2 {font-size: 29px;}
   .home #map-fake .what-list h3 {font-size: 18px;}
   .home .what-explore {top: 50px;}
@@ -3211,7 +3265,7 @@ be set to display none.
   .blue-bar-top .wrapper span {font-size: 14px; padding: 3px 1px;}
   .archive .corner-map, .page .corner-map {top: 0; left: 0;}
   .post-type-archive-resource #main .row-container article {margin: 10px auto;}
-  .post-type-archive-resource #main .index-row {flex-direction: column;}
+  .post-type-archive-resource #main .index-row {-webkit-flex-direction: column; flex-direction: column;}
   .page .about-content .card-third ol {height: 100%;}
   .page .about-content .card-third ol li {width: 100%;}
   .page .about-content .card-third p { -webkit-columns: 1; columns: 1;}
