@@ -3301,4 +3301,5 @@ be set to display none.
   .category-news .blue-bar-top .wrapper .region-filter li {display: block;}
   .category-news #main > h3 {max-width: 100%}
   .category-news #main .row-container article, .post-type-archive-resource #main .row-container article {max-width: none; width: 90%;}
+  .hentry.--odri-post.category-news {width: 100%; padding: 1em;}
 }
