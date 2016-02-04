@@ -2041,9 +2041,13 @@ div.cartodb-popup .cartodb-popup-close-button {
   .archive .index-row .row-container, .page .index-row .row-container {-webkit-flex-direction: column; flex-direction: column;}
   .page #partners .-m-partner {width: 100%;}
   .archive #contact, .page #contact {display: table;}
-  .archive .corner-map.about, .page .corner-map.about {display: none}
+  .archive .corner-map, .page .corner-map {display: none}
   .page #more-content h3 {width: 100%;}
   .page #members h3 {width: 100%;}
   .page #partners h3 {width: 100%;}
   .page #contact .index-row .card-third {padding: 10px;}
+  .category-news .blue-bar-top {height: 320px;}
+  .category-news .blue-bar-top .wrapper .region-filter li {display: block;}
+  .category-news #main > h3 {max-width: 100%}
+  .category-news #main .row-container article, .post-type-archive-resource #main .row-container article {max-width: none; width: 90%;}
 }
