@@ -1970,6 +1970,13 @@ POSTS & CONTENT STYLES
     overflow: hidden;
     font-feature-settings: "liga" 0;
     text-overflow: ellipsis; }
+  .entry-content.related {
+    overflow: hidden;
+    height: 200px;
+  }
+  .entry-content.related p {
+    height: initial;
+  }
   .entry-content table {
     width: 100%;
     border: 1px solid #F0F0F0;
