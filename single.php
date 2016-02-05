@@ -90,8 +90,12 @@
 											<header class="article-header">
 												<h1 class="h2 entry-title"><a href="<?php echo $related->guid; ?>" rel="bookmark" title="<?php echo $related->post_title; ?>"><?php echo $related->post_title; ?></a></h1>
 											</header>
-											<section class="entry-content cf">
-												<p><?php echo $related->post_content; ?></p>
+											<section class="entry-content cf related">
+													<?php 
+														$content = apply_filters( 'the_content', $related->post_content );
+													    $content = str_replace( ']]>', ']]&gt;', $content );
+													    echo $content;
+													?>
 											</section>
 											<footer class="article-footer cf">
 												<p class="byline entry-meta vcard">
@@ -135,13 +139,15 @@
 												<h1 class="h2 entry-title"><a href="<?php echo $recent["guid"]; ?>" rel="bookmark" title="<?php echo $recent["post_title"]; ?>"><?php echo $recent["post_title"]; ?></a></h1>
 											</header>
 											<section class="entry-content cf">
-												<p><?php echo $recent["post_content"]; ?></p>
+													<?php 
+														$content = apply_filters( 'the_content', $recent["post_content"] );
+													    $content = str_replace( ']]>', ']]&gt;', $content );
+													    echo $content;
+													?>
 											</section>
-											<footer class="article-footer cf">
+											<footer class="article-footer cf related">
 												<p class="byline entry-meta vcard">
-						                            <?php printf( __( '', 'bonestheme' ).' %1$s %2$s',
-						   								/* the author of the post */
-						   								'<span class="entry-author author" itemprop="author" itemscope itemptype="http://schema.org/Person">' . get_the_author_meta('display_name', $recent['post_author'] ) . '</span>',
+						                            <?php printf( __( '', 'bonestheme' ).' %1$s',
 						   								/* the time the post was published */
 						   								'<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time('d M') . '</time>'
 													); ?>

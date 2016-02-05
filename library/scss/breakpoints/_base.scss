@@ -844,7 +844,13 @@ POSTS & CONTENT STYLES
 	    font-feature-settings: "liga" 0;
 	}
 
-
+	&.related {
+		overflow: hidden;
+		height: 200px;
+		p {
+			height: initial;
+		}
+	}
 	ul, ol, table, dl {}
 
 	ul, ol {
