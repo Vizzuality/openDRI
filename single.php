@@ -138,14 +138,14 @@
 											<header class="article-header">
 												<h1 class="h2 entry-title"><a href="<?php echo $recent["guid"]; ?>" rel="bookmark" title="<?php echo $recent["post_title"]; ?>"><?php echo $recent["post_title"]; ?></a></h1>
 											</header>
-											<section class="entry-content cf">
+											<section class="entry-content cf related">
 													<?php 
 														$content = apply_filters( 'the_content', $recent["post_content"] );
 													    $content = str_replace( ']]>', ']]&gt;', $content );
 													    echo $content;
 													?>
 											</section>
-											<footer class="article-footer cf related">
+											<footer class="article-footer cf">
 												<p class="byline entry-meta vcard">
 						                            <?php printf( __( '', 'bonestheme' ).' %1$s',
 						   								/* the time the post was published */
