@@ -727,7 +727,7 @@ POSTS & CONTENT STYLES
 		    height: 100%;
 		    display: inline-block;
 			font-family: Bariol_Bold;
-	    	padding: 15px 0;
+	    	padding: 50px 0;
 
 		}
 	}
@@ -755,10 +755,6 @@ POSTS & CONTENT STYLES
 		padding: 2.5rem;
 		border: 0;
 		box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
-		&.category-news {
-			display: inline-block;
-			width: 70%;
-		}
 		h1 {
 			color: #1477c9;
 			font-size: 48px;
