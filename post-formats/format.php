@@ -28,7 +28,8 @@
                 <section class="entry-content cf" itemprop="articleBody">
                   <?php
                     // the content (pretty self explanatory huh)
-                    the_content();
+                    $content = get_the_content();
+                    $content = apply_filters('the_content', $content);
 
                     /*
                      * Link Pages is used in case you have posts that are set to break into

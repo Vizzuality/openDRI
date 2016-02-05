@@ -91,7 +91,13 @@
 												<h1 class="h2 entry-title"><a href="<?php echo $related->guid; ?>" rel="bookmark" title="<?php echo $related->post_title; ?>"><?php echo $related->post_title; ?></a></h1>
 											</header>
 											<section class="entry-content cf">
-												<p><?php echo $related->post_content; ?></p>
+												<p>
+													<?php 
+														$content = apply_filters( 'the_content', $related->post_content );
+													    $content = str_replace( ']]>', ']]&gt;', $content );
+													    echo $content;
+													?>
+												</p>												
 											</section>
 											<footer class="article-footer cf">
 												<p class="byline entry-meta vcard">
@@ -135,7 +141,13 @@
 												<h1 class="h2 entry-title"><a href="<?php echo $recent["guid"]; ?>" rel="bookmark" title="<?php echo $recent["post_title"]; ?>"><?php echo $recent["post_title"]; ?></a></h1>
 											</header>
 											<section class="entry-content cf">
-												<p><?php echo $recent["post_content"]; ?></p>
+												<p>
+													<?php 
+														$content = apply_filters( 'the_content', $recent["post_content"] );
+													    $content = str_replace( ']]>', ']]&gt;', $content );
+													    echo $content;
+													?>
+												</p>
 											</section>
 											<footer class="article-footer cf">
 												<p class="byline entry-meta vcard">
