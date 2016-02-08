@@ -136,12 +136,7 @@ if(is_post_type_archive() && $post_type=='project') {
 											<h1 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
 										</header>
 										<section class="entry-content cf">
-											<?php 
-												$content = apply_filters( 'the_content', the_excerpt() );
-											    $content = str_replace( ']]>', ']]&gt;', $content );
-											    echo $content;
-											?>
-
+											<?php the_excerpt(); ?>
 										</section>
 										<footer class="article-footer cf">
 											<p class="byline entry-meta vcard">
