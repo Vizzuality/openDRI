@@ -1557,7 +1557,8 @@ POSTS & CONTENT STYLES
         width: 110px;
         text-transform: uppercase;
         font-size: 17px;
-        letter-spacing: 0.7px; }
+        letter-spacing: 0.7px;
+        cursor: pointer; }
         #map-fake .what-list > nav span i {
           height: 100px;
           background-size: 50px;
