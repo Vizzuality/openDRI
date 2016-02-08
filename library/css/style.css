@@ -1675,6 +1675,10 @@ POSTS & CONTENT STYLES
     justify-content: space-around;
     height: 350px;
     position: relative; }
+    .index-row article .entry-content,
+    .index-row .card-third .entry-content {
+      overflow: hidden;
+      height: 174px; }
     .index-row article.resource-cont,
     .index-row .card-third.resource-cont {
       position: relative;
