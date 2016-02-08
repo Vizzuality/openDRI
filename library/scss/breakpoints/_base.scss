@@ -1851,11 +1851,11 @@ FOOTER STYLES
 		    		background-color: #1477c9;
 	    			-webkit-mask:  url("../images/filter-off.svg") !important;
 				    mask: url("../images/filter-off.svg") !important;
-			        width: 18px;
-				    height: 18px;
+				    width: 17px;
 				    position: relative;
 				    top: 4px;
 				    left: -2px;
+				    transform: scale(0.9);
 		    	}
 	    	}
 	    	&:hover {
@@ -1901,6 +1901,10 @@ FOOTER STYLES
 	    	span {
 	    		position: relative;
 	    		top: 10px;
+	    		&:first-child {
+	    			pointer-events: none;
+	    			cursor: default;
+	    		}
 	    	}
 	    }
 	    .region-filter {
