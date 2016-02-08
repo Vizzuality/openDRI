@@ -208,7 +208,8 @@
 				  all: function(){
 				  	$filterPosts.show();
 				  	currentPillar = currentRegion = '';
-				    sublayers[0].setSQL("SELECT * FROM wp_projects");
+				    sublayers[0].setSQL("SELECT * FROM wp_projects where is_region = true");
+				    sublayers[0].setCartoCSS("#wp_projects{  marker-fill-opacity: 1;  marker-line-color: #FFF;  marker-line-width: 10;  marker-line-opacity: 1;  marker-placement: point;  marker-type: ellipse;  marker-width: 40;  marker-fill: #FFFFFF;  marker-allow-overlap: true;}");
 				   	sublayers[1].setSQL("SELECT * FROM country_mask");
 					sublayers[1].setCartoCSS(
 				    			"\
@@ -689,14 +690,19 @@
 				    	map.setView(latlong,zoom);
 				    }
 				});
-				$('#blue-bar-pick-pillar').on('click', 'span', function(){
-					$(this).siblings().removeClass('current');
-					if ($(this).hasClass('option-pillar')) {					
-						$(this).siblings('.title').text('Show all');
-						var option = $(this).data('option');
-					} else {
-						$(this).text('select:');
+				$('#blue-bar-pick-pillar').on('click', 'span', function(e) {
+					if ($(this).hasClass('current')) {
+						$(this).removeClass('current');
 						var option = 'all';
+					} else {
+						$(e.target).closest('span').addClass('current');
+						$(this).siblings().removeClass('current');
+						if ($(this).hasClass('option-pillar')) {					
+							var option = $(this).data('option');
+						} else {
+							$(this).text('select:');
+							var option = 'all';
+						}
 					}
 					LayerActions[option]();
 				});
@@ -836,10 +842,6 @@
 						$bar.find('.wrapper span')[tab_option].classList.add("current");
 					}
 				}
-			});
-			$bar.on('click', 'span',function(e) {
-				$bar.find('.current').removeClass('current');
-				$(e.target).closest('span').addClass('current');
 			});
 			$('#toggle-filter-region').on('click', function(e){
 				$bar.find('.region-filter').toggle();
