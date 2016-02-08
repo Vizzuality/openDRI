@@ -23,6 +23,7 @@ body {
 	background-color: $gray;
   	-webkit-font-smoothing: antialiased;
   	-moz-osx-font-smoothing: grayscale;
+  	outline: none;
 }
 
 /********************
@@ -751,36 +752,37 @@ POSTS & CONTENT STYLES
 	      display: inline;
 	      font-feature-settings: "liga" 0;
 		}
-	&.--odri-post {
-		padding: 2.5rem;
-		border: 0;
-		box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
-		h1 {
-			color: #1477c9;
-			font-size: 48px;
-			line-height: 43px;
-		}
-		.byline {
-			text-transform: uppercase;
-		    font-style: normal;
-		    color: rgba(#555,0.5);
-		    font-size: 13px;
-		    margin: 25px 0 15px;
-		}
-		.entry-content {
-			padding: 0;
-			p {
-				margin: 0 0 1.5em;
-			    display: block;
-			    max-width: none;
-			    height: auto;
-			    font-size: 17px;
-			    line-height: 28px;
-			    color: #555;
-			    font-feature-settings: "liga" 0;
-			    a {
-			    	color: #1477c9;
-			    }
+		&.--odri-post {
+			padding: 2.5rem;
+			border: 0;
+			box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+			h1 {
+				color: #1477c9;
+				font-size: 48px;
+				line-height: 43px;
+			}
+			.byline {
+				text-transform: uppercase;
+			    font-style: normal;
+			    color: rgba(#555,0.5);
+			    font-size: 13px;
+			    margin: 25px 0 15px;
+			}
+			.entry-content {
+				padding: 0;
+				p {
+					margin: 0 0 1.5em;
+				    display: block;
+				    max-width: none;
+				    height: auto;
+				    font-size: 17px;
+				    line-height: 28px;
+				    color: #555;
+				    font-feature-settings: "liga" 0;
+				    a {
+				    	color: #1477c9;
+				    }
+				}
 			}
 		}
 	}
@@ -1847,6 +1849,13 @@ FOOTER STYLES
 		    	}
 		    	i {
 		    		background-color: #1477c9;
+	    			-webkit-mask:  url("../images/filter-off.svg") !important;
+				    mask: url("../images/filter-off.svg") !important;
+			        width: 18px;
+				    height: 18px;
+				    position: relative;
+				    top: 4px;
+				    left: -2px;
 		    	}
 	    	}
 	    	&:hover {
