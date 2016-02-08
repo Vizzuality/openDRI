@@ -137,7 +137,7 @@ if(is_post_type_archive() && $post_type=='project') {
 										</header>
 										<section class="entry-content cf">
 											<?php 
-												$content = apply_filters( 'the_content', the_excerpt(); );
+												$content = apply_filters( 'the_content', the_excerpt() );
 											    $content = str_replace( ']]>', ']]&gt;', $content );
 											    echo $content;
 											?>
