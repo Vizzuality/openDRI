@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.5 (25232) - http://www.bohemiancoding.com/sketch -->
-    <title>Oval 1</title>
+<svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.1 (25234) - http://www.bohemiancoding.com/sketch -->
+    <title>filter-off</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Artboard-1" sketch:type="MSArtboardGroup" transform="translate(-89.000000, -155.000000)" fill="#0475CC">
-            <path d="M96.5355339,163.949747 L93,167.485281 L94.4142136,168.899495 L97.9497475,165.363961 L101.485281,168.899495 L102.899495,167.485281 L99.363961,163.949747 L102.899495,160.414214 L101.485281,159 L97.9497475,162.535534 L94.4142136,159 L93,160.414214 L96.5355339,163.949747 Z M98,173 C102.970563,173 107,168.970563 107,164 C107,159.029437 102.970563,155 98,155 C93.0294373,155 89,159.029437 89,164 C89,168.970563 93.0294373,173 98,173 Z" id="Oval-1" sketch:type="MSShapeGroup"></path>
+    <g id="General" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Mouse-events" sketch:type="MSArtboardGroup" transform="translate(-547.000000, -92.000000)" fill="#0475CC">
+            <path d="M554.116893,100.452539 L550.777778,103.791655 L552.113424,105.127301 L555.452539,101.788185 L558.791655,105.127301 L560.127301,103.791655 L556.788185,100.452539 L560.127301,97.1134239 L558.791655,95.7777778 L555.452539,99.1168931 L552.113424,95.7777778 L550.777778,97.1134239 L554.116893,100.452539 Z M555.5,109 C560.19442,109 564,105.19442 564,100.5 C564,95.8055796 560.19442,92 555.5,92 C550.80558,92 547,95.8055796 547,100.5 C547,105.19442 550.80558,109 555.5,109 Z" id="filter-off" sketch:type="MSShapeGroup"></path>
         </g>
     </g>
 </svg>
