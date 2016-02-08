@@ -7,7 +7,7 @@
 				<?
 				$titles = ['open data platforms','community mapping','risk visualization'];
 				for ($i = 0; $i < count($titles); $i++) {
-					echo '<span>';
+					echo '<span data-opt="opt'.($i+1).'">';
 						echo '<i class="img-pile-'.($i+1).'"></i>';
 						echo $titles[$i];
 					echo '</span>';
