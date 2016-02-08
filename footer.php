@@ -196,6 +196,14 @@
 					.addTo(map)
 					.on('done',function(layer){
 						sublayers.push(layer.getSubLayer(0));
+						var data = sessionStorage.getItem('clikcked-menu');
+						if (!!data) {
+							var $trgtcontainer = $('#blue-bar-pick-pillar');
+							if (data === 'opt1') 	  $trgtcontainer.find('.option-pillar[data-option="open"]').trigger('click');
+							else if (data === 'opt2') $trgtcontainer.find('.option-pillar[data-option="community"]').trigger('click');
+							else if (data === 'opt3') $trgtcontainer.find('.option-pillar[data-option="risk"]').trigger('click');
+							sessionStorage.removeItem('clikcked-menu');
+						}
 					});
 				  }).on('error', function() {
 				    console.error('Error while loading map. Please check footer file')
@@ -846,6 +854,11 @@
 			$('#toggle-filter-region').on('click', function(e){
 				$bar.find('.region-filter').toggle();
 			});
+			$('.what-list').on('click','span',function(e){
+				sessionStorage.setItem('clikcked-menu', $(this).data('opt'));
+				location = '<?php echo home_url(); ?>/project';
+			});
+
 		</script>
 
 	</body>
