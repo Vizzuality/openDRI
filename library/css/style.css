@@ -1644,7 +1644,7 @@ POSTS & CONTENT STYLES
 .index-row {
   display: flex;
   flex-direction: column;
-  margin: 850x 0; }
+  margin: 85px 0; }
   .index-row.more-content {
     display: block; }
     .index-row.more-content .row-container {
