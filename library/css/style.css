@@ -1826,6 +1826,8 @@ POSTS & CONTENT STYLES
     display: block;
     background-position: 50% 50%;
     background-size: cover; }
+  .hentry a {
+    display: inline; }
   .hentry header {
     border-bottom: 1px solid #f8f9fa;
     background: #1477c9;

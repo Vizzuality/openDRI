@@ -712,6 +712,9 @@ POSTS & CONTENT STYLES
 	    background-position: 50% 50%;
     	background-size: cover;
 	}
+	a {
+		display: inline;
+	}
 	header {
 		border-bottom: 1px solid $light-gray;
 		background: $text-bkg-blue;
