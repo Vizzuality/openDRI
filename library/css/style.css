@@ -1709,7 +1709,7 @@ POSTS & CONTENT STYLES
         background-image: url(../images/gfdrr-2012.jpg); }
       .index-row article.resource-cont:hover,
       .index-row .card-third.resource-cont:hover {
-        background-color: rgba(0, 0, 0, 0.1); }
+        background-color: rgba(0, 0, 0, 0.5); }
       .index-row article.resource-cont section,
       .index-row .card-third.resource-cont section {
         color: #fff;
