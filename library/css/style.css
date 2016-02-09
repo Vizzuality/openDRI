@@ -1784,6 +1784,8 @@ POSTS & CONTENT STYLES
     transition: background 0.3s ease; }
     .index-row .card-third span:hover {
       background: #ff0f47; }
+  .index-row .card-third.twitter-timeline-container {
+    height: 750px; }
   .index-row .card-third .twitter {
     overflow: hidden;
     padding: 1rem;
@@ -1791,7 +1793,8 @@ POSTS & CONTENT STYLES
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
     display: table-row;
     position: relative;
-    margin-top: 20px; }
+    margin-top: 20px;
+    width: 315px; }
     .index-row .card-third .twitter > span {
       background-color: #1477c9;
       width: 60px;
