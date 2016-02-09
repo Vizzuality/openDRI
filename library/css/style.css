@@ -2876,6 +2876,13 @@ div.cartodb-popup .cartodb-popup-close-button {
   top: -5px !important;
   left: 2px !important; }
 
+.amount-of-posts-2 {
+  font-weight: bold;
+  color: #1477c9;
+  font-size: 15px;
+  top: -5px !important;
+  left: -2px !important; }
+
 @media (max-width: 1024px) {
   .home .header nav {
     width: 100%; }
