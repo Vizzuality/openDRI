@@ -48,7 +48,7 @@ if(is_post_type_archive() && $post_type=='project') {
 							<div class="container-region-filter">
 								<span class="title" id="toggle-filter-region">filter by region</span>
 								<ul class="region-filter" id="pick-region">
-									<li><input type="text" id="searchCountries" placeholder="Search country"></li>
+									<li><input type="text" id="searchCountries" placeholder="Search country"><i></i></li>
 									<li class="pickable" data-option="africa" data-lat="6.3152" data-lng="5.80" data-zoom="3">africa</li>
 									<li class="pickable" data-option="eastasia" data-lat="9.968" data-lng="118.3" data-zoom="3">east asia pacific</li>
 									<li class="pickable" data-option="europe" data-lat="64.32" data-lng="99.84" data-zoom="3">europe and central asia</li>
