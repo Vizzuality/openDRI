@@ -755,11 +755,15 @@ POSTS & CONTENT STYLES
 			margin: 0;
 			display: flex;
     		justify-content: space-between;
+    		span {
+    			line-height: 15px;
+    		}
     		a {
 			    color: rgba(85,85,85,0.5);
 			    text-decoration: none;
 			    text-transform: capitalize;
 			    font-feature-settings: "liga" 0;
+			    font-size: 14px;
     		}
 		}
 		.tags {
@@ -833,10 +837,11 @@ POSTS & CONTENT STYLES
 	color: $meta-gray;
 	margin: 0;
 	time {
-		display: inline-table;
+		display: table;
 	    position: relative;
 		font-style: italic;
-	    left: -5px;
+	    left: -10px;
+	    font-size: 13px;
     	color: rgba(85, 85, 85, 0.3);
 	}
 }
