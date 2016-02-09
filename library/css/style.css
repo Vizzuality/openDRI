@@ -1718,7 +1718,8 @@ POSTS & CONTENT STYLES
         .index-row article.resource-cont section h3,
         .index-row .card-third.resource-cont section h3 {
           font-size: 32px;
-          margin: 10px 0; }
+          margin: 10px 0;
+          padding: 1rem; }
         .index-row article.resource-cont section hr,
         .index-row .card-third.resource-cont section hr {
           width: 40%; }
