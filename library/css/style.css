@@ -1918,6 +1918,10 @@ POSTS & CONTENT STYLES
   color: #9fa6b4;
   font-style: italic;
   margin: 0; }
+  .byline time {
+    display: inline-table;
+    position: relative;
+    left: -10px; }
 
 /* entry content */
 .entry-content {
