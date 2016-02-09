@@ -2837,6 +2837,19 @@ FOOTER STYLES
 .leaflet-top .leaflet-control {
   margin-top: 60px !important; }
 
+div.cartodb-popup {
+  width: 315px !important;
+  margin-left: calc(-315px/2) !important; }
+
+div.cartodb-popup.v2 div.cartodb-popup-tip-container {
+  left: 146px !important; }
+
+div.cartodb-popup.v2:before {
+  border-left: 14px solid transparent !important;
+  border-right: 14px solid transparent !important;
+  border-top: 14px solid #fff !important;
+  left: 135px !important; }
+
 div.cartodb-popup h1 {
   font-size: 15px !important;
   text-transform: uppercase !important;
