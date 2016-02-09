@@ -1924,9 +1924,11 @@ FOOTER STYLES
 	    	span {
 	    		position: relative;
 	    		top: 10px;
+	    		margin: 0 10px 0px 0px;
 	    		&:first-child {
 	    			pointer-events: none;
 	    			cursor: default;
+	    			margin: 0;
 	    		}
 	    	}
 	    }
