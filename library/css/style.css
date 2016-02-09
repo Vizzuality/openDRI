@@ -1820,8 +1820,8 @@ POSTS & CONTENT STYLES
   border-radius: 3px;
   margin-bottom: 1.5em;
   border: 1px solid #ccc; }
-  .hentry > .img {
-    height: 100%;
+  .hentry a, .hentry .img {
+    height: 70%;
     width: 100%;
     display: block;
     background-position: 50% 50%;
