@@ -31,7 +31,7 @@
 						<a href="<?php echo home_url(); ?>/category/news"><span>view all news</span></a>
 					</div>
 					<?php
-						$args = array( 'numberposts' => '1', 'category' => 'news' );
+						$args = array( 'numberposts' => '3', 'category' => 'news' );
 						$recent_posts = wp_get_recent_posts( $args );
 						foreach( $recent_posts as $recent ){  // start loop
 					?>
@@ -62,7 +62,7 @@
 					</article>
 					<? } ?>
 				</div>
-				<div class="card-third">
+				<div class="card-third twitter-timeline-container">
 			        <div class="twitter mod-tweets">
 			          <span><i class="twt-img"></i></span>
 			          <h3>Latest tweets</h3>
