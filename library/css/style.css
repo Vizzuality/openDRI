@@ -1916,12 +1916,13 @@ POSTS & CONTENT STYLES
 /* post meta */
 .byline {
   color: #9fa6b4;
-  font-style: italic;
   margin: 0; }
   .byline time {
     display: inline-table;
     position: relative;
-    left: -10px; }
+    font-style: italic;
+    left: -5px;
+    color: rgba(85, 85, 85, 0.3); }
 
 /* entry content */
 .entry-content {
