@@ -1862,11 +1862,14 @@ POSTS & CONTENT STYLES
       margin: 0;
       display: flex;
       justify-content: space-between; }
+      .hentry footer p span {
+        line-height: 15px; }
       .hentry footer p a {
         color: rgba(85, 85, 85, 0.5);
         text-decoration: none;
         text-transform: capitalize;
-        font-feature-settings: "liga" 0; }
+        font-feature-settings: "liga" 0;
+        font-size: 14px; }
     .hentry footer .tags {
       display: inline;
       font-feature-settings: "liga" 0; }
@@ -1923,10 +1926,11 @@ POSTS & CONTENT STYLES
   color: #9fa6b4;
   margin: 0; }
   .byline time {
-    display: inline-table;
+    display: table;
     position: relative;
     font-style: italic;
-    left: -5px;
+    left: -10px;
+    font-size: 13px;
     color: rgba(85, 85, 85, 0.3); }
 
 /* entry content */
