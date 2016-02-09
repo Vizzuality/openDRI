@@ -660,6 +660,9 @@ POSTS & CONTENT STYLES
 				background: lighten(#db0033,10%)
     		}
     	}
+    	&.twitter-timeline-container {
+    		height: 750px;
+    	}
 	    .twitter {
 	    	overflow: hidden;
 	    	padding: 1rem;
@@ -668,6 +671,7 @@ POSTS & CONTENT STYLES
 			display: table-row;
 		    position: relative;
 		    margin-top: 20px;
+		    width: 315px;
 	    	> span {
     		    background-color: #1477c9;
 			    width: 60px;
