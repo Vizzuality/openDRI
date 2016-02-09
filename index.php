@@ -78,7 +78,7 @@
 						<a href="<?php echo home_url(); ?>/project"><span>view all projects</span></a>
 					</div>
 					<?php
-						$args = array( 'numberposts' => '5', 'category' => 'projects' );
+						$args = array( 'numberposts' => '5', 'category' => get_cat_ID( 'projects') );
 						$recent_posts = wp_get_recent_posts( $args );
 						foreach( $recent_posts as $recent ){  // start loop
 					?>
