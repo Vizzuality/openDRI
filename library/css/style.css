@@ -2762,9 +2762,12 @@ FOOTER STYLES
       background-color: rgba(0, 92, 163, 0.85);
       top: 26px; }
       .blue-bar-top .wrapper .region-filter input {
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: rgba(0, 0, 0, 0.1);
         margin: 0;
-        color: white; }
+        color: white;
+        border-radius: 0px;
+        position: relative;
+        font-weight: bold; }
       .blue-bar-top .wrapper .region-filter li {
         max-width: 180px;
         padding: 8px;
@@ -2777,6 +2780,19 @@ FOOTER STYLES
           text-decoration: none;
           width: 100%;
           display: block; }
+        .blue-bar-top .wrapper .region-filter li:first-child {
+          padding: 0; }
+          .blue-bar-top .wrapper .region-filter li:first-child i {
+            height: 30px;
+            width: 30px;
+            background-color: #fff;
+            -webkit-mask: url("../images/search.svg") no-repeat 50% 50%;
+            mask: url("../images/search.svg") no-repeat 50% 50%;
+            display: inline-block;
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            opacity: 0.7; }
 
 .container-region-filter {
   position: relative; }
@@ -2795,7 +2811,9 @@ FOOTER STYLES
   border-radius: 0;
   border-left: 1px solid rgba(250, 250, 250, 0.2);
   border-right: 1px solid rgba(250, 250, 250, 0.2);
-  text-align: center; }
+  text-align: center;
+  pointer-events: auto;
+  cursor: pointer; }
   #toggle-filter-region:before {
     content: '';
     position: absolute;
