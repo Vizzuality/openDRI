@@ -828,7 +828,11 @@ POSTS & CONTENT STYLES
 	font-style: italic;
 	margin: 0;
 
-	time {}
+	time {
+		display: inline-table;
+	    position: relative;
+	    left: -10px;
+	}
 }
 
 /* entry content */
