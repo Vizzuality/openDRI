@@ -825,13 +825,13 @@ POSTS & CONTENT STYLES
 /* post meta */
 .byline {
 	color: $meta-gray;
-	font-style: italic;
 	margin: 0;
-
 	time {
 		display: inline-table;
 	    position: relative;
-	    left: -10px;
+		font-style: italic;
+	    left: -5px;
+    	color: rgba(85, 85, 85, 0.3);
 	}
 }
 
