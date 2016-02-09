@@ -788,8 +788,13 @@
 			!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 			window.setTimeout(
 			function(){
-			  $(".twitter-timeline").contents().find('.stream').attr("style", "overflow-y: visible !important; height: 100%");
-			},5000);
+				var target = $(".twitter-timeline");
+			  	target.css('height','650px');
+			  	target.contents().find('.stream').attr("style", "overflow-y: visible !important; height: 100%");
+			  	target.contents().find('.timeline-header').remove();
+			  	target.contents().find('.timeline-footer').remove();
+			  	target.contents().find('.timeline').css('border','none');
+			},2500);
 		</script>
 		<?php wp_footer(); ?>
 		<script type="text/javascript">
