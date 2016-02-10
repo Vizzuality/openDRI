@@ -2,8 +2,8 @@
 <?
 if ( is_page( 'resources' ) ) {
 ?>
-			<span class="corner-map"></span>
 			<div id="content">
+				<span class="corner-map"></span>
 
 				<div id="inner-content" class="wrap cf">
 
@@ -45,8 +45,8 @@ if ( is_page( 'resources' ) ) {
 
 elseif ( is_page( 'about' ) ) {
 ?>
-<span class="corner-map about"></span>
 			<div id="content">
+				<span class="corner-map about"></span>
 				<div class="blue-bar-top about" id="blue-bar">
 					<div class="wrap wrapper">
 						<span><a href="#principles">our principles</a></span>

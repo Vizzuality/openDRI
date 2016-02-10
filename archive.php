@@ -61,6 +61,7 @@ if(is_post_type_archive() && $post_type=='project') {
 							</div>
 					</div>
 				</div>';
+	$hascornermap = false;
 	echo '<div id="map" class="cdbmap"></div>';
 } elseif (is_category() && $title === 'news') {
 	$display_navi = true;
@@ -86,17 +87,16 @@ if(is_post_type_archive() && $post_type=='project') {
 							</div>
 					</div>
 				</div>';
-	echo '<span class="corner-map"></span>';
+	$hascornermap = true;
 } elseif (is_post_type_archive() && $post_type=='resource'){
 	$title = 'Resources';
-	echo '<span class="corner-map"></span>';
+	$hascornermap = true;
 }
 
 ?>
 			<div id="content">
-
+						<? echo ($hascornermap) ? '<span class="corner-map"></span>' : ''; ?>
 				<div id="inner-content" class="wrap cf">
-
 						<main id="main" class="" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
 							<?php
