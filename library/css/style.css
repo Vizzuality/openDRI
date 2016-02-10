@@ -2392,7 +2392,9 @@ POSTS & CONTENT STYLES
     .page #partners .-m-partner .-m-info {
       margin: 0;
       width: 90%; }
+.archive #principles h3,
 .archive .-m-disclaimer h3,
+.page #principles h3,
 .page .-m-disclaimer h3 {
   color: #1477c9; }
 .archive .p-info,
@@ -3131,6 +3133,9 @@ div.cartodb-popup .cartodb-popup-close-button {
     flex-direction: column;
     margin: 20px 0; }
 
+  .home .index-row#news .row-container {
+    width: 100%; }
+
   .home .index-row.last-resources {
     margin: -40px 0 20px;
     width: 100%; }
@@ -3200,8 +3205,36 @@ div.cartodb-popup .cartodb-popup-close-button {
     display: none; }
 
   .archive .p-info h4, .page .p-info h4 {
-    width: 255px; } }
+    width: 255px;
+    font-size: 14px; }
+
+  div#principles.m-all.cf.index-row.about-content, div#principles.m-all.index-row.about-content.comment-respond {
+    height: 700px; }
+
+  div#principles.m-all.cf.index-row.about-content ol, div#principles.m-all.index-row.about-content.comment-respond ol {
+    display: block; }
+
+  .blue-bar-top .wrapper span.current {
+    background-color: transparent;
+    color: #fff; } }
 @media (max-width: 768px) {
+  .home #map-fake .what-list {
+    width: 100%; }
+
+  .blue-bar-top {
+    align-items: flex-start; }
+
+  .blue-bar-top.about {
+    align-items: center;
+    height: 150px;
+    margin: 0 0 -90px; }
+
+  .home .index-row article.resource-cont, .index-row .card-third.resource-cont {
+    width: 50vh; }
+
+  .blue-bar-top .wrapper .region-filter li:first-child i {
+    display: none; }
+
   .archive .cdbmap, .page .cdbmap {
     display: none; }
 
@@ -3228,7 +3261,11 @@ div.cartodb-popup .cartodb-popup-close-button {
 
   .blue-bar-top .wrapper {
     -webkit-flex-direction: column;
-    flex-direction: column; }
+    flex-direction: column;
+    height: 40%; }
+
+  .blue-bar-top.about .wrapper {
+    height: 70%; }
 
   .blue-bar-top .wrapper .region-filter li {
     display: inline;
@@ -3303,7 +3340,10 @@ div.cartodb-popup .cartodb-popup-close-button {
 
   .hentry.-odri-post.category-news {
     width: 100%;
-    padding: 1em; } }
+    padding: 1em; }
+
+  div#principles.m-all.cf.index-row.about-content, div#principles.m-all.index-row.about-content.comment-respond {
+    height: 900px; } }
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
