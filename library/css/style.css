@@ -1963,7 +1963,8 @@ POSTS & CONTENT STYLES
     /* TWEENER - IE 10 */
     display: -webkit-flex;
     /* NEW - Chrome */
-    display: -webkit-flex; }
+    display: -webkit-flex;
+    padding: 10px 0; }
   .hentry footer {
     margin: 15px;
     border-top: 1px solid #f8f9fa; }
@@ -1990,23 +1991,23 @@ POSTS & CONTENT STYLES
     .hentry footer .tags {
       display: inline;
       font-feature-settings: "liga" 0; }
-  .hentry.--odri-post {
+  .hentry.-odri-post {
     padding: 2.5rem;
     border: 0;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.2); }
-    .hentry.--odri-post h1 {
+    .hentry.-odri-post h1 {
       color: #1477c9;
       font-size: 48px;
       line-height: 43px; }
-    .hentry.--odri-post .byline {
+    .hentry.-odri-post .byline {
       text-transform: uppercase;
       font-style: normal;
       color: rgba(85, 85, 85, 0.5);
       font-size: 13px;
       margin: 25px 0 15px; }
-    .hentry.--odri-post .entry-content {
+    .hentry.-odri-post .entry-content {
       padding: 0; }
-      .hentry.--odri-post .entry-content p {
+      .hentry.-odri-post .entry-content p {
         margin: 0 0 1.5em;
         display: block;
         max-width: none;
@@ -2015,7 +2016,7 @@ POSTS & CONTENT STYLES
         line-height: 28px;
         color: #555;
         font-feature-settings: "liga" 0; }
-        .hentry.--odri-post .entry-content p a {
+        .hentry.-odri-post .entry-content p a {
           color: #1477c9; }
 
 /* end .hentry */
@@ -3296,7 +3297,7 @@ div.cartodb-popup .cartodb-popup-close-button {
     max-width: none;
     width: 90%; }
 
-  .hentry.--odri-post.category-news {
+  .hentry.-odri-post.category-news {
     width: 100%;
     padding: 1em; } }
 /*********************
