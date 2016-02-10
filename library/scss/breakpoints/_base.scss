@@ -500,6 +500,9 @@ POSTS & CONTENT STYLES
 	display: flex;
 	flex-direction: column;
     margin: 85px 0;
+    &#news .row-container {
+    	width: 70%;
+    }
     &.more-content {
     	display: block;
     	.row-container {
