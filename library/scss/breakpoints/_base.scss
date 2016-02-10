@@ -742,7 +742,8 @@ POSTS & CONTENT STYLES
     }
 }
 #content {
-	// margin-top: 1.5em;
+	position: relative;
+	overflow-x: hidden;
 }
 
 .hentry {
