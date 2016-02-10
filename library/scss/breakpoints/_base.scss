@@ -740,6 +740,7 @@ POSTS & CONTENT STYLES
 		    	margin: 10px 5px;
 		    }
 	    }
+    	*::-ms-backdrop, .twitter { display: inline; }
     }
 }
 #content {
