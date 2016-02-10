@@ -1873,33 +1873,33 @@ POSTS & CONTENT STYLES
     .hentry footer .tags {
       display: inline;
       font-feature-settings: "liga" 0; }
-    .hentry footer.--odri-post {
-      padding: 2.5rem;
-      border: 0;
-      box-shadow: 0 0 7px rgba(0, 0, 0, 0.2); }
-      .hentry footer.--odri-post h1 {
-        color: #1477c9;
-        font-size: 48px;
-        line-height: 43px; }
-      .hentry footer.--odri-post .byline {
-        text-transform: uppercase;
-        font-style: normal;
-        color: rgba(85, 85, 85, 0.5);
-        font-size: 13px;
-        margin: 25px 0 15px; }
-      .hentry footer.--odri-post .entry-content {
-        padding: 0; }
-        .hentry footer.--odri-post .entry-content p {
-          margin: 0 0 1.5em;
-          display: block;
-          max-width: none;
-          height: auto;
-          font-size: 17px;
-          line-height: 28px;
-          color: #555;
-          font-feature-settings: "liga" 0; }
-          .hentry footer.--odri-post .entry-content p a {
-            color: #1477c9; }
+  .hentry.--odri-post {
+    padding: 2.5rem;
+    border: 0;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.2); }
+    .hentry.--odri-post h1 {
+      color: #1477c9;
+      font-size: 48px;
+      line-height: 43px; }
+    .hentry.--odri-post .byline {
+      text-transform: uppercase;
+      font-style: normal;
+      color: rgba(85, 85, 85, 0.5);
+      font-size: 13px;
+      margin: 25px 0 15px; }
+    .hentry.--odri-post .entry-content {
+      padding: 0; }
+      .hentry.--odri-post .entry-content p {
+        margin: 0 0 1.5em;
+        display: block;
+        max-width: none;
+        height: auto;
+        font-size: 17px;
+        line-height: 28px;
+        color: #555;
+        font-feature-settings: "liga" 0; }
+        .hentry.--odri-post .entry-content p a {
+          color: #1477c9; }
 
 /* end .hentry */
 .single-title,
