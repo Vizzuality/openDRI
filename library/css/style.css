@@ -1387,6 +1387,14 @@ HEADER STYLES
     display: list-item; }
   .header nav {
     display: flex;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
     justify-content: space-around;
     height: 73px;
     width: 50%;
@@ -1514,6 +1522,14 @@ POSTS & CONTENT STYLES
 #map-fake {
   height: 656px;
   display: flex;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
   position: relative;
   flex-direction: column;
   align-items: center;
@@ -1532,6 +1548,14 @@ POSTS & CONTENT STYLES
     background-size: cover; }
   #map-fake .what-list {
     display: flex;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
     flex-direction: column;
     align-items: center;
     height: 457px;
@@ -1552,6 +1576,14 @@ POSTS & CONTENT STYLES
       letter-spacing: 0.6px; }
     #map-fake .what-list > nav {
       display: flex;
+      display: -webkit-box;
+      /* OLD - iOS 6-, Safari 3.1-6 */
+      display: -moz-box;
+      /* OLD - Firefox 19- (buggy but mostly works) */
+      display: -ms-flexbox;
+      /* TWEENER - IE 10 */
+      display: -webkit-flex;
+      /* NEW - Chrome */
       justify-content: space-around;
       width: 100%; }
       #map-fake .what-list > nav span {
@@ -1589,6 +1621,14 @@ POSTS & CONTENT STYLES
   top: -24px;
   height: 60px;
   display: flex;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
   width: 220px;
   justify-content: center;
   align-items: center;
@@ -1602,6 +1642,14 @@ POSTS & CONTENT STYLES
 #explore-more {
   height: 360px;
   display: flex;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
   position: relative;
   flex-direction: column;
   align-items: center;
@@ -1625,6 +1673,14 @@ POSTS & CONTENT STYLES
     width: 70%;
     height: 60%;
     display: flex;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1644,6 +1700,14 @@ POSTS & CONTENT STYLES
 
 .index-row {
   display: flex;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
   flex-direction: column;
   margin: 85px 0; }
   .index-row#news .row-container {
@@ -1657,6 +1721,14 @@ POSTS & CONTENT STYLES
     			margin: 10px; }
   .index-row .row-container {
     display: flex;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
     flex-wrap: wrap; }
     .index-row .row-container > a {
       text-decoration: none; }
@@ -1675,6 +1747,14 @@ POSTS & CONTENT STYLES
     max-width: 315px;
     margin: 0 15px 50px;
     display: flex;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
     flex-direction: column;
     justify-content: space-around;
     height: 350px;
@@ -1742,6 +1822,14 @@ POSTS & CONTENT STYLES
       .index-row .resource-list li div {
         margin: 5px 0;
         display: flex;
+        display: -webkit-box;
+        /* OLD - iOS 6-, Safari 3.1-6 */
+        display: -moz-box;
+        /* OLD - Firefox 19- (buggy but mostly works) */
+        display: -ms-flexbox;
+        /* TWEENER - IE 10 */
+        display: -webkit-flex;
+        /* NEW - Chrome */
         justify-content: space-between;
         font-size: 15px; }
         .index-row .resource-list li div .title {
@@ -1778,6 +1866,14 @@ POSTS & CONTENT STYLES
     background: #db0033;
     height: 50px;
     display: flex;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
@@ -1857,12 +1953,31 @@ POSTS & CONTENT STYLES
       font-family: Bariol_Bold;
       padding: 10px;
       line-height: 20px; }
+  .hentry _:-webkit-full-screen:not(:root:root), .hentry header {
+    display: flex;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: -webkit-flex; }
   .hentry footer {
     margin: 15px;
     border-top: 1px solid #f8f9fa; }
     .hentry footer p {
       margin: 0;
       display: flex;
+      display: -webkit-box;
+      /* OLD - iOS 6-, Safari 3.1-6 */
+      display: -moz-box;
+      /* OLD - Firefox 19- (buggy but mostly works) */
+      display: -ms-flexbox;
+      /* TWEENER - IE 10 */
+      display: -webkit-flex;
+      /* NEW - Chrome */
       justify-content: space-between; }
       .hentry footer p span {
         line-height: 15px; }
@@ -2094,6 +2209,14 @@ POSTS & CONTENT STYLES
     list-style: decimal;
     list-style-position: inside;
     display: flex;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
     flex-direction: column;
     flex-wrap: wrap;
     height: 320px;
@@ -2109,6 +2232,14 @@ POSTS & CONTENT STYLES
 .archive #contact,
 .page #contact {
   display: flex;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
   justify-content: space-between;
   align-items: flex-start; }
   .archive #contact .index-row,
@@ -2178,7 +2309,15 @@ POSTS & CONTENT STYLES
   .page #members .-m-partner,
   .page #partners .-m-team-member,
   .page #partners .-m-partner {
-    display: flex; }
+    display: flex;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */ }
     .archive #members .-m-team-member img,
     .archive #members .-m-partner img,
     .archive #partners .-m-team-member img,
@@ -2199,6 +2338,14 @@ POSTS & CONTENT STYLES
     .page #partners .-m-team-member .-m-info,
     .page #partners .-m-partner .-m-info {
       display: flex;
+      display: -webkit-box;
+      /* OLD - iOS 6-, Safari 3.1-6 */
+      display: -moz-box;
+      /* OLD - Firefox 19- (buggy but mostly works) */
+      display: -ms-flexbox;
+      /* TWEENER - IE 10 */
+      display: -webkit-flex;
+      /* NEW - Chrome */
       flex-direction: column;
       width: 70%;
       margin: 0 0 0 40px; }
@@ -2246,6 +2393,14 @@ POSTS & CONTENT STYLES
 .archive .p-info,
 .page .p-info {
   display: flex;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
   clear: both;
   justify-content: center;
   position: relative;
@@ -2558,16 +2713,40 @@ FOOTER STYLES
   color: #f8f9fa;
   height: 270px;
   display: flex;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
   flex-direction: column;
   align-items: space-between; }
   .footer .-ft-content {
     width: 100%;
     display: flex;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
     justify-content: space-between;
     margin: 2.5rem 0; }
     .footer .-ft-content .-ft-coorporate,
     .footer .-ft-content nav {
       display: flex;
+      display: -webkit-box;
+      /* OLD - iOS 6-, Safari 3.1-6 */
+      display: -moz-box;
+      /* OLD - Firefox 19- (buggy but mostly works) */
+      display: -ms-flexbox;
+      /* TWEENER - IE 10 */
+      display: -webkit-flex;
+      /* NEW - Chrome */
       flex-direction: column;
       justify-content: space-around; }
       .footer .-ft-content .-ft-coorporate .-i-link,
@@ -2588,6 +2767,14 @@ FOOTER STYLES
     .footer .-ft-content .-ft-newsletter {
       font-size: 13px;
       display: flex;
+      display: -webkit-box;
+      /* OLD - iOS 6-, Safari 3.1-6 */
+      display: -moz-box;
+      /* OLD - Firefox 19- (buggy but mostly works) */
+      display: -ms-flexbox;
+      /* TWEENER - IE 10 */
+      display: -webkit-flex;
+      /* NEW - Chrome */
       align-items: flex-start;
       justify-content: center;
       flex-direction: column; }
@@ -2595,6 +2782,14 @@ FOOTER STYLES
       border: 1px solid #979797;
       width: 300px;
       display: flex;
+      display: -webkit-box;
+      /* OLD - iOS 6-, Safari 3.1-6 */
+      display: -moz-box;
+      /* OLD - Firefox 19- (buggy but mostly works) */
+      display: -ms-flexbox;
+      /* TWEENER - IE 10 */
+      display: -webkit-flex;
+      /* NEW - Chrome */
       margin-top: 10px;
       justify-content: space-between;
       position: relative; }
@@ -2637,6 +2832,14 @@ FOOTER STYLES
     left: 0; }
   .footer .-ft-legal {
     display: flex;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
     justify-content: space-between;
     width: 40%;
     height: 40px;
@@ -2685,6 +2888,14 @@ FOOTER STYLES
   box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.2);
   height: 43px;
   display: flex;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
   align-items: center;
   position: relative;
   margin-bottom: -43px;
@@ -2700,6 +2911,14 @@ FOOTER STYLES
     font-size: 15px;
     font-weight: bold;
     display: flex;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
     justify-content: space-between; }
     .blue-bar-top .wrapper span {
       border-radius: 5px;

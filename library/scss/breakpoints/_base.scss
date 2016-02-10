@@ -166,7 +166,10 @@ HEADER STYLES
 		display: list-item;
 	}
 	nav {
-		display: flex;
+		display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
 		justify-content: space-around;
 		height: 73px;
 		width: 50%;
@@ -355,7 +358,10 @@ POSTS & CONTENT STYLES
 *********************/
 #map-fake {
 	height: 656px;
-    display: flex;
+    display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
     position: relative;
     flex-direction: column;
     align-items: center;
@@ -374,7 +380,10 @@ POSTS & CONTENT STYLES
 		background-size: cover;
 	}
     .what-list {
-    	display: flex;
+    	display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
 	    flex-direction: column;
 	    align-items: center;
 	    height: 457px;
@@ -396,7 +405,10 @@ POSTS & CONTENT STYLES
 	    	letter-spacing: 0.6px;
 	    }
 	    > nav {
-		    display: flex;
+		    display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
 		    justify-content: space-around;
 		    width: 100%;
 		    span {
@@ -435,7 +447,10 @@ POSTS & CONTENT STYLES
     position: relative;
     top: -24px;
     height: 60px;
-    display: flex;
+    display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
     width: 220px;
     justify-content: center;
     align-items: center;
@@ -449,7 +464,10 @@ POSTS & CONTENT STYLES
 }
 #explore-more {
 	height: 360px;
-    display: flex;
+    display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
     position: relative;
     flex-direction: column;
     align-items: center;
@@ -474,7 +492,10 @@ POSTS & CONTENT STYLES
 	section {
 		width: 70%;
 	    height: 60%;
-	    display: flex;
+	    display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
 	    flex-direction: column;
 	    justify-content: center;
 	    align-items: center;
@@ -497,7 +518,10 @@ POSTS & CONTENT STYLES
 	}
 }
 .index-row {
-	display: flex;
+	display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
 	flex-direction: column;
     margin: 85px 0;
     &#news .row-container {
@@ -513,7 +537,10 @@ POSTS & CONTENT STYLES
     	}
     }
     .row-container {
-    	display: flex;
+    	display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
     	flex-wrap: wrap;
     	> a {
     		text-decoration: none;
@@ -536,7 +563,10 @@ POSTS & CONTENT STYLES
     .card-third {
     	max-width: 315px;
 	    margin: 0 15px 50px;
-	    display: flex;
+	    display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
 	    flex-direction: column;
 	    justify-content: space-around;
 	    height: 350px;
@@ -605,7 +635,10 @@ POSTS & CONTENT STYLES
     		}
 		    div {
 		    	margin: 5px 0;
-		    	display: flex;
+		    	display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
 	    		justify-content: space-between;
 	    		font-size: 15px;
 	    		.title {
@@ -652,7 +685,10 @@ POSTS & CONTENT STYLES
     		width: 200px;
 		    background: #db0033;
 		    height: 50px;
-		    display: flex;
+		    display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
 		    justify-content: center;
 		    align-items: center;
 		    text-transform: uppercase;
@@ -749,14 +785,23 @@ POSTS & CONTENT STYLES
 	    	line-height: 20px;
 		}
 	}
-
+		_:-webkit-full-screen:not(:root:root), header {
+			display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+			display: -webkit-flex;
+		}
 	footer {
 		margin: 15px;
 		border-top: 1px solid $light-gray;
 
 		p {
 			margin: 0;
-			display: flex;
+			display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
     		justify-content: space-between;
     		span {
     			line-height: 15px;
@@ -1099,7 +1144,10 @@ margin: 0;
 			ol {
 				list-style: decimal;
 				list-style-position: inside;
-			    display: flex;
+			    display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
 			    flex-direction: column;
 			    flex-wrap: wrap;
 			    height: 320px;
@@ -1116,7 +1164,10 @@ margin: 0;
 		}
 	}
 	#contact {
-		display: flex;
+		display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
 		justify-content: space-between;
 		align-items: flex-start;
 		.index-row {
@@ -1175,14 +1226,20 @@ margin: 0;
 		}
 		.-m-team-member,
 		.-m-partner {
-			display: flex;
+			display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
 			img {
 				height: 213px;
 			    width: 180px;
 			    background: lightgrey;
 			}
 			.-m-info {
-				display: flex;
+				display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
 				flex-direction: column;
 				width: 70%;
     			margin: 0 0 0 40px;
@@ -1215,7 +1272,10 @@ margin: 0;
 		}
 	}
 	.p-info {
-		display: flex;
+		display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
 		clear: both;
 		justify-content: center;
 		position: relative;
@@ -1698,18 +1758,27 @@ FOOTER STYLES
 	background-color: $black;
 	color: $light-gray;
 	height: 270px;
-	display: flex;
+	display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
 	flex-direction: column;
 	align-items: space-between;
 
 	.-ft-content {
 		width: 100%;
-		display: flex;
+		display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
 		justify-content: space-between;
 		margin: 2.5rem 0;
 		.-ft-coorporate,
 		nav {
-			display: flex;
+			display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
 			flex-direction: column;
 			justify-content: space-around;
 			.-i-link {
@@ -1731,7 +1800,10 @@ FOOTER STYLES
 		}
 		.-ft-newsletter {
 			font-size: 13px;
-		    display: flex;
+		    display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
 		    align-items: flex-start;
 		    justify-content: center;
 		    flex-direction: column;
@@ -1739,7 +1811,10 @@ FOOTER STYLES
 		form {
 			border: 1px solid #979797;
 		    width: 300px;
-		    display: flex;
+		    display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
 		    margin-top: 10px;
 		    justify-content: space-between;
 		    position: relative;
@@ -1791,7 +1866,10 @@ FOOTER STYLES
 		}
 	}
 	.-ft-legal {
-		display: flex;
+		display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
 	    justify-content: space-between;
 	    width: 40%;
 	    height: 40px;
@@ -1843,7 +1921,10 @@ FOOTER STYLES
 	background-color: #1477c9;
     box-shadow: 1px 1px 7px rgba(0,0,0,0.2);
     height: 43px;
-    display: flex;
+    display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
 	align-items: center;
 	position: relative;
 	margin-bottom: -43px;
@@ -1859,7 +1940,10 @@ FOOTER STYLES
 	    text-transform: uppercase;
 	    font-size: 15px;
 	    font-weight: bold;
-	    display: flex;
+	    display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
 	    justify-content: space-between;
 	    span {
 			border-radius: 5px;
