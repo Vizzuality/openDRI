@@ -1646,6 +1646,8 @@ POSTS & CONTENT STYLES
   display: flex;
   flex-direction: column;
   margin: 85px 0; }
+  .index-row#news .row-container {
+    width: 70%; }
   .index-row.more-content {
     display: block; }
     .index-row.more-content .row-container {
