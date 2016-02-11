@@ -888,10 +888,10 @@ POSTS & CONTENT STYLES
 .byline {
 	color: $meta-gray;
 	margin: 0;
+	font-family: helvetica, sans-serif;
 	time {
 		display: table;
 	    position: relative;
-		font-style: italic;
 	    left: -10px;
 	    font-size: 13px;
     	color: rgba(85, 85, 85, 0.3);
