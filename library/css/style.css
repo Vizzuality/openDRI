@@ -2048,11 +2048,11 @@ POSTS & CONTENT STYLES
 /* post meta */
 .byline {
   color: #9fa6b4;
-  margin: 0; }
+  margin: 0;
+  font-family: helvetica, sans-serif; }
   .byline time {
     display: table;
     position: relative;
-    font-style: italic;
     left: -10px;
     font-size: 13px;
     color: rgba(85, 85, 85, 0.3); }
