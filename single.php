@@ -94,7 +94,7 @@
 													<?php 
 														$content = apply_filters( 'the_content', $related->post_content );
 													    $content = str_replace( ']]>', ']]&gt;', $content );
-													    echo $content;
+													    echo wp_strip_all_tags($content);
 													?>
 											</section>
 											<footer class="article-footer cf">
@@ -142,7 +142,7 @@
 													<?php 
 														$content = apply_filters( 'the_content', $recent["post_content"] );
 													    $content = str_replace( ']]>', ']]&gt;', $content );
-													    echo $content;
+													    echo wp_strip_all_tags($content);
 													?>
 											</section>
 											<footer class="article-footer cf">
