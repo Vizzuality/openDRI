@@ -63,7 +63,11 @@ if(is_post_type_archive() && $post_type=='project') {
 				</div>';
 	$hascornermap = false;
 	echo '<div id="map" class="cdbmap"></div>';
-} elseif (is_category() && $title === 'news') {
+} elseif (is_category() && 
+	($title === 'news' || 
+	 $title === 'Open Data Platforms' || 
+	 $title === 'Risk Visualizations' || 
+	 $title === 'Community Mapping')) {
 	$display_navi = true;
 	echo '		<div class="blue-bar-top" id="blue-bar">
 					<div class="wrap wrapper filters">
