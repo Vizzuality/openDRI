@@ -3221,10 +3221,6 @@ div.cartodb-popup .cartodb-popup-close-button {
     font-size: 14px;
     padding: 3px 1px; }
 
-  .archive .corner-map, .page .corner-map {
-    top: 0;
-    left: 0; }
-
   .post-type-archive-resource #main .row-container article {
     margin: 10px auto; }
 
