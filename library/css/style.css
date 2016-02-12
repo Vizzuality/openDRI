@@ -2394,6 +2394,9 @@ POSTS & CONTENT STYLES
     .page #partners .-m-partner .-m-info {
       margin: 0;
       width: 90%; }
+.archive #principles .card-third,
+.page #principles .card-third {
+  width: 100%; }
 .archive #principles h3,
 .archive .-m-disclaimer h3,
 .page #principles h3,
