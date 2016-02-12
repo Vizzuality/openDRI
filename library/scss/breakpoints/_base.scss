@@ -1140,10 +1140,11 @@ margin: 0;
 		.card-third {
 			max-width: none;
 			margin: 0 15px;
+			width: 100%;
 			p {
-		 -webkit-columns:    340px;
-   			-moz-columns: 	 340px;
-        		 columns: 	 340px;
+		 -webkit-columns:    350px;
+   			-moz-columns: 	 350px;
+        		 columns: 	 350px;
 			}
 			ol {
 				list-style: decimal;
@@ -1270,7 +1271,8 @@ margin: 0;
 			}
 		}
 	}
-	#principles .card-third {
+	#principles .card-third,
+	#about 		.card-third {
 		width: 100%;
 	}
 	#principles h3,
