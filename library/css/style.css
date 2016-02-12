@@ -2205,12 +2205,13 @@ POSTS & CONTENT STYLES
 .archive .about-content .card-third,
 .page .about-content .card-third {
   max-width: none;
-  margin: 0 15px; }
+  margin: 0 15px;
+  width: 100%; }
   .archive .about-content .card-third p,
   .page .about-content .card-third p {
-    -webkit-columns: 340px;
-    -moz-columns: 340px;
-    columns: 340px; }
+    -webkit-columns: 350px;
+    -moz-columns: 350px;
+    columns: 350px; }
   .archive .about-content .card-third ol,
   .page .about-content .card-third ol {
     list-style: decimal;
@@ -2395,7 +2396,9 @@ POSTS & CONTENT STYLES
       margin: 0;
       width: 90%; }
 .archive #principles .card-third,
-.page #principles .card-third {
+.archive #about .card-third,
+.page #principles .card-third,
+.page #about .card-third {
   width: 100%; }
 .archive #principles h3,
 .archive .-m-disclaimer h3,
