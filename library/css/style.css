@@ -2196,11 +2196,11 @@ POSTS & CONTENT STYLES
   .archive .corner-map.about,
   .page .corner-map.about {
     top: 730px;
-    height: 890px;
+    height: 1020px;
     right: 0px;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 800px;
+    width: 100%;
     background-position: 0; }
 .archive .about-content .card-third,
 .page .about-content .card-third {
