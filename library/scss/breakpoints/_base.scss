@@ -564,9 +564,9 @@ POSTS & CONTENT STYLES
     	width: 315px;
 	    margin: 0 15px 50px;
 	    display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
+		  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+		  display: -ms-flexbox;      /* TWEENER - IE 10 */
+		  display: -webkit-flex;     /* NEW - Chrome */
 	    flex-direction: column;
 	    justify-content: space-around;
 	    height: 350px;
@@ -578,7 +578,14 @@ POSTS & CONTENT STYLES
 	    }
 	    .entry-content {
 	    	overflow: hidden;
-	    	height: 174px;
+		    height: 136px;
+		    font-size: 15px;
+		    display: -webkit-box;
+		    line-height: 1.23;
+		    -webkit-line-clamp: 4;
+		    -webkit-box-orient: vertical;
+		    overflow: hidden;
+		    text-overflow: ellipsis;	    
 	    }
 	    &.resource-cont {
 	    	&:after {
@@ -641,9 +648,9 @@ POSTS & CONTENT STYLES
 		    div {
 		    	margin: 5px 0;
 		    	display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
+				  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+				  display: -ms-flexbox;      /* TWEENER - IE 10 */
+				  display: -webkit-flex;     /* NEW - Chrome */
 	    		justify-content: space-between;
 	    		font-size: 15px;
 	    		.title {
@@ -691,9 +698,9 @@ POSTS & CONTENT STYLES
 		    background: #db0033;
 		    height: 50px;
 		    display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
+			  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+			  display: -ms-flexbox;      /* TWEENER - IE 10 */
+			  display: -webkit-flex;     /* NEW - Chrome */
 		    justify-content: center;
 		    align-items: center;
 		    text-transform: uppercase;
@@ -746,6 +753,10 @@ POSTS & CONTENT STYLES
 	    }
     	*::-ms-backdrop, .twitter { display: inline; }
     }
+}
+.home #projects .index-row article .entry-content {
+	    height: 114px;
+	    -webkit-line-clamp: 4;
 }
 #content {
 	position: relative;
