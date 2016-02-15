@@ -2545,6 +2545,12 @@ POSTS & CONTENT STYLES
   .post-type-archive-resource #main .row-container article {
     max-width: 490px;
     width: 490px; }
+    .category-open-data-platforms #main .row-container article header,
+    .category-community-mapping #main .row-container article header,
+    .category-risk-visualizations #main .row-container article header,
+    .category-news #main .row-container article header,
+    .post-type-archive-resource #main .row-container article header {
+      width: 80%; }
 
 #list-content {
   margin: 0; }
