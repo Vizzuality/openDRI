@@ -3403,7 +3403,10 @@ div.cartodb-popup .cartodb-popup-close-button {
 
   .page #members .-m-team-member img {
     display: block;
-    margin: 0 auto 30px; } }
+    margin: 0 auto 30px; }
+
+  .page #contact .contact-form textarea {
+    width: 100%; } }
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
