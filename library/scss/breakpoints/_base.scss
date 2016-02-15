@@ -636,12 +636,12 @@ POSTS & CONTENT STYLES
 	    background: #fff;
 	    box-shadow: 0 0 7px rgba(0,0,0,0.20);
 	    li {
-    	    margin: 0 10px 0px;
-			padding: 5px;
-			background: inherit;
-			transition: background 0.3s ease;
-			display: inline-block;
-    		width: 95%;
+		    margin: 0 10px 0px;
+		    padding: 5px;
+		    background: inherit;
+		    transition: background 0.3s ease;
+		    display: inline-block;
+		    width: 31%;
     		&:hover {
     			background: darken($white, 3%);
     		}
@@ -1356,9 +1356,6 @@ margin: 0;
 		}
 		.resource-list {
 			width: 100%;
-		 -webkit-columns:    300px;
-   			-moz-columns: 	 300px;
-        		 columns: 	 300px;
 		}
 		.row-container {
 			width: 100%;
