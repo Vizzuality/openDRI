@@ -754,9 +754,8 @@ POSTS & CONTENT STYLES
     	*::-ms-backdrop, .twitter { display: inline; }
     }
 }
-.home #projects .index-row article .entry-content {
-	    height: 114px;
-	    -webkit-line-clamp: 4;
+.home #projects.index-row article .entry-content {
+	    height: 112px;
 }
 #content {
 	position: relative;
