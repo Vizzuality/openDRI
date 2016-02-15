@@ -1822,7 +1822,7 @@ POSTS & CONTENT STYLES
       background: inherit;
       transition: background 0.3s ease;
       display: inline-block;
-      width: 95%; }
+      width: 31%; }
       .index-row .resource-list li:hover {
         background: #f7f7f7; }
       .index-row .resource-list li div {
@@ -2483,10 +2483,7 @@ POSTS & CONTENT STYLES
     margin: 0; }
   .archive .index-row .resource-list,
   .page .index-row .resource-list {
-    width: 100%;
-    -webkit-columns: 300px;
-    -moz-columns: 300px;
-    columns: 300px; }
+    width: 100%; }
   .archive .index-row .row-container,
   .page .index-row .row-container {
     width: 100%;
