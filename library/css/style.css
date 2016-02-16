@@ -1260,7 +1260,7 @@ and will be used across all viewports.
 GENERAL STYLES
 *********************/
 body {
-  font-family: "Bariol_Regular", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 100%;
   line-height: 1.5;
   color: #555555;
@@ -1338,6 +1338,7 @@ a, a:visited {
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+  font-family: "Bariol_Regular", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-rendering: optimizelegibility;
   font-weight: 500;
   /*
@@ -1628,7 +1629,8 @@ POSTS & CONTENT STYLES
   align-items: center;
   text-transform: uppercase;
   font-weight: bold;
-  line-height: 20px; }
+  line-height: 20px;
+  font-family: "Bariol_Regular", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .what-explore a {
     text-decoration: none;
     color: inherit; }
@@ -1763,7 +1765,7 @@ POSTS & CONTENT STYLES
       font-size: 15px;
       display: -webkit-box;
       line-height: 1.23;
-      -webkit-line-clamp: 4;
+      -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
       overflow: hidden;
       text-overflow: ellipsis; }
@@ -1885,7 +1887,8 @@ POSTS & CONTENT STYLES
     font-size: 15px;
     font-weight: bold;
     margin-top: 20px;
-    transition: background 0.3s ease; }
+    transition: background 0.3s ease;
+    font-family: "Bariol_Regular", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif; }
     .index-row .card-third span:hover {
       background: #ff0f47; }
   .index-row .card-third.twitter-timeline-container {
@@ -2979,7 +2982,8 @@ FOOTER STYLES
   align-items: center;
   position: relative;
   margin-bottom: -43px;
-  z-index: 1; }
+  z-index: 1;
+  font-family: "Bariol_Regular", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .blue-bar-top.fixed {
     position: fixed;
     top: 0;
@@ -3107,7 +3111,7 @@ FOOTER STYLES
     padding: 3px 10px; }
   .blue-bar-top.about span a {
     position: relative;
-    top: 3px; }
+    top: 2px; }
 
 .category .blue-bar-top .region-filter li:first-child {
   padding: 8px 20px; }
