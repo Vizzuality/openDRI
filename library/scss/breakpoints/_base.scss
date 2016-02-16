@@ -929,14 +929,14 @@ POSTS & CONTENT STYLES
 	    overflow: hidden;
 	    text-overflow: ellipsis;
 	    font-feature-settings: "liga" 0;
-	}
-    .wp-caption {
-    	margin-bottom: 20px;
-	    .wp-caption-text {
+	    &.wp-caption-text {
 	    	margin: 0;
 		    font-style: italic;
 		    text-align: right;
 	    }
+	}
+    .wp-caption {
+    	margin-bottom: 20px;
     }
 
 	&.related {
