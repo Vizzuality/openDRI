@@ -2088,12 +2088,12 @@ POSTS & CONTENT STYLES
     overflow: hidden;
     text-overflow: ellipsis;
     font-feature-settings: "liga" 0; }
-  .entry-content .wp-caption {
-    margin-bottom: 20px; }
-    .entry-content .wp-caption .wp-caption-text {
+    .entry-content p.wp-caption-text {
       margin: 0;
       font-style: italic;
       text-align: right; }
+  .entry-content .wp-caption {
+    margin-bottom: 20px; }
   .entry-content.related {
     overflow: hidden;
     height: 200px; }
