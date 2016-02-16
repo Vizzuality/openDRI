@@ -930,9 +930,9 @@ POSTS & CONTENT STYLES
 	    text-overflow: ellipsis;
 	    font-feature-settings: "liga" 0;
 	    &.wp-caption-text {
-	    	margin: 0;
-		    font-style: italic;
-		    text-align: right;
+	    	margin: 0 !important;
+		    font-style: italic !important;
+		    text-align: right !important;
 	    }
 	}
     .wp-caption {
