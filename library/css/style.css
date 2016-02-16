@@ -1651,8 +1651,6 @@ POSTS & CONTENT STYLES
   background-size: cover;
   background-color: rgba(255, 255, 255, 0.2);
   transition: background-color 0.2s ease; }
-  #explore-more:hover {
-    background-color: rgba(255, 255, 255, 0.1); }
   #explore-more:after {
     content: "";
     background: url(../images/map-resource.jpg);
