@@ -1852,6 +1852,16 @@ POSTS & CONTENT STYLES
           font-size: 13px;
           color: rgba(85, 85, 85, 0.5);
           text-transform: uppercase; }
+    .index-row .resource-list.home li {
+      margin: 0;
+      width: 100%; }
+      .index-row .resource-list.home li a {
+        color: #1477c9; }
+      .index-row .resource-list.home li p {
+        line-height: 20px;
+        font-size: 14px; }
+      .index-row .resource-list.home li .title {
+        font-weight: bold; }
   .index-row .card-third h3 {
     font-size: 48px;
     text-transform: capitalize;

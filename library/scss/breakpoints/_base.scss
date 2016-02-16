@@ -675,6 +675,22 @@ POSTS & CONTENT STYLES
 	    		}
 		    }
 	    }
+		&.home {
+			li {
+				margin: 0;
+				width: 100%;
+				a {
+					color:#1477c9
+				}
+				p {
+					line-height: 20px;
+				    font-size: 14px;
+				}
+				.title {
+					font-weight: bold;
+				}
+			}
+		}
     }
     .card-third {
     	h3 {

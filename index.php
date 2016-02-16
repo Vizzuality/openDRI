@@ -169,7 +169,7 @@
 						<li>
 							<a href="<?php echo $featured["guid"]; ?>">
 								<p><span class="title"><?php echo $featured["post_title"]; ?></span><span class="format"></span></p>
-								<p><span class="name">-</span><span class="size"><? echo $featured["post_date_gmt"]?></span>
+								<p><span class="name"></span><span class="size"><? echo $featured["post_date_gmt"]?></span>
 								</p>
 							</a>
 						</li>
