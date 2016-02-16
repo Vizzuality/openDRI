@@ -2913,7 +2913,8 @@ FOOTER STYLES
     justify-content: space-between;
     width: 40%;
     height: 40px;
-    align-items: center; }
+    align-items: center;
+    font-size: 13px; }
     .footer .-ft-legal a, .footer .-ft-legal span {
       color: #787878;
       text-decoration: none; }
