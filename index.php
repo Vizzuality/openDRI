@@ -162,11 +162,11 @@
 				<? } ?>
 					<ul class="resource-list">
 						<?
-						$args = array( 'numberposts' => '1', 'category' => 16, 'order' => 'DESC', 'post_type' => 'resource' );
+						$args = array( 'category' => 16, 'order' => 'DESC', 'post_type' => 'resource' );
 						$featured_col = wp_get_recent_posts( $args );
 						foreach( $featured_col as $featured ) {
 					?>
-						<a href="<?php echo $featured["p"]; ?>">
+						<a href="<?php echo $featured["guid"]; ?>">
 							<li>
 								<p><span class="title"><?php echo $featured["post_title"]; ?></span><span class="format"></span></p>
 								<p><span class="name">-</span><span class="size"><? echo $featured["post_date_gmt"]?></span>
