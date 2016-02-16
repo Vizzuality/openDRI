@@ -160,19 +160,19 @@
 						</article>
 					</a>
 				<? } ?>
-					<ul class="resource-list">
+					<ul class="resource-list home">
 						<?
-						$args = array( 'category' => 16, 'order' => 'DESC', 'post_type' => 'resource' );
+						$args = array( 'numberposts' => '4', 'category' => 16, 'order' => 'DESC', 'post_type' => 'resource' );
 						$featured_col = wp_get_recent_posts( $args );
 						foreach( $featured_col as $featured ) {
 					?>
-						<a href="<?php echo $featured["guid"]; ?>">
-							<li>
+						<li>
+							<a href="<?php echo $featured["guid"]; ?>">
 								<p><span class="title"><?php echo $featured["post_title"]; ?></span><span class="format"></span></p>
 								<p><span class="name">-</span><span class="size"><? echo $featured["post_date_gmt"]?></span>
 								</p>
-							</li>
-						</a>
+							</a>
+						</li>
 					<? } // end foreach ?>
 					</ul>
 				</div>
