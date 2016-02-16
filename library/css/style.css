@@ -1856,11 +1856,13 @@ POSTS & CONTENT STYLES
       margin: 0;
       width: 100%; }
       .index-row .resource-list.home li a {
-        color: #1477c9; }
+        color: rgba(85, 85, 85, 0.5); }
       .index-row .resource-list.home li p {
         line-height: 20px;
-        font-size: 14px; }
+        font-size: 14px;
+        margin: 3px; }
       .index-row .resource-list.home li .title {
+        color: #1477c9;
         font-weight: bold; }
   .index-row .card-third h3 {
     font-size: 48px;
