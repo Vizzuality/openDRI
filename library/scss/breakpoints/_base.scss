@@ -1223,9 +1223,16 @@ margin: 0;
 			}
 			.contact-submit {
 				text-align: right;
+				margin: 0;
 				.pushbutton-wide {
-					border: 0;
-    				color: rgba(85,85,85,0.3);
+					width: 71px;
+				    height: 25px;
+				    opacity: 0.2;
+				    border-radius: 5px;
+				    text-transform: uppercase;
+				    border: solid 1px #979797;
+				    color: #000;
+				    font-weight: bold;
 				}
 			}
 		}
