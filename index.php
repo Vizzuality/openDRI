@@ -162,7 +162,7 @@
 				<? } ?>
 					<ul class="resource-list home">
 						<?
-						$args = array( 'numberposts' => '3', 'category' => 16, 'order' => 'DESC', 'post_type' => 'resource' );
+						$args = array( 'numberposts' => '4', 'category' => 16, 'order' => 'DESC', 'post_type' => 'resource' );
 						$featured_col = wp_get_recent_posts( $args );
 						foreach( $featured_col as $featured ) {
 					?>
