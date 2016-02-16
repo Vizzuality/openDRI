@@ -2122,6 +2122,15 @@ FOOTER STYLES
    	    	}
 	    }
 	}
+	&.about {
+		.current {
+			padding: 3px 10px;
+		}
+		span a {
+			position: relative;
+    		top: 3px;
+		}
+	}
 }
 .category .blue-bar-top .region-filter li:first-child {padding: 8px 20px;}
 .container-region-filter {
