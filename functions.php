@@ -228,12 +228,19 @@ function my_login_logo() { ?>
     <style type="text/css">
         .login h1 a {
             background-image: url(<?php echo get_template_directory_uri(); ?>/logo.svg) !important;
-            padding-bottom: 30px !important;
         }
     </style>
 <?php }
 add_action( 'login_enqueue_scripts', 'my_login_logo' );
+function my_login_logo_url() {
+    return home_url();
+}
+add_filter( 'login_headerurl', 'my_login_logo_url' );
 
+function my_login_logo_url_title() {
+    return 'Open Data for Resilience Initiative';
+}
+add_filter( 'login_headertitle', 'my_login_logo_url_title' );
 
 /************* ACTIVE SIDEBARS ********************/
 
