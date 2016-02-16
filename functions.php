@@ -227,8 +227,8 @@ add_action( 'save_post', 'save_on_cartodb', 10, 3  );
 function my_login_logo() { ?>
     <style type="text/css">
         .login h1 a {
-            background-image: url(<?php echo get_template_directory_uri(); ?>/logo.svg);
-            padding-bottom: 30px;
+            background-image: url(<?php echo get_template_directory_uri(); ?>/logo.svg) !important;
+            padding-bottom: 30px !important;
         }
     </style>
 <?php }
