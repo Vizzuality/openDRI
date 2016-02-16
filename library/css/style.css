@@ -1864,6 +1864,10 @@ POSTS & CONTENT STYLES
       .index-row .resource-list.home li .title {
         color: #1477c9;
         font-weight: bold; }
+      .index-row .resource-list.home li .size {
+        width: 100%;
+        display: block;
+        text-align: right; }
   .index-row .card-third h3 {
     font-size: 48px;
     text-transform: capitalize;
