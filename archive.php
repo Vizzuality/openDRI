@@ -126,7 +126,7 @@ if(is_post_type_archive() && $post_type=='project') {
 										<span class="title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></span>
 									</div>
 									<div>
-										<span class="name">topic/issue</span><span class="size"><?php the_date() ?></span>
+										<span class="name"></span><span class="size"><?php the_date() ?></span>
 									</div>
 								</li>
 								<? else: ?>
@@ -165,7 +165,7 @@ if(is_post_type_archive() && $post_type=='project') {
 									</ul>
 									<div class="m-all cf index-row last-resources">
 									<?
-										$args = array( 'numberposts' => '1', 'category' => 'highlighted-resource', 'order' => 'DESC', 'post_type' => 'resource' );
+										$args = array( 'numberposts' => '1', 'category' => 16, 'order' => 'DESC', 'post_type' => 'resource' );
 										$featured_col = wp_get_recent_posts( $args );
 										$image1 = '';
 										$image2 = '';
@@ -181,7 +181,7 @@ if(is_post_type_archive() && $post_type=='project') {
 											</article>
 										</a>
 									<? } 
-										$args = array( 'numberposts' => '1', 'category' => 'highlighted-resource',  'order' => 'DESC', 'offset' => '1', 'post_type' => 'resource' );
+										$args = array( 'numberposts' => '1', 'category' => 16,  'order' => 'DESC', 'offset' => '1', 'post_type' => 'resource' );
 										$featured_col = wp_get_recent_posts( $args );
 										foreach( $featured_col as $featured ) {
 											$image = wp_get_attachment_image_src( get_post_thumbnail_id( $featured["ID"] ), 'single-post-thumbnail' );

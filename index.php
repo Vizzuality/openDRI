@@ -125,7 +125,7 @@
 				</div>
 				<div class="row-container">
 				<?
-					$args = array( 'numberposts' => '1', 'category' => 'highlighted-resource', 'order' => 'DESC', 'post_type' => 'resource' );
+					$args = array( 'numberposts' => '1', 'category' => 16, 'order' => 'DESC', 'post_type' => 'resource' );
 					$featured_col = wp_get_recent_posts( $args );
 					$image1 = '';
 					$image2 = '';
@@ -146,7 +146,7 @@
 			<div class="m-all cf index-row last-resources" role="resources" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 				<div class="row-container">
 				<?
-					$args = array( 'numberposts' => '1', 'category' => 'highlighted-resource',  'order' => 'DESC', 'offset' => '1', 'post_type' => 'resource' );
+					$args = array( 'numberposts' => '1', 'category' => 16,  'order' => 'DESC', 'offset' => '1', 'post_type' => 'resource' );
 					$featured_col = wp_get_recent_posts( $args );
 					foreach( $featured_col as $featured ) {
 						$image = wp_get_attachment_image_src( get_post_thumbnail_id( $featured["ID"] ), 'single-post-thumbnail' );
@@ -161,20 +161,19 @@
 					</a>
 				<? } ?>
 					<ul class="resource-list">
-						<a href="https://www.gfdrr.org/sites/default/files/publication/OpenDRI_Overview_2013.pdf" target="_blank"></a>
+						<?
+						$args = array( 'numberposts' => '1', 'category' => 16, 'order' => 'DESC', 'post_type' => 'resource' );
+						$featured_col = wp_get_recent_posts( $args );
+						foreach( $featured_col as $featured ) {
+					?>
+						<a href="<?php echo $featured["p"]; ?>">
 							<li>
-								<p><span class="title">Open DRI Overview 2013</span><span class="format">pdf</span></p>
-								<p><span class="name">-</span><span class="size">3.6MB</span>
+								<p><span class="title"><?php echo $featured["post_title"]; ?></span><span class="format"></span></p>
+								<p><span class="name">-</span><span class="size"><? echo $featured["post_date_gmt"]?></span>
 								</p>
 							</li>
 						</a>
-						<a href="https://www.youtube.com/watch?v=A1P4phxRghM" target="_blank">
-							<li>
-								<p><span class="title">Building Resilience with GeoNode</span><span class="format">video</span></p>
-								<p><span class="name">-</span><span class="size">128kb</span>
-								</p>
-							</li>
-						</a>
+					<? } // end foreach ?>
 					</ul>
 				</div>
 			</div>
