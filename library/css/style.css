@@ -2190,7 +2190,8 @@ POSTS & CONTENT STYLES
 .page .cdbmap {
   display: block;
   height: 600px;
-  margin: 0 0 90px; }
+  margin: 0 0 90px;
+  background-color: #0073cf; }
 .archive .corner-map,
 .page .corner-map {
   height: 460px;
