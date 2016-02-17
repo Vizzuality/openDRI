@@ -1955,13 +1955,13 @@ POSTS & CONTENT STYLES
   border-radius: 3px;
   margin-bottom: 1.5em;
   border: 1px solid #ccc; }
-  .hentry a, .hentry .img {
+  .hentry > a, .hentry .img {
     height: 70%;
     width: 100%;
     display: block;
     background-position: 50% 50%;
     background-size: cover; }
-  .hentry a {
+  .hentry > a {
     display: inline;
     color: currentColor; }
   .hentry header {
