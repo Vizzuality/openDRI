@@ -2286,20 +2286,19 @@ div.cartodb-popup .cartodb-popup-close-button {
 }
 @media (max-width: 768px) {
   .home #map-fake .what-list { width: 100%; }
-  .blue-bar-top {align-items: flex-start;}
   .blue-bar-top.about {align-items: center; height: 150px; margin: 0 0 -90px;}
   .home .index-row article.resource-cont, .index-row .card-third.resource-cont { width: 50vh; }
   .blue-bar-top .wrapper .region-filter li:first-child i {display: none;}
   .archive .cdbmap, .page .cdbmap {display: none;}
-  .header nav span.current {display: none;}
   .no-home .header nav {width: 100%;}
   .no-home .header {height: 120px;}
-  .blue-bar-top .wrapper.filters span {top: 0; padding: 10px;}
-  #blue-bar-pick-pillar {height: 100%; border: none;}
-  .blue-bar-top {height: 240px; margin: 0 0 30px;}
-  .blue-bar-top .wrapper {-webkit-flex-direction: column; flex-direction: column; height: 40%;}
+  .blue-bar-top .wrapper.filters span {top: 0; padding: 10px; margin: 0; width: 65px;}
+  #blue-bar-pick-pillar { height: 70px; border: none; width: 100%; border-bottom: 1px solid rgba(255,255,255,0.5); overflow: hidden;}
+  .blue-bar-top {align-items: flex-start; height: 240px; margin: 0 0 30px; width: 100%;}
+  .blue-bar-top .wrapper {-webkit-flex-direction: column; flex-direction: column;}
   .blue-bar-top.about .wrapper {height: 70%;}
-  .blue-bar-top .wrapper .region-filter li {display: inline; padding: 0 10px 0 0;}
+  .blue-bar-top .wrapper .region-filter li {display: table; padding: 0 10px 0 0 !important;}
+  .category .blue-bar-top .region-filter li:first-child {padding: inherit;}
   .blue-bar-top .wrapper .region-filter {position: relative;display: inline !important; background-color: transparent;}
   #toggle-filter-region {display: none; width: 100%;}
   .blue-bar-top .wrapper .region-filter li.clear-map {display: none;}
@@ -2315,10 +2314,11 @@ div.cartodb-popup .cartodb-popup-close-button {
   .page #members h3 {width: 100%;}
   .page #partners h3 {width: 100%;}
   .page #contact .index-row .card-third {padding: 10px;}
-  .category-news .blue-bar-top {height: 320px;}
-  .category-news .blue-bar-top .wrapper .region-filter li {display: block;}
+  .category-news .blue-bar-top {height: 210px;}
+  .category-news .blue-bar-top .wrapper .region-filter li {display: inline;}
   .category-news #main > h3 {max-width: 100%}
   .category-news #main .row-container article, .post-type-archive-resource #main .row-container article {max-width: none; width: 90%;}
+  .category-news #main {margin: 0;}
   .hentry.-odri-post.category-news {width: 100%; padding: 1em;}
   div#principles.m-all.cf.index-row.about-content { height: 900px; }
   .page .p-info.double p {width: 100%;}
@@ -2326,4 +2326,8 @@ div.cartodb-popup .cartodb-popup-close-button {
   .page #members .-m-team-member .-m-info { width: 100%; margin: 0 10px; }
   .page #members .-m-team-member img { display: block; margin: 0 auto 30px; }
   .page #contact .contact-form textarea { width: 100%; }
+  .blue-bar-top .wrapper span a i { transform: scale(2); visibility: visible; margin: 10px;}
+  .blue-bar-top .wrapper span a {visibility: hidden;}
+  .blue-bar-top .wrapper .region-filter li a { width: initial; display: inherit; }
+  .header nav input.visible { margin: 0px 5px 0 80px; position: relative; top: -3px;}
 }
