@@ -1752,7 +1752,8 @@ POSTS & CONTENT STYLES
     flex-direction: column;
     justify-content: space-around;
     height: 350px;
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
     .index-row article.project,
     .index-row .card-third.project {
       max-width: 325px;
@@ -1956,7 +1957,8 @@ POSTS & CONTENT STYLES
   margin-bottom: 1.5em;
   border: 1px solid #ccc; }
   .hentry > a, .hentry .img {
-    height: 70%;
+    height: 0%;
+    padding-bottom: 70%;
     width: 100%;
     display: block;
     background-position: 50% 50%;
