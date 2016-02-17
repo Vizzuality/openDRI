@@ -1956,9 +1956,10 @@ POSTS & CONTENT STYLES
   border-radius: 3px;
   margin-bottom: 1.5em;
   border: 1px solid #ccc; }
-  .hentry a, .hentry .img {
-    height: 70%;
+  .hentry > a, .hentry .img {
+    height: 0%;
     width: 100%;
+    padding-bottom: 70%;
     display: block;
     background-position: 50% 50%;
     background-size: cover; }
@@ -1974,7 +1975,8 @@ POSTS & CONTENT STYLES
     justify-content: center;
     align-items: center;
     transform: translate(0, -33%);
-    transition: background 0.3s ease; }
+    transition: background 0.3s ease;
+    height: 100%; }
     .hentry header:hover {
       background: #2791e9; }
     .hentry header a {
@@ -2054,7 +2056,6 @@ POSTS & CONTENT STYLES
 .entry-title {
   margin: 0;
   width: 100%;
-  height: 100%;
   padding: 10px;
   line-height: 16px;
   text-align: center; }
