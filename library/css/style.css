@@ -3315,6 +3315,9 @@ div.cartodb-popup .cartodb-popup-close-button {
     background-color: transparent;
     color: #fff; } }
 @media (max-width: 768px) {
+  .header nav span.current {
+    display: none; }
+
   .home #map-fake .what-list {
     width: 100%; }
 
@@ -3426,9 +3429,9 @@ div.cartodb-popup .cartodb-popup-close-button {
     padding: 10px; }
 
   .category-news .blue-bar-top {
-    height: 210px; }
+    height: 160px; }
 
-  .category-news .blue-bar-top .wrapper .region-filter li {
+  .blue-bar-top .wrapper .region-filter li {
     display: inline; }
 
   .category-news #main > h3 {
@@ -3437,6 +3440,9 @@ div.cartodb-popup .cartodb-popup-close-button {
   .category-news #main .row-container article, .post-type-archive-resource #main .row-container article {
     max-width: none;
     width: 90%; }
+
+  .blue-bar-top .wrapper .region-filter {
+    top: 0; }
 
   .category-news #main {
     margin: 0; }

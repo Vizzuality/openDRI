@@ -2285,6 +2285,7 @@ div.cartodb-popup .cartodb-popup-close-button {
   .blue-bar-top .wrapper span.current {background-color: transparent; color: #fff;}
 }
 @media (max-width: 768px) {
+  .header nav span.current {display: none;}
   .home #map-fake .what-list { width: 100%; }
   .blue-bar-top.about {align-items: center; height: 150px; margin: 0 0 -90px;}
   .home .index-row article.resource-cont, .index-row .card-third.resource-cont { width: 50vh; }
@@ -2314,10 +2315,11 @@ div.cartodb-popup .cartodb-popup-close-button {
   .page #members h3 {width: 100%;}
   .page #partners h3 {width: 100%;}
   .page #contact .index-row .card-third {padding: 10px;}
-  .category-news .blue-bar-top {height: 210px;}
-  .category-news .blue-bar-top .wrapper .region-filter li {display: inline;}
+  .category-news .blue-bar-top {height: 160px;}
+  .blue-bar-top .wrapper .region-filter li {display: inline;}
   .category-news #main > h3 {max-width: 100%}
   .category-news #main .row-container article, .post-type-archive-resource #main .row-container article {max-width: none; width: 90%;}
+  .blue-bar-top .wrapper .region-filter {top: 0;}
   .category-news #main {margin: 0;}
   .hentry.-odri-post.category-news {width: 100%; padding: 1em;}
   div#principles.m-all.cf.index-row.about-content { height: 900px; }
