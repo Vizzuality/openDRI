@@ -1961,6 +1961,10 @@ POSTS & CONTENT STYLES
     display: block;
     background-position: 50% 50%;
     background-size: cover; }
+  .hentry .img {
+    padding-bottom: 56%;
+    position: relative;
+    top: -20px; }
   .hentry a {
     display: inline;
     color: currentColor; }
