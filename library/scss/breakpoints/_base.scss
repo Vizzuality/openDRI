@@ -793,13 +793,15 @@ POSTS & CONTENT STYLES
 	border-radius: 3px;
 	margin-bottom: 1.5em;
 	border: 1px solid $border-color;
-	a,.img {
+	> a,.img {
 		height: 0%;
 	    width: 100%;
 	    padding-bottom: 45%;
 	    display: block;
 	    background-position: 50% 50%;
     	background-size: cover;
+    	position: relative;
+    	top: -10px;
 	}
 	a {
 		display: inline;
