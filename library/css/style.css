@@ -3323,8 +3323,8 @@ div.cartodb-popup .cartodb-popup-close-button {
 
   .blue-bar-top.about {
     align-items: center;
-    height: 150px;
-    margin: 0 0 -90px; }
+    height: 60px;
+    margin: 0 0 -120px; }
 
   .home .index-row article.resource-cont, .index-row .card-third.resource-cont {
     width: 50vh; }
@@ -3365,7 +3365,8 @@ div.cartodb-popup .cartodb-popup-close-button {
     flex-direction: column; }
 
   .blue-bar-top.about .wrapper {
-    height: 70%; }
+    height: 80%;
+    display: inline; }
 
   .blue-bar-top .wrapper .region-filter li {
     display: table;
@@ -3405,10 +3406,11 @@ div.cartodb-popup .cartodb-popup-close-button {
 
   .archive .index-row .row-container, .page .index-row .row-container {
     -webkit-flex-direction: column;
-    flex-direction: column; }
+    flex-direction: column;
+    align-items: center; }
 
   .page #partners .-m-partner {
-    width: 100%; }
+    width: 90%; }
 
   .archive #contact, .page #contact {
     display: table; }
@@ -3489,7 +3491,18 @@ div.cartodb-popup .cartodb-popup-close-button {
     top: -3px; }
 
   .category-news nav input.visible {
-    margin: 0px 5px 0 80px; } }
+    margin: 0px 5px 0 80px; }
+
+  .post-type-archive-project #main > h3,
+  .post-type-archive-resource #main > h3 {
+    width: 100%;
+    max-width: 100%; }
+
+  .post-type-archive-resource #main {
+    margin: 0; }
+
+  .blue-bar-top.about .wrapper span a {
+    visibility: visible; } }
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
