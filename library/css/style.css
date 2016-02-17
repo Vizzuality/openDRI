@@ -3320,7 +3320,7 @@ div.cartodb-popup .cartodb-popup-close-button {
     display: block; } }
 @media (max-width: 768px) {
   .header nav span.current {
-    display: none; }
+    display: none !important; }
 
   .home #map-fake .what-list {
     width: 100%; }
