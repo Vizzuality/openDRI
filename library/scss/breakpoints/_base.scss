@@ -794,11 +794,10 @@ POSTS & CONTENT STYLES
 	border-radius: 3px;
 	margin-bottom: 1.5em;
 	border: 1px solid $border-color;
-	> a,.img {
-		height: 0%;
-		width: 100%;
-		padding-bottom: 70%; 
-		display: block;
+	a,.img {
+		height: 70%;
+	    width: 100%;
+	    display: block;
 	    background-position: 50% 50%;
     	background-size: cover;
 	}
@@ -816,14 +815,19 @@ POSTS & CONTENT STYLES
 		align-items: center;
 		transform: translate(0, -33%);
 		transition: background 0.3s ease;
-		height: 100%;
 		&:hover {
 			background: lighten($text-bkg-blue,10%);
 		}
 		a {
 			font-size: 15px;
 			text-transform: uppercase;
+			text-align: center;
+			width: 100%;
+		    height: 100%;
+		    display: block;
 			font-family: Bariol_Bold;
+	    	padding: 10px;
+	    	line-height: 20px;
 	    	color: #fff;
 		}
 	}
@@ -902,9 +906,7 @@ POSTS & CONTENT STYLES
 .entry-title {
 	margin: 0;
 	width: 100%;
-	padding: 10px;
-    line-height: 16px;
-    text-align: center;
+	height: 100%;
 }
 
 .single-title {}
