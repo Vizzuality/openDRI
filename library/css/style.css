@@ -1962,7 +1962,8 @@ POSTS & CONTENT STYLES
     background-position: 50% 50%;
     background-size: cover; }
   .hentry a {
-    display: inline; }
+    display: inline;
+    color: currentColor; }
   .hentry header {
     border-bottom: 1px solid #f8f9fa;
     background: #1477c9;
