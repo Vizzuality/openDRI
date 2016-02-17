@@ -2287,7 +2287,7 @@ div.cartodb-popup .cartodb-popup-close-button {
 @media (max-width: 768px) {
   .header nav span.current {display: none;}
   .home #map-fake .what-list { width: 100%; }
-  .blue-bar-top.about {align-items: center; height: 150px; margin: 0 0 -90px;}
+  .blue-bar-top.about {align-items: center; height: 60px; margin: 0 0 -120px;}
   .home .index-row article.resource-cont, .index-row .card-third.resource-cont { width: 50vh; }
   .blue-bar-top .wrapper .region-filter li:first-child i {display: none;}
   .archive .cdbmap, .page .cdbmap {display: none;}
@@ -2297,7 +2297,7 @@ div.cartodb-popup .cartodb-popup-close-button {
   #blue-bar-pick-pillar { height: 70px; border: none; width: 100%; border-bottom: 1px solid rgba(255,255,255,0.5); overflow: hidden;}
   .blue-bar-top {align-items: flex-start; height: 240px; margin: 0 0 30px; width: 100%;}
   .blue-bar-top .wrapper {-webkit-flex-direction: column; flex-direction: column;}
-  .blue-bar-top.about .wrapper {height: 70%;}
+  .blue-bar-top.about .wrapper {height: 80%; display: inline;}
   .blue-bar-top .wrapper .region-filter li {display: table; padding: 0 10px 0 0 !important;}
   .category .blue-bar-top .region-filter li:first-child {padding: inherit;}
   .blue-bar-top .wrapper .region-filter {position: relative;display: inline !important; background-color: transparent;}
@@ -2307,8 +2307,8 @@ div.cartodb-popup .cartodb-popup-close-button {
   .blue-bar-top .wrapper .region-filter input { position: relative; top: -10px;}
   .blue-bar-top.fixed {  position: inherit; top: inherit;  width: inherit; opacity: inherit;}
   .archive .p-info h4, .page .p-info h4 { width: 100%; top: -25px;}
-  .archive .index-row .row-container, .page .index-row .row-container {-webkit-flex-direction: column; flex-direction: column;}
-  .page #partners .-m-partner {width: 100%;}
+  .archive .index-row .row-container, .page .index-row .row-container {-webkit-flex-direction: column; flex-direction: column; align-items: center;}
+  .page #partners .-m-partner {width: 90%;}
   .archive #contact, .page #contact {display: table;}
   .archive .corner-map, .page .corner-map {display: none}
   .page #more-content h3 {width: 100%;}
@@ -2333,4 +2333,8 @@ div.cartodb-popup .cartodb-popup-close-button {
   .blue-bar-top .wrapper .region-filter li a { width: initial; display: inherit; }
   .header nav input.visible { margin: 0px 5px 0 0px; position: relative; top: -3px;}
   .category-news nav input.visible { margin: 0px 5px 0 80px;}
+  .post-type-archive-project #main > h3,
+  .post-type-archive-resource #main > h3 {width: 100%; max-width: 100%;}
+  .post-type-archive-resource #main {margin: 0;}
+  .blue-bar-top.about .wrapper span a {visibility: visible;}
 }
