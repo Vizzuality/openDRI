@@ -1765,10 +1765,21 @@ POSTS & CONTENT STYLES
       height: auto;
       font-size: 15px;
       display: -webkit-box;
-      line-height: 1.23;
+      line-height: 1.74;
       -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
-      text-overflow: ellipsis; }
+      text-overflow: ellipsis;
+      position: relative; }
+      .index-row article .entry-content:after,
+      .index-row .card-third .entry-content:after {
+        content: "";
+        text-align: right;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 70%;
+        height: 24px;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.7) 50%); }
     .index-row article.resource-cont,
     .index-row .card-third.resource-cont {
       position: relative;
