@@ -572,8 +572,8 @@ POSTS & CONTENT STYLES
 	    flex-direction: column;
 	    justify-content: space-around;
 	    height: 350px;
-	    position: relative;
 	    overflow: hidden;
+	    position: relative;
 	    &.project {
 	    	max-width: 325px;
 	    	width: 325px;
@@ -794,15 +794,14 @@ POSTS & CONTENT STYLES
 	border-radius: 3px;
 	margin-bottom: 1.5em;
 	border: 1px solid $border-color;
-	> a,.img {
-		height: 0%;
-		padding-bottom: 70%;
+	a,.img {
+		height: 70%;
 	    width: 100%;
 	    display: block;
 	    background-position: 50% 50%;
     	background-size: cover;
 	}
-	> a {
+	a {
 		display: inline;
 		color: currentColor;
 	}
