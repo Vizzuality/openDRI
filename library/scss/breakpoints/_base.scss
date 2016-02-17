@@ -821,13 +821,7 @@ POSTS & CONTENT STYLES
 		a {
 			font-size: 15px;
 			text-transform: uppercase;
-			text-align: center;
-			width: 100%;
-		    height: 100%;
-		    display: block;
 			font-family: Bariol_Bold;
-	    	padding: 10px;
-	    	line-height: 20px;
 	    	color: #fff;
 		}
 	}
@@ -907,6 +901,9 @@ POSTS & CONTENT STYLES
 	margin: 0;
 	width: 100%;
 	height: 100%;
+	padding: 10px;
+    line-height: 16px;
+    text-align: center;
 }
 
 .single-title {}

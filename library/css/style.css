@@ -1980,13 +1980,7 @@ POSTS & CONTENT STYLES
     .hentry header a {
       font-size: 15px;
       text-transform: uppercase;
-      text-align: center;
-      width: 100%;
-      height: 100%;
-      display: block;
       font-family: Bariol_Bold;
-      padding: 10px;
-      line-height: 20px;
       color: #fff; }
   .hentry _:-webkit-full-screen:not(:root:root), .hentry header {
     display: flex;
@@ -2060,7 +2054,10 @@ POSTS & CONTENT STYLES
 .entry-title {
   margin: 0;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  padding: 10px;
+  line-height: 16px;
+  text-align: center; }
 
 .archive-title {
   color: #1477c9; }
