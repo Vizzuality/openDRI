@@ -1985,7 +1985,8 @@ POSTS & CONTENT STYLES
       display: inline-block;
       font-family: Bariol_Bold;
       padding: 10px;
-      line-height: 20px; }
+      line-height: 20px;
+      color: #fff; }
   .hentry _:-webkit-full-screen:not(:root:root), .hentry header {
     display: flex;
     display: -webkit-box;
@@ -3434,23 +3435,40 @@ div.cartodb-popup .cartodb-popup-close-button {
   .page #contact .index-row .card-third {
     padding: 10px; }
 
-  .category-news .blue-bar-top {
+  .category-news .blue-bar-top,
+  .category-community-mapping .blue-bar-top,
+  .risk-visualizations .blue-bar-top,
+  .category-open-data-platforms .blue-bar-top {
     height: 160px; }
 
   .blue-bar-top .wrapper .region-filter li {
     display: inline; }
 
-  .category-news #main > h3 {
+  .category-news #main > h3,
+  .category-news #main > h1,
+  .category-community-mapping #main > h3,
+  .category-community-mapping #main > h1,
+  .risk-visualizations #main > h3,
+  .risk-visualizations #main > h1,
+  .category-open-data-platforms #main > h3,
+  .category-open-data-platforms #main > h1 {
     max-width: 100%; }
 
-  .category-news #main .row-container article, .post-type-archive-resource #main .row-container article {
+  .category-news #main .row-container article,
+  .post-type-archive-resource #main .row-container article,
+  .category-community-mapping #main .row-container article,
+  .risk-visualizations #main .row-container article,
+  .category-open-data-platforms #main .row-container article {
     max-width: none;
     width: 90%; }
 
   .blue-bar-top .wrapper .region-filter {
     top: 0; }
 
-  .category-news #main {
+  .category-news #main,
+  .category-community-mapping #main,
+  .risk-visualizations #main,
+  .category-open-data-platforms #main {
     margin: 0; }
 
   .hentry.-odri-post.category-news {
@@ -3494,7 +3512,10 @@ div.cartodb-popup .cartodb-popup-close-button {
     position: relative;
     top: -3px; }
 
-  .category-news nav input.visible {
+  .category-news nav input.visible,
+  .category-community-mapping nav input.visible,
+  .risk-visualizations nav input.visible,
+  .category-open-data-platforms nav input.visible {
     margin: 0px 5px 0 80px; }
 
   .post-type-archive-project #main > h3,
