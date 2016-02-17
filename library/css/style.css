@@ -3502,7 +3502,11 @@ div.cartodb-popup .cartodb-popup-close-button {
     margin: 0; }
 
   .blue-bar-top.about .wrapper span a {
-    visibility: visible; } }
+    visibility: visible; }
+
+  .index-row .resource-list li {
+    display: block;
+    width: 90%; } }
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
