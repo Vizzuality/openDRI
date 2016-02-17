@@ -3506,6 +3506,9 @@ div.cartodb-popup .cartodb-popup-close-button {
 
   .index-row .resource-list li {
     display: block;
+    width: 90%; }
+
+  .archive .index-row .resource-list {
     width: 90%; } }
 /*********************
 LARGER MOBILE DEVICES
