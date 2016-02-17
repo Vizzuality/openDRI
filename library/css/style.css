@@ -3478,9 +3478,12 @@ div.cartodb-popup .cartodb-popup-close-button {
     display: inherit; }
 
   .header nav input.visible {
-    margin: 0px 5px 0 80px;
+    margin: 0px 5px 0 0px;
     position: relative;
-    top: -3px; } }
+    top: -3px; }
+
+  .category-news nav input.visible {
+    margin: 0px 5px 0 80px; } }
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
