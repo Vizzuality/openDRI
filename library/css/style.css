@@ -2116,7 +2116,7 @@ POSTS & CONTENT STYLES
     display: block;
     display: -webkit-box;
     max-width: 400px;
-    height: calc(148 * 1.2 * 4px);
+    height: auto;
     font-size: 15px;
     line-height: 1.13;
     -webkit-line-clamp: 5;
@@ -3631,7 +3631,7 @@ div.cartodb-popup .cartodb-popup-close-button {
   .category-community-mapping #main,
   .risk-visualizations #main,
   .category-open-data-platforms #main {
-    margin: 0; }
+    margin: 30px 0 0; }
 
   .hentry.-odri-post.category-news {
     width: 100%;

@@ -968,7 +968,7 @@ POSTS & CONTENT STYLES
 		display: block;
 	    display: -webkit-box; // fallback for non-webkit
 	    max-width: 400px;
-	    height: calc(148 * 1.2 * 4px); // fallback for non-webkit
+	    height: auto; // fallback for non-webkit
 	    font-size: 15px;
 	    line-height: 1.13;
 	    -webkit-line-clamp: 5;
