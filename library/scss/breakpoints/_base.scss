@@ -2220,6 +2220,7 @@ FOOTER STYLES
 		    height: 100%;
 		    padding: 0 0 0 22px;
 		    position: relative;
+		    border: none;
 		    li {
 		    	font-size: 15px;
 		    	text-transform: uppercase;
@@ -2409,37 +2410,36 @@ div.cartodb-popup .cartodb-popup-close-button {
 }
 @media (max-width: 768px) {
 	#logo img {display: none;}
-	#logo a{
-		content: ''; background-image: url(http://opendri.simbiotica.es/wp-content/themes/openDRI/logo-extended.svg); width: 305px; background-repeat: no-repeat; height: 55px; visibility: visible; display: block; position: relative;top: -5px;}
+	#logo a{ content: ''; background-image: url(http://opendri.simbiotica.es/wp-content/themes/openDRI/logo-extended.svg); width: 305px; background-repeat: no-repeat; height: 55px; visibility: visible; display: block; position: relative;top: -5px;}
   .no-home .header .hr {display: block;}
   .header nav img {top: 1px;}
   .no-home .header nav { top: 10px; }
   .header nav span {font-size: 11px;}
   .header nav span.current {height: 12px;line-height: 28px; top: -8px;}
   .home #map-fake .what-list { width: 100%; }
-  // .blue-bar-top.about {align-items: center; height: 60px; margin: 0 0 -120px;}
+  .blue-bar-top.about {align-items: center; height: 60px; margin: 0 0 -120px;}
   .home .index-row article.resource-cont, .index-row .card-third.resource-cont { width: 50vh; }
-  // .blue-bar-top .wrapper .region-filter li:first-child i {display: none;}
+  .blue-bar-top .wrapper .region-filter li:first-child i {display: none;}
   .archive .cdbmap, .page .cdbmap {height: 330px;}
-  .no-home .header nav {width: 100%;}
+  .no-home .header nav {width: 100%; }
   .no-home .header {height: 120px;}
-  // .blue-bar-top .wrapper.filters span {top: 0; padding: 10px; margin: 0; width: 65px;}
-  // #blue-bar-pick-pillar { height: 70px; border: none; width: 100%; border-bottom: 1px solid rgba(255,255,255,0.5); overflow: hidden;}
-  // .blue-bar-top {align-items: flex-start; height: 240px; margin: 0; width: 100%;}
-  // .blue-bar-top .wrapper {-webkit-flex-direction: column; flex-direction: column;}
-  // .blue-bar-top.about .wrapper {height: 80%; display: inline;}
-  // .blue-bar-top .wrapper .region-filter li {display: table; padding: 0 10px 0 0 !important;}
-  // .category .blue-bar-top .region-filter li:first-child {padding: inherit;}
-  // .blue-bar-top .wrapper .region-filter {position: relative;display: inline !important; background-color: transparent;}
-  // #toggle-filter-region {display: none; width: 100%;}
-  // .blue-bar-top .wrapper .region-filter li.clear-map {display: none;}
-  // .blue-bar-top .wrapper .region-filter li::first-child {padding: 0;}
-  // .blue-bar-top .wrapper .region-filter input { position: relative; top: -10px;}
-  // .blue-bar-top.fixed {  position: inherit; top: inherit;  width: inherit; opacity: inherit;}
-  // .archive .p-info h4, .page .p-info h4 { width: 100%; top: -25px;}
-  // .archive .index-row .row-container, .page .index-row .row-container {-webkit-flex-direction: column; flex-direction: column; align-items: center;}
-  .blue-bar-top {display: none;}
-  .blue-bar-top-m {display: block;}
+  .blue-bar-top .wrapper.filters span {top: 0; padding: 10px; margin: 0; width: 65px;}
+  #blue-bar-pick-pillar { height: 70px; border: none; width: 100%; border-bottom: 1px solid rgba(255,255,255,0.5); overflow: hidden;}
+  .blue-bar-top {align-items: flex-start; height: 240px; margin: 0; width: 100%;}
+  .blue-bar-top .wrapper {-webkit-flex-direction: column; flex-direction: column;}
+  .blue-bar-top.about .wrapper {height: 80%; display: inline;}
+  .blue-bar-top .wrapper .region-filter li {display: table; padding: 0 10px 0 0 !important;}
+  .category .blue-bar-top .region-filter li:first-child {padding: inherit;}
+  .blue-bar-top .wrapper .region-filter {position: relative;display: inline !important; background-color: transparent;}
+  #toggle-filter-region {display: none; width: 100%;}
+  .blue-bar-top .wrapper .region-filter li.clear-map {display: none;}
+  .blue-bar-top .wrapper .region-filter li::first-child {padding: 0;}
+  .blue-bar-top .wrapper .region-filter input { position: relative; top: -10px;}
+  .blue-bar-top.fixed {  position: inherit; top: inherit;  width: inherit; opacity: inherit;}
+  .archive .p-info h4, .page .p-info h4 { width: 100%; top: -25px;}
+  .archive .index-row .row-container, .page .index-row .row-container {-webkit-flex-direction: column; flex-direction: column; align-items: center;}
+  .archive .blue-bar-top {display: none;}
+  .archive .blue-bar-top-m {display: block;}
   .page #partners .-m-partner {width: 90%;}
   .archive #contact, .page #contact {display: table;}
   .archive .corner-map, .page .corner-map {display: none}
