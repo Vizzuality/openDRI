@@ -2492,4 +2492,6 @@ div.cartodb-popup .cartodb-popup-close-button {
   .index-row .resource-list li {display: block; width: 90%;}
   .archive .index-row .resource-list {width: 90%;}
   .leaflet-top .leaflet-control {margin-top: 10px !important;}
+  #map-fake {height: 526px;}
+  #map-fake:after {background: #0e5fa2;}
 }
