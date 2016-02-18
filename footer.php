@@ -48,6 +48,8 @@
 			if 		 (location.pathname.includes('/about')) document.getElementById('menu-option-about').classList.add("current");
 			else if  (location.pathname.includes('/project')) document.getElementById('menu-option-projects').classList.add("current");
 			else if  (location.pathname.includes('/news')) document.getElementById('menu-option-news').classList.add("current");
+			else if  (location.pathname.includes('/pillars')) document.getElementById('menu-option-news').classList.add("current");
+			else if  (location.pathname.includes('/regions')) document.getElementById('menu-option-news').classList.add("current");
 			else if  (location.pathname.includes('/resource')) document.getElementById('menu-option-resources').classList.add("current");
 		}
 		checkUrl();
@@ -86,7 +88,7 @@
 				filterRegion  = '',
 				filterPillar  = '';
 		    function init(){
-		    	if ($(window).width() <= 768) {
+		    	if ($(window).width() <= 768 && $('body').hasClass('archive')) {
 		    		$('.blue-bar-top').remove();
 		    	} else {
 		    		$('.blue-bar-top-m').remove();
@@ -730,9 +732,6 @@
 				$('#reset-map').on('click', function(){
 					location.reload();
 				});
-				$('#blue-bar-m').on('click', 'h2', function(){
-					$(this).parent().toggleClass('active');
-				});
 				$('#searchCountries').on('keyup', function() {
 					var $region_filter = $('.region-filter').first();
 					if ($(this).val().length < 1) {
@@ -818,6 +817,7 @@
 				$s_input   = $('.search-input'),
 				$i_input   = $s_input.find('.search-open-dri'),
 				$im_input  = $s_input.find('img');
+			
 			$s_input.on('click', function(e) {
 			    e.preventDefault();
 			    e.stopPropagation();
@@ -890,7 +890,9 @@
 				sessionStorage.setItem('clikcked-menu', $(this).data('opt'));
 				location = '<?php echo home_url(); ?>/project';
 			});
-
+			$('#blue-bar-m').on('click', 'h2', function(){
+				$(this).parent().toggleClass('active');
+			});
 		</script>
 
 	</body>
