@@ -2307,7 +2307,10 @@ div.cartodb-popup .cartodb-popup-close-button {
   .entry-content img {display: block;}
 }
 @media (max-width: 768px) {
-  .header nav span.current {display: none !important;}
+  .no-home .header .hr {display: block;}
+  .no-home .header nav { top: 8px; }
+  .header nav span {font-size: 11px;}
+  .header nav span.current {height: 7px;line-height: 25px;top: -9px;}
   .home #map-fake .what-list { width: 100%; }
   .blue-bar-top.about {align-items: center; height: 60px; margin: 0 0 -120px;}
   .home .index-row article.resource-cont, .index-row .card-third.resource-cont { width: 50vh; }
