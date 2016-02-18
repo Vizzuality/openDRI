@@ -86,6 +86,11 @@
 				filterRegion  = '',
 				filterPillar  = '';
 		    function init(){
+		    	if ($(window).width() <= 768) {
+		    		$('.blue-bar-top').remove();
+		    	} else {
+		    		$('.blue-bar-top-m').remove();
+		    	}
 		    	if ($('#map').length == 0) return;
 				if ( !!LAT_VIS && !!LONG_VIS ) {
 					map = new L.Map('map', {
@@ -100,7 +105,7 @@
 					continuousWorld: false,
 					noWrap: true,
 			        center: [30,15],
-			        zoom: 3,
+			        zoom: ($(window).width() <= 768) ? 1 : 3,
 			        zoomControl: false,
 			        scrollWheelZoom: false,
 			        maxBounds: [
@@ -722,6 +727,9 @@
 				});
 				$('#reset-map').on('click', function(){
 					location.reload();
+				});
+				$('#blue-bar-m').on('click',function(){
+					$(this).toggleClass('active');
 				});
 				$('#searchCountries').on('keyup', function() {
 					var $region_filter = $('.region-filter').first();
