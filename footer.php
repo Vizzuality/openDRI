@@ -659,6 +659,7 @@
 				}
 				if (typeof jsonValues != 'undefined') jsonValues = JSON.parse(jsonValues);
 				$('#pick-region').on('click', '.pickable', function(option) {
+					$('#blue-bar-m').toggleClass('active');
 					$(this).siblings().removeClass('selected');
 					if (!! $(this).hasClass('selected')) {
 						$('.amount-of-posts').show();
@@ -709,7 +710,8 @@
 				    	map.setView(latlong,zoom);
 				    }
 				});
-				$('#blue-bar-pick-pillar').on('click', 'span', function(e) {
+				$('#blue-bar-pick-pillar').on('click', 'span, li', function(e) {
+					$('#blue-bar-m').toggleClass('active');
 					if ($(this).hasClass('current')) {
 						$(this).removeClass('current');
 						var option = 'all';
