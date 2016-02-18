@@ -3185,14 +3185,16 @@ FOOTER STYLES
     display: block;
     margin: 0;
     height: 100%;
-    padding: 0 0 0 22px; }
+    padding: 0 0 0 22px;
+    position: relative; }
     .blue-bar-top-m.active ul li,
     .blue-bar-top-m.active #blue-bar-pick-pillar li {
       font-size: 15px;
       text-transform: uppercase;
-      line-height: 20px;
+      line-height: 25px;
       font-weight: bold;
-      font-family: "Bariol_Regular", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+      font-family: "Bariol_Regular", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: #fff; }
       .blue-bar-top-m.active ul li a,
       .blue-bar-top-m.active #blue-bar-pick-pillar li a {
         text-decoration: none; }
@@ -3229,6 +3231,31 @@ FOOTER STYLES
           height: 15px;
           width: 13px;
           top: 2px; }
+      .blue-bar-top-m.active ul li input,
+      .blue-bar-top-m.active #blue-bar-pick-pillar li input {
+        background-color: rgba(0, 0, 0, 0.15);
+        margin: 0 0 0 -22px;
+        width: 110%;
+        color: white;
+        border-radius: 0px;
+        position: relative;
+        font-weight: bold;
+        padding: 0 20px; }
+      .blue-bar-top-m.active ul li::last-child,
+      .blue-bar-top-m.active #blue-bar-pick-pillar li::last-child {
+        text-align: center; }
+    .blue-bar-top-m.active ul.region-filter i,
+    .blue-bar-top-m.active #blue-bar-pick-pillar.region-filter i {
+      height: 30px;
+      width: 30px;
+      background-color: #fff;
+      -webkit-mask: url("../images/search.svg") no-repeat 50% 50%;
+      mask: url("../images/search.svg") no-repeat 50% 50%;
+      display: inline-block;
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      opacity: 0.7; }
   .blue-bar-top-m.active #blue-bar-pick-pillar {
     padding: 10px 0 0 22px; }
 

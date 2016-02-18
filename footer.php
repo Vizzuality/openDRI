@@ -728,8 +728,8 @@
 				$('#reset-map').on('click', function(){
 					location.reload();
 				});
-				$('#blue-bar-m').on('click',function(){
-					$(this).toggleClass('active');
+				$('#blue-bar-m').on('click', 'h2', function(){
+					$(this).parent().toggleClass('active');
 				});
 				$('#searchCountries').on('keyup', function() {
 					var $region_filter = $('.region-filter').first();
