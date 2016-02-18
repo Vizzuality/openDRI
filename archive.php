@@ -10,29 +10,6 @@ if ( is_category() ) {
 }
 global $post_type;
 
-$mobileMenu = '<div class="blue-bar-top-m" id="blue-bar-m">
-				<h2><span></span> filter by pillar / region</h2>
-				<ul id="blue-bar-pick-pillar">
-					<li class="option-pillar" data-option="open"><a href="#" data-option="open"><i class="img-pile-1"></i>open data platforms</a>
-					</li>
-					<li class="option-pillar" data-option="community"><a href="#" data-option="community"><i class="img-pile-2"></i>community mapping</a>
-					</li>
-					<li class="option-pillar" data-option="risk"><a href="#" data-option="risk"><i class="img-pile-3"></i>risk visualization</a>
-					</li>
-				</ul>
-				<ul class="region-filter" id="pick-region">
-					<li><input type="text" id="searchCountries" placeholder="Search country"><i></i></li>
-					<li class="pickable" data-option="africa" data-lat="6.3152" data-lng="5.80" data-zoom="3">africa</li>
-					<li class="pickable" data-option="eastasia" data-lat="9.968" data-lng="118.3" data-zoom="3">east asia pacific</li>
-					<li class="pickable" data-option="europe" data-lat="64.32" data-lng="99.84" data-zoom="3">europe and central asia</li>
-					<li class="pickable" data-option="latam" data-lat="-10.314" data-lng="-68.027" data-zoom="3">latin america and caribbean</li>
-					<li class="pickable" data-option="middleeast" data-lat="30.75" data-lng="28.03" data-zoom="4">middle east and north africa</li>
-					<li class="pickable" data-option="nonwp" data-lat="0" data-lng="0" data-zoom="2">non wb countries</li>
-					<li class="pickable" data-option="southasia" data-lat="23.40" data-lng="77.08" data-zoom="4">south asia</li>
-					<li class="pickable clear-map" data-option="reload" data-lat="27" data-lng="72" id="reset-map">Clear map</li>
-				</ul>
-			  </div>'; //end menu mobile
-
 if(is_post_type_archive() && $post_type=='project') {
 	$title = 'Projects';
 	$postsInAfrica = get_term_by('slug','africa','category');
@@ -84,8 +61,28 @@ if(is_post_type_archive() && $post_type=='project') {
 						</div>
 				</div>
 			</div>';
-	echo $mobileMenu;
-	$hascornermap = false;
+	echo '<div class="blue-bar-top-m" id="blue-bar-m">
+				<h2><span></span> filter by pillar / region</h2>
+				<ul id="blue-bar-pick-pillar">
+					<li class="option-pillar" data-option="open"><a href="#" data-option="open"><i class="img-pile-1"></i>open data platforms</a>
+					</li>
+					<li class="option-pillar" data-option="community"><a href="#" data-option="community"><i class="img-pile-2"></i>community mapping</a>
+					</li>
+					<li class="option-pillar" data-option="risk"><a href="#" data-option="risk"><i class="img-pile-3"></i>risk visualization</a>
+					</li>
+				</ul>
+				<ul class="region-filter" id="pick-region">
+					<li><input type="text" id="searchCountries" placeholder="Search country"><i></i></li>
+					<li class="pickable" data-option="africa" data-lat="6.3152" data-lng="5.80" data-zoom="3">africa</li>
+					<li class="pickable" data-option="eastasia" data-lat="9.968" data-lng="118.3" data-zoom="3">east asia pacific</li>
+					<li class="pickable" data-option="europe" data-lat="64.32" data-lng="99.84" data-zoom="3">europe and central asia</li>
+					<li class="pickable" data-option="latam" data-lat="-10.314" data-lng="-68.027" data-zoom="3">latin america and caribbean</li>
+					<li class="pickable" data-option="middleeast" data-lat="30.75" data-lng="28.03" data-zoom="4">middle east and north africa</li>
+					<li class="pickable" data-option="nonwp" data-lat="0" data-lng="0" data-zoom="2">non wb countries</li>
+					<li class="pickable" data-option="southasia" data-lat="23.40" data-lng="77.08" data-zoom="4">south asia</li>
+					<li class="pickable clear-map" data-option="reload" data-lat="27" data-lng="72" id="reset-map">Clear map</li>
+				</ul>
+			  </div>'; //end menu mobile filter projects	$hascornermap = false;
 	echo '<div id="map" class="cdbmap"></div>';
 } elseif (is_category() && 
 	($title === 'news' || 
@@ -115,7 +112,25 @@ if(is_post_type_archive() && $post_type=='project') {
 						</div>
 				</div>
 			</div>';
-	echo $mobileMenu;
+	echo '<div class="blue-bar-top-m" id="blue-bar-m">
+				<h2><span></span> filter by pillar / region</h2>
+				<ul id="blue-bar-pick-pillar">
+					<li class="option-pillar" data-option="open"><a href="'.home_url().'/category/pillars/open-data-platforms/" data-option="open"><i class="img-pile-1"></i>open data platforms</a></li>
+					<li class="option-pillar" data-option="community"><a href="'.home_url().'/category/pillars/community-mapping/" data-option="community"><i class="img-pile-2"></i>community mapping</a></li>
+					<li class="option-pillar" data-option="risk"><a href="'.home_url().'/category/pillars/risk-visualizations/" data-option="risk"><i class="img-pile-3"></i>risk visualization</a></li>
+				</ul>
+				<ul class="region-filter" id="pick-region">
+					<li><input type="text" id="searchCountries" placeholder="Search country"><i></i></li>
+					<li class="pickable" data-option="africa"><a href="'.home_url().'/category/regions/africa/">Africa</a></li>
+					<li class="pickable" data-option="eastasia"><a href="'.home_url().'/category/regions/east-asia-pacific/">east asia pacific</a></li>
+					<li class="pickable" data-option="europe"><a href="'.home_url().'/category/regions/europe-and-central-asia/">europe and central asia</a></li>
+					<li class="pickable" data-option="latam"><a href="'.home_url().'/category/regions/latin-america-and-caribbean/">latin america and caribbean</a></li>
+					<li class="pickable" data-option="middleeast"><a href="'.home_url().'/category/regions/middle-east-and-north-africa/">middle east and north africa</a></li>
+					<li class="pickable" data-option="nonwp"><a href="'.home_url().'/category/regions/non-wb-countries/">non wb countries</a></li>
+					<li class="pickable" data-option="southasia"><a href="'.home_url().'/category/regions/south-asia/">south asia</a></li>
+				</ul>
+			  </div>'; //end menu mobile filter projects	$hascornermap = false;
+	
 	$hascornermap = true;
 } elseif (is_post_type_archive() && $post_type=='resource'){
 	$title = 'Resources';
