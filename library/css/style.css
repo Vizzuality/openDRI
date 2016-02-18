@@ -3699,7 +3699,13 @@ div.cartodb-popup .cartodb-popup-close-button {
     width: 90%; }
 
   .leaflet-top .leaflet-control {
-    margin-top: 10px !important; } }
+    margin-top: 10px !important; }
+
+  #map-fake {
+    height: 526px; }
+
+  #map-fake:after {
+    background: #0e5fa2; } }
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
