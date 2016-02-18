@@ -3337,19 +3337,36 @@ div.cartodb-popup .cartodb-popup-close-button {
   .entry-content img {
     display: block; } }
 @media (max-width: 768px) {
+  #logo img {
+    display: none; }
+
+  #logo a {
+    content: '';
+    background-image: url(http://opendri.simbiotica.es/wp-content/themes/openDRI/logo-extended.svg);
+    width: 305px;
+    background-repeat: no-repeat;
+    height: 55px;
+    visibility: visible;
+    display: block;
+    position: relative;
+    top: -5px; }
+
   .no-home .header .hr {
     display: block; }
 
+  .header nav img {
+    top: 1px; }
+
   .no-home .header nav {
-    top: 8px; }
+    top: 10px; }
 
   .header nav span {
     font-size: 11px; }
 
   .header nav span.current {
-    height: 7px;
-    line-height: 25px;
-    top: -9px; }
+    height: 12px;
+    line-height: 28px;
+    top: -8px; }
 
   .home #map-fake .what-list {
     width: 100%; }
