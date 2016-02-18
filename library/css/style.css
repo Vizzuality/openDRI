@@ -3337,8 +3337,19 @@ div.cartodb-popup .cartodb-popup-close-button {
   .entry-content img {
     display: block; } }
 @media (max-width: 768px) {
+  .no-home .header .hr {
+    display: block; }
+
+  .no-home .header nav {
+    top: 8px; }
+
+  .header nav span {
+    font-size: 11px; }
+
   .header nav span.current {
-    display: none !important; }
+    height: 7px;
+    line-height: 25px;
+    top: -9px; }
 
   .home #map-fake .what-list {
     width: 100%; }
