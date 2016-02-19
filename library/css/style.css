@@ -3700,7 +3700,17 @@ div.cartodb-popup .cartodb-popup-close-button {
     border-radius: 0; }
 
   .wrap {
-    width: 100%; } }
+    width: 100%; }
+
+  .page #inner-content {
+    padding: 0 3%; }
+
+  .page .about-content h3, .page .more-content h3, .page #contact h3 {
+    margin: 0;
+    font-size: 40px; }
+
+  .archive .index-row, .page .index-row {
+    margin: 0; } }
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
