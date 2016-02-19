@@ -3683,7 +3683,13 @@ div.cartodb-popup .cartodb-popup-close-button {
     left: 40px; }
 
   .index-row .card-third h3 {
-    margin: 0px 0 -40px; } }
+    margin: 0px 0 -40px; }
+
+  .index-row article, .index-row .card-third {
+    margin: 0 15px 30px; }
+
+  .index-row article, .index-row .card-third::last-child {
+    margin: 0 15px 0px; } }
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's

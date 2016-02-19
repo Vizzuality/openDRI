@@ -2484,4 +2484,7 @@ div.cartodb-popup .cartodb-popup-close-button {
   .index-row .card-third.twitter-timeline-container {display: flex;display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;width: 100%;align-items: center;}
   .index-row .card-third .twitter > span {left: 40px;}
   .index-row .card-third h3 {margin: 0px 0 -40px;}
+  .index-row article, .index-row .card-third {margin: 0 15px 30px;}
+  .index-row article, .index-row .card-third::last-child{margin: 0 15px 0px;}
+
 }
