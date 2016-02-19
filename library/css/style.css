@@ -3327,7 +3327,9 @@ div.cartodb-popup .cartodb-popup-close-button {
   .home .index-row {
     -webkit-flex-direction: column;
     flex-direction: column;
-    margin: 20px 0; }
+    margin: 20px 0;
+    width: 100%;
+    align-items: center; }
 
   .home .index-row#news .row-container {
     width: 100%; }

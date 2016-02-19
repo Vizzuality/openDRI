@@ -2369,7 +2369,7 @@ div.cartodb-popup .cartodb-popup-close-button {
 }
 @media (max-width: 1024px) {
   .home .header nav {width: 100%;}
-  .home .index-row {-webkit-flex-direction: column; flex-direction: column; margin: 20px 0;}
+  .home .index-row {-webkit-flex-direction: column; flex-direction: column; margin: 20px 0;width:100%;align-items: center;}
   .home .index-row#news .row-container { width: 100%;}
   .home .index-row.last-resources {margin: -40px 0 20px; width: 100%;}
   .home .index-row .row-container {justify-content: center;-webkit-justify-content: center;}
