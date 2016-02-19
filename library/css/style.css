@@ -3678,7 +3678,10 @@ div.cartodb-popup .cartodb-popup-close-button {
     align-items: center; }
 
   .index-row .card-third .twitter > span {
-    left: 40px; } }
+    left: 40px; }
+
+  .index-row .card-third h3 {
+    margin: 0px 0 -40px; } }
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
