@@ -800,6 +800,7 @@ POSTS & CONTENT STYLES
 	border-radius: 3px;
 	margin-bottom: 1.5em;
 	border: 1px solid $border-color;
+	position: relative;
 	> a,.img {
 		height: 0%;
 	    width: 100%;
@@ -808,7 +809,7 @@ POSTS & CONTENT STYLES
     	background-size: cover;
 	}
 	.img {
-		padding-bottom: 56%;
+		padding-bottom: 50%;
 	    position: relative;
 	    top: -20px;
 	}
@@ -822,12 +823,13 @@ POSTS & CONTENT STYLES
 	header {
 		border-bottom: 1px solid $light-gray;
 		background: $text-bkg-blue;
-		width: 280px;
-		margin: 0 auto -20px;
-		display: inline;
-		justify-content: center;
-		align-items: center;
-		transform: translate(0, -33%);
+		position: absolute;
+	    bottom: calc(50% - 20px);
+	    left: 0%;
+	    width: 80%;
+	    z-index: 1;
+	    margin: 0 10%;
+	    transform: translateY(-30%);
 		transition: background 0.3s ease;
 		&:hover {
 			background: lighten($text-bkg-blue,10%);
