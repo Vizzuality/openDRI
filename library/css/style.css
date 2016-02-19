@@ -3667,7 +3667,18 @@ div.cartodb-popup .cartodb-popup-close-button {
     height: 526px; }
 
   #map-fake:after {
-    background: #0e5fa2; } }
+    background: #0e5fa2; }
+
+  .index-row .card-third.twitter-timeline-container {
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    width: 100%;
+    align-items: center; }
+
+  .index-row .card-third .twitter > span {
+    left: 40px; } }
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
