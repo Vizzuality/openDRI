@@ -2410,7 +2410,8 @@ div.cartodb-popup .cartodb-popup-close-button {
   .blue-bar-top .wrapper .region-filter li:first-child i {display: none;}
   .archive .cdbmap, .page .cdbmap {height: 330px;}
   .no-home .header nav {width: 100%; }
-  .no-home .header {height: 120px; padding: 0 2%;}
+  .no-home .header {height: 120px;}
+  .header { padding: 0 2%;}
   .blue-bar-top .wrapper.filters span {top: 0; padding: 10px; margin: 0; width: 65px;}
   #blue-bar-pick-pillar { height: 70px; border: none; width: 100%; border-bottom: 1px solid rgba(255,255,255,0.5); overflow: hidden;}
   .blue-bar-top {align-items: flex-start; height: 240px; margin: 0; width: 100%;}
