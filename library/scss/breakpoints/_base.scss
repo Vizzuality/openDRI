@@ -555,7 +555,7 @@ POSTS & CONTENT STYLES
     article,
     .card-third {
     	max-width: 315px;
-    	width: 315px;
+    	width: 345px;
 	    margin: 0 15px 50px;
 	    display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
 	
@@ -743,7 +743,10 @@ POSTS & CONTENT STYLES
     		}
     	}
     	&.twitter-timeline-container {
-    		height: 750px;
+		    height: 753px;
+		    max-width: none;
+		    margin: 0;
+		    padding: 0px 3px 3px;
     	}
 	    .twitter {
 	    	overflow: hidden;
