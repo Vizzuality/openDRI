@@ -235,11 +235,7 @@ HEADER STYLES
 				height: 30px;
 				width: 30px;
 				background-color: #fff;
-				_:-webkit-full-screen:not(:root:root){       
-					background: url("../images/search.svg") no-repeat 50% 50%;
-				}@-moz-document url-prefix(){       
-					background: url("../images/search.svg") no-repeat 50% 50%;
-				}
+				background: url("../images/search.svg") no-repeat 50% 50%;
 			    -webkit-mask:  url("../images/search.svg") no-repeat 50% 50%;
 			    mask: url("../images/search.svg") no-repeat 50% 50%;
 			}	
@@ -771,11 +767,7 @@ POSTS & CONTENT STYLES
 				    height: 60px;
 				    transform: scale(0.6);
 				    display: block;
-				    _:-webkit-full-screen:not(:root:root){       
 						background: url(../images/twitter-logo.svg) no-repeat 50% 50%;
-					}@-moz-document url-prefix() {       
-						background: url(../images/twitter-logo.svg) no-repeat 50% 50%;
-					}
 				    -webkit-mask:  url(../images/twitter-logo.svg) no-repeat 50% 50%;
 				    mask: url(../images/twitter-logo.svg) no-repeat 50% 50%;
 			    }
@@ -2048,11 +2040,7 @@ FOOTER STYLES
 		    	}
 		    	i {
 		    		background-color: #1477c9;
-		    		_:-webkit-full-screen:not(:root:root){       
 						background: url("../images/filter-off.svg") no-repeat 50% 50%;
-					}@-moz-document url-prefix() {       
-						background: url("../images/filter-off.svg") no-repeat 50% 50%;
-					}
 	    			-webkit-mask:  url("../images/filter-off.svg") !important;
 				    mask: url("../images/filter-off.svg") !important;
 				    width: 17px !important;
@@ -2083,11 +2071,7 @@ FOOTER STYLES
 				    $class-slug: img-pile !default;
 					@for $i from 1 through 4 {
 					  &.#{$class-slug}-#{$i} {
-					  	_:-webkit-full-screen:not(:root:root){       
 							background: url("../images/white-pile-"+ $i +".svg") no-repeat 50% 50%;
-						}@-moz-document url-prefix() {       
-							background: url("../images/white-pile-"+ $i +".svg") no-repeat 50% 50%;
-						}
 					    -webkit-mask:  url("../images/white-pile-"+ $i +".svg");
 					    mask: url("../images/white-pile-"+ $i +".svg");
 					  }
@@ -2154,11 +2138,7 @@ FOOTER STYLES
 						height: 30px;
 						width: 30px;
 						background-color: #fff;
-						_:-webkit-full-screen:not(:root:root){       
 							background: url("../images/search.svg") no-repeat 50% 50%;
-						}@-moz-document url-prefix() {       
-							background: url("../images/search.svg") no-repeat 50% 50%;
-						}
 					    -webkit-mask:  url("../images/search.svg") no-repeat 50% 50%;
 					    mask: url("../images/search.svg") no-repeat 50% 50%;
 					    display: inline-block;
@@ -2203,11 +2183,7 @@ FOOTER STYLES
 		span {
 			width: 25px;
 		    height: 10px;
-		    _:-webkit-full-screen:not(:root:root){       
 				background: url(../images/dropdown.svg) no-repeat 50% 50%;
-			}@-moz-document url-prefix() {       
-				background: url(../images/dropdown.svg) no-repeat 50% 50%;
-			}
 			-webkit-mask: url(../images/dropdown.svg) no-repeat 50% 50%;
 	    	mask: url(../images/dropdown.svg) no-repeat 50% 50%;
 	    	display: inline-block;
@@ -2248,11 +2224,7 @@ FOOTER STYLES
 				    $class-slug: img-pile !default;
 					@for $i from 1 through 4 {
 					  &.#{$class-slug}-#{$i} {
-						_:-webkit-full-screen:not(:root:root){       
 							background: url("../images/white-pile-"+ $i +".svg") no-repeat 50% 50%;
-						}@-moz-document url-prefix() {       
-							background: url("../images/white-pile-"+ $i +".svg") no-repeat 50% 50%;
-						}					  	
 					    -webkit-mask:  url("../images/white-pile-"+ $i +".svg");
 					    mask: url("../images/white-pile-"+ $i +".svg");
 					  }
@@ -2279,11 +2251,7 @@ FOOTER STYLES
 				height: 30px;
 				width: 30px;
 				background-color: #fff;
-				_:-webkit-full-screen:not(:root:root){       
 					background: url("../images/search.svg") no-repeat 50% 50%;
-				}@-moz-document url-prefix() {       
-					background: url("../images/search.svg") no-repeat 50% 50%;
-				}				
 			    -webkit-mask:  url("../images/search.svg") no-repeat 50% 50%;
 			    mask: url("../images/search.svg") no-repeat 50% 50%;
 			    display: inline-block;
@@ -2325,11 +2293,7 @@ FOOTER STYLES
 	    background-color: white;
 	    width: 25px;
 	    height: 10px;
-	    _:-webkit-full-screen:not(:root:root){       
 			background: url(../images/dropdown.svg) no-repeat 50% 50%;
-		}@-moz-document url-prefix() {       
-			background: url(../images/dropdown.svg) no-repeat 50% 50%;
-		}
 	    -webkit-mask: url(../images/dropdown.svg) no-repeat 50% 50%;
 	    mask: url(../images/dropdown.svg) no-repeat 50% 50%;
 	    top: 15px;
