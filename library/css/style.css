@@ -3465,7 +3465,8 @@ div.cartodb-popup .cartodb-popup-close-button {
     width: 100%; }
 
   .no-home .header {
-    height: 120px; }
+    height: 120px;
+    padding: 0 2%; }
 
   .blue-bar-top .wrapper.filters span {
     top: 0;
