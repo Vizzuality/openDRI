@@ -661,7 +661,7 @@
 				}
 				if (typeof jsonValues != 'undefined') jsonValues = JSON.parse(jsonValues);
 				$('#pick-region').on('click', '.pickable', function(option) {
-					$('#blue-bar-m').toggleClass('active');
+					$('#blue-bar-m').removeClass('active');
 					$(this).siblings().removeClass('selected');
 					if (!! $(this).hasClass('selected')) {
 						$('.amount-of-posts').show();
