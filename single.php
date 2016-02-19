@@ -173,7 +173,7 @@
 					<h3>MORE CONTENT HERE</h3>
 				</article>
 				<div class="what-explore">
-					<a href="<?php echo home_url(); ?>/category/<? echo esc_url(get_category_link(get_cat_ID( $CAT_NAME ))) ?>">explore <? echo $CAT_NAME?></a>
+					<a href="<? echo esc_url(get_category_link(get_cat_ID( $CAT_NAME ))) ?>">explore <? echo $CAT_NAME?></a>
 				</div>
 			</section>
 		</div>
