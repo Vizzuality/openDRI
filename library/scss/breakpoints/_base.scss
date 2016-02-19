@@ -824,12 +824,11 @@ POSTS & CONTENT STYLES
 		border-bottom: 1px solid $light-gray;
 		background: $text-bkg-blue;
 		position: absolute;
-	    bottom: calc(50% - 15px);
+	    bottom: 50%;
 	    left: 0%;
 	    width: 80%;
 	    z-index: 1;
 	    margin: 0 10%;
-	    transform: translateY(-30%);
 		transition: background 0.3s ease;
 		&:hover {
 			background: lighten($text-bkg-blue,10%);
