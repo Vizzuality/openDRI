@@ -3529,10 +3529,11 @@ div.cartodb-popup .cartodb-popup-close-button {
     width: 100%;
     top: -25px; }
 
-  .archive .index-row .row-container, .page .index-row .row-container {
+  .index-row .row-container, .page .index-row .row-container {
     -webkit-flex-direction: column;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    width: 100%; }
 
   .archive .blue-bar-top {
     display: none; }
