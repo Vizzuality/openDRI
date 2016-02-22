@@ -2871,6 +2871,7 @@ FOOTER STYLES
       left: 310px;
       width: 500px; }
     .footer .-ft-content #mc-embedded-subscribe {
+      border-radius: 0;
       display: inline;
       background-color: #979797;
       width: 90px;
