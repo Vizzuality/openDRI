@@ -390,7 +390,7 @@ POSTS & CONTENT STYLES
 	    color: #fff;
 	    width: 70%;
 	    max-width: 855px;
-	    padding: 40px 10% 70px;
+	    padding: 30px 10% 70px;
 	    text-align: center;
 	    h2 {
 	    	font-size: 49px;
@@ -637,7 +637,7 @@ POSTS & CONTENT STYLES
 	    box-shadow: 0 0 7px rgba(0,0,0,0.20);
 	    li {
 		    margin: 0 10px 0px;
-		    padding: 5px;
+		    padding: 10px;
 		    background: inherit;
 		    transition: background 0.3s ease;
 		    display: inline-block;
@@ -684,6 +684,7 @@ POSTS & CONTENT STYLES
 					line-height: 20px;
 				    font-size: 14px;
 				    margin: 3px;
+				    font-family: $bariol;
 				}
 				.title {
 					color:#1477c9;
