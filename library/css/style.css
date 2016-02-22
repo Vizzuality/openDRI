@@ -2503,7 +2503,8 @@ POSTS & CONTENT STYLES
     height: 270px; }
 
 .post-type-archive-project #main > h3 {
-  width: 50%; }
+  width: 50%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .category-open-data-platforms #main,
 .category-community-mapping #main,
