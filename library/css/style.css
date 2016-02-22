@@ -1554,7 +1554,7 @@ POSTS & CONTENT STYLES
     color: #fff;
     width: 70%;
     max-width: 855px;
-    padding: 30px 10%;
+    padding: 50px 10%;
     text-align: center; }
     #map-fake .what-list h2 {
       font-size: 49px;
@@ -1904,7 +1904,7 @@ POSTS & CONTENT STYLES
       height: 60px;
       position: absolute;
       top: -20px;
-      left: 10px; }
+      left: 25px; }
       .index-row .card-third .twitter > span .twt-img {
         background-color: white;
         width: 60px;
