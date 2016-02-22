@@ -1960,7 +1960,7 @@ POSTS & CONTENT STYLES
   .hentry header {
     background: #1477c9;
     position: absolute;
-    bottom: 53%;
+    bottom: 50%;
     left: 0%;
     width: 90%;
     z-index: 1;
