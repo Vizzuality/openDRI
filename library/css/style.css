@@ -2549,8 +2549,9 @@ POSTS & CONTENT STYLES
     .category-risk-visualizations #main .row-container article header,
     .category-news #main .row-container article header,
     .post-type-archive-resource #main .row-container article header {
-      width: 80%;
-      bottom: 32%; }
+      width: 96%;
+      bottom: 50%;
+      margin: 0px 2%; }
 
 #list-content {
   margin: 0; }
