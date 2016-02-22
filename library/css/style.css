@@ -1742,15 +1742,7 @@ POSTS & CONTENT STYLES
       margin: 0 0px 50px; }
     .index-row article .entry-content,
     .index-row .card-third .entry-content {
-      overflow: hidden;
-      height: auto;
-      font-size: 15px;
-      display: -webkit-box;
-      line-height: 2;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-      text-overflow: ellipsis;
-      position: relative; }
+      overflow: hidden; }
     .index-row article.resource-cont,
     .index-row .card-third.resource-cont {
       position: relative;
