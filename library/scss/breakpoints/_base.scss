@@ -523,11 +523,17 @@ POSTS & CONTENT STYLES
     }
     &.more-content {
     	display: block;
+    	margin: 0;
     	.row-container {
     		justify-content: space-between;
     		article {
     			margin: 10px;
     		}
+    	}
+    	h3 {
+    		margin: 20px 0 20px 30px;
+    		color: #555;
+    		font-size: 30px;
     	}
     }
     .row-container {
