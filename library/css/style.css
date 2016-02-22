@@ -1793,8 +1793,7 @@ POSTS & CONTENT STYLES
       .index-row article.resource-cont section,
       .index-row .card-third.resource-cont section {
         color: #fff;
-        text-align: center;
-        text-transform: uppercase; }
+        text-align: center; }
         .index-row article.resource-cont section h3,
         .index-row .card-third.resource-cont section h3 {
           font-size: 32px;
@@ -3659,7 +3658,7 @@ div.cartodb-popup .cartodb-popup-close-button {
     max-width: 100%; }
 
   .post-type-archive-resource #main {
-    margin: 0; }
+    margin: 10px; }
 
   .blue-bar-top.about .wrapper span a {
     visibility: visible; }
