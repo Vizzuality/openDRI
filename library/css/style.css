@@ -1986,8 +1986,7 @@ POSTS & CONTENT STYLES
     display: -webkit-flex;
     padding: 10px 0; }
   .hentry footer {
-    margin: 15px;
-    border-top: 1px solid #f8f9fa; }
+    margin: 15px; }
     .hentry footer p {
       margin: 0;
       display: flex;
@@ -2066,8 +2065,9 @@ POSTS & CONTENT STYLES
     display: table;
     position: relative;
     left: -10px;
+    top: -3px;
     font-size: 13px;
-    color: rgba(85, 85, 85, 0.3); }
+    color: rgba(85, 85, 85, 0.5); }
 
 /* entry content */
 .entry-content {
