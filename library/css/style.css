@@ -2912,6 +2912,9 @@ FOOTER STYLES
     .footer .-ft-legal a:hover {
       color: #f8f8f8; }
 
+.footer.mobile {
+  display: none; }
+
 #post-not-found,
 .no-results {
   background: transparent;
@@ -3707,7 +3710,34 @@ div.cartodb-popup .cartodb-popup-close-button {
 
   .page .about-content h3, .page .more-content h3, .page #contact h3 {
     margin: 0;
-    font-size: 40px; } }
+    font-size: 40px; }
+
+  .footer {
+    display: none; }
+
+  .footer.mobile {
+    display: block; }
+
+  .footer.mobile .-ft-content {
+    flex-direction: column;
+    align-items: center;
+    height: 190px; }
+
+  .footer.mobile .-ft-content .-ft-newsletter span {
+    font-weight: bold;
+    font-size: 15px; }
+
+  .footer.mobile .-ft-content form {
+    width: 310px; }
+
+  .footer.mobile .-ft-content nav {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 310px; }
+
+  .footer.mobile .-ft-content .-ft-logo a {
+    display: inline;
+    left: 3px; } }
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
