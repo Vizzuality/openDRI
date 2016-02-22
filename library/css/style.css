@@ -2884,7 +2884,7 @@ FOOTER STYLES
     display: -webkit-flex;
     /* NEW - Chrome */
     justify-content: space-between;
-    width: 40%;
+    width: 25%;
     height: 40px;
     align-items: center;
     font-size: 13px; }
