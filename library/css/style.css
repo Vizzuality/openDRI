@@ -3724,6 +3724,9 @@ div.cartodb-popup .cartodb-popup-close-button {
     align-items: center;
     height: 190px; }
 
+  .footer.mobile .-ft-content #mc-embedded-subscribe {
+    right: 0; }
+
   .footer.mobile .-ft-content .-ft-newsletter span {
     font-weight: bold;
     font-size: 15px; }
