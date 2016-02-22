@@ -1998,7 +1998,8 @@ POSTS & CONTENT STYLES
       /* NEW - Chrome */
       justify-content: space-between; }
       .hentry footer p span {
-        line-height: 15px; }
+        line-height: 15px;
+        max-width: 230px; }
       .hentry footer p a {
         color: rgba(85, 85, 85, 0.5);
         text-decoration: none;
