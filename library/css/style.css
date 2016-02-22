@@ -2565,7 +2565,7 @@ POSTS & CONTENT STYLES
     .category-news #main .row-container article header,
     .post-type-archive-resource #main .row-container article header {
       width: 80%;
-      header: 32%; }
+      bottom: 32%; }
 
 #list-content {
   margin: 0; }
