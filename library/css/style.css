@@ -1554,7 +1554,7 @@ POSTS & CONTENT STYLES
     color: #fff;
     width: 70%;
     max-width: 855px;
-    padding: 50px 10%;
+    padding: 40px 10% 70px;
     text-align: center; }
     #map-fake .what-list h2 {
       font-size: 49px;
@@ -1590,7 +1590,7 @@ POSTS & CONTENT STYLES
           border: 0;
           background-position: 50%, 50%;
           display: block;
-          margin: 0px auto 10px; }
+          margin: 0px auto 20px; }
           #map-fake .what-list > nav span i.img-pile-1 {
             background-image: url("../images/pile-1.png"); }
           #map-fake .what-list > nav span i.img-pile-2 {
