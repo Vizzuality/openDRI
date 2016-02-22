@@ -844,7 +844,6 @@ POSTS & CONTENT STYLES
 		}
 	footer {
 		margin: 15px;
-		border-top: 1px solid $light-gray;
 
 		p {
 			margin: 0;
@@ -938,8 +937,9 @@ POSTS & CONTENT STYLES
 		display: table;
 	    position: relative;
 	    left: -10px;
+	    top: -3px;
 	    font-size: 13px;
-    	color: rgba(85, 85, 85, 0.3);
+    	color: rgba(85, 85, 85, 0.5);
 	}
 }
 
