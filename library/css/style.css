@@ -1740,6 +1740,9 @@ POSTS & CONTENT STYLES
     height: 350px;
     overflow: hidden;
     position: relative; }
+    .index-row article.first-text,
+    .index-row .card-third.first-text {
+      display: block; }
     .index-row article.project,
     .index-row .card-third.project {
       max-width: 325px;

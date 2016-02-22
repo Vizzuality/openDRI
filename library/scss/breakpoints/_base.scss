@@ -572,6 +572,7 @@ POSTS & CONTENT STYLES
 	    height: 350px;
 	    overflow: hidden;
 	    position: relative;
+	    &.first-text {display: block;}
 	    &.project {
 	    	max-width: 325px;
 	    	width: 325px;

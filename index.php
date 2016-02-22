@@ -25,7 +25,7 @@
 		<div id="inner-content" class="wrap cf">
 			<div id="news" class="m-all cf index-row" role="news" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 				<div class="row-container">
-					<div class="card-third">
+					<div class="card-third first-text">
 						<h3>news</h3>
 						<p>Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Ullam id dolor.</p>
 						<a href="<?php echo home_url(); ?>/category/news"><span>view all news</span></a>
@@ -72,7 +72,7 @@
 			</div>
 			<div id="projects" class="m-all cf index-row" role="projects" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 				<div class="row-container">
-					<div class="card-third">
+					<div class="card-third first-text">
 						<h3>projects</h3>
 						<p>Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Ullam id dolor.</p>
 						<a href="<?php echo home_url(); ?>/project"><span>view all projects</span></a>
@@ -118,7 +118,7 @@
 				</div>
 			</div>
 			<div id="resources" class="m-all cf index-row" role="resources" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
-				<div class="card-third">
+				<div class="card-third first-text">
 					<h3>resources</h3>
 					<p>Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Ullam id dolor.</p>
 					<a href="<?php echo home_url(); ?>/resource"><span>view all resources</span></a>
