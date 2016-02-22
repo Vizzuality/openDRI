@@ -1751,8 +1751,8 @@ POSTS & CONTENT STYLES
       height: auto;
       font-size: 15px;
       display: -webkit-box;
-      line-height: 2;
-      -webkit-line-clamp: 3;
+      line-height: 26px;
+      -webkit-line-clamp: 4;
       -webkit-box-orient: vertical;
       text-overflow: ellipsis;
       position: relative; }
@@ -1949,23 +1949,22 @@ POSTS & CONTENT STYLES
     background-position: 50% 50%;
     background-size: cover; }
   .hentry .img {
-    padding-bottom: 50%;
+    padding-bottom: 175px;
     position: relative;
     top: -20px; }
   .hentry a {
     display: inline;
     color: currentColor; }
   .hentry > a {
-    padding-bottom: 45%; }
+    padding-bottom: 175px; }
   .hentry header {
-    border-bottom: 1px solid #f8f9fa;
     background: #1477c9;
     position: absolute;
     bottom: 53%;
     left: 0%;
-    width: 80%;
+    width: 90%;
     z-index: 1;
-    margin: 0 10%;
+    margin: 0 5%;
     transition: background 0.3s ease; }
     .hentry header:hover {
       background: #2791e9; }
@@ -2073,7 +2072,9 @@ POSTS & CONTENT STYLES
     left: -10px;
     top: -3px;
     font-size: 13px;
-    color: rgba(85, 85, 85, 0.5); }
+    color: rgba(85, 85, 85, 0.5);
+    width: 100%;
+    text-align: right; }
 
 /* entry content */
 .entry-content {
