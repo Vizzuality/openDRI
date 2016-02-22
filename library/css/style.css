@@ -3522,7 +3522,8 @@ div.cartodb-popup .cartodb-popup-close-button {
 
   .archive .p-info h4, .page .p-info h4 {
     width: 100%;
-    top: -25px; }
+    top: -25px;
+    padding: 0 19px; }
 
   .index-row .row-container, .page .index-row .row-container {
     -webkit-flex-direction: column;

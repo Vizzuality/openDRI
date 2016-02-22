@@ -2414,7 +2414,7 @@ div.cartodb-popup .cartodb-popup-close-button {
 	.blue-bar-top .wrapper .region-filter li::first-child {padding: 0;}
 	.blue-bar-top .wrapper .region-filter input { position: relative; top: -10px;}
 	.blue-bar-top.fixed {  position: inherit; top: inherit;  width: inherit; opacity: inherit;}
-	.archive .p-info h4, .page .p-info h4 { width: 100%; top: -25px;}
+	.archive .p-info h4, .page .p-info h4 { width: 100%; top: -25px; padding: 0 19px;}
 	.index-row .row-container, .page .index-row .row-container {-webkit-flex-direction: column; flex-direction: column; align-items: center; width: 100%;}
 	.archive .blue-bar-top {display: none;}
 	.archive .blue-bar-top-m {display: block;}
