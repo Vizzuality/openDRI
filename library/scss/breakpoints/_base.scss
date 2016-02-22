@@ -1446,6 +1446,7 @@ margin: 0;
 		width: 490px;
 		header {
 			width: 80%;
+			header: 32%;
 		}
 	}
 }
@@ -2455,6 +2456,7 @@ div.cartodb-popup .cartodb-popup-close-button {
 	.category-community-mapping #main .row-container article, 
 	.risk-visualizations #main .row-container article,
 	.category-open-data-platforms #main .row-container article {max-width: none; width: 90%;}
+	.category-open-data-platforms #main .row-container article header, .category-community-mapping #main .row-container article header, .category-risk-visualizations #main .row-container article header, .category-news #main .row-container article header, .post-type-archive-resource #main .row-container article header {header: 50%;}
 	.blue-bar-top .wrapper .region-filter {top: 0;}
 	.category-news #main,
 	.category-community-mapping #main,

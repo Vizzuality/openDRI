@@ -2564,7 +2564,8 @@ POSTS & CONTENT STYLES
     .category-risk-visualizations #main .row-container article header,
     .category-news #main .row-container article header,
     .post-type-archive-resource #main .row-container article header {
-      width: 80%; }
+      width: 80%;
+      header: 32%; }
 
 #list-content {
   margin: 0; }
@@ -3595,6 +3596,9 @@ div.cartodb-popup .cartodb-popup-close-button {
   .category-open-data-platforms #main .row-container article {
     max-width: none;
     width: 90%; }
+
+  .category-open-data-platforms #main .row-container article header, .category-community-mapping #main .row-container article header, .category-risk-visualizations #main .row-container article header, .category-news #main .row-container article header, .post-type-archive-resource #main .row-container article header {
+    header: 50%; }
 
   .blue-bar-top .wrapper .region-filter {
     top: 0; }
