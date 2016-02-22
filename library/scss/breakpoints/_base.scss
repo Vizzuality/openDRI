@@ -573,6 +573,14 @@ POSTS & CONTENT STYLES
 	    }
 	    .entry-content {
 	    	overflow: hidden;
+		    height: auto;
+		    font-size: 15px;
+		    display: -webkit-box;
+		    line-height: 2;
+		    -webkit-line-clamp: 3;
+		    -webkit-box-orient: vertical;
+		    text-overflow: ellipsis;
+		    position: relative;
 	    }
 	    &.resource-cont {
 	    	&:after {
@@ -941,17 +949,7 @@ POSTS & CONTENT STYLES
 	padding: 15px;
 
 	p {
-		margin: 0 0 1.5em;
-		display: block;
-	    display: -webkit-box; // fallback for non-webkit
-	    max-width: 400px;
-	    height: auto; // fallback for non-webkit
-	    font-size: 15px;
-	    line-height: 1.13;
-	    -webkit-line-clamp: 5;
-	    -webkit-box-orient: vertical;
 	    overflow: hidden;
-	    text-overflow: ellipsis;
 	    font-feature-settings: "liga" 0;
 	    &.wp-caption-text {
 	    	margin: 0 !important;
