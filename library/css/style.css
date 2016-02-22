@@ -3440,7 +3440,7 @@ div.cartodb-popup .cartodb-popup-close-button {
 
   .blue-bar-top.about {
     align-items: center;
-    height: 60px;
+    height: 180px;
     margin: 0 0 -120px; }
 
   .home .index-row article.resource-cont, .index-row .card-third.resource-cont {
@@ -3486,7 +3486,7 @@ div.cartodb-popup .cartodb-popup-close-button {
 
   .blue-bar-top.about .wrapper {
     height: 80%;
-    display: inline; }
+    width: 95%; }
 
   .blue-bar-top .wrapper .region-filter li {
     display: table;
