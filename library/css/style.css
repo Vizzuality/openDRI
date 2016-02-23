@@ -1765,9 +1765,9 @@ POSTS & CONTENT STYLES
     .index-row article.resource-cont,
     .index-row .card-third.resource-cont {
       position: relative;
-      max-width: 675px;
+      max-width: 660px;
       height: 345px;
-      width: 675px;
+      width: 660px;
       margin: 0;
       justify-content: center;
       flex-direction: row;
@@ -1804,7 +1804,7 @@ POSTS & CONTENT STYLES
         .index-row .card-third.resource-cont section hr {
           width: 40%; }
   .index-row .resource-list {
-    margin: 0px 15px;
+    margin: 0px 0 0 35px;
     width: 315px;
     background: #fff;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.2); }
@@ -1895,7 +1895,8 @@ POSTS & CONTENT STYLES
     font-weight: bold;
     margin-top: 20px;
     transition: background 0.3s ease;
-    font-family: "Bariol_Regular", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    font-family: "Bariol_Regular", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.4); }
     .index-row .card-third span:hover {
       background: #ff0f47; }
   .index-row .card-third.twitter-timeline-container {
