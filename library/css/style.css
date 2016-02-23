@@ -1284,6 +1284,9 @@ style a page via class
 /* date archive page */
 /* replace the number to the corresponding page number */
 /* search page */
+.search article {
+  max-width: 315px !important; }
+
 /* search result page */
 /* no results search page */
 /* individual paged search (i.e. body.search-paged-3) */

@@ -43,6 +43,9 @@ style a page via class
 .date {}                          /* date archive page */
 	.date-paged-1 {}                /* replace the number to the corresponding page number */
 .search {}                        /* search page */
+.search article {
+	max-width: 315px !important;
+}
 	.search-results {}              /* search result page */
 	.search-no-results {}           /* no results search page */
 	.search-paged-1 {}              /* individual paged search (i.e. body.search-paged-3) */
