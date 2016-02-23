@@ -2799,7 +2799,8 @@ FOOTER STYLES
     display: -webkit-flex;
     /* NEW - Chrome */
     justify-content: space-between;
-    margin: 2.5rem 0; }
+    margin: 2.5rem 0;
+    padding: 0px 15px; }
     .footer .-ft-content .-ft-coorporate,
     .footer .-ft-content nav {
       display: flex;
