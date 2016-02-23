@@ -7,7 +7,7 @@
 					<main id="main" class="" role="main">
 						<h1 class="archive-title"><span><?php _e( 'Search Results for:', 'bonestheme' ); ?></span> <?php echo esc_attr(get_search_query()); ?></h1>
 
-						<div id="list-content" class="m-all cf index-row" role="news">
+						<div id="list-content" class="m-all index-row" role="news">
 								<div class="row-container">
 								<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
