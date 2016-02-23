@@ -3481,7 +3481,11 @@ div.cartodb-popup .cartodb-popup-close-button {
     top: 10px; }
 
   .header nav span {
-    font-size: 11px; }
+    font-size: 11px;
+    line-height: 20px; }
+
+  .header nav a:hover:before {
+    content: none; }
 
   .header nav span.current {
     height: 12px;
