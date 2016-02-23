@@ -588,6 +588,9 @@ POSTS & CONTENT STYLES
 		    -webkit-box-orient: vertical;
 		    text-overflow: ellipsis;
 		    position: relative;
+		    > p {
+		    	margin: 0;
+		    }
 	    }
 	    &.resource-cont {
 	    	&:after {
