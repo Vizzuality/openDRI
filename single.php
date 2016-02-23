@@ -68,7 +68,7 @@
 						<? 
 							if (get_post_type( get_the_ID() ) == 'project') {
 						?>
-						<div id="more-content" class="index-row more-content">
+						<div id="more-content" class="index-row wrap more-content">
 							<h3>Project's news</h3>
 
 							<div class="row-container">
@@ -120,7 +120,7 @@
 						<?
 							} else {
 						?>
-						<div id="more-content" class="index-row more-content">
+						<div id="more-content" class="index-row wrap more-content">
 							<h3>Recent news</h3>
 
 							<div class="row-container">
