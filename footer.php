@@ -160,49 +160,50 @@
 					$postsInall = $postsInall->count;
 				?>
 				var postsInall = '<? echo $postsInall ?>';
-				L.marker(new L.LatLng(0, 0), {icon:createLabelIcon(((postsInall.length > 1) ? "amount-of-posts-2" : "amount-of-posts"),postsInall)}).addTo(map);
+				var marker1 = L.marker(new L.LatLng(0, 0), {icon:createLabelIcon(((postsInall.length > 1) ? "amount-of-posts-2" : "amount-of-posts"),postsInall)}).addTo(map);
 
 				<? 
 					$postsInAfrica = get_term_by('slug','africa','category');
 					$postsInAfrica = $postsInAfrica->count;
 				?>
 				var postsInAfrica = '<? echo $postsInAfrica ?>';
-				L.marker(new L.LatLng(7, 21), {icon:createLabelIcon((postsInAfrica.length > 1) ? "amount-of-posts-2" : "amount-of-posts",postsInAfrica)}).addTo(map);
+				var marker2 = L.marker(new L.LatLng(7, 21), {icon:createLabelIcon((postsInAfrica.length > 1) ? "amount-of-posts-2" : "amount-of-posts",postsInAfrica)}).addTo(map);
 
 				<? 
 					$postsIneastasia = get_term_by('slug','east-asia-pacific','category');
 					$postsIneastasia = $postsIneastasia->count;
 				?>
 				var postsIneastasia = '<? echo $postsIneastasia ?>';
-				L.marker(new L.LatLng(35, 103), {icon:createLabelIcon((postsIneastasia.length > 1) ? "amount-of-posts-2" : "amount-of-posts",postsIneastasia)}).addTo(map);
+				var marker3 = L.marker(new L.LatLng(35, 103), {icon:createLabelIcon((postsIneastasia.length > 1) ? "amount-of-posts-2" : "amount-of-posts",postsIneastasia)}).addTo(map);
 
 				<? 
 					$postsInEurope = get_term_by('slug','europe-and-central-asia','category');
 					$postsInEurope = $postsInEurope->count;
 				?>
 				var postsInEurope = '<? echo $postsInEurope ?>';
-				L.marker(new L.LatLng(55, 25), {icon:createLabelIcon((postsInEurope.length > 1) ? "amount-of-posts-2" : "amount-of-posts",postsInEurope)}).addTo(map);
+				var marker4 = L.marker(new L.LatLng(55, 25), {icon:createLabelIcon((postsInEurope.length > 1) ? "amount-of-posts-2" : "amount-of-posts",postsInEurope)}).addTo(map);
 
 				<? 
 					$postsInlatam = get_term_by('slug','latin-america-and-caribbean','category');
 					$postsInlatam = $postsInlatam->count;
 				?>
 				var postsInlatam = '<? echo $postsInlatam ?>';			
-				L.marker(new L.LatLng(13, -59), {icon:createLabelIcon((postsInlatam.length > 1) ? "amount-of-posts-2" : "amount-of-posts",postsInlatam)}).addTo(map);
+				var marker5 = L.marker(new L.LatLng(13, -59), {icon:createLabelIcon((postsInlatam.length > 1) ? "amount-of-posts-2" : "amount-of-posts",postsInlatam)}).addTo(map);
 
 				<? 
 					$postsInmiddleeast = get_term_by('slug','middle-east-and-north-africa','category','category');
 					$postsInmiddleeast = $postsInmiddleeast->count;
 				?>
 				var postsInmiddleeast = '<? echo $postsInmiddleeast ?>';
-				L.marker(new L.LatLng(29, 41), {icon:createLabelIcon((postsInmiddleeast.length > 1) ? "amount-of-posts-2" : "amount-of-posts",postsInmiddleeast)}).addTo(map);
+				var marker6 = L.marker(new L.LatLng(29, 41), {icon:createLabelIcon((postsInmiddleeast.length > 1) ? "amount-of-posts-2" : "amount-of-posts",postsInmiddleeast)}).addTo(map);
 
 				<? 
 					$postsInsouthasia = get_term_by('slug','south-asia','category','category');
 					$postsInsouthasia = $postsInsouthasia->count;
 				?>
 				var postsInsouthasia = '<? echo $postsInsouthasia ?>';			
-				L.marker(new L.LatLng(27, 72), {icon:createLabelIcon((postsInsouthasia.length > 1) ? "amount-of-posts-2" : "amount-of-posts","<? echo $postsInsouthasia; ?>")}).addTo(map);
+				var marker7 = L.marker(new L.LatLng(27, 72), {icon:createLabelIcon((postsInsouthasia.length > 1) ? "amount-of-posts-2" : "amount-of-posts","<? echo $postsInsouthasia; ?>")}).addTo(map);
+
 				var query 		  = "SELECT * FROM wp_projects",
 					queryTemplate = query + " WHERE region = ",
 					queryTPillar  = query + " WHERE pillar like ",
@@ -691,6 +692,7 @@
 				}
 				if (typeof jsonValues != 'undefined') jsonValues = JSON.parse(jsonValues);
 				$('#pick-region').on('click', '.pickable', function(option) {
+					removeMarkers();
 					$('#blue-bar-m').removeClass('active');
 					$(this).siblings().removeClass('selected');
 					if (!! $(this).hasClass('selected')) {
@@ -742,7 +744,17 @@
 				    	map.setView(latlong,zoom);
 				    }
 				});
+				var removeMarkers = function() {				
+					map.removeLayer(marker1);
+					map.removeLayer(marker2);
+					map.removeLayer(marker3);
+					map.removeLayer(marker4);
+					map.removeLayer(marker5);
+					map.removeLayer(marker6);
+					map.removeLayer(marker7);
+				}
 				$('#blue-bar-pick-pillar').on('click', 'span, li', function(e) {
+					removeMarkers();
 					$('#blue-bar-m').toggleClass('active');
 					if ($(this).hasClass('current')) {
 						$(this).removeClass('current');
