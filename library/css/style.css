@@ -1734,6 +1734,9 @@ POSTS & CONTENT STYLES
     justify-content: space-between;
     align-items: stretch;
     width: 100%; }
+    .index-row.last-resources .row-container {
+      width: 100%;
+      justify-content: space-between; }
     .index-row.last-resources a {
       text-decoration: none; }
   .index-row article {
