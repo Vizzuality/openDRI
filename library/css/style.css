@@ -3040,7 +3040,7 @@ FOOTER STYLES
           height: 17px !important;
           position: relative !important;
           top: 4px !important;
-          left: -2px !important;
+          left: -7px !important;
           transform: scale(0.9) !important; }
       .blue-bar-top .wrapper span:hover {
         background-color: rgba(255, 255, 255, 0.2); }
@@ -3054,7 +3054,7 @@ FOOTER STYLES
           border: 0;
           background-position: 50%, 50%;
           display: inline-block;
-          margin: 0px 5px 0 0px;
+          margin: 0px 10px 0 0px;
           position: relative;
           top: 3px;
           background-color: white; }
