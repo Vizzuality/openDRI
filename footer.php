@@ -759,6 +759,7 @@
 					if ($(this).hasClass('current')) {
 						$(this).removeClass('current');
 						var option = 'all';
+						location.reload();
 					} else {
 						$(e.target).closest('span').addClass('current');
 						$(this).siblings().removeClass('current');
