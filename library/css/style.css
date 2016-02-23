@@ -1857,7 +1857,9 @@ POSTS & CONTENT STYLES
         font-weight: bold; }
       .index-row .resource-list.home li .size {
         width: 100%;
-        display: block; }
+        display: block;
+        text-transform: uppercase;
+        font-size: 11px; }
   .index-row .card-third h3 {
     font-size: 48px;
     text-transform: capitalize;
