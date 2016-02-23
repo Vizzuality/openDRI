@@ -3628,7 +3628,7 @@ div.cartodb-popup .cartodb-popup-close-button {
   .risk-visualizations #main .row-container article,
   .category-open-data-platforms #main .row-container article {
     max-width: none;
-    width: 90%; }
+    width: 100%; }
 
   .category-open-data-platforms #main .row-container article header, .category-community-mapping #main .row-container article header, .category-risk-visualizations #main .row-container article header, .category-news #main .row-container article header, .post-type-archive-resource #main .row-container article header {
     bottom: 50%; }
