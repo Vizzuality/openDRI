@@ -1944,9 +1944,7 @@ POSTS & CONTENT STYLES
 
 .hentry {
   background-color: #fff;
-  border-radius: 3px;
   margin-bottom: 1.5em;
-  border: 1px solid #ccc;
   position: relative; }
   .hentry > a, .hentry .img {
     height: 0%;
