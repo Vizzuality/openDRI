@@ -2067,16 +2067,16 @@ FOOTER STYLES
 		    		background-color: white;
 		    	}
 		    	i {
-		    		background-color: #1477c9;
-						background: url("../images/filter-off.svg") no-repeat 50% 50%;
+		    		background-color: #1477c9 !important;
+					background: url("../images/filter-off.svg") no-repeat 50% 50% !important;
 	    			-webkit-mask:  url("../images/filter-off.svg") !important;
 				    mask: url("../images/filter-off.svg") !important;
 				    width: 17px !important;
 				    height: 17px !important;
-				    position: relative;
-				    top: 4px;
-				    left: -2px;
-				    transform: scale(0.9);
+				    position: relative !important;
+				    top: 4px !important;
+				    left: -2px !important;
+				    transform: scale(0.9) !important;
 		    	}
 	    	}
 	    	&:hover {
