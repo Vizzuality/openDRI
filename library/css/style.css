@@ -2285,10 +2285,12 @@ POSTS & CONTENT STYLES
   display: -webkit-flex;
   /* NEW - Chrome */
   justify-content: space-between;
-  align-items: flex-start; }
+  align-items: flex-start;
+  flex-direction: row; }
   .archive #contact .index-row,
   .page #contact .index-row {
-    margin: 0; }
+    margin: 0;
+    width: 50%; }
     .archive #contact .index-row .card-third,
     .page #contact .index-row .card-third {
       margin: 0; }

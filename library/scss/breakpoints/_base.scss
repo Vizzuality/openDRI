@@ -1250,8 +1250,10 @@ margin: 0;
   display: -webkit-flex;     /* NEW - Chrome */
 		justify-content: space-between;
 		align-items: flex-start;
+		flex-direction: row;
 		.index-row {
 			margin: 0;
+			width: 50%;
 			.card-third {
 				margin: 0;
 			}
