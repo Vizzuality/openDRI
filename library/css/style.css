@@ -3795,7 +3795,16 @@ div.cartodb-popup .cartodb-popup-close-button {
     height: 100%; }
 
   .single .wrap {
-    width: 100%; } }
+    width: 100%; }
+
+  #explore-more section .what-explore {
+    top: 270px;
+    height: 50px;
+    display: flex;
+    position: absolute;
+    left: 105px;
+    width: 170px;
+    font-size: 14px; } }
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
