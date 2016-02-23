@@ -283,7 +283,11 @@ HEADER STYLES
 		}
 	}
 }
-
+.home .header nav a:hover {
+	&:before {
+		content: none;
+	}
+}
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -2256,7 +2260,7 @@ FOOTER STYLES
 		    	input {
 		    		background-color: rgba(#000,0.15);
 		    		margin: 0 0 0 -22px;
-    				width: 110%;
+    				width: calc(100% + 22px);
 		    		color: white;
 		    		border-radius: 0px;
 		    		position: relative;

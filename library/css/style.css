@@ -1483,6 +1483,9 @@ HEADER STYLES
     .header #logo a {
       color: #fff; }
 
+.home .header nav a:hover:before {
+  content: none; }
+
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -3211,7 +3214,7 @@ FOOTER STYLES
       .blue-bar-top-m.active #blue-bar-pick-pillar li input {
         background-color: rgba(0, 0, 0, 0.15);
         margin: 0 0 0 -22px;
-        width: 110%;
+        width: calc(100% + 22px);
         color: white;
         border-radius: 0px;
         position: relative;
