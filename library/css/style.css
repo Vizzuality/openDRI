@@ -3698,9 +3698,6 @@ div.cartodb-popup .cartodb-popup-close-button {
     display: block;
     width: 90%; }
 
-  .archive .index-row .resource-list {
-    width: 90%; }
-
   .leaflet-top .leaflet-control {
     margin-top: 10px !important; }
 
@@ -3769,7 +3766,10 @@ div.cartodb-popup .cartodb-popup-close-button {
 
   #pic-banner {
     height: 135px;
-    margin: 0 0 0px; } }
+    margin: 0 0 0px; }
+
+  .about-content.index-row {
+    margin: 60px -10px; } }
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
