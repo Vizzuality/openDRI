@@ -35,6 +35,7 @@ style a page via class
 .home { 
 	.index-row {
 		flex-direction: row;
+		justify-content: space-between;
 	}
 }                          /* home page */
 .blog {}                          /* blog template page */

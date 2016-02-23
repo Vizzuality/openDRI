@@ -1275,7 +1275,8 @@ style a page via class
 ********************/
 /* for sites that are read right to left (i.e. hebrew) */
 .home .index-row {
-  flex-direction: row; }
+  flex-direction: row;
+  justify-content: space-between; }
 
 /* home page */
 /* blog template page */
