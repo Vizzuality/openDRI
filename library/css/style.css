@@ -3804,7 +3804,10 @@ div.cartodb-popup .cartodb-popup-close-button {
     position: absolute;
     left: 105px;
     width: 170px;
-    font-size: 14px; } }
+    font-size: 14px; }
+
+  .index-row.more-content h3 {
+    padding: 0 6%; } }
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
