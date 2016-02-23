@@ -1859,7 +1859,8 @@ POSTS & CONTENT STYLES
         width: 100%;
         display: block;
         text-transform: uppercase;
-        font-size: 11px; }
+        font-size: 11px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .index-row .card-third h3 {
     font-size: 48px;
     text-transform: capitalize;
