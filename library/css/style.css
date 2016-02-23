@@ -1759,6 +1759,9 @@ POSTS & CONTENT STYLES
       -webkit-box-orient: vertical;
       text-overflow: ellipsis;
       position: relative; }
+      .index-row article .entry-content > p,
+      .index-row .card-third .entry-content > p {
+        margin: 0; }
     .index-row article.resource-cont,
     .index-row .card-third.resource-cont {
       position: relative;
