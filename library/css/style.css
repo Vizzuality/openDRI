@@ -1915,7 +1915,8 @@ POSTS & CONTENT STYLES
       height: 60px;
       position: absolute;
       top: -20px;
-      left: 25px; }
+      left: 25px;
+      box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.4); }
       .index-row .card-third .twitter > span .twt-img {
         background-color: white;
         width: 60px;
