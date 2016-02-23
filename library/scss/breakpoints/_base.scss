@@ -2312,6 +2312,18 @@ FOOTER STYLES
 	}
 }
 .leaflet-top .leaflet-control {margin-top: 60px !important}
+.leaflet-bar {
+	box-shadow: none !important;
+}
+.leaflet-bar a {
+	border-radius: 0 !important;
+    background-color: #048ef1 !important;
+    color: #fff !important;
+    border: 1px solid rgba(255,255, 255, 0.30) !important;
+    height: 30px !important;
+    width: 30px !important;
+    box-shadow: none !important;
+}
 div.cartodb-popup.v2 {
 	border-radius: 0 !important;
 	box-shadow: 0 0 7px rgba(0, 0, 0, 0.2) !important;
