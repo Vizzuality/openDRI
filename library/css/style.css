@@ -3781,7 +3781,7 @@ div.cartodb-popup .cartodb-popup-close-button {
     justify-content: flex-start; }
 
   .archive .index-row .resource-list, .page .index-row .resource-list {
-    width: 100%; } }
+    height: 100%; } }
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
