@@ -1751,7 +1751,7 @@ POSTS & CONTENT STYLES
     .index-row article .entry-content,
     .index-row .card-third .entry-content {
       overflow: hidden;
-      height: auto;
+      height: 115px;
       font-size: 15px;
       display: -webkit-box;
       line-height: 24px;
@@ -1993,7 +1993,7 @@ POSTS & CONTENT STYLES
     display: -webkit-flex;
     padding: 10px 0; }
   .hentry footer {
-    margin: 7px; }
+    margin: 7px 15px; }
     .hentry footer p {
       margin: 0;
       display: flex;
