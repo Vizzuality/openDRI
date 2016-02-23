@@ -2528,7 +2528,8 @@ POSTS & CONTENT STYLES
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
   line-height: 23px;
-  font-weight: 400; }
+  font-weight: 400;
+  margin: 0 0 50px; }
 
 .category-open-data-platforms #main,
 .category-community-mapping #main,
