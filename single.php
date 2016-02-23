@@ -171,13 +171,13 @@
 				<article>
 				<? if (get_post_type( get_the_ID() ) == 'project') { ?>
 					<h2>ALL PROJECTS</h2>
-					<h3>Discover my projects as this one</h3>
+					<h3>Discover more projects as this one</h3>
 				<? } else { ?>
 					<h2>ALL NEWS</h2>
-					<h3>Discover my news as this one</h3>
+					<h3>Discover more news as this one</h3>
 				<? } // end else ?>
 				</article>
-				<div class="what-explore">
+				<div class="what-explore bigger">
 					<a href="<? echo esc_url(get_category_link(get_cat_ID( $CAT_NAME ))) ?>">explore <? echo $CAT_NAME?></a>
 				</div>
 			</section>
