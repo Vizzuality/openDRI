@@ -3461,7 +3461,7 @@ div.cartodb-popup .cartodb-popup-close-button {
     display: block; }
 
   .header nav img {
-    top: 1px; }
+    top: -13px; }
 
   .no-home .header nav {
     top: 10px; }
@@ -3720,9 +3720,6 @@ div.cartodb-popup .cartodb-popup-close-button {
 
   .index-row .card-third .twitter > span {
     left: 40px; }
-
-  .index-row .card-third h3 {
-    margin: 0px 0 -40px; }
 
   .index-row article, .index-row .card-third {
     margin: 0 15px 30px; }
