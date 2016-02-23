@@ -1684,7 +1684,8 @@ POSTS & CONTENT STYLES
     color: white;
     text-align: center; }
     #explore-more section .what-explore {
-      top: 34px; }
+      top: 34px;
+      height: 66px; }
     #explore-more section h2 {
       font-size: 49px;
       line-height: 40px;
@@ -1693,6 +1694,9 @@ POSTS & CONTENT STYLES
       font-size: 22px;
       line-height: 25px;
       letter-spacing: 0.6px; }
+
+.single #explore-more {
+  margin: 130px 0 0 0; }
 
 .index-row {
   display: flex;
