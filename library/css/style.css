@@ -2510,7 +2510,10 @@ POSTS & CONTENT STYLES
 
 .post-type-archive-project #main > h3 {
   width: 50%;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 23px;
+  font-weight: 400; }
 
 .category-open-data-platforms #main,
 .category-community-mapping #main,
