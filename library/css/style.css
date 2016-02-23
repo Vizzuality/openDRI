@@ -2518,10 +2518,6 @@ POSTS & CONTENT STYLES
     width: 100%;
     flex-wrap: wrap;
     justify-content: space-between; }
-    .archive .index-row .row-container:after,
-    .page .index-row .row-container:after {
-      content: "";
-      flex: auto; }
   .archive .index-row .resource-cont,
   .page .index-row .resource-cont {
     width: 485px;
