@@ -1419,7 +1419,16 @@ HEADER STYLES
       color: inherit;
       transition: color 0.3s ease; }
       .header nav a:hover {
-        color: black; }
+        color: black;
+        position: relative; }
+        .header nav a:hover:before {
+          content: '';
+          height: 5px;
+          width: 100%;
+          background-color: #0475cc;
+          opacity: 0.1;
+          top: -30px;
+          position: absolute; }
     .header nav img {
       opacity: 0.6;
       position: relative;

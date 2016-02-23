@@ -204,6 +204,16 @@ HEADER STYLES
 			transition: color 0.3s ease;
 			&:hover{
 				color: darken(#555, 50%);
+				position: relative;
+				&:before {
+					content: '';
+				    height: 5px;
+				    width: 100%;
+				    background-color: #0475cc;
+				    opacity: 0.1;
+				    top: -30px;
+				    position: absolute;
+				}
 			}
 		}
 		img {
