@@ -1969,7 +1969,8 @@ POSTS & CONTENT STYLES
     width: 90%;
     z-index: 1;
     margin: 0 5%;
-    transition: background 0.3s ease; }
+    transition: background 0.3s ease;
+    box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.4); }
     .hentry header:hover {
       background: #2791e9; }
     .hentry header a {
@@ -2553,8 +2554,7 @@ POSTS & CONTENT STYLES
     .post-type-archive-resource #main .row-container article header {
       width: 96%;
       bottom: 50%;
-      margin: 0px 2%;
-      box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.4); }
+      margin: 0px 2%; }
 
 #list-content {
   margin: 0; }

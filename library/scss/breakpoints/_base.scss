@@ -826,6 +826,7 @@ POSTS & CONTENT STYLES
 	    z-index: 1;
 	    margin: 0 5%;
 		transition: background 0.3s ease;
+		box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.4);
 		&:hover {
 			background: lighten($text-bkg-blue,10%);
 		}
@@ -1432,8 +1433,7 @@ margin: 0;
 		header {
 			width: 96%;
 		    bottom: 50%;
-		    margin: 0px 2%;
-		    box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.4);
+		    margin: 0px 2%;		    
 		}
 	}
 }
