@@ -189,6 +189,7 @@ HEADER STYLES
 			font-size: 16px;
 			letter-spacing: 1.1px;
 			cursor: pointer;
+			height: 24px;
 			&.current {
 			    box-shadow: 0px -5px 0 #0475cc;
 			    height: 30px;
@@ -208,7 +209,7 @@ HEADER STYLES
 		img {
 			opacity: 0.6;
 		    position: relative;
-		    top: 4px;
+		    top: -10px;
 		    transform: scale(1.3);
 		    transition: opacity 0.3s ease;
 		    &:hover {
@@ -224,7 +225,7 @@ HEADER STYLES
 			    width: 150px;
 			    display: inline;
 			    position: relative;
-			    top: 5px;
+			    top: -5px;
 			    left: 5px;
 			    padding: 0;
 			}
@@ -235,9 +236,9 @@ HEADER STYLES
 				display: inline-block;
 				height: 30px;
 				width: 30px;
+				background: url("../images/search-w.svg") no-repeat 50% 50%;
 				background-color: #fff;
-				background: url("../images/search.svg") no-repeat 50% 50%;
-			    -webkit-mask:  url("../images/search.svg") no-repeat 50% 50%;
+			    -webkit-mask:  url("../images/search-w.svg") no-repeat 50% 50%;
 			    mask: url("../images/search.svg") no-repeat 50% 50%;
 			}	
 		}
@@ -245,9 +246,10 @@ HEADER STYLES
 		    display: inline-flex;
 		    position: relative;
 		    background-color: #1477c9;
-		    top: 9px;
-		    border-radius: 4px;
-		    left: 4px;
+		    top: 0;
+    		border-radius: 4px;
+    		left: 10px;
+    		height: 30px;
 		}
 	}
 	.hr {
