@@ -1285,7 +1285,8 @@ style a page via class
 /* replace the number to the corresponding page number */
 /* search page */
 .search article {
-  max-width: 315px !important; }
+  max-width: 315px !important;
+  margin: 0 15px 50px !important; }
 
 /* search result page */
 /* no results search page */
