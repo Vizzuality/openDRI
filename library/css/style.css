@@ -3561,8 +3561,7 @@ div.cartodb-popup .cartodb-popup-close-button {
 
   .archive .p-info h4, .page .p-info h4 {
     width: 100%;
-    top: -25px;
-    padding: 0 19px; }
+    top: -25px; }
 
   .index-row .row-container, .page .index-row .row-container {
     -webkit-flex-direction: column;
@@ -3769,7 +3768,10 @@ div.cartodb-popup .cartodb-popup-close-button {
     margin: 0 0 0px; }
 
   .about-content.index-row {
-    margin: 60px -10px; } }
+    margin: 60px -10px; }
+
+  .about-content .p-info {
+    justify-content: flex-start; } }
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
