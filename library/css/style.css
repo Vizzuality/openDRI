@@ -3383,10 +3383,6 @@ div.cartodb-popup .cartodb-popup-close-button {
     margin: -40px 0 20px;
     width: 100%; }
 
-  .home .index-row .row-container {
-    justify-content: center;
-    -webkit-justify-content: center; }
-
   .home #map-fake .what-list h2 {
     font-size: 29px; }
 
