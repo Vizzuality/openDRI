@@ -857,6 +857,7 @@ POSTS & CONTENT STYLES
   display: -ms-flexbox;      /* TWEENER - IE 10 */
   display: -webkit-flex;     /* NEW - Chrome */
     		justify-content: space-between;
+    		text-transform: uppercase;
     		span {
     			line-height: 15px;
     			max-width: 230px;
@@ -864,7 +865,6 @@ POSTS & CONTENT STYLES
     		a {
 			    color: rgba(85,85,85,0.5);
 			    text-decoration: none;
-			    text-transform: capitalize;
 			    font-feature-settings: "liga" 0;
 			    font-size: 14px;
     		}
