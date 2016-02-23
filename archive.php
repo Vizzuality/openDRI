@@ -140,7 +140,7 @@ if(is_post_type_archive() && $post_type=='project') {
 ?>
 			<div id="content">
 						<? echo ($hascornermap) ? '<span class="corner-map"></span>' : ''; ?>
-				<div id="inner-content" class="wrap cf">
+				<div id="inner-content" class="wrap">
 						<main id="main" class="" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
 							<?php
