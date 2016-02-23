@@ -1824,6 +1824,7 @@ POSTS & CONTENT STYLES
   .index-row .resource-list {
     margin: 0px;
     width: 315px;
+    height: 345px;
     background: #fff;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.2); }
     .index-row .resource-list li {
