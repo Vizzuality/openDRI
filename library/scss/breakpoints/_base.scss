@@ -1427,10 +1427,6 @@ margin: 0;
 			width: 100%;
 		    flex-wrap: wrap;
 		    justify-content: space-between;
-			&:after {
-				content: "";
-				flex: auto;
-			}
 		}
 		.resource-cont {
 			width: 485px;
