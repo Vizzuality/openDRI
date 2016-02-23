@@ -3468,8 +3468,8 @@ div.cartodb-popup .cartodb-popup-close-button {
 
   .header nav span.current {
     height: 12px;
-    line-height: 28px;
-    top: -8px; }
+    line-height: 26px;
+    top: -9px; }
 
   .home #map-fake .what-list {
     width: 100%; }
