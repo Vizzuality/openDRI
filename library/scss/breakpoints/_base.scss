@@ -583,7 +583,7 @@ POSTS & CONTENT STYLES
 		    height: auto;
 		    font-size: 15px;
 		    display: -webkit-box;
-			line-height: 26px;
+			line-height: 24px;
 			-webkit-line-clamp: 4;
 		    -webkit-box-orient: vertical;
 		    text-overflow: ellipsis;
@@ -849,7 +849,7 @@ POSTS & CONTENT STYLES
 			padding: 10px 0;
 		}
 	footer {
-		margin: 15px;
+		margin: 7px;
 
 		p {
 			margin: 0;
@@ -942,9 +942,7 @@ POSTS & CONTENT STYLES
 	font-family: helvetica, sans-serif;
 	time {
 		display: table;
-	    position: relative;
-	    top: -3px;
-	    font-size: 13px;
+	    font-size: 11px;
     	color: rgba(85, 85, 85, 0.5);
 	}
 }

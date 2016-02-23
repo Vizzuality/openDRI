@@ -1754,7 +1754,7 @@ POSTS & CONTENT STYLES
       height: auto;
       font-size: 15px;
       display: -webkit-box;
-      line-height: 26px;
+      line-height: 24px;
       -webkit-line-clamp: 4;
       -webkit-box-orient: vertical;
       text-overflow: ellipsis;
@@ -1993,7 +1993,7 @@ POSTS & CONTENT STYLES
     display: -webkit-flex;
     padding: 10px 0; }
   .hentry footer {
-    margin: 15px; }
+    margin: 7px; }
     .hentry footer p {
       margin: 0;
       display: flex;
@@ -2071,9 +2071,7 @@ POSTS & CONTENT STYLES
   font-family: helvetica, sans-serif; }
   .byline time {
     display: table;
-    position: relative;
-    top: -3px;
-    font-size: 13px;
+    font-size: 11px;
     color: rgba(85, 85, 85, 0.5); }
 
 /* entry content */
