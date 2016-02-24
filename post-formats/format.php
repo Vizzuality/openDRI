@@ -58,7 +58,11 @@
 
                   <?php the_tags( '<p class="tags"><span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '</p>' ); ?>
                   <div class="social-sharing">
-                    <p>share this on: <a href="https://twitter.com/intent/tweet?text=<?php echo esc_url(the_title()) ?>&url=<?php echo esc_url(the_permalink()) ?>">twitter</a><a>facebook</a><a>google+</a></p>
+                    <?php 
+                        $share_title = get_the_title();
+                        $share_url   = rawurlencode(get_the_permalink());
+                    ?>
+                    <p>share this on: <a target="_blank" href="https://twitter.com/intent/tweet?text=<?php echo $share_title ?>&url=<?php echo $share_url ?>">twitter</a><a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=<?php echo $share_url ?>">facebook</a><a target="_blank" href="https://plus.google.com/share?url=<?php echo $share_url ?>">google+</a></p>
                   </div>
                 </footer> <?php // end article footer ?>
 
