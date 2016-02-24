@@ -1366,6 +1366,12 @@ margin: 0;
 		width: 100%;
 		height: 100%;
 	}
+	.page .about-content .card-third,
+	#about.index-row,
+	#principles.index-row
+	#contact.index-row
+	#more-content.index-row {margin: 0;}
+	
 	#principles h3,
 	.-m-disclaimer h3 {
 		color: #1477c9;

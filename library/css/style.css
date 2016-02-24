@@ -2450,6 +2450,17 @@ POSTS & CONTENT STYLES
 .page #about .card-third {
   width: 100%;
   height: 100%; }
+.archive .page .about-content .card-third,
+.archive #about.index-row,
+.archive #principles.index-row
+#contact.index-row
+#more-content.index-row,
+.page .page .about-content .card-third,
+.page #about.index-row,
+.page #principles.index-row
+#contact.index-row
+#more-content.index-row {
+  margin: 0; }
 .archive #principles h3,
 .archive .-m-disclaimer h3,
 .page #principles h3,
