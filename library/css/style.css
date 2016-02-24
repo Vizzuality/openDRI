@@ -2499,7 +2499,8 @@ POSTS & CONTENT STYLES
 .page #principles.index-row
 #contact.index-row
 #more-content.index-row {
-  margin: 0; }
+  margin: 0;
+  display: block; }
 .archive #principles h3,
 .archive .-m-disclaimer h3,
 .page #principles h3,
