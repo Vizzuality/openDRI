@@ -87,7 +87,7 @@ if(is_post_type_archive() && $post_type=='project') {
 } elseif (is_category() && 
 	($title === 'news' 							|| 
 	 $title === 'Open Data Platforms' 			|| 
-	 $title === 'Risk Visualizations' 			|| 
+	 $title === 'Risk Visualization' 			|| 
 	 $title === 'Community Mapping'   			||
 	 $title === 'Africa' 			  			||
 	 $title === 'East Asia Pacific'   			||
