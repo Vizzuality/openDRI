@@ -85,10 +85,17 @@ if(is_post_type_archive() && $post_type=='project') {
 			  </div>'; //end menu mobile filter projects	$hascornermap = false;
 	echo '<div id="map" class="cdbmap"></div>';
 } elseif (is_category() && 
-	($title === 'news' || 
-	 $title === 'Open Data Platforms' || 
-	 $title === 'Risk Visualizations' || 
-	 $title === 'Community Mapping')) {
+	($title === 'news' 							|| 
+	 $title === 'Open Data Platforms' 			|| 
+	 $title === 'Risk Visualizations' 			|| 
+	 $title === 'Community Mapping'   			||
+	 $title === 'Africa' 			  			||
+	 $title === 'East Asia Pacific'   			||
+	 $title === 'Europe and Central Asia'   	||
+	 $title === 'Latin America and Caribbean'   ||
+	 $title === 'Middle East And North Africa'  ||
+	 $title === 'Non WB Countries' 				||
+	 $title === 'South Asia')) {
 	$display_navi = true;
 	echo '	<div class="blue-bar-top" id="blue-bar">
 				<div class="wrap wrapper filters">
