@@ -1225,7 +1225,7 @@ margin: 0;
 	#about.index-row,
 	#principles.index-row,
 	#contact.index-row,
-	#more-content.index-row {margin: 0;}
+	#more-content.index-row {margin: 80px 0;}
 	.about-content {
 
 		.card-third {
@@ -1318,7 +1318,8 @@ margin: 0;
 	#partners {
 		h3 {
 			color: #1477c9;
-    		width: 150%;
+    		width: 100%;
+    		margin: 0 0 30px;
 		}
 	}
 	#members,

@@ -2258,7 +2258,7 @@ POSTS & CONTENT STYLES
 .page #principles.index-row,
 .page #contact.index-row,
 .page #more-content.index-row {
-  margin: 0; }
+  margin: 80px 0; }
 .archive .about-content .card-third,
 .page .about-content .card-third {
   max-width: none;
@@ -2360,7 +2360,8 @@ POSTS & CONTENT STYLES
 .page #members h3,
 .page #partners h3 {
   color: #1477c9;
-  width: 150%; }
+  width: 100%;
+  margin: 0 0 30px; }
 .archive #members,
 .archive #partners,
 .page #members,
