@@ -3486,6 +3486,9 @@ div.cartodb-popup .cartodb-popup-close-button {
 .archive #contact .contact-form textarea, .page #contact .contact-form textarea {
   width: 100%; }
 
+.home .index-row .resource-list {
+  max-height: 345px; }
+
 @media (max-width: 1024px) {
   .home .header nav {
     width: 100%; }

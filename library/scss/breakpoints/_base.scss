@@ -2476,6 +2476,7 @@ div.cartodb-popup .cartodb-popup-close-button {
 	width: 100% !important;
 }
 .archive #contact .contact-form textarea, .page #contact .contact-form textarea {width: 100%;}
+.home .index-row .resource-list {max-height: 345px;}
 @media (max-width: 1024px) {
   .home .header nav {width: 100%;}
   .home .index-row {-webkit-flex-direction: column; flex-direction: column; margin: 20px 0;width:100%;align-items: center;}
