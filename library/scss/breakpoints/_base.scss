@@ -1466,6 +1466,13 @@ margin: 0;
 }
 .category-open-data-platforms #main,
 .category-community-mapping #main,
+.category-africa #main,
+.category-east-asia-pacific #main,
+.category-europe-and-central-asia #main,
+.category-latin-america-and-caribbean #main,
+.category-middle-east-and-north-africa #main,
+.category-non-wb-countries #main,
+.category-south-asia #main,
 .category-risk-visualizations #main,
 .category-news #main,
 .post-type-archive-resource #main {
@@ -2498,27 +2505,58 @@ div.cartodb-popup .cartodb-popup-close-button {
 	.page #contact .index-row .card-third {padding: 10px;}
 	.category-news .blue-bar-top,
 	.category-community-mapping .blue-bar-top,
-	.risk-visualizations .blue-bar-top,
-	.category-open-data-platforms .blue-bar-top  {height: 160px;}
+	.category-risk-visualizations .blue-bar-top,
+	.category-open-data-platforms .blue-bar-top,
+	.category-africa .blue-bar-top,
+	.category-east-asia-pacific .blue-bar-top,
+	.category-europe-and-central-asia .blue-bar-top,
+	.category-latin-america-and-caribbean .blue-bar-top,
+	.category-middle-east-and-north-africa .blue-bar-top,
+	.category-non-wb-countries  .blue-bar-top,
+	.category-south-asia  .blue-bar-top  {height: 160px;}
 	.blue-bar-top .wrapper .region-filter li {display: inline;}
 	.category-news #main > h3,
 	.category-news #main > h1,
 	.category-community-mapping #main > h3,
 	.category-community-mapping #main > h1, 
-	.risk-visualizations #main > h3,
-	.risk-visualizations #main > h1,
+	.category-risk-visualizations #main > h3,
+	.category-risk-visualizations #main > h1,
 	.category-open-data-platforms #main > h3,
-	.category-open-data-platforms #main > h1 {max-width: 100%}
+	.category-open-data-platforms #main > h1,
+	.category-community-mapping #main > h3,
+	.category-risk-visualizations #main > h3,
+	.category-open-data-platforms #main > h3,
+	.category-africa #main > h3,
+	.category-east-asia-pacific #main > h3,
+	.category-europe-and-central-asia #main > h3,
+	.category-latin-america-and-caribbean #main > h3,
+	.category-middle-east-and-north-africa #main > h3,
+	.category-non-wb-countries  #main > h3,
+	.category-south-asia #main > h3,
+	.category-africa #main > h1,
+	.category-east-asia-pacific #main > h1,
+	.category-europe-and-central-asia #main > h1,
+	.category-latin-america-and-caribbean #main > h1,
+	.category-middle-east-and-north-africa #main > h1,
+	.category-non-wb-countries  #main > h1,
+	.category-south-asia #main > h1	 {max-width: 100%}
 	.category-news #main .row-container article,
 	.post-type-archive-resource #main .row-container article,
 	.category-community-mapping #main .row-container article, 
-	.risk-visualizations #main .row-container article,
-	.category-open-data-platforms #main .row-container article {max-width: none; width: 100%;}
-	.category-open-data-platforms #main .row-container article header, .category-community-mapping #main .row-container article header, .category-risk-visualizations #main .row-container article header, .category-news #main .row-container article header, .post-type-archive-resource #main .row-container article header {bottom: 50%;}
+	.category-risk-visualizations #main .row-container article,
+	.category-open-data-platforms #main .row-container article,
+	.category-africa #main .row-container article,
+	.category-east-asia-pacific #main .row-container article,
+	.category-europe-and-central-asia #main .row-container article,
+	.category-latin-america-and-caribbean #main .row-container article,
+	.category-middle-east-and-north-africa #main .row-container article,
+	.category-non-wb-countries  #main .row-container article,
+	.category-south-asia #main .row-container article {max-width: none; width: 100%;}
+	.category-open-data-platforms #main .row-container article header, .category-community-mapping #main .row-container article header, .category-risk-visualizations #main .row-container article header, .category-news #main .row-container article header, .post-type-archive-resource #main .row-container article header,.category-africa #main,.category-east-asia-pacific #main,.category-europe-and-central-asia #main,.category-latin-america-and-caribbean #main,.category-middle-east-and-north-africa #main,.category-non-wb-countries  #main,.category-south-asia #main {bottom: 50%;}
 	.blue-bar-top .wrapper .region-filter {top: 0;}
 	.category-news #main,
 	.category-community-mapping #main,
-	.risk-visualizations #main,
+	.category-risk-visualizations #main,
 	.category-open-data-platforms #main {margin: 30px 0 0;}
 	.hentry.-odri-post.category-news {width: 100%; padding: 1em;}
 	div#principles.m-all.cf.index-row.about-content { height: 100%; }
@@ -2533,8 +2571,15 @@ div.cartodb-popup .cartodb-popup-close-button {
 	.header nav input.visible { margin: 0px 5px 0 0px; position: relative; top: -3px;}
 	.category-news nav input.visible,
 	.category-community-mapping nav input.visible,
-	.risk-visualizations nav input.visible,
-	.category-open-data-platforms nav input.visible { margin: 0px 5px 0 80px;}
+	.category-risk-visualizations nav input.visible,
+	.category-open-data-platforms nav input.visible,
+	.category-africa #main nav input.visible,
+	.category-east-asia-pacific #main nav input.visible,
+	.category-europe-and-central-asia #main nav input.visible,
+	.category-latin-america-and-caribbean #main nav input.visible,
+	.category-middle-east-and-north-africa #main nav input.visible,
+	.category-non-wb-countries  #main nav input.visible,
+	.category-south-asia #main nav input.visible { margin: 0px 5px 0 80px;}
 	.post-type-archive-project #main > h3,
 	.post-type-archive-resource #main > h3 {width: 100%; max-width: 100%;}
 	.post-type-archive-resource #main {margin: 10px;}
