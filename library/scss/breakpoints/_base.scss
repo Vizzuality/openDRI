@@ -2497,7 +2497,8 @@ div.cartodb-popup .cartodb-popup-close-button {
   div#principles.m-all.cf.index-row.about-content ol { display: block;}
   .blue-bar-top .wrapper span.current {background-color: transparent; color: #fff;}
   .entry-content img {display: block;}
-  .page #contact .contact-form input {background: #eee;}
+  .page #contact .contact-form input,
+  .page #contact .contact-form textarea {background: #eee;}
 }
 @media (max-width: 768px) {
 	#logo img {display: none;}

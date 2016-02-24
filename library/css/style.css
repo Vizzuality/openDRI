@@ -3565,7 +3565,8 @@ div.cartodb-popup .cartodb-popup-close-button {
   .entry-content img {
     display: block; }
 
-  .page #contact .contact-form input {
+  .page #contact .contact-form input,
+  .page #contact .contact-form textarea {
     background: #eee; } }
 @media (max-width: 768px) {
   #logo img {
