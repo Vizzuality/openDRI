@@ -3481,7 +3481,7 @@ div.cartodb-popup .cartodb-popup-close-button {
   justify-content: space-between; }
 
 .contact-form input[type=email], .contact-form input[type=text] {
-  width: none !important; }
+  width: 100% !important; }
 
 .archive #contact .contact-form textarea, .page #contact .contact-form textarea {
   width: 100%; }
