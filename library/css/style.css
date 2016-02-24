@@ -3563,7 +3563,10 @@ div.cartodb-popup .cartodb-popup-close-button {
     color: #fff; }
 
   .entry-content img {
-    display: block; } }
+    display: block; }
+
+  .page #contact .contact-form input {
+    background: #eee; } }
 @media (max-width: 768px) {
   #logo img {
     display: none; }
