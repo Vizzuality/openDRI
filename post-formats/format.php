@@ -57,7 +57,9 @@
                   <?php // printf( __( '', 'bonestheme' ).' %1$s', get_the_category_list(', ') ); ?>
 
                   <?php the_tags( '<p class="tags"><span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '</p>' ); ?>
-
+                  <div class="social-sharing">
+                    <p>share this on: <a href="https://twitter.com/intent/tweet?text=<?php echo esc_url(the_title()) ?>&url=<?php echo esc_url(the_permalink()) ?>">twitter</a><a>facebook</a><a>google+</a></p>
+                  </div>
                 </footer> <?php // end article footer ?>
 
                 <?php //comments_template(); ?>
