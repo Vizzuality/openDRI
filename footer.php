@@ -867,6 +867,7 @@
 			    e.stopPropagation();
 			    $input.addClass('visible').focus();
 			    $i_input.addClass('visible');
+			    $s_input.addClass('float-center');
 			    $im_input.hide();
 			    if ($(window).width() < 768) {
 			    	$('#menu-option-projects').hide();
@@ -878,6 +879,7 @@
 			        if($s_input.has(e.target).length === 0){
 			             $input.removeClass('visible');
 			             $i_input.removeClass('visible');
+			    		 $s_input.removeClass('float-center');
 			             $im_input.show();
 			        } else {
 			            $(document).one('click', closeMenu);

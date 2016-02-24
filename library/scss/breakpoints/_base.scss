@@ -2511,6 +2511,7 @@ div.cartodb-popup .cartodb-popup-close-button {
 	.header nav img {top: -13px;}
 	.no-home .header nav { top: 10px; }
 	.header nav span {font-size: 11px; line-height: 20px;}
+	.header nav span.float-center {position: relative; top: -5px; left: 20%}
 	.header nav a:hover:before {content: none;}
 	.header nav span.current {height: 12px;line-height: 26px; top: -9px;}
 	.home #map-fake .what-list { width: 100%; }

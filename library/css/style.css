@@ -3602,6 +3602,11 @@ div.cartodb-popup .cartodb-popup-close-button {
     font-size: 11px;
     line-height: 20px; }
 
+  .header nav span.float-center {
+    position: relative;
+    top: -5px;
+    left: 20%; }
+
   .header nav a:hover:before {
     content: none; }
 
