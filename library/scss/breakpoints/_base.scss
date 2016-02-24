@@ -943,6 +943,19 @@ POSTS & CONTENT STYLES
 			    }
 			}
 		}
+		footer {
+			a {
+			    font-family: $bariol;
+				font-weight: bold;
+				font-size: 13px;
+			}
+		}
+		.tags-title {
+			font-size: 13px;
+		    font-family: $bariol;
+		    font-weight: bold;
+		    color: rgba(85,85,85,0.5);
+			}
 		.social-sharing {
 			p {
 				justify-content: initial;
@@ -950,7 +963,7 @@ POSTS & CONTENT STYLES
 			    line-height: 23px;
 			    font-size: 13px;
 			    font-family: $bariol;
-			    font-weight: bold;;
+			    font-weight: bold;
 			}
 			a {
 			    width: 84px;
