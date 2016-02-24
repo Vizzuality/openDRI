@@ -3873,7 +3873,8 @@ div.cartodb-popup .cartodb-popup-close-button {
     display: -ms-flexbox;
     display: -webkit-flex;
     width: 100%;
-    align-items: center; }
+    align-items: center;
+    margin: 0 !important; }
 
   .index-row .card-third .twitter > span {
     left: 40px; }

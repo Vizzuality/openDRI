@@ -2622,7 +2622,7 @@ div.cartodb-popup .cartodb-popup-close-button {
 	.leaflet-top .leaflet-control {margin-top: 10px !important;}
 	#map-fake {height: 526px;}
 	#map-fake:after {background: #0e5fa2;}
-	.index-row .card-third.twitter-timeline-container {display: flex;display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;width: 100%;align-items: center;}
+	.index-row .card-third.twitter-timeline-container {display: flex;display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;width: 100%;align-items: center; margin: 0 !important;}
 	.index-row .card-third .twitter > span {left: 40px;}
 	.index-row article, .index-row .card-third {margin: 0 15px 30px;}
 	.index-row article, .index-row .card-third::last-child{margin: 0 15px 0px;}
