@@ -3679,7 +3679,7 @@ div.cartodb-popup .cartodb-popup-close-button {
     padding: 1em; }
 
   div#principles.m-all.cf.index-row.about-content, div#principles.m-all.index-row.about-content.comment-respond {
-    height: 900px; }
+    height: 100%; }
 
   .page .p-info.double p {
     width: 100%; }
