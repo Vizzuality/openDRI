@@ -3776,7 +3776,8 @@ div.cartodb-popup .cartodb-popup-close-button {
   .category-non-wb-countries #main .row-container article,
   .category-south-asia #main .row-container article {
     max-width: none;
-    width: 100%; }
+    width: 100%;
+    margin: 20px 0px; }
 
   .category-open-data-platforms #main .row-container article header, .category-community-mapping #main .row-container article header, .category-risk-visualization #main .row-container article header, .category-news #main .row-container article header, .post-type-archive-resource #main .row-container article header, .category-africa #main, .category-east-asia-pacific #main, .category-europe-and-central-asia #main, .category-latin-america-and-caribbean #main, .category-middle-east-and-north-africa #main, .category-non-wb-countries #main, .category-south-asia #main {
     bottom: 50%; }
