@@ -3821,6 +3821,10 @@ div.cartodb-popup .cartodb-popup-close-button {
     width: 100%;
     margin: 0 10px; }
 
+  .page #partners .-m-info {
+    width: 100%;
+    margin: 0 10px; }
+
   .page #members .-m-team-member img {
     display: block;
     margin: 0 auto 30px; }
