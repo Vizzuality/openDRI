@@ -2250,21 +2250,19 @@ POSTS & CONTENT STYLES
     background-repeat: no-repeat;
     width: 100%;
     background-position: 0; }
-.archive .about-content .card-third,
 .archive #about.index-row,
-.archive #principles.index-row
-#contact.index-row
-#more-content.index-row,
-.page .about-content .card-third,
+.archive #principles.index-row,
+.archive #contact.index-row,
+.archive #more-content.index-row,
 .page #about.index-row,
-.page #principles.index-row
-#contact.index-row
-#more-content.index-row {
+.page #principles.index-row,
+.page #contact.index-row,
+.page #more-content.index-row {
   margin: 0; }
 .archive .about-content .card-third,
 .page .about-content .card-third {
   max-width: none;
-  margin: 0 15px;
+  margin: 0;
   width: 100%; }
   .archive .about-content .card-third p,
   .page .about-content .card-third p {

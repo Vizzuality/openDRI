@@ -1221,15 +1221,16 @@ margin: 0;
 			    background-position: 0;
 	    }
 	}
-	.about-content .card-third,
+	
 	#about.index-row,
-	#principles.index-row
-	#contact.index-row
+	#principles.index-row,
+	#contact.index-row,
 	#more-content.index-row {margin: 0;}
 	.about-content {
+
 		.card-third {
 			max-width: none;
-			margin: 0 15px;
+			margin: 0;
 			width: 100%;
 			p {
 		 -webkit-columns:    350px;
