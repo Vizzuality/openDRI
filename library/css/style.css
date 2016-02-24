@@ -3605,7 +3605,7 @@ div.cartodb-popup .cartodb-popup-close-button {
   .header nav span.float-center {
     position: relative;
     top: -5px;
-    left: 20%; }
+    width: 100%; }
 
   .header nav a:hover:before {
     content: none; }
@@ -3850,22 +3850,11 @@ div.cartodb-popup .cartodb-popup-close-button {
     display: inherit; }
 
   .header nav input.visible {
-    margin: 0px 5px 0 0px;
+    top: -3px;
+    width: 90%;
+    margin: 0;
     position: relative;
-    top: -3px; }
-
-  .category-news nav input.visible,
-  .category-community-mapping nav input.visible,
-  .category-risk-visualization nav input.visible,
-  .category-open-data-platforms nav input.visible,
-  .category-africa #main nav input.visible,
-  .category-east-asia-pacific #main nav input.visible,
-  .category-europe-and-central-asia #main nav input.visible,
-  .category-latin-america-and-caribbean #main nav input.visible,
-  .category-middle-east-and-north-africa #main nav input.visible,
-  .category-non-wb-countries #main nav input.visible,
-  .category-south-asia #main nav input.visible {
-    margin: 0px 5px 0 80px; }
+    text-align: center; }
 
   .post-type-archive-project #main > h3,
   .post-type-archive-resource #main > h3 {

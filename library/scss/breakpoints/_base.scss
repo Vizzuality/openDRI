@@ -2511,7 +2511,7 @@ div.cartodb-popup .cartodb-popup-close-button {
 	.header nav img {top: -13px;}
 	.no-home .header nav { top: 10px; }
 	.header nav span {font-size: 11px; line-height: 20px;}
-	.header nav span.float-center {position: relative; top: -5px; left: 20%}
+	.header nav span.float-center {position: relative;top: -5px;width: 100%;}
 	.header nav a:hover:before {content: none;}
 	.header nav span.current {height: 12px;line-height: 26px; top: -9px;}
 	.home #map-fake .what-list { width: 100%; }
@@ -2612,18 +2612,7 @@ div.cartodb-popup .cartodb-popup-close-button {
 	.blue-bar-top .wrapper span a i { transform: scale(2); visibility: visible; margin: 10px;}
 	.blue-bar-top .wrapper span a {visibility: hidden;}
 	.blue-bar-top .wrapper .region-filter li a { width: initial; display: inherit; }
-	.header nav input.visible { margin: 0px 5px 0 0px; position: relative; top: -3px;}
-	.category-news nav input.visible,
-	.category-community-mapping nav input.visible,
-	.category-risk-visualization nav input.visible,
-	.category-open-data-platforms nav input.visible,
-	.category-africa #main nav input.visible,
-	.category-east-asia-pacific #main nav input.visible,
-	.category-europe-and-central-asia #main nav input.visible,
-	.category-latin-america-and-caribbean #main nav input.visible,
-	.category-middle-east-and-north-africa #main nav input.visible,
-	.category-non-wb-countries  #main nav input.visible,
-	.category-south-asia #main nav input.visible { margin: 0px 5px 0 80px;}
+	.header nav input.visible {top: -3px;width: 90%; margin: 0; position: relative;    text-align: center;}
 	.post-type-archive-project #main > h3,
 	.post-type-archive-resource #main > h3 {width: 100%; max-width: 100%;}
 	.post-type-archive-resource #main {margin: 10px;}
