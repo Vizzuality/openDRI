@@ -2472,6 +2472,10 @@ div.cartodb-popup .cartodb-popup-close-button {
 }
 .home .index-row article, .home .index-row .card-third {margin: 0 0 50px;}
 .home .index-row .row-container {justify-content: space-between;}
+.contact-form input[type=email], .contact-form input[type=text] {
+	width: none !important;
+}
+.archive #contact .contact-form textarea, .page #contact .contact-form textarea {width: 100%;}
 @media (max-width: 1024px) {
   .home .header nav {width: 100%;}
   .home .index-row {-webkit-flex-direction: column; flex-direction: column; margin: 20px 0;width:100%;align-items: center;}
