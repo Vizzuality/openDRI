@@ -2077,6 +2077,22 @@ POSTS & CONTENT STYLES
         font-feature-settings: "liga" 0; }
         .hentry.-odri-post .entry-content p a {
           color: #1477c9; }
+    .hentry.-odri-post .social-sharing p {
+      justify-content: initial;
+      color: rgba(85, 85, 85, 0.5);
+      line-height: 23px;
+      font-size: 13px;
+      font-family: "Bariol_Regular", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: bold; }
+    .hentry.-odri-post .social-sharing a {
+      width: 84px;
+      height: 25px;
+      border-radius: 5px;
+      border: solid 1px rgba(151, 151, 151, 0.2);
+      text-align: center;
+      margin: 0 5px;
+      line-height: inherit;
+      text-decoration: none; }
 
 /* end .hentry */
 .single-title,
