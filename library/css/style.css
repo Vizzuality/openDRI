@@ -3769,8 +3769,8 @@ div.cartodb-popup .cartodb-popup-close-button {
     padding: 0 3%; }
 
   .page .about-content h3, .page .more-content h3, .page #contact h3 {
-    margin: 0;
-    font-size: 40px; }
+    margin: 40px 0 0 0;
+    font-size: 35px; }
 
   .footer {
     display: none; }
