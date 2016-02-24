@@ -2488,7 +2488,8 @@ POSTS & CONTENT STYLES
 .page #principles .card-third,
 .page #about .card-third {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  display: block; }
 .archive .page .about-content .card-third,
 .archive #about.index-row,
 .archive #principles.index-row
@@ -3797,7 +3798,8 @@ div.cartodb-popup .cartodb-popup-close-button {
     padding: 1em; }
 
   div#principles.m-all.cf.index-row.about-content, div#principles.m-all.index-row.about-content.comment-respond {
-    height: 100%; }
+    height: 100%;
+    display: block; }
 
   .page .p-info.double p {
     width: 100%; }
