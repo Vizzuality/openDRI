@@ -2095,7 +2095,8 @@ POSTS & CONTENT STYLES
       line-height: 23px;
       font-size: 13px;
       font-family: "Bariol_Regular", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-weight: bold; }
+      font-weight: bold;
+      flex-wrap: wrap; }
     .hentry.-odri-post .social-sharing a {
       width: 84px;
       height: 25px;
