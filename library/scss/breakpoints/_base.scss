@@ -1221,6 +1221,11 @@ margin: 0;
 			    background-position: 0;
 	    }
 	}
+	.page .about-content .card-third,
+	#about.index-row,
+	#principles.index-row
+	#contact.index-row
+	#more-content.index-row {margin: 0;}
 	.about-content {
 		.card-third {
 			max-width: none;
@@ -1371,7 +1376,6 @@ margin: 0;
 	#principles.index-row
 	#contact.index-row
 	#more-content.index-row {margin: 0;}
-	
 	#principles h3,
 	.-m-disclaimer h3 {
 		color: #1477c9;
