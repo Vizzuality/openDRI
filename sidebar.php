@@ -17,8 +17,8 @@
 												$image = ($image[0]) ? $image[0] : get_template_directory_uri().'/library/images/red-cross.jpg';
 									?>
 									<li>
-										<span class="img" style="background-image:url(<?php echo $image; ?>)"></span>
-										<a href="<?php echo $resource->guid; ?>" rel="bookmark" title="<?php echo $resource->post_title; ?>"><?php echo $resource->post_title; ?></a></li>
+										
+										<p><a href="<?php echo $resource->guid; ?>" rel="bookmark" title="<?php echo $resource->post_title; ?>"><span class="img" style="background-image:url(<?php echo $image; ?>)"></span><?php echo $resource->post_title; ?></a></p></li>
 									<?
 										} // end loop
 									?>
