@@ -4058,7 +4058,19 @@ div.cartodb-popup .cartodb-popup-close-button {
     padding: 0 6%; }
 
   .archive #contact .index-row, .page #contact .index-row {
-    width: 100%; } }
+    width: 100%; }
+
+  .sidebar {
+    width: 100%; }
+
+  .sidebar h4 {
+    padding: 0 0 0 1em; }
+
+  .sidebar ul {
+    width: 100%; }
+
+  .sidebar i {
+    width: 70%; } }
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
