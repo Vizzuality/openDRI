@@ -1292,7 +1292,9 @@ style a page via class
 /* no results search page */
 /* individual paged search (i.e. body.search-paged-3) */
 /* 404 page */
-/* single post page */
+.archive h1 {
+  font-size: 48px; }
+
 /* individual post page by id (i.e. body.postid-73) */
 /* individual paged single (i.e. body.single-paged-3) */
 /* attatchment page */
@@ -1634,7 +1636,7 @@ POSTS & CONTENT STYLES
   /* TWEENER - IE 10 */
   display: -webkit-flex;
   /* NEW - Chrome */
-  width: 220px;
+  width: 330px;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
@@ -2936,8 +2938,7 @@ FOOTER STYLES
     display: -webkit-flex;
     /* NEW - Chrome */
     justify-content: space-between;
-    margin: 2.5rem 0;
-    padding: 0px 15px; }
+    margin: 2.5rem 0; }
     .footer .-ft-content .-ft-coorporate,
     .footer .-ft-content nav {
       display: flex;
@@ -3089,8 +3090,8 @@ FOOTER STYLES
   /* TWEENER - IE 10 */
   display: -webkit-flex;
   /* NEW - Chrome */
-  justify-content: space-between;
-  width: 75%;
+  justify-content: space-around;
+  width: 80%;
   position: relative;
   top: -3px; }
 

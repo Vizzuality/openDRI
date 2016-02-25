@@ -51,7 +51,11 @@ style a page via class
 	.search-no-results {}           /* no results search page */
 	.search-paged-1 {}              /* individual paged search (i.e. body.search-paged-3) */
 .error404 {}                      /* 404 page */
-.single {}                        /* single post page */
+.archive {
+	h1 {
+		font-size: 48px;
+	}
+}
 	.postid-1 {}                    /* individual post page by id (i.e. body.postid-73) */
 	.single-paged-1 {}              /* individual paged single (i.e. body.single-paged-3) */
 .attachment {}                    /* attatchment page */
@@ -468,7 +472,7 @@ POSTS & CONTENT STYLES
     display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
   display: -ms-flexbox;      /* TWEENER - IE 10 */
   display: -webkit-flex;     /* NEW - Chrome */
-    width: 220px;
+    width: 330px;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
@@ -1937,7 +1941,6 @@ FOOTER STYLES
   display: -webkit-flex;     /* NEW - Chrome */
 		justify-content: space-between;
 		margin: 2.5rem 0;
-		padding: 0px 15px;
 		.-ft-coorporate,
 		nav {
 			display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
@@ -2084,8 +2087,8 @@ FOOTER STYLES
     display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
   display: -ms-flexbox;      /* TWEENER - IE 10 */
   display: -webkit-flex;     /* NEW - Chrome */
-  	justify-content: space-between;
-    width: 75%;
+  	justify-content: space-around;
+    width: 80%;
     position: relative;
     top: -3px;
 }

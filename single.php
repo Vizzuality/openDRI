@@ -178,7 +178,12 @@
 				<? } // end else ?>
 				</article>
 				<div class="what-explore bigger">
-					<a href="<? echo esc_url(get_category_link(get_cat_ID( $CAT_NAME ))) ?>">explore <? echo $CAT_NAME?></a>
+					<? if (get_post_type( get_the_ID() ) == 'project') { ?>
+						<a href="<?php echo home_url(); ?>/project">explore projects</a>
+					<? } else { ?>
+						<a href="<?php echo home_url(); ?>/category/news">explore news</a>
+				<? } // end else ?>
+
 				</div>
 			</section>
 		</div>
