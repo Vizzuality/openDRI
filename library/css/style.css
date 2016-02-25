@@ -4060,6 +4060,9 @@ div.cartodb-popup .cartodb-popup-close-button {
   .archive #contact .index-row, .page #contact .index-row {
     width: 100%; }
 
+  .hentry.-odri-post h1 {
+    font-size: 34px; }
+
   .sidebar {
     width: 100%; }
 
