@@ -2213,6 +2213,11 @@ FOOTER STYLES
 	    		position: relative;
 	    		font-weight: bold;
 	    		padding: 0 20px;
+	    		&::-webkit-input-placeholder,
+	    		&::-moz-placeholder,
+	    		&:-ms-input-placeholder {
+	    			color: white;
+	    		}
 	    	}
 	    	li {
 			    max-width: 180px;
