@@ -153,7 +153,7 @@ if(is_post_type_archive() && $post_type=='project') {
 							<?php
 							echo '<h1 class="page-title">'.$title.'</h1>';
 							?>
-							<h3>Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Ullam id dolor.</h3>
+							<p>Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Ullam id dolor.</p>
 							<div id="list-content" class="m-all index-row" role="news">
 								<div class="row-container">
 									<? if (is_post_type_archive() && $post_type=='resource') : ?>

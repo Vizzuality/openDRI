@@ -1499,7 +1499,7 @@ margin: 0;
 		}
 	}
 }
-.post-type-archive-project #main > h3 {
+.post-type-archive-project #main > p {
 	width: 50%;
 	font-family: $sans-serif;
 	font-size: 15px;
@@ -1521,14 +1521,18 @@ margin: 0;
 .post-type-archive-resource #main {
 	margin: 90px 0 0 0 ;
 	>h1,
-	>h3{
+	>p{
 		max-width: 35%;
 		&::first-letter {
 			text-transform: uppercase;
 		}
 	}
-	>h3 {
+	>p {
 		margin: 0 0 70px;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	    font-size: 15px;
+	    line-height: 23px;
+	    font-weight: 400;
 	}
 	.row-container article {
 		max-width: 490px;
