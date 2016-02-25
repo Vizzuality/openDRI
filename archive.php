@@ -210,7 +210,7 @@ if(is_post_type_archive() && $post_type=='project') {
 								<?php endwhile; ?>
 								<? if (is_post_type_archive() && $post_type=='resource') : ?>
 									</ul>
-									<div class="m-all cf index-row last-resources">
+									<div class="m-all index-row last-resources">
 									<?
 										$args = array( 'numberposts' => '1', 'category' => 16, 'order' => 'DESC', 'post_type' => 'resource' );
 										$featured_col = wp_get_recent_posts( $args );
