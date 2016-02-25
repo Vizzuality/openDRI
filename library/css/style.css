@@ -2086,12 +2086,14 @@ POSTS & CONTENT STYLES
         font-feature-settings: "liga" 0; }
         .hentry.-odri-post .entry-content p a {
           color: #1477c9; }
-    .hentry.-odri-post footer a {
-      font-family: "Bariol_Regular", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-weight: bold;
-      font-size: 13px; }
-      .hentry.-odri-post footer a:hover {
-        color: #1477c9; }
+    .hentry.-odri-post footer {
+      margin: 0; }
+      .hentry.-odri-post footer a {
+        font-family: "Bariol_Regular", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        font-size: 13px; }
+        .hentry.-odri-post footer a:hover {
+          color: #1477c9; }
     .hentry.-odri-post .tags-title {
       font-size: 13px;
       font-family: "Bariol_Regular", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
