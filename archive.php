@@ -159,7 +159,7 @@ if(is_post_type_archive() && $post_type=='project') {
 							<div id="list-content" class="m-all index-row" role="news">
 								<div class="row-container">
 									<? if ($post_type=='project') { ?>
-									<div class="card-third first-text">
+									<div class="card-third first-text project">
 										<?php
 										echo '<h1 class="page-title">'.$title.'</h1>';
 										?>
