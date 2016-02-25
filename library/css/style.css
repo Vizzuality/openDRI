@@ -2928,11 +2928,14 @@ SIDEBARS & ASIDES
       display: block;
       margin: -6px -6px 0; }
   .sidebar a {
+    font-family: "Bariol_Regular", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #fff;
     font-weight: bold;
     text-decoration: none;
     text-align: center;
-    display: block; }
+    display: block;
+    font-size: 15px;
+    letter-spacing: 0.5px; }
 
 .widget ul li {
   /* deep nesting */ }
