@@ -745,7 +745,7 @@
 								      line-opacity: 0.4;\
 								    }");
 						$filterPosts.hide();
-						$filterPosts.find('tag-'+text.toLowerCase()).show();
+						$filterPosts.find('.tag-'+text.replace(/\s+/g, '-').toLowerCase()).show();
 				    	map.setView(latlong,zoom);
 				    } else {
 				    	LayerActions[option]();
