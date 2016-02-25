@@ -82,10 +82,19 @@
 			else if  (location.pathname.includes('/pillars')){
 			    document.getElementById('menu-option-news').classList.add("current");
 				if (location.pathname.includes('/risk-visualization')) $('.option-pillar[data-option="risk"]').addClass('current');
-				if (location.pathname.includes('/community-mapping')) $('.option-pillar[data-option="community"]').addClass('current');
-				if (location.pathname.includes('/open-data-platforms')) $('.option-pillar[data-option="open"]').addClass('current');
+				else if (location.pathname.includes('/community-mapping')) $('.option-pillar[data-option="community"]').addClass('current');
+				else if (location.pathname.includes('/open-data-platforms')) $('.option-pillar[data-option="open"]').addClass('current');
 			}
-			else if  (location.pathname.includes('/regions')) document.getElementById('menu-option-news').classList.add("current");
+			else if  (location.pathname.includes('/regions')) {
+				document.getElementById('menu-option-news').classList.add("current");
+				if (location.pathname.includes('middle')) $('#toggle-filter-region').text('middle east and north africa');
+				else if (location.pathname.includes('africa')) $('#toggle-filter-region').text('africa');
+				else if (location.pathname.includes('pacific')) $('#toggle-filter-region').text('east asia pacific');
+				else if (location.pathname.includes('europe')) $('#toggle-filter-region').text('europe and central asia');
+				else if (location.pathname.includes('america')) $('#toggle-filter-region').text('latin america and caribbean');
+				else if (location.pathname.includes('countries')) $('#toggle-filter-region').text('non wb countries');
+				else if (location.pathname.includes('asia')) $('#toggle-filter-region').text('south asia');
+			}
 			else if  (location.pathname.includes('/resource')) document.getElementById('menu-option-resources').classList.add("current");
 		}
 		checkUrl();
@@ -144,7 +153,7 @@
 					continuousWorld: false,
 					noWrap: true,
 			        center: [30,15],
-			        zoom: ($(window).width() <= 768) ? 1 : 3,
+			        zoom: ($(window).width() <= 768) ? 1 : 2,
 			        zoomControl: false,
 			        scrollWheelZoom: false,
 			        maxBounds: [
