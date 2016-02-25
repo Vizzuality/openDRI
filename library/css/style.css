@@ -2915,6 +2915,12 @@ SIDEBARS & ASIDES
     letter-spacing: 0.5;
     text-transform: uppercase;
     margin: 0 0 15px; }
+  .sidebar li {
+    width: 140px; }
+    .sidebar li span {
+      height: 80px;
+      width: 100%;
+      display: block; }
   .sidebar a {
     color: #1477c9;
     text-decoration: none; }

@@ -1903,6 +1903,14 @@ SIDEBARS & ASIDES
     	text-transform: uppercase;
     	margin: 0 0 15px;
     }
+    li {
+    	width: 140px;
+    	span {
+    		height: 80px;
+    		width: 100%;
+    		display: block;
+    	}
+    }
     a {
     	color: #1477c9;
     	text-decoration: none;
