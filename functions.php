@@ -242,6 +242,18 @@ function my_login_logo_url_title() {
 }
 add_filter( 'login_headertitle', 'my_login_logo_url_title' );
 
+add_filter('pre_get_posts', 'query_post_type');
+function query_post_type($query) {
+  if(is_category() || is_tag()) {
+    $post_type = get_query_var('post_type');
+  if($post_type)
+      $post_type = $post_type;
+  else
+      $post_type = array('post','project'); // replace cpt to your custom post type
+    $query->set('post_type',$post_type);
+  return $query;
+    }
+}
 /************* ACTIVE SIDEBARS ********************/
 
 // Sidebars & Widgetizes Areas
