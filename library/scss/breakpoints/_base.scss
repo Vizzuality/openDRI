@@ -921,6 +921,9 @@ POSTS & CONTENT STYLES
 		padding: 2.5rem;
 		border: 0;
 		box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+		&.has-sidebar {
+			width: 75%;
+		}
 		h1 {
 			color: #1477c9;
 			font-size: 48px;
@@ -1889,6 +1892,7 @@ SIDEBARS & ASIDES
 	display: inline-block;
     float: right;
     margin-top: 4rem;
+    width: 25%;
     a {
     	color: #1477c9;
     	text-decoration: none;

@@ -13,8 +13,10 @@
                  * folder and replace the function below with the contents of the "format.php" file.
                 */
               ?>
-
-              <article id="post-<?php the_ID(); ?>" <?php post_class('cf -odri-post'); ?> role="article" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+              <?
+                $meta = get_post_meta(get_the_ID(), 'resource', true);
+              ?>
+              <article id="post-<?php the_ID(); ?>" <?php ($meta) ? post_class('cf -odri-post has-sidebar') : post_class('cf -odri-post'); ?> role="article" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
                   <h1 class="entry-title single-title" itemprop="headline" rel="bookmark"><?php the_title(); ?></h1>
 
                   <p class="byline entry-meta vcard">
