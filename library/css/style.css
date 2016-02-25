@@ -2938,7 +2938,7 @@ SIDEBARS & ASIDES
     display: block;
     font-size: 15px;
     letter-spacing: 0.5px;
-    line-height: 24px; }
+    line-height: 17px; }
 
 .widget ul li {
   /* deep nesting */ }
@@ -4067,14 +4067,14 @@ div.cartodb-popup .cartodb-popup-close-button {
     padding: 0 0 0 1em; }
 
   .sidebar ul {
-    width: 100%; }
+    width: calc(100% - 40px);
+    margin: 0 auto; }
 
   .sidebar i {
     width: 70%; }
 
   .single .index-row.more-content .row-container article {
-    max-width: 100%;
-    width: 100%; } }
+    width: calc(100% - 40px); } }
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's

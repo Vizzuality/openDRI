@@ -1928,7 +1928,7 @@ SIDEBARS & ASIDES
     	display: block;
     	font-size: 15px;
     	letter-spacing: 0.5px;
-    	line-height: 24px;
+    	line-height: 17px;
     }
 }
 
@@ -2711,7 +2711,7 @@ div.cartodb-popup .cartodb-popup-close-button {
 	.archive #contact .index-row, .page #contact .index-row {width: 100%;}
 	.sidebar {width: 100%;}
 	.sidebar h4 {padding: 0 0 0 1em;}
-	.sidebar ul {width: 100%}
+	.sidebar ul {width: calc(100% - 40px);margin: 0 auto;}
 	.sidebar i {width: 70%;}
-	.single .index-row.more-content .row-container article {max-width: 100%; width: 100%;}
+	.single .index-row.more-content .row-container article { width: calc(100% - 40px);}
 }
