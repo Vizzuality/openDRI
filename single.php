@@ -67,16 +67,17 @@
 
 						<? 
 							if (get_post_type( get_the_ID() ) == 'project') {
+								$meta = get_post_meta(get_the_ID(), 'news', true);
+								if ($meta) {
 						?>
 						<div id="more-content" class="index-row wrap more-content">
 							<h3>Project's news</h3>
 
 							<div class="row-container">
 								<?php
-									$meta = get_post_meta(get_the_ID(), 'news', true);
 									$max = 3;
 									foreach(explode("\n", $meta) as $line){
-										if ($max == 0) break;
+										if ($max == 0 || !$line) break;
 										$max --;
 									    $current_post = url_to_postid( $line );
 									    $related 	  = get_post($current_post);
@@ -113,10 +114,11 @@
 												</p>
 											</footer>
 										</article>
-								<?}	// end loop?>
+								<?}	// end loop ?>
 
 							</div>
 						</div>
+							<? } //end check $meta ?>
 						<?
 							} else {
 						?>
