@@ -3634,6 +3634,10 @@ div.cartodb-popup .cartodb-popup-close-button {
     width: 50%;
     display: inline-block; }
 
+  .sidebar p {
+    display: block;
+    height: 80px; }
+
   .sidebar li span {
     margin-right: 5px;
     float: left; } }
