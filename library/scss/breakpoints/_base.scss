@@ -923,6 +923,7 @@ POSTS & CONTENT STYLES
 		box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
 		&.has-sidebar {
 			width: 75%;
+			display: inline-block;
 		}
 		h1 {
 			color: #1477c9;

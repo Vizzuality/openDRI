@@ -2061,7 +2061,8 @@ POSTS & CONTENT STYLES
     border: 0;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.2); }
     .hentry.-odri-post.has-sidebar {
-      width: 75%; }
+      width: 75%;
+      display: inline-block; }
     .hentry.-odri-post h1 {
       color: #1477c9;
       font-size: 48px;
