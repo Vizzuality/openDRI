@@ -744,6 +744,8 @@
 								      line-width: 1;\
 								      line-opacity: 0.4;\
 								    }");
+						$filterPosts.hide();
+						$filterPosts.find('tag-'+text.toLowerCase()).show();
 				    	map.setView(latlong,zoom);
 				    } else {
 				    	LayerActions[option]();
