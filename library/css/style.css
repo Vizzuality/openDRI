@@ -2935,7 +2935,8 @@ SIDEBARS & ASIDES
     text-align: center;
     display: block;
     font-size: 15px;
-    letter-spacing: 0.5px; }
+    letter-spacing: 0.5px;
+    line-height: 24px; }
 
 .widget ul li {
   /* deep nesting */ }
