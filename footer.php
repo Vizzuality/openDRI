@@ -81,9 +81,9 @@
 			else if  (location.pathname.includes('/news')) document.getElementById('menu-option-news').classList.add("current");
 			else if  (location.pathname.includes('/pillars')){
 			    document.getElementById('menu-option-news').classList.add("current");
-				if (location.pathname.includes('/risk-visualization')) $('.option-pillar[data-option="open"]').addClass('current');
+				if (location.pathname.includes('/risk-visualization')) $('.option-pillar[data-option="risk"]').addClass('current');
 				if (location.pathname.includes('/community-mapping')) $('.option-pillar[data-option="community"]').addClass('current');
-				if (location.pathname.includes('/open-data-platforms')) $('.option-pillar[data-option="risk"]').addClass('current');
+				if (location.pathname.includes('/open-data-platforms')) $('.option-pillar[data-option="open"]').addClass('current');
 			}
 			else if  (location.pathname.includes('/regions')) document.getElementById('menu-option-news').classList.add("current");
 			else if  (location.pathname.includes('/resource')) document.getElementById('menu-option-resources').classList.add("current");
