@@ -1530,6 +1530,7 @@ margin: 0;
 	.row-container article {
 		max-width: 490px;
 		width: 490px;
+		margin: 0 0 50px;
 		header {
 			width: 96%;
 		    bottom: 50%;
@@ -1586,7 +1587,6 @@ PAGE NAVI STYLES
 
       &:hover, &:focus {
       	background-color: $white;
-      	color: $white;
       }
     }
 

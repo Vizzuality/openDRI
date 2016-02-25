@@ -2684,7 +2684,8 @@ POSTS & CONTENT STYLES
   .category-news #main .row-container article,
   .post-type-archive-resource #main .row-container article {
     max-width: 490px;
-    width: 490px; }
+    width: 490px;
+    margin: 0 0 50px; }
     .category-open-data-platforms #main .row-container article header,
     .category-community-mapping #main .row-container article header,
     .category-africa #main .row-container article header,
@@ -2742,8 +2743,7 @@ PAGE NAVI STYLES
     display: block;
     color: #1477c9; }
     .pagination a:hover, .pagination a:focus, .pagination span:hover, .pagination span:focus {
-      background-color: #fff;
-      color: #fff; }
+      background-color: #fff; }
   .pagination .current {
     cursor: default;
     color: #555555; }
