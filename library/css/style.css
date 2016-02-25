@@ -2997,7 +2997,8 @@ FOOTER STYLES
       position: relative;
       left: -7px;
       top: 8px;
-      display: inline; }
+      display: inline;
+      color: #fff; }
     .footer .-ft-content .response {
       position: absolute;
       top: -2px;
