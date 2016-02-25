@@ -3638,13 +3638,13 @@ div.cartodb-popup .cartodb-popup-close-button {
   .sidebar ul {
     width: 360px; }
 
-  .sidebar li {
-    width: 100%;
-    display: inline-block; }
-
   .sidebar p {
     display: block;
     height: 80px; }
+
+  .sidebar li {
+    width: 100%;
+    display: inline-block; }
 
   .sidebar li span {
     margin-right: 5px;
@@ -3661,7 +3661,9 @@ div.cartodb-popup .cartodb-popup-close-button {
     align-items: center; }
 
   .sidebar i {
-    width: 210px; }
+    width: 210px;
+    position: relative;
+    top: -6px; }
 
   .single .index-row.more-content .row-container article {
     max-width: 360px;
