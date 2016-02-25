@@ -3629,8 +3629,11 @@ div.cartodb-popup .cartodb-popup-close-button {
   .sidebar {
     width: 100%;
     display: block;
-    margin: 0;
+    margin: -30px 0 0 !important;
     padding: 0; }
+
+  .sidebar h4 {
+    font-size: 17px; }
 
   .sidebar li {
     width: 50%;
