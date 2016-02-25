@@ -149,11 +149,13 @@ if(is_post_type_archive() && $post_type=='project') {
 						<? echo ($hascornermap) ? '<span class="corner-map"></span>' : ''; ?>
 				<div id="inner-content" class="wrap">
 						<main id="main" class="" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
-
+							<? 
+							if ($post_type!='project') { ?>
 							<?php
 							echo '<h1 class="page-title">'.$title.'</h1>';
 							?>
 							<p>Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Ullam id dolor.</p>
+							<? } // if projects ?>
 							<div id="list-content" class="m-all index-row" role="news">
 								<div class="row-container">
 									<? if (is_post_type_archive() && $post_type=='resource') : ?>
@@ -177,6 +179,14 @@ if(is_post_type_archive() && $post_type=='project') {
 									</div>
 								</li>
 								<? else: ?>
+									<? if ($post_type=='project') { ?>
+									<div class="card-third first-text">
+										<?php
+										echo '<h1 class="page-title">'.$title.'</h1>';
+										?>
+										<p>Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Ullam id dolor.</p>
+									</div>
+								<? } // if projects ?>
 									<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf '); ?> role="article">
 										<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
 									$image = ($image[0]) ? $image[0] : get_template_directory_uri().'/library/images/red-cross.jpg';
