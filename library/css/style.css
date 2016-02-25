@@ -2915,6 +2915,8 @@ SIDEBARS & ASIDES
     letter-spacing: 0.5px;
     text-transform: uppercase;
     margin: 60px 0 15px; }
+  .sidebar i {
+    font-style: normal !important; }
   .sidebar li {
     width: 140px;
     background-color: #1477c9;
@@ -3640,10 +3642,20 @@ div.cartodb-popup .cartodb-popup-close-button {
 
   .sidebar li span {
     margin-right: 5px;
-    float: left; }
+    float: left;
+    position: relative;
+    top: -3px; }
 
   .sidebar li a {
-    height: 80px; } }
+    height: 80px;
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    align-items: center; }
+
+  .sidebar i {
+    max-width: 210px; } }
 @media (max-width: 768px) {
   #logo img {
     display: none; }

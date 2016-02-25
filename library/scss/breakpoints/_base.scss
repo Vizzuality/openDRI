@@ -1903,6 +1903,7 @@ SIDEBARS & ASIDES
     	text-transform: uppercase;
     	margin: 60px 0 15px;
     }
+    i {font-style: normal !important;}
     li {
     	width: 140px;
     	background-color: #1477c9;
@@ -2561,8 +2562,9 @@ div.cartodb-popup .cartodb-popup-close-button {
   .sidebar {width: 100%;display: block;margin: 0;padding: 0;}
   .sidebar li {width: 50%;display: inline-block;}
   .sidebar p {display: block;height: 80px;}
-  .sidebar li span {margin-right: 5px; float: left;}
-  .sidebar li a {height: 80px;}
+  .sidebar li span {margin-right: 5px; float: left;position: relative;top: -3px;}
+  .sidebar li a {height: 80px; display: flex;display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;align-items: center;}
+  .sidebar i {    max-width: 210px;}
 }
 @media (max-width: 768px) {
 	#logo img {display: none;}
