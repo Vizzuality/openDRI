@@ -130,6 +130,7 @@
 									$args = array( 'numberposts' => '4', 'category' => $CAT_NAME );
 									$recent_posts = wp_get_recent_posts( $args );
 									foreach( $recent_posts as $recent ){  // start loop
+										if ($thispostid != $recent["ID"]) {
 								?>
 										<article id="post-<?php echo $recent["ID"]; ?>" <?php post_class( 'cf' ); ?> role="article">
 											<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $recent["ID"] ), 'single-post-thumbnail' );
@@ -156,6 +157,7 @@
 												</p>
 											</footer>
 										</article>
+										<? } //end if ?>
 								<?}	// end loop
 							} // end else ?>
 
