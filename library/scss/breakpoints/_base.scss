@@ -2714,5 +2714,5 @@ div.cartodb-popup .cartodb-popup-close-button {
 	.sidebar h4 {padding: 0 0 0 1em;}
 	.sidebar ul {width: calc(100% - 40px);margin: 0 auto;}
 	.sidebar i {width: 70%;}
-	.single .index-row.more-content .row-container article { max-width: 100%;width: calc(100% - 40px);}
+	.single .index-row.more-content .row-container article,.index-row article.project, .index-row .card-third.project { max-width: 100%;width: calc(100% - 40px);}
 }
