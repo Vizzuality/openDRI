@@ -7,7 +7,7 @@
 							<div id="sidebar1" class="sidebar m-all t-1of3 d-2of7 last-col cf" role="complementary">
 
 								<div id="recent-posts-2" class="widget widget_recent_entries">
-									<h4 class="widgettitle">Resources</h4>
+									<h4 class="">Related Resources</h4>
 									<ul>
 									<?
 										foreach(explode("\n", $meta) as $line) {

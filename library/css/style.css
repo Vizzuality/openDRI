@@ -2906,7 +2906,15 @@ SIDEBARS & ASIDES
   display: inline-block;
   float: right;
   margin-top: 4rem;
-  width: 25%; }
+  width: 25%;
+  padding: 0 15px; }
+  .sidebar h4 {
+    font-family: "Bariol_Regular", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    color: #555;
+    letter-spacing: 0.5;
+    text-transform: uppercase;
+    margin: 0 0 15px; }
   .sidebar a {
     color: #1477c9;
     text-decoration: none; }

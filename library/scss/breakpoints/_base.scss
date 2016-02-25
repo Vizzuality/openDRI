@@ -1894,6 +1894,15 @@ SIDEBARS & ASIDES
     float: right;
     margin-top: 4rem;
     width: 25%;
+    padding: 0 15px;
+    h4 {
+    	font-family: $bariol;
+    	font-size: 15px;
+    	color: #555;
+    	letter-spacing: 0.5;
+    	text-transform: uppercase;
+    	margin: 0 0 15px;
+    }
     a {
     	color: #1477c9;
     	text-decoration: none;
