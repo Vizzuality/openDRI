@@ -3635,8 +3635,11 @@ div.cartodb-popup .cartodb-popup-close-button {
   .sidebar h4 {
     font-size: 17px; }
 
+  .sidebar ul {
+    width: 360px; }
+
   .sidebar li {
-    width: 50%;
+    width: 100%;
     display: inline-block; }
 
   .sidebar p {
@@ -3658,7 +3661,11 @@ div.cartodb-popup .cartodb-popup-close-button {
     align-items: center; }
 
   .sidebar i {
-    width: 210px; } }
+    width: 210px; }
+
+  .single .index-row.more-content .row-container article {
+    max-width: 360px;
+    width: 100%; } }
 @media (max-width: 768px) {
   #logo img {
     display: none; }
