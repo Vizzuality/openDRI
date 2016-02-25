@@ -953,6 +953,9 @@ POSTS & CONTENT STYLES
 			    font-family: $bariol;
 				font-weight: bold;
 				font-size: 13px;
+				&:hover {
+					color: #1477c9;
+				}
 			}
 		}
 		.tags-title {
