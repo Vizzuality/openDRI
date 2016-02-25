@@ -745,7 +745,9 @@
 								      line-opacity: 0.4;\
 								    }");
 						$filterPosts.hide();
-						$filterPosts.parent().find('.tag-'+text.replace(/\s+/g, '-').toLowerCase()).show();
+						var $target = $filterPosts.parent().find('.tag-'+text.replace(/\s+/g, '-').toLowerCase());
+						$target.show();
+						$('#current-total-post-count').val($target.length
 				    	map.setView(latlong,zoom);
 				    } else {
 				    	LayerActions[option]();
