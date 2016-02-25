@@ -2564,7 +2564,7 @@ div.cartodb-popup .cartodb-popup-close-button {
   .sidebar p {display: block;height: 80px;}
   .sidebar li span {margin-right: 5px; float: left;position: relative;top: -3px;}
   .sidebar li a {height: 80px; display: flex;display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;align-items: center;}
-  .sidebar i {    max-width: 210px;}
+  .sidebar i {width: 210px;}
 }
 @media (max-width: 768px) {
 	#logo img {display: none;}

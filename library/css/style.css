@@ -3655,7 +3655,7 @@ div.cartodb-popup .cartodb-popup-close-button {
     align-items: center; }
 
   .sidebar i {
-    max-width: 210px; } }
+    width: 210px; } }
 @media (max-width: 768px) {
   #logo img {
     display: none; }
