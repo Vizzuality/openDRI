@@ -1846,7 +1846,7 @@ POSTS & CONTENT STYLES
       padding: 5px 0;
       background: inherit;
       transition: background 0.3s ease;
-      display: inline-block;
+      display: inline-table;
       width: 31%; }
       .index-row .resource-list li:hover {
         background: #f7f7f7; }
