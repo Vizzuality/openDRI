@@ -22,8 +22,8 @@
 		</div>
 	</div>
 	<div id="content">
-		<div id="inner-content" class="wrap cf">
-			<div id="news" class="m-all cf index-row" role="news" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+		<div id="inner-content" class="wrap">
+			<div id="news" class="m-all index-row" role="news" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 				<div class="row-container">
 					<div class="card-third first-text">
 						<h3>news</h3>
