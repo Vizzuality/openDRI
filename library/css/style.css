@@ -2923,12 +2923,15 @@ SIDEBARS & ASIDES
       padding: 6px; }
     .sidebar li span {
       height: 80px;
-      width: 100%;
-      display: block; }
+      width: 140px;
+      display: block;
+      margin: -6px -6px 0; }
   .sidebar a {
     color: #fff;
     font-weight: bold;
-    text-decoration: none; }
+    text-decoration: none;
+    text-align: center;
+    display: block; }
 
 .widget ul li {
   /* deep nesting */ }
