@@ -76,7 +76,7 @@
 		// set current section if any
 		var checkUrl = function() {
 			if 		 (location.pathname.includes('/about')) document.getElementById('menu-option-about').classList.add("current");
-			else if (document.body.classList.contains('single') && !(location.pathname.includes('/project'))) document.getElementById('menu-option-news').classList.add("current");
+			else if (document.body.classList.contains('single') && !(location.pathname.includes('/project')) && !(location.pathname.includes('/resource'))) document.getElementById('menu-option-news').classList.add("current");
 			else if  (location.pathname.includes('/project')) document.getElementById('menu-option-projects').classList.add("current");
 			else if  (location.pathname.includes('/news')) document.getElementById('menu-option-news').classList.add("current");
 			else if  (location.pathname.includes('/pillars')){
