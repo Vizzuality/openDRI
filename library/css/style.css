@@ -3737,7 +3737,11 @@ div.cartodb-popup .cartodb-popup-close-button {
 
   .home .index-row .resource-list.home {
     max-width: calc(100% - 20px);
-    width: 100%; }
+    width: 100%;
+    margin: 30px 0 0 0;
+    height: 200px;
+    display: block;
+    min-height: 40px; }
 
   .home .index-row .resource-list.home li {
     width: 45%; } }
