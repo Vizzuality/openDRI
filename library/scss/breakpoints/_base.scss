@@ -2574,7 +2574,7 @@ div.cartodb-popup .cartodb-popup-close-button {
   .single .index-row.more-content .row-container article {max-width: 360px;width: 100%;}
   .home #news.index-row {flex-direction: row;width: 100%;}
   .home #news.index-row article,.home #news.index-row .card-third { max-width: calc(100% - 20px); margin: 0 0 50px !important;}
-  .home .index-row article:last-child {position: absolute;top: 66.7%; right: -100%;}
+  .home #news.index-row article:last-child {position: absolute;top: 66.7%; right: -100%;}
   .index-row .card-third.twitter-timeline-container {position: relative; align-self:baseline;width: 360px;}
   .index-row .card-third .twitter {width: auto;}
   .home #projects article:last-child {display: none;}

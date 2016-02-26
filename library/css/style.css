@@ -3694,7 +3694,7 @@ div.cartodb-popup .cartodb-popup-close-button {
     max-width: calc(100% - 20px);
     margin: 0 0 50px !important; }
 
-  .home .index-row article:last-child {
+  .home #news.index-row article:last-child {
     position: absolute;
     top: 66.7%;
     right: -100%; }
