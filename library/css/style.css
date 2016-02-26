@@ -4173,16 +4173,17 @@ div.cartodb-popup .cartodb-popup-close-button {
     flex-direction: column; }
 
   .home .index-row#news .row-container {
-    width: 100%; }
+    width: calc(100% - 20px); }
 
   .home #news.index-row article, .home #news.index-row .card-third {
-    width: 100%; }
+    width: 100%;
+    max-width: 100%; }
 
   .home .index-row .first-text {
     height: auto; }
 
   .index-row .card-third .twitter {
-    width: 100%; }
+    width: calc(100% - 20px); }
 
   .home .index-row article, .home .index-row .card-third {
     width: 100%;
