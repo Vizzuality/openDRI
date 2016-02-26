@@ -2735,10 +2735,10 @@ div.cartodb-popup .cartodb-popup-close-button {
 	.single .index-row.more-content .row-container article,.index-row article.project, .index-row .card-third.project { max-width: 100%;width: calc(100% - 40px);}
 	#content {overflow-x: initial;}
 	.home #news.index-row {-webkit-flex-direction: column;flex-direction: column;}
-	.home .index-row#news .row-container {width: 100%;}
-	.home #news.index-row article, .home #news.index-row .card-third {width: 100%;}
+	.home .index-row#news .row-container {width: calc(100% - 20px);}
+	.home #news.index-row article, .home #news.index-row .card-third {width: 100%; max-width: 100%;}
 	.home .index-row .first-text {height: auto;}
-	.index-row .card-third .twitter {width: 100%;}
+	.index-row .card-third .twitter {width: calc(100% - 20px);}
 	.home .index-row article, .home .index-row .card-third {width: 100%;max-width: calc(100% - 20px);}
 	.home .index-row .resource-list.home li {display: inline-table;}
 	.home #news.index-row article:last-child {position: relative;top: 0;right: 0;}
