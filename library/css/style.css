@@ -3705,10 +3705,7 @@ div.cartodb-popup .cartodb-popup-close-button {
     width: 360px; }
 
   .index-row .card-third .twitter {
-    width: auto; }
-
-  .home #projects article:last-child {
-    display: none; } }
+    width: auto; } }
 @media (max-width: 768px) {
   #logo img {
     display: none; }
