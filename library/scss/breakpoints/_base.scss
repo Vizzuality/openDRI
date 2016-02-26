@@ -2583,6 +2583,8 @@ div.cartodb-popup .cartodb-popup-close-button {
   .home #resources.index-row article.resource-cont, .index-row .card-third.resource-cont {width: calc(100% - 20px);margin: 0;max-width: 100%;height: auto;display: inline-block;}
   .home #inner-content >.last-resources {margin: 0 0 50px !important;}
   .home #inner-content >.last-resources article {width: 100%;max-width: calc(100% - 20px);display: inline-block;margin: 0 !important; height: auto;}
+  .home .index-row .resource-list.home ul {max-width: calc(100% - 20px);width: 100%;}
+  .home .index-row .resource-list.home li {width: 45%;}
 }
 @media (max-width: 768px) {
 	#logo img {display: none;}

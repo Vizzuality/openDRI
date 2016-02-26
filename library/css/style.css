@@ -3733,7 +3733,14 @@ div.cartodb-popup .cartodb-popup-close-button {
     max-width: calc(100% - 20px);
     display: inline-block;
     margin: 0 !important;
-    height: auto; } }
+    height: auto; }
+
+  .home .index-row .resource-list.home ul {
+    max-width: calc(100% - 20px);
+    width: 100%; }
+
+  .home .index-row .resource-list.home li {
+    width: 45%; } }
 @media (max-width: 768px) {
   #logo img {
     display: none; }
