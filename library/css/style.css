@@ -3592,8 +3592,8 @@ div.cartodb-popup .cartodb-popup-close-button {
     margin: 10px auto; }
 
   .post-type-archive-resource #main .index-row {
-    -webkit-flex-direction: column;
-    flex-direction: column; }
+    -webkit-flex-direction: row;
+    flex-direction: row; }
 
   .page .about-content .card-third ol {
     height: 100%; }
