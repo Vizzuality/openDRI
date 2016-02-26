@@ -3722,7 +3722,7 @@ div.cartodb-popup .cartodb-popup-close-button {
     height: auto;
     display: inline-block; }
 
-  .home #resources.index-row.last-resources {
+  .home #resources .index-row.last-resources {
     width: 100%;
     max-width: calc(100% - 20px);
     display: inline-block;
