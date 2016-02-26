@@ -3749,7 +3749,7 @@ div.cartodb-popup .cartodb-popup-close-button {
   .post-type-archive .index-row.last-resources {
     flex-direction: row; }
 
-  .post-type-archive .index-row.last-resources article {
+  .post-type-archive-resource #main .row-container article {
     margin: 0;
     width: calc(100% - 20px);
     max-width: 100%; } }
