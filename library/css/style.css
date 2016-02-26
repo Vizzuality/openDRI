@@ -3735,7 +3735,7 @@ div.cartodb-popup .cartodb-popup-close-button {
     margin: 0 !important;
     height: auto; }
 
-  .home .index-row .resource-list.home ul {
+  .home .index-row .resource-list.home {
     max-width: calc(100% - 20px);
     width: 100%; }
 
