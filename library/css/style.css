@@ -3726,7 +3726,8 @@ div.cartodb-popup .cartodb-popup-close-button {
     width: 100%;
     max-width: calc(100% - 20px);
     display: inline-block;
-    margin: 0 !important; } }
+    margin: 0 !important;
+    height: auto; } }
 @media (max-width: 768px) {
   #logo img {
     display: none; }
