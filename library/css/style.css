@@ -1847,7 +1847,7 @@ POSTS & CONTENT STYLES
       background: inherit;
       transition: background 0.3s ease;
       display: inline-table;
-      width: 31%; }
+      width: 30%; }
       .index-row .resource-list li:hover {
         background: #f7f7f7; }
       .index-row .resource-list li div {
@@ -3744,7 +3744,15 @@ div.cartodb-popup .cartodb-popup-close-button {
     min-height: 40px; }
 
   .home .index-row .resource-list.home li {
-    width: 45%; } }
+    width: 45%; }
+
+  .post-type-archive .index-row.last-resources {
+    flex-direction: row; }
+
+  .post-type-archive .index-row.last-resources article {
+    margin: 0;
+    width: calc(100% - 20px);
+    max-width: 100%; } }
 @media (max-width: 768px) {
   #logo img {
     display: none; }
