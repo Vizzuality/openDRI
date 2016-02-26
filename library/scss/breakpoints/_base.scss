@@ -2572,11 +2572,10 @@ div.cartodb-popup .cartodb-popup-close-button {
   .category-open-data-platforms #main .row-container article, .category-community-mapping #main .row-container article, .category-africa #main .row-container article, .category-east-asia-pacific #main .row-container article, .category-europe-and-central-asia #main .row-container article, .category-latin-america-and-caribbean #main .row-container article, .category-middle-east-and-north-africa #main .row-container article, .category-non-wb-countries #main .row-container article, .category-south-asia #main .row-container article, .category-risk-visualization #main .row-container article, .category-news #main .row-container article, .post-type-archive-resource #main .row-container article {max-width: calc(50% - 20px);}
   .home .index-row article, .home .index-row .card-third {width: 490px;max-width: calc(50% - 20px);}
   .single .index-row.more-content .row-container article {max-width: 360px;width: 100%;}
-  .home #news.index-row {flex-direction: row;;width: calc(100% - 20px);}
-  .home #news.index-row article,.home #news.index-row .card-third { max-width: 315px;
-    margin: 0 15px 50px;}
-  .home .index-row article:last-child {position: absolute;top: 66.7%; right: -104%;}
-  .index-row .card-third.twitter-timeline-container {max-width: none;  position: relative; align-self:baseline;}
+  .home #news.index-row {flex-direction: row;width: 100%;}
+  .home #news.index-row article,.home #news.index-row .card-third { max-width: calc(100% - 20px); margin: 0 0 50px !important;}
+  .home .index-row article:last-child {position: absolute;top: 66.7%; right: -100%;}
+  .index-row .card-third.twitter-timeline-container {position: relative; align-self:baseline;width: 360px;}
   .index-row .card-third .twitter {width: auto;}
 }
 @media (max-width: 768px) {
