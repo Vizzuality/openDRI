@@ -2579,6 +2579,8 @@ div.cartodb-popup .cartodb-popup-close-button {
   .index-row .card-third .twitter {width: auto;}
   .home #resources.index-row {align-items: flex-start;}
   .home #resources.index-row .first-text {width: 100%;max-width: calc(100% - 20px);height: auto;}
+  .home #resources.index-row article.resource-cont, .index-row .card-third.resource-cont {width: calc(100% - 20px);margin: 0;max-width: 100%;height: auto;display: inline-block;}
+  .home #resources.index-row.last-resources {width: 100%;max-width: calc(100% - 20px);display: inline-block;margin: 0 !important;}
 }
 @media (max-width: 768px) {
 	#logo img {display: none;}
