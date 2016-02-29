@@ -2648,7 +2648,7 @@ div.cartodb-popup .cartodb-popup-close-button {
   .category-open-data-platforms #main .row-container article, .category-community-mapping #main .row-container article, .category-africa #main .row-container article, .category-east-asia-pacific #main .row-container article, .category-europe-and-central-asia #main .row-container article, .category-latin-america-and-caribbean #main .row-container article, .category-middle-east-and-north-africa #main .row-container article, .category-non-wb-countries #main .row-container article, .category-south-asia #main .row-container article, .category-risk-visualization #main .row-container article, .category-news #main .row-container article, .post-type-archive-resource #main .row-container article {width: 360px;}
 }
 @media (max-width: 768px) {
-	.page #contact .-m-form {width: 100%;}
+	.page #contact .-m-form {width: 100%; display: table;}
 	#logo img {display: none;}
 	#logo a{ content: ''; background-image: url(http://opendri.simbiotica.es/wp-content/themes/openDRI/logo-extended.svg); width: 305px; background-repeat: no-repeat; height: 55px; visibility: visible; display: block; position: relative;top: -5px;}
 	.no-home .header .hr {display: block;}

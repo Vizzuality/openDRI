@@ -3804,7 +3804,8 @@ div.cartodb-popup .cartodb-popup-close-button {
     width: 360px; } }
 @media (max-width: 768px) {
   .page #contact .-m-form {
-    width: 100%; }
+    width: 100%;
+    display: table; }
 
   #logo img {
     display: none; }
