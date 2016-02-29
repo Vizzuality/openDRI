@@ -3623,7 +3623,7 @@ div.cartodb-popup .cartodb-popup-close-button {
     display: block; }
 
   .blue-bar-top .wrapper span.current {
-    background-color: transparent;
+    color: #1477c9;
     color: #fff; }
 
   .blue-bar-top.about .wrapper span.current:hover {
