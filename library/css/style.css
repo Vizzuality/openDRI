@@ -2097,7 +2097,8 @@ POSTS & CONTENT STYLES
         font-size: 17px;
         line-height: 28px;
         color: #555;
-        font-feature-settings: "liga" 0; }
+        font-feature-settings: "liga" 0;
+        letter-spacing: 0.3px; }
         .hentry.-odri-post .entry-content p a {
           color: #1477c9; }
     .hentry.-odri-post footer {
