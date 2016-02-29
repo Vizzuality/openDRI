@@ -2589,7 +2589,7 @@ div.cartodb-popup .cartodb-popup-close-button {
   .home .index-row .resource-list.home li {width: 45%;}
   .post-type-archive .index-row.last-resources {flex-direction: row;}
   .post-type-archive-resource #main .row-container article {margin: 0;width: 360px;max-width: 100%;}
-  .category-news #main .row-container article {width: 360px;}
+  .category-open-data-platforms #main .row-container article, .category-community-mapping #main .row-container article, .category-africa #main .row-container article, .category-east-asia-pacific #main .row-container article, .category-europe-and-central-asia #main .row-container article, .category-latin-america-and-caribbean #main .row-container article, .category-middle-east-and-north-africa #main .row-container article, .category-non-wb-countries #main .row-container article, .category-south-asia #main .row-container article, .category-risk-visualization #main .row-container article, .category-news #main .row-container article, .post-type-archive-resource #main .row-container article {width: 360px;}
 }
 @media (max-width: 768px) {
 	#logo img {display: none;}
