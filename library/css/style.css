@@ -1866,7 +1866,10 @@ POSTS & CONTENT STYLES
           text-transform: capitalize; }
           .index-row .resource-list li div .title a {
             color: inherit;
-            text-decoration: none; }
+            text-decoration: none;
+            font-size: 15px;
+            letter-spacing: 0.5px;
+            font-family: "Bariol_Regular", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif; }
         .index-row .resource-list li div .format {
           color: #555555;
           text-transform: uppercase; }
