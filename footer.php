@@ -960,7 +960,7 @@
 			});
 		</script>
 		<script type="text/javascript">
-		if (($('article').length + 2 ) % 3 == 2) {
+		if (($('article').length + 1 ) % 3 == 2) {
 			$('article').last().after('<article class="index-row article project" style="visibility:hidden"> </article>');
 		}
 		</script>
