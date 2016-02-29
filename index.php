@@ -27,7 +27,7 @@
 				<div class="row-container">
 					<div class="card-third first-text">
 						<h3>news</h3>
-						<p>Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Ullam id dolor.</p>
+						<p>As the global need for Open Data and the knowledge base around it grow, it is important to keep informed so that communities can leverage this momentum and be better served. In this section of our online platform, find news highlighting action around the movement, notes on relevant software releases, as well as project updates from our teams in the field.</p>
 						<a href="<?php echo home_url(); ?>/category/news"><span>view all news</span></a>
 					</div>
 					<?php
@@ -74,7 +74,7 @@
 				<div class="row-container">
 					<div class="card-third first-text">
 						<h3>projects</h3>
-						<p>Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Ullam id dolor.</p>
+						<p>OpenDRI projects apply the concepts of the global open data movement to the challenges of reducing vulnerability to natural hazards and the impacts of climate change. Here, projects can be browsed by country and region highlighting the context specific risk reduction goals of each initiative.</p>
 						<a href="<?php echo home_url(); ?>/project"><span>view all projects</span></a>
 					</div>
 					<?php
@@ -121,7 +121,7 @@
 				<div class="row-container">
 					<div class="card-third first-text">
 						<h3>resources</h3>
-						<p>Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Ullam id dolor.</p>
+						<p>At OpenDRI we are committed to increasing information that can empower individuals and their governments to reduce risk to natural hazards and climate change in their communities.  We’ve compiled a database of relevant resources to share what we have learned through our own projects and from the work of others.</p>
 						<a href="<?php echo home_url(); ?>/resource"><span>view all resources</span></a>
 					</div>
 				</div>
