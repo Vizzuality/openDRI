@@ -153,7 +153,8 @@
 					continuousWorld: false,
 					noWrap: true,
 			        center: [30,15],
-			        zoom: ($(window).width() <= 768) ? 1 : 2,
+			        zoom: ($(window).width() <= 768) ? 1 : 3,
+			        minZoom: 2,
 			        zoomControl: false,
 			        scrollWheelZoom: false,
 			        maxBounds: [
