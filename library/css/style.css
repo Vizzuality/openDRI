@@ -4197,6 +4197,9 @@ div.cartodb-popup .cartodb-popup-close-button {
     top: 0;
     right: 0; }
 
+  .post-type-archive-resource #main .index-row {
+    margin: 20px 0 !important; }
+
   .post-type-archive-resource .index-row.last-resources a {
     width: calc(50% - 20px); } }
 /*********************
