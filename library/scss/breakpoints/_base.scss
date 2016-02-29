@@ -2530,11 +2530,20 @@ div.cartodb-popup h1 {
     text-transform: uppercase !important;
     color: #0475cc !important;
     margin: 0 0 15px 0 !important;
+    letter-spacing: 0.5px !important;
+    font-family: $bariol  !important;
+    font-weight: bold !important;
 }
-div.cartodb-popup p.meta {
-	font-size: 11px;
+div.cartodb-popup .cartodb-popup-content p {
+	font-size: 15px  !important;
+	line-height: 18px  !important;
+	letter-spacing: 0.3px  !important;
+}
+div.cartodb-popup .cartodb-popup-content p.meta {
+	font-size: 11px !important;
 	color: rgba(#555,0.5);
 	text-align: justify;
+	text-transform: uppercase;
 }
 div.cartodb-popup .cartodb-popup-close-button {
 	box-shadow: none !important;
