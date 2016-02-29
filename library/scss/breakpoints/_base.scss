@@ -861,7 +861,8 @@ POSTS & CONTENT STYLES
 	header {
 		background: $text-bkg-blue;
 		position: absolute;
-	    bottom: 48.5%;
+	    bottom: 45%;
+	    min-height: 60px;
 	    left: 0%;
 	    width: 90%;
 	    z-index: 1;
