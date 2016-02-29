@@ -3535,6 +3535,10 @@ div.cartodb-popup .cartodb-popup-close-button {
 .home .index-row .resource-list {
   max-height: 345px; }
 
+.page #principles, .page #contact, .page #more-content, .page #partners, .page #members {
+  margin: 0;
+  padding: 60px 0; }
+
 @media (max-width: 1024px) {
   .home .header nav {
     width: 100%; }
