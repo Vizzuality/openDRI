@@ -176,9 +176,10 @@ HEADER STYLES
 		display: list-item;
 	}
 	nav {
-		display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
+		display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+		display: -ms-flexbox;      /* TWEENER - IE 10 */
+		display: -webkit-flex;     /* NEW - Chrome */
+		display: flex;
 		justify-content: space-around;
 		height: 73px;
 		width: 60%;
@@ -384,9 +385,10 @@ POSTS & CONTENT STYLES
 *********************/
 #map-fake {
 	height: 656px;
-    display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
+  	display: flex;
     position: relative;
     flex-direction: column;
     align-items: center;
@@ -405,9 +407,10 @@ POSTS & CONTENT STYLES
 		background-size: cover;
 	}
     .what-list {
-    	display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
+    	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+		display: -ms-flexbox;      /* TWEENER - IE 10 */
+		display: -webkit-flex;     /* NEW - Chrome */
+    	display: flex;
 	    flex-direction: column;
 	    align-items: center;
 	    justify-content: center;
@@ -428,9 +431,10 @@ POSTS & CONTENT STYLES
 	    	letter-spacing: 0.6px;
 	    }
 	    > nav {
-		    display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
+		    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+			display: -ms-flexbox;      /* TWEENER - IE 10 */
+  			display: -webkit-flex;     /* NEW - Chrome */
+		    display: flex;
 		    justify-content: space-around;
 		    width: 100%;
 		    span {
@@ -469,9 +473,10 @@ POSTS & CONTENT STYLES
     position: relative;
     top: -24px;
     height: 48px;
-    display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  	display: -ms-flexbox;      /* TWEENER - IE 10 */
+  	display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;
     width: 330px;
     justify-content: center;
     align-items: center;
@@ -486,9 +491,10 @@ POSTS & CONTENT STYLES
 }
 #explore-more {
 	height: 360px;
-    display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  	display: -ms-flexbox;      /* TWEENER - IE 10 */
+  	display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;
     position: relative;
     flex-direction: column;
     align-items: center;
@@ -513,9 +519,10 @@ POSTS & CONTENT STYLES
 	section {
 		width: 70%;
 	    height: 60%;
-	    display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
+	    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  		display: -ms-flexbox;      /* TWEENER - IE 10 */
+  		display: -webkit-flex;     /* NEW - Chrome */
+	    display: flex;
 	    flex-direction: column;
 	    justify-content: center;
 	    align-items: center;
@@ -543,9 +550,10 @@ POSTS & CONTENT STYLES
 }
 .single .index-row.more-content .row-container article {margin: 0px 0px 40px;}
 .index-row {
-	display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  	display: -ms-flexbox;      /* TWEENER - IE 10 */
+  	display: -webkit-flex;     /* NEW - Chrome */
+	display: flex;
 	flex-direction: column;
     margin: 85px 0;
     &#news .row-container {
@@ -567,9 +575,10 @@ POSTS & CONTENT STYLES
     	}
     }
     .row-container {
-    	display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
+    	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  		display: -ms-flexbox;      /* TWEENER - IE 10 */
+  		display: -webkit-flex;     /* NEW - Chrome */
+    	display: flex;
     	flex-wrap: wrap;
     	> a {
     		text-decoration: none;
@@ -597,10 +606,10 @@ POSTS & CONTENT STYLES
     	max-width: 315px;
     	width: 345px;
 	    margin: 0 15px 50px;
-	    display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-	
-		  display: -ms-flexbox;      /* TWEENER - IE 10 */
-		  display: -webkit-flex;     /* NEW - Chrome */
+	    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+		display: -ms-flexbox;      /* TWEENER - IE 10 */
+		display: -webkit-flex;     /* NEW - Chrome */
+	    display: flex;
 	    flex-direction: column;
 	    justify-content: space-around;
 	    height: 350px;
@@ -687,10 +696,10 @@ POSTS & CONTENT STYLES
     		}
 		    div {
 		    	margin: 5px 0;
-		    	display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-			
-				  display: -ms-flexbox;      /* TWEENER - IE 10 */
-				  display: -webkit-flex;     /* NEW - Chrome */
+		    	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+				display: -ms-flexbox;      /* TWEENER - IE 10 */
+				display: -webkit-flex;     /* NEW - Chrome */
+		    	display: flex;
 	    		justify-content: space-between;
 	    		font-size: 15px;
 	    		.title {
@@ -763,10 +772,10 @@ POSTS & CONTENT STYLES
     		width: 200px;
 		    background: #db0033;
 		    height: 50px;
-		    display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-		
-			  display: -ms-flexbox;      /* TWEENER - IE 10 */
-			  display: -webkit-flex;     /* NEW - Chrome */
+		    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+			display: -ms-flexbox;      /* TWEENER - IE 10 */
+			display: -webkit-flex;     /* NEW - Chrome */
+		    display: flex;
 		    justify-content: center;
 		    align-items: center;
 		    text-transform: uppercase;
@@ -870,9 +879,10 @@ POSTS & CONTENT STYLES
 	    margin: 0 5%;
 		transition: background 0.3s ease;
 		box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.4);
-		display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
+		display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  		display: -ms-flexbox;      /* TWEENER - IE 10 */
+  		display: -webkit-flex;     /* NEW - Chrome */
+		display: flex;
   		align-items: center;
 		&:hover {
 			background: lighten($text-bkg-blue,10%);
@@ -891,9 +901,10 @@ POSTS & CONTENT STYLES
 		}
 	}
 		_:-webkit-full-screen:not(:root:root), header {
-			display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
+			display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  			display: -ms-flexbox;      /* TWEENER - IE 10 */
+  			display: -webkit-flex;     /* NEW - Chrome */
+			display: flex;
 			padding: 10px 0;
 		}
 	footer {
@@ -901,9 +912,10 @@ POSTS & CONTENT STYLES
 
 		p {
 			margin: 0;
-			display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
+			display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  			display: -ms-flexbox;      /* TWEENER - IE 10 */
+  			display: -webkit-flex;     /* NEW - Chrome */
+			display: flex;
     		justify-content: space-between;
     		text-transform: uppercase;
     		span {
@@ -1294,9 +1306,10 @@ margin: 0;
 			ol {
 				list-style: decimal;
 				list-style-position: inside;
-			    display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
+			    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  				display: -ms-flexbox;      /* TWEENER - IE 10 */
+  				display: -webkit-flex;     /* NEW - Chrome */
+			    display: flex;
 			    flex-direction: column;
 			    flex-wrap: wrap;
 			    height: 320px;
@@ -1313,9 +1326,10 @@ margin: 0;
 		}
 	}
 	#contact {
-		display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
+		display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  		display: -ms-flexbox;      /* TWEENER - IE 10 */
+  		display: -webkit-flex;     /* NEW - Chrome */
+		display: flex;
 		justify-content: space-between;
 		align-items: flex-start;
 		flex-direction: row;
@@ -1384,18 +1398,20 @@ margin: 0;
 		}
 		.-m-team-member,
 		.-m-partner {
-			display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
+			display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  			display: -ms-flexbox;      /* TWEENER - IE 10 */
+  			display: -webkit-flex;     /* NEW - Chrome */
+			display: flex;
 			img {
 				height: 213px;
 			    width: 180px;
 			    background: lightgrey;
 			}
 			.-m-info {
-				display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
+				display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  				display: -ms-flexbox;      /* TWEENER - IE 10 */
+  				display: -webkit-flex;     /* NEW - Chrome */
+				display: flex;
 				flex-direction: column;
 				width: 70%;
     			margin: 0 0 0 40px;
@@ -1438,9 +1454,10 @@ margin: 0;
 		color: #1477c9;
 	}
 	.p-info {
-		display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
+		display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  		display: -ms-flexbox;      /* TWEENER - IE 10 */
+  		display: -webkit-flex;     /* NEW - Chrome */
+		display: flex;
 		clear: both;
 		justify-content: center;
 		position: relative;
@@ -1980,24 +1997,27 @@ FOOTER STYLES
 	background-color: $black;
 	color: $light-gray;
 	height: 270px;
-	display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  	display: -ms-flexbox;      /* TWEENER - IE 10 */
+  	display: -webkit-flex;     /* NEW - Chrome */
+	display: flex;
 	flex-direction: column;
 	align-items: space-between;
 
 	.-ft-content {
 		width: 100%;
-		display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
+		display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+		display: -ms-flexbox;      /* TWEENER - IE 10 */
+		display: -webkit-flex;     /* NEW - Chrome */
+		display: flex;
 		justify-content: space-between;
 		margin: 2.5rem 0;
 		.-ft-coorporate,
 		nav {
-			display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
+			display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+			display: -ms-flexbox;      /* TWEENER - IE 10 */
+  			display: -webkit-flex;     /* NEW - Chrome */
+			display: flex;
 			flex-direction: column;
 			justify-content: space-around;
 			.-i-link {
@@ -2019,9 +2039,10 @@ FOOTER STYLES
 		}
 		.-ft-newsletter {
 			font-size: 13px;
-		    display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
+		    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  			display: -ms-flexbox;      /* TWEENER - IE 10 */
+  			display: -webkit-flex;     /* NEW - Chrome */
+		    display: flex;
 		    align-items: flex-start;
 		    justify-content: center;
 		    flex-direction: column;
@@ -2029,9 +2050,10 @@ FOOTER STYLES
 		form {
 			border: 1px solid #979797;
 		    width: 300px;
-		    display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
+		    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  			display: -ms-flexbox;      /* TWEENER - IE 10 */
+  			display: -webkit-flex;     /* NEW - Chrome */
+		    display: flex;
 		    margin-top: 10px;
 		    justify-content: space-between;
 		    position: relative;
@@ -2085,9 +2107,10 @@ FOOTER STYLES
 		}
 	}
 	.-ft-legal {
-		display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
+		display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  		display: -ms-flexbox;      /* TWEENER - IE 10 */
+  		display: -webkit-flex;     /* NEW - Chrome */
+		display: flex;
 	    justify-content: space-between;
 	    width: 25%;
 	    height: 40px;
@@ -2136,9 +2159,10 @@ FOOTER STYLES
 #blue-bar-pick-pillar {
 	height: 43px;
     border-left: 1px solid rgba(250,250,250,0.2);
-    display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  	display: -ms-flexbox;      /* TWEENER - IE 10 */
+  	display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;
   	justify-content: space-around;
     width: 80%;
     position: relative;
@@ -2148,9 +2172,10 @@ FOOTER STYLES
 	background-color: #1477c9;
     box-shadow: 1px 1px 7px rgba(0,0,0,0.2);
     height: 43px;
-    display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  	display: -ms-flexbox;      /* TWEENER - IE 10 */
+  	display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;
 	align-items: center;
 	position: relative;
 	margin-bottom: -43px;
@@ -2167,9 +2192,10 @@ FOOTER STYLES
 	    text-transform: uppercase;
 	    font-size: 15px;
 	    font-weight: bold;
-	    display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
+	    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  		display: -ms-flexbox;      /* TWEENER - IE 10 */
+  		display: -webkit-flex;     /* NEW - Chrome */
+	    display: flex;
 	    justify-content: space-between;
 	    span {
 			border-radius: 5px;
@@ -2714,7 +2740,7 @@ div.cartodb-popup .cartodb-popup-close-button {
 	.leaflet-top .leaflet-control {margin-top: 10px !important;}
 	#map-fake {height: 526px;}
 	#map-fake:after {background: #0e5fa2;}
-	.index-row .card-third.twitter-timeline-container {display: flex;display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;width: 100%;align-items: center; margin: 0 !important;}
+	.index-row .card-third.twitter-timeline-container {display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;width: 100%;align-items: center; margin: 0 !important;}
 	.index-row .card-third .twitter > span {left: 40px;}
 	.index-row article, .index-row .card-third {margin: 0 15px 30px;}
 	.index-row article, .index-row .card-third::last-child{margin: 0 15px 0px;}
@@ -2733,7 +2759,7 @@ div.cartodb-popup .cartodb-popup-close-button {
 	.about-content.index-row {margin: 60px -10px;}
 	.page .p-info {justify-content: flex-start;}
 	.single .wrap {width: 100%;}
-	#explore-more section .what-explore {top: 270px;   min-height: 50px;    display: flex;    position: absolute;    left: 105px;    width: 170px;    font-size: 14px;}
+	#explore-more section .what-explore {top: 270px;   min-height: 50px;display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;position: absolute;    left: 105px;    width: 170px;    font-size: 14px;}
 	.index-row.more-content h3 {padding: 0 0 0 1em;}
 	.archive #contact .index-row, .page #contact .index-row {width: 100%;}
 	.hentry.-odri-post h1 {font-size: 34px;}
