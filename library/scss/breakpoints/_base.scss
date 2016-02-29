@@ -795,6 +795,7 @@ POSTS & CONTENT STYLES
 		    max-width: none;
 		    margin: 0px 0px 50px 40px !important;
 		    padding: 0px 3px 3px;
+		    width: 320px;
     	}
 	    .twitter {
 	    	overflow: hidden;
@@ -804,7 +805,7 @@ POSTS & CONTENT STYLES
 			display: table-row;
 		    position: relative;
 		    margin-top: 20px;
-		    width: 315px;
+		    width: 100%;
 	    	> span {
     		    background-color: #1477c9 !important;
 			    width: 60px !important;
