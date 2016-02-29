@@ -2374,6 +2374,9 @@ POSTS & CONTENT STYLES
     .archive #contact .index-row .card-third,
     .page #contact .index-row .card-third {
       margin: 0; }
+  .archive #contact .-m-form,
+  .page #contact .-m-form {
+    width: calc(50% - 20px); }
   .archive #contact .contact-form,
   .page #contact .contact-form {
     background: #fff;
