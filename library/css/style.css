@@ -1389,13 +1389,13 @@ HEADER STYLES
     height: 80px;
     display: list-item; }
   .header nav {
-    display: flex;
     display: -webkit-box;
     /* OLD - iOS 6-, Safari 3.1-6 */
     display: -ms-flexbox;
     /* TWEENER - IE 10 */
     display: -webkit-flex;
     /* NEW - Chrome */
+    display: flex;
     justify-content: space-around;
     height: 73px;
     width: 60%;
@@ -1537,13 +1537,13 @@ POSTS & CONTENT STYLES
 *********************/
 #map-fake {
   height: 656px;
-  display: flex;
   display: -webkit-box;
   /* OLD - iOS 6-, Safari 3.1-6 */
   display: -ms-flexbox;
   /* TWEENER - IE 10 */
   display: -webkit-flex;
   /* NEW - Chrome */
+  display: flex;
   position: relative;
   flex-direction: column;
   align-items: center;
@@ -1561,13 +1561,13 @@ POSTS & CONTENT STYLES
     z-index: -1;
     background-size: cover; }
   #map-fake .what-list {
-    display: flex;
     display: -webkit-box;
     /* OLD - iOS 6-, Safari 3.1-6 */
     display: -ms-flexbox;
     /* TWEENER - IE 10 */
     display: -webkit-flex;
     /* NEW - Chrome */
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -1586,13 +1586,13 @@ POSTS & CONTENT STYLES
       line-height: 25px;
       letter-spacing: 0.6px; }
     #map-fake .what-list > nav {
-      display: flex;
       display: -webkit-box;
       /* OLD - iOS 6-, Safari 3.1-6 */
       display: -ms-flexbox;
       /* TWEENER - IE 10 */
       display: -webkit-flex;
       /* NEW - Chrome */
+      display: flex;
       justify-content: space-around;
       width: 100%; }
       #map-fake .what-list > nav span {
@@ -1629,13 +1629,13 @@ POSTS & CONTENT STYLES
   position: relative;
   top: -24px;
   height: 48px;
-  display: flex;
   display: -webkit-box;
   /* OLD - iOS 6-, Safari 3.1-6 */
   display: -ms-flexbox;
   /* TWEENER - IE 10 */
   display: -webkit-flex;
   /* NEW - Chrome */
+  display: flex;
   width: 330px;
   justify-content: center;
   align-items: center;
@@ -1649,13 +1649,13 @@ POSTS & CONTENT STYLES
 
 #explore-more {
   height: 360px;
-  display: flex;
   display: -webkit-box;
   /* OLD - iOS 6-, Safari 3.1-6 */
   display: -ms-flexbox;
   /* TWEENER - IE 10 */
   display: -webkit-flex;
   /* NEW - Chrome */
+  display: flex;
   position: relative;
   flex-direction: column;
   align-items: center;
@@ -1676,13 +1676,13 @@ POSTS & CONTENT STYLES
   #explore-more section {
     width: 70%;
     height: 60%;
-    display: flex;
     display: -webkit-box;
     /* OLD - iOS 6-, Safari 3.1-6 */
     display: -ms-flexbox;
     /* TWEENER - IE 10 */
     display: -webkit-flex;
     /* NEW - Chrome */
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1708,13 +1708,13 @@ POSTS & CONTENT STYLES
   margin: 0px 0px 40px; }
 
 .index-row {
-  display: flex;
   display: -webkit-box;
   /* OLD - iOS 6-, Safari 3.1-6 */
   display: -ms-flexbox;
   /* TWEENER - IE 10 */
   display: -webkit-flex;
   /* NEW - Chrome */
+  display: flex;
   flex-direction: column;
   margin: 85px 0; }
   .index-row#news .row-container {
@@ -1731,13 +1731,13 @@ POSTS & CONTENT STYLES
       color: #555;
       font-size: 30px; }
   .index-row .row-container {
-    display: flex;
     display: -webkit-box;
     /* OLD - iOS 6-, Safari 3.1-6 */
     display: -ms-flexbox;
     /* TWEENER - IE 10 */
     display: -webkit-flex;
     /* NEW - Chrome */
+    display: flex;
     flex-wrap: wrap; }
     .index-row .row-container > a {
       text-decoration: none; }
@@ -1759,13 +1759,13 @@ POSTS & CONTENT STYLES
     max-width: 315px;
     width: 345px;
     margin: 0 15px 50px;
-    display: flex;
     display: -webkit-box;
     /* OLD - iOS 6-, Safari 3.1-6 */
     display: -ms-flexbox;
     /* TWEENER - IE 10 */
     display: -webkit-flex;
     /* NEW - Chrome */
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 350px;
@@ -1852,13 +1852,13 @@ POSTS & CONTENT STYLES
         background: #f7f7f7; }
       .index-row .resource-list li div {
         margin: 5px 0;
-        display: flex;
         display: -webkit-box;
         /* OLD - iOS 6-, Safari 3.1-6 */
         display: -ms-flexbox;
         /* TWEENER - IE 10 */
         display: -webkit-flex;
         /* NEW - Chrome */
+        display: flex;
         justify-content: space-between;
         font-size: 15px; }
         .index-row .resource-list li div .title {
@@ -1913,13 +1913,13 @@ POSTS & CONTENT STYLES
     width: 200px;
     background: #db0033;
     height: 50px;
-    display: flex;
     display: -webkit-box;
     /* OLD - iOS 6-, Safari 3.1-6 */
     display: -ms-flexbox;
     /* TWEENER - IE 10 */
     display: -webkit-flex;
     /* NEW - Chrome */
+    display: flex;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
@@ -2016,13 +2016,13 @@ POSTS & CONTENT STYLES
     margin: 0 5%;
     transition: background 0.3s ease;
     box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.4);
-    display: flex;
     display: -webkit-box;
     /* OLD - iOS 6-, Safari 3.1-6 */
     display: -ms-flexbox;
     /* TWEENER - IE 10 */
     display: -webkit-flex;
     /* NEW - Chrome */
+    display: flex;
     align-items: center; }
     .hentry header:hover {
       background: #2791e9; }
@@ -2038,25 +2038,25 @@ POSTS & CONTENT STYLES
       line-height: 20px;
       color: #fff; }
   .hentry _:-webkit-full-screen:not(:root:root), .hentry header {
-    display: flex;
     display: -webkit-box;
     /* OLD - iOS 6-, Safari 3.1-6 */
     display: -ms-flexbox;
     /* TWEENER - IE 10 */
     display: -webkit-flex;
     /* NEW - Chrome */
+    display: flex;
     padding: 10px 0; }
   .hentry footer {
     margin: 7px 15px; }
     .hentry footer p {
       margin: 0;
-      display: flex;
       display: -webkit-box;
       /* OLD - iOS 6-, Safari 3.1-6 */
       display: -ms-flexbox;
       /* TWEENER - IE 10 */
       display: -webkit-flex;
       /* NEW - Chrome */
+      display: flex;
       justify-content: space-between;
       text-transform: uppercase; }
       .hentry footer p span {
@@ -2327,13 +2327,13 @@ POSTS & CONTENT STYLES
   .page .about-content .card-third ol {
     list-style: decimal;
     list-style-position: inside;
-    display: flex;
     display: -webkit-box;
     /* OLD - iOS 6-, Safari 3.1-6 */
     display: -ms-flexbox;
     /* TWEENER - IE 10 */
     display: -webkit-flex;
     /* NEW - Chrome */
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     height: 320px;
@@ -2348,13 +2348,13 @@ POSTS & CONTENT STYLES
       font-weight: 600; }
 .archive #contact,
 .page #contact {
-  display: flex;
   display: -webkit-box;
   /* OLD - iOS 6-, Safari 3.1-6 */
   display: -ms-flexbox;
   /* TWEENER - IE 10 */
   display: -webkit-flex;
   /* NEW - Chrome */
+  display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: row; }
@@ -2434,13 +2434,13 @@ POSTS & CONTENT STYLES
   .page #members .-m-partner,
   .page #partners .-m-team-member,
   .page #partners .-m-partner {
-    display: flex;
     display: -webkit-box;
     /* OLD - iOS 6-, Safari 3.1-6 */
     display: -ms-flexbox;
     /* TWEENER - IE 10 */
     display: -webkit-flex;
-    /* NEW - Chrome */ }
+    /* NEW - Chrome */
+    display: flex; }
     .archive #members .-m-team-member img,
     .archive #members .-m-partner img,
     .archive #partners .-m-team-member img,
@@ -2460,13 +2460,13 @@ POSTS & CONTENT STYLES
     .page #members .-m-partner .-m-info,
     .page #partners .-m-team-member .-m-info,
     .page #partners .-m-partner .-m-info {
-      display: flex;
       display: -webkit-box;
       /* OLD - iOS 6-, Safari 3.1-6 */
       display: -ms-flexbox;
       /* TWEENER - IE 10 */
       display: -webkit-flex;
       /* NEW - Chrome */
+      display: flex;
       flex-direction: column;
       width: 70%;
       margin: 0 0 0 40px; }
@@ -2534,13 +2534,13 @@ POSTS & CONTENT STYLES
   color: #1477c9; }
 .archive .p-info,
 .page .p-info {
-  display: flex;
   display: -webkit-box;
   /* OLD - iOS 6-, Safari 3.1-6 */
   display: -ms-flexbox;
   /* TWEENER - IE 10 */
   display: -webkit-flex;
   /* NEW - Chrome */
+  display: flex;
   clear: both;
   justify-content: center;
   position: relative;
@@ -2976,35 +2976,35 @@ FOOTER STYLES
   background-color: #1b1b1b;
   color: #f8f9fa;
   height: 270px;
-  display: flex;
   display: -webkit-box;
   /* OLD - iOS 6-, Safari 3.1-6 */
   display: -ms-flexbox;
   /* TWEENER - IE 10 */
   display: -webkit-flex;
   /* NEW - Chrome */
+  display: flex;
   flex-direction: column;
   align-items: space-between; }
   .footer .-ft-content {
     width: 100%;
-    display: flex;
     display: -webkit-box;
     /* OLD - iOS 6-, Safari 3.1-6 */
     display: -ms-flexbox;
     /* TWEENER - IE 10 */
     display: -webkit-flex;
     /* NEW - Chrome */
+    display: flex;
     justify-content: space-between;
     margin: 2.5rem 0; }
     .footer .-ft-content .-ft-coorporate,
     .footer .-ft-content nav {
-      display: flex;
       display: -webkit-box;
       /* OLD - iOS 6-, Safari 3.1-6 */
       display: -ms-flexbox;
       /* TWEENER - IE 10 */
       display: -webkit-flex;
       /* NEW - Chrome */
+      display: flex;
       flex-direction: column;
       justify-content: space-around; }
       .footer .-ft-content .-ft-coorporate .-i-link,
@@ -3024,26 +3024,26 @@ FOOTER STYLES
       left: 8px; }
     .footer .-ft-content .-ft-newsletter {
       font-size: 13px;
-      display: flex;
       display: -webkit-box;
       /* OLD - iOS 6-, Safari 3.1-6 */
       display: -ms-flexbox;
       /* TWEENER - IE 10 */
       display: -webkit-flex;
       /* NEW - Chrome */
+      display: flex;
       align-items: flex-start;
       justify-content: center;
       flex-direction: column; }
     .footer .-ft-content form {
       border: 1px solid #979797;
       width: 300px;
-      display: flex;
       display: -webkit-box;
       /* OLD - iOS 6-, Safari 3.1-6 */
       display: -ms-flexbox;
       /* TWEENER - IE 10 */
       display: -webkit-flex;
       /* NEW - Chrome */
+      display: flex;
       margin-top: 10px;
       justify-content: space-between;
       position: relative; }
@@ -3087,13 +3087,13 @@ FOOTER STYLES
     position: absolute;
     left: 0; }
   .footer .-ft-legal {
-    display: flex;
     display: -webkit-box;
     /* OLD - iOS 6-, Safari 3.1-6 */
     display: -ms-flexbox;
     /* TWEENER - IE 10 */
     display: -webkit-flex;
     /* NEW - Chrome */
+    display: flex;
     justify-content: space-between;
     width: 25%;
     height: 40px;
@@ -3140,13 +3140,13 @@ FOOTER STYLES
 #blue-bar-pick-pillar {
   height: 43px;
   border-left: 1px solid rgba(250, 250, 250, 0.2);
-  display: flex;
   display: -webkit-box;
   /* OLD - iOS 6-, Safari 3.1-6 */
   display: -ms-flexbox;
   /* TWEENER - IE 10 */
   display: -webkit-flex;
   /* NEW - Chrome */
+  display: flex;
   justify-content: space-around;
   width: 80%;
   position: relative;
@@ -3156,13 +3156,13 @@ FOOTER STYLES
   background-color: #1477c9;
   box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.2);
   height: 43px;
-  display: flex;
   display: -webkit-box;
   /* OLD - iOS 6-, Safari 3.1-6 */
   display: -ms-flexbox;
   /* TWEENER - IE 10 */
   display: -webkit-flex;
   /* NEW - Chrome */
+  display: flex;
   align-items: center;
   position: relative;
   margin-bottom: -43px;
@@ -3178,13 +3178,13 @@ FOOTER STYLES
     text-transform: uppercase;
     font-size: 15px;
     font-weight: bold;
-    display: flex;
     display: -webkit-box;
     /* OLD - iOS 6-, Safari 3.1-6 */
     display: -ms-flexbox;
     /* TWEENER - IE 10 */
     display: -webkit-flex;
     /* NEW - Chrome */
+    display: flex;
     justify-content: space-between; }
     .blue-bar-top .wrapper span {
       border-radius: 5px;
@@ -4086,10 +4086,10 @@ div.cartodb-popup .cartodb-popup-close-button {
     background: #0e5fa2; }
 
   .index-row .card-third.twitter-timeline-container {
-    display: flex;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
+    display: flex;
     width: 100%;
     align-items: center;
     margin: 0 !important; }
@@ -4159,6 +4159,9 @@ div.cartodb-popup .cartodb-popup-close-button {
   #explore-more section .what-explore {
     top: 270px;
     min-height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     position: absolute;
     left: 105px;
