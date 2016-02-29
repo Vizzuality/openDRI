@@ -88,12 +88,12 @@
 			else if  (location.pathname.includes('/regions')) {
 				document.getElementById('menu-option-news').classList.add("current");
 				if (location.pathname.includes('middle')) $('#toggle-filter-region').text('middle east and north africa');
-				else if (location.pathname.includes('africa')) $('#toggle-filter-region').text('africa');
-				else if (location.pathname.includes('pacific')) $('#toggle-filter-region').text('east asia pacific');
-				else if (location.pathname.includes('europe')) $('#toggle-filter-region').text('europe and central asia');
-				else if (location.pathname.includes('america')) $('#toggle-filter-region').text('latin america and caribbean');
-				else if (location.pathname.includes('countries')) $('#toggle-filter-region').text('non wb countries');
-				else if (location.pathname.includes('asia')) $('#toggle-filter-region').text('south asia');
+				else if (location.pathname.includes('africa')) $('#toggle-filter-region').text('africa').addClass('current');
+				else if (location.pathname.includes('pacific')) $('#toggle-filter-region').text('east asia pacific').addClass('current');
+				else if (location.pathname.includes('europe')) $('#toggle-filter-region').text('europe and central asia').addClass('current');
+				else if (location.pathname.includes('america')) $('#toggle-filter-region').text('latin america and caribbean').addClass('current');
+				else if (location.pathname.includes('countries')) $('#toggle-filter-region').text('non wb countries').addClass('current');
+				else if (location.pathname.includes('asia')) $('#toggle-filter-region').text('south asia').addClass('current');
 			}
 			else if  (location.pathname.includes('/resource')) document.getElementById('menu-option-resources').classList.add("current");
 		}
@@ -728,7 +728,7 @@
 				    	var option  = $(this).data('option');
 				    	var latlong = [$(this).data('lat'), $(this).data('lng')];
 				    	var text 	= $(this).text();
-						var classe  = '';
+						var classe  = 'current';
 						var prjsn	= (~~jsonValues[option] > 0)? ~~jsonValues[option] : 0;
 						var title   = text + ': <span id="current-total-post-count">' + prjsn.toString() + '</span> projects';
 						var zoom 	= $(this).data('zoom');
