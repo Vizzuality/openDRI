@@ -2072,7 +2072,9 @@ POSTS & CONTENT STYLES
         color: rgba(85, 85, 85, 0.5);
         text-decoration: none;
         font-feature-settings: "liga" 0;
-        font-size: 11px; }
+        font-size: 11px;
+        letter-spacing: 1px;
+        line-height: 13px; }
     .hentry footer .tags {
       display: inline;
       font-feature-settings: "liga" 0;
