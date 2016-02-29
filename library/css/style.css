@@ -3461,8 +3461,13 @@ FOOTER STYLES
     mask: url(../images/dropdown.svg) no-repeat 50% 50%;
     top: 15px;
     left: 0; }
+  #toggle-filter-region.current {
+    background: #fff;
+    color: #1477c9; }
   #toggle-filter-region.current:before {
-    display: none; }
+    background: url(../images/dropdown-b.svg) no-repeat 50% 50%;
+    -webkit-mask: url(../images/dropdown-b.svg) no-repeat 50% 50%;
+    mask: url(../images/dropdown-b.svg) no-repeat 50% 50%; }
 
 .leaflet-top .leaflet-control {
   margin-top: 60px !important; }
