@@ -209,7 +209,7 @@ if(is_post_type_archive() && $post_type=='project') {
 													<?php
 													foreach((get_the_category()) as $category) { 
 														if ($category->cat_ID == 2 || 
-															$category->parent == 5 ||
+															$category->parent == 4 ||
 															$category->parent == 3) break;
 													    echo '<a href="'.esc_url( get_category_link( $category->term_id ) ).'">'.$category->cat_name . '</a> '; 
 													} 
