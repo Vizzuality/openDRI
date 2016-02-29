@@ -3675,10 +3675,6 @@ div.cartodb-popup .cartodb-popup-close-button {
   .entry-content img {
     display: block; }
 
-  .page #contact .contact-form input,
-  .page #contact .contact-form textarea {
-    background: #eee; }
-
   .hentry.-odri-post.has-sidebar {
     display: block;
     width: 100%; }
@@ -3807,6 +3803,9 @@ div.cartodb-popup .cartodb-popup-close-button {
   .category-open-data-platforms #main .row-container article, .category-community-mapping #main .row-container article, .category-africa #main .row-container article, .category-east-asia-pacific #main .row-container article, .category-europe-and-central-asia #main .row-container article, .category-latin-america-and-caribbean #main .row-container article, .category-middle-east-and-north-africa #main .row-container article, .category-non-wb-countries #main .row-container article, .category-south-asia #main .row-container article, .category-risk-visualization #main .row-container article, .category-news #main .row-container article, .post-type-archive-resource #main .row-container article {
     width: 360px; } }
 @media (max-width: 768px) {
+  .page #contact .-m-form {
+    width: 100%; }
+
   #logo img {
     display: none; }
 
