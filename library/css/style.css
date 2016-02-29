@@ -2662,7 +2662,7 @@ POSTS & CONTENT STYLES
   .category-news #main > p,
   .post-type-archive-resource #main > h1,
   .post-type-archive-resource #main > p {
-    max-width: 35%; }
+    max-width: 45%; }
     .category-open-data-platforms #main > h1::first-letter,
     .category-open-data-platforms #main > p::first-letter,
     .category-community-mapping #main > h1::first-letter,
