@@ -3626,6 +3626,10 @@ div.cartodb-popup .cartodb-popup-close-button {
     background-color: transparent;
     color: #fff; }
 
+  .blue-bar-top.about .wrapper span.current {
+    background-color: transparent;
+    color: #1477c9; }
+
   .entry-content img {
     display: block; }
 
