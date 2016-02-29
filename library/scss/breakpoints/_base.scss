@@ -797,13 +797,13 @@ POSTS & CONTENT STYLES
 		    margin-top: 20px;
 		    width: 315px;
 	    	> span {
-    		    background-color: #1477c9;
-			    width: 60px;
-			    height: 60px;
-			    position: absolute;
-			    top: -20px;
-			    left: 25px;
-			    box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.4);
+    		    background-color: #1477c9 !important;
+			    width: 60px !important;
+			    height: 60px !important;
+			    position: absolute !important;
+			    top: -20px !important;
+			    left: 25px !important;
+			    box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.4) !important;
 			    .twt-img {
 				    background-color: white;
 				    width: 60px;
