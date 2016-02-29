@@ -1757,7 +1757,7 @@ POSTS & CONTENT STYLES
   .index-row article,
   .index-row .card-third {
     max-width: 315px;
-    width: 315px;
+    width: 345px;
     margin: 0 15px 50px;
     display: -webkit-box;
     /* OLD - iOS 6-, Safari 3.1-6 */
