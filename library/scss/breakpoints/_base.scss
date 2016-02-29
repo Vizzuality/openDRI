@@ -834,7 +834,8 @@ POSTS & CONTENT STYLES
 	position: relative;
 	overflow-x: hidden;
 }
-
+.home #resources {margin: 85px 0 0;}
+.home .index-row.last-resources {margin: 0 0 60px !important}
 .hentry {
 	background-color: $white;
 	margin-bottom: 1.5em;
