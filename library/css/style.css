@@ -4195,7 +4195,10 @@ div.cartodb-popup .cartodb-popup-close-button {
   .home #news.index-row article:last-child {
     position: relative;
     top: 0;
-    right: 0; } }
+    right: 0; }
+
+  .post-type-archive-resource .index-row.last-resources a {
+    width: calc(50% - 20px); } }
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
