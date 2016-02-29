@@ -2070,7 +2070,8 @@ POSTS & CONTENT STYLES
         font-size: 11px; }
     .hentry footer .tags {
       display: inline;
-      font-feature-settings: "liga" 0; }
+      font-feature-settings: "liga" 0;
+      font-size: 13px; }
   .hentry.-odri-post {
     padding: 2.5rem;
     border: 0;
