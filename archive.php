@@ -12,6 +12,7 @@ global $post_type;
 
 if(is_post_type_archive() && $post_type=='project') {
 	$title = 'Projects';
+	$description = 'OpenDRI projects apply the concepts of the global open data movement to the challenges of reducing vulnerability to natural hazards and the impacts of climate change. Here, projects can be browsed by country and region highlighting the context specific risk reduction goals of each initiative.';
 	$postsInAfrica = get_term_by('slug','africa','category');
 	$postsInAfrica = $postsInAfrica->count;
 	$postsIneastasia = get_term_by('slug','east-asia-pacific','category');
@@ -97,6 +98,8 @@ if(is_post_type_archive() && $post_type=='project') {
 	 $title === 'Non WB Countries' 				||
 	 $title === 'South Asia')) {
 	$display_navi = true;
+	$description = 'As the global need for Open Data and the knowledge base around it grow, it is important to keep informed so that communities can leverage this momentum and be better served. In this section of our online platform, find news highlighting action around the movement, notes on relevant software releases, as well as project updates from our teams in the field.';
+
 	echo '	<div class="blue-bar-top" id="blue-bar">
 				<div class="wrap wrapper filters">
 						<div id="blue-bar-pick-pillar">
@@ -142,6 +145,7 @@ if(is_post_type_archive() && $post_type=='project') {
 } elseif (is_post_type_archive() && $post_type=='resource'){
 	$title = 'Resources';
 	$hascornermap = true;
+	$description = 'At OpenDRI we are committed to increasing information that can empower individuals and their governments to reduce risk to natural hazards and climate change in their communities.  We’ve compiled a database of relevant resources to share what we have learned through our own projects and from the work of others.';
 }
 
 ?>
@@ -154,7 +158,7 @@ if(is_post_type_archive() && $post_type=='project') {
 							<?php
 							echo '<h1 class="page-title">'.$title.'</h1>';
 							?>
-							<p>Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Ullam id dolor.</p>
+							<p><? echo $description; ?></p>
 							<? } // if projects ?>
 							<div id="list-content" class="m-all index-row" role="news">
 								<div class="row-container">
@@ -163,7 +167,7 @@ if(is_post_type_archive() && $post_type=='project') {
 										<?php
 										echo '<h1 class="page-title">'.$title.'</h1>';
 										?>
-										<p>Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Ullam id dolor.</p>
+										<p><? echo $description; ?></p>
 									</div>
 								<? } // if projects ?>
 									<? if (is_post_type_archive() && $post_type=='resource') : ?>
