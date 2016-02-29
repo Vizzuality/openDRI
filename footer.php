@@ -963,9 +963,15 @@
 		<script type="text/javascript">
 		if ($(window).width() > 1024 && 
 			(location.pathname.includes('/project') || 
-			$('body').hasClass('single')) && 
-			($('article').length + 1 ) % 3 == 2) {
-			$('article').last().after('<article class="index-row article project" style="visibility:hidden"> </article>');
+			$('body').hasClass('single'))) {
+
+			if (($('article').length + 1 ) % 3 == 2) {
+				$('article').last().after('<article class="index-row article project" style="visibility:hidden"> </article>');
+			}
+			if (($('#more-content article').length + 1 ) % 3 == 2) {
+				$('#more-content article').last().after('<article class="index-row article project" style="visibility:hidden"> </article>');
+			}
+			
 		}
 		</script>
 	</body>
