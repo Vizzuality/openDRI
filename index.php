@@ -118,10 +118,12 @@
 				</div>
 			</div>
 			<div id="resources" class="m-all index-row" role="resources" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
-				<div class="card-third first-text">
-					<h3>resources</h3>
-					<p>Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Ullam id dolor.</p>
-					<a href="<?php echo home_url(); ?>/resource"><span>view all resources</span></a>
+				<div class="row-container">
+					<div class="card-third first-text">
+						<h3>resources</h3>
+						<p>Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Vestibulum id ligula porta felis euismod semper. Nullam id dolor. Ligula porta felis euismod semper ipsum. Ullam id dolor.</p>
+						<a href="<?php echo home_url(); ?>/resource"><span>view all resources</span></a>
+					</div>
 				</div>
 				<div class="row-container">
 				<?
