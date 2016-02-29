@@ -127,7 +127,7 @@
 
 							<div class="row-container">
 								<?php
-									$args = array( 'numberposts' => '4', 'category' => $CAT_NAME );
+									$args = array( 'numberposts' => '3', 'category' => $CAT_NAME );
 									$recent_posts = wp_get_recent_posts( $args );
 									foreach( $recent_posts as $recent ){  // start loop
 										if ($thispostid != $recent["ID"]) {
