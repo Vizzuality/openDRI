@@ -2477,14 +2477,20 @@ FOOTER STYLES
 	    background-color: white;
 	    width: 25px;
 	    height: 10px;
-			background: url(../images/dropdown.svg) no-repeat 50% 50%;
+		background: url(../images/dropdown.svg) no-repeat 50% 50%;
 	    -webkit-mask: url(../images/dropdown.svg) no-repeat 50% 50%;
 	    mask: url(../images/dropdown.svg) no-repeat 50% 50%;
 	    top: 15px;
 	    left: 0;
 	}
+	&.current {
+		background: #fff;
+		color: #1477c9;
+	}
 	&.current:before {
-		display: none;
+		background: url(../images/dropdown-b.svg) no-repeat 50% 50%;
+	    -webkit-mask: url(../images/dropdown-b.svg) no-repeat 50% 50%;
+	    mask: url(../images/dropdown-b.svg) no-repeat 50% 50%;
 	}
 }
 .leaflet-top .leaflet-control {margin-top: 60px !important}
