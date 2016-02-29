@@ -3568,9 +3568,6 @@ div.cartodb-popup .cartodb-popup-close-button {
 .home .index-row .row-container {
   justify-content: space-between; }
 
-.contact-form input[type=email], .contact-form input[type=text] {
-  width: 100% !important; }
-
 .archive #contact .contact-form textarea, .page #contact .contact-form textarea {
   width: 100%; }
 
@@ -3582,6 +3579,9 @@ div.cartodb-popup .cartodb-popup-close-button {
   padding: 60px 0; }
 
 @media (max-width: 1024px) {
+  .contact-form input[type=email], .contact-form input[type=text] {
+    width: 100% !important; }
+
   .home .header nav {
     width: 100%; }
 

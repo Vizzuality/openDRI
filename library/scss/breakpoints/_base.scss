@@ -2585,13 +2585,13 @@ div.cartodb-popup .cartodb-popup-close-button {
 }
 .home .index-row article, .home .index-row .card-third {margin: 0 0 50px;}
 .home .index-row .row-container {justify-content: space-between;}
-.contact-form input[type=email], .contact-form input[type=text] {
-	width: 100% !important;
-}
 .archive #contact .contact-form textarea, .page #contact .contact-form textarea {width: 100%;}
 .home .index-row .resource-list {max-height: 345px;}
 .page #principles, .page #contact, .page #more-content, .page #partners, .page #members {margin: 0; padding: 60px 0;}
 @media (max-width: 1024px) {
+	.contact-form input[type=email], .contact-form input[type=text] {
+		width: 100% !important;
+	}
   .home .header nav {width: 100%;}
   .home .index-row {-webkit-flex-direction: column; flex-direction: column; margin: 20px 0;width:100%;align-items: center;}
   .home .index-row#news .row-container { width: 50%; position: relative;display: block;-webkit-flex-direction: column; flex-direction: column; top: 0;}
