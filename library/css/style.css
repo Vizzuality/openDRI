@@ -4203,11 +4203,11 @@ div.cartodb-popup .cartodb-popup-close-button {
   .post-type-archive-resource .index-row.last-resources a {
     width: calc(50% - 20px); }
 
-  .home #resources.index-row > .row-container > a {
+  .home #resources.index-row > .row-container > a, .index-row.last-resources a {
     width: 100%;
     max-width: calc(100% - 20px); }
 
-  .home #resources.index-row article.resource-cont {
+  .home #resources.index-row article.resource-cont, .home #inner-content > .last-resources article {
     width: 100%;
     max-width: 100%; } }
 /*********************
