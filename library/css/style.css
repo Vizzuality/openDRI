@@ -2002,7 +2002,7 @@ POSTS & CONTENT STYLES
   .hentry header {
     background: #1477c9;
     position: absolute;
-    bottom: 50%;
+    bottom: 48.5%;
     left: 0%;
     width: 90%;
     z-index: 1;
@@ -2711,7 +2711,7 @@ POSTS & CONTENT STYLES
     .category-news #main .row-container article header,
     .post-type-archive-resource #main .row-container article header {
       width: 96%;
-      bottom: 50%;
+      bottom: 48.5%;
       margin: 0px 2%; }
 
 #list-content {
