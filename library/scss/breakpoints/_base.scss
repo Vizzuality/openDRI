@@ -758,7 +758,7 @@ POSTS & CONTENT STYLES
     		text-decoration: none;
     		cursor: default;
     	}
-    	span {
+    	span:not(#current-total-post-count) {
     		cursor: pointer;
     		width: 200px;
 		    background: #db0033;
@@ -2570,7 +2570,7 @@ div.cartodb-popup .cartodb-popup-close-button {
   .sidebar i {width: 210px;position: relative;top: -6px;}
   .category-open-data-platforms #main > h1, .category-open-data-platforms #main > p, .category-community-mapping #main > h1, .category-community-mapping #main > p, .category-africa #main > h1, .category-africa #main > p, .category-east-asia-pacific #main > h1, .category-east-asia-pacific #main > p, .category-europe-and-central-asia #main > h1, .category-europe-and-central-asia #main > p, .category-latin-america-and-caribbean #main > h1, .category-latin-america-and-caribbean #main > p, .category-middle-east-and-north-africa #main > h1, .category-middle-east-and-north-africa #main > p, .category-non-wb-countries #main > h1, .category-non-wb-countries #main > p, .category-south-asia #main > h1, .category-south-asia #main > p, .category-risk-visualization #main > h1, .category-risk-visualization #main > p, .category-news #main > h1, .category-news #main > p, .post-type-archive-resource #main > h1, .post-type-archive-resource #main > p {max-width: 100%;}
   .category-open-data-platforms #main .row-container article, .category-community-mapping #main .row-container article, .category-africa #main .row-container article, .category-east-asia-pacific #main .row-container article, .category-europe-and-central-asia #main .row-container article, .category-latin-america-and-caribbean #main .row-container article, .category-middle-east-and-north-africa #main .row-container article, .category-non-wb-countries #main .row-container article, .category-south-asia #main .row-container article, .category-risk-visualization #main .row-container article, .category-news #main .row-container article, .post-type-archive-resource #main .row-container article {max-width: calc(50% - 20px);}
-  .home .index-row article, .home .index-row .card-third {width: 490px;max-width: calc(50% - 20px);}
+  .home .index-row article, .home .index-row .card-third {width: 360px;max-width: calc(50% - 20px);}
   .single .index-row.more-content .row-container article {max-width: 360px;width: 100%;}
   .home #news.index-row {flex-direction: row;width: 100%;}
   .home #news.index-row article,.home #news.index-row .card-third { max-width: calc(100% - 20px); margin: 0 0 50px !important;}

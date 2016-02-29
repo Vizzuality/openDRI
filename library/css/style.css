@@ -1908,7 +1908,7 @@ POSTS & CONTENT STYLES
   .index-row .card-third a {
     text-decoration: none;
     cursor: default; }
-  .index-row .card-third span {
+  .index-row .card-third span:not(#current-total-post-count) {
     cursor: pointer;
     width: 200px;
     background: #db0033;
@@ -1930,7 +1930,7 @@ POSTS & CONTENT STYLES
     transition: background 0.3s ease;
     font-family: "Bariol_Regular", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
     box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.4); }
-    .index-row .card-third span:hover {
+    .index-row .card-third span:not(#current-total-post-count):hover {
       background: #ff0f47; }
   .index-row .card-third.twitter-timeline-container {
     height: 753px;
@@ -3679,7 +3679,7 @@ div.cartodb-popup .cartodb-popup-close-button {
     max-width: calc(50% - 20px); }
 
   .home .index-row article, .home .index-row .card-third {
-    width: 490px;
+    width: 360px;
     max-width: calc(50% - 20px); }
 
   .single .index-row.more-content .row-container article {
