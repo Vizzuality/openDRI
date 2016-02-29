@@ -2557,7 +2557,7 @@ div.cartodb-popup .cartodb-popup-close-button {
   div#principles.m-all.cf.index-row.about-content { height: 700px; }
   div#principles.m-all.cf.index-row.about-content ol { display: block;}
   .blue-bar-top .wrapper span.current {background-color: transparent; color: #fff;}
-  .blue-bar-top.about .wrapper span.current {background-color: transparent; color: #1477c9;}
+  .blue-bar-top.about .wrapper span.current:hover {background-color: transparent; color: #1477c9;}
   .entry-content img {display: block;}
   .page #contact .contact-form input,
   .page #contact .contact-form textarea {background: #eee;}
