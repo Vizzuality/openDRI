@@ -4209,7 +4209,10 @@ div.cartodb-popup .cartodb-popup-close-button {
 
   .home #resources.index-row article.resource-cont, .home #inner-content > .last-resources article {
     width: 100%;
-    max-width: 100%; } }
+    max-width: 100%; }
+
+  .home .index-row .resource-list.home {
+    margin: 20px 0 0 0; } }
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
