@@ -4201,7 +4201,15 @@ div.cartodb-popup .cartodb-popup-close-button {
     margin: 20px 0 !important; }
 
   .post-type-archive-resource .index-row.last-resources a {
-    width: calc(50% - 20px); } }
+    width: calc(50% - 20px); }
+
+  .home #resources.index-row > .row-container > a {
+    width: 100%;
+    max-width: calc(100% - 20px); }
+
+  .home #resources.index-row article.resource-cont {
+    width: 100%;
+    max-width: 100%; } }
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
