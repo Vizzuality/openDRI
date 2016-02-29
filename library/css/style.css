@@ -2009,7 +2009,15 @@ POSTS & CONTENT STYLES
     z-index: 1;
     margin: 0 5%;
     transition: background 0.3s ease;
-    box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.4); }
+    box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.4);
+    display: flex;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    align-items: center; }
     .hentry header:hover {
       background: #2791e9; }
     .hentry header a {
@@ -2031,7 +2039,6 @@ POSTS & CONTENT STYLES
     /* TWEENER - IE 10 */
     display: -webkit-flex;
     /* NEW - Chrome */
-    display: -webkit-flex;
     padding: 10px 0; }
   .hentry footer {
     margin: 7px 15px; }

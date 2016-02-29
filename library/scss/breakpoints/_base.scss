@@ -869,6 +869,10 @@ POSTS & CONTENT STYLES
 	    margin: 0 5%;
 		transition: background 0.3s ease;
 		box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.4);
+		display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  		align-items: center;
 		&:hover {
 			background: lighten($text-bkg-blue,10%);
 		}
@@ -889,7 +893,6 @@ POSTS & CONTENT STYLES
 			display: flex;display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
   display: -ms-flexbox;      /* TWEENER - IE 10 */
   display: -webkit-flex;     /* NEW - Chrome */
-			display: -webkit-flex;
 			padding: 10px 0;
 		}
 	footer {
