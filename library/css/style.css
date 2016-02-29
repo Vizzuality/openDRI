@@ -3760,7 +3760,10 @@ div.cartodb-popup .cartodb-popup-close-button {
   .post-type-archive-resource #main .row-container article {
     margin: 0;
     width: 360px;
-    max-width: 100%; } }
+    max-width: 100%; }
+
+  .category-news #main .row-container article {
+    width: 360px; } }
 @media (max-width: 768px) {
   #logo img {
     display: none; }
