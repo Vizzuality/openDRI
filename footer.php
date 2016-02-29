@@ -961,13 +961,13 @@
 			});
 		</script>
 		<script type="text/javascript">
-		if ($(window).width() > 1024 && 
-			(location.pathname.includes('/project'))) {
+		if ($(window).width() > 1024) {
 
+			if (location.pathname.includes('/project') && ($('article').length + 1 ) % 3 == 2) {
+				$('article').last().after('<article class="index-row article project" style="visibility:hidden"> </article>');
+			}
 			if ($('body').hasClass('single') && ($('#more-content article').length + 1 ) % 2 == 2) {
 				$('#more-content article').last().after('<article class="index-row article project" style="visibility:hidden"> </article>');
-			} else if (($('article').length + 1 ) % 3 == 2) {
-				$('article').last().after('<article class="index-row article project" style="visibility:hidden"> </article>');
 			}
 			
 		}
