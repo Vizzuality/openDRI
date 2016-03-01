@@ -964,7 +964,7 @@
 		if ($(window).width() > 1024) {
 
 			if (location.pathname.includes('/project') && ($('article').length + 1 ) % 3 == 2) {
-				$('article').last().after('<article class="index-row article project" style="visibility:hidden"> </article>');
+				$('#content article').last().after('<article class="index-row article project" style="visibility:hidden"> </article>');
 			}
 			if ($('body').hasClass('single') && ($('#more-content article').length) % 2 == 0) {
 				$('#more-content article').last().after('<article class="index-row article project" style="visibility:hidden"> </article>');
