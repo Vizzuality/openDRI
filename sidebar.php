@@ -13,7 +13,7 @@
 					foreach(explode("\n", $meta) as $line) {
 						$current_post = url_to_postid( $line );
 						$resource 	  = get_post($current_post);
-						$image = wp_get_attachment_image_src( get_post_thumbnail_id( $recent["ID"] ), 'single-post-thumbnail' );
+						$image = wp_get_attachment_image_src( get_post_thumbnail_id( $resource->ID ), 'single-post-thumbnail' );
 							$image = ($image[0]) ? $image[0] : get_template_directory_uri().'/library/images/red-cross.jpg';
 				?>
 				<li>
