@@ -762,6 +762,7 @@
 				    	map.setView(latlong,zoom);
 				    } else {
 				    	LayerActions[option]();
+				    	$('.cartodb-infowindow').css('visibility','hidden').css('opacity','0');
 				    	map.setView(latlong,zoom);
 				    }
 				});
@@ -792,6 +793,7 @@
 						}
 					}
 					LayerActions[option]();
+					$('.cartodb-infowindow').css('visibility','hidden').css('opacity','0');
 				});
 				$('#reset-map').on('click', function(){
 					location.reload();
