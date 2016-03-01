@@ -987,7 +987,7 @@ POSTS & CONTENT STYLES
 			margin: 0;
 			a {
 			    font-family: $bariol;
-				font-weight: bold;
+				font-weight: 400;
 				font-size: 13px;
 				&:hover {
 					color: #1477c9;
@@ -999,16 +999,21 @@ POSTS & CONTENT STYLES
 		    font-family: $bariol;
 		    font-weight: bold;
 		    color: rgba(85,85,85,0.5);
+			font-weight: bold;
 			}
 		.social-sharing {
+			margin: 15px 0 0;
 			p {
 				justify-content: initial;
 			    color: rgba(85,85,85,0.5);
 			    line-height: 23px;
 			    font-size: 13px;
 			    font-family: $bariol;
-			    font-weight: bold;
 			    flex-wrap: wrap;
+			    span {
+			    	line-height: 25px;
+			    	font-weight: bold;
+			    }
 			}
 			a {
 			    width: 84px;

@@ -2116,7 +2116,7 @@ POSTS & CONTENT STYLES
       margin: 0; }
       .hentry.-odri-post footer a {
         font-family: "Bariol_Regular", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-weight: bold;
+        font-weight: 400;
         font-size: 13px; }
         .hentry.-odri-post footer a:hover {
           color: #1477c9; }
@@ -2124,24 +2124,29 @@ POSTS & CONTENT STYLES
       font-size: 13px;
       font-family: "Bariol_Regular", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-weight: bold;
-      color: rgba(85, 85, 85, 0.5); }
-    .hentry.-odri-post .social-sharing p {
-      justify-content: initial;
       color: rgba(85, 85, 85, 0.5);
-      line-height: 23px;
-      font-size: 13px;
-      font-family: "Bariol_Regular", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-weight: bold;
-      flex-wrap: wrap; }
-    .hentry.-odri-post .social-sharing a {
-      width: 84px;
-      height: 25px;
-      border-radius: 5px;
-      border: solid 1px rgba(151, 151, 151, 0.2);
-      text-align: center;
-      margin: 0 5px;
-      line-height: inherit;
-      text-decoration: none; }
+      font-weight: bold; }
+    .hentry.-odri-post .social-sharing {
+      margin: 15px 0 0; }
+      .hentry.-odri-post .social-sharing p {
+        justify-content: initial;
+        color: rgba(85, 85, 85, 0.5);
+        line-height: 23px;
+        font-size: 13px;
+        font-family: "Bariol_Regular", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        flex-wrap: wrap; }
+        .hentry.-odri-post .social-sharing p span {
+          line-height: 25px;
+          font-weight: bold; }
+      .hentry.-odri-post .social-sharing a {
+        width: 84px;
+        height: 25px;
+        border-radius: 5px;
+        border: solid 1px rgba(151, 151, 151, 0.2);
+        text-align: center;
+        margin: 0 5px;
+        line-height: inherit;
+        text-decoration: none; }
 
 /* end .hentry */
 .single-title,
