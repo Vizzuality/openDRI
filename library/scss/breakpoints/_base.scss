@@ -2762,7 +2762,7 @@ div.cartodb-popup .cartodb-popup-close-button {
 	.post-type-archive-resource #main > h3 {width: 100%; max-width: 100%;}
 	.post-type-archive-resource #main {margin: 10px;}
 	.blue-bar-top.about .wrapper span a {visibility: visible;}
-	.blue-bar-top.about .wrapper span.current
+	.blue-bar-top.about .wrapper span.current {}
 	.index-row .resource-list li {display: block; width: 90%;}
 	.leaflet-top .leaflet-control {margin-top: 10px !important;}
 	#map-fake {height: 526px;}
@@ -2774,6 +2774,7 @@ div.cartodb-popup .cartodb-popup-close-button {
 	.hentry {border-radius: 0;}
 	.page #inner-content {padding: 0 3%;}
 	.page .about-content h3,.page .more-content h3, .page #contact h3, .page #more-content h3, .page #partners h3, .page #members h3 {margin: 60px 0 10px 0; font-size: 35px;padding: 0;}
+	.blue-bar-top.about .wrapper span.current {color: #fff;background: transparent;padding: 0;}
 	.footer {display: none;}
 	.footer.mobile{display: block;}
 	.footer.mobile .-ft-content {flex-direction: column;align-items: center; height: 190px;}
