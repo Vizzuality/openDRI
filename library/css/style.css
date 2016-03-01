@@ -3864,7 +3864,11 @@ div.cartodb-popup .cartodb-popup-close-button {
     top: -9px; }
 
   .home #map-fake .what-list {
-    width: 100%; }
+    width: 100%;
+    padding: 20px; }
+
+  .home .what-explore {
+    display: none; }
 
   .blue-bar-top.about {
     align-items: center;
@@ -3888,6 +3892,24 @@ div.cartodb-popup .cartodb-popup-close-button {
 
   .header {
     padding: 0 2%; }
+
+  .home .header {
+    height: 127px; }
+
+  .home .header nav {
+    height: 40px; }
+
+  #map-fake .what-list > nav span {
+    font-size: 12px;
+    letter-spacing: 0.4px; }
+
+  .home #map-fake .what-list > nav span i {
+    height: 70px;
+    width: 70px;
+    background-size: 35px; }
+
+  .home #map-fake .what-list h2 {
+    margin: 0; }
 
   .blue-bar-top .wrapper.filters span {
     top: 0;
@@ -4122,7 +4144,7 @@ div.cartodb-popup .cartodb-popup-close-button {
     margin-top: 10px !important; }
 
   #map-fake {
-    height: 526px; }
+    height: 330px; }
 
   #map-fake:after {
     background: #0e5fa2; }
