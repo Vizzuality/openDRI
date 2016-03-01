@@ -4140,7 +4140,7 @@ div.cartodb-popup .cartodb-popup-close-button {
   .page #inner-content {
     padding: 0 3%; }
 
-  .page .about-content h3, .page .more-content h3, .page #contact h3, .page #more-content h3 {
+  .page .about-content h3, .page .more-content h3, .page #contact h3, .page #more-content h3, .page #partners h3 {
     margin: 60px 0 10px 0;
     font-size: 35px;
     padding: 0; }
