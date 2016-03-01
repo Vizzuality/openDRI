@@ -1,11 +1,12 @@
 <?php get_header(); ?>
 
 <?
-
+$istag = false;
 // the_archive_title( '<h1 class="page-title">', '</h1>' );
 if ( is_category() ) {
 	$title = sprintf( __( '%s' ), 	   single_cat_title( '', false ) );
 } elseif ( is_tag() ) {
+	$istag = true;
 	$title = sprintf( __( 'Tag: %s' ), single_tag_title( '', false ) );
 }
 global $post_type;
@@ -204,6 +205,16 @@ if(is_post_type_archive() && $post_type=='project') {
 											<?php the_excerpt(); ?>
 										</section>
 										<footer class="article-footer cf">
+											<? if ($istag) { ?>
+											<p class="byline entry-meta vcard">
+												<?
+													if 	($post->post_type=='post') 		$articletype = 'news';
+													elseif ($post->post_type=='project')  $articletype = 'project';
+													elseif ($post->post_type=='resource') $articletype = 'resource';
+												?>
+												<span><? echo $articletype ?></span>
+											</p>
+											<? } else { ?>
 											<p class="byline entry-meta vcard">
 												<span>
 													<?php
@@ -221,6 +232,7 @@ if(is_post_type_archive() && $post_type=='project') {
 					   								'<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time('d M') . '</time>'
 												); ?>
 											</p>
+											<? } //enf is tag?>
 										</footer>
 									</article>
 								<? endif; ?>
