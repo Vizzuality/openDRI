@@ -3584,6 +3584,9 @@ div.cartodb-popup .cartodb-popup-close-button {
   .contact-form input[type=email], .contact-form input[type=text] {
     width: 100% !important; }
 
+  .no-home .header nav {
+    width: 80%; }
+
   .home .header nav {
     width: 100%; }
 
