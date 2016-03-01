@@ -1147,9 +1147,9 @@ POSTS & CONTENT STYLES
 	blockquote {
 		margin: 0 0 1.5em 0.75em;
 		padding: 0 0 0 0.75em;
-		border-left: 3px solid $blue;
+		border-left: 3px solid #1477c9;
 		font-style: italic;
-		color: $meta-gray;
+		color: #555;
 
 		&:before {}
 
@@ -1204,8 +1204,8 @@ POSTS & CONTENT STYLES
 
 .wp-caption {
 	max-width: 100%;
-	background: #eee;
-	padding: 5px;
+	background: #fff;
+	padding: 0;
 
 	/* images inside wp-caption */
 	img {
@@ -1215,9 +1215,9 @@ POSTS & CONTENT STYLES
 	}
 
 	p.wp-caption-text {
-		font-size: 0.85em;
-		margin: 4px 0 7px;
-		text-align: center;
+		font-size: 0.85em !important;
+    	margin: 4px 0 7px !important;
+    	line-height: 23px !important;
 	}
 
 } /* end .wp-caption */
