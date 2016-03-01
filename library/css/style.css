@@ -2220,7 +2220,7 @@ POSTS & CONTENT STYLES
     .entry-content th:last-child {
       border-right: 0; }
   .entry-content blockquote {
-    margin: 0 0 1.5em 0.75em;
+    margin: 1.5em 0.75em 1.5em;
     padding: 0 0 0 0.75em;
     border-left: 3px solid #1477c9;
     font-style: italic;
