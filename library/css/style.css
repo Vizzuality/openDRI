@@ -4048,7 +4048,7 @@ div.cartodb-popup .cartodb-popup-close-button {
   .category-open-data-platforms #main {
     margin: 30px 0 0; }
 
-  .hentry.-odri-post.category-news {
+  .hentry.-odri-post.category-news, .hentry.-odri-post.category-projects {
     width: 100%;
     padding: 1em; }
 
