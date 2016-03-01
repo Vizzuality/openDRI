@@ -21,10 +21,13 @@
 
                   <p class="byline entry-meta vcard">
 
-                    <?php printf( __( ' ', 'bonestheme' ).' %1$s',
-                       /* the time the post was published */
-                       '<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time('M d Y') . '</time>'
-                    ); ?>
+                    <?php 
+                      if (get_post_type() != 'project') {
+                        printf( __( ' ', 'bonestheme' ).' %1$s',
+                         /* the time the post was published */
+                         '<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time('M d Y') . '</time>'); 
+                      }
+                    ?>
 
                   </p>
                 <section class="entry-content cf" itemprop="articleBody">
