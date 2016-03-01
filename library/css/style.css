@@ -4276,7 +4276,10 @@ div.cartodb-popup .cartodb-popup-close-button {
     max-width: 100%; }
 
   .home .index-row .resource-list.home {
-    margin: 20px 0 0 0; } }
+    margin: 20px 0 0 0; }
+
+  .home #inner-content > .last-resources {
+    margin: 20px 0 50px !important; } }
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
