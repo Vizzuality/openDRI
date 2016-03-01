@@ -2222,9 +2222,9 @@ POSTS & CONTENT STYLES
   .entry-content blockquote {
     margin: 0 0 1.5em 0.75em;
     padding: 0 0 0 0.75em;
-    border-left: 3px solid #2980b9;
+    border-left: 3px solid #1477c9;
     font-style: italic;
-    color: #9fa6b4; }
+    color: #555; }
   .entry-content dd {
     margin-left: 0;
     font-size: 0.9em;
@@ -2252,17 +2252,17 @@ POSTS & CONTENT STYLES
 /* end .entry-content */
 .wp-caption {
   max-width: 100%;
-  background: #eee;
-  padding: 5px;
+  background: #fff;
+  padding: 0;
   /* images inside wp-caption */ }
   .wp-caption img {
     max-width: 100%;
     margin-bottom: 0;
     width: 100%; }
   .wp-caption p.wp-caption-text {
-    font-size: 0.85em;
-    margin: 4px 0 7px;
-    text-align: center; }
+    font-size: 0.85em !important;
+    margin: 4px 0 7px !important;
+    line-height: 23px !important; }
 
 /* end .wp-caption */
 /* image gallery styles */
