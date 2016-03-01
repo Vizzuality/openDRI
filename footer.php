@@ -971,14 +971,29 @@
 		</script>
 		<script type="text/javascript">
 		if ($(window).width() > 1024) {
-
 			if (location.pathname.includes('/project') && ($('article').length + 1 ) % 3 == 2) {
 				$('#content article').last().after('<article class="index-row article project" style="visibility:hidden"> </article>');
 			}
 			if ($('body').hasClass('single') && ($('#more-content article').length) % 2 == 0) {
 				$('#more-content article').last().after('<article class="index-row article project" style="visibility:hidden"> </article>');
 			}
-			
+		}
+		if ($('body').hasClass('archive') && ($('#blue-bar-pick-pillar').find('.current').length > 0 || $('.container-region-filter').find('.current').length > 0)) {
+			$('#blue-bar-pick-pillar').on('click', 'span', function(e) {
+				e.stopPropagation();
+				e.preventDefault();
+				if ($('.container-region-filter').find('.current').length > 0)
+					location = '<?php echo home_url(); ?>' + '/category/pillars/' + $(e.target).text().replace(/\s+/g, '-') + '+/regions/' + $('.container-region-filter').find('.current').text().replace(/\s+/g, '-');
+			});
+			$('.container-region-filter').on('click', 'li', function(e) {
+				e.stopPropagation();
+				e.preventDefault()
+				if ($('#blue-bar-pick-pillar').find('.current').length > 0)
+					location = '<?php echo home_url(); ?>' + '/category/pillars/' + $('#blue-bar-pick-pillar').find('.current a').text().replace(/\s+/g, '-') + '+/regions/' + $(e.target).text().replace(/\s+/g, '-');
+			});
+		}
+		if (location.pathname.includes('+/regions')) {
+			$('.container-region-filter').find('span').addClass('current').text(location.pathname.split("/")[location.pathname.split("/").length -2].replace(/-/g,' '));
 		}
 		</script>
 	</body>
