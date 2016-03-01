@@ -2965,7 +2965,8 @@ SIDEBARS & ASIDES
       height: 80px;
       width: 140px;
       display: block;
-      margin: -6px -6px 0; }
+      margin: -6px -6px 0;
+      background-position: 50% 50%; }
   .sidebar a {
     font-family: "Bariol_Regular", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #fff;
