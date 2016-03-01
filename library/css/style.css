@@ -4060,7 +4060,7 @@ div.cartodb-popup .cartodb-popup-close-button {
 
   .page #partners .-m-partner .-m-info, .page #members .-m-team-member .-m-info {
     width: 100%;
-    margin: 0 10px; }
+    margin: 0; }
 
   .page #partners .-m-partner img {
     width: 100%; }
@@ -4139,7 +4139,7 @@ div.cartodb-popup .cartodb-popup-close-button {
   .page #inner-content {
     padding: 0 3%; }
 
-  .page .about-content h3, .page .more-content h3, .page #contact h3, .page #more-content h3, .page #partners h3 {
+  .page .about-content h3, .page .more-content h3, .page #contact h3, .page #more-content h3, .page #partners h3, .page #members h3 {
     margin: 60px 0 10px 0;
     font-size: 35px;
     padding: 0; }
