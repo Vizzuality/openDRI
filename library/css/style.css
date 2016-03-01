@@ -4058,13 +4058,12 @@ div.cartodb-popup .cartodb-popup-close-button {
   .page #members .-m-team-member {
     display: block; }
 
-  .page #members .-m-team-member .-m-info {
+  .page #partners .-m-partner .-m-info, .page #members .-m-team-member .-m-info {
     width: 100%;
     margin: 0 10px; }
 
-  .page #partners .-m-partner .-m-info {
-    width: 100%;
-    margin: 0 10px; }
+  .page #partners .-m-partner img {
+    width: 100%; }
 
   .page #members .-m-team-member img {
     display: block;
