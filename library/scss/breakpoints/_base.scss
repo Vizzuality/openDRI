@@ -2614,7 +2614,7 @@ div.cartodb-popup .cartodb-popup-close-button {
   .archive .p-info h4, .page .p-info h4 {width: 255px; font-size: 14px;}
   div#principles.m-all.cf.index-row.about-content { height: 700px; }
   div#principles.m-all.cf.index-row.about-content ol { display: block;}
-  .blue-bar-top .wrapper span.current {color: #1477c9; color: #fff;}
+  .blue-bar-top .wrapper span.current {color: #1477c9;}
   .blue-bar-top.about .wrapper span.current:hover {background-color: #fff; color: #1477c9;}
   .entry-content img {display: block;}
   .hentry.-odri-post.has-sidebar {display: block;width: 100%;}
@@ -2762,6 +2762,7 @@ div.cartodb-popup .cartodb-popup-close-button {
 	.post-type-archive-resource #main > h3 {width: 100%; max-width: 100%;}
 	.post-type-archive-resource #main {margin: 10px;}
 	.blue-bar-top.about .wrapper span a {visibility: visible;}
+	.blue-bar-top.about .wrapper span.current
 	.index-row .resource-list li {display: block; width: 90%;}
 	.leaflet-top .leaflet-control {margin-top: 10px !important;}
 	#map-fake {height: 526px;}

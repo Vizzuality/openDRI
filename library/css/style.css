@@ -3665,8 +3665,7 @@ div.cartodb-popup .cartodb-popup-close-button {
     display: block; }
 
   .blue-bar-top .wrapper span.current {
-    color: #1477c9;
-    color: #fff; }
+    color: #1477c9; }
 
   .blue-bar-top.about .wrapper span.current:hover {
     background-color: #fff;
@@ -4102,6 +4101,7 @@ div.cartodb-popup .cartodb-popup-close-button {
   .blue-bar-top.about .wrapper span a {
     visibility: visible; }
 
+  .blue-bar-top.about .wrapper span.current
   .index-row .resource-list li {
     display: block;
     width: 90%; }
