@@ -2802,7 +2802,8 @@ div.cartodb-popup .cartodb-popup-close-button {
 	#explore-more section .what-explore {top: 270px;   min-height: 50px;display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;position: absolute;    left: 105px;    width: 170px;    font-size: 14px;}
 	.index-row.more-content h3 {padding: 0 0 0 1em;}
 	.archive #contact .index-row, .page #contact .index-row {width: 100%;}
-	.hentry.-odri-post h1 {font-size: 34px;}
+	.hentry.-odri-post h1 ,.archive h1 {font-size: 30px;line-height: 30px;}
+	.archive h1 {margin: 20px;}
 	.sidebar {width: 100%;}
 	.sidebar h4 {padding: 0 0 0 1em;}
 	.sidebar ul {width: calc(100% - 40px);margin: 0 auto;}
@@ -2826,4 +2827,5 @@ div.cartodb-popup .cartodb-popup-close-button {
 	.home #inner-content > .last-resources {margin: 20px 0 50px !important;}
 	.page #contact .contact-form input, .page #contact .contact-form textarea {border: 1px solid #eee;}
 	.index-row article.resource-cont section h3, .index-row .card-third.resource-cont section h3 {font-size: 17px;}
+	.category-open-data-platforms #main > h1, .category-open-data-platforms #main > p, .category-community-mapping #main > h1, .category-community-mapping #main > p, .category-africa #main > h1, .category-africa #main > p, .category-east-asia-pacific #main > h1, .category-east-asia-pacific #main > p, .category-europe-and-central-asia #main > h1, .category-europe-and-central-asia #main > p, .category-latin-america-and-caribbean #main > h1, .category-latin-america-and-caribbean #main > p, .category-middle-east-and-north-africa #main > h1, .category-middle-east-and-north-africa #main > p, .category-non-wb-countries #main > h1, .category-non-wb-countries #main > p, .category-south-asia #main > h1, .category-south-asia #main > p, .category-risk-visualization #main > h1, .category-risk-visualization #main > p, .category-news #main > h1, .category-news #main > p, .post-type-archive-resource #main > h1, .post-type-archive-resource #main > p {margin: 0 0 10px;}
 }
