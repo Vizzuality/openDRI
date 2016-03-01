@@ -3971,7 +3971,7 @@ div.cartodb-popup .cartodb-popup-close-button {
     width: 100%; }
 
   .page #contact .index-row .card-third {
-    padding: 10px; }
+    padding: 0 0 10px; }
 
   .category-news .blue-bar-top,
   .category-community-mapping .blue-bar-top,
@@ -4140,8 +4140,8 @@ div.cartodb-popup .cartodb-popup-close-button {
   .page #inner-content {
     padding: 0 3%; }
 
-  .page .about-content h3, .page .more-content h3, .page #contact h3 {
-    margin: 40px 0 0 0;
+  .page .about-content h3, .page .more-content h3, .page #contact h3, .page #more-content h3 {
+    margin: 60px 0 0 0;
     font-size: 35px; }
 
   .footer {
