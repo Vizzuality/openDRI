@@ -2596,6 +2596,8 @@ div.cartodb-popup .cartodb-popup-close-button {
 		width: 100% !important;
 	}
 	.no-home .header nav {width: 80%;}
+  .archive  #content .wrap {width: 96% !important;}
+  .index-row article.project, .index-row .card-third.project {max-width: 100%;width: calc(50% - 20px);}
   .home .header nav {width: 100%;}
   .home .index-row {-webkit-flex-direction: column; flex-direction: column; margin: 20px 0;width:100%;align-items: center;}
   .home .index-row#news .row-container { width: 50%; position: relative;display: block;-webkit-flex-direction: column; flex-direction: column; top: 0;}
