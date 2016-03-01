@@ -187,7 +187,7 @@ if(is_post_type_archive() && $post_type=='project') {
 										<span class="title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></span>
 									</div>
 									<div>
-										<span class="name"></span><span class="size"><?php the_date() ?></span>
+										<span class="size"><?php the_date() ?></span>
 									</div>
 								</li>
 								<? else: ?>
