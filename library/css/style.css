@@ -2096,6 +2096,8 @@ POSTS & CONTENT STYLES
       color: rgba(85, 85, 85, 0.5);
       font-size: 13px;
       margin: 25px 0 15px; }
+      .hentry.-odri-post .byline time {
+        font-size: 13px; }
     .hentry.-odri-post .entry-content {
       padding: 0; }
       .hentry.-odri-post .entry-content p {
