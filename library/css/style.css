@@ -3812,7 +3812,8 @@ div.cartodb-popup .cartodb-popup-close-button {
     max-width: 100%; }
 
   .category-open-data-platforms #main .row-container article, .category-community-mapping #main .row-container article, .category-africa #main .row-container article, .category-east-asia-pacific #main .row-container article, .category-europe-and-central-asia #main .row-container article, .category-latin-america-and-caribbean #main .row-container article, .category-middle-east-and-north-africa #main .row-container article, .category-non-wb-countries #main .row-container article, .category-south-asia #main .row-container article, .category-risk-visualization #main .row-container article, .category-news #main .row-container article, .post-type-archive-resource #main .row-container article {
-    width: 360px; } }
+    max-width: 100%;
+    width: calc(50% - 20px); } }
 @media (max-width: 768px) {
   .archive #about.index-row, .archive #principles.index-row, .archive #contact.index-row, .archive #more-content.index-row, .page #about.index-row, .page #principles.index-row, .page #contact.index-row, .page #more-content.index-row {
     margin: 0;
