@@ -4321,7 +4321,10 @@ div.cartodb-popup .cartodb-popup-close-button {
     margin: 20px 0 50px !important; }
 
   .page #contact .contact-form input, .page #contact .contact-form textarea {
-    border: 1px solid #eee; } }
+    border: 1px solid #eee; }
+
+  .index-row article.resource-cont section h3, .index-row .card-third.resource-cont section h3 {
+    font-size: 17px; } }
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
