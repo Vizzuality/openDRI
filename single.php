@@ -81,7 +81,7 @@
 										$max --;
 									    $current_post = url_to_postid( $line );
 									    $related 	  = get_post($current_post);
-									    if ($related->ID == $thispostid) break;
+									    if ($related->post_status == 'publish' && $related->ID == $thispostid) break;
 								?>
 										<article id="post-<?php echo $related->ID; ?>" <?php post_class( 'cf' ); ?> role="article">
 											<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $related->ID ), 'single-post-thumbnail' );
