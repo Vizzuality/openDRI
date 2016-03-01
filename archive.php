@@ -208,11 +208,11 @@ if(is_post_type_archive() && $post_type=='project') {
 											<? if ($istag) { ?>
 											<p class="byline entry-meta vcard">
 												<?
-													if 	($post->post_type=='post') 		$articletype = 'news';
-													elseif ($post->post_type=='project')  $articletype = 'project';
-													elseif ($post->post_type=='resource') $articletype = 'resource';
+													if 	($post->post_type=='post'){		   $articletype = 'news'; $linktype='/category/news';}
+													elseif ($post->post_type=='project'){  $articletype = 'project'; $linktype='/project';}
+													elseif ($post->post_type=='resource'){ $articletype = 'resource'; $linktype='/resource';}
 												?>
-												<span><? echo $articletype ?></span>
+												<span><a href="<?php echo home_url().$linktype;?>"><? echo $articletype ?></a></span>
 											</p>
 											<? } else { ?>
 											<p class="byline entry-meta vcard">
