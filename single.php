@@ -5,7 +5,7 @@
 		if (get_post_type() == 'resource') {
 			$placeholder == '/library/images/resource-placeholder_1024.jpg';
 		}
-		$image = ($image[0]) ? $image[0] : get_template_directory_uri().'/library/images/red-cross.jpg';
+		$image = ($image[0]) ? $image[0] : get_template_directory_uri().$placeholder;
 	?>
 			<div id="pic-banner" style="background-image:url(<? echo $image ?>)">
 				<!-- <img src="<? echo $image ?>" alt="Picture for <?php the_title(); ?>" title="Imagery for <?php the_title(); ?>" /> -->
