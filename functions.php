@@ -150,11 +150,11 @@ function bones_theme_customizer($wp_customize) {
 
 add_action( 'customize_register', 'bones_theme_customizer' );
 function save_on_cartodb( $post_id ) {
-
   if ( wp_is_post_revision( $post_id ) )
     return;
-  var_dump($post_id);
+  
   if ($cdb_api_key && $_REQUEST['action'] != 'grunion-contact-form' && $_REQUEST['post_type'] != 'page') {
+var_dump($post_id);
 
     // echo '<pre>'.print_r($_REQUEST).'</pre>'; 
 
