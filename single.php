@@ -1,6 +1,8 @@
 <?php get_header(); ?>
 	<?php 
-		$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); 
+		$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+		$hasimage = false;
+		if ($image[0]) $hasimage = true;
 		$placeholder = '/library/images/red-cross.jpg';
 		if (get_post_type() === 'resource') {
 			$placeholder = '/library/images/resource-placeholder_1024.jpg';
@@ -8,7 +10,6 @@
 		$image = ($image[0]) ? $image[0] : get_template_directory_uri().$placeholder;
 	?>
 			<div id="pic-banner" style="background-image:url(<? echo $image ?>)">
-				<!-- <img src="<? echo $image ?>" alt="Picture for <?php the_title(); ?>" title="Imagery for <?php the_title(); ?>" /> -->
 			</div>
 			<div id="map" class="cdbmap"></div>
 
@@ -204,6 +205,10 @@
 			if ('<? echo $CAT_NAME ?>' === 'projects' || '<? echo get_post_type( get_the_ID() )?>' === 'project') {
 				document.getElementById('pic-banner').style.display = 'none';
 				document.getElementById('map').style.display 		= 'block';
+				<? if ($hasimage) { ?>
+					document.getElementById('map').style.display 		= 'none';
+					document.getElementById('pic-banner').style.display = 'block';
+				<? } ?>
 			}	
 		</script>
 <?php get_footer(); ?>
