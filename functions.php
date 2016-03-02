@@ -154,7 +154,7 @@ function save_on_cartodb( $post_id ) {
   if ( wp_is_post_revision( $post_id ) )
     return;
   $cdb_api_key = get_option('CDB_API_KEY');
-  var_dump($cdb_api_key);
+  
   if ($cdb_api_key && $_REQUEST['action'] != 'grunion-contact-form' && $_REQUEST['post_type'] != 'page') {
 
     // echo '<pre>'.print_r($_REQUEST).'</pre>'; 
