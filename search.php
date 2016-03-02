@@ -20,7 +20,7 @@
 									}
 									$image = ($image[0]) ? $image[0] : get_template_directory_uri().$placeholder;
 									?>
-	            					<span class="img" style="background-image:url(<?php echo $image; ?>)"></span>
+	            					<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><span class="img" style="background-image:url(<?php echo $image; ?>)"></span></a>
 
 									<header class="article-header">
 										<h1 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
