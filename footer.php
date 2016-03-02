@@ -997,6 +997,7 @@
 		}
 		if (location.pathname.includes('+/regions')) {
 			$('.container-region-filter').find('span').addClass('current').text(location.pathname.split("/")[location.pathname.split("/").length -2].replace(/-/g,' '));
+			$('h1.page-title').text($('h1.page-title').text( ) + ' and ' + $('#blue-bar-pick-pillar').find('.option-pillar.current').text().replace(/^(.)|\s(.)/g, function($1){ return $1.toUpperCase( ); }))
 		}
 		</script>
 	</body>
