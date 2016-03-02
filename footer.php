@@ -171,50 +171,50 @@
 				var marker1,marker2,marker3,marker4,marker5,marker6,marker7 = null;
 				var addMarkers = function() {
 					<? 
-						$postsInall = get_term_by('slug','non-wb-countries','category');
-						$postsInall = $postsInall->count;
+						$postsInall = new WP_Query( array( 'post_type' => 'project', 'cat' => 'non-wb-countries' ) );
+						$postsInall = $postsInall->post_count;
 					?>
 					var postsInall = '<? echo $postsInall ?>';
 					marker1 = L.marker(new L.LatLng(0, 0), {icon:createLabelIcon(((postsInall.length > 1) ? "amount-of-posts-2" : "amount-of-posts"),postsInall)}).addTo(map);
 
 					<? 
-						$postsInAfrica = get_term_by('slug','africa','category');
-						$postsInAfrica = $postsInAfrica->count;
+						$postsInAfrica = new WP_Query( array( 'post_type' => 'project', 'cat' => 'africa' ) );
+						$postsInAfrica = $postsInAfrica->post_count;
 					?>
 					var postsInAfrica = '<? echo $postsInAfrica ?>';
 					marker2 = L.marker(new L.LatLng(7, 21), {icon:createLabelIcon((postsInAfrica.length > 1) ? "amount-of-posts-2" : "amount-of-posts",postsInAfrica)}).addTo(map);
 
 					<? 
-						$postsIneastasia = get_term_by('slug','east-asia-pacific','category');
-						$postsIneastasia = $postsIneastasia->count;
+						$postsIneastasia = new WP_Query( array( 'post_type' => 'project', 'cat' => 'east-asia-pacific' ) );
+						$postsIneastasia = $postsIneastasia->post_count;
 					?>
 					var postsIneastasia = '<? echo $postsIneastasia ?>';
 					marker3 = L.marker(new L.LatLng(35, 103), {icon:createLabelIcon((postsIneastasia.length > 1) ? "amount-of-posts-2" : "amount-of-posts",postsIneastasia)}).addTo(map);
 
 					<? 
-						$postsInEurope = get_term_by('slug','europe-and-central-asia','category');
-						$postsInEurope = $postsInEurope->count;
+						$postsInEurope = new WP_Query( array( 'post_type' => 'project', 'cat' => 'europe-and-central-asia' ) );
+						$postsInEurope = $postsInEurope->post_count;
 					?>
 					var postsInEurope = '<? echo $postsInEurope ?>';
 					marker4 = L.marker(new L.LatLng(55, 25), {icon:createLabelIcon((postsInEurope.length > 1) ? "amount-of-posts-2" : "amount-of-posts",postsInEurope)}).addTo(map);
 
 					<? 
-						$postsInlatam = get_term_by('slug','latin-america-and-caribbean','category');
-						$postsInlatam = $postsInlatam->count;
+						$postsInlatam = new WP_Query( array( 'post_type' => 'project', 'cat' => 'latin-america-and-caribbean' ) );
+						$postsInlatam = $postsInlatam->post_count;
 					?>
 					var postsInlatam = '<? echo $postsInlatam ?>';			
 					marker5 = L.marker(new L.LatLng(13, -59), {icon:createLabelIcon((postsInlatam.length > 1) ? "amount-of-posts-2" : "amount-of-posts",postsInlatam)}).addTo(map);
 
 					<? 
-						$postsInmiddleeast = get_term_by('slug','middle-east-and-north-africa','category','category');
-						$postsInmiddleeast = $postsInmiddleeast->count;
+						$postsInmiddleeast = new WP_Query( array( 'post_type' => 'project', 'cat' => 'middle-east-and-north-africa' ) );
+						$postsInmiddleeast = $postsInmiddleeast->post_count;
 					?>
 					var postsInmiddleeast = '<? echo $postsInmiddleeast ?>';
 					marker6 = L.marker(new L.LatLng(29, 41), {icon:createLabelIcon((postsInmiddleeast.length > 1) ? "amount-of-posts-2" : "amount-of-posts",postsInmiddleeast)}).addTo(map);
 
 					<? 
-						$postsInsouthasia = get_term_by('slug','south-asia','category','category');
-						$postsInsouthasia = $postsInsouthasia->count;
+						$postsInsouthasia = new WP_Query( array( 'post_type' => 'project', 'cat' => 'south-asia' ) );
+						$postsInsouthasia = $postsInsouthasia->post_count;
 					?>
 					var postsInsouthasia = '<? echo $postsInsouthasia ?>';			
 					marker7 = L.marker(new L.LatLng(27, 72), {icon:createLabelIcon((postsInsouthasia.length > 1) ? "amount-of-posts-2" : "amount-of-posts","<? echo $postsInsouthasia; ?>")}).addTo(map);
