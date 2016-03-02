@@ -122,6 +122,7 @@
 							<? } //end check $meta ?>
 						<?
 							} else {
+								if (the_ID() == '481') return;
 						?>
 						<div id="more-content" class="index-row wrap more-content">
 							<h3>Recent news</h3>

@@ -22,7 +22,7 @@
                   <p class="byline entry-meta vcard">
 
                     <?php 
-                      if (get_post_type() != 'project') {
+                      if (get_post_type() != 'project' && the_ID() != '481') {
                         printf( __( ' ', 'bonestheme' ).' %1$s',
                          /* the time the post was published */
                          '<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time('M d Y') . '</time>'); 
