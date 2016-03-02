@@ -1553,6 +1553,7 @@ margin: 0;
 }
 .page .index-row.contents-img {
 	background-image: url('../images/about-header_1024.jpg');
+	background-size: contain;
 	height: 288px;
     width: 100%;
     margin: 40px 0 60px;
