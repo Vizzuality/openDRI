@@ -67,7 +67,7 @@
                         $share_title = get_the_title();
                         $share_url   = rawurlencode(get_the_permalink());
                     ?>
-                    <p><span>share this on</span>: <a target="_blank" href="https://twitter.com/intent/tweet?text=<?php echo $share_title ?>&url=<?php echo $share_url ?>">twitter</a><a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=<?php echo $share_url ?>">facebook</a><a target="_blank" href="https://plus.google.com/share?url=<?php echo $share_url ?>">google+</a></p>
+                    <p><span>share this on:</span> <a target="_blank" href="https://twitter.com/intent/tweet?text=<?php echo $share_title ?>&url=<?php echo $share_url ?>">twitter</a><a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=<?php echo $share_url ?>">facebook</a><a target="_blank" href="https://plus.google.com/share?url=<?php echo $share_url ?>">google+</a></p>
                   </div>
                 </footer> <?php // end article footer ?>
 
