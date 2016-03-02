@@ -2618,6 +2618,8 @@ div.cartodb-popup .cartodb-popup-close-button {
 	.contact-form input[type=email], .contact-form input[type=text] {
 		width: 100% !important;
 	}
+	.blue-bar-top .wrapper span a i {display: none !important};
+	.blue-bar-top .wrapper span a {line-height: 25px !important;padding: 0 10px;}
 	.no-home .header nav {width: 80%;}
   .archive  #content .wrap {width: 96% !important;}
   .index-row article.project, .index-row .card-third.project {max-width: 100%;width: calc(50% - 20px);}
