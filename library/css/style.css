@@ -2078,6 +2078,7 @@ POSTS & CONTENT STYLES
         text-decoration: none;
         font-feature-settings: "liga" 0;
         font-size: 11px;
+        letter-spacing: 1.5px;
         line-height: 13px; }
     .hentry footer .tags {
       display: inline;
@@ -2102,7 +2103,7 @@ POSTS & CONTENT STYLES
       font-size: 13px;
       margin: 25px 0 15px; }
       .hentry.-odri-post .byline time {
-        letter-spacing: 1px;
+        letter-spacing: 1.5px;
         font-size: 13px; }
     .hentry.-odri-post .entry-content {
       padding: 0; }
@@ -2183,7 +2184,8 @@ POSTS & CONTENT STYLES
   .byline time {
     display: table;
     font-size: 11px;
-    color: rgba(85, 85, 85, 0.5); }
+    color: rgba(85, 85, 85, 0.5);
+    letter-spacing: 1.5px; }
 
 /* entry content */
 .entry-content {
