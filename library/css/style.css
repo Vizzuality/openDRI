@@ -3607,6 +3607,13 @@ div.cartodb-popup .cartodb-popup-close-button {
   .contact-form input[type=email], .contact-form input[type=text] {
     width: 100% !important; }
 
+  .blue-bar-top .wrapper span a i {
+    display: none !important; }
+
+  .blue-bar-top .wrapper span a {
+    line-height: 25px !important;
+    padding: 0 10px; }
+
   .no-home .header nav {
     width: 80%; }
 
