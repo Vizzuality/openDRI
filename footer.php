@@ -980,16 +980,18 @@
 		}
 		if ($('body').hasClass('archive') && ($('#blue-bar-pick-pillar').find('.current').length > 0 || $('.container-region-filter').find('.current').length > 0)) {
 			$('#blue-bar-pick-pillar').on('click', 'span', function(e) {
-				e.stopPropagation();
-				e.preventDefault();
-				if ($('.container-region-filter').find('.current').length > 0)
+				if ($('.container-region-filter').find('.current').length > 0){
+					e.stopPropagation();
+					e.preventDefault();
 					location = '<?php echo home_url(); ?>' + '/category/pillars/' + $(e.target).text().replace(/\s+/g, '-') + '+/regions/' + $('.container-region-filter').find('.current').text().replace(/\s+/g, '-');
+				}
 			});
 			$('.container-region-filter').on('click', 'li', function(e) {
-				e.stopPropagation();
-				e.preventDefault()
-				if ($('#blue-bar-pick-pillar').find('.current').length > 0)
+				if ($('#blue-bar-pick-pillar').find('.current').length > 0) {
+					e.stopPropagation();
+					e.preventDefault()
 					location = '<?php echo home_url(); ?>' + '/category/pillars/' + $('#blue-bar-pick-pillar').find('.current a').text().replace(/\s+/g, '-') + '+/regions/' + $(e.target).text().replace(/\s+/g, '-');
+				}
 			});
 		}
 		if (location.pathname.includes('+/regions')) {
