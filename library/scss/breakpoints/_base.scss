@@ -43,9 +43,11 @@ style a page via class
 .date {}                          /* date archive page */
 	.date-paged-1 {}                /* replace the number to the corresponding page number */
 .search {}                        /* search page */
+.search .index-row .row-container {justify-content: space-between;}
 .search article {
-	max-width: 315px !important;
-	margin: 0 15px 50px !important;
+	margin: 0 0 50px !important;
+    width: 325px !important;
+    max-width: 325px !important;
 }
 	.search-results {}              /* search result page */
 	.search-no-results {}           /* no results search page */
