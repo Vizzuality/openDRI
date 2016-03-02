@@ -193,8 +193,13 @@ if(is_post_type_archive() && $post_type=='project') {
 								</li>
 								<? else: ?>
 									<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf '); ?> role="article">
-										<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
-									$image = ($image[0]) ? $image[0] : get_template_directory_uri().'/library/images/red-cross.jpg';
+										<?php 
+										$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); 
+										$placeholder = '/library/images/red-cross.jpg';
+										if ($post->post_type == 'resource') {
+											$placeholder = '/library/images/resource-placeholder_1024.jpg';
+										}
+										$image = ($image[0]) ? $image[0] : get_template_directory_uri().$placeholder;
 										?>
 		            					<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><span class="img" style="background-image:url(<?php echo $image; ?>)"></span></a>
 
