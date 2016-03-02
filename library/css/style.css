@@ -497,17 +497,17 @@ FONT FACE (IN YOUR FACE)
   }
 */
 @font-face {
-  font-family: 'Bariol_Regular';
+  font-family: 'Bariol';
   src: url("../fonts/Bariol_Regular.otf") format("opentype");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'Bariol_Regular';
+  font-family: 'Bariol';
   src: url("../fonts/Bariol_Light.otf") format("opentype");
   font-weight: lighter;
   font-style: normal; }
 @font-face {
-  font-family: 'Bariol_Regular';
+  font-family: 'Bariol';
   src: url("../fonts/Bariol_Bold.otf") format("opentype");
   font-weight: bold;
   font-style: normal; }
@@ -999,7 +999,7 @@ textarea,
   border: 0;
   width: 100%;
   max-width: 400px;
-  font-family: "Bariol_Regular", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Bariol", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #F0F0F0;
   -webkit-transition: background-color 0.24s ease-in-out;
   transition: background-color 0.24s ease-in-out; }
@@ -1345,7 +1345,7 @@ a, a:visited {
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-  font-family: "Bariol_Regular", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Bariol", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-rendering: optimizelegibility;
   font-weight: normal;
   /*
@@ -1642,7 +1642,7 @@ POSTS & CONTENT STYLES
   text-transform: uppercase;
   font-weight: bold;
   line-height: 20px;
-  font-family: "Bariol_Regular", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "Bariol", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .what-explore a {
     text-decoration: none;
     color: inherit; }
@@ -1869,7 +1869,7 @@ POSTS & CONTENT STYLES
             text-decoration: none;
             font-size: 15px;
             letter-spacing: 0.5px;
-            font-family: "Bariol_Regular", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-family: "Bariol", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
             font-weight: bold; }
         .index-row .resource-list li div .format {
           color: #555555;
@@ -1888,7 +1888,7 @@ POSTS & CONTENT STYLES
         line-height: 20px;
         font-size: 15px;
         margin: 3px;
-        font-family: "Bariol_Regular", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: "Bariol", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
         letter-spacing: 0.5px; }
       .index-row .resource-list.home li .title {
         color: #1477c9;
@@ -1933,7 +1933,7 @@ POSTS & CONTENT STYLES
     font-weight: bold;
     margin-top: 20px;
     transition: background 0.3s ease;
-    font-family: "Bariol_Regular", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Bariol", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
     box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.4); }
     .index-row .card-third span:not(#current-total-post-count):hover {
       background: #ff0f47; }
@@ -2043,7 +2043,7 @@ POSTS & CONTENT STYLES
       width: 100%;
       height: 100%;
       display: block;
-      font-family: "Bariol_Regular", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: "Bariol", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-weight: bold;
       padding: 10px;
       line-height: 20px;
@@ -2120,14 +2120,14 @@ POSTS & CONTENT STYLES
     .hentry.-odri-post footer {
       margin: 0; }
       .hentry.-odri-post footer a {
-        font-family: "Bariol_Regular", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: "Bariol", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-weight: bold;
         font-size: 13px; }
         .hentry.-odri-post footer a:hover {
           color: #1477c9; }
     .hentry.-odri-post .tags-title {
       font-size: 13px;
-      font-family: "Bariol_Regular", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: "Bariol", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-weight: bold;
       color: rgba(85, 85, 85, 0.5);
       font-weight: bold; }
@@ -2138,7 +2138,7 @@ POSTS & CONTENT STYLES
         color: rgba(85, 85, 85, 0.5);
         line-height: 23px;
         font-size: 13px;
-        font-family: "Bariol_Regular", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: "Bariol", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
         flex-wrap: wrap; }
         .hentry.-odri-post .social-sharing p span {
           line-height: 25px;
@@ -2951,7 +2951,7 @@ SIDEBARS & ASIDES
   width: 25%;
   padding: 0 0 0 45px; }
   .sidebar h4 {
-    font-family: "Bariol_Regular", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Bariol", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 15px;
     color: #555;
     letter-spacing: 0.5px;
@@ -2973,7 +2973,7 @@ SIDEBARS & ASIDES
       margin: -6px -6px 0;
       background-position: 50% 50%; }
   .sidebar a {
-    font-family: "Bariol_Regular", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Bariol", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #fff;
     font-weight: bold;
     text-decoration: none;
@@ -3193,7 +3193,7 @@ FOOTER STYLES
   position: relative;
   margin-bottom: -43px;
   z-index: 2;
-  font-family: "Bariol_Regular", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "Bariol", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .blue-bar-top.fixed {
     position: fixed;
     top: 0;
@@ -3340,7 +3340,7 @@ FOOTER STYLES
     box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.2);
     width: 100%;
     color: #fff;
-    font-family: "Bariol_Regular", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Bariol", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 15px;
     text-transform: uppercase;
     font-weight: bold;
@@ -3375,7 +3375,7 @@ FOOTER STYLES
       text-transform: uppercase;
       line-height: 25px;
       font-weight: bold;
-      font-family: "Bariol_Regular", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: "Bariol", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
       color: #fff; }
       .blue-bar-top-m.active ul li a,
       .blue-bar-top-m.active #blue-bar-pick-pillar li a {
@@ -3527,7 +3527,7 @@ div.cartodb-popup h1 {
   color: #0475cc !important;
   margin: 0 0 15px 0 !important;
   letter-spacing: 0.5px !important;
-  font-family: "Bariol_Regular", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-family: "Bariol", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-weight: bold !important; }
 
 div.cartodb-popup .cartodb-popup-content p {

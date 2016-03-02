@@ -41,19 +41,19 @@ FONT FACE (IN YOUR FACE)
 */
 
 @font-face {
-  font-family: 'Bariol_Regular';
+  font-family: 'Bariol';
   src: url('../fonts/Bariol_Regular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Bariol_Regular';
+  font-family: 'Bariol';
   src: url('../fonts/Bariol_Light.otf') format('opentype');
   font-weight: lighter;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Bariol_Regular';
+  font-family: 'Bariol';
   src: url('../fonts/Bariol_Bold.otf') format('opentype');
   font-weight: bold;
   font-style: normal;
@@ -74,7 +74,7 @@ $serif:             "Georgia", Cambria, Times New Roman, Times, serif;
  don't forget to remove it for your site.
 */
 $lato:              'Lato', $sans-serif;
-$bariol:            'Bariol_Regular', $lato, $sans-serif;
+$bariol:            'Bariol', $lato, $sans-serif;
 $bariol_l:          'Bariol_Light', $lato, $sans-serif;
 $bariol_b:          'Bariol_Bold', $lato, $sans-serif;
 
