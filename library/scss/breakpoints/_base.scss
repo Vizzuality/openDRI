@@ -124,7 +124,7 @@ H1, H2, H3, H4, H5 STYLES
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	font-family: $bariol;
 	text-rendering: optimizelegibility;
-	font-weight: 500;
+	font-weight: normal;
 	/*
 	if you're going to use webfonts, be sure to check your weights
 	http://css-tricks.com/watch-your-font-weight/
@@ -901,7 +901,8 @@ POSTS & CONTENT STYLES
 			width: 100%;
 		    height: 100%;
 		    display: block;
-			font-family: Bariol_Bold;
+			font-family: $bariol;
+			font-weight: bold;
 	    	padding: 10px;
 	    	line-height: 20px;
 	    	color: #fff;
@@ -988,7 +989,7 @@ POSTS & CONTENT STYLES
 			margin: 0;
 			a {
 			    font-family: $bariol;
-				font-weight: 400;
+				font-weight: bold;
 				font-size: 13px;
 				&:hover {
 					color: #1477c9;
@@ -1338,7 +1339,7 @@ margin: 0;
 			    h4 {
 			    	margin: 5px 0;
 				    color: #555;
-				    font-weight: 600;
+				    font-weight: bold;
 			    }
 			}
 		}
@@ -1578,7 +1579,7 @@ margin: 0;
 	}
 	>p {
 		margin: 0 0 70px;
-		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-family: $sans-serif;
 	    font-size: 15px;
 	    line-height: 23px;
 	    font-weight: 400;
