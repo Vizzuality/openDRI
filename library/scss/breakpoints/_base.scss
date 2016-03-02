@@ -2505,6 +2505,7 @@ FOOTER STYLES
 		background: url(../images/dropdown-b.svg) no-repeat 50% 50%;
 	    -webkit-mask: url(../images/dropdown-b.svg) no-repeat 50% 50%;
 	    mask: url(../images/dropdown-b.svg) no-repeat 50% 50%;
+	    transform: scaleY(-1);
 	}
 }
 .leaflet-top .leaflet-control {margin-top: 60px !important}
