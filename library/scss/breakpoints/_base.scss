@@ -928,6 +928,7 @@ POSTS & CONTENT STYLES
 			display: flex;
     		justify-content: space-between;
     		text-transform: uppercase;
+    		letter-spacing: 0.5px;
     		span {
     			line-height: 15px;
     			max-width: 230px;
@@ -937,7 +938,6 @@ POSTS & CONTENT STYLES
 			    text-decoration: none;
 			    font-feature-settings: "liga" 0;
 			    font-size: 11px;
-			    letter-spacing: 1px;
     			line-height: 13px;
     		}
 		}
@@ -945,6 +945,7 @@ POSTS & CONTENT STYLES
 	      display: inline;
 	      font-feature-settings: "liga" 0;
 	      font-size: 13px;
+	      letter-spacing: 0.5px;
 		}
 	}
 	&.-odri-post {
@@ -967,6 +968,7 @@ POSTS & CONTENT STYLES
 		    font-size: 13px;
 		    margin: 25px 0 15px;
 		    time {
+			    letter-spacing: 1px;
 		    	font-size: 13px;
 		    }
 		}
@@ -1014,6 +1016,7 @@ POSTS & CONTENT STYLES
 			    font-size: 13px;
 			    font-family: $bariol;
 			    flex-wrap: wrap;
+			    letter-spacing: 0.5px;
 			    span {
 			    	line-height: 25px;
 			    	font-weight: bold;
