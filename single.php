@@ -2,8 +2,8 @@
 	<?php 
 		$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); 
 		$placeholder = '/library/images/red-cross.jpg';
-		if (get_post_type() == 'resource') {
-			$placeholder == '/library/images/resource-placeholder_1024.jpg';
+		if (get_post_type() === 'resource') {
+			$placeholder = '/library/images/resource-placeholder_1024.jpg';
 		}
 		$image = ($image[0]) ? $image[0] : get_template_directory_uri().$placeholder;
 	?>
