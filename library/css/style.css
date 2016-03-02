@@ -502,14 +502,14 @@ FONT FACE (IN YOUR FACE)
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'Bariol_Light';
+  font-family: 'Bariol_Regular';
   src: url("../fonts/Bariol_Light.otf") format("opentype");
-  font-weight: normal;
+  font-weight: lighter;
   font-style: normal; }
 @font-face {
-  font-family: 'Bariol_Bold';
+  font-family: 'Bariol_Regular';
   src: url("../fonts/Bariol_Bold.otf") format("opentype");
-  font-weight: normal;
+  font-weight: bold;
   font-style: normal; }
 /*
 The following is based of Typebase:
@@ -1347,7 +1347,7 @@ H1, H2, H3, H4, H5 STYLES
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   font-family: "Bariol_Regular", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-rendering: optimizelegibility;
-  font-weight: 500;
+  font-weight: normal;
   /*
   if you're going to use webfonts, be sure to check your weights
   http://css-tricks.com/watch-your-font-weight/
@@ -2043,7 +2043,8 @@ POSTS & CONTENT STYLES
       width: 100%;
       height: 100%;
       display: block;
-      font-family: Bariol_Bold;
+      font-family: "Bariol_Regular", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: bold;
       padding: 10px;
       line-height: 20px;
       color: #fff; }
@@ -2120,7 +2121,7 @@ POSTS & CONTENT STYLES
       margin: 0; }
       .hentry.-odri-post footer a {
         font-family: "Bariol_Regular", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-weight: 400;
+        font-weight: bold;
         font-size: 13px; }
         .hentry.-odri-post footer a:hover {
           color: #1477c9; }
@@ -2365,7 +2366,7 @@ POSTS & CONTENT STYLES
     .page .about-content .card-third ol h4 {
       margin: 5px 0;
       color: #555;
-      font-weight: 600; }
+      font-weight: bold; }
 .archive #contact,
 .page #contact {
   display: -webkit-box;
