@@ -1551,6 +1551,12 @@ margin: 0;
 		}
 	}
 }
+.page .index-row.contents-img {
+	background-image: url('../images/about-header_1024.jpg');
+	height: 288px;
+    width: 100%;
+    margin: 40px 0 60px;
+}
 .post-type-archive-project #main > p {
 	width: 50%;
 	font-family: $sans-serif;
