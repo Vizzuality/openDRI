@@ -938,6 +938,7 @@ POSTS & CONTENT STYLES
 			    text-decoration: none;
 			    font-feature-settings: "liga" 0;
 			    font-size: 11px;
+			    letter-spacing: 1.5px;
     			line-height: 13px;
     		}
 		}
@@ -968,7 +969,7 @@ POSTS & CONTENT STYLES
 		    font-size: 13px;
 		    margin: 25px 0 15px;
 		    time {
-			    letter-spacing: 1px;
+			    letter-spacing: 1.5px;
 		    	font-size: 13px;
 		    }
 		}
@@ -1071,6 +1072,7 @@ POSTS & CONTENT STYLES
 		display: table;
 	    font-size: 11px;
     	color: rgba(85, 85, 85, 0.5);
+    	letter-spacing: 1.5px;
 	}
 }
 
