@@ -716,6 +716,7 @@
 				}
 				if (typeof jsonValues != 'undefined') jsonValues = JSON.parse(jsonValues);
 				$('#pick-region').on('click', '.pickable', function(option) {
+					if ($(option.target).hasClass('selected')) return false;
 					removeMarkers();
 					$('#blue-bar-m').removeClass('active');
 					$(this).siblings().removeClass('selected');
