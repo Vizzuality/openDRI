@@ -153,7 +153,6 @@ function save_on_cartodb( $post_id ) {
 
   if ( wp_is_post_revision( $post_id ) )
     return;
-  $cdb_api_key = get_option('CDB_API_KEY');
   
   if ($cdb_api_key && $_REQUEST['action'] != 'grunion-contact-form' && $_REQUEST['post_type'] != 'page') {
 
@@ -218,6 +217,7 @@ function save_on_cartodb( $post_id ) {
       $query = "UPDATE wp_projects SET the_geom = ST_SetSRID(ST_Point($geodata__long, $geodata__lat),4326), name = '$geodata__title', location = '$geodata__address', url = '$geodata__url_title', pillar = '$pillar', region = '$region', iso = '$geodata__country', description = '$geodata__content', visible = '$visibility', country_name = '$geodata__c_name' WHERE wp_post_id = $post_id "; 
     }
     $url .= urlencode($query).$api_bit;
+    var_dump($url);
     $response = wp_remote_get($url);
   }
 }
