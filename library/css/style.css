@@ -3836,9 +3836,6 @@ div.cartodb-popup .cartodb-popup-close-button {
     display: block;
     min-height: 40px; }
 
-  .home .index-row .resource-list.home li {
-    width: 45%; }
-
   .post-type-archive .index-row.last-resources {
     flex-direction: row; }
 
@@ -4331,9 +4328,6 @@ div.cartodb-popup .cartodb-popup-close-button {
   .home .index-row article, .home .index-row .card-third {
     width: 100%;
     max-width: calc(100% - 20px); }
-
-  .home .index-row .resource-list.home li {
-    display: inline-table; }
 
   .home #news.index-row article:last-child {
     position: relative;
