@@ -136,7 +136,7 @@
 						$image = wp_get_attachment_image_src( get_post_thumbnail_id( $featured["ID"] ), 'single-post-thumbnail' );
 						$image1 = $image[0];
 				?>
-					<a href="<?php echo $featured["guid"]; ?>" target="_blank">
+					<a href="<?php echo $featured["guid"]; ?>">
 						<article class="resource-cont"  id="firstFeatured">
 							<section>
 								<h3><?php echo $featured["post_title"]; ?></h3>
@@ -155,7 +155,7 @@
 						$image = wp_get_attachment_image_src( get_post_thumbnail_id( $featured["ID"] ), 'single-post-thumbnail' );
 						$image2 = $image[0];
 				 ?>
-					<a href="<?php echo $featured["guid"]; ?>"  target="_blank">
+					<a href="<?php echo $featured["guid"]; ?>" >
 						<article class="resource-cont --scnd-img"  id="secondFeatured">
 							<section>
 								<h3><?php echo $featured["post_title"]; ?></h3>

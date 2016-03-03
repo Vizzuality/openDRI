@@ -255,7 +255,7 @@ if(is_post_type_archive() && $post_type=='project') {
 											$image = wp_get_attachment_image_src( get_post_thumbnail_id( $featured["ID"] ), 'single-post-thumbnail' );
 											$image1 = ($image[0]) ? $image[0] : get_template_directory_uri().'/library/images/resource-placeholder_1024.jpg';
 									?>
-										<a href="<?php echo $featured["guid"]; ?>" target="_blank">
+										<a href="<?php echo $featured["guid"]; ?>" >
 											<article class="resource-cont"  id="firstFeatured">
 												<section>
 													<h3><?php echo $featured["post_title"]; ?></h3>
@@ -269,7 +269,7 @@ if(is_post_type_archive() && $post_type=='project') {
 											$image = wp_get_attachment_image_src( get_post_thumbnail_id( $featured["ID"] ), 'single-post-thumbnail' );
 											$image2 = ($image[0]) ? $image[0] : get_template_directory_uri().'/library/images/resource-placeholder_1024.jpg';
 									 ?>
-										<a href="<?php echo $featured["guid"]; ?>"  target="_blank">
+										<a href="<?php echo $featured["guid"]; ?>"  >
 											<article class="resource-cont --scnd-img"  id="secondFeatured">
 												<section>
 													<h3><?php echo $featured["post_title"]; ?></h3>
