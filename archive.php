@@ -253,7 +253,7 @@ if(is_post_type_archive() && $post_type=='project') {
 										$image2 = '';
 										foreach( $featured_col as $featured ) {
 											$image = wp_get_attachment_image_src( get_post_thumbnail_id( $featured["ID"] ), 'single-post-thumbnail' );
-											$image1 = $image[0];
+											$image1 = ($image[0]) ? $image[0] : get_template_directory_uri().'/library/images/resource-placeholder_1024.jpg';
 									?>
 										<a href="<?php echo $featured["guid"]; ?>" target="_blank">
 											<article class="resource-cont"  id="firstFeatured">
@@ -267,7 +267,7 @@ if(is_post_type_archive() && $post_type=='project') {
 										$featured_col = wp_get_recent_posts( $args );
 										foreach( $featured_col as $featured ) {
 											$image = wp_get_attachment_image_src( get_post_thumbnail_id( $featured["ID"] ), 'single-post-thumbnail' );
-											$image2 = $image[0];
+											$image2 = ($image[0]) ? $image[0] : get_template_directory_uri().'/library/images/resource-placeholder_1024.jpg';
 									 ?>
 										<a href="<?php echo $featured["guid"]; ?>"  target="_blank">
 											<article class="resource-cont --scnd-img"  id="secondFeatured">
