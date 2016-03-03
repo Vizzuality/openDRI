@@ -987,7 +987,7 @@
 					$(e.target).parent().hasClass('region-filter') ||
 					$(e.target).parent().parent().hasClass('region-filter')) {
 					return;}
-				if ($('#pick-region').is(':visible')) {
+				if ($('#pick-region').is(':visible') && $(window).width() > 768) {
 					$('#pick-region').hide();}
 			});
 		</script>
