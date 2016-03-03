@@ -1292,7 +1292,8 @@ style a page via class
 /* individual paged search (i.e. body.search-paged-3) */
 /* 404 page */
 .archive h1 {
-  font-size: 48px; }
+  font-size: 48px;
+  color: #1477c9; }
 
 /* individual post page by id (i.e. body.postid-73) */
 /* individual paged single (i.e. body.single-paged-3) */
@@ -2669,7 +2670,9 @@ POSTS & CONTENT STYLES
 .category-south-asia #main,
 .category-risk-visualization #main,
 .category-news #main,
-.post-type-archive-resource #main {
+.post-type-archive-resource #main,
+.search #main,
+.tag #main {
   margin: 90px 0 0 0; }
   .category-open-data-platforms #main > h1,
   .category-open-data-platforms #main > p,
@@ -2694,7 +2697,11 @@ POSTS & CONTENT STYLES
   .category-news #main > h1,
   .category-news #main > p,
   .post-type-archive-resource #main > h1,
-  .post-type-archive-resource #main > p {
+  .post-type-archive-resource #main > p,
+  .search #main > h1,
+  .search #main > p,
+  .tag #main > h1,
+  .tag #main > p {
     max-width: 45%; }
     .category-open-data-platforms #main > h1::first-letter,
     .category-open-data-platforms #main > p::first-letter,
@@ -2719,7 +2726,11 @@ POSTS & CONTENT STYLES
     .category-news #main > h1::first-letter,
     .category-news #main > p::first-letter,
     .post-type-archive-resource #main > h1::first-letter,
-    .post-type-archive-resource #main > p::first-letter {
+    .post-type-archive-resource #main > p::first-letter,
+    .search #main > h1::first-letter,
+    .search #main > p::first-letter,
+    .tag #main > h1::first-letter,
+    .tag #main > p::first-letter {
       text-transform: uppercase; }
   .category-open-data-platforms #main > p,
   .category-community-mapping #main > p,
@@ -2732,7 +2743,9 @@ POSTS & CONTENT STYLES
   .category-south-asia #main > p,
   .category-risk-visualization #main > p,
   .category-news #main > p,
-  .post-type-archive-resource #main > p {
+  .post-type-archive-resource #main > p,
+  .search #main > p,
+  .tag #main > p {
     margin: 0 0 70px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 15px;
@@ -2749,7 +2762,9 @@ POSTS & CONTENT STYLES
   .category-south-asia #main .row-container article,
   .category-risk-visualization #main .row-container article,
   .category-news #main .row-container article,
-  .post-type-archive-resource #main .row-container article {
+  .post-type-archive-resource #main .row-container article,
+  .search #main .row-container article,
+  .tag #main .row-container article {
     max-width: 490px;
     width: 490px;
     margin: 0 0 50px; }
@@ -2764,10 +2779,17 @@ POSTS & CONTENT STYLES
     .category-south-asia #main .row-container article header,
     .category-risk-visualization #main .row-container article header,
     .category-news #main .row-container article header,
-    .post-type-archive-resource #main .row-container article header {
+    .post-type-archive-resource #main .row-container article header,
+    .search #main .row-container article header,
+    .tag #main .row-container article header {
       width: 96%;
       bottom: 46.5%;
       margin: 0px 2%; }
+
+.search #main > h1,
+.search #main > p, .tag #main > h1,
+.tag #main > p {
+  max-width: 100%; }
 
 #list-content {
   margin: 0; }
