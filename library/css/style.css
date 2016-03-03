@@ -3317,8 +3317,6 @@ FOOTER STYLES
         cursor: pointer; }
         .blue-bar-top .wrapper .region-filter li.selected {
           background-color: rgba(255, 255, 255, 0.2); }
-        .blue-bar-top .wrapper .region-filter li.clear-map {
-          text-align: center; }
         .blue-bar-top .wrapper .region-filter li a {
           text-decoration: none;
           width: 100%;
