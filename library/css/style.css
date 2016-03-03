@@ -4370,7 +4370,10 @@ div.cartodb-popup .cartodb-popup-close-button {
 
   .blue-bar-top-m.active #blue-bar-pick-pillar li input {
     width: 103.4% !important;
-    max-width: 103.4% !important; } }
+    max-width: 103.4% !important; }
+
+  .search .index-row article, .search .index-row .card-third, .single .index-row.more-content .row-container article {
+    width: calc(100% - 20px) !important; } }
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
