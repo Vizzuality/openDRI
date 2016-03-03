@@ -4300,8 +4300,8 @@ div.cartodb-popup .cartodb-popup-close-button {
     width: 70%; }
 
   .single .index-row.more-content .row-container article {
-    max-width: 100%;
-    width: calc(100% - 40px); }
+    max-width: 100% !important;
+    width: calc(100% - 40px) !important; }
 
   .index-row .card-third.project, .index-row article.project {
     max-width: 100%;
