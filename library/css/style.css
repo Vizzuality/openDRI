@@ -2974,7 +2974,7 @@ SIDEBARS & ASIDES
   .sidebar i {
     font-style: normal !important; }
   .sidebar li {
-    width: 140px;
+    width: 148px;
     background-color: #1477c9;
     margin: 0 0 20px; }
     .sidebar li p {
@@ -2982,7 +2982,7 @@ SIDEBARS & ASIDES
       padding: 6px; }
     .sidebar li span {
       height: 80px;
-      width: 140px;
+      width: 148px;
       display: block;
       margin: -6px -6px 0;
       background-size: cover;
