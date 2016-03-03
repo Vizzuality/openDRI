@@ -884,7 +884,7 @@
 					if (params.length < 2) return;
 					params[0] = params[0].split('=')[1]; //map region
 					params[1] = params[1].split('=')[1]; //map pillar
-					console.log(params[0],params[1]);
+
 					if (params[0]) $('#pick-region').find('li[data-option="' + params[0] +'"]').trigger('click');
 					if (params[1]) $('#blue-bar-pick-pillar').find('.option-pillar[data-option="' + params[1] +'"]').trigger('click');
 					}
