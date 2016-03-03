@@ -978,6 +978,15 @@
 			$('#blue-bar-m').on('click', 'h2', function(){
 				$(this).parent().toggleClass('active');
 			});
+			$(document).on('click',function(e) {
+				if ($(e.target).is('#toggle-filter-region')) return;
+				if ($(e.target).hasClass('region-filter')) {
+					return;}
+				if ($(e.target).parent().hasClass('region-filter')) {
+					return;}
+				if ($('#pick-region').is(':visible')) {
+					$('#pick-region').hide();}
+			});
 		</script>
 		<script type="text/javascript">
 		if ($(window).width() > 1024) {
