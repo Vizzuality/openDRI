@@ -1414,7 +1414,7 @@ margin: 0;
 				    font-weight: bold;
 				    color: #fff;
 				    position: relative;
-				    right: 12px;
+				    right: 27px;
 				}
 			}
 		}
@@ -2635,9 +2635,8 @@ div.cartodb-popup .cartodb-popup-close-button {
 .home .index-row .resource-list {max-height: 345px;}
 .page #principles, .page #contact, .page #more-content, .page #partners, .page #members {margin: 0; padding: 30px 0;}
 @media (max-width: 1024px) {
-	.contact-form input[type=email], .contact-form input[type=text],.page #contact .contact-form textarea {
-		width: 70% !important;
-	}
+	.contact-form input[type=email], .contact-form input[type=text],.page #contact .contact-form textarea {width: 70% !important;}
+	.archive #contact .contact-form .contact-submit .pushbutton-wide, .page #contact .contact-form .contact-submit .pushbutton-wide {right: 12px;}
 	.blue-bar-top .wrapper span a i {display: none !important};
 	.blue-bar-top .wrapper span a {line-height: 25px !important;padding: 0 10px;}
 	.no-home .header nav {width: 80%;}
@@ -2872,7 +2871,8 @@ div.cartodb-popup .cartodb-popup-close-button {
 	.home #resources.index-row article.resource-cont, .home #inner-content > .last-resources article{width: 100%;  max-width: 100%;}
 	.home .index-row .resource-list.home {margin: 20px 0 0 0;}
 	.home #inner-content > .last-resources {margin: 20px 0 50px !important;}
-	.page #contact .contact-form input, .page #contact .contact-form textarea {border: 1px solid #eee;}
+	.page #contact .contact-form input, .page #contact .contact-form textarea {border: 1px solid #eee;width: 100% !important}
+	.archive #contact .contact-form .contact-submit .pushbutton-wide, .page #contact .contact-form .contact-submit .pushbutton-wide {width: 71px !important;left: 0;}
 	.index-row article.resource-cont section h3, .index-row .card-third.resource-cont section h3 {font-size: 17px;}
 	.category-open-data-platforms #main > h1, .category-open-data-platforms #main > p, .category-community-mapping #main > h1, .category-community-mapping #main > p, .category-africa #main > h1, .category-africa #main > p, .category-east-asia-pacific #main > h1, .category-east-asia-pacific #main > p, .category-europe-and-central-asia #main > h1, .category-europe-and-central-asia #main > p, .category-latin-america-and-caribbean #main > h1, .category-latin-america-and-caribbean #main > p, .category-middle-east-and-north-africa #main > h1, .category-middle-east-and-north-africa #main > p, .category-non-wb-countries #main > h1, .category-non-wb-countries #main > p, .category-south-asia #main > h1, .category-south-asia #main > p, .category-risk-visualization #main > h1, .category-risk-visualization #main > p, .category-news #main > h1, .category-news #main > p, .post-type-archive-resource #main > h1, .post-type-archive-resource #main > p {margin: 0 0 10px;}
 	.blue-bar-top-m.active #blue-bar-pick-pillar li input {width: 103.4% !important;max-width: 103.4% !important;}
