@@ -5,12 +5,13 @@
 			<h3>Morbi leo risus, porta ac consectetur ac, vestibulum at faucibus mollis interdum.</h3>
 			<nav>
 				<?
-				$titles = ['open data platforms','community mapping','risk visualization'];
+				$titles   = ['open data platforms','community mapping','risk visualization'];
+				$params   = ['open','community','risk'];
 				for ($i = 0; $i < count($titles); $i++) {
-					echo '<span data-opt="opt'.($i+1).'">';
+					echo '<a href="'.home_url().'/project/?mapregion=&mappilar='.$params[$i].'"><span data-opt="opt'.($i+1).'">';
 						echo '<i class="img-pile-'.($i+1).'"></i>';
 						echo $titles[$i];
-					echo '</span>';
+					echo '</span></a>';
 				}
 
 				?>
