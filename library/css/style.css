@@ -4410,7 +4410,11 @@ div.cartodb-popup .cartodb-popup-close-button {
 
   #explore-more section h3 {
     font-size: 22px;
-    line-height: 22px; } }
+    line-height: 22px; }
+
+  .archive #contact .contact-form label, .page #contact .contact-form label {
+    text-align: center;
+    width: 100%; } }
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
