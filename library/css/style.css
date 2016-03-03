@@ -1594,6 +1594,9 @@ POSTS & CONTENT STYLES
       display: flex;
       justify-content: space-around;
       width: 100%; }
+      #map-fake .what-list > nav a {
+        width: 110px;
+        text-decoration: none; }
       #map-fake .what-list > nav span {
         width: 110px;
         text-transform: uppercase;
