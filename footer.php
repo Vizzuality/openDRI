@@ -983,10 +983,9 @@
 				$(this).parent().toggleClass('active');
 			});
 			$(document).on('click',function(e) {
-				if ($(e.target).is('#toggle-filter-region')) return;
-				if ($(e.target).hasClass('region-filter')) {
-					return;}
-				if ($(e.target).parent().hasClass('region-filter')) {
+				if ($(e.target).is('#toggle-filter-region') ||
+					$(e.target).parent().hasClass('region-filter') ||
+					$(e.target).parent().parent().hasClass('region-filter')) {
 					return;}
 				if ($('#pick-region').is(':visible')) {
 					$('#pick-region').hide();}
