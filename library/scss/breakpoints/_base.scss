@@ -2344,8 +2344,15 @@ FOOTER STYLES
 	    		position: relative;
 	    		font-weight: bold;
 	    		padding: 0 20px;
-	    		&::-webkit-input-placeholder,
-	    		&::-moz-placeholder,
+	    		&::-webkit-input-placeholder{
+	    			color: white;
+	    		}
+	    		&:placeholder-shown{
+	    			color: white;
+	    		}
+	    		&::-moz-placeholder{
+	    			color: white;
+	    		}
 	    		&:-ms-input-placeholder {
 	    			color: white;
 	    		}

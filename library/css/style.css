@@ -3340,7 +3340,13 @@ FOOTER STYLES
         position: relative;
         font-weight: bold;
         padding: 0 20px; }
-        .blue-bar-top .wrapper .region-filter input::-webkit-input-placeholder, .blue-bar-top .wrapper .region-filter input::-moz-placeholder, .blue-bar-top .wrapper .region-filter input:-ms-input-placeholder {
+        .blue-bar-top .wrapper .region-filter input::-webkit-input-placeholder {
+          color: white; }
+        .blue-bar-top .wrapper .region-filter input:placeholder-shown {
+          color: white; }
+        .blue-bar-top .wrapper .region-filter input::-moz-placeholder {
+          color: white; }
+        .blue-bar-top .wrapper .region-filter input:-ms-input-placeholder {
           color: white; }
       .blue-bar-top .wrapper .region-filter li {
         max-width: 200px;
