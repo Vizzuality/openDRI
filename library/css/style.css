@@ -2985,6 +2985,7 @@ SIDEBARS & ASIDES
       width: 140px;
       display: block;
       margin: -6px -6px 0;
+      background-size: cover;
       background-position: 50% 50%; }
   .sidebar a {
     font-family: "Bariol", "Helvetica Neue", Helvetica, Arial, sans-serif;
