@@ -4338,10 +4338,15 @@ div.cartodb-popup .cartodb-popup-close-button {
     right: 0; }
 
   .post-type-archive-resource #main .index-row {
-    margin: 20px 0 !important; }
+    margin: 20px 0 !important;
+    flex-direction: column; }
 
   .post-type-archive-resource .index-row.last-resources a {
-    width: calc(50% - 20px); }
+    width: 100%;
+    max-width: 100%; }
+
+  .post-type-archive-resource .index-row.last-resources a article {
+    height: 100px; }
 
   .home #resources.index-row > .row-container > a, .index-row.last-resources a {
     width: 100%;
