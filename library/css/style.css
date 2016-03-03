@@ -2435,12 +2435,16 @@ POSTS & CONTENT STYLES
       .page #contact .contact-form .contact-submit .pushbutton-wide {
         width: 71px;
         height: 25px;
-        opacity: 0.2;
+        opacity: 1;
         border-radius: 5px;
         text-transform: uppercase;
-        border: solid 1px #979797;
+        border: transparent;
         color: #000;
-        font-weight: bold; }
+        background-color: #1477c9;
+        font-weight: bold;
+        color: #fff;
+        position: relative;
+        right: 12px; }
 .archive #more-content h3,
 .archive #members h3,
 .archive #partners h3,
@@ -3625,7 +3629,7 @@ div.cartodb-popup .cartodb-popup-close-button {
   justify-content: space-between; }
 
 .archive #contact .contact-form textarea, .page #contact .contact-form textarea {
-  width: 100%; }
+  width: 50%; }
 
 .home .index-row .resource-list {
   max-height: 345px; }
