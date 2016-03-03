@@ -439,6 +439,10 @@ POSTS & CONTENT STYLES
 		    display: flex;
 		    justify-content: space-around;
 		    width: 100%;
+		    a {
+		    	width: 110px;
+		    	text-decoration: none;
+		    }
 		    span {
 		    	width: 110px;
 			    text-transform: uppercase;
