@@ -225,7 +225,7 @@ add_action( 'save_post', 'save_on_cartodb', 10, 3  );
 
 function amgenna_change_grunion_success_message( $msg ) {
 global $contact_form_message;
-return '<h4>' . 'Thanks for contact us' . '</h4>' . wp_kses($contact_form_message, array('br' => array(), 'blockquote' => array()));
+return '<h4>' . 'Thanks for contacting us' . '</h4>' . wp_kses($contact_form_message, array('br' => array(), 'blockquote' => array()));
 }
 add_filter( 'grunion_contact_form_success_message', 'amgenna_change_grunion_success_message' );
 
