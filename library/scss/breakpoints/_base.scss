@@ -691,17 +691,17 @@ POSTS & CONTENT STYLES
 	    box-shadow: 0 0 7px rgba(0,0,0,0.20);
 	    padding: 20px;
 	    li {
-		    margin: 0 10px 0px;
+		    margin: 0;
 		    padding: 5px 0;
 		    background: inherit;
 		    transition: background 0.3s ease;
 		    display: inline-table;
-		    width: 30%;
+		    width: 33%;
     		&:hover {
     			background: darken($white, 3%);
     		}
 		    div {
-		    	margin: 0 15px;
+		    	margin: 0 5px;
 		    	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
 				display: -ms-flexbox;      /* TWEENER - IE 10 */
 				display: -webkit-flex;     /* NEW - Chrome */
