@@ -2549,6 +2549,9 @@ POSTS & CONTENT STYLES
   width: 100%;
   height: 100%;
   display: block; }
+.archive #about.index-row h3,
+.page #about.index-row h3 {
+  margin: 50px 0 0; }
 .archive .page .about-content .card-third,
 .archive #about.index-row,
 .archive #principles.index-row
