@@ -4292,9 +4292,9 @@ div.cartodb-popup .cartodb-popup-close-button {
     display: -webkit-flex;
     display: flex;
     position: absolute;
-    left: 105px;
+    left: 80px;
     width: 170px;
-    font-size: 14px; }
+    font-size: 20px; }
 
   .index-row.more-content h3 {
     padding: 0 0 0 1em; }
@@ -4398,7 +4398,19 @@ div.cartodb-popup .cartodb-popup-close-button {
     max-width: 103.4% !important; }
 
   .search .index-row article, .search .index-row .card-third, .single .index-row.more-content .row-container article {
-    width: calc(100% - 20px) !important; } }
+    width: calc(100% - 20px) !important; }
+
+  #explore-more section {
+    width: 90%;
+    height: 70%; }
+
+  #explore-more section h2 {
+    font-size: 30px;
+    line-height: 30px; }
+
+  #explore-more section h3 {
+    font-size: 22px;
+    line-height: 22px; } }
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's

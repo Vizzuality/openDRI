@@ -2839,7 +2839,7 @@ div.cartodb-popup .cartodb-popup-close-button {
 	.about-content.index-row {margin: 60px -10px;}
 	.page .p-info {justify-content: flex-start;}
 	.single .wrap {width: 100%;}
-	#explore-more section .what-explore {top: 270px;   min-height: 50px;display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;position: absolute;    left: 105px;    width: 170px;    font-size: 14px;}
+	#explore-more section .what-explore {top: 270px;   min-height: 50px;display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;position: absolute;    left: 80px;    width: 170px;    font-size: 20px;}
 	.index-row.more-content h3 {padding: 0 0 0 1em;}
 	.archive #contact .index-row, .page #contact .index-row {width: 100%;}
 	.hentry.-odri-post h1 ,.archive h1 {font-size: 30px;line-height: 30px;}
@@ -2870,4 +2870,7 @@ div.cartodb-popup .cartodb-popup-close-button {
 	.category-open-data-platforms #main > h1, .category-open-data-platforms #main > p, .category-community-mapping #main > h1, .category-community-mapping #main > p, .category-africa #main > h1, .category-africa #main > p, .category-east-asia-pacific #main > h1, .category-east-asia-pacific #main > p, .category-europe-and-central-asia #main > h1, .category-europe-and-central-asia #main > p, .category-latin-america-and-caribbean #main > h1, .category-latin-america-and-caribbean #main > p, .category-middle-east-and-north-africa #main > h1, .category-middle-east-and-north-africa #main > p, .category-non-wb-countries #main > h1, .category-non-wb-countries #main > p, .category-south-asia #main > h1, .category-south-asia #main > p, .category-risk-visualization #main > h1, .category-risk-visualization #main > p, .category-news #main > h1, .category-news #main > p, .post-type-archive-resource #main > h1, .post-type-archive-resource #main > p {margin: 0 0 10px;}
 	.blue-bar-top-m.active #blue-bar-pick-pillar li input {width: 103.4% !important;max-width: 103.4% !important;}
 	.search .index-row article, .search .index-row .card-third, .single .index-row.more-content .row-container article {width: calc(100% - 20px) !important;}
+	#explore-more section {width: 90%;height: 70%;}
+	#explore-more section h2 {font-size: 30px;line-height: 30px;}
+	#explore-more section h3 {font-size: 22px;line-height: 22px;}
 }
