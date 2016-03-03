@@ -972,10 +972,6 @@
 			$('#toggle-filter-region').on('click', function(e){
 				$bar.find('.region-filter').toggle();
 			});
-			$('.what-list').on('click','span',function(e){
-				sessionStorage.setItem('clikcked-menu', $(this).data('opt'));
-				location = '<?php echo home_url(); ?>/project';
-			});
 			$('#blue-bar-m').on('click', 'h2', function(){
 				$(this).parent().toggleClass('active');
 			});
