@@ -3773,8 +3773,8 @@ div.cartodb-popup .cartodb-popup-close-button {
     max-width: calc(50% - 20px); }
 
   .single .index-row.more-content .row-container article {
-    max-width: 360px;
-    width: 100%; }
+    max-width: calc(100% - 20px);
+    width: calc(50% - 20px); }
 
   .home #news.index-row {
     flex-direction: row;
