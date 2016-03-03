@@ -1882,8 +1882,9 @@ POSTS & CONTENT STYLES
           color: rgba(85, 85, 85, 0.5);
           text-transform: uppercase; }
     .index-row .resource-list.home li {
-      margin: 0;
-      width: 100%; }
+      margin: 0 -20px;
+      padding: 5px 20px;
+      width: calc(100% + 40px); }
       .index-row .resource-list.home li a {
         color: rgba(85, 85, 85, 0.5); }
       .index-row .resource-list.home li p {
@@ -4296,7 +4297,7 @@ div.cartodb-popup .cartodb-popup-close-button {
     width: calc(100% - 40px);
     margin: 0 auto; }
 
-  .sidebar i {
+  i {
     width: 70%; }
 
   .single .index-row.more-content .row-container article {
