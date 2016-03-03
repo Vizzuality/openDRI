@@ -734,8 +734,9 @@ POSTS & CONTENT STYLES
 	    }
 		&.home {
 			li {
-				margin: 0;
-				width: 100%;
+				margin: 0 -20px;
+			    padding: 5px 20px;
+			    width: calc(100% + 40px);
 				a {
 					color: rgba(85,85,85,0.5);
 				}
@@ -2620,7 +2621,6 @@ div.cartodb-popup .cartodb-popup-close-button {
 .home .index-row .resource-list {max-height: 345px;}
 .page #principles, .page #contact, .page #more-content, .page #partners, .page #members {margin: 0; padding: 30px 0;}
 @media (max-width: 1024px) {
-	.home .index-row .resource-list.home li {padding: 5px 0;}
 	.contact-form input[type=email], .contact-form input[type=text] {
 		width: 100% !important;
 	}
