@@ -137,7 +137,7 @@
 									$args = array( 'numberposts' => '3', 'category' => $CAT_NAME );
 									$recent_posts = wp_get_recent_posts( $args );
 									foreach( $recent_posts as $recent ){  // start loop
-										if ($thispostid != $recent["ID"]) {
+										if ($thispostid != $recent["ID"] && $recent['post_status'] == 'publish') {
 								?>
 										<article id="post-<?php echo $recent["ID"]; ?>" <?php post_class( 'cf' ); ?> role="article">
 											<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $recent["ID"] ), 'single-post-thumbnail' );
