@@ -270,14 +270,16 @@
 					.addTo(map)
 					.on('done',function(layer){
 						sublayers.push(layer.getSubLayer(0));
-						var data = sessionStorage.getItem('clikcked-menu');
-						if (!!data) {
-							var $trgtcontainer = $('#blue-bar-pick-pillar');
-							if (data === 'opt1') 	  $trgtcontainer.find('.option-pillar[data-option="open"]').trigger('click');
-							else if (data === 'opt2') $trgtcontainer.find('.option-pillar[data-option="community"]').trigger('click');
-							else if (data === 'opt3') $trgtcontainer.find('.option-pillar[data-option="risk"]').trigger('click');
-							sessionStorage.removeItem('clikcked-menu');
+					var checkUrlParams = function (){
+						var params = location.search.split('&');
+						if (params.length < 2) return;
+						params[0] = params[0].split('=')[1]; //map region
+						params[1] = params[1].split('=')[1]; //map pillar
+
+						if (params[0]) $('#pick-region').find('li[data-option="' + params[0] +'"]').trigger('click');
+						if (params[1]) $('#blue-bar-pick-pillar').find('.option-pillar[data-option="' + params[1] +'"]').trigger('click');
 						}
+					checkUrlParams();
 					});
 				  }).on('error', function() {
 				    console.error('Error while loading map. Please check footer file')
@@ -879,16 +881,6 @@
 			}
 			window.onload = function() {
 				init();
-				var checkUrlParams = function (){
-					var params = location.search.split('&');
-					if (params.length < 2) return;
-					params[0] = params[0].split('=')[1]; //map region
-					params[1] = params[1].split('=')[1]; //map pillar
-
-					if (params[0]) $('#pick-region').find('li[data-option="' + params[0] +'"]').trigger('click');
-					if (params[1]) $('#blue-bar-pick-pillar').find('.option-pillar[data-option="' + params[1] +'"]').trigger('click');
-					}
-				checkUrlParams();
 			};
 
 			// Twitter
