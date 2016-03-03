@@ -1588,7 +1588,9 @@ margin: 0;
 .category-south-asia #main,
 .category-risk-visualization #main,
 .category-news #main,
-.post-type-archive-resource #main {
+.post-type-archive-resource #main,
+.search #main,
+.tag #main {
 	margin: 90px 0 0 0 ;
 	>h1,
 	>p {
@@ -1613,6 +1615,12 @@ margin: 0;
 		    bottom: 46.5%;
 		    margin: 0px 2%;		    
 		}
+	}
+}
+.search #main, .tag #main {
+	>h1,
+	>p {
+		max-width: 100%;
 	}
 }
 #list-content {
