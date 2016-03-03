@@ -134,10 +134,10 @@
 
 							<div class="row-container">
 								<?php
-									$args = array( 'numberposts' => '3', 'category' => $CAT_NAME );
+									$args = array( 'numberposts' => '3', 'category' => $CAT_NAME, 'post_status' => 'publish' );
 									$recent_posts = wp_get_recent_posts( $args );
 									foreach( $recent_posts as $recent ){  // start loop
-										if ($thispostid != $recent["ID"] && $recent['post_status'] == 'publish') {
+										if ($thispostid != $recent["ID"]) {
 								?>
 										<article id="post-<?php echo $recent["ID"]; ?>" <?php post_class( 'cf' ); ?> role="article">
 											<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $recent["ID"] ), 'single-post-thumbnail' );

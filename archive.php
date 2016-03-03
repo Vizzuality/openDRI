@@ -247,7 +247,7 @@ if(is_post_type_archive() && $post_type=='project') {
 									</ul>
 									<div class="m-all index-row last-resources">
 									<?
-										$args = array( 'numberposts' => '1', 'category' => 16, 'order' => 'DESC', 'post_type' => 'resource' );
+										$args = array( 'numberposts' => '1', 'category' => 16, 'order' => 'DESC', 'post_type' => 'resource', 'post_status' => 'publish' );
 										$featured_col = wp_get_recent_posts( $args );
 										$image1 = '';
 										$image2 = '';
@@ -263,7 +263,7 @@ if(is_post_type_archive() && $post_type=='project') {
 											</article>
 										</a>
 									<? } 
-										$args = array( 'numberposts' => '1', 'category' => 16,  'order' => 'DESC', 'offset' => '1', 'post_type' => 'resource' );
+										$args = array( 'numberposts' => '1', 'category' => 16,  'order' => 'DESC', 'offset' => '1', 'post_type' => 'resource', 'post_status' => 'publish' );
 										$featured_col = wp_get_recent_posts( $args );
 										foreach( $featured_col as $featured ) {
 											$image = wp_get_attachment_image_src( get_post_thumbnail_id( $featured["ID"] ), 'single-post-thumbnail' );

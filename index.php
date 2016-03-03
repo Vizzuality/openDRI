@@ -32,7 +32,7 @@
 						<a href="<?php echo home_url(); ?>/category/news"><span>view all news</span></a>
 					</div>
 					<?php
-						$args = array( 'numberposts' => '3', 'category' => 'news' );
+						$args = array( 'numberposts' => '3', 'category' => 'news', 'post_status' => 'publish' );
 						$recent_posts = wp_get_recent_posts( $args );
 						foreach( $recent_posts as $recent ){  // start loop
 					?>
@@ -79,7 +79,7 @@
 						<a href="<?php echo home_url(); ?>/project"><span>view all projects</span></a>
 					</div>
 					<?php
-						$args = array( 'numberposts' => '5', 'post_type' => 'project' );
+						$args = array( 'numberposts' => '5', 'post_type' => 'project', 'post_status' => 'publish' );
 						$recent_posts = wp_get_recent_posts( $args );
 						foreach( $recent_posts as $recent ){  // start loop
 					?>
@@ -128,7 +128,7 @@
 				</div>
 				<div class="row-container">
 				<?
-					$args = array( 'numberposts' => '1', 'category' => 16, 'order' => 'DESC', 'post_type' => 'resource' );
+					$args = array( 'numberposts' => '1', 'category' => 16, 'order' => 'DESC', 'post_type' => 'resource', 'post_status' => 'publish' );
 					$featured_col = wp_get_recent_posts( $args );
 					$image1 = '';
 					$image2 = '';
@@ -149,7 +149,7 @@
 			<div class="m-all cf index-row last-resources" role="resources" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 				<div class="row-container">
 				<?
-					$args = array( 'numberposts' => '1', 'category' => 16,  'order' => 'DESC', 'offset' => '1', 'post_type' => 'resource' );
+					$args = array( 'numberposts' => '1', 'category' => 16,  'order' => 'DESC', 'offset' => '1', 'post_type' => 'resource','post_status' => 'publish' );
 					$featured_col = wp_get_recent_posts( $args );
 					foreach( $featured_col as $featured ) {
 						$image = wp_get_attachment_image_src( get_post_thumbnail_id( $featured["ID"] ), 'single-post-thumbnail' );
@@ -165,7 +165,7 @@
 				<? } ?>
 					<ul class="resource-list home">
 						<?
-						$args = array( 'numberposts' => '4', 'category' => 16, 'order' => 'DESC', 'post_type' => 'resource' );
+						$args = array( 'numberposts' => '4', 'category' => 16, 'order' => 'DESC', 'post_type' => 'resource','post_status' => 'publish' );
 						$featured_col = wp_get_recent_posts( $args );
 						foreach( $featured_col as $featured ) {
 					?>
