@@ -4443,7 +4443,10 @@ div.cartodb-popup .cartodb-popup-close-button {
   .archive #contact .contact-form label, .page #contact .contact-form label {
     text-align: center;
     width: 100%;
-    padding: 10px 0 5px; } }
+    padding: 10px 0 5px; }
+
+  #map-fake .what-list > nav a {
+    line-height: 15px; } }
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
