@@ -287,7 +287,8 @@
 				// end map
 				var LayerActions = {
 				  reload: function() {
-				  	location.reload();
+				  	location = '<?php echo home_url(); ?>/project';
+				  	return false;
 				  },
 				  all: function(){
 				  	$filterPosts.show();
@@ -813,8 +814,10 @@
 			    	setURLparams();
 					$('.cartodb-infowindow').css('visibility','hidden').css('opacity','0');
 				});
-				$('#reset-map').on('click', function(){
-					location.reload();
+				$('#reset-map').on('click', function(e) {
+					e.preventDefault();
+					e.stopPropagation();
+					location = '<?php echo home_url(); ?>/project';
 				});
 				$('#searchCountries').on('keyup', function() {
 					var $region_filter = $('.region-filter').first();
