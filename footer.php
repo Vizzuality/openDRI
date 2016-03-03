@@ -98,6 +98,14 @@
 			else if  (location.pathname.includes('/resource')) document.getElementById('menu-option-resources').classList.add("current");
 		}
 		checkUrl();
+		var setURLparams = function() {
+			var params = new Array(2);
+			params[0] = $('#pick-region').find('li.selected').data('option') || '';
+			params[1] = $('#blue-bar-pick-pillar').find('.option-pillar.current').data('option') || '';
+			
+			var newlocation = location.pathname + '?mapregion='+ params[0] + '&mappilar=' + params[1];
+			history.pushState('', window.document.title, newlocation);
+		}
 		</script>
 		<script type="infowindow/html" id="infowindow_template">
 		  <div class="cartodb-popup v2">
@@ -118,15 +126,13 @@
 		  </div>
 		</script>
 		<script>
-			
-
 			var createLabelIcon = function(labelClass,labelText){
 			  return L.divIcon({ 
 			    className: labelClass,
 			    html: labelText
 			  })
 			}
-  
+
 			var map;
 			var currentSublayer,
 				currentRegion = '',
@@ -770,6 +776,7 @@
 				    	map.setView(latlong,zoom);
 				    } else {
 				    	LayerActions[option]();
+				    	setURLparams();
 				    	$('.cartodb-infowindow').css('visibility','hidden').css('opacity','0');
 				    	map.setView(latlong,zoom);
 				    }
@@ -801,6 +808,7 @@
 						}
 					}
 					LayerActions[option]();
+			    	setURLparams();
 					$('.cartodb-infowindow').css('visibility','hidden').css('opacity','0');
 				});
 				$('#reset-map').on('click', function(){
@@ -870,7 +878,17 @@
 				};
 			}
 			window.onload = function() {
-			  init();
+				init();
+				var checkUrlParams = function (){
+					var params = location.search.split('&');
+					if (params.length < 2) return;
+					params[0] = params[0].split('=')[1]; //map region
+					params[1] = params[1].split('=')[1]; //map pillar
+					console.log(params[0],params[1]);
+					if (params[0]) $('#pick-region').find('li[data-option="' + params[0] +'"]').trigger('click');
+					if (params[1]) $('#blue-bar-pick-pillar').find('.option-pillar[data-option="' + params[1] +'"]').trigger('click');
+					}
+				checkUrlParams();
 			};
 
 			// Twitter
