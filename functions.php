@@ -216,7 +216,7 @@ function save_on_cartodb( $post_id ) {
     } else {
       // check the post exists and update or insert
       $query = "UPDATE wp_projects
-      the_geom = ST_SetSRID(ST_Point($geodata__long, $geodata__lat),4326), name = '$geodata__title', location = '$geodata__address', url = '$geodata__url_title', pillar = '$pillar', region = '$region', iso = '$geodata__country', description = '$geodata__content', visible = '$visibility', country_name = '$geodata__c_name'
+      SET the_geom = ST_SetSRID(ST_Point($geodata__long, $geodata__lat),4326), name = '$geodata__title', location = '$geodata__address', url = '$geodata__url_title', pillar = '$pillar', region = '$region', iso = '$geodata__country', description = '$geodata__content', visible = '$visibility', country_name = '$geodata__c_name'
       WHERE wp_post_id = $post_id;
 
       INSERT INTO wp_projects (wp_post_id, the_geom, name, location, url, pillar, region, iso, description, visible, country_name)
@@ -226,8 +226,6 @@ function save_on_cartodb( $post_id ) {
       WHERE NOT EXISTS (SELECT 1 FROM wp_projects WHERE id=$post_id)";
     }
     $url .= urlencode($query).$api_bit;
-    var_dump($query);
-    var_dump($url);
     $response = wp_remote_get($url);
   }
 }
