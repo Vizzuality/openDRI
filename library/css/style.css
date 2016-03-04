@@ -4455,7 +4455,19 @@ div.cartodb-popup .cartodb-popup-close-button {
     padding: 10px 0 5px; }
 
   #map-fake .what-list > nav a {
-    line-height: 15px; } }
+    line-height: 15px; }
+
+  .category-open-data-platforms #main, .category-community-mapping #main, .category-africa #main, .category-east-asia-pacific #main, .category-europe-and-central-asia #main, .category-latin-america-and-caribbean #main, .category-middle-east-and-north-africa #main, .category-non-wb-countries #main, .category-south-asia #main, .category-risk-visualization #main, .category-news #main, .post-type-archive-resource #main, .search #main, .tag #main {
+    margin: 50px 0 0 0; }
+
+  .search #main > h1, .tag #main > h1 {
+    margin: 0	0 20px; }
+
+  .search #main > p, .tag #main > p {
+    display: none; }
+
+  .search #main .row-container article, .tag #main .row-container article {
+    width: 100%; } }
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
