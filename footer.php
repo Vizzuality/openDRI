@@ -309,31 +309,33 @@
 				  },
 				  country_given: function() {
 				  	$('.amount-of-posts').hide();
-					  	$('#current-total-post-count').text($target.length);
-						var country = $('#pick-region input').val().charAt(0).toUpperCase() + $('#pick-region input').val().slice(1);
-						currentCountry = country;
-					  	var $target = $filterPosts.parent().find("article[class*='"+ country +"']");
-					  	$target.show();
-						if (currentPillar.length > 0)
-							sublayers[0].setSQL('SELECT * FROM wp_projects where LOWER(country_name) like \'%' + country.toLowerCase() + '%\' AND pillar LIKE \'%' + currentPillar + '%\''+ visible);
-						else
-							sublayers[0].setSQL('SELECT * FROM wp_projects where LOWER(country_name) like \'%' + country.toLowerCase() + '%\' AND visible = true');
-						sublayers[1].setSQL("SELECT * FROM country_mask");
-				    	sublayers[1].setCartoCSS(
-				    			"\
-								    #country_mask {\
-								      polygon-fill: #000;\
-								      polygon-opacity: 0.2;\
-								      line-color: #999;\
-								      line-width: 0;\
-								      line-opacity: 0;\
-								    }\
-								    #country_mask[name='" + country + "']{\
-								      polygon-opacity: 0;\
-								      line-color: #fff;\
-								      line-width: 1;\
-								      line-opacity: 0.4;\
-								    }");
+				  	$('#current-total-post-count').text($target.length);
+					var country = $('#pick-region input').val().charAt(0).toUpperCase() + $('#pick-region input').val().slice(1);
+					currentCountry = country;
+				  	var $target = $filterPosts.parent().find("article[class*='"+ country +"']");
+				  	$target.show();
+			  		$('#current-total-post-count').text($target.length);
+
+					if (currentPillar.length > 0)
+						sublayers[0].setSQL('SELECT * FROM wp_projects where LOWER(country_name) like \'%' + country.toLowerCase() + '%\' AND pillar LIKE \'%' + currentPillar + '%\''+ visible);
+					else
+						sublayers[0].setSQL('SELECT * FROM wp_projects where LOWER(country_name) like \'%' + country.toLowerCase() + '%\' AND visible = true');
+					sublayers[1].setSQL("SELECT * FROM country_mask");
+			    	sublayers[1].setCartoCSS(
+			    			"\
+							    #country_mask {\
+							      polygon-fill: #000;\
+							      polygon-opacity: 0.2;\
+							      line-color: #999;\
+							      line-width: 0;\
+							      line-opacity: 0;\
+							    }\
+							    #country_mask[name='" + country + "']{\
+							      polygon-opacity: 0;\
+							      line-color: #fff;\
+							      line-width: 1;\
+							      line-opacity: 0.4;\
+							    }");
 				  },
 				  africa: function(){
 				  	$filterPosts.hide();
@@ -887,9 +889,12 @@
 						$('.amount-of-posts').hide();
 						var country = $(this).val().charAt(0).toUpperCase() + $(this).val().slice(1);
 						currentCountry = country;
-						sublayers[0].setSQL('SELECT * FROM wp_projects where LOWER(country_name) like \'%' + country.toLowerCase() + '%\' AND visible = true');
-						sublayers[1].setSQL("SELECT * FROM country_mask");
-				    	sublayers[1].setCartoCSS(
+					  	$('#list-content').find("article[class*='"+ country +"']");
+					  	$target.show();
+				  		$('#current-total-post-count').text($target.length);
+							sublayers[0].setSQL('SELECT * FROM wp_projects where LOWER(country_name) like \'%' + country.toLowerCase() + '%\' AND visible = true');
+							sublayers[1].setSQL("SELECT * FROM country_mask");
+					    	sublayers[1].setCartoCSS(
 				    			"\
 								    #country_mask {\
 								      polygon-fill: #000;\
