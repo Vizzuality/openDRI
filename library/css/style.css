@@ -4329,7 +4329,7 @@ div.cartodb-popup .cartodb-popup-close-button {
     font-size: 20px; }
 
   .index-row.more-content h3 {
-    padding: 0 0 0 1em; }
+    padding: 0 0 0 10px; }
 
   .archive #contact .index-row, .page #contact .index-row {
     width: 100%; }
@@ -4345,10 +4345,10 @@ div.cartodb-popup .cartodb-popup-close-button {
     width: 100%; }
 
   .sidebar h4 {
-    padding: 0 0 0 1em; }
+    padding: 0 0 0 10px; }
 
   .sidebar ul {
-    width: calc(100% - 40px);
+    width: calc(100% - 20px);
     margin: 0 auto; }
 
   i {
