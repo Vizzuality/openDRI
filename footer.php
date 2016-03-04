@@ -815,7 +815,9 @@
 							var option = 'all';
 						}
 					}
-					LayerActions[option]();
+					if (!!LayerActions[option]){
+						LayerActions[option]();
+					}
 			    	setURLparams();
 					$('.cartodb-infowindow').css('visibility','hidden').css('opacity','0');
 				});
