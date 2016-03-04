@@ -137,6 +137,7 @@
 			var currentSublayer,
 				currentRegion = '',
 				currentPillar = '',
+				currentCountry = '',
 				$filterPosts  = $('.type-project'),
 				filterRegion  = '',
 				filterPillar  = '';
@@ -305,6 +306,31 @@
 								    }\
 								    ");
 				    return true;
+				  },
+				  country_given: function() {
+				  	$('.amount-of-posts').hide();
+						var country = $('#pick-region input').val().charAt(0).toUpperCase() + $('#pick-region input').val().slice(1);
+						currentCountry = country;
+						if (currentPillar.length > 0)
+							sublayers[0].setSQL('SELECT * FROM wp_projects where LOWER(country_name) like \'%' + country.toLowerCase() + '%\' AND pillar LIKE \'%' + currentPillar + '%\''+ visible);
+						else
+							sublayers[0].setSQL('SELECT * FROM wp_projects where LOWER(country_name) like \'%' + country.toLowerCase() + '%\' AND visible = true');
+						sublayers[1].setSQL("SELECT * FROM country_mask");
+				    	sublayers[1].setCartoCSS(
+				    			"\
+								    #country_mask {\
+								      polygon-fill: #000;\
+								      polygon-opacity: 0.2;\
+								      line-color: #999;\
+								      line-width: 0;\
+								      line-opacity: 0;\
+								    }\
+								    #country_mask[name='" + country + "']{\
+								      polygon-opacity: 0;\
+								      line-color: #fff;\
+								      line-width: 1;\
+								      line-opacity: 0.4;\
+								    }");
 				  },
 				  africa: function(){
 				  	$filterPosts.hide();
@@ -688,6 +714,9 @@
 				  	$('#current-total-post-count').text($target.length); 			  	
 				  	if (currentRegion.length > 0)
 				    	sublayers[0].setSQL("SELECT * FROM wp_projects WHERE pillar like '%open data platforms%' AND region = '" + currentRegion + "' "+ visible);
+				    if (currentCountry.length > 0){
+				    	sublayers[0].setSQL("SELECT * FROM wp_projects WHERE pillar like '%open data platforms%' AND LOWER(country_name) like %" + currentCountry.toLowerCase() + "% "+ visible);
+				    }
 				    else 
 				    	sublayers[0].setSQL( "SELECT * FROM wp_projects WHERE pillar like '%open data platforms%'" + visible);
 				    currentPillar = "open data platforms";
@@ -702,6 +731,9 @@
 				  	$('#current-total-post-count').text($target.length);
 				  	if (currentRegion.length > 0)
 				    	sublayers[0].setSQL("SELECT * FROM wp_projects WHERE pillar like '%community mapping%' AND region = '" + currentRegion + "' "+ visible);
+				   	if (currentCountry.length > 0){
+				    	sublayers[0].setSQL("SELECT * FROM wp_projects WHERE pillar like '%community mapping%' AND LOWER(country_name) like %" + currentCountry.toLowerCase() + "% "+ visible);
+				    }
 				    else 
 				    	sublayers[0].setSQL( "SELECT * FROM wp_projects WHERE pillar like '%community mapping%'" + visible);
 				    currentPillar = "community mapping";
@@ -716,6 +748,9 @@
 				  	$('#current-total-post-count').text($target.length);
 				  	if (currentRegion.length > 0)
 				    	sublayers[0].setSQL("SELECT * FROM wp_projects WHERE pillar like '%risk visualization%' AND region = '" + currentRegion + "' "+ visible);
+					if (currentCountry.length > 0){
+				    	sublayers[0].setSQL("SELECT * FROM wp_projects WHERE pillar like '%risk visualization%' AND LOWER(country_name) like %" + currentCountry.toLowerCase() + "% "+ visible);
+				    }
 				    else 
 				    	sublayers[0].setSQL( "SELECT * FROM wp_projects WHERE pillar like '%risk visualization%'" + visible);
 				    currentPillar = "risk visualization";
@@ -817,6 +852,8 @@
 					}
 					if (!!LayerActions[option]){
 						LayerActions[option]();
+					} else {
+						LayerActions['country_given']();
 					}
 			    	setURLparams();
 					$('.cartodb-infowindow').css('visibility','hidden').css('opacity','0');
@@ -846,6 +883,7 @@
 					} else if( $(this).val().length > 3 ) {
 						$('.amount-of-posts').hide();
 						var country = $(this).val().charAt(0).toUpperCase() + $(this).val().slice(1);
+						currentCountry = country;
 						sublayers[0].setSQL('SELECT * FROM wp_projects where LOWER(country_name) like \'%' + country.toLowerCase() + '%\' AND visible = true');
 						sublayers[1].setSQL("SELECT * FROM country_mask");
 				    	sublayers[1].setCartoCSS(
