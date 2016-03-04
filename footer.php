@@ -309,8 +309,11 @@
 				  },
 				  country_given: function() {
 				  	$('.amount-of-posts').hide();
+					  	$('#current-total-post-count').text($target.length);
 						var country = $('#pick-region input').val().charAt(0).toUpperCase() + $('#pick-region input').val().slice(1);
 						currentCountry = country;
+					  	var $target = $filterPosts.parent().find("article[class*='country']");
+					  	$target.show();
 						if (currentPillar.length > 0)
 							sublayers[0].setSQL('SELECT * FROM wp_projects where LOWER(country_name) like \'%' + country.toLowerCase() + '%\' AND pillar LIKE \'%' + currentPillar + '%\''+ visible);
 						else
