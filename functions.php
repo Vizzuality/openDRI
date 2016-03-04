@@ -224,6 +224,7 @@ INSERT INTO wp_projects (wp_post_id, the_geom, name, location, url, pillar, regi
       //$query = "UPDATE wp_projects SET the_geom = ST_SetSRID(ST_Point($geodata__long, $geodata__lat),4326), name = '$geodata__title', location = '$geodata__address', url = '$geodata__url_title', pillar = '$pillar', region = '$region', iso = '$geodata__country', description = '$geodata__content', visible = '$visibility', country_name = '$geodata__c_name' WHERE wp_post_id = $post_id "; 
     }
     $url .= urlencode($query).$api_bit;
+    var_dump($query);
     var_dump($url);
     $response = wp_remote_get($url);
   }
