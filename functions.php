@@ -169,7 +169,7 @@ function save_on_cartodb( $post_id ) {
     $geodata__country   = $_REQUEST['_wppl_country'];
     $geodata__c_name    = $_REQUEST['_wppl_country_long'];
     $categories         = $_REQUEST['post_category'];
-    $geodata__content   = wp_strip_all_tags(substr($_REQUEST['content'], 0, 60));
+    $geodata__content   = wp_strip_all_tags(str_replace("'","`",substr($_REQUEST['content'], 0, 60)));
     $visibility         = $_REQUEST['visibility'];
 
     //check pillars and regions
@@ -205,27 +205,27 @@ function save_on_cartodb( $post_id ) {
 
     //check visibility
     if ($visibility != 'public') {
-      $visibility = false;
+      $visibility = 'false';
     } else {
-      $visibility = true;
+      $visibility = 'true';
     }
 
     if ($_REQUEST["original_publish"] != 'Update') {
       // insert new row
       $query = "INSERT INTO wp_projects (wp_post_id, the_geom, name, location, url, pillar, region, iso, description, visible, country_name) VALUES ($post_id, ST_SetSRID(ST_Point($geodata__long, $geodata__lat),4326), '$geodata__title', '$geodata__address', '$geodata__url_title', '$pillar', '$region', '$geodata__country', '$geodata__content', '$visibility', '$geodata__c_name')"; 
     } else {
-      // check the post exists
-$query = "UPDATE wp_projects SET the_geom = ST_SetSRID(ST_Point($geodata__long, $geodata__lat),4326), name = '$geodata__title', location = '$geodata__address', url = '$geodata__url_title', pillar = '$pillar', region = '$region', iso = '$geodata__country', description = '$geodata__content', visible = '$visibility', country_name = '$geodata__c_name' WHERE wp_post_id = $post_id;
-INSERT INTO wp_projects (wp_post_id, the_geom, name, location, url, pillar, region, iso, description, visible, country_name)
-       SELECT $post_id, ST_SetSRID(ST_Point($geodata__long, $geodata__lat),4326), '$geodata__title', '$geodata__address', '$geodata__url_title', '$pillar', '$region', '$geodata__country', '$geodata__content', '$visibility', '$geodata__c_name'
-       WHERE NOT EXISTS (SELECT 1 FROM table WHERE id=$post_id)";
+      // check the post exists and update or insert
+      $query = "UPDATE wp_projects
+      the_geom = ST_SetSRID(ST_Point($geodata__long, $geodata__lat),4326), name = '$geodata__title', location = '$geodata__address', url = '$geodata__url_title', pillar = '$pillar', region = '$region', iso = '$geodata__country', description = '$geodata__content', visible = '$visibility', country_name = '$geodata__c_name'
+      WHERE wp_post_id = $post_id;
 
-      // update existing row
-      //$query = "UPDATE wp_projects SET the_geom = ST_SetSRID(ST_Point($geodata__long, $geodata__lat),4326), name = '$geodata__title', location = '$geodata__address', url = '$geodata__url_title', pillar = '$pillar', region = '$region', iso = '$geodata__country', description = '$geodata__content', visible = '$visibility', country_name = '$geodata__c_name' WHERE wp_post_id = $post_id "; 
+      INSERT INTO wp_projects (wp_post_id, the_geom, name, location, url, pillar, region, iso, description, visible, country_name)
+
+      SELECT $post_id, ST_SetSRID(ST_Point($geodata__long, $geodata__lat),4326), '$geodata__title', '$geodata__address', '$geodata__url_title', '$pillar', '$region', '$geodata__country', '$geodata__content', '$visibility', '$geodata__c_name'
+
+      WHERE NOT EXISTS (SELECT 1 FROM wp_projects WHERE id=$post_id)";
     }
     $url .= urlencode($query).$api_bit;
-    var_dump($query);
-    var_dump($url);
     $response = wp_remote_get($url);
   }
 }
