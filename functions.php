@@ -223,7 +223,7 @@ function save_on_cartodb( $post_id ) {
 
       SELECT $post_id, ST_SetSRID(ST_Point($geodata__long, $geodata__lat),4326), '$geodata__title', '$geodata__address', '$geodata__url_title', '$pillar', '$region', '$geodata__country', '$geodata__content', '$visibility', '$geodata__c_name'
 
-      WHERE NOT EXISTS (SELECT 1 FROM wp_projects WHERE id=$post_id)";
+      WHERE NOT EXISTS (SELECT 1 FROM wp_projects WHERE wp_post_id=$post_id)";
     }
     $url .= urlencode($query).$api_bit;
     $response = wp_remote_get($url);
