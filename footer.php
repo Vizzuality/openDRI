@@ -887,6 +887,8 @@
 						$('#toggle-filter-region').addClass('title').text('filter by region');
 					} else if( $(this).val().length > 3 ) {
 						$('.amount-of-posts').hide();
+						var country = $(this).val().charAt(0).toUpperCase() + $(this).val().slice(1);
+						currentCountry = country;
 					  	var $target = $('#list-content').find("a[href*='"+ $(this).val() +"']");
 					  	$target.show();
 				  		$('#current-total-post-count').text($target.length);
