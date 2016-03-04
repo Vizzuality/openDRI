@@ -1292,8 +1292,7 @@ style a page via class
 /* individual paged search (i.e. body.search-paged-3) */
 /* 404 page */
 .archive h1 {
-  font-size: 48px;
-  color: #1477c9; }
+  font-size: 48px; }
 
 /* individual post page by id (i.e. body.postid-73) */
 /* individual paged single (i.e. body.single-paged-3) */
