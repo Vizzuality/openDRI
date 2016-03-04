@@ -2135,7 +2135,7 @@ POSTS & CONTENT STYLES
       font-size: 13px;
       font-family: "Bariol", "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-weight: bold;
-      color: rgba(85, 85, 85, 0.5);
+      color: #555;
       font-weight: bold; }
     .hentry.-odri-post .social-sharing {
       margin: 15px 0 0; }
@@ -2148,6 +2148,7 @@ POSTS & CONTENT STYLES
         flex-wrap: wrap;
         letter-spacing: 0.5px; }
         .hentry.-odri-post .social-sharing p span {
+          color: #555;
           line-height: 25px;
           font-weight: bold; }
       .hentry.-odri-post .social-sharing a {
