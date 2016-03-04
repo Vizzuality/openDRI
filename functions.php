@@ -226,6 +226,8 @@ function save_on_cartodb( $post_id ) {
       WHERE NOT EXISTS (SELECT 1 FROM wp_projects WHERE id=$post_id)";
     }
     $url .= urlencode($query).$api_bit;
+    var_dump($query);
+    var_dump($url);
     $response = wp_remote_get($url);
   }
 }
