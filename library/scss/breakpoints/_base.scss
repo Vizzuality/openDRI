@@ -1010,7 +1010,7 @@ POSTS & CONTENT STYLES
 			font-size: 13px;
 		    font-family: $bariol;
 		    font-weight: bold;
-		    color: rgba(85,85,85,0.5);
+		    color: #555;
 			font-weight: bold;
 			}
 		.social-sharing {
@@ -1024,6 +1024,7 @@ POSTS & CONTENT STYLES
 			    flex-wrap: wrap;
 			    letter-spacing: 0.5px;
 			    span {
+			    	color: #555;
 			    	line-height: 25px;
 			    	font-weight: bold;
 			    }
