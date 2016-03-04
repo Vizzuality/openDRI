@@ -310,10 +310,11 @@
 				  country_given: function() {
 				  	$('.amount-of-posts').hide();
 				  	$('#current-total-post-count').text($target.length);
-					var country = $('#pick-region input').val().charAt(0).toUpperCase() + $('#pick-region input').val().slice(1);
-					currentCountry = country;
-				  	var $target = $filterPosts.parent().find("article[class*='"+ country +"']");
-				  	$target.show();
+						var country = $('#pick-region input').val().charAt(0).toUpperCase() + $('#pick-region input').val().slice(1);
+						currentCountry = country;
+					  	var $target = $('#list-content').find("a[href*='"+ $('#pick-region input').val() +"']");
+					  	$target = $target.closest('article');
+					  	$target.show();
 			  		$('#current-total-post-count').text($target.length);
 
 					if (currentPillar.length > 0)
