@@ -798,12 +798,13 @@
 					$('#blue-bar-m').toggleClass('active');
 					if ($(this).hasClass('current')) {
 						$(this).removeClass('current');
+						currentPillar = '';
 						if ($('#pick-region').find('li.selected').length > 0){
 							var option = $('#pick-region').find('li.selected').data('option');
 						} else {
 							var option = 'all';
+							addMarkers();
 						}
-						addMarkers();
 					} else {
 						$(e.target).closest('span').addClass('current');
 						$(this).siblings().removeClass('current');
