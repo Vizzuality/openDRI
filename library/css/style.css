@@ -4324,7 +4324,7 @@ div.cartodb-popup .cartodb-popup-close-button {
     display: -webkit-flex;
     display: flex;
     position: absolute;
-    left: 80px;
+    left: 100px;
     width: 170px;
     font-size: 20px; }
 
