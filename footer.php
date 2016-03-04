@@ -309,7 +309,6 @@
 				  },
 				  country_given: function() {
 				  	$('.amount-of-posts').hide();
-				  	$('#current-total-post-count').text($target.length);
 						var country = $('#pick-region input').val().charAt(0).toUpperCase() + $('#pick-region input').val().slice(1);
 						currentCountry = country;
 					  	var $target = $('#list-content').find("a[href*='"+ $('#pick-region input').val() +"']");
