@@ -890,6 +890,7 @@
 						var country = $(this).val().charAt(0).toUpperCase() + $(this).val().slice(1);
 						currentCountry = country;
 					  	var $target = $('#list-content').find("a[href*='"+ $(this).val() +"']");
+					  	$target = $target.closest('article');
 					  	$target.show();
 				  		$('#current-total-post-count').text($target.length);
 							sublayers[0].setSQL('SELECT * FROM wp_projects where LOWER(country_name) like \'%' + country.toLowerCase() + '%\' AND visible = true');
