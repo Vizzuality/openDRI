@@ -309,12 +309,12 @@
 				  },
 				  country_given: function() {
 				  	$('.amount-of-posts').hide();
-						var country = $('#pick-region input').val().charAt(0).toUpperCase() + $('#pick-region input').val().slice(1);
-						currentCountry = country;
-						$filterPosts.hide();
-					  	var $target = $('#list-content').find("a[href*='"+ $('#pick-region input').val() +"']");
-					  	$target = $target.closest('article');
-					  	$target.show();
+					var country = $('#pick-region input').val().charAt(0).toUpperCase() + $('#pick-region input').val().slice(1);
+					currentCountry = country;
+					$filterPosts.hide();
+				  	var $target = $('#list-content').find("a[href*='"+ $('#pick-region input').val() +"']");
+				  	$target = $target.closest('article');
+				  	$target.show();
 			  		$('#current-total-post-count').text($target.length);
 
 					if (currentPillar.length > 0)
@@ -818,6 +818,7 @@
 						$target.show();
 						$('#current-total-post-count').text($target.length)
 				    	map.setView(latlong,zoom);
+				    	LayerActions['country_given']();
 				    } else {
 				    	LayerActions[option]();
 				    	setURLparams();
