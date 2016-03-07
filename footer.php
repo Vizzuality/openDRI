@@ -713,8 +713,12 @@
 				    return true;
 				  },
 				  open: function(){
-				  	$filterPosts.hide();
-				  	var $target = $filterPosts.parent().find(filterRegion+'.type-project.category-open-data-platforms');
+				  	if (currentCountry.length > 0) {
+						var $target = $filterPosts.parent().find(filterRegion+'.type-project.category-open-data-platforms');
+				  	} else {			  		
+					  	$filterPosts.hide();
+					  	var $target = $filterPosts.parent().find(filterRegion+'.type-project.category-open-data-platforms');
+				  	}
 				  	filterPillar = '.category-open-data-platforms';
 				  	$target.show();
 				  	$('#current-total-post-count').text($target.length); 			  	
@@ -730,8 +734,12 @@
 				    return true;
 				  },
 				  community: function(){
-				  	$filterPosts.hide();
-				  	var $target = $filterPosts.parent().find(filterRegion+'.type-project.category-community-mapping');
+				  	if (currentCountry.length > 0) {
+						var $target = $filterPosts.parent().find(filterRegion+'.type-project.category-community-mapping:visible');
+				  	} else {			  		
+					  	$filterPosts.hide();
+					  	var $target = $filterPosts.parent().find(filterRegion+'.type-project.category-community-mapping');
+				  	}
 				  	filterPillar = '.category-community-mapping';
 				  	$target.show();
 				  	$('#current-total-post-count').text($target.length);
@@ -747,8 +755,12 @@
 				    return true;
 				  },		
 				  risk: function(){
-				  	$filterPosts.hide();
-				  	var $target = $filterPosts.parent().find(filterRegion+'.type-project.category-risk-visualization');
+				  	if (currentCountry.length > 0) {
+						var $target = $filterPosts.parent().find(filterRegion+'.type-project.category-risk-visualization:visible');
+				  	} else {			  		
+					  	$filterPosts.hide();
+					  	var $target = $filterPosts.parent().find(filterRegion+'.type-project.category-risk-visualization');
+				  	}
 				  	filterPillar = '.category-risk-visualization';
 				  	$target.show();
 				  	$('#current-total-post-count').text($target.length);
