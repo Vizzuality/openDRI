@@ -714,7 +714,7 @@
 				  },
 				  open: function(){
 				  	if (currentCountry.length > 0) {
-						var $target = $filterPosts.parent().find(filterRegion+'.type-project.category-open-data-platforms');
+						var $target = $filterPosts.parent().find(filterRegion+'.type-project.category-open-data-platforms:visible');
 				  	} else {			  		
 					  	$filterPosts.hide();
 					  	var $target = $filterPosts.parent().find(filterRegion+'.type-project.category-open-data-platforms');
