@@ -312,7 +312,7 @@
 						var country = $('#pick-region input').val().charAt(0).toUpperCase() + $('#pick-region input').val().slice(1);
 						currentCountry = country;
 						$filterPosts.hide();
-					  	var $target = $('#list-content').find("a[href*='"+ $('#pick-region input').val() +"']:visible");
+					  	var $target = $('#list-content').find("a[href*='"+ $('#pick-region input').val() +"']");
 					  	$target = $target.closest('article');
 					  	$target.show();
 			  		$('#current-total-post-count').text($target.length);
@@ -891,7 +891,7 @@
 						var country = $(this).val().charAt(0).toUpperCase() + $(this).val().slice(1);
 						currentCountry = country;
 						$filterPosts.hide();
-					  	var $target = $('#list-content').find("a[href*='"+ $(this).val() +"']:visible");
+					  	var $target = $('#list-content').find("a[href*='"+ $(this).val() +"']");
 					  	$target = $target.closest('article');
 					  	$target.show();
 				  		$('#current-total-post-count').text($target.length);
