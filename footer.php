@@ -309,9 +309,11 @@
 				  },
 				  country_given: function() {
 				  	$('.amount-of-posts').hide();
+				  	$('#current-total-post-count').text($target.length);
 						var country = $('#pick-region input').val().charAt(0).toUpperCase() + $('#pick-region input').val().slice(1);
 						currentCountry = country;
-					  	var $target = $('#list-content').find("a[href*='"+ $('#pick-region input').val() +"']");
+						$filterPosts.hide();
+					  	var $target = $('#list-content').find("a[href*='"+ $('#pick-region input').val() +"']:visible");
 					  	$target = $target.closest('article');
 					  	$target.show();
 			  		$('#current-total-post-count').text($target.length);
@@ -889,7 +891,8 @@
 						$('.amount-of-posts').hide();
 						var country = $(this).val().charAt(0).toUpperCase() + $(this).val().slice(1);
 						currentCountry = country;
-					  	var $target = $('#list-content').find("a[href*='"+ $(this).val() +"']");
+						$filterPosts.hide();
+					  	var $target = $('#list-content').find("a[href*='"+ $(this).val() +"']:visible");
 					  	$target = $target.closest('article');
 					  	$target.show();
 				  		$('#current-total-post-count').text($target.length);
