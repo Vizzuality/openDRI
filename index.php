@@ -2,7 +2,7 @@
 	<div id="map-fake">
 		<div class="what-list">
 			<h2>what is open data for resilience initiative?</h2>
-			<h3>Morbi leo risus, porta ac consectetur ac, vestibulum at faucibus mollis interdum.</h3>
+			<h3>OpenDRI shares, collects, and uses data, applying the concepts of the open data movement to reduce vulnerability to natural hazards and to climate change across the globe. Explore our project map to see where we’ve been working towards making an impact.</h3>
 			<nav>
 				<?
 				$titles   = ['open data platforms','community mapping','risk visualization'];
