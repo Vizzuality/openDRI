@@ -5,7 +5,7 @@
 			<h3>OpenDRI shares, collects, and uses data, applying the concepts of the open data movement to reduce vulnerability to natural hazards and to climate change across the globe. Explore our project map to see where we’ve been working towards making an impact.</h3>
 			<nav>
 				<?
-				$titles   = ['open data platforms','community mapping','risk visualization'];
+				$titles   = ['Sharing Data','Collecting Data','Using Data'];
 				$params   = ['open','community','risk'];
 				for ($i = 0; $i < count($titles); $i++) {
 					echo '<a href="'.home_url().'/project/?mapregion=&mappilar='.$params[$i].'"><span data-opt="opt'.($i+1).'">';
