@@ -103,7 +103,8 @@
 							<p class="byline entry-meta vcard">
 								<span>
 								<?php
-								foreach((get_the_category()) as $category) { 
+								foreach(wp_get_post_categories($recent["ID"]) as $category) { 
+									$category = get_category( $category );
 								    if ($category->cat_ID == 6 || 
 										$category->cat_ID == 7 ||
 										$category->cat_ID == 8) {
