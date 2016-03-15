@@ -108,10 +108,7 @@
 								} 
 								?>
 								</span>
-	                            <?php printf( __( '', 'bonestheme' ).' %1$s',
-	   								/* the time the post was published */
-	   								'<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time('d M') . '</time>'
-								); ?>
+	                            
 							</p>
 						</footer>
 					</article>
