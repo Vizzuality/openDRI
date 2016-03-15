@@ -232,12 +232,14 @@ if(is_post_type_archive() && $post_type=='project') {
 													} 
 													?>
 												</span>
+												<? if($post_type!='project') { ?>
 					                            <?php printf( __( '', 'bonestheme' ).' %1$s',
 					   								/* the time the post was published */
 					   								'<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time('d M') . '</time>'
 												); ?>
+												<? } ?>
 											</p>
-											<? } //enf is tag?>
+											<? } //end if tag?>
 										</footer>
 									</article>
 								<? endif; ?>
