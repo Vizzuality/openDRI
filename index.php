@@ -6,9 +6,9 @@
 			<nav>
 				<?
 				$titles   = ['Sharing Data','Collecting Data','Using Data'];
-				$params   = ['open','community','risk'];
+				$params   = ['sharing-data','collecting-data','using-data'];
 				for ($i = 0; $i < count($titles); $i++) {
-					echo '<a href="'.home_url().'/project/?mapregion=&mappilar='.$params[$i].'"><span data-opt="opt'.($i+1).'">';
+					echo '<a href="'.home_url().'/about/#'.$params[$i].'-anchor"><span data-opt="opt'.($i+1).'">';
 						echo '<i class="img-pile-'.($i+1).'"></i>';
 						echo $titles[$i];
 					echo '</span></a>';
