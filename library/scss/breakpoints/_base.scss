@@ -1504,6 +1504,11 @@ margin: 0;
 	.-m-disclaimer h3 {
 		color: #1477c9;
 	}
+	#about hr {
+		visibility: hidden;
+	    position: relative;
+	    top: -40px;
+	}
 	.p-info {
 		display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
   		display: -ms-flexbox;      /* TWEENER - IE 10 */
