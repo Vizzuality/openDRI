@@ -2565,7 +2565,7 @@ POSTS & CONTENT STYLES
   display: block; }
 .archive #about.index-row h3,
 .page #about.index-row h3 {
-  margin: 50px 0 0; }
+  margin: 30px 0 0; }
 .archive .page .about-content .card-third,
 .archive #about.index-row,
 .archive #principles.index-row
@@ -2698,7 +2698,7 @@ POSTS & CONTENT STYLES
 .post-type-archive-resource #main,
 .search #main,
 .tag #main {
-  margin: 90px 0 0 0; }
+  margin: 70px 0 0 0; }
   .category-open-data-platforms #main > h1,
   .category-open-data-platforms #main > p,
   .category-community-mapping #main > h1,
