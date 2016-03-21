@@ -1518,6 +1518,9 @@ margin: 0;
 		justify-content: center;
 		position: relative;
 		margin: 0 0 45px;
+		a {
+			color: #1477c9;
+		}
 		&.double {
 			justify-content: flex-start;
 			p {

@@ -2601,6 +2601,9 @@ POSTS & CONTENT STYLES
   justify-content: center;
   position: relative;
   margin: 0 0 45px; }
+  .archive .p-info a,
+  .page .p-info a {
+    color: #1477c9; }
   .archive .p-info.double,
   .page .p-info.double {
     justify-content: flex-start; }
