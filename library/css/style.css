@@ -2583,8 +2583,8 @@ POSTS & CONTENT STYLES
 .page #principles h3,
 .page .-m-disclaimer h3 {
   color: #1477c9; }
-.archive #about hr,
-.page #about hr {
+.archive hr,
+.page hr {
   visibility: hidden;
   position: relative;
   top: -40px; }
