@@ -9,7 +9,7 @@
 		}
 		$image = ($image[0]) ? $image[0] : get_template_directory_uri().$placeholder;
 	?>
-			<div id="pic-banner" style="background-image:url(<? echo $image ?>)">
+			<div id="pic-banner" style="background-image:url(<?php echo $image ?>)">
 			</div>
 			<div id="map" class="cdbmap"></div>
 
@@ -70,7 +70,7 @@
 
 						<?php endif; ?>
 
-						<? 
+						<?php 
 							if (get_post_type( get_the_ID() ) == 'project') {
 								$meta = get_post_meta(get_the_ID(), 'news', true);
 								if ($meta) {
@@ -124,7 +124,7 @@
 
 							</div>
 						</div>
-							<? } //end check $meta ?>
+							<?php } //end check $meta ?>
 						<?
 							} else {
 								if (get_the_ID() == '481') return;
@@ -164,7 +164,7 @@
 												</p>
 											</footer>
 										</article>
-										<? } //end if ?>
+										<?php } //end if ?>
 								<?}	// end loop
 							} // end else ?>
 
@@ -180,35 +180,35 @@
 		<div id="explore-more">
 			<section>
 				<article>
-				<? if (get_post_type( get_the_ID() ) == 'project') { ?>
+				<?php if (get_post_type( get_the_ID() ) == 'project') { ?>
 					<h2>ALL PROJECTS</h2>
 					<h3>Discover more projects as this one</h3>
-				<? } else { ?>
+				<?php } else { ?>
 					<h2>ALL NEWS</h2>
 					<h3>Discover more news as this one</h3>
-				<? } // end else ?>
+				<?php } // end else ?>
 				</article>
 				<div class="what-explore bigger">
-					<? if (get_post_type( get_the_ID() ) == 'project') { ?>
+					<?php if (get_post_type( get_the_ID() ) == 'project') { ?>
 						<a href="<?php echo home_url(); ?>/project">explore projects</a>
-					<? } else { ?>
+					<?php } else { ?>
 						<a href="<?php echo home_url(); ?>/category/news">explore news</a>
-				<? } // end else ?>
+				<?php } // end else ?>
 
 				</div>
 			</section>
 		</div>
 		<script type="text/javascript">
-			LAT_VIS   = '<? echo $geodata__lat ?>';
-			LONG_VIS  = '<? echo $geodata__long ?>';
-			POST_ID   = '<? echo $thispostid ?>';
-			if ('<? echo $CAT_NAME ?>' === 'projects' || '<? echo get_post_type( get_the_ID() )?>' === 'project') {
+			LAT_VIS   = '<?php echo $geodata__lat ?>';
+			LONG_VIS  = '<?php echo $geodata__long ?>';
+			POST_ID   = '<?php echo $thispostid ?>';
+			if ('<?php echo $CAT_NAME ?>' === 'projects' || '<?php echo get_post_type( get_the_ID() )?>' === 'project') {
 				document.getElementById('pic-banner').style.display = 'none';
 				document.getElementById('map').style.display 		= 'block';
-				<? if ($hasimage) { ?>
+				<?php if ($hasimage) { ?>
 					document.getElementById('map').style.display 		= 'none';
 					document.getElementById('pic-banner').style.display = 'block';
-				<? } ?>
+				<?php } ?>
 			}	
 		</script>
 <?php get_footer(); ?>

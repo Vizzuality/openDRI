@@ -118,7 +118,7 @@
 		         <!-- content.data contains the field info -->
 		         <p>{{content.data.description}}</p>
 		         <p class="meta">{{content.data.country_name}} | {{content.data.pillar}}</p>
-		     	<span class="popup-link-project"><a href="<? echo home_url(); ?>/project/{{content.data.url}}">VIEW PROJECT</a></span>
+		     	<span class="popup-link-project"><a href="<?php echo home_url(); ?>/project/{{content.data.url}}">VIEW PROJECT</a></span>
 		       </div>
 		     </div>
 		     <div class="cartodb-popup-tip-container">
@@ -177,54 +177,54 @@
 				}
 				var marker1,marker2,marker3,marker4,marker5,marker6,marker7 = null;
 				var addMarkers = function() {
-					<? 
+					<?php 
 						// $postsInall = new WP_Query( array( 'post_type' => 'project', 'category_name' => 'non-wb-countries' ) );
 						// $postsInall = $postsInall->post_count;
 					?>
-					// var postsInall = '<? echo $postsInall ?>';
+					// var postsInall = '<?php echo $postsInall ?>';
 					// marker1 = L.marker(new L.LatLng(0, 0), {icon:createLabelIcon(((postsInall.length > 1) ? "amount-of-posts-2" : "amount-of-posts"),postsInall)}).addTo(map);
 
-					<? 
+					<?php 
 						// $postsInAfrica = new WP_Query( array( 'post_type' => 'project', 'category_name' => 'africa' ) );
 						// $postsInAfrica = $postsInAfrica->post_count;
 					?>
-					// var postsInAfrica = '<? echo $postsInAfrica ?>';
+					// var postsInAfrica = '<?php echo $postsInAfrica ?>';
 					// marker2 = L.marker(new L.LatLng(7, 21), {icon:createLabelIcon((postsInAfrica.length > 1) ? "amount-of-posts-2" : "amount-of-posts",postsInAfrica)}).addTo(map);
 
-					<? 
+					<?php 
 						// $postsIneastasia = new WP_Query( array( 'post_type' => 'project', 'category_name' => 'east-asia-pacific' ) );
 						// $postsIneastasia = $postsIneastasia->post_count;
 					?>
-					// var postsIneastasia = '<? echo $postsIneastasia ?>';
+					// var postsIneastasia = '<?php echo $postsIneastasia ?>';
 					// marker3 = L.marker(new L.LatLng(35, 103), {icon:createLabelIcon((postsIneastasia.length > 1) ? "amount-of-posts-2" : "amount-of-posts",postsIneastasia)}).addTo(map);
 
-					<? 
+					<?php 
 						// $postsInEurope = new WP_Query( array( 'post_type' => 'project', 'category_name' => 'europe-and-central-asia' ) );
 						// $postsInEurope = $postsInEurope->post_count;
 					?>
-					// var postsInEurope = '<? echo $postsInEurope ?>';
+					// var postsInEurope = '<?php echo $postsInEurope ?>';
 					// marker4 = L.marker(new L.LatLng(55, 25), {icon:createLabelIcon((postsInEurope.length > 1) ? "amount-of-posts-2" : "amount-of-posts",postsInEurope)}).addTo(map);
 
-					<? 
+					<?php 
 						// $postsInlatam = new WP_Query( array( 'post_type' => 'project', 'category_name' => 'latin-america-and-caribbean' ) );
 						// $postsInlatam = $postsInlatam->post_count;
 					?>
-					// var postsInlatam = '<? echo $postsInlatam ?>';			
+					// var postsInlatam = '<?php echo $postsInlatam ?>';			
 					// marker5 = L.marker(new L.LatLng(13, -59), {icon:createLabelIcon((postsInlatam.length > 1) ? "amount-of-posts-2" : "amount-of-posts",postsInlatam)}).addTo(map);
 
-					<? 
+					<?php 
 						// $postsInmiddleeast = new WP_Query( array( 'post_type' => 'project', 'category_name' => 'middle-east-and-north-africa' ) );
 						// $postsInmiddleeast = $postsInmiddleeast->post_count;
 					?>
-					// var postsInmiddleeast = '<? echo $postsInmiddleeast ?>';
+					// var postsInmiddleeast = '<?php echo $postsInmiddleeast ?>';
 					// marker6 = L.marker(new L.LatLng(29, 41), {icon:createLabelIcon((postsInmiddleeast.length > 1) ? "amount-of-posts-2" : "amount-of-posts",postsInmiddleeast)}).addTo(map);
 
-					<? 
+					<?php 
 						// $postsInsouthasia = new WP_Query( array( 'post_type' => 'project', 'category_name' => 'south-asia' ) );
 						// $postsInsouthasia = $postsInsouthasia->post_count;
 					?>
-					// var postsInsouthasia = '<? echo $postsInsouthasia ?>';			
-					// marker7 = L.marker(new L.LatLng(27, 72), {icon:createLabelIcon((postsInsouthasia.length > 1) ? "amount-of-posts-2" : "amount-of-posts","<? echo $postsInsouthasia; ?>")}).addTo(map);
+					// var postsInsouthasia = '<?php echo $postsInsouthasia ?>';			
+					// marker7 = L.marker(new L.LatLng(27, 72), {icon:createLabelIcon((postsInsouthasia.length > 1) ? "amount-of-posts-2" : "amount-of-posts","<?php echo $postsInsouthasia; ?>")}).addTo(map);
 				}
 				var basemap = 'https://a.tiles.mapbox.com/v4/opendri.0ouhqxkv/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoib3BlbmRyaSIsImEiOiJjaWpvZjcwbTYwMHVldG9tNXlhajMwb2dyIn0.fWimK0QhrBpQVX5Zu2bWNg';
 				if (window.matchMedia("(-webkit-device-pixel-ratio: 2)").matches) {
