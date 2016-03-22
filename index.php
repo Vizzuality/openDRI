@@ -75,7 +75,7 @@
 				<div class="row-container">
 					<div class="card-third first-text">
 						<h3>projects</h3>
-						<p>OpenDRI xx projects apply the concepts of the global open data movement to the challenges of reducing vulnerability to natural hazards and the impacts of climate change. Here, projects can be browsed by country and region highlighting the context specific risk reduction goals of each initiative.</p>
+						<p>OpenDRI projects apply the concepts of the global open data movement to the challenges of reducing vulnerability to natural hazards and the impacts of climate change. Here, projects can be browsed by country and region highlighting the context specific risk reduction goals of each initiative.</p>
 						<a href="<?php echo home_url(); ?>/project"><span>view all projects</span></a>
 					</div>
 					<?php
