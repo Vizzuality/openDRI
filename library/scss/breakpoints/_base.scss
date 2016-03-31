@@ -1109,6 +1109,9 @@ POSTS & CONTENT STYLES
 	p {
 	    overflow: hidden;
 	    font-feature-settings: "liga" 0;
+	    -webkit-hyphens: none;
+		-moz-hyphens: none;
+		hyphens: none;
 	    &.wp-caption-text {
 	    	margin: 0 !important;
 		    font-style: italic !important;
