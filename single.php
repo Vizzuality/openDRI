@@ -120,21 +120,29 @@
 												</p>
 											</footer>
 										</article>
-								<?}	// end loop ?>
+								<?php }	// end loop ?>
 
 							</div>
 						</div>
 							<?php } //end check $meta ?>
-						<?
+						<?php
 							} else {
 								if (get_the_ID() == '481') return;
+								$isresource = false;
+								if (get_post_type( get_the_ID() ) == 'resource') {
+									$isresource = true;
+								} 
 						?>
 						<div id="more-content" class="index-row wrap more-content">
-							<h3>Recent news</h3>
+							<h3><?php echo ($isresource) ? 'Recent resources' : 'Recent news'; ?></h3>
 
 							<div class="row-container">
 								<?php
-									$args = array( 'numberposts' => '3', 'category' => $CAT_NAME, 'post_status' => 'publish' );
+									if ($isresource)
+										$args = array( 'numberposts' => '3', 'order' => 'DESC', 'post_type' => 'resource','post_status' => 'publish' );
+									else
+										$args = array( 'numberposts' => '3', 'category' => $CAT_NAME, 'post_status' => 'publish' );
+									$featured_col = wp_get_recent_posts( $args );
 									$recent_posts = wp_get_recent_posts( $args );
 									foreach( $recent_posts as $recent ){  // start loop
 										if ($thispostid != $recent["ID"]) {
