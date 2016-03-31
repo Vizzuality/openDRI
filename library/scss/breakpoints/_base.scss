@@ -24,6 +24,9 @@ body {
   	-webkit-font-smoothing: antialiased;
   	-moz-osx-font-smoothing: grayscale;
   	outline: none;
+  	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	hyphens: none;
 }
 
 /********************
@@ -97,7 +100,9 @@ LINK STYLES
 
 a, a:visited {
 	color: $link-color;
-
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	hyphens: none;
 	/* on hover */
 	// &:hover, &:focus {
 	// 	color: $link-hover;
@@ -127,6 +132,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	font-family: $bariol;
 	text-rendering: optimizelegibility;
 	font-weight: normal;
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	hyphens: none;
 	/*
 	if you're going to use webfonts, be sure to check your weights
 	http://css-tricks.com/watch-your-font-weight/
