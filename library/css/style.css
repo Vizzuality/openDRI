@@ -2222,7 +2222,10 @@ POSTS & CONTENT STYLES
   */ }
   .entry-content p {
     overflow: hidden;
-    font-feature-settings: "liga" 0; }
+    font-feature-settings: "liga" 0;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    hyphens: none; }
     .entry-content p.wp-caption-text {
       margin: 0 !important;
       font-style: italic !important;
