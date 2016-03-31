@@ -1262,7 +1262,10 @@ body {
   background-color: #F0F0F0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  outline: none; }
+  outline: none;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  hyphens: none; }
 
 /********************
 WORDPRESS BODY CLASSES
@@ -1329,6 +1332,9 @@ LINK STYLES
 *********************/
 a, a:visited {
   color: #fff;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  hyphens: none;
   /* on hover */
   /* on click */
   /* mobile tap color */ }
@@ -1347,6 +1353,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   font-family: "Bariol", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-rendering: optimizelegibility;
   font-weight: normal;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  hyphens: none;
   /*
   if you're going to use webfonts, be sure to check your weights
   http://css-tricks.com/watch-your-font-weight/
