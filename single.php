@@ -173,7 +173,7 @@
 											</footer>
 										</article>
 										<?php } //end if ?>
-								<?}	// end loop
+								<?php }	// end loop
 							} // end else ?>
 
 							</div>
