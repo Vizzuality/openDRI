@@ -44,7 +44,6 @@ if ( is_page( 'resources' ) ) {
 <?php } // end resources
 
 elseif ( is_page( 'about' ) ) {
-
 ?>
 			<div id="content">
 				<span class="corner-map about"></span>
