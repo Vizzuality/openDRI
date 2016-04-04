@@ -189,7 +189,7 @@ if(is_post_type_archive() && $post_type=='project') {
 									</div>
 									<div>
 										<span class="size"><?php the_date() ?></span>
-										<span class="size"><?php the_tags() ?></span>
+										<span class="size"><?php the_terms( $post->ID, 'tag', '', ' / ' ); ?></span>
 									</div>
 								</li>
 								<?php else: ?>
