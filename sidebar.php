@@ -1,6 +1,6 @@
 
 
-	<?
+	<?php
 		$meta = get_post_meta(get_the_ID(), 'resource', true);
 		if (strlen($meta) > 0) {
 	?>		
@@ -9,7 +9,7 @@
 			<div id="recent-posts-2" class="">
 				<h4 class="">Related Resources</h4>
 				<ul>
-				<?
+				<?php
 					foreach(explode("\n", $meta) as $line) {
 						$current_post = url_to_postid( $line );
 						$resource 	  = get_post($current_post);
@@ -19,11 +19,11 @@
 				<li>
 					
 					<p><a href="<?php echo $resource->guid; ?>" rel="bookmark" title="<?php echo $resource->post_title; ?>"><span class="img" style="background-image:url(<?php echo $image; ?>)"></span><i><?php echo $resource->post_title; ?></a></i></p></li>
-				<?
+				<?php
 					} // end loop
 				?>
 				</ul>
-				<?
+				<?php
 			} // end if meta
 		?>
 	</div>

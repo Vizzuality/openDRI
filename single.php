@@ -19,7 +19,7 @@
 
 					<main id="main" class="m-all -md-post" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-						<?
+						<?php
 							$cats 		= get_the_category();
 							$CAT_NAME   = $cats[0]->name;
 							$thispostid = get_the_ID();

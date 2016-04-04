@@ -13,7 +13,7 @@
                  * folder and replace the function below with the contents of the "format.php" file.
                 */
               ?>
-              <?
+              <?php
                 $meta = get_post_meta(get_the_ID(), 'resource', true);
               ?>
               <article id="post-<?php the_ID(); ?>" <?php ($meta) ? post_class('cf -odri-post has-sidebar') : post_class('cf -odri-post'); ?> role="article" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">

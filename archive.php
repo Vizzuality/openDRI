@@ -213,7 +213,7 @@ if(is_post_type_archive() && $post_type=='project') {
 										<footer class="article-footer cf">
 											<?php if ($istag) { ?>
 											<p class="byline entry-meta vcard">
-												<?
+												<?php
 													if 	($post->post_type=='post'){		   $articletype = 'news'; $linktype='/category/news';}
 													elseif ($post->post_type=='project'){  $articletype = 'project'; $linktype='/project';}
 													elseif ($post->post_type=='resource'){ $articletype = 'resource'; $linktype='/resource';}
@@ -249,7 +249,7 @@ if(is_post_type_archive() && $post_type=='project') {
 								<?php if (is_post_type_archive() && $post_type=='resource') : ?>
 									</ul>
 									<div class="m-all index-row last-resources">
-									<?
+									<?php
 										$args = array( 'numberposts' => '1', 'category' => 16, 'order' => 'DESC', 'post_type' => 'resource', 'post_status' => 'publish' );
 										$featured_col = wp_get_recent_posts( $args );
 										$image1 = '';

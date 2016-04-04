@@ -4,7 +4,7 @@
 			<h2>what is open data for resilience initiative?</h2>
 			<h3>OpenDRI shares, collects, and uses data, applying the concepts of the open data movement to reduce vulnerability to natural hazards and to climate change across the globe. Explore our project map to see where we’ve been working towards making an impact.</h3>
 			<nav>
-				<?
+				<?php
 				$titles   = ['Sharing Data','Collecting Data','Using Data'];
 				$params   = ['sharing-data','collecting-data','using-data'];
 				for ($i = 0; $i < count($titles); $i++) {
@@ -129,7 +129,7 @@
 					</div>
 				</div>
 				<div class="row-container">
-				<?
+				<?php
 					$args = array( 'numberposts' => '1', 'category' => 16, 'order' => 'DESC', 'post_type' => 'resource', 'post_status' => 'publish' );
 					$featured_col = wp_get_recent_posts( $args );
 					$image1 = '';
@@ -150,7 +150,7 @@
 			</div>
 			<div class="m-all cf index-row last-resources" role="resources" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 				<div class="row-container">
-				<?
+				<?php
 					$args = array( 'numberposts' => '1', 'category' => 16,  'order' => 'DESC', 'offset' => '1', 'post_type' => 'resource','post_status' => 'publish' );
 					$featured_col = wp_get_recent_posts( $args );
 					foreach( $featured_col as $featured ) {
@@ -166,7 +166,7 @@
 					</a>
 				<?php } ?>
 					<ul class="resource-list home">
-						<?
+						<?php
 						$args = array( 'numberposts' => '4', 'category' => 16, 'order' => 'DESC', 'post_type' => 'resource','post_status' => 'publish' );
 						$featured_col = wp_get_recent_posts( $args );
 						foreach( $featured_col as $featured ) {

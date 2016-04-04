@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<?
+<?php
 if ( is_page( 'resources' ) ) {
 ?>
 			<div id="content">
