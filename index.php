@@ -61,7 +61,7 @@
 							</p>
 						</footer>
 					</article>
-					<? } ?>
+					<?php } ?>
 				</div>
 				<div class="card-third twitter-timeline-container">
 			        <div class="twitter mod-tweets">
@@ -117,7 +117,7 @@
 							</p>
 						</footer>
 					</article>
-					<? } ?>
+					<?php } ?>
 				</div>
 			</div>
 			<div id="resources" class="m-all index-row" role="resources" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
@@ -145,7 +145,7 @@
 							</section>
 						</article>
 					</a>
-				<? } ?>
+				<?php } ?>
 				</div>
 			</div>
 			<div class="m-all cf index-row last-resources" role="resources" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
@@ -164,7 +164,7 @@
 							</section>
 						</article>
 					</a>
-				<? } ?>
+				<?php } ?>
 					<ul class="resource-list home">
 						<?
 						$args = array( 'numberposts' => '4', 'category' => 16, 'order' => 'DESC', 'post_type' => 'resource','post_status' => 'publish' );
@@ -174,16 +174,16 @@
 						<li>
 							<a href="<?php echo $featured["guid"]; ?>">
 								<p><span class="title"><?php echo $featured["post_title"]; ?></span><span class="format"></span></p>
-								<p><span class="name"></span><span class="size"><? echo date('d M', strtotime($featured['post_date'])) ?></span>
+								<p><span class="name"></span><span class="size"><?php echo date('d M', strtotime($featured['post_date'])) ?></span>
 								</p>
 							</a>
 						</li>
-					<? } // end foreach ?>
+					<?php } // end foreach ?>
 					</ul>
 				</div>
 			</div>
 			<script type="text/javascript">
-			document.getElementsByTagName('head')[0].innerHTML += '<style>#firstFeatured:after{background-image:url(<? echo $image1 ?>) !important;}#secondFeatured:after{background-image:url(<? echo $image2 ?>) !important;}</style>';
+			document.getElementsByTagName('head')[0].innerHTML += '<style>#firstFeatured:after{background-image:url(<?php echo $image1 ?>) !important;}#secondFeatured:after{background-image:url(<?php echo $image2 ?>) !important;}</style>';
 			</script>
 			<?php /* get_sidebar(); */ ?>
 		</div>

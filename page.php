@@ -41,7 +41,7 @@ if ( is_page( 'resources' ) ) {
 				</div>
 
 			</div>
-<? } // end resources
+<?php } // end resources
 
 elseif ( is_page( 'about' ) ) {
 ?>
@@ -63,7 +63,7 @@ elseif ( is_page( 'about' ) ) {
 									endwhile; endif; ?></div>
 
 			</div>
-<? } // end about 
+<?php } // end about 
 	// default
 	else {
 		?>
@@ -71,7 +71,7 @@ elseif ( is_page( 'about' ) ) {
 
 				<div id="inner-content" class="wrap cf">
 			<h1><?php echo get_the_title(); ?></h1>
-		<? if (have_posts()) : while (have_posts()) : the_post();
+		<?php if (have_posts()) : while (have_posts()) : the_post();
 				the_content();
 			endwhile;
 		endif;
