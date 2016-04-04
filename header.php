@@ -47,11 +47,11 @@
 	</head>
 
 	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
-		<div id="container" class="<?php if(is_home() === false){?>no-home<?php }?>">
+		<div id="container" class="<?php if(is_home() === false){?>no-home<?php } ?>">
 			<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
  				<div id="inner-header" class="wrap cf">
 					<p id="logo" class="h1" itemscope itemtype="http://schema.org/Organization">
-						<a href="<?php echo home_url(); ?>" rel="nofollow"> <img src="<?php echo get_template_directory_uri(); ?>/logo<?php if(is_home()) {?>-extended<?php }?>.svg" alt="<?php bloginfo('name'); ?>"> </a>
+						<a href="<?php echo home_url(); ?>" rel="nofollow"> <img src="<?php echo get_template_directory_uri(); ?>/logo<?php if(is_home()) {?>-extended<?php } ?>.svg" alt="<?php bloginfo('name'); ?>"> </a>
 					</p>
 					<span class='hr'></span>
 					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
