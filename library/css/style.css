@@ -1902,7 +1902,7 @@ POSTS & CONTENT STYLES
           text-transform: uppercase; }
           .index-row .resource-list li div .name:first-child,
           .index-row .resource-list li div .size:first-child {
-            width: 40%; }
+            min-width: 40%; }
           .index-row .resource-list li div .name a,
           .index-row .resource-list li div .size a {
             color: rgba(85, 85, 85, 0.5);
