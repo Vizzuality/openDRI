@@ -178,10 +178,7 @@ if(is_post_type_archive() && $post_type=='project') {
 										$featured_col = wp_get_recent_posts( $args );
 										$image1 = '';
 										$image2 = '';
-										$image3 = '';
-										$image4 = '';
 										foreach( $featured_col as $featured ) {
-											var_dump($featured["ID"]);
 											$image = wp_get_attachment_image_src( get_post_thumbnail_id( $featured["ID"] ), 'single-post-thumbnail' );
 											$image1 = ($image[0]) ? $image[0] : get_template_directory_uri().'/library/images/resource-placeholder_1024.jpg';
 									?>
@@ -286,8 +283,8 @@ if(is_post_type_archive() && $post_type=='project') {
 									</ul>
 									<div class="m-all index-row last-resources">
 									<?php
-										$image1 = '';
-										$image2 = '';
+										$image3= '';
+										$image4= '';
 											$image = wp_get_attachment_image_src( get_post_thumbnail_id( 434 ), 'single-post-thumbnail' );
 											$image3 = ($image[0]) ? $image[0] : get_template_directory_uri().'/library/images/resource-placeholder_1024.jpg';
 									?>
