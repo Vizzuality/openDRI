@@ -1057,7 +1057,7 @@
 			});
 		</script>
 		<script type="text/javascript">
-		if ($(window).width() > 1024) {
+		if ($(window).width() > 1024 && !$('body').hasClass('post-type-archive-resource')) {
 			if (!$('body').hasClass('single') && location.pathname.includes('/project') && ($('article').length + 1 ) % 3 == 2) {
 				$('#content article').last().after('<article class="index-row article project" style="visibility:hidden"> </article>');
 			}else if ($('body').hasClass('single') && ($('#more-content article').length) % 2 == 0) {
