@@ -178,7 +178,10 @@ if(is_post_type_archive() && $post_type=='project') {
 										$featured_col = wp_get_recent_posts( $args );
 										$image1 = '';
 										$image2 = '';
+										$image3 = '';
+										$image4 = '';
 										foreach( $featured_col as $featured ) {
+											var_dump($featured["ID"]);
 											$image = wp_get_attachment_image_src( get_post_thumbnail_id( $featured["ID"] ), 'single-post-thumbnail' );
 											$image1 = ($image[0]) ? $image[0] : get_template_directory_uri().'/library/images/resource-placeholder_1024.jpg';
 									?>
@@ -286,10 +289,10 @@ if(is_post_type_archive() && $post_type=='project') {
 										$image1 = '';
 										$image2 = '';
 											$image = wp_get_attachment_image_src( get_post_thumbnail_id( 434 ), 'single-post-thumbnail' );
-											$image1 = ($image[0]) ? $image[0] : get_template_directory_uri().'/library/images/resource-placeholder_1024.jpg';
+											$image3 = ($image[0]) ? $image[0] : get_template_directory_uri().'/library/images/resource-placeholder_1024.jpg';
 									?>
 										<a href="<?php echo esc_url( get_permalink(434) ); ?>" >
-											<article class="resource-cont"  id="firstFeatured">
+											<article class="resource-cont"  id="thirdFeatured">
 												<section>
 													<h3>Open Data for Resilience Initiative Field Guide</h3>
 												</section>
@@ -297,10 +300,10 @@ if(is_post_type_archive() && $post_type=='project') {
 										</a>
 									<?php  
 											$image = wp_get_attachment_image_src( get_post_thumbnail_id( 449 ), 'single-post-thumbnail' );
-											$image2 = ($image[0]) ? $image[0] : get_template_directory_uri().'/library/images/resource-placeholder_1024.jpg';
+											$image4 = ($image[0]) ? $image[0] : get_template_directory_uri().'/library/images/resource-placeholder_1024.jpg';
 									 ?>
 										<a href="<?php echo esc_url( get_permalink(449) ); ?>"  >
-											<article class="resource-cont --scnd-img"  id="secondFeatured">
+											<article class="resource-cont --scnd-img"  id="fourthFeatured">
 												<section>
 													<h3>Planning An Open Cities Mapping Project</h3>
 												</section>
@@ -308,7 +311,7 @@ if(is_post_type_archive() && $post_type=='project') {
 										</a>
 									</div>
 									<script type="text/javascript">
-										document.getElementsByTagName('head')[0].innerHTML += '<style>#firstFeatured:after{background-image:url(<?php echo $image1 ?>) !important;}#secondFeatured:after{background-image:url(<?php echo $image2 ?>) !important;}</style>';
+										document.getElementsByTagName('head')[0].innerHTML += '<style>#firstFeatured:after{background-image:url(<?php echo $image1 ?>) !important;}#secondFeatured:after{background-image:url(<?php echo $image2 ?>) !important;}#thirdFeatured:after{background-image:url(<?php echo $image3 ?>) !important;}#fourthFeatured:after{background-image:url(<?php echo $image4 ?>) !important;}</style>';
 									</script>
 								<?php endif; ?>
 							</div>
