@@ -747,11 +747,12 @@ POSTS & CONTENT STYLES
 	    		.name,
 	    		.size {
 	    			font-size: 13px;
-	    			color: rgba(#555555, 0.5);
+	    			color: #555;
 	    			text-transform: uppercase;
 	    			a {
-	    				color: #1477c9;
+						color: rgba(85,85,85,0.5);
 	    				text-decoration: none;
+	    				font-size: 11px;
 	    			}
 	    		}
 		    }
