@@ -1898,12 +1898,13 @@ POSTS & CONTENT STYLES
         .index-row .resource-list li div .name,
         .index-row .resource-list li div .size {
           font-size: 13px;
-          color: rgba(85, 85, 85, 0.5);
+          color: #555;
           text-transform: uppercase; }
           .index-row .resource-list li div .name a,
           .index-row .resource-list li div .size a {
-            color: #1477c9;
-            text-decoration: none; }
+            color: rgba(85, 85, 85, 0.5);
+            text-decoration: none;
+            font-size: 11px; }
     .index-row .resource-list.home li {
       margin: 0 -20px;
       padding: 5px 20px;
