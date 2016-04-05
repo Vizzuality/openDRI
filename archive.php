@@ -250,32 +250,26 @@ if(is_post_type_archive() && $post_type=='project') {
 									</ul>
 									<div class="m-all index-row last-resources">
 									<?php
-										$args = array( 'numberposts' => '1', 'category' => 16, 'order' => 'DESC', 'post_type' => 'resource', 'post_status' => 'publish' );
-										$featured_col = wp_get_recent_posts( $args );
 										$image1 = '';
 										$image2 = '';
-										foreach( $featured_col as $featured ) {
-											$image = wp_get_attachment_image_src( get_post_thumbnail_id( $featured["ID"] ), 'single-post-thumbnail' );
+											$image = wp_get_attachment_image_src( get_post_thumbnail_id( 434 ), 'single-post-thumbnail' );
 											$image1 = ($image[0]) ? $image[0] : get_template_directory_uri().'/library/images/resource-placeholder_1024.jpg';
 									?>
-										<a href="<?php echo $featured["guid"]; ?>" >
+										<a href="<?php echo esc_url( get_permalink(434) ); ?>" >
 											<article class="resource-cont"  id="firstFeatured">
 												<section>
-													<h3><?php echo $featured["post_title"]; ?></h3>
+													<h3>Open Data for Resilience Initiative Field Guide</h3>
 												</section>
 											</article>
 										</a>
-									<?php } 
-										$args = array( 'numberposts' => '1', 'category' => 16,  'order' => 'DESC', 'offset' => '1', 'post_type' => 'resource', 'post_status' => 'publish' );
-										$featured_col = wp_get_recent_posts( $args );
-										foreach( $featured_col as $featured ) {
-											$image = wp_get_attachment_image_src( get_post_thumbnail_id( $featured["ID"] ), 'single-post-thumbnail' );
+									<?php  
+											$image = wp_get_attachment_image_src( get_post_thumbnail_id( 449 ), 'single-post-thumbnail' );
 											$image2 = ($image[0]) ? $image[0] : get_template_directory_uri().'/library/images/resource-placeholder_1024.jpg';
 									 ?>
-										<a href="<?php echo $featured["guid"]; ?>"  >
+										<a href="<?php echo esc_url( get_permalink(449) ); ?>"  >
 											<article class="resource-cont --scnd-img"  id="secondFeatured">
 												<section>
-													<h3><?php echo $featured["post_title"]; ?></h3>
+													<h3>Planning An Open Cities Mapping Project</h3>
 												</section>
 											</article>
 										</a>
