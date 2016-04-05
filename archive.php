@@ -273,7 +273,6 @@ if(is_post_type_archive() && $post_type=='project') {
 												</section>
 											</article>
 										</a>
-									<?php } ?>
 									</div>
 									<script type="text/javascript">
 										document.getElementsByTagName('head')[0].innerHTML += '<style>#firstFeatured:after{background-image:url(<?php echo $image1 ?>) !important;}#secondFeatured:after{background-image:url(<?php echo $image2 ?>) !important;}</style>';
