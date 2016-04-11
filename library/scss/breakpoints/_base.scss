@@ -1612,6 +1612,7 @@ margin: 0;
 		display: flex;
 		justify-content: space-between;
 		width: 100%;
+		flex-wrap: wrap;
 		.p-info {
 			display: inline;
 			> i {
@@ -2762,7 +2763,6 @@ div.cartodb-popup .cartodb-popup-close-button {
   .page .about-content .card-third ol li {width: 100%;}
   .page .about-content .card-third p { -webkit-columns: 1; columns: 1;}
   .blue-bar-top .wrapper.filters span.title {display: none;}
-  .archive .p-info h4, .page .p-info h4 {width: 255px; font-size: 14px;}
   div#principles.m-all.cf.index-row.about-content { height: 700px; }
   div#principles.m-all.cf.index-row.about-content ol { display: block;}
   .blue-bar-top .wrapper span.current {color: #1477c9;}
@@ -2839,7 +2839,6 @@ div.cartodb-popup .cartodb-popup-close-button {
 	.blue-bar-top .wrapper .region-filter li::first-child {padding: 0;}
 	.blue-bar-top .wrapper .region-filter input { position: relative; top: -10px;}
 	.blue-bar-top.fixed {  position: inherit; top: inherit;  width: inherit; opacity: inherit;}
-	.archive .p-info h4, .page .p-info h4 { width: 100%; top: -25px;}
 	.index-row .row-container, .page .index-row .row-container {-webkit-flex-direction: column; flex-direction: column; align-items: center; width: 100%;}
 	.archive .blue-bar-top {display: none;}
 	.archive .blue-bar-top-m {display: block;}
@@ -2987,4 +2986,5 @@ div.cartodb-popup .cartodb-popup-close-button {
 	.search #main > h1, .tag #main > h1 {margin: 0	0 20px;}
 	.search  #main > p, .tag #main > p {display: none;}
 	.search #main .row-container article, .tag #main .row-container article{ width: 100%;}
+	.page .pillars-list-about h4, .page .pillars-list-about p { width: 100%;}
 }
