@@ -2728,9 +2728,10 @@ POSTS & CONTENT STYLES
     .archive .pillars-list-about .p-info h4,
     .page .pillars-list-about .p-info h4 {
       position: relative;
-      margin: 0 0 10px; }
-    .archive .pillars-list-about .p-info a,
-    .page .pillars-list-about .p-info a {
+      margin: 0 0 10px;
+      text-align: center; }
+    .archive .pillars-list-about .p-info .explore-projects,
+    .page .pillars-list-about .p-info .explore-projects {
       height: 50px;
       display: block;
       width: 175px;
