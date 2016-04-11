@@ -2729,6 +2729,23 @@ POSTS & CONTENT STYLES
     .page .pillars-list-about .p-info h4 {
       position: relative;
       margin: 0 0 10px; }
+    .archive .pillars-list-about .p-info a,
+    .page .pillars-list-about .p-info a {
+      height: 50px;
+      display: block;
+      width: 175px;
+      line-height: 50px;
+      text-decoration: none;
+      background-color: #db0033;
+      color: #fff;
+      font-size: 15px;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 0.5px;
+      margin: 20px 0;
+      font-family: "Bariol", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: bold;
+      box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.1); }
 
 .page .index-row.contents-img {
   background-image: url("../images/about-header_1024.jpg");
