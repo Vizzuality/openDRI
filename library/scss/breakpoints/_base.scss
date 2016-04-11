@@ -1605,6 +1605,38 @@ margin: 0;
 			height: 270px;
 		}
 	}
+	.pillars-list-about {
+		display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+		display: -ms-flexbox;      /* TWEENER - IE 10 */
+		display: -webkit-flex;     /* NEW - Chrome */
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		.p-info {
+			display: inline;
+			> i {
+					height: 110px;
+				    background-size: 50px;
+				    width: 110px;
+				    border-radius: 100%;
+				    background-repeat: no-repeat;
+				    border: 2px solid #1477c9;
+				    background-position: 50%, 50%;
+				    display: block;
+				    margin: 0px auto 20px;
+				    $class-slug: img-pile !default;
+					@for $i from 1 through 4 {
+					  &.#{$class-slug}-#{$i} {
+					    background-image: url("../images/pile-"+ $i +".png")
+					  }
+					}
+			    }
+			h4 {
+				position: relative;
+				margin: 0 0 10px;
+			}
+		}
+	}
 }
 .page .index-row.contents-img {
 	background-image: url('../images/about-header_1024.jpg');
