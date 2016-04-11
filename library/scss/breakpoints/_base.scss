@@ -1635,6 +1635,23 @@ margin: 0;
 				position: relative;
 				margin: 0 0 10px;
 			}
+			a {
+				height: 50px;
+			    display: block;
+			    width: 175px;
+			    line-height: 50px;
+			    text-decoration: none;
+			    background-color: #db0033;
+			    color: #fff;
+			    font-size: 15px;
+			    text-transform: uppercase;
+			    text-align: center;
+			    letter-spacing: 0.5px;
+			    margin: 20px 0;
+			    font-family: $bariol;
+			    font-weight: bold;
+			    box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.1);
+			}
 		}
 	}
 }
