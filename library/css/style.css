@@ -2688,6 +2688,47 @@ POSTS & CONTENT STYLES
   .page .index-row .resource-cont {
     width: 485px;
     height: 270px; }
+.archive .pillars-list-about,
+.page .pillars-list-about {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
+  .archive .pillars-list-about .p-info,
+  .page .pillars-list-about .p-info {
+    display: inline; }
+    .archive .pillars-list-about .p-info > i,
+    .page .pillars-list-about .p-info > i {
+      height: 110px;
+      background-size: 50px;
+      width: 110px;
+      border-radius: 100%;
+      background-repeat: no-repeat;
+      border: 2px solid #1477c9;
+      background-position: 50%, 50%;
+      display: block;
+      margin: 0px auto 20px; }
+      .archive .pillars-list-about .p-info > i.img-pile-1,
+      .page .pillars-list-about .p-info > i.img-pile-1 {
+        background-image: url("../images/pile-1.png"); }
+      .archive .pillars-list-about .p-info > i.img-pile-2,
+      .page .pillars-list-about .p-info > i.img-pile-2 {
+        background-image: url("../images/pile-2.png"); }
+      .archive .pillars-list-about .p-info > i.img-pile-3,
+      .page .pillars-list-about .p-info > i.img-pile-3 {
+        background-image: url("../images/pile-3.png"); }
+      .archive .pillars-list-about .p-info > i.img-pile-4,
+      .page .pillars-list-about .p-info > i.img-pile-4 {
+        background-image: url("../images/pile-4.png"); }
+    .archive .pillars-list-about .p-info h4,
+    .page .pillars-list-about .p-info h4 {
+      position: relative;
+      margin: 0 0 10px; }
 
 .page .index-row.contents-img {
   background-image: url("../images/about-header_1024.jpg");
