@@ -2698,7 +2698,8 @@ POSTS & CONTENT STYLES
   /* NEW - Chrome */
   display: flex;
   justify-content: space-between;
-  width: 100%; }
+  width: 100%;
+  flex-wrap: wrap; }
   .archive .pillars-list-about .p-info,
   .page .pillars-list-about .p-info {
     display: inline; }
@@ -3846,10 +3847,6 @@ div.cartodb-popup .cartodb-popup-close-button {
   .blue-bar-top .wrapper.filters span.title {
     display: none; }
 
-  .archive .p-info h4, .page .p-info h4 {
-    width: 255px;
-    font-size: 14px; }
-
   div#principles.m-all.cf.index-row.about-content, div#principles.m-all.index-row.about-content.comment-respond {
     height: 700px; }
 
@@ -4156,10 +4153,6 @@ div.cartodb-popup .cartodb-popup-close-button {
     top: inherit;
     width: inherit;
     opacity: inherit; }
-
-  .archive .p-info h4, .page .p-info h4 {
-    width: 100%;
-    top: -25px; }
 
   .index-row .row-container, .page .index-row .row-container {
     -webkit-flex-direction: column;
@@ -4564,6 +4557,9 @@ div.cartodb-popup .cartodb-popup-close-button {
     display: none; }
 
   .search #main .row-container article, .tag #main .row-container article {
+    width: 100%; }
+
+  .page .pillars-list-about h4, .page .pillars-list-about p {
     width: 100%; } }
 /*********************
 LARGER MOBILE DEVICES
