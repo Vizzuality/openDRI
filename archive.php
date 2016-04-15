@@ -97,7 +97,7 @@ if(is_post_type_archive() && $post_type=='project') {
 	 $title === 'Non WB Countries' 				||
 	 $title === 'South Asia')) {
 	$display_navi = true;
-	$description = 'As the global need for Open Data and the knowledge base around it grow, it is important to keep informed so that communities can leverage this momentum and be better served. In this section of our online platform, find news highlighting action around the movement, notes on relevant software releases, as well as project updates from our teams in the field.';
+	$description = ;
 
 	echo '	<div class="blue-bar-top" id="blue-bar">
 				<div class="wrap wrapper filters">
