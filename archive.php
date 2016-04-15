@@ -13,7 +13,7 @@ global $post_type;
 
 if(is_post_type_archive() && $post_type=='project') {
 	$title = 'Projects';
-	$description = 'OpenDRI projects apply the concepts of the global open data movement to the challenges of reducing vulnerability to natural hazards and the impacts of climate change. Here, projects can be browsed by country and region highlighting the context specific risk reduction goals of each initiative.';
+	$description = ;
 	$postsInAfrica = get_term_by('slug','africa','category');
 	$postsInAfrica = $postsInAfrica->count;
 	$postsIneastasia = get_term_by('slug','east-asia-pacific','category');
