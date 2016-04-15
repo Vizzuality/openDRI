@@ -27,7 +27,6 @@
 				<div class="row-container">
 					<div class="card-third first-text">
 						<h3>news</h3>
-						<p>As the global need for Open Data and the knowledge base around it grow, it is important to keep informed so that communities can leverage this momentum and be better served. In this section of our online platform, find news highlighting action around the movement, notes on relevant software releases, as well as project updates from our teams in the field.</p>
 						<a href="<?php echo home_url(); ?>/category/news"><span>view all news</span></a>
 					</div>
 					<?php
