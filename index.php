@@ -35,8 +35,8 @@
 						foreach( $recent_posts as $recent ){  // start loop
 					?>
 					<article id="post-<?php echo $recent["ID"]; ?>" <?php post_class( 'cf' ); ?> role="article">
-						<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $recent["ID"] ), 'single-post-thumbnail' );
-							$image = ($image[0]) ? $image[0] : get_template_directory_uri().'/library/images/red-cross.jpg';
+						<?php $image = get_post_meta($recent["ID"], 'thumbnailPic', true);
+							$image = ($image[0]) ? $image : get_template_directory_uri().'/library/images/red-cross.jpg';
 						?>
             			<a href="<?php echo $recent["guid"]; ?>" rel="bookmark" title="<?php echo $recent["post_title"]; ?>"><span class="img" style="background-image:url(<?php echo $image; ?>)"></span></a>
 
@@ -81,8 +81,8 @@
 						foreach( $recent_posts as $recent ){  // start loop
 					?>
 					<article id="post-<?php echo $recent["ID"]; ?>" <?php post_class( 'cf' ); ?> role="article">
-						<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $recent["ID"] ), 'single-post-thumbnail' );
-							$image = ($image[0]) ? $image[0] : get_template_directory_uri().'/library/images/red-cross.jpg';
+						<?php $image = get_post_meta($recent["ID"], 'thumbnailPic', true);
+							$image = ($image[0]) ? $image : get_template_directory_uri().'/library/images/red-cross.jpg';
 						?>
             			<a href="<?php echo $recent["guid"]; ?>" rel="bookmark" title="<?php echo $recent["post_title"]; ?>"><span class="img" style="background-image:url(<?php echo $image; ?>)"></span></a>
 
@@ -132,8 +132,8 @@
 					$image1 = '';
 					$image2 = '';
 					foreach( $featured_col as $featured ) {
-						$image = wp_get_attachment_image_src( get_post_thumbnail_id( $featured["ID"] ), 'single-post-thumbnail' );
-						$image1 = $image[0];
+						$image = get_post_meta($recent["ID"], 'thumbnailPic', true);
+						$image1 = $image;
 				?>
 					<a href="<?php echo $featured["guid"]; ?>">
 						<article class="resource-cont"  id="firstFeatured">
@@ -151,8 +151,8 @@
 					$args = array( 'numberposts' => '1', 'category' => 16,  'order' => 'DESC', 'offset' => '1', 'post_type' => 'resource','post_status' => 'publish' );
 					$featured_col = wp_get_recent_posts( $args );
 					foreach( $featured_col as $featured ) {
-						$image = wp_get_attachment_image_src( get_post_thumbnail_id( $featured["ID"] ), 'single-post-thumbnail' );
-						$image2 = $image[0];
+						$image = get_post_meta($recent["ID"], 'thumbnailPic', true);
+						$image2 = $image;
 				 ?>
 					<a href="<?php echo $featured["guid"]; ?>" >
 						<article class="resource-cont --scnd-img"  id="secondFeatured">
