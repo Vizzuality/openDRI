@@ -175,8 +175,8 @@ if(is_post_type_archive() && $post_type=='project') {
 										$image1 = '';
 										$image2 = '';
 										foreach( $featured_col as $featured ) {
-											$image = wp_get_attachment_image_src( get_post_thumbnail_id( $featured["ID"] ), 'single-post-thumbnail' );
-											$image1 = ($image[0]) ? $image[0] : get_template_directory_uri().'/library/images/resource-placeholder_1024.jpg';
+											$image = get_post_meta($featured["ID"], 'thumbnailPic', true);
+											$image1 = ($image[0]) ? $image : get_template_directory_uri().'/library/images/resource-placeholder_1024.jpg';
 									?>
 										<a href="<?php echo $featured["guid"]; ?>" >
 											<article class="resource-cont"  id="firstFeatured">
@@ -189,8 +189,8 @@ if(is_post_type_archive() && $post_type=='project') {
 										$args = array( 'numberposts' => '1', 'category' => 16,  'order' => 'DESC', 'offset' => '1', 'post_type' => 'resource', 'post_status' => 'publish' );
 										$featured_col = wp_get_recent_posts( $args );
 										foreach( $featured_col as $featured ) {
-											$image = wp_get_attachment_image_src( get_post_thumbnail_id( $featured["ID"] ), 'single-post-thumbnail' );
-											$image2 = ($image[0]) ? $image[0] : get_template_directory_uri().'/library/images/resource-placeholder_1024.jpg';
+											$image = get_post_meta($featured["ID"], 'thumbnailPic', true);
+											$image2 = ($image[0]) ? $image : get_template_directory_uri().'/library/images/resource-placeholder_1024.jpg';
 									 ?>
 										<a href="<?php echo $featured["guid"]; ?>"  >
 											<article class="resource-cont --scnd-img"  id="secondFeatured">
@@ -224,12 +224,12 @@ if(is_post_type_archive() && $post_type=='project') {
 								<?php else: ?>
 									<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf '); ?> role="article">
 										<?php 
-										$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); 
+										$image = get_post_meta($post->ID, 'thumbnailPic', true);
 										$placeholder = '/library/images/red-cross.jpg';
 										if ($post->post_type == 'resource') {
 											$placeholder = '/library/images/resource-placeholder_1024.jpg';
 										}
-										$image = ($image[0]) ? $image[0] : get_template_directory_uri().$placeholder;
+										$image = ($image[0]) ? $image : get_template_directory_uri().$placeholder;
 										?>
 		            					<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><span class="img" style="background-image:url(<?php echo $image; ?>)"></span></a>
 
@@ -281,8 +281,8 @@ if(is_post_type_archive() && $post_type=='project') {
 									<?php
 										$image3= '';
 										$image4= '';
-											$image = wp_get_attachment_image_src( get_post_thumbnail_id( 434 ), 'single-post-thumbnail' );
-											$image3 = ($image[0]) ? $image[0] : get_template_directory_uri().'/library/images/resource-placeholder_1024.jpg';
+											get_post_meta(434, 'thumbnailPic', true);
+											$image3 = ($image[0]) ? $image : get_template_directory_uri().'/library/images/resource-placeholder_1024.jpg';
 									?>
 										<a href="<?php echo esc_url( get_permalink(434) ); ?>" >
 											<article class="resource-cont"  id="thirdFeatured">
@@ -292,8 +292,8 @@ if(is_post_type_archive() && $post_type=='project') {
 											</article>
 										</a>
 									<?php  
-											$image = wp_get_attachment_image_src( get_post_thumbnail_id( 449 ), 'single-post-thumbnail' );
-											$image4 = ($image[0]) ? $image[0] : get_template_directory_uri().'/library/images/resource-placeholder_1024.jpg';
+											$image = get_post_meta(449, 'thumbnailPic', true);
+											$image4 = ($image[0]) ? $image : get_template_directory_uri().'/library/images/resource-placeholder_1024.jpg';
 									 ?>
 										<a href="<?php echo esc_url( get_permalink(449) ); ?>"  >
 											<article class="resource-cont --scnd-img"  id="fourthFeatured">
