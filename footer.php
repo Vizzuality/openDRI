@@ -140,7 +140,7 @@
 				$filterPosts  = $('.type-project'),
 				filterRegion  = '',
 				filterPillar  = '',
-				cartocss = cartocss
+				cartocss = "#wp_projects{ marker-file: url(https://s3.amazonaws.com/f.cl.ly/items/3s301k2k3m2P450n1A2A/marker@2x.png); marker-fill-opacity: 1; marker-allow-overlap: true; marker-width:26;}";
 		    function init(){
 		    	if ($(window).width() <= 768 && $('body').hasClass('archive')) {
 		    		$('.blue-bar-top').remove();
