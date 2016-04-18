@@ -13,7 +13,7 @@ global $post_type;
 
 if(is_post_type_archive() && $post_type=='project') {
 	$title = 'Projects';
-	$description = ;
+	$description = '';
 	$postsInAfrica = get_term_by('slug','africa','category');
 	$postsInAfrica = $postsInAfrica->count;
 	$postsIneastasia = get_term_by('slug','east-asia-pacific','category');
@@ -97,7 +97,7 @@ if(is_post_type_archive() && $post_type=='project') {
 	 $title === 'Non WB Countries' 				||
 	 $title === 'South Asia')) {
 	$display_navi = true;
-	$description = ;
+	$description = '';
 
 	echo '	<div class="blue-bar-top" id="blue-bar">
 				<div class="wrap wrapper filters">
