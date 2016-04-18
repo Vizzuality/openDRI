@@ -2125,6 +2125,26 @@ POSTS & CONTENT STYLES
     .hentry.-odri-post.has-sidebar {
       width: 81.4%;
       display: inline-block; }
+    .hentry.-odri-post nav {
+      display: block;
+      width: 100%;
+      height: 30px;
+      margin: 0px 0 40px;
+      border-bottom: 3px solid rgba(38, 62, 87, 0.1);
+      padding: 0 0 30px; }
+      .hentry.-odri-post nav a {
+        font-size: 15px;
+        letter-spacing: 0.5px;
+        color: #1477c9;
+        font-family: "Bariol", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: bold; }
+        .hentry.-odri-post nav a img {
+          transform: rotate(90deg);
+          position: relative;
+          top: -2px;
+          margin: 0 4px 0 0; }
     .hentry.-odri-post h1 {
       color: #1477c9;
       font-size: 48px;
