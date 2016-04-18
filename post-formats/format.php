@@ -15,8 +15,15 @@
               ?>
               <?php
                 $meta = get_post_meta(get_the_ID(), 'resource', true);
+                $post_type = get_post_type();
+                $explore_url = home_url().'/'.$post_type;
+                if ($post_type == 'post') {
+                  $post_type = 'new';
+                  $explore_url = home_url().'/category/'.$post_type.'s';
+                }
               ?>
               <article id="post-<?php the_ID(); ?>" <?php ($meta) ? post_class('cf -odri-post has-sidebar') : post_class('cf -odri-post'); ?> role="article" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+                  <nav><a href="<?php echo $explore_url; ?> "><img src="<?php echo home_url(); ?>/wp-content/themes/openDRI/library/images/dropdown-b.svg"> explore <?php echo $post_type; ?>s</a></nav>
                   <h1 class="entry-title single-title" itemprop="headline" rel="bookmark"><?php the_title(); ?></h1>
 
                   <p class="byline entry-meta vcard">
