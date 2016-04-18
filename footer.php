@@ -150,8 +150,6 @@
 		    	if ($('#map').length == 0) return;
 				if ( !!LAT_VIS && !!LONG_VIS ) {
 					map = new L.Map('map', {
-						continuousWorld: false,
-						noWrap: true,
 						center : [LAT_VIS,LONG_VIS],
 						zoom: 5,
 						zoomControl: false, 
@@ -159,10 +157,8 @@
 					})
 				} else {
 					map = new L.Map('map', { 
-					continuousWorld: false,
-					noWrap: true,
 			        center: [30,15],
-			        zoom: ($(window).width() <= 768) ? 1 : 3,
+			        zoom: ($(window).width() <= 768) ? 1 : 2,
 			        minZoom: 2,
 			        zoomControl: false,
 			        scrollWheelZoom: false,
@@ -230,7 +226,7 @@
 				if (window.matchMedia("(-webkit-device-pixel-ratio: 2)").matches) {
 				  basemap = 'https://a.tiles.mapbox.com/v4/opendri.0ouhqxkv/{z}/{x}/{y}@2x.png?access_token=pk.eyJ1Ijoib3BlbmRyaSIsImEiOiJjaWpvZjcwbTYwMHVldG9tNXlhajMwb2dyIn0.fWimK0QhrBpQVX5Zu2bWNg';
 				}
-				L.tileLayer(basemap, { noWrap: true
+				L.tileLayer(basemap, { noWrap: false
 				}).addTo(map);
 				// addMarkers();
 
