@@ -1423,11 +1423,12 @@ HEADER STYLES
       cursor: pointer;
       height: 24px; }
       .header nav span.current {
-        box-shadow: 0px -5px 0 #0475cc;
-        height: 30px;
-        line-height: 70px;
-        top: -19px;
-        position: relative; }
+        box-shadow: 0px 3px 0 #0475cc;
+        top: 1px;
+        color: #0475cc;
+        padding-bottom: 26px; }
+        .header nav span.current a:hover {
+          color: #0475cc; }
     .header nav a {
       text-decoration: none;
       color: inherit;
@@ -4054,7 +4055,11 @@ div.cartodb-popup .cartodb-popup-close-button {
 
   .header nav span {
     font-size: 11px;
-    line-height: 20px; }
+    line-height: 20px;
+    height: 20px; }
+
+  .header nav span.current {
+    padding-bottom: 0; }
 
   .header nav span.float-center {
     position: relative;
@@ -4063,11 +4068,6 @@ div.cartodb-popup .cartodb-popup-close-button {
 
   .header nav a:hover:before {
     content: none; }
-
-  .header nav span.current {
-    height: 12px;
-    line-height: 26px;
-    top: -9px; }
 
   .home #map-fake .what-list {
     width: 100%;
