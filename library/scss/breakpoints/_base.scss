@@ -199,9 +199,8 @@ HEADER STYLES
 			display: inline-flex;
 			justify-content: space-between;
 		    position: relative;
-		    top: 1px;
-    		color: #0475cc;
-    		padding-bottom: 26px;	
+		    float: right;
+		    height: 100%;
 		}
 		span {
 			text-transform: uppercase;
@@ -212,8 +211,12 @@ HEADER STYLES
 			height: 24px;
 			&.current {
 			    box-shadow: 0px 3px 0 #0475cc;
-			    top: -19px;
-			    position: relative;
+			    top: 1px;
+			    color: #0475cc;
+			    padding-bottom: 26px;
+			    a:hover {
+			    	color: #0475cc;
+			    }
 			}
 		}
 		a {
