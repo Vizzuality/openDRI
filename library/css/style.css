@@ -2173,6 +2173,45 @@ POSTS & CONTENT STYLES
         letter-spacing: 0.3px; }
         .hentry.-odri-post .entry-content p a {
           color: #1477c9; }
+      .hentry.-odri-post .entry-content .project-box {
+        margin: 0px 0 35px;
+        border-bottom: 3px solid rgba(38, 62, 87, 0.1); }
+        .hentry.-odri-post .entry-content .project-box p {
+          font-family: "Bariol", "Helvetica Neue", Helvetica, Arial, sans-serif;
+          font-size: 26px;
+          line-height: 33px;
+          color: #555555; }
+        .hentry.-odri-post .entry-content .project-box .project-figures {
+          display: -webkit-box;
+          /* OLD - iOS 6-, Safari 3.1-6 */
+          display: -ms-flexbox;
+          /* TWEENER - IE 10 */
+          display: -webkit-flex;
+          /* NEW - Chrome */
+          display: flex;
+          margin: 35px 0px;
+          justify-content: space-between; }
+          .hentry.-odri-post .entry-content .project-box .project-figures .figure-title {
+            width: 86px;
+            display: block;
+            height: 34px;
+            font-family: "Bariol", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: bold;
+            font-size: 15px;
+            letter-spacing: 0.5px;
+            line-height: normal;
+            margin: 0;
+            color: #1477c9; }
+          .hentry.-odri-post .entry-content .project-box .project-figures .figure-data {
+            font-size: 30px;
+            font-family: "Bariol", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            color: #555555; }
+            .hentry.-odri-post .entry-content .project-box .project-figures .figure-data .unit {
+              display: block;
+              font-size: 15px;
+              letter-spacing: 0.5px;
+              font-family: "Bariol", "Helvetica Neue", Helvetica, Arial, sans-serif;
+              font-weight: bold; }
     .hentry.-odri-post footer {
       margin: 0; }
       .hentry.-odri-post footer a {

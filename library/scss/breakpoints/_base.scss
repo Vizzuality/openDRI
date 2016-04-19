@@ -1049,6 +1049,48 @@ POSTS & CONTENT STYLES
 			    	color: #1477c9;
 			    }
 			}
+			.project-box {
+				margin: 0px 0 35px;
+    			border-bottom: 3px solid rgba(38, 62, 87, 0.1);
+				p {
+					font-family: $bariol;
+					font-size: 26px;
+					line-height: 33px;
+					color: #555555;
+				}
+				.project-figures {
+					display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+					display: -ms-flexbox;      /* TWEENER - IE 10 */
+					display: -webkit-flex;     /* NEW - Chrome */
+					display: flex;
+					margin: 35px 0px;
+				    justify-content: space-between;
+				    .figure-title {
+				    	width: 86px;
+				    	display: block;
+						height: 34px;
+						font-family: $bariol;
+						font-weight: bold;
+						font-size: 15px;
+						letter-spacing: 0.5px;
+						line-height: normal;
+						margin: 0;
+						color: #1477c9;
+				    }
+				    .figure-data {
+				    	font-size: 30px;
+						font-family: $bariol;
+  						color: #555555;
+  						.unit {
+  							display: block;
+  							font-size: 15px;
+							letter-spacing: 0.5px;
+							font-family: $bariol;
+							font-weight: bold;
+  						}
+				    }
+				}
+			}
 		}
 		footer {
 			margin: 0;
