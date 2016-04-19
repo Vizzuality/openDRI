@@ -199,8 +199,9 @@ HEADER STYLES
 			display: inline-flex;
 			justify-content: space-between;
 		    position: relative;
-		    float: right;
-		    height: 100%;
+		    top: 1px;
+    		color: #0475cc;
+    		padding-bottom: 26px;	
 		}
 		span {
 			text-transform: uppercase;
@@ -210,9 +211,7 @@ HEADER STYLES
 			cursor: pointer;
 			height: 24px;
 			&.current {
-			    box-shadow: 0px -5px 0 #0475cc;
-			    height: 30px;
-			    line-height: 70px;
+			    box-shadow: 0px 3px 0 #0475cc;
 			    top: -19px;
 			    position: relative;
 			}
