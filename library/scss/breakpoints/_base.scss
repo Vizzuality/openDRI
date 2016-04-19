@@ -2835,10 +2835,10 @@ div.cartodb-popup .cartodb-popup-close-button {
 	.no-home .header .hr {display: block;}
 	.header nav img {top: -13px;}
 	.no-home .header nav { top: 10px; }
-	.header nav span {font-size: 11px; line-height: 20px;}
+	.header nav span {font-size: 11px; line-height: 20px; height: 20px;}
+	.header nav span.current {padding-bottom: 0;}
 	.header nav span.float-center {position: relative;top: -5px;width: 100%;}
 	.header nav a:hover:before {content: none;}
-	.header nav span.current {height: 12px;line-height: 26px; top: -9px;}
 	.home #map-fake .what-list {width: 100%;padding: 20px;}
 	.home .what-explore {display: none;}
 	.blue-bar-top.about {align-items: center; height: 180px; margin: 0 0 -90px;}
