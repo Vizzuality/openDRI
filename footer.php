@@ -157,7 +157,7 @@
 					})
 				} else {
 					map = new L.Map('map', { 
-			        center: [12.55,-32.69],
+			        center: [14.264383,25.8398437],
 			        zoom: ($(window).width() <= 768) ? 1 : 3,
 			        minZoom: 2,
 			        zoomControl: false,
