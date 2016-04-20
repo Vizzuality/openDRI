@@ -163,8 +163,8 @@
 			        zoomControl: false,
 			        scrollWheelZoom: false,
 			        maxBounds: [
-					        [-85.0, -180.0],
-					        [85.0, 180.0]
+					        [-85.0, -270.0],
+					        [85.0, 270.0]
 					    ]
 			      })
 					L.control.zoom({
