@@ -2,7 +2,7 @@
 <?php
 if ( is_page( 'resources' ) ) {
 ?>
-			<div id="content">
+			<div id="content" class="resources-page-list">
 				<span class="corner-map"></span>
 
 				<div id="inner-content" class="wrap cf">
@@ -11,29 +11,6 @@ if ( is_page( 'resources' ) ) {
 							<?php if (have_posts()) : while (have_posts()) : the_post();
 								the_content();
 							endwhile; endif; ?>
-							<div class="m-all cf index-row last-resources">
-								<div class="row-container">
-									<a href="https://www.youtube.com/watch?v=EkfjEFpv_Zc" target="_blank">
-										<article class="resource-cont --scnd-img">
-											<section>
-												<span>video</span>
-												<hr>
-												<h3>Inasafe Introduction</h3>
-											</section>
-										</article>
-									</a>
-									<a href="https://www.gfdrr.org/sites/gfdrr/files/publication/GFDRR_AR12_low_0.pdf" target="_blank">
-										<article class="resource-cont">
-											<section>
-												<span>PDF</span>
-												<hr>
-												<h3>GFDRR Annual Report 2012</h3>
-											</section>
-										</article>
-									</a>
-								</div>
-							</div>
-
 						</main>
 
 						<?php /* get_sidebar();*/ ?>
