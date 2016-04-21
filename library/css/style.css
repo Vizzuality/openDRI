@@ -1727,6 +1727,8 @@ POSTS & CONTENT STYLES
 
 .single #explore-more {
   margin: 130px 0 0 0; }
+  .single #explore-more .what-explore a {
+    line-height: 66px; }
 
 .single .index-row.more-content .row-container article {
   margin: 0px 0px 40px; }
