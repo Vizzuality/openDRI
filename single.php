@@ -48,7 +48,7 @@
 								*/
 								get_template_part( 'post-formats/format', get_post_format() );
 
-							if (get_post_type() != 'resource' && get_post_type() != 'project') {
+							if (get_post_type() != 'resource') {
 								get_sidebar();
 							}
 							?>
@@ -70,63 +70,9 @@
 
 						<?php endif; ?>
 
-						<?php 
-							if (get_post_type( get_the_ID() ) == 'project') {
-								$meta = get_post_meta(get_the_ID(), 'news', true);
-								if ($meta) {
-						?>
-						<div id="more-content" class="index-row wrap more-content">
-							<h3>Project's news</h3>
-
-							<div class="row-container">
-								<?php
-									$max = 3;
-									foreach(explode("\n", $meta) as $line){
-										if ($max == 0 || !$line) break;
-										$max --;
-									    $current_post = url_to_postid( $line );
-									    $related 	  = get_post($current_post);
-									    if ($related->post_status == 'publish' && $related->ID == $thispostid) break;
-								?>
-										<article id="post-<?php echo $related->ID; ?>" <?php post_class( 'cf' ); ?> role="article">
-											<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $related->ID ), 'single-post-thumbnail' );
-												$image = ($image[0]) ? $image[0] : get_template_directory_uri().'/library/images/red-cross.jpg';
-											?>
-					            			<a href="<?php echo $related->guid; ?>" rel="bookmark" title="<?php echo $related->post_title; ?>"><span class="img" style="background-image:url(<?php echo $image; ?>)"></span></a>
-
-											<header class="article-header">
-												<h1 class="h2 entry-title"><a href="<?php echo $related->guid; ?>" rel="bookmark" title="<?php echo $related->post_title; ?>"><?php echo $related->post_title; ?></a></h1>
-											</header>
-											<section class="entry-content cf related">
-													<?php 
-														$content = apply_filters( 'the_content', $related->post_content );
-													    $content = str_replace( ']]>', ']]&gt;', $content );
-													    echo wp_strip_all_tags($content);
-													?>
-											</section>
-											<footer class="article-footer cf">
-												<p class="byline entry-meta vcard">
-													<span>
-													<?php
-													foreach((get_the_category()) as $category) { 
-													    echo '<a href="'.esc_url( get_category_link( $category->term_id ) ).'">'.$category->cat_name . '</a> '; 
-													} 
-													?>
-													</span>
-						                            <?php printf( __( '', 'bonestheme' ).' %1$s',
-						   								/* the time the post was published */
-						   								'<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time('d M') . '</time>'
-													); ?>
-												</p>
-											</footer>
-										</article>
-								<?php }	// end loop ?>
-
-							</div>
-						</div>
-							<?php } //end check $meta ?>
+						
 						<?php
-							} else {
+							
 								if (get_the_ID() == '481') return;
 								$isresource = false;
 								if (get_post_type( get_the_ID() ) == 'resource') {
@@ -174,7 +120,7 @@
 										</article>
 										<?php } //end if ?>
 								<?php }	// end loop
-							} // end else ?>
+							 ?>
 
 							</div>
 						</div>
