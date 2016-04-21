@@ -2025,19 +2025,38 @@ POSTS & CONTENT STYLES
   position: relative;
   overflow-x: hidden; }
 
+.resource-list-title {
+  height: 48px;
+  font-family: "Bariol", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 48px;
+  line-height: 0.9;
+  color: #1477c9;
+  margin: 115px 0 0; }
+
 .resources-page-list .index-row .card-third {
   margin: 0; }
 .resources-page-list .index-row.last-resources {
-  margin: 0 0 60px 0 !important; }
+  margin: 0 !important; }
 .resources-page-list .resource-list-new {
   display: inline; }
   .resources-page-list .resource-list-new li {
     border-bottom: solid 1px rgba(151, 151, 151, 0.2);
     height: 70px;
-    width: 49.8%;
-    display: inline-block;
+    width: 100%;
+    display: inline-flex;
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    justify-content: space-between; }
+    .resources-page-list .resource-list-new li div {
+      display: -webkit-box;
+      /* OLD - iOS 6-, Safari 3.1-6 */
+      display: -ms-flexbox;
+      /* TWEENER - IE 10 */
+      display: -webkit-flex;
+      /* NEW - Chrome */
+      display: flex;
+      flex-direction: column;
+      width: 485px; }
     .resources-page-list .resource-list-new li .date {
       font-family: Helvetica;
       font-size: 11px;
@@ -2049,6 +2068,18 @@ POSTS & CONTENT STYLES
       font-size: 15px;
       letter-spacing: 0.5px;
       color: #1477c9; }
+    .resources-page-list .resource-list-new li .tags {
+      text-transform: uppercase;
+      color: #555;
+      font-size: 12px;
+      letter-spacing: 0.5px; }
+      .resources-page-list .resource-list-new li .tags a {
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        color: rgba(85, 85, 85, 0.8);
+        transition: all 0.5s ease; }
+        .resources-page-list .resource-list-new li .tags a:hover {
+          border-color: rgba(85, 85, 85, 0.8); }
 
 .home #resources {
   margin: 85px 0 0; }
