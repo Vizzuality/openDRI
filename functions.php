@@ -227,6 +227,7 @@ function save_on_cartodb( $post_id ) {
     }
     $url .= urlencode($query).$api_bit;
     $response = wp_remote_get($url);
+    $response_safe = wp_remote_get("https://opendri.cartodb.com/api/v2/sql?q=UPDATE wp_projects SET description = REPLACE(description, '\`s', '''s') WHERE cartodb_id is not null".$api_bit);
   }
 }
 add_action( 'save_post', 'save_on_cartodb', 10, 3  );
