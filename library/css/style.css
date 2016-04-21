@@ -2047,6 +2047,8 @@ POSTS & CONTENT STYLES
     margin: 0;
     padding: 0;
     justify-content: space-between; }
+    .resources-page-list .resource-list-new li:last-child {
+      border-bottom: 0; }
     .resources-page-list .resource-list-new li div {
       display: -webkit-box;
       /* OLD - iOS 6-, Safari 3.1-6 */
@@ -2068,6 +2070,9 @@ POSTS & CONTENT STYLES
       font-size: 15px;
       letter-spacing: 0.5px;
       color: #1477c9; }
+      .resources-page-list .resource-list-new li .title a {
+        color: currentColor;
+        text-decoration: none; }
     .resources-page-list .resource-list-new li .tags {
       text-transform: uppercase;
       color: #555;
@@ -2077,7 +2082,7 @@ POSTS & CONTENT STYLES
         text-decoration: none;
         border-bottom: 1px solid transparent;
         color: rgba(85, 85, 85, 0.8);
-        transition: all 0.5s ease; }
+        transition: all 0.3s ease; }
         .resources-page-list .resource-list-new li .tags a:hover {
           border-color: rgba(85, 85, 85, 0.8); }
 
