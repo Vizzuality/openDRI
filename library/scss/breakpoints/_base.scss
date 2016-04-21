@@ -911,6 +911,9 @@ POSTS & CONTENT STYLES
 			margin: 0;
 			padding: 0;
 			justify-content: space-between;
+			&:last-child {
+				border-bottom: 0;
+			}
 			div {
 				display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
 		  		display: -ms-flexbox;      /* TWEENER - IE 10 */
@@ -931,6 +934,10 @@ POSTS & CONTENT STYLES
 				font-size: 15px;
 				letter-spacing: 0.5px;
 				color: #1477c9;
+				a {
+					color: currentColor;
+					text-decoration: none;
+				}
 			}
 			.tags {
 				text-transform: uppercase;
