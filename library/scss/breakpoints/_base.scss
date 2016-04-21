@@ -3158,4 +3158,9 @@ div.cartodb-popup .cartodb-popup-close-button {
 	.search  #main > p, .tag #main > p {display: none;}
 	.search #main .row-container article, .tag #main .row-container article{ width: 100%;}
 	.page .pillars-list-about h4, .page .pillars-list-about p { width: 100%;}
+	.resources-page-list .index-row {margin: 0}
+	.resources-page-list .resource-list-new li {display: inline;}
+	.resources-page-list .resource-list-new li div {width: auto;}
+	.resources-page-list .index-row.last-resources {flex-direction: column;}
+	.resources-page-list .index-row .resource-cont {width: 100%; height: auto;}
 }
