@@ -1530,7 +1530,6 @@ margin: 0;
 	#contact.index-row,
 	#more-content.index-row {margin: 40px 0;}
 	.about-content {
-
 		.card-third {
 			max-width: none;
 			margin: 0;
@@ -1561,6 +1560,14 @@ margin: 0;
 			    }
 			}
 		}
+	}
+	#more-content .entry-content .alignleft,
+	#more-content .entry-content img.alignleft {
+		float: none;
+	}
+	#more-content article .entry-content:last-child {
+		padding: 70px 30px;
+		-webkit-line-clamp: 3;
 	}
 	#contact {
 		display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
