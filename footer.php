@@ -256,6 +256,8 @@
 					    sublayer.on('featureClick', function(e, latlng, pos, data, subLayerIndex) {
 					    	changeIn_regions(data.cartodb_id);
 					    });
+				    } else {
+				    	map.dragging.disable();
 				    }
 					cartodb.createLayer(map, {
 									user_name: 'opendri',
