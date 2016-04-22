@@ -2571,6 +2571,15 @@ POSTS & CONTENT STYLES
       margin: 5px 0;
       color: #555;
       font-weight: bold; }
+.archive #more-content .entry-content .alignleft,
+.archive #more-content .entry-content img.alignleft,
+.page #more-content .entry-content .alignleft,
+.page #more-content .entry-content img.alignleft {
+  float: none; }
+.archive #more-content article .entry-content:last-child,
+.page #more-content article .entry-content:last-child {
+  padding: 70px 30px;
+  -webkit-line-clamp: 3; }
 .archive #contact,
 .page #contact {
   display: -webkit-box;
