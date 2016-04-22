@@ -2035,6 +2035,11 @@ POSTS & CONTENT STYLES
   color: #1477c9;
   margin: 115px 0 0; }
 
+.page .resources-page-list .index-row {
+  margin: 0; }
+
+.resources-page-list #resources.index-row {
+  margin: 0 0 40px; }
 .resources-page-list .index-row .card-third {
   margin: 0; }
 .resources-page-list .index-row.last-resources {
@@ -2043,7 +2048,7 @@ POSTS & CONTENT STYLES
   display: inline; }
   .resources-page-list .resource-list-new li {
     border-bottom: solid 1px rgba(151, 151, 151, 0.2);
-    height: 70px;
+    min-height: 70px;
     width: 100%;
     display: inline-flex;
     margin: 0;
@@ -4156,7 +4161,18 @@ div.cartodb-popup .cartodb-popup-close-button {
 
   .archive #contact .-m-form, .page #contact .-m-form {
     margin: 40px 0 0;
-    width: 100%; } }
+    width: 100%; }
+
+  .resources-page-list .resource-list-new {
+    width: 100%; }
+
+  .resources-page-list .index-row.last-resources {
+    flex-direction: column; }
+
+  .resources-page-list .index-row.last-resources .resource-cont {
+    width: 100%;
+    max-width: 100%;
+    margin: 30px 0; } }
 @media (max-width: 768px) {
   .archive #about.index-row, .archive #principles.index-row, .archive #contact.index-row, .archive #more-content.index-row, .page #about.index-row, .page #principles.index-row, .page #contact.index-row, .page #more-content.index-row {
     margin: 0;
