@@ -251,10 +251,12 @@
 				    sublayer.set(subLayerOptions);
 
 				    sublayers.push(sublayer);
-				    sublayer.infowindow.set('template', $('#infowindow_template').html());
-				    sublayer.on('featureClick', function(e, latlng, pos, data, subLayerIndex) {
-				    	changeIn_regions(data.cartodb_id);
-				    });
+				    if (!LAT_VIS && !LONG_VIS) {
+					    sublayer.infowindow.set('template', $('#infowindow_template').html());
+					    sublayer.on('featureClick', function(e, latlng, pos, data, subLayerIndex) {
+					    	changeIn_regions(data.cartodb_id);
+					    });
+				    }
 					cartodb.createLayer(map, {
 									user_name: 'opendri',
 									type: 'cartodb',
