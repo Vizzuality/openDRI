@@ -1,18 +1,18 @@
 
 
 	<?php
-		$meta = get_post_meta(get_the_ID(), 'resource', true);
+		// $meta = get_post_meta(get_the_ID(), 'resource', true);
 		$news = get_post_meta(get_the_ID(), 'news', true);
-		if (strlen($meta) > 0 || strlen($news)) {
+		if (get_post_type() == 'project' && strlen($news)) {
 	?>		
 		<div id="sidebar1" class="sidebar m-all t-1of3 d-2of7 last-col cf" role="complementary">
-			<?php if (strlen($meta) > 0) {
+			<?php if (strlen($news) > 0) {
 			?>
 			<div id="recent-posts-2" class="">
-				<h4 class="">Related Resources</h4>
+				<h4 class="">Project's news</h4>
 				<ul>
 				<?php
-					foreach(explode("\n", $meta) as $line) {
+					foreach(explode("\n", $news) as $line) {
 						$current_post = url_to_postid( $line );
 						$resource 	  = get_post($current_post);
 						$image = wp_get_attachment_image_src( get_post_thumbnail_id( $resource->ID ), 'single-post-thumbnail' );
@@ -24,12 +24,12 @@
 					} // end loop
 				?>
 				</ul>
+			</div>
 				<?php
 			} // end if meta
 		?>
-		</div>
 
-		<?php
+<!-- 		<?php
 		if (get_post_type() == 'project') {
 			$news = get_post_meta(get_the_ID(), 'news', true);
 			if ($news) {
@@ -56,7 +56,7 @@
 		</div>
 		<?php
 		}// end if is project
-		?>
+		?> -->
 	</div>
 		<?php
 	}// end if meta or news
