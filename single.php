@@ -80,7 +80,7 @@
 								} 
 						?>
 						<div id="more-content" class="index-row wrap more-content">
-							<h3><?php echo ($isresource) ? 'Recent resources' : 'Recent news'; ?></h3>
+							<!-- <h3><?php echo ($isresource) ? 'Recent resources' : 'Recent news'; ?></h3>
 
 							<div class="row-container">
 								<?php
@@ -120,7 +120,7 @@
 										</article>
 										<?php } //end if ?>
 								<?php }	// end loop
-							 ?>
+							 ?> -->
 
 							</div>
 						</div>
