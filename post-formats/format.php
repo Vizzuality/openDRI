@@ -14,7 +14,7 @@
                 */
               ?>
               <?php
-                $meta = get_post_meta(get_the_ID(), 'resource', true);
+                $meta = get_post_meta(get_the_ID(), 'news', true);
                 $post_type = get_post_type();
                 $explore_url = home_url().'/'.$post_type;
                 if ($post_type == 'post') {
