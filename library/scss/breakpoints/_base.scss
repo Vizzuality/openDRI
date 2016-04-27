@@ -1167,7 +1167,7 @@ POSTS & CONTENT STYLES
 						display: -webkit-flex;     /* NEW - Chrome */
 						display: flex;
 						flex-direction: column;
-						justify-content: space-between;
+						justify-content: flex-start;
 						&.content-r {
 							margin: 0 0 0 20px;
 						}

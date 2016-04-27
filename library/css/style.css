@@ -2291,7 +2291,7 @@ POSTS & CONTENT STYLES
             /* NEW - Chrome */
             display: flex;
             flex-direction: column;
-            justify-content: space-between; }
+            justify-content: flex-start; }
             .hentry.-odri-post .entry-content .project-box .project-text .content-l.content-r {
               margin: 0 0 0 20px; }
           .hentry.-odri-post .entry-content .project-box .project-text .uri,
