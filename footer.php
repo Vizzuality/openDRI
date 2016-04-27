@@ -251,7 +251,6 @@
 				    sublayer.set(subLayerOptions);
 
 				    sublayers.push(sublayer);
-				    debugger
 					    sublayer.infowindow.set('template', $('#infowindow_template').html());
 					    sublayer.on('featureClick', function(e, latlng, pos, data, subLayerIndex) {
 				    		if (!LAT_VIS && !LONG_VIS)
