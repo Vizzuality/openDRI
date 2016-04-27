@@ -2565,11 +2565,13 @@ POSTS & CONTENT STYLES
   max-width: none;
   margin: 0;
   width: 100%; }
-  .archive .about-content .card-third p,
-  .page .about-content .card-third p {
+  .archive .about-content .card-third > p,
+  .page .about-content .card-third > p {
     -webkit-columns: 350px;
     -moz-columns: 350px;
-    columns: 350px; }
+    columns: 350px;
+    padding: 0 40px 0 0;
+    column-gap: 40px; }
   .archive .about-content .card-third ol,
   .page .about-content .card-third ol {
     list-style: decimal;
@@ -4869,7 +4871,14 @@ div.cartodb-popup .cartodb-popup-close-button {
 
   .resources-page-list .index-row .resource-cont {
     width: 100%;
-    height: auto; } }
+    height: auto; }
+
+  .archive .newsletter .subscribe form input[type=email], .page .newsletter .subscribe form input[type=email] {
+    width: 70%; }
+
+  .archive .newsletter .subscribe h4, .page .newsletter .subscribe h4 {
+    height: 45px;
+    font-size: 30px; } }
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's

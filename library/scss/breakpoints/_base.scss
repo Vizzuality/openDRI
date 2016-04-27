@@ -1558,10 +1558,12 @@ margin: 0;
 			max-width: none;
 			margin: 0;
 			width: 100%;
-			p {
+			> p {
 		 -webkit-columns:    350px;
    			-moz-columns: 	 350px;
         		 columns: 	 350px;
+        		 padding: 0 40px 0 0;
+        		 column-gap: 40px;
 			}
 			ol {
 				list-style: decimal;
@@ -3280,4 +3282,11 @@ div.cartodb-popup .cartodb-popup-close-button {
 	.resources-page-list .resource-list-new li div {width: auto;}
 	.resources-page-list .index-row.last-resources {flex-direction: column;}
 	.resources-page-list .index-row .resource-cont {width: 100%; height: auto;}
+	.archive .newsletter .subscribe form input[type=email], .page .newsletter .subscribe form input[type=email] {
+		width: 70%;
+	}
+	.archive .newsletter .subscribe h4, .page .newsletter .subscribe h4 {
+	    height: 45px;
+	    font-size: 30px;
+	}
 }
