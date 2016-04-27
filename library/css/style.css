@@ -4787,10 +4787,6 @@ div.cartodb-popup .cartodb-popup-close-button {
   .post-type-archive-resource .index-row.last-resources a article {
     height: 100px; }
 
-  .home #resources.index-row > .row-container > a, .index-row.last-resources a {
-    width: 100%;
-    max-width: calc(100% - 20px); }
-
   .home #resources.index-row article.resource-cont, .home #inner-content > .last-resources article {
     width: 100%;
     max-width: 100%; }
@@ -4878,7 +4874,10 @@ div.cartodb-popup .cartodb-popup-close-button {
 
   .archive .newsletter .subscribe h4, .page .newsletter .subscribe h4 {
     height: 45px;
-    font-size: 30px; } }
+    font-size: 30px; }
+
+  .resource-list-title {
+    font-size: 28px; } }
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
