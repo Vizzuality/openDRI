@@ -245,7 +245,7 @@ if(is_post_type_archive() && $post_type=='project') {
 												<?php
 													if 	($post->post_type=='post'){		   $articletype = 'news'; $linktype='/category/news';}
 													elseif ($post->post_type=='project'){  $articletype = 'project'; $linktype='/project';}
-													elseif ($post->post_type=='resource'){ $articletype = 'resource'; $linktype='/resource';}
+													elseif ($post->post_type=='resource'){ $articletype = 'resource'; $linktype='/resources';}
 												?>
 												<span><a href="<?php echo home_url().$linktype;?>"><?php echo $articletype ?></a></span>
 											</p>

@@ -23,7 +23,7 @@
 						</div>
 						<nav>
 							<a href="<?php echo home_url(); ?>/project" class="-i-link">projects</a>
-							<a href="<?php echo home_url(); ?>/resource" class="-i-link">resources</a>
+							<a href="<?php echo home_url(); ?>/resources" class="-i-link">resources</a>
 							<a href="<?php echo home_url(); ?>/about" class="-i-link">about</a>
 							<a href="<?php echo home_url(); ?>/category/news" class="-i-link">news</a>
 						</nav>
@@ -54,7 +54,7 @@
 						</div>
 						<nav>
 							<a href="<?php echo home_url(); ?>/project" class="-i-link">projects</a>
-							<a href="<?php echo home_url(); ?>/resource" class="-i-link">resources</a>
+							<a href="<?php echo home_url(); ?>/resources" class="-i-link">resources</a>
 							<a href="<?php echo home_url(); ?>/about" class="-i-link">about</a>
 							<a href="<?php echo home_url(); ?>/category/news" class="-i-link">news</a>
 						</nav>
@@ -1086,12 +1086,12 @@
 			$('.container-region-filter').find('span').addClass('current').text(location.pathname.split("/")[location.pathname.split("/").length -2].replace(/-/g,' '));
 			$('h1.page-title').text($('h1.page-title').text( ) + ' and ' + $('#blue-bar-pick-pillar').find('.option-pillar.current').text().replace(/^(.)|\s(.)/g, function($1){ return $1.toUpperCase( ); }))
 		}
-		document.getElementById('map').addEventListener('click', function(ev){
-			if (!!LAT_VIS && !!LONG_VIS) {
+		if (!!LAT_VIS && !!LONG_VIS) {
+			document.getElementById('map').addEventListener('click', function(ev){
 				ev.preventDefault();
 				ev.stopPropagation();
-			}
-		});
+			});
+		}
 		</script>
 	</body>
 

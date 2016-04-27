@@ -122,7 +122,7 @@
 					<div class="card-third first-text">
 						<h3>resources</h3>
 						<p>At OpenDRI we are committed to increasing information that can empower individuals and their governments to reduce risk to natural hazards and climate change in their communities.  We’ve compiled a database of relevant resources to share what we have learned through our own projects and from the work of others.</p>
-						<a href="<?php echo home_url(); ?>/resource"><span>view all resources</span></a>
+						<a href="<?php echo home_url(); ?>/resources"><span>view all resources</span></a>
 					</div>
 				</div>
 				<div class="row-container">
