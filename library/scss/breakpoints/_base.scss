@@ -3018,6 +3018,7 @@ div.cartodb-popup .cartodb-popup-close-button {
 .archive #contact .contact-form textarea, .page #contact .contact-form textarea {width: 50%;}
 .home .index-row .resource-list {max-height: 345px;}
 .page #principles, .page #contact, .page #more-content, .page #partners, .page #members, .page #newsletter {margin: 0; padding: 30px 0;}
+.page #partners p a {color: #0475cc}
 @media (min-width: 1024px) {
 	.home .index-row#news .row-container {padding-right: 45px;}
 	.home .index-row .card-third .twitter {height: 100%;}
@@ -3203,7 +3204,9 @@ div.cartodb-popup .cartodb-popup-close-button {
 	.page #members .-m-team-member img { display: block; margin: 0 auto 30px; }
 	.page #contact .contact-form textarea { width: 100%; }
 	.blue-bar-top .wrapper span a i { transform: scale(2); visibility: visible; margin: 10px;}
+	.resources-page-list .blue-bar-top {height: 170px;}
 	.blue-bar-top .wrapper span a {visibility: hidden;}
+	.resources-page-list .blue-bar-top .wrapper span a {visibility: visible;}
 	.blue-bar-top .wrapper .region-filter li a { width: initial; display: inherit; }
 	.header nav input.visible {top: -3px;width: 90%; margin: 0; position: relative;    text-align: center;}
 	.post-type-archive-project #main > h3,
@@ -3288,5 +3291,6 @@ div.cartodb-popup .cartodb-popup-close-button {
 	    height: 45px;
 	    font-size: 30px;
 	}
-	.resource-list-title {font-size: 28px;}
+	.resource-list-title {font-size: 28px;margin: 35px 0 0;}
+	.single #explore-more .what-explore a {line-height: 34px;}
 }

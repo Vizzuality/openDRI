@@ -4027,6 +4027,9 @@ div.cartodb-popup .cartodb-popup-close-button {
   margin: 0;
   padding: 30px 0; }
 
+.page #partners p a {
+  color: #0475cc; }
+
 @media (min-width: 1024px) {
   .home .index-row#news .row-container {
     padding-right: 45px; }
@@ -4586,8 +4589,14 @@ div.cartodb-popup .cartodb-popup-close-button {
     visibility: visible;
     margin: 10px; }
 
+  .resources-page-list .blue-bar-top {
+    height: 170px; }
+
   .blue-bar-top .wrapper span a {
     visibility: hidden; }
+
+  .resources-page-list .blue-bar-top .wrapper span a {
+    visibility: visible; }
 
   .blue-bar-top .wrapper .region-filter li a {
     width: initial;
@@ -4877,7 +4886,11 @@ div.cartodb-popup .cartodb-popup-close-button {
     font-size: 30px; }
 
   .resource-list-title {
-    font-size: 28px; } }
+    font-size: 28px;
+    margin: 35px 0 0; }
+
+  .single #explore-more .what-explore a {
+    line-height: 34px; } }
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
