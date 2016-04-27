@@ -135,10 +135,10 @@
 						$image = get_post_meta($recent["ID"], 'thumbnailPic', true);
 						$image1 = $image;
 				?>
-					<a href="<?php echo $featured["guid"]; ?>">
+					<a href="#">
 						<article class="resource-cont"  id="firstFeatured">
 							<section>
-								<h3><?php echo $featured["post_title"]; ?></h3>
+								<h3>Project Highlights: Building Resilient Communities In Vietnam</h3>
 							</section>
 						</article>
 					</a>
@@ -154,10 +154,10 @@
 						$image = get_post_meta($recent["ID"], 'thumbnailPic', true);
 						$image2 = $image;
 				 ?>
-					<a href="<?php echo $featured["guid"]; ?>" >
+					<a href="#" >
 						<article class="resource-cont --scnd-img"  id="secondFeatured">
 							<section>
-								<h3><?php echo $featured["post_title"]; ?></h3>
+								<h3>Project Highlights: Building Resilient Communities In Vietnam</h3>
 							</section>
 						</article>
 					</a>
@@ -169,8 +169,8 @@
 						foreach( $featured_col as $featured ) {
 					?>
 						<li>
-							<a href="<?php echo $featured["guid"]; ?>">
-								<p><span class="title"><?php echo $featured["post_title"]; ?></span><span class="format"></span></p>
+							<a href="Project Highlights: Building Resilient Communities In Vietnam">
+								<p><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="format"></span></p>
 								<p><span class="name"></span><span class="size"><?php echo date('d M', strtotime($featured['post_date'])) ?></span>
 								</p>
 							</a>
