@@ -2035,11 +2035,16 @@ POSTS & CONTENT STYLES
   color: #1477c9;
   margin: 115px 0 0; }
 
+.resources-anchor {
+  visibility: hidden;
+  left: 0;
+  position: absolute; }
+
 .page .resources-page-list .index-row {
   margin: 0; }
 
 .resources-page-list #resources.index-row {
-  margin: 0 0 40px; }
+  margin: 70px 0 40px; }
 .resources-page-list .index-row .card-third {
   margin: 0; }
 .resources-page-list .index-row.last-resources {
