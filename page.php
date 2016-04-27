@@ -4,7 +4,15 @@ if ( is_page( 'resources' ) ) {
 ?>
 			<div id="content" class="resources-page-list">
 				<span class="corner-map"></span>
-
+				<div class="blue-bar-top resources" id="blue-bar">
+					<div class="wrap wrapper">
+						<span><a href="#notes">notes</a></span>
+						<span><a href="#publications">publications</a></span>
+						<span><a href="#newsletters">Newsletters</a></span>
+						<span><a href="#tools">tools and training materials</a></span>
+						<span><a href="#other">other resources</a></span>
+					</div>
+				</div>
 				<div id="inner-content" class="wrap cf">
 
 						<main id="main" class="m-all cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
