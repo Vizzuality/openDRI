@@ -251,12 +251,14 @@
 				    sublayer.set(subLayerOptions);
 
 				    sublayers.push(sublayer);
-				    if (!LAT_VIS && !LONG_VIS) {
+				    debugger
 					    sublayer.infowindow.set('template', $('#infowindow_template').html());
 					    sublayer.on('featureClick', function(e, latlng, pos, data, subLayerIndex) {
-					    	changeIn_regions(data.cartodb_id);
+				    		if (!LAT_VIS && !LONG_VIS)
+					    		changeIn_regions(data.cartodb_id);
+					    	else { return }
 					    });
-				    } else {
+				    if (!!LAT_VIS && !!LONG_VIS) {
 				    	map.dragging.disable();
 				    }
 					cartodb.createLayer(map, {
