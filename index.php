@@ -166,7 +166,7 @@
 						<?php
 						$args = array( 'numberposts' => '4', 'category' => 16, 'order' => 'DESC', 'post_type' => 'resource','post_status' => 'publish' );
 						$featured_col = wp_get_recent_posts( $args );
-						foreach( $featured_col as $featured ) {
+						//foreach( $featured_col as $featured ) {
 					?>
 						<li>
 							<a href="Project Highlights: Building Resilient Communities In Vietnam">
@@ -175,7 +175,28 @@
 								</p>
 							</a>
 						</li>
-					<?php } // end foreach ?>
+						<li>
+							<a href="Project Highlights: Building Resilient Communities In Vietnam">
+								<p><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="format"></span></p>
+								<p><span class="name"></span><span class="size"><?php echo date('d M', strtotime($featured['post_date'])) ?></span>
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="Project Highlights: Building Resilient Communities In Vietnam">
+								<p><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="format"></span></p>
+								<p><span class="name"></span><span class="size"><?php echo date('d M', strtotime($featured['post_date'])) ?></span>
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="Project Highlights: Building Resilient Communities In Vietnam">
+								<p><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="format"></span></p>
+								<p><span class="name"></span><span class="size"><?php echo date('d M', strtotime($featured['post_date'])) ?></span>
+								</p>
+							</a>
+						</li>
+					<?php // } // end foreach ?>
 					</ul>
 				</div>
 			</div>

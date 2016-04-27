@@ -1773,8 +1773,6 @@ POSTS & CONTENT STYLES
     justify-content: space-between;
     align-items: stretch;
     width: 100%; }
-    .index-row.last-resources p {
-      display: none; }
     .index-row.last-resources .row-container {
       width: 100%;
       justify-content: space-between; }
