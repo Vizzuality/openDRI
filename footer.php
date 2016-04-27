@@ -1012,12 +1012,18 @@
 			})
 
 			var $bar = $('#blue-bar');
-			if ($bar.hasClass('about')) {			
+			if ($bar.hasClass('about')) {
 				var top_principles = $("#principles").offset().top || null,
 					top_contact	   = $('#contact').offset().top,
 					top_more	   = $('#more-content').offset().top,
 					top_partners   = $('#partners').offset().top,
 					top_members	   = $('#members').offset().top;
+			} else if ($bar.hasClass('resources')) {
+				var top_principles = $("#notes").offset().top || null,
+					top_contact	   = $('#publications').offset().top,
+					top_more	   = $('#newsletters').offset().top,
+					top_partners   = $('#tools').offset().top,
+					top_members	   = $('#other').offset().top;
 			}
 			$(document).scroll(function() {
 				var scroll = $(this).scrollTop();
