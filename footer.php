@@ -251,13 +251,12 @@
 				    sublayer.set(subLayerOptions);
 
 				    sublayers.push(sublayer);
+				    if (!LAT_VIS && !LONG_VIS) {
 					    sublayer.infowindow.set('template', $('#infowindow_template').html());
 					    sublayer.on('featureClick', function(e, latlng, pos, data, subLayerIndex) {
-				    		if (!LAT_VIS && !LONG_VIS)
-					    		changeIn_regions(data.cartodb_id);
-					    	else { return }
+					    	changeIn_regions(data.cartodb_id);
 					    });
-				    if (!!LAT_VIS && !!LONG_VIS) {
+				    } else {
 				    	map.dragging.disable();
 				    }
 					cartodb.createLayer(map, {
@@ -1087,6 +1086,12 @@
 			$('.container-region-filter').find('span').addClass('current').text(location.pathname.split("/")[location.pathname.split("/").length -2].replace(/-/g,' '));
 			$('h1.page-title').text($('h1.page-title').text( ) + ' and ' + $('#blue-bar-pick-pillar').find('.option-pillar.current').text().replace(/^(.)|\s(.)/g, function($1){ return $1.toUpperCase( ); }))
 		}
+		document.getElementById('map').addEventListener('click', function(ev){
+			if (!!LAT_VIS && !!LONG_VIS) {
+				ev.preventDefault();
+				ev.stopPropagation();
+			}
+		});
 		</script>
 	</body>
 
