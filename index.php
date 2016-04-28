@@ -23,14 +23,14 @@
 	</div>
 	<div id="content">
 		<div id="inner-content" class="wrap">
+			<div class="index-title">
+				<h3>news</h3>
+				<a href="<?php echo home_url(); ?>/category/news"><span>view all news</span></a>
+			</div>
 			<div id="news" class="m-all index-row" role="news" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 				<div class="row-container">
-					<div class="card-third first-text">
-						<h3>news</h3>
-						<a href="<?php echo home_url(); ?>/category/news"><span>view all news</span></a>
-					</div>
 					<?php
-						$args = array( 'numberposts' => '3', 'category' => 'news', 'post_status' => 'publish' );
+						$args = array( 'numberposts' => '4', 'category' => 'news', 'post_status' => 'publish' );
 						$recent_posts = wp_get_recent_posts( $args );
 						foreach( $recent_posts as $recent ){  // start loop
 					?>
@@ -69,14 +69,14 @@
 			        </div>
 				</div>
 			</div>
+			<div class="index-title">
+				<h3>projects</h3>
+				<a href="<?php echo home_url(); ?>/project"><span>view all projects</span></a>
+			</div>
 			<div id="projects" class="m-all cf index-row" role="projects" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 				<div class="row-container">
-					<div class="card-third first-text">
-						<h3>projects</h3>
-						<a href="<?php echo home_url(); ?>/project"><span>view all projects</span></a>
-					</div>
 					<?php
-						$args = array( 'numberposts' => '5', 'post_type' => 'project', 'post_status' => 'publish' );
+						$args = array( 'numberposts' => '6', 'post_type' => 'project', 'post_status' => 'publish' );
 						$recent_posts = wp_get_recent_posts( $args );
 						foreach( $recent_posts as $recent ){  // start loop
 					?>
