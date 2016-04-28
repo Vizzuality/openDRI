@@ -2884,7 +2884,7 @@ POSTS & CONTENT STYLES
   .page #members .-m-partner,
   .page #partners .-m-partner {
     flex-direction: column;
-    width: 49%; }
+    width: 33%; }
     .archive #members .-m-partner img,
     .archive #partners .-m-partner img,
     .page #members .-m-partner img,
