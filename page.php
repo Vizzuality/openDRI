@@ -35,11 +35,11 @@ elseif ( is_page( 'about' ) ) {
 				<div class="blue-bar-top about" id="blue-bar">
 					<div class="wrap wrapper">
 						<span><a href="#principles">our principles</a></span>
-						<span><a href="#contact">contact</a></span>
 						<span><a href="#newsletter">Newsletter</a></span>
 						<span><a href="#more-content">related web pages</a></span>
 						<span><a href="#partners">partners</a></span>
 						<span><a href="#members">team members</a></span>
+						<span><a href="#contact">contact</a></span>
 					</div>
 				</div>
 
