@@ -2620,6 +2620,11 @@ FOOTER STYLES
 	    width: 100%;
 	    opacity: 0.97;
 	}
+	&.resources {
+		.wrapper span.current {
+			padding: 5px 10px 0px 10px;
+		}
+	}
 	.wrapper {
 		color: white;
 	    text-transform: uppercase;
