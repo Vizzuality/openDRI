@@ -3627,6 +3627,8 @@ FOOTER STYLES
     top: 0;
     width: 100%;
     opacity: 0.97; }
+  .blue-bar-top.resources .wrapper span.current {
+    padding: 5px 10px 0px 10px; }
   .blue-bar-top .wrapper {
     color: white;
     text-transform: uppercase;
