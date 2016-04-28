@@ -582,6 +582,47 @@ POSTS & CONTENT STYLES
 	}
 }
 .single .index-row.more-content .row-container article {margin: 0px 0px 40px;}
+.index-title {
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  	display: -ms-flexbox;      /* TWEENER - IE 10 */
+  	display: -webkit-flex;     /* NEW - Chrome */
+	display: flex;
+    justify-content: space-between;
+    margin: 80px 0 -50px;
+    h3 {
+	    font-size: 48px;
+	    text-transform: capitalize;
+	    color: #555;
+	    margin: 0;
+    }
+    a {
+    	text-decoration: none;
+    	cursor: default;
+    	span {
+    		cursor: pointer;
+		    width: 200px;
+		    background: #db0033;
+		    height: 50px;
+		    display: -webkit-box;
+		    display: -ms-flexbox;
+		    display: -webkit-flex;
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    text-transform: uppercase;
+		    color: #fff;
+		    font-size: 15px;
+		    font-weight: bold;
+		    margin-top: 20px;
+		    transition: background 0.3s ease;
+		    font-family: $bariol;
+		    box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.4);
+		    &:hover:hover {
+			    background: #ff0f47;
+			}
+    	}
+    }
+}
 .index-row {
 	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
   	display: -ms-flexbox;      /* TWEENER - IE 10 */
