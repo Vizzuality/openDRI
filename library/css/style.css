@@ -2071,12 +2071,11 @@ POSTS & CONTENT STYLES
   font-size: 48px;
   line-height: 0.9;
   color: #1477c9;
-  margin: 65px 0 0; }
+  margin: 65px 0 0;
+  width: 100%; }
 
 .resources-anchor {
-  visibility: hidden;
-  left: 0;
-  position: absolute; }
+  position: relative; }
 
 .page .resources-page-list .index-row {
   margin: 0; }
