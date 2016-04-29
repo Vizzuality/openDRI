@@ -1016,9 +1016,9 @@
 				var top_principles = $("#principles").offset().top || null,
 					top_newsletter = $('#newsletter').offset().top,
 					top_more	   = $('#more-content').offset().top,
-					top_partners   = $('#partners').offset().top,
+					top_partners   = $('#contact').offset().top,
 					top_members	   = $('#members').offset().top,
-					top_contact	   = $('#contact').offset().top;
+					top_contact	   = $('#partners').offset().top;
 			} else if ($bar.hasClass('resources')) {
 				var top_principles = $("#notes").offset().top || null,
 					top_newsletter = $('#publications').offset().top,
