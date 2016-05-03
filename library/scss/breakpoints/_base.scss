@@ -1965,6 +1965,9 @@ margin: 0;
 				margin: 0 0 10px;
 				text-align: center;
 			}
+			p:last-child {
+				min-height: 330px;
+			}
 			.explore-projects {
 				height: 50px;
 			    display: block;
@@ -1981,6 +1984,9 @@ margin: 0;
 			    font-family: $bariol;
 			    font-weight: bold;
 			    box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.1);
+			    bottom: 0;
+    			position: absolute;
+    			left: calc(50% - 87.5px);
 			}
 		}
 	}
