@@ -176,6 +176,8 @@ if(is_post_type_archive() && $post_type=='project') {
 										$image2 = '';
 										foreach( $featured_col as $featured ) {
 											$image = get_post_meta($featured["ID"], 'thumbnailPic', true);
+											$fallbackimg = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ));
+											$image = ($image[0]) ? $image : $fallbackimg[0];
 											$image1 = ($image[0]) ? $image : get_template_directory_uri().'/library/images/resource-placeholder_1024.jpg';
 									?>
 										<a href="<?php echo $featured["guid"]; ?>" >
@@ -190,6 +192,8 @@ if(is_post_type_archive() && $post_type=='project') {
 										$featured_col = wp_get_recent_posts( $args );
 										foreach( $featured_col as $featured ) {
 											$image = get_post_meta($featured["ID"], 'thumbnailPic', true);
+											$fallbackimg = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ));
+											$image = ($image[0]) ? $image : $fallbackimg[0];
 											$image2 = ($image[0]) ? $image : get_template_directory_uri().'/library/images/resource-placeholder_1024.jpg';
 									 ?>
 										<a href="<?php echo $featured["guid"]; ?>"  >
@@ -225,6 +229,8 @@ if(is_post_type_archive() && $post_type=='project') {
 									<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf '); ?> role="article">
 										<?php 
 										$image = get_post_meta($post->ID, 'thumbnailPic', true);
+										$fallbackimg = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ));
+										$image = ($image[0]) ? $image : $fallbackimg[0];
 										$placeholder = '/library/images/red-cross.jpg';
 										if ($post->post_type == 'resource') {
 											$placeholder = '/library/images/resource-placeholder_1024.jpg';
@@ -282,6 +288,7 @@ if(is_post_type_archive() && $post_type=='project') {
 										$image3= '';
 										$image4= '';
 											get_post_meta(434, 'thumbnailPic', true);
+										$image = ($image[0]) ? $image : $fallbackimg[0];
 											$image3 = ($image[0]) ? $image : get_template_directory_uri().'/library/images/resource-placeholder_1024.jpg';
 									?>
 										<a href="<?php echo esc_url( get_permalink(434) ); ?>" >
