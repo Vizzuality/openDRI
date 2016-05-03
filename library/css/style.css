@@ -3056,6 +3056,9 @@ POSTS & CONTENT STYLES
       position: relative;
       margin: 0 0 10px;
       text-align: center; }
+    .archive .pillars-list-about .p-info p:last-child,
+    .page .pillars-list-about .p-info p:last-child {
+      min-height: 330px; }
     .archive .pillars-list-about .p-info .explore-projects,
     .page .pillars-list-about .p-info .explore-projects {
       height: 50px;
@@ -3072,7 +3075,10 @@ POSTS & CONTENT STYLES
       margin: 20px 0;
       font-family: "Bariol", "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-weight: bold;
-      box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.1); }
+      box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.1);
+      bottom: 0;
+      position: absolute;
+      left: calc(50% - 87.5px); }
 
 .page .index-row.contents-img {
   background-image: url("../images/about-header_1024.jpg");
