@@ -16,7 +16,9 @@
 						$current_post = url_to_postid( $line );
 						$resource 	  = get_post($current_post);
 						$image = wp_get_attachment_image_src( get_post_thumbnail_id( $resource->ID ), 'single-post-thumbnail' );
-							$image = ($image[0]) ? $image[0] : get_template_directory_uri().'/library/images/red-cross.jpg';
+						$fallbackimg = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID );
+						$image = ($image[0]) ? $image : $fallbackimg[0];
+						$image = ($image[0]) ? $image[0] : get_template_directory_uri().'/library/images/red-cross.jpg';
 				?>
 				<li>
 					<p><a href="<?php echo $resource->guid; ?>" rel="bookmark" title="<?php echo $resource->post_title; ?>"><span class="img" style="background-image:url(<?php echo $image; ?>)"></span><i><?php echo $resource->post_title; ?></a></i></p></li>
@@ -42,7 +44,9 @@
 						$current_post = url_to_postid( $line );
 						$resource 	  = get_post($current_post);
 						$image = wp_get_attachment_image_src( get_post_thumbnail_id( $resource->ID ), 'single-post-thumbnail' );
-							$image = ($image[0]) ? $image[0] : get_template_directory_uri().'/library/images/red-cross.jpg';
+						$fallbackimg = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID );
+						$image = ($image[0]) ? $image : $fallbackimg[0]
+						$image = ($image[0]) ? $image[0] : get_template_directory_uri().'/library/images/red-cross.jpg';
 				?>
 				<li>
 					<p><a href="<?php echo $resource->guid; ?>" rel="bookmark" title="<?php echo $resource->post_title; ?>"><span class="img" style="background-image:url(<?php echo $image; ?>)"></span><i><?php echo $resource->post_title; ?></a></i></p></li>
