@@ -157,7 +157,6 @@ function save_on_cartodb( $post_id ) {
   
   if ($cdb_api_key && $_REQUEST['action'] != 'grunion-contact-form' && $_REQUEST['post_type'] != 'page') {
 
-    // echo '<pre>'.print_r($_REQUEST).'</pre>'; 
 
     $url = "https://opendri.cartodb.com/api/v2/sql?q=";
     $api_bit = "&api_key=$cdb_api_key";
@@ -169,7 +168,7 @@ function save_on_cartodb( $post_id ) {
     $geodata__country   = $_REQUEST['_wppl_country'];
     $geodata__c_name    = $_REQUEST['_wppl_country_long'];
     $categories         = $_REQUEST['post_category'];
-    $geodata__content   = wp_strip_all_tags(str_replace("'","`",substr($_REQUEST['content'], 0, 60)));
+    $geodata__content   = (strlen($_REQUEST['excerpt']) > 0) ? wp_strip_all_tags($_REQUEST['excerpt']) : wp_strip_all_tags(str_replace("'","`",substr($_REQUEST['content'], 0, 60)));
     $visibility         = $_REQUEST['visibility'];
 
     //check pillars and regions
