@@ -2394,11 +2394,11 @@ POSTS & CONTENT STYLES
           /* NEW - Chrome */
           display: flex;
           margin: 35px 0px;
-          justify-content: space-between; }
+          justify-content: flex-start; }
           .hentry.-odri-post .entry-content .project-box .project-figures .figure-title {
             width: 86px;
             display: block;
-            height: 34px;
+            height: auto;
             font-family: "Bariol", "Helvetica Neue", Helvetica, Arial, sans-serif;
             font-weight: bold;
             font-size: 15px;
