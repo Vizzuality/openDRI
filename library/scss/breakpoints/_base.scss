@@ -519,6 +519,24 @@ POSTS & CONTENT STYLES
 	    }
     }
 }
+.explore-buttons {
+	width: inherit;
+    position: relative;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  	display: -ms-flexbox;      /* TWEENER - IE 10 */
+  	display: -webkit-flex;     /* NEW - Chrome */
+    justify-content: space-around;
+    .what-explore {
+    	margin: 0 30px;
+    	&:first-child {
+    		background-color: #1477c9;
+    		color: #fff;
+    		a:hover {
+		    	background-color: rgba(255, 255, 255, 0.2);
+		    }
+    	}
+    }
+}
 #explore-more {
 	height: 360px;
     display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
