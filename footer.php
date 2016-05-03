@@ -1014,18 +1014,18 @@
 			var $bar = $('#blue-bar');
 			if ($bar.hasClass('about')) {
 				var top_principles = $("#principles").offset().top || null,
-					top_newsletter = $('#newsletter').offset().top,
-					top_more	   = $('#more-content').offset().top,
-					top_partners   = $('#contact').offset().top,
 					top_members	   = $('#members').offset().top,
-					top_contact	   = $('#partners').offset().top;
+					top_contact	   = $('#partners').offset().top,
+					top_newsletter = $('#newsletter').offset().top,
+					top_partners   = $('#contact').offset().top,
+					top_more	   = $('#more-content').offset().top;
 			} else if ($bar.hasClass('resources')) {
 				var top_principles = $("#notes").offset().top || null,
-					top_newsletter = $('#publications').offset().top,
-					top_more	   = $('#newsletters').offset().top,
-					top_partners   = $('#tools').offset().top,
-					top_members    = $('#other').offset().top,
-					top_contact	   = $('#other').offset().top;
+					top_members	   = $('#publications').offset().top,
+					top_contact	   = $('#newsletters').offset().top,
+					top_newsletter = $('#tools').offset().top,
+					top_partners   = $('#other').offset().top,
+					top_more	   = $('#other').offset().top;
 			}
 			$(document).scroll(function() {
 				var scroll = $(this).scrollTop();
@@ -1038,11 +1038,11 @@
 					var tab_option = 0;
 					scroll += 80;
 					if (scroll > top_principles) tab_option = 0;
-					if (scroll > top_newsletter) tab_option = 1;
-					if (scroll > top_more) 	 	 tab_option = 2;
-					if (scroll > top_partners) 	 tab_option = 3;
-					if (scroll > top_members) 	 tab_option = 4;
-					if (scroll > top_contact) 	 tab_option = $bar.hasClass('resources') ? 4 : 5;
+					if (scroll > top_members) 	 tab_option = 1;
+					if (scroll > top_contact) 	 tab_option = 2;
+					if (scroll > top_newsletter) tab_option = 3;
+					if (scroll > top_partners) 	 tab_option = 4;
+					if (scroll > top_more) 	 	 tab_option = $bar.hasClass('resources') ? 4 : 5;
 
 					if (tab_option < 6) {
 						$bar.find('.current').removeClass('current');
