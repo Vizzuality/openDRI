@@ -45,7 +45,7 @@
 						$resource 	  = get_post($current_post);
 						$image = wp_get_attachment_image_src( get_post_thumbnail_id( $resource->ID ), 'single-post-thumbnail' );
 						$fallbackimg = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ));
-						$image = ($image[0]) ? $image : $fallbackimg[0]
+						$image = ($image[0]) ? $image : $fallbackimg[0];
 						$image = ($image[0]) ? $image[0] : get_template_directory_uri().'/library/images/red-cross.jpg';
 				?>
 				<li>
