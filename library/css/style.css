@@ -4107,6 +4107,13 @@ div.cartodb-popup .cartodb-popup-close-button {
   .index-row .card-third.twitter-timeline-container {
     margin: 0px 0px 50px 0px !important; } }
 @media (max-width: 1024px) {
+  .index-title h3 {
+    font-size: 38px;
+    margin: -70px auto 40px; }
+
+  .index-separator {
+    margin: 0; }
+
   .contact-form input[type=email], .contact-form input[type=text], .page #contact .contact-form textarea {
     width: 70% !important; }
 
@@ -4365,6 +4372,9 @@ div.cartodb-popup .cartodb-popup-close-button {
     max-width: 100%;
     margin: 30px 0; } }
 @media (max-width: 768px) {
+  .index-separator {
+    margin: -70px 0px 0px; }
+
   .archive #about.index-row, .archive #principles.index-row, .archive #contact.index-row, .archive #more-content.index-row, .page #about.index-row, .page #principles.index-row, .page #contact.index-row, .page #more-content.index-row, .page #newsletter {
     margin: 0;
     padding: 0; }
