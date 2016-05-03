@@ -595,6 +595,22 @@ POSTS & CONTENT STYLES
 	    color: #555;
 	    margin: 0;
     }
+}
+.index-separator {
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  	display: -ms-flexbox;      /* TWEENER - IE 10 */
+  	display: -webkit-flex;     /* NEW - Chrome */
+	display: flex;
+    justify-content: space-between;
+    margin: -40px 0 0px;
+    span {
+	    display: block;
+	    height: 1px;
+	    background: #c0c0c0;
+	    width: 38%;
+	    box-shadow: 0px 0px 5px #fff;
+
+    }
     a {
     	text-decoration: none;
     	cursor: default;
@@ -617,6 +633,8 @@ POSTS & CONTENT STYLES
 		    transition: background 0.3s ease;
 		    font-family: $bariol;
 		    box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.4);
+		    position: relative;
+		    top: -35px;
 		    &:hover:hover {
 			    background: #ff0f47;
 			}
