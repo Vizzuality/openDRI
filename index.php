@@ -25,7 +25,6 @@
 		<div id="inner-content" class="wrap">
 			<div class="index-title">
 				<h3>news</h3>
-				<a href="<?php echo home_url(); ?>/category/news"><span>view all news</span></a>
 			</div>
 			<div id="news" class="m-all index-row" role="news" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 				<div class="row-container">
@@ -69,9 +68,13 @@
 			        </div>
 				</div>
 			</div>
+			<div class="index-separator">
+				<span></span>
+				<a href="<?php echo home_url(); ?>/category/news"><span>view all news</span></a>
+				<span></span>
+			</div>
 			<div class="index-title">
 				<h3>projects</h3>
-				<a href="<?php echo home_url(); ?>/project"><span>view all projects</span></a>
 			</div>
 			<div id="projects" class="m-all cf index-row" role="projects" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 				<div class="row-container">
@@ -116,6 +119,11 @@
 					</article>
 					<?php } ?>
 				</div>
+			</div>
+			<div class="index-separator">
+				<span></span>
+				<a href="<?php echo home_url(); ?>/project"><span>view all projects</span></a>
+				<span></span>
 			</div>
 			<div id="resources" class="m-all index-row" role="resources" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 				<div class="row-container">
