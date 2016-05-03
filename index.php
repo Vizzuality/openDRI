@@ -34,7 +34,11 @@
 						foreach( $recent_posts as $recent ){  // start loop
 					?>
 					<article id="post-<?php echo $recent["ID"]; ?>" <?php post_class( 'cf' ); ?> role="article">
-						<?php $image = get_post_meta($recent["ID"], 'thumbnailPic', true);
+						<?php
+							$image = get_post_meta($recent["ID"], 'thumbnailPic', true);
+							$fallbackimg = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ));
+							
+							$image = ($image[0]) ? $image : $fallbackimg[0];
 							$image = ($image[0]) ? $image : get_template_directory_uri().'/library/images/red-cross.jpg';
 						?>
             			<a href="<?php echo $recent["guid"]; ?>" rel="bookmark" title="<?php echo $recent["post_title"]; ?>"><span class="img" style="background-image:url(<?php echo $image; ?>)"></span></a>
@@ -84,7 +88,11 @@
 						foreach( $recent_posts as $recent ){  // start loop
 					?>
 					<article id="post-<?php echo $recent["ID"]; ?>" <?php post_class( 'cf' ); ?> role="article">
-						<?php $image = get_post_meta($recent["ID"], 'thumbnailPic', true);
+						<?php
+							$image = get_post_meta($recent["ID"], 'thumbnailPic', true);
+							$fallbackimg = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ));
+							$image = ($image[0]) ? $image : $fallbackimg[0];
+							var_dump($image);
 							$image = ($image[0]) ? $image : get_template_directory_uri().'/library/images/red-cross.jpg';
 						?>
             			<a href="<?php echo $recent["guid"]; ?>" rel="bookmark" title="<?php echo $recent["post_title"]; ?>"><span class="img" style="background-image:url(<?php echo $image; ?>)"></span></a>

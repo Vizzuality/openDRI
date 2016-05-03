@@ -1,6 +1,8 @@
 <?php get_header(); ?>
 	<?php 
 		$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+		$fallbackimg = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ));
+		$image = ($image[0]) ? $image : $fallbackimg[0];
 		$hasimage = false;
 		if ($image[0]) $hasimage = true;
 		$placeholder = '/library/images/red-cross.jpg';
