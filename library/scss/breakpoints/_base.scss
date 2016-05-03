@@ -1863,7 +1863,8 @@ margin: 0;
 	#about.index-row,
 	#principles.index-row,
 	#newsletter.index-row,
-	#contact.index-row
+	#contact.index-row,
+	#members.index-row,
 	#more-content.index-row {margin: 0; display: block;}
 	#principles h3,
 	.-m-disclaimer h3 {
@@ -3087,7 +3088,7 @@ div.cartodb-popup .cartodb-popup-close-button {
 .home .index-row .row-container {justify-content: space-between;}
 .archive #contact .contact-form textarea, .page #contact .contact-form textarea {width: 50%;}
 .home .index-row .resource-list {max-height: 345px;}
-.page #principles, .page #contact, .page #more-content, .page #partners, .page #members, .page #newsletter {margin: 0; padding: 30px 0;}
+.page #principles, .page #contact, .page #more-content, .page #partners, .page #members, .page #newsletter {margin: 0; padding: 45px 0 0;}
 .page #partners p a {color: #0475cc;}
 @media (min-width: 1024px) {
 	.home .index-row#news .row-container {padding-right: 45px;}
