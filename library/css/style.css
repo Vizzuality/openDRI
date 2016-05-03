@@ -2932,14 +2932,16 @@ POSTS & CONTENT STYLES
 .archive #about.index-row,
 .archive #principles.index-row,
 .archive #newsletter.index-row,
-.archive #contact.index-row
-#more-content.index-row,
+.archive #contact.index-row,
+.archive #members.index-row,
+.archive #more-content.index-row,
 .page .page .about-content .card-third,
 .page #about.index-row,
 .page #principles.index-row,
 .page #newsletter.index-row,
-.page #contact.index-row
-#more-content.index-row {
+.page #contact.index-row,
+.page #members.index-row,
+.page #more-content.index-row {
   margin: 0;
   display: block; }
 .archive #principles h3,
@@ -4092,7 +4094,7 @@ div.cartodb-popup .cartodb-popup-close-button {
 
 .page #principles, .page #contact, .page #more-content, .page #partners, .page #members, .page #newsletter {
   margin: 0;
-  padding: 30px 0; }
+  padding: 42px 0 0; }
 
 .page #partners p a {
   color: #0475cc; }
