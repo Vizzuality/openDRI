@@ -527,6 +527,7 @@ POSTS & CONTENT STYLES
   	display: -webkit-flex;     /* NEW - Chrome */
     justify-content: center;
     width: 100%;
+    position: absolute;
     .what-explore {
     	margin: 0 30px;
     	&:first-child {
