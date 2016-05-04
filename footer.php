@@ -1020,8 +1020,8 @@
 					top_partners   = $('#contact').offset().top,
 					top_more	   = $('#more-content').offset().top;
 			} else if ($bar.hasClass('resources')) {
-				var top_principles = $("#notes").offset().top || null,
-					top_members	   = $('#publications').offset().top,
+				var top_principles = $("#publications").offset().top || null,
+					top_members	   = $('#notes').offset().top,
 					top_contact	   = $('#newsletters').offset().top,
 					top_newsletter = $('#tools').offset().top,
 					top_partners   = $('#other').offset().top,
