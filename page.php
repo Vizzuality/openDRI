@@ -6,9 +6,9 @@ if ( is_page( 'resources' ) ) {
 				<span class="corner-map"></span>
 				<div class="blue-bar-top resources" id="blue-bar">
 					<div class="wrap wrapper">
-						<span><a href="#notes">notes</a></span>
-						<span><a href="#publications">publications</a></span>
-						<span><a href="#newsletters">Newsletters</a></span>
+						<span><a href="#publications">guides</a></span>
+						<span><a href="#notes">short notes</a></span>
+						<span><a href="#newsletters">newsletters</a></span>
 						<span><a href="#tools">tools and training materials</a></span>
 						<span><a href="#other">other resources</a></span>
 					</div>
