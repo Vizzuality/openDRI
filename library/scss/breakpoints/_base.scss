@@ -980,6 +980,9 @@ POSTS & CONTENT STYLES
 }
 .resources-anchor {
     position: relative;
+    display: block;
+    height: 1px;
+    width: 1px;
 }
 .page .resources-page-list .index-row {margin: 0;}
 .resources-page-list {
