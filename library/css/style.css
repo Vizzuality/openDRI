@@ -2112,7 +2112,10 @@ POSTS & CONTENT STYLES
   width: 100%; }
 
 .resources-anchor {
-  position: relative; }
+  position: relative;
+  display: block;
+  height: 1px;
+  width: 1px; }
 
 .page .resources-page-list .index-row {
   margin: 0; }
