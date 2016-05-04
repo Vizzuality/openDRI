@@ -1,7 +1,9 @@
 <?php get_header(); ?>
 	<div id="map-fake">
 		<div class="what-list">
-			<h3>OpenDRI shares, collects, and uses data, applying the concepts of the open data movement to reduce vulnerability to natural hazards and to climate change across the globe. Explore our project map to see where we’ve been working towards making an impact.</h3>
+			<h3>OpenDRI brings the philosophies and practices of the global open data
+movement to the challenges of reducing vulnerability and building
+resilience to natural hazards and the impacts of climate change across the globe.</h3>
 			<nav>
 				<?php
 				$titles   = ['Sharing Data','Collecting Data','Using Data'];
