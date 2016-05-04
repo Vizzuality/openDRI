@@ -1545,7 +1545,7 @@ and more scalable.
 POSTS & CONTENT STYLES
 *********************/
 #map-fake {
-  height: 740px;
+  height: 580px;
   display: -webkit-box;
   /* OLD - iOS 6-, Safari 3.1-6 */
   display: -ms-flexbox;
@@ -1680,7 +1680,8 @@ POSTS & CONTENT STYLES
   /* TWEENER - IE 10 */
   display: -webkit-flex;
   /* NEW - Chrome */
-  justify-content: space-around; }
+  justify-content: center;
+  width: 100%; }
   .explore-buttons .what-explore {
     margin: 0 30px; }
     .explore-buttons .what-explore:first-child {
@@ -4395,7 +4396,10 @@ div.cartodb-popup .cartodb-popup-close-button {
   .resources-page-list .index-row.last-resources .resource-cont {
     width: 100%;
     max-width: 100%;
-    margin: 30px 0; } }
+    margin: 30px 0; }
+
+  .home .what-explore {
+    width: 230px; } }
 @media (max-width: 768px) {
   .index-separator {
     margin: -70px 0px 0px; }
