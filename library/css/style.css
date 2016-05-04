@@ -2400,8 +2400,10 @@ POSTS & CONTENT STYLES
           display: flex;
           margin: 35px 0px;
           justify-content: flex-start; }
+          .hentry.-odri-post .entry-content .project-box .project-figures > div {
+            margin: 0 5% 0 0; }
           .hentry.-odri-post .entry-content .project-box .project-figures .figure-title {
-            width: 86px;
+            width: 160px;
             display: block;
             height: auto;
             font-family: "Bariol", "Helvetica Neue", Helvetica, Arial, sans-serif;
