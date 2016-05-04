@@ -1681,7 +1681,8 @@ POSTS & CONTENT STYLES
   display: -webkit-flex;
   /* NEW - Chrome */
   justify-content: center;
-  width: 100%; }
+  width: 100%;
+  position: absolute; }
   .explore-buttons .what-explore {
     margin: 0 30px; }
     .explore-buttons .what-explore:first-child {
