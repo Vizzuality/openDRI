@@ -169,7 +169,7 @@ resilience to natural hazards and the impacts of climate change across the globe
 					<a href="#">
 						<article class="resource-cont" style="background-image:url(http://i0.wp.com/dev-gfdrr-opendri.pantheonsite.io/wp-content/uploads/2016/02/opendri_fg_web_20140629b_0.jpg)">
 							<section>
-								<h3>Open Data for Resilience Initiative Field Guide</h3>
+								<h3>OpenDRI Principles</h3>
 							</section>
 						</article>
 					</a>
