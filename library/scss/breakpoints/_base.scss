@@ -3116,7 +3116,7 @@ div.cartodb-popup .cartodb-popup-close-button {
 .home .index-row article, .home .index-row .card-third {margin: 0 0 50px;}
 .home .index-row .row-container {justify-content: space-between;}
 .archive #contact .contact-form textarea, .page #contact .contact-form textarea {width: 50%;}
-.home .index-row .resource-list {max-height: 345px;}
+.home .index-row .resource-list {max-height: 345px; min-height: 100%;}
 .page #principles, .page #contact, .page #more-content, .page #partners, .page #members, .page #newsletter {margin: 0; padding: 47px 0 0;}
 .page #partners p a {color: #0475cc;}
 @media (min-width: 1024px) {
