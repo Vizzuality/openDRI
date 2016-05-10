@@ -356,22 +356,48 @@ if(is_post_type_archive() && $post_type=='project') {
 		<div id="tools" class="resources-anchor"></div>
 		<h3 class="resource-list-title">Tools and Training Materials</h3>
 		<ul class="resource-list-new">
+			<?php
+			$posts_array = get_posts( array('category_name'	=> 'Resources Tools and Training Materials',
+										  'orderby' 		=> 'date',
+										  'order'           => 'DESC',
+										  'post_type'       => 'resource',
+										  'post_status'     => 'publish'));
+			for($i = 0; $i < count($posts_array); $i+=2) {
+			?>
 			<li>
-				<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
-				<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
-			</li>
-			<li>
-				<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
-				<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
-			</li>
-			<li>
-				<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
-				<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
-			</li>
-			<li>
-				<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
-				<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
-			</li>
+				<div>
+					<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i]->post_date); ?></span>
+					<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i]->ID)) ?>"><?php echo $posts_array[$i]->post_title ?></a></span>
+					<?php 
+						$posttags = get_the_tags($posts_array[$i]->ID);
+						if ($posttags) {
+							echo '<span class="tags">';
+							$t = 0;
+							foreach($posttags as $tag) {
+								if(++$t === count($posttags)) echo '<a href="#">'.$tag->name.'</a>'; 
+								else echo '<a href="#">'.$tag->name.'</a>, '; 
+							}
+							echo '</span>';
+						}
+					?>
+				</div>
+				<div>
+					<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i+1]->post_date); ?></span>
+					<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i+1]->ID)) ?>"><?php echo $posts_array[$i]->post_title ?></a></span>
+					<?php 
+						$posttags = get_the_tags($posts_array[$i+1]->ID);
+						if ($posttags) {
+							echo '<span class="tags">';
+							$t = 0;
+							foreach($posttags as $tag) {
+								if(++$t === count($posttags)) echo '<a href="#">'.$tag->name.'</a>'; 
+								else echo '<a href="#">'.$tag->name.'</a>, '; 
+							}
+							echo '</span>';
+						}
+					?>
+				</div>
+			<?php } ?>
 		</ul>
 		<div id="other" class="resources-anchor"></div>
 		<h3 class="resource-list-title">Other Resources</h3>
