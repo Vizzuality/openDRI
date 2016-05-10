@@ -708,6 +708,10 @@ POSTS & CONTENT STYLES
 	    }
 	    a {
 	    	text-decoration: none;
+	    	width: calc(100%/3);
+	    }
+	    .resource-cont {
+	    	width: 100%;
 	    }
     }
     article {
@@ -763,9 +767,9 @@ POSTS & CONTENT STYLES
 				background-image: url(../images/gfdrr-2012.jpg);
 			}
 			position: relative;
-		    max-width: 660px;
+		    max-width: 678px;
 		    height: 345px;
-		    width: 660px;
+		    width: 678px;
 		    margin: 0;
 		    justify-content: center;
 		    flex-direction: row;
