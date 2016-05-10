@@ -180,22 +180,67 @@ if(is_post_type_archive() && $post_type=='project') {
 		<div id="publications" class="resources-anchor"></div>
 		<h3 class="resource-list-title">Guides and Publications</h3>
 		<ul class="resource-list-new">
+			<?php
+				$posts_array = get_posts( array('category_name'	=> 'Resources Guides',
+										  'orderby' 		=> 'date',
+										  'order'           => 'DESC',
+										  'post_type'       => 'resource',
+										  'post_status'     => 'publish'));
+				for($i = 0; $i < count($posts_array); $i+=2) {
+			?>
 			<li>
-				<div class="thumbnail"><a href="http://dev-gfdrr-opendri.pantheonsite.io/wp-content/uploads/2014/06/opendri_fg_web_20140629b_0.pdf"><img src="http://dev-gfdrr-opendri.pantheonsite.io/wp-content/uploads/2016/05/OpenDRI_field_guide_cover.jpg" alt="" /></a>
-					<div class="text-thumbnail"><span class="date">APRIL 2016</span><span class="title"><a href="http://dev-gfdrr-opendri.pantheonsite.io/wp-content/uploads/2014/06/opendri_fg_web_20140629b_0.pdf">Open Data for Resilience Initiative Field Guide</a></span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a></span></div>
+				<div class="thumbnail">
+					<?php
+					$image = get_post_meta($posts_array[$i]->ID, 'thumbnailPic', true);
+					$fallbackimg = wp_get_attachment_image_src( get_post_thumbnail_id( $posts_array[$i]->ID ));
+					$image = ($image[0]) ? $image : $fallbackimg[0];
+					?>
+					<a href="<?php echo esc_url( get_permalink($posts_array[$i]->ID)) ?>"><img src="<?php echo $image?>" alt="" /></a>
+					<div class="text-thumbnail">
+						<span class="date"><?php mysql2date('j M Y', $posts_array[$i]->post_date); ?></span>
+						<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i]->ID)) ?>"><?php echo $posts_array[$i]->post_title ?></a></span>
+						<?php 
+						$posttags = get_the_tags($posts_array[$i]->ID);
+						if ($posttags) {
+							echo '<span class="tags">';
+							$t = 0;
+							foreach($posttags as $tag) {
+								if(++$t === count($posttags)) echo '<a href="#">'.$tag->name.'</a>'; 
+								else echo '<a href="#">'.$tag->name.'</a>, '; 
+							}
+							echo '</span>';
+						}
+						?>
+					</div>
 				</div>
-				<div class="thumbnail"><a href="http://dev-gfdrr-opendri.pantheonsite.io/wp-content/uploads/2014/12/Planning-an-Open-Cities-Mapping-Project_0.pdf"><img src="http://dev-gfdrr-opendri.pantheonsite.io/wp-content/uploads/2016/05/OpenCities_Guide.jpg" alt="" /></a>
-					<div class="text-thumbnail"><span class="date">APRIL 2016</span><span class="title"><a href="http://dev-gfdrr-opendri.pantheonsite.io/wp-content/uploads/2014/12/Planning-an-Open-Cities-Mapping-Project_0.pdf">Open Data for Resilience Initiative: Planning an Open Cities Mapping Project</a></span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a></span></div>
+				<div class="thumbnail">
+					<?php
+					$image = get_post_meta($posts_array[$i+1]->ID, 'thumbnailPic', true);
+					$fallbackimg = wp_get_attachment_image_src( get_post_thumbnail_id( $posts_array[$i+1]->ID ));
+					$image = ($image[0]) ? $image : $fallbackimg[0];
+					?>
+					<a href="<?php echo esc_url( get_permalink($posts_array[$i+1]->ID)) ?>"><img src="<?php echo $image?>" alt="" /></a>
+					<div class="text-thumbnail">
+						<span class="date"><?php mysql2date('j M Y', $posts_array[$i+1]->post_date); ?></span>
+						<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i+1]->ID)) ?>"><?php echo $posts_array[$i+1]->post_title ?></a></span>
+						<?php 
+						$posttags = get_the_tags($posts_array[$i+1]->ID);
+						if ($posttags) {
+							echo '<span class="tags">';
+							$t = 0;
+							foreach($posttags as $tag) {
+								if(++$t === count($posttags)) echo '<a href="#">'.$tag->name.'</a>'; 
+								else echo '<a href="#">'.$tag->name.'</a>, '; 
+							}
+							echo '</span>';
+						}
+						?>
+					</div>
 				</div>
 			</li>
-			<li>
-				<div class="thumbnail"><a href="http://dev-gfdrr-opendri.pantheonsite.io/wp-content/uploads/2016/05/Digital-Elevation-Models-10-23-15-web.pdf"><img src="http://dev-gfdrr-opendri.pantheonsite.io/wp-content/uploads/2016/05/digital-elevation-models.jpg" alt="" /></a>
-					<div class="text-thumbnail"><span class="date">APRIL 2016</span><span class="title"><a href="http://dev-gfdrr-opendri.pantheonsite.io/wp-content/uploads/2016/05/Digital-Elevation-Models-10-23-15-web.pdf">Digital Elevation Models</a></span><span class="tags"><a>tag 1</a>, <a href="#">tag 2</a></span></div>
-				</div>
-				<div class="thumbnail"><a href="https://satsummit.github.io/landscape/"><img src="http://dev-gfdrr-opendri.pantheonsite.io/wp-content/uploads/2016/05/satellites-in-global-development.jpg" alt="" /></a>
-					<div class="text-thumbnail"><span class="date">APRIL 2016</span><span class="title"><a href="https://satsummit.github.io/landscape/">Satellites in Global Development</a></span><span>This guide was developed by the World Bank LLI.</span><span class="tags"><a>tag 1</a>, <a href="#">tag 2</a></span></div>
-				</div>
-			</li>
+			<?php 
+				}
+			?>
 		</ul>
 		<div id="notes" class="resources-anchor"></div>
 		<h3 class="resource-list-title">Short Notes</h3>
