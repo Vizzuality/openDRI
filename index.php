@@ -149,7 +149,7 @@ resilience to natural hazards and the impacts of climate change across the globe
 				</div>
 				<div class="row-container">
 					<a href="http://dev-gfdrr-opendri.pantheonsite.io/resource/open-data-for-resilience-initiative-field-guide/">
-						<article class="resource-cont"  id="firstFeatured" style="background-image:url(http://i0.wp.com/dev-gfdrr-opendri.pantheonsite.io/wp-content/uploads/2016/02/opendri_fg_web_20140629b_0.jpg)">
+						<article class="resource-cont"  style="background-image:url(http://i0.wp.com/dev-gfdrr-opendri.pantheonsite.io/wp-content/uploads/2016/02/opendri_fg_web_20140629b_0.jpg)">
 							<section>
 								<h3>Open Data for Resilience Initiative Field Guide</h3>
 							</section>
@@ -160,9 +160,16 @@ resilience to natural hazards and the impacts of climate change across the globe
 			<div class="m-all cf index-row last-resources" role="resources" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 				<div class="row-container">
 					<a href="http://dev-gfdrr-opendri.pantheonsite.io/resource/planning-an-open-cities-mapping-project/" >
-						<article class="resource-cont --scnd-img"  id="secondFeatured" style="background-image:url(http://i2.wp.com/dev-gfdrr-opendri.pantheonsite.io/wp-content/uploads/2016/02/Planning-an-Open-Cities-Mapping-Project_0.jpg)">
+						<article class="resource-cont --scnd-img"  style="background-image:url(http://i2.wp.com/dev-gfdrr-opendri.pantheonsite.io/wp-content/uploads/2016/02/Planning-an-Open-Cities-Mapping-Project_0.jpg)">
 							<section>
 								<h3>Planning An Open Cities Mapping Project</h3>
+							</section>
+						</article>
+					</a>
+					<a href="#">
+						<article class="resource-cont" style="background-image:url(http://i0.wp.com/dev-gfdrr-opendri.pantheonsite.io/wp-content/uploads/2016/02/opendri_fg_web_20140629b_0.jpg)">
+							<section>
+								<h3>Open Data for Resilience Initiative Field Guide</h3>
 							</section>
 						</article>
 					</a>
@@ -183,9 +190,6 @@ resilience to natural hazards and the impacts of climate change across the globe
 					</ul>
 				</div>
 			</div>
-			<script type="text/javascript">
-			document.getElementsByTagName('head')[0].innerHTML += '<style>#firstFeatured:after{background-image:url(<?php echo $image1 ?>) !important;}#secondFeatured:after{background-image:url(<?php echo $image2 ?>) !important;}</style>';
-			</script>
 			<?php /* get_sidebar(); */ ?>
 		</div>
 	</div>
