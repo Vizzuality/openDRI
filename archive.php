@@ -177,95 +177,193 @@ if(is_post_type_archive() && $post_type=='project') {
 									</div>
 								<?php } // if projects ?>
 									<?php if (is_post_type_archive() && $post_type=='resource') : ?>
-									<div id="publications" class="resources-anchor"></div>
-<h3 class="resource-list-title">Guides and Publications</h3>
-									<ul class="resource-list-new">
-	<li>
-		<div class="thumbnail"><a href="http://dev-gfdrr-opendri.pantheonsite.io/wp-content/uploads/2014/06/opendri_fg_web_20140629b_0.pdf"><img src="http://dev-gfdrr-opendri.pantheonsite.io/wp-content/uploads/2016/05/OpenDRI_field_guide_cover.jpg" alt="" /></a>
-			<div class="text-thumbnail"><span class="date">APRIL 2016</span><span class="title"><a href="http://dev-gfdrr-opendri.pantheonsite.io/wp-content/uploads/2014/06/opendri_fg_web_20140629b_0.pdf">Open Data for Resilience Initiative Field Guide</a></span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a></span></div>
-		</div>
-		<div class="thumbnail"><a href="http://dev-gfdrr-opendri.pantheonsite.io/wp-content/uploads/2014/12/Planning-an-Open-Cities-Mapping-Project_0.pdf"><img src="http://dev-gfdrr-opendri.pantheonsite.io/wp-content/uploads/2016/05/OpenCities_Guide.jpg" alt="" /></a>
-			<div class="text-thumbnail"><span class="date">APRIL 2016</span><span class="title"><a href="http://dev-gfdrr-opendri.pantheonsite.io/wp-content/uploads/2014/12/Planning-an-Open-Cities-Mapping-Project_0.pdf">Open Data for Resilience Initiative: Planning an Open Cities Mapping Project</a></span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a></span></div>
-		</div>
-	</li>
-	<li>
-		<div class="thumbnail"><a href="http://dev-gfdrr-opendri.pantheonsite.io/wp-content/uploads/2016/05/Digital-Elevation-Models-10-23-15-web.pdf"><img src="http://dev-gfdrr-opendri.pantheonsite.io/wp-content/uploads/2016/05/digital-elevation-models.jpg" alt="" /></a>
-			<div class="text-thumbnail"><span class="date">APRIL 2016</span><span class="title"><a href="http://dev-gfdrr-opendri.pantheonsite.io/wp-content/uploads/2016/05/Digital-Elevation-Models-10-23-15-web.pdf">Digital Elevation Models</a></span><span class="tags"><a>tag 1</a>, <a href="#">tag 2</a></span></div>
-		</div>
-		<div class="thumbnail"><a href="https://satsummit.github.io/landscape/"><img src="http://dev-gfdrr-opendri.pantheonsite.io/wp-content/uploads/2016/05/satellites-in-global-development.jpg" alt="" /></a>
-			<div class="text-thumbnail"><span class="date">APRIL 2016</span><span class="title"><a href="https://satsummit.github.io/landscape/">Satellites in Global Development</a></span><span>This guide was developed by the World Bank LLI.</span><span class="tags"><a>tag 1</a>, <a href="#">tag 2</a></span></div>
-		</div>
-	</li>
-</ul>
-<div id="notes" class="resources-anchor"></div>
-<h3 class="resource-list-title">Short Notes</h3>
-<ul class="resource-list-new">
-	<li>
-		<div class="thumbnail"><a href="#"><img src="http://opendri.simbiotica.es/wp-content/uploads/2015/12/thumbnail-1.png" alt="" /></a>
-			<div class="text-thumbnail"><span class="date">APRIL 2016</span><span class="title"><a href="#">Technote #1: Global Earthquake Model</a></span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
-		</div>
-		<div class="thumbnail"><a href="#"><img src="http://opendri.simbiotica.es/wp-content/uploads/2015/12/thumbnail-1.png" alt="" /></a>
-			<div class="text-thumbnail"><span class="date">APRIL 2016</span><span class="title"><a href="#">Technote #2: UAV for Base Mapping in Tanzania: Interview of Mark Iliffe</a></span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
-		</div>
-	</li>
-</ul>
-<div id="newsletters" class="resources-anchor"></div>
-<h3 class="resource-list-title">Newsletters</h3>
-<ul class="resource-list-new">
-	<li>
-		<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
-		<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div></li>
-	<li>
-		<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
-		<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div></li>
-	<li>
-		<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
-		<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div></li>
-	<li>
-		<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
-		<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
-	</li>
-</ul>
-<div id="tools" class="resources-anchor"></div>
-<h3 class="resource-list-title">Tools and Training Materials</h3>
-<ul class="resource-list-new">
-	<li>
-		<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
-		<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
-	</li>
-	<li>
-		<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
-		<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
-	</li>
-	<li>
-		<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
-		<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
-	</li>
-	<li>
-		<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
-		<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
-	</li>
-</ul>
-<div id="other" class="resources-anchor"></div>
-<h3 class="resource-list-title">Other Resources</h3>
-<ul class="resource-list-new">
-	<li>
-		<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
-		<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
-	</li>
-	<li>
-		<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
-		<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
-	</li>
-	<li>
-		<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
-		<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
-	</li>
-	<li>
-		<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
-		<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
-	</li>
-</ul>
+		<div id="publications" class="resources-anchor"></div>
+		<h3 class="resource-list-title">Guides and Publications</h3>
+		<ul class="resource-list-new">
+			<li>
+				<div class="thumbnail"><a href="http://dev-gfdrr-opendri.pantheonsite.io/wp-content/uploads/2014/06/opendri_fg_web_20140629b_0.pdf"><img src="http://dev-gfdrr-opendri.pantheonsite.io/wp-content/uploads/2016/05/OpenDRI_field_guide_cover.jpg" alt="" /></a>
+					<div class="text-thumbnail"><span class="date">APRIL 2016</span><span class="title"><a href="http://dev-gfdrr-opendri.pantheonsite.io/wp-content/uploads/2014/06/opendri_fg_web_20140629b_0.pdf">Open Data for Resilience Initiative Field Guide</a></span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a></span></div>
+				</div>
+				<div class="thumbnail"><a href="http://dev-gfdrr-opendri.pantheonsite.io/wp-content/uploads/2014/12/Planning-an-Open-Cities-Mapping-Project_0.pdf"><img src="http://dev-gfdrr-opendri.pantheonsite.io/wp-content/uploads/2016/05/OpenCities_Guide.jpg" alt="" /></a>
+					<div class="text-thumbnail"><span class="date">APRIL 2016</span><span class="title"><a href="http://dev-gfdrr-opendri.pantheonsite.io/wp-content/uploads/2014/12/Planning-an-Open-Cities-Mapping-Project_0.pdf">Open Data for Resilience Initiative: Planning an Open Cities Mapping Project</a></span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a></span></div>
+				</div>
+			</li>
+			<li>
+				<div class="thumbnail"><a href="http://dev-gfdrr-opendri.pantheonsite.io/wp-content/uploads/2016/05/Digital-Elevation-Models-10-23-15-web.pdf"><img src="http://dev-gfdrr-opendri.pantheonsite.io/wp-content/uploads/2016/05/digital-elevation-models.jpg" alt="" /></a>
+					<div class="text-thumbnail"><span class="date">APRIL 2016</span><span class="title"><a href="http://dev-gfdrr-opendri.pantheonsite.io/wp-content/uploads/2016/05/Digital-Elevation-Models-10-23-15-web.pdf">Digital Elevation Models</a></span><span class="tags"><a>tag 1</a>, <a href="#">tag 2</a></span></div>
+				</div>
+				<div class="thumbnail"><a href="https://satsummit.github.io/landscape/"><img src="http://dev-gfdrr-opendri.pantheonsite.io/wp-content/uploads/2016/05/satellites-in-global-development.jpg" alt="" /></a>
+					<div class="text-thumbnail"><span class="date">APRIL 2016</span><span class="title"><a href="https://satsummit.github.io/landscape/">Satellites in Global Development</a></span><span>This guide was developed by the World Bank LLI.</span><span class="tags"><a>tag 1</a>, <a href="#">tag 2</a></span></div>
+				</div>
+			</li>
+		</ul>
+		<div id="notes" class="resources-anchor"></div>
+		<h3 class="resource-list-title">Short Notes</h3>
+		<ul class="resource-list-new">
+			<li>
+				<div class="thumbnail"><a href="#"><img src="http://opendri.simbiotica.es/wp-content/uploads/2015/12/thumbnail-1.png" alt="" /></a>
+					<div class="text-thumbnail"><span class="date">APRIL 2016</span><span class="title"><a href="#">Technote #1: Global Earthquake Model</a></span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
+				</div>
+				<div class="thumbnail"><a href="#"><img src="http://opendri.simbiotica.es/wp-content/uploads/2015/12/thumbnail-1.png" alt="" /></a>
+					<div class="text-thumbnail"><span class="date">APRIL 2016</span><span class="title"><a href="#">Technote #2: UAV for Base Mapping in Tanzania: Interview of Mark Iliffe</a></span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
+				</div>
+			</li>
+		</ul>
+		<div id="newsletters" class="resources-anchor"></div>
+		<h3 class="resource-list-title">Newsletters</h3>
+		<ul class="resource-list-new">
+			<li>
+				<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
+				<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div></li>
+			<li>
+				<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
+				<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div></li>
+			<li>
+				<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
+				<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div></li>
+			<li>
+				<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
+				<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
+			</li>
+		</ul>
+		<div id="tools" class="resources-anchor"></div>
+		<h3 class="resource-list-title">Tools and Training Materials</h3>
+		<ul class="resource-list-new">
+			<li>
+				<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
+				<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
+			</li>
+			<li>
+				<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
+				<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
+			</li>
+			<li>
+				<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
+				<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
+			</li>
+			<li>
+				<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
+				<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
+			</li>
+		</ul>
+		<div id="other" class="resources-anchor"></div>
+		<h3 class="resource-list-title">Other Resources</h3>
+		<ul class="resource-list-new">
+			<li>
+				<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
+				<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
+			</li>
+			<li>
+				<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
+				<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
+			</li>
+			<li>
+				<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
+				<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
+			</li>
+			<li>
+				<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
+				<div><span class="date">APRIL 2016</span><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="tags"><a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">tag 3</a>, <a href="#">tag 4</a>, <a href="#">tag 5</a></span></div>
+			</li>
+		</ul>
+									<?php else: ?> 
+								<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+							 	 <?php $cats = array();
+									foreach(wp_get_post_categories($post->ID) as $c)
+									{
+										$cat = get_category($c);
+										array_push($cats,$cat->name);
+									}
+								?>
+
+
+									<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf '); ?> role="article">
+										<?php 
+										$image = get_post_meta($post->ID, 'thumbnailPic', true);
+										$fallbackimg = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ));
+										$image = ($image[0]) ? $image : $fallbackimg[0];
+										$placeholder = '/library/images/red-cross.jpg';
+										if ($post->post_type == 'resource') {
+											$placeholder = '/library/images/resource-placeholder_1024.jpg';
+										}
+										$image = ($image[0]) ? $image : get_template_directory_uri().$placeholder;
+										?>
+		            					<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><span class="img" style="background-image:url(<?php echo $image; ?>)"></span></a>
+
+										<header class="article-header">
+											<h1 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
+										</header>
+										<section class="entry-content cf">
+											<?php the_excerpt(); ?>
+										</section>
+										<footer class="article-footer cf">
+											<?php if ($istag) { ?>
+											<p class="byline entry-meta vcard">
+												<?php
+													if 	($post->post_type=='post'){		   $articletype = 'news'; $linktype='/category/news';}
+													elseif ($post->post_type=='project'){  $articletype = 'project'; $linktype='/project';}
+													elseif ($post->post_type=='resource'){ $articletype = 'resource'; $linktype='/resources';}
+												?>
+												<span><a href="<?php echo home_url().$linktype;?>"><?php echo $articletype ?></a></span>
+											</p>
+											<?php } else { ?>
+											<p class="byline entry-meta vcard">
+												<span>
+													<?php
+													foreach((get_the_category()) as $category) { 
+														if ($category->cat_ID == 6 || 
+															$category->cat_ID == 7 ||
+															$category->cat_ID == 8) {
+													    	echo '<a href="'.esc_url( get_category_link( $category->term_id ) ).'">'.$category->cat_name . '</a> '; 
+														}
+													} 
+													?>
+												</span>
+												<?php if($post_type!='project') { ?>
+					                            <?php printf( __( '', 'bonestheme' ).' %1$s',
+					   								/* the time the post was published */
+					   								'<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time('d M') . '</time>'
+												); ?>
+												<?php } ?>
+											</p>
+											<?php } //end if tag?>
+										</footer>
+									</article>
+
+								<?php endwhile; ?>
+								<?php if (is_post_type_archive() && $post_type=='resource') : ?>
+									<div class="m-all index-row last-resources">
+									<?php
+										$image3= '';
+										$image4= '';
+											get_post_meta(434, 'thumbnailPic', true);
+										$image = ($image[0]) ? $image : $fallbackimg[0];
+											$image3 = ($image[0]) ? $image : get_template_directory_uri().'/library/images/resource-placeholder_1024.jpg';
+									?>
+										<a href="<?php echo esc_url( get_permalink(434) ); ?>" >
+											<article class="resource-cont"  id="thirdFeatured">
+												<section>
+													<h3>Open Data for Resilience Initiative Field Guide</h3>
+												</section>
+											</article>
+										</a>
+									<?php  
+											$image = get_post_meta(449, 'thumbnailPic', true);
+											$image4 = ($image[0]) ? $image : get_template_directory_uri().'/library/images/resource-placeholder_1024.jpg';
+									 ?>
+										<a href="<?php echo esc_url( get_permalink(449) ); ?>"  >
+											<article class="resource-cont --scnd-img"  id="fourthFeatured">
+												<section>
+													<h3>Planning An Open Cities Mapping Project</h3>
+												</section>
+											</article>
+										</a>
+									</div>
+									<script type="text/javascript">
+										document.getElementsByTagName('head')[0].innerHTML += '<style>#firstFeatured:after{background-image:url(<?php echo $image1 ?>) !important;}#secondFeatured:after{background-image:url(<?php echo $image2 ?>) !important;}#thirdFeatured:after{background-image:url(<?php echo $image3 ?>) !important;}#fourthFeatured:after{background-image:url(<?php echo $image4 ?>) !important;}</style>';
+									</script>
+								<?php endif; ?>
+
 							</div>
 						</div>
 									<?php if (!!$display_navi){ bones_page_navi();} ?>
@@ -294,6 +392,7 @@ if(is_post_type_archive() && $post_type=='project') {
 			</div>
 
 							<?php endif; ?>
+								<?php endif; ?>
 
 						</main>
 
