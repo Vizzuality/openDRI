@@ -151,7 +151,7 @@
 					<?php if (get_post_type( get_the_ID() ) == 'project') { ?>
 						<a href="<?php echo home_url(); ?>/project">explore projects</a>
 					<?php } elseif (get_post_type( get_the_ID() ) == 'resource'){ ?>
-						<a href="<?php echo home_url(); ?>/resource">explore projects</a>
+						<a href="<?php echo home_url(); ?>/resource">explore resources</a>
 					<?php } else { ?>
 						<a href="<?php echo home_url(); ?>/category/news">explore news</a>
 				<?php } // end else ?>
