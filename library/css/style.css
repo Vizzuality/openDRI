@@ -1856,7 +1856,10 @@ POSTS & CONTENT STYLES
       width: 100%;
       justify-content: space-between; }
     .index-row.last-resources a {
-      text-decoration: none; }
+      text-decoration: none;
+      width: calc(100%/3); }
+    .index-row.last-resources .resource-cont {
+      width: 100%; }
   .index-row article {
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.2); }
   .index-row article,
@@ -1901,9 +1904,9 @@ POSTS & CONTENT STYLES
     .index-row article.resource-cont,
     .index-row .card-third.resource-cont {
       position: relative;
-      max-width: 660px;
+      max-width: 678px;
       height: 345px;
-      width: 660px;
+      width: 678px;
       margin: 0;
       justify-content: center;
       flex-direction: row;
@@ -4118,7 +4121,8 @@ div.cartodb-popup .cartodb-popup-close-button {
   width: 50%; }
 
 .home .index-row .resource-list {
-  max-height: 345px; }
+  max-height: 345px;
+  min-height: 100%; }
 
 .page #principles, .page #contact, .page #more-content, .page #partners, .page #members, .page #newsletter {
   margin: 0;

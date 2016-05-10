@@ -143,10 +143,19 @@ if(is_post_type_archive() && $post_type=='project') {
 	$title = 'Resources';
 	$hascornermap = true;
 	$description = 'At OpenDRI we are committed to increasing information that can empower individuals and their governments to reduce risk to natural hazards and climate change in their communities.  We’ve compiled a database of relevant resources to share what we have learned through our own projects and from the work of others.';
+	echo '<div class="blue-bar-top resources" id="blue-bar">
+					<div class="wrap wrapper">
+						<span><a href="#publications">guides</a></span>
+						<span><a href="#notes">short notes</a></span>
+						<span><a href="#newsletters">newsletters</a></span>
+						<span><a href="#tools">tools and training materials</a></span>
+						<span><a href="#other">other resources</a></span>
+					</div>
+				</div>';
 }
 
 ?>
-			<div id="content">
+			<div id="content" class="resources-page-list">
 						<?php echo ($hascornermap) ? '<span class="corner-map"></span>' : ''; ?>
 				<div id="inner-content" class="wrap">
 						<main id="main" class="" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
@@ -168,45 +177,275 @@ if(is_post_type_archive() && $post_type=='project') {
 									</div>
 								<?php } // if projects ?>
 									<?php if (is_post_type_archive() && $post_type=='resource') : ?>
-									<div class="m-all index-row last-resources">
-									<?php
-										$args = array( 'numberposts' => '1', 'category' => 16, 'order' => 'DESC', 'post_type' => 'resource', 'post_status' => 'publish' );
-										$featured_col = wp_get_recent_posts( $args );
-										$image1 = '';
-										$image2 = '';
-										foreach( $featured_col as $featured ) {
-											$image = get_post_meta($featured["ID"], 'thumbnailPic', true);
-											$fallbackimg = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ));
-											$image = ($image[0]) ? $image : $fallbackimg[0];
-											$image1 = ($image[0]) ? $image : get_template_directory_uri().'/library/images/resource-placeholder_1024.jpg';
-									?>
-										<a href="<?php echo $featured["guid"]; ?>" >
-											<article class="resource-cont"  id="firstFeatured">
-												<section>
-													<h3><?php echo $featured["post_title"]; ?></h3>
-												</section>
-											</article>
-										</a>
-									<?php } 
-										$args = array( 'numberposts' => '1', 'category' => 16,  'order' => 'DESC', 'offset' => '1', 'post_type' => 'resource', 'post_status' => 'publish' );
-										$featured_col = wp_get_recent_posts( $args );
-										foreach( $featured_col as $featured ) {
-											$image = get_post_meta($featured["ID"], 'thumbnailPic', true);
-											$fallbackimg = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ));
-											$image = ($image[0]) ? $image : $fallbackimg[0];
-											$image2 = ($image[0]) ? $image : get_template_directory_uri().'/library/images/resource-placeholder_1024.jpg';
-									 ?>
-										<a href="<?php echo $featured["guid"]; ?>"  >
-											<article class="resource-cont --scnd-img"  id="secondFeatured">
-												<section>
-													<h3><?php echo $featured["post_title"]; ?></h3>
-												</section>
-											</article>
-										</a>
-									<?php } ?>
-									</div>
-									<ul class="resource-list">
-									<?php endif; ?> 
+		<div id="publications" class="resources-anchor"></div>
+		<h3 class="resource-list-title">Guides and Publications</h3>
+		<ul class="resource-list-new">
+			<?php
+				$posts_array = get_posts( array('category_name'	=> 'Resources Guides',
+										  'orderby' 		=> 'date',
+										  'order'           => 'DESC',
+										  'post_type'       => 'resource',
+										  'post_status'     => 'publish'));
+				for($i = 0; $i < count($posts_array); $i+=2) {
+			?>
+			<li>
+				<div class="thumbnail">
+					<?php
+					$image = get_post_meta($posts_array[$i]->ID, 'thumbnailPic', true);
+					$fallbackimg = wp_get_attachment_image_src( get_post_thumbnail_id( $posts_array[$i]->ID ));
+					$image = ($image[0]) ? $image : $fallbackimg[0];
+					?>
+					<a href="<?php echo esc_url( get_permalink($posts_array[$i]->ID)) ?>"><img src="<?php echo $image?>" alt="" /></a>
+					<div class="text-thumbnail">
+						<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i]->post_date); ?></span>
+						<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i]->ID)) ?>"><?php echo $posts_array[$i]->post_title ?></a></span>
+						<?php 
+						$posttags = get_the_tags($posts_array[$i]->ID);
+						if ($posttags) {
+							echo '<span class="tags">';
+							$t = 0;
+							foreach($posttags as $tag) {
+								if(++$t === count($posttags)) echo '<a href="#">'.$tag->name.'</a>'; 
+								else echo '<a href="#">'.$tag->name.'</a>, '; 
+							}
+							echo '</span>';
+						}
+						?>
+					</div>
+				</div>
+				<div class="thumbnail">
+					<?php
+					$image = get_post_meta($posts_array[$i+1]->ID, 'thumbnailPic', true);
+					$fallbackimg = wp_get_attachment_image_src( get_post_thumbnail_id( $posts_array[$i+1]->ID ));
+					$image = ($image[0]) ? $image : $fallbackimg[0];
+					?>
+					<a href="<?php echo esc_url( get_permalink($posts_array[$i+1]->ID)) ?>"><img src="<?php echo $image?>" alt="" /></a>
+					<div class="text-thumbnail">
+						<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i+1]->post_date); ?></span>
+						<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i+1]->ID)) ?>"><?php echo $posts_array[$i+1]->post_title ?></a></span>
+						<?php 
+						$posttags = get_the_tags($posts_array[$i+1]->ID);
+						if ($posttags) {
+							echo '<span class="tags">';
+							$t = 0;
+							foreach($posttags as $tag) {
+								if(++$t === count($posttags)) echo '<a href="#">'.$tag->name.'</a>'; 
+								else echo '<a href="#">'.$tag->name.'</a>, '; 
+							}
+							echo '</span>';
+						}
+						?>
+					</div>
+				</div>
+			</li>
+			<?php 
+				}
+			?>
+		</ul>
+		<div id="notes" class="resources-anchor"></div>
+		<h3 class="resource-list-title">Short Notes</h3>
+		<ul class="resource-list-new">
+			<?php
+				$posts_array = get_posts( array('category_name'	=> 'Resources Short Notes',
+										  'orderby' 		=> 'date',
+										  'order'           => 'DESC',
+										  'post_type'       => 'resource',
+										  'post_status'     => 'publish'));
+				for($i = 0; $i < count($posts_array); $i+=2) {
+			?>
+			<li>
+				<div class="thumbnail">
+					<?php
+					$image = get_post_meta($posts_array[$i]->ID, 'thumbnailPic', true);
+					$fallbackimg = wp_get_attachment_image_src( get_post_thumbnail_id( $posts_array[$i]->ID ));
+					$image = ($image[0]) ? $image : $fallbackimg[0];
+					?>
+					<a href="<?php echo esc_url( get_permalink($posts_array[$i]->ID)) ?>"><img src="<?php echo $image?>" alt="" /></a>
+					<div class="text-thumbnail">
+						<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i]->post_date); ?></span>
+						<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i]->ID)) ?>"><?php echo $posts_array[$i]->post_title ?></a></span>
+						<?php 
+						$posttags = get_the_tags($posts_array[$i]->ID);
+						if ($posttags) {
+							echo '<span class="tags">';
+							$t = 0;
+							foreach($posttags as $tag) {
+								if(++$t === count($posttags)) echo '<a href="#">'.$tag->name.'</a>'; 
+								else echo '<a href="#">'.$tag->name.'</a>, '; 
+							}
+							echo '</span>';
+						}
+						?>
+					</div>
+				</div>
+				<div class="thumbnail">
+					<?php
+					$image = get_post_meta($posts_array[$i+1]->ID, 'thumbnailPic', true);
+					$fallbackimg = wp_get_attachment_image_src( get_post_thumbnail_id( $posts_array[$i+1]->ID ));
+					$image = ($image[0]) ? $image : $fallbackimg[0];
+					?>
+					<a href="<?php echo esc_url( get_permalink($posts_array[$i+1]->ID)) ?>"><img src="<?php echo $image?>" alt="" /></a>
+					<div class="text-thumbnail">
+						<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i+1]->post_date); ?></span>
+						<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i+1]->ID)) ?>"><?php echo $posts_array[$i+1]->post_title ?></a></span>
+						<?php 
+						$posttags = get_the_tags($posts_array[$i+1]->ID);
+						if ($posttags) {
+							echo '<span class="tags">';
+							$t = 0;
+							foreach($posttags as $tag) {
+								if(++$t === count($posttags)) echo '<a href="#">'.$tag->name.'</a>'; 
+								else echo '<a href="#">'.$tag->name.'</a>, '; 
+							}
+							echo '</span>';
+						}
+						?>
+					</div>
+				</div>
+			</li>
+			<?php 
+				}
+			?>
+		</ul>
+		<div id="newsletters" class="resources-anchor"></div>
+		<h3 class="resource-list-title">Newsletters</h3>
+		<ul class="resource-list-new">
+			<?php
+			$posts_array = get_posts( array('category_name'	=> 'Resources Newsletter',
+										  'orderby' 		=> 'date',
+										  'order'           => 'DESC',
+										  'post_type'       => 'resource',
+										  'post_status'     => 'publish'));
+			for($i = 0; $i < count($posts_array); $i+=2) {
+			?>
+			<li>
+				<div>
+					<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i]->post_date); ?></span>
+					<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i]->ID)) ?>"><?php echo $posts_array[$i]->post_title ?></a></span>
+					<?php 
+						$posttags = get_the_tags($posts_array[$i]->ID);
+						if ($posttags) {
+							echo '<span class="tags">';
+							$t = 0;
+							foreach($posttags as $tag) {
+								if(++$t === count($posttags)) echo '<a href="#">'.$tag->name.'</a>'; 
+								else echo '<a href="#">'.$tag->name.'</a>, '; 
+							}
+							echo '</span>';
+						}
+					?>
+				</div>
+				<div>
+					<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i+1]->post_date); ?></span>
+					<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i+1]->ID)) ?>"><?php echo $posts_array[$i+1]->post_title ?></a></span>
+					<?php 
+						$posttags = get_the_tags($posts_array[$i+1]->ID);
+						if ($posttags) {
+							echo '<span class="tags">';
+							$t = 0;
+							foreach($posttags as $tag) {
+								if(++$t === count($posttags)) echo '<a href="#">'.$tag->name.'</a>'; 
+								else echo '<a href="#">'.$tag->name.'</a>, '; 
+							}
+							echo '</span>';
+						}
+					?>
+				</div>
+			<?php } ?>
+		</ul>
+		<div id="tools" class="resources-anchor"></div>
+		<h3 class="resource-list-title">Tools and Training Materials</h3>
+		<ul class="resource-list-new">
+			<?php
+			$posts_array = get_posts( array('category_name'	=> 'Resources Tools and Training Materials',
+										  'orderby' 		=> 'date',
+										  'order'           => 'DESC',
+										  'post_type'       => 'resource',
+										  'post_status'     => 'publish'));
+			for($i = 0; $i < count($posts_array); $i+=2) {
+			?>
+			<li>
+				<div>
+					<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i]->post_date); ?></span>
+					<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i]->ID)) ?>"><?php echo $posts_array[$i]->post_title ?></a></span>
+					<?php 
+						$posttags = get_the_tags($posts_array[$i]->ID);
+						if ($posttags) {
+							echo '<span class="tags">';
+							$t = 0;
+							foreach($posttags as $tag) {
+								if(++$t === count($posttags)) echo '<a href="#">'.$tag->name.'</a>'; 
+								else echo '<a href="#">'.$tag->name.'</a>, '; 
+							}
+							echo '</span>';
+						}
+					?>
+				</div>
+				<div>
+					<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i+1]->post_date); ?></span>
+					<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i+1]->ID)) ?>"><?php echo $posts_array[$i+1]->post_title ?></a></span>
+					<?php 
+						$posttags = get_the_tags($posts_array[$i+1]->ID);
+						if ($posttags) {
+							echo '<span class="tags">';
+							$t = 0;
+							foreach($posttags as $tag) {
+								if(++$t === count($posttags)) echo '<a href="#">'.$tag->name.'</a>'; 
+								else echo '<a href="#">'.$tag->name.'</a>, '; 
+							}
+							echo '</span>';
+						}
+					?>
+				</div>
+			<?php } ?>
+		</ul>
+		<div id="other" class="resources-anchor"></div>
+		<h3 class="resource-list-title">Other Resources</h3>
+		<ul class="resource-list-new">
+			<?php
+			$posts_array = get_posts( array('category_name'	=> 'Resources Others',
+										  'orderby' 		=> 'date',
+										  'order'           => 'DESC',
+										  'post_type'       => 'resource',
+										  'post_status'     => 'publish'));
+			for($i = 0; $i < count($posts_array); $i+=2) {
+			?>
+			<li>
+				<div>
+					<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i]->post_date); ?></span>
+					<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i]->ID)) ?>"><?php echo $posts_array[$i]->post_title ?></a></span>
+					<?php 
+						$posttags = get_the_tags($posts_array[$i]->ID);
+						if ($posttags) {
+							echo '<span class="tags">';
+							$t = 0;
+							foreach($posttags as $tag) {
+								if(++$t === count($posttags)) echo '<a href="#">'.$tag->name.'</a>'; 
+								else echo '<a href="#">'.$tag->name.'</a>, '; 
+							}
+							echo '</span>';
+						}
+					?>
+				</div>
+				<div>
+					<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i+1]->post_date); ?></span>
+					<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i+1]->ID)) ?>"><?php echo $posts_array[$i+1]->post_title ?></a></span>
+					<?php 
+						$posttags = get_the_tags($posts_array[$i+1]->ID);
+						if ($posttags) {
+							echo '<span class="tags">';
+							$t = 0;
+							foreach($posttags as $tag) {
+								if(++$t === count($posttags)) echo '<a href="#">'.$tag->name.'</a>'; 
+								else echo '<a href="#">'.$tag->name.'</a>, '; 
+							}
+							echo '</span>';
+						}
+					?>
+				</div>
+			<?php } ?>
+		</ul>
+									<?php else: ?> 
 								<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 							 	 <?php $cats = array();
 									foreach(wp_get_post_categories($post->ID) as $c)
@@ -215,17 +454,8 @@ if(is_post_type_archive() && $post_type=='project') {
 										array_push($cats,$cat->name);
 									}
 								?>
-								<?php if (is_post_type_archive() && $post_type=='resource') : ?>
-								<li>
-									<div>
-										<span class="title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></span>
-									</div>
-									<div>
-										<span class="size"><?php the_date() ?></span>
-										<span class="size"><?php the_tags(); ?></span>
-									</div>
-								</li>
-								<?php else: ?>
+
+
 									<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf '); ?> role="article">
 										<?php 
 										$image = get_post_meta($post->ID, 'thumbnailPic', true);
@@ -278,11 +508,9 @@ if(is_post_type_archive() && $post_type=='project') {
 											<?php } //end if tag?>
 										</footer>
 									</article>
-								<?php endif; ?>
 
 								<?php endwhile; ?>
 								<?php if (is_post_type_archive() && $post_type=='resource') : ?>
-									</ul>
 									<div class="m-all index-row last-resources">
 									<?php
 										$image3= '';
@@ -314,6 +542,7 @@ if(is_post_type_archive() && $post_type=='project') {
 										document.getElementsByTagName('head')[0].innerHTML += '<style>#firstFeatured:after{background-image:url(<?php echo $image1 ?>) !important;}#secondFeatured:after{background-image:url(<?php echo $image2 ?>) !important;}#thirdFeatured:after{background-image:url(<?php echo $image3 ?>) !important;}#fourthFeatured:after{background-image:url(<?php echo $image4 ?>) !important;}</style>';
 									</script>
 								<?php endif; ?>
+
 							</div>
 						</div>
 									<?php if (!!$display_navi){ bones_page_navi();} ?>
@@ -342,6 +571,7 @@ if(is_post_type_archive() && $post_type=='project') {
 			</div>
 
 							<?php endif; ?>
+								<?php endif; ?>
 
 						</main>
 
