@@ -186,39 +186,18 @@ resilience to natural hazards and the impacts of climate change across the globe
 				<?php } ?>
 					<ul class="resource-list home">
 						<?php
-						$args = array( 'numberposts' => '4', 'category' => 16, 'order' => 'DESC', 'post_type' => 'resource','post_status' => 'publish' );
-						$featured_col = wp_get_recent_posts( $args );
-						//foreach( $featured_col as $featured ) {
+						$args = array( 'numberposts' => '4', 'orderby' => 'date','order' => 'DESC', 'post_type' => 'resource','post_status' => 'publish' );
+						$resources_recent = wp_get_recent_posts( $args );
+						foreach( $resources_recent as $recent_res ) {
 					?>
 						<li>
-							<a href="Project Highlights: Building Resilient Communities In Vietnam">
-								<p><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="format"></span></p>
-								<p><span class="name"></span><span class="size"><?php echo date('d M', strtotime($featured['post_date'])) ?></span>
+							<a href="<?php echo esc_url( get_permalink($recent_res["ID"]))?>">
+								<p><span class="title"><?php echo $recent_res["post_title"]?></span><span class="format"></span></p>
+								<p><span class="name"></span><span class="size"><?php echo date('d M', strtotime($recent_res['post_date'])) ?></span>
 								</p>
 							</a>
 						</li>
-						<li>
-							<a href="Project Highlights: Building Resilient Communities In Vietnam">
-								<p><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="format"></span></p>
-								<p><span class="name"></span><span class="size"><?php echo date('d M', strtotime($featured['post_date'])) ?></span>
-								</p>
-							</a>
-						</li>
-						<li>
-							<a href="Project Highlights: Building Resilient Communities In Vietnam">
-								<p><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="format"></span></p>
-								<p><span class="name"></span><span class="size"><?php echo date('d M', strtotime($featured['post_date'])) ?></span>
-								</p>
-							</a>
-						</li>
-						<li>
-							<a href="Project Highlights: Building Resilient Communities In Vietnam">
-								<p><span class="title">Project Highlights: Building Resilient Communities In Vietnam</span><span class="format"></span></p>
-								<p><span class="name"></span><span class="size"><?php echo date('d M', strtotime($featured['post_date'])) ?></span>
-								</p>
-							</a>
-						</li>
-					<?php // } // end foreach ?>
+					<?php } // end foreach ?>
 					</ul>
 				</div>
 			</div>
