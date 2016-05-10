@@ -4118,7 +4118,8 @@ div.cartodb-popup .cartodb-popup-close-button {
   width: 50%; }
 
 .home .index-row .resource-list {
-  max-height: 345px; }
+  max-height: 345px;
+  min-height: 100%; }
 
 .page #principles, .page #contact, .page #more-content, .page #partners, .page #members, .page #newsletter {
   margin: 0;
