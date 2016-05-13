@@ -2696,6 +2696,7 @@ POSTS & CONTENT STYLES
     .archive .about-content .card-third ol li:nth-child(1n+0) h4:before,
     .page .about-content .card-third ol li:nth-child(1n+0) h4:before {
       content: ' ';
+      background-color: #1477c9;
       -webkit-mask: url("../images/principles_icons/princ1.svg") no-repeat 50% 50%;
       mask: url("../images/principles_icons/princ1.svg") no-repeat 50% 50%;
       width: 20px;
@@ -2709,13 +2710,13 @@ POSTS & CONTENT STYLES
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         .archive .about-content .card-third ol li:nth-child(1n+0) h4:before,
         .page .about-content .card-third ol li:nth-child(1n+0) h4:before {
-          background-color: #1477c9 !important;
           /* IE10+ CSS styles go here */
           background: url("../images/principles_icons/princ1.svg") no-repeat 50% 50%;
           background-size: 20px 20px !important; } }
     .archive .about-content .card-third ol li:nth-child(2n+0) h4:before,
     .page .about-content .card-third ol li:nth-child(2n+0) h4:before {
       content: ' ';
+      background-color: #1477c9;
       -webkit-mask: url("../images/principles_icons/princ2.svg") no-repeat 50% 50%;
       mask: url("../images/principles_icons/princ2.svg") no-repeat 50% 50%;
       width: 20px;
@@ -2729,13 +2730,13 @@ POSTS & CONTENT STYLES
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         .archive .about-content .card-third ol li:nth-child(2n+0) h4:before,
         .page .about-content .card-third ol li:nth-child(2n+0) h4:before {
-          background-color: #1477c9 !important;
           /* IE10+ CSS styles go here */
           background: url("../images/principles_icons/princ2.svg") no-repeat 50% 50%;
           background-size: 20px 20px !important; } }
     .archive .about-content .card-third ol li:nth-child(3n+0) h4:before,
     .page .about-content .card-third ol li:nth-child(3n+0) h4:before {
       content: ' ';
+      background-color: #1477c9;
       -webkit-mask: url("../images/principles_icons/princ3.svg") no-repeat 50% 50%;
       mask: url("../images/principles_icons/princ3.svg") no-repeat 50% 50%;
       width: 20px;
@@ -2749,13 +2750,13 @@ POSTS & CONTENT STYLES
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         .archive .about-content .card-third ol li:nth-child(3n+0) h4:before,
         .page .about-content .card-third ol li:nth-child(3n+0) h4:before {
-          background-color: #1477c9 !important;
           /* IE10+ CSS styles go here */
           background: url("../images/principles_icons/princ3.svg") no-repeat 50% 50%;
           background-size: 20px 20px !important; } }
     .archive .about-content .card-third ol li:nth-child(4n+0) h4:before,
     .page .about-content .card-third ol li:nth-child(4n+0) h4:before {
       content: ' ';
+      background-color: #1477c9;
       -webkit-mask: url("../images/principles_icons/princ4.svg") no-repeat 50% 50%;
       mask: url("../images/principles_icons/princ4.svg") no-repeat 50% 50%;
       width: 20px;
@@ -2769,13 +2770,13 @@ POSTS & CONTENT STYLES
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         .archive .about-content .card-third ol li:nth-child(4n+0) h4:before,
         .page .about-content .card-third ol li:nth-child(4n+0) h4:before {
-          background-color: #1477c9 !important;
           /* IE10+ CSS styles go here */
           background: url("../images/principles_icons/princ4.svg") no-repeat 50% 50%;
           background-size: 20px 20px !important; } }
     .archive .about-content .card-third ol li:nth-child(5n+0) h4:before,
     .page .about-content .card-third ol li:nth-child(5n+0) h4:before {
       content: ' ';
+      background-color: #1477c9;
       -webkit-mask: url("../images/principles_icons/princ5.svg") no-repeat 50% 50%;
       mask: url("../images/principles_icons/princ5.svg") no-repeat 50% 50%;
       width: 20px;
@@ -2789,13 +2790,13 @@ POSTS & CONTENT STYLES
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         .archive .about-content .card-third ol li:nth-child(5n+0) h4:before,
         .page .about-content .card-third ol li:nth-child(5n+0) h4:before {
-          background-color: #1477c9 !important;
           /* IE10+ CSS styles go here */
           background: url("../images/principles_icons/princ5.svg") no-repeat 50% 50%;
           background-size: 20px 20px !important; } }
     .archive .about-content .card-third ol li:nth-child(6n+0) h4:before,
     .page .about-content .card-third ol li:nth-child(6n+0) h4:before {
       content: ' ';
+      background-color: #1477c9;
       -webkit-mask: url("../images/principles_icons/princ6.svg") no-repeat 50% 50%;
       mask: url("../images/principles_icons/princ6.svg") no-repeat 50% 50%;
       width: 20px;
@@ -2809,13 +2810,13 @@ POSTS & CONTENT STYLES
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         .archive .about-content .card-third ol li:nth-child(6n+0) h4:before,
         .page .about-content .card-third ol li:nth-child(6n+0) h4:before {
-          background-color: #1477c9 !important;
           /* IE10+ CSS styles go here */
           background: url("../images/principles_icons/princ6.svg") no-repeat 50% 50%;
           background-size: 20px 20px !important; } }
     .archive .about-content .card-third ol li:nth-child(7n+0) h4:before,
     .page .about-content .card-third ol li:nth-child(7n+0) h4:before {
       content: ' ';
+      background-color: #1477c9;
       -webkit-mask: url("../images/principles_icons/princ7.svg") no-repeat 50% 50%;
       mask: url("../images/principles_icons/princ7.svg") no-repeat 50% 50%;
       width: 20px;
@@ -2829,13 +2830,13 @@ POSTS & CONTENT STYLES
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         .archive .about-content .card-third ol li:nth-child(7n+0) h4:before,
         .page .about-content .card-third ol li:nth-child(7n+0) h4:before {
-          background-color: #1477c9 !important;
           /* IE10+ CSS styles go here */
           background: url("../images/principles_icons/princ7.svg") no-repeat 50% 50%;
           background-size: 20px 20px !important; } }
     .archive .about-content .card-third ol li:nth-child(8n+0) h4:before,
     .page .about-content .card-third ol li:nth-child(8n+0) h4:before {
       content: ' ';
+      background-color: #1477c9;
       -webkit-mask: url("../images/principles_icons/princ8.svg") no-repeat 50% 50%;
       mask: url("../images/principles_icons/princ8.svg") no-repeat 50% 50%;
       width: 20px;
@@ -2849,13 +2850,13 @@ POSTS & CONTENT STYLES
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         .archive .about-content .card-third ol li:nth-child(8n+0) h4:before,
         .page .about-content .card-third ol li:nth-child(8n+0) h4:before {
-          background-color: #1477c9 !important;
           /* IE10+ CSS styles go here */
           background: url("../images/principles_icons/princ8.svg") no-repeat 50% 50%;
           background-size: 20px 20px !important; } }
     .archive .about-content .card-third ol li:nth-child(9n+0) h4:before,
     .page .about-content .card-third ol li:nth-child(9n+0) h4:before {
       content: ' ';
+      background-color: #1477c9;
       -webkit-mask: url("../images/principles_icons/princ9.svg") no-repeat 50% 50%;
       mask: url("../images/principles_icons/princ9.svg") no-repeat 50% 50%;
       width: 20px;
@@ -2869,7 +2870,6 @@ POSTS & CONTENT STYLES
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         .archive .about-content .card-third ol li:nth-child(9n+0) h4:before,
         .page .about-content .card-third ol li:nth-child(9n+0) h4:before {
-          background-color: #1477c9 !important;
           /* IE10+ CSS styles go here */
           background: url("../images/principles_icons/princ9.svg") no-repeat 50% 50%;
           background-size: 20px 20px !important; } }
