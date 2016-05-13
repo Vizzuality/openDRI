@@ -215,6 +215,7 @@ if(is_post_type_archive() && $post_type=='project') {
 				</div>
 				<div class="thumbnail">
 					<?php
+					if (!!$posts_array[$i+1]) {
 					$image = get_post_meta($posts_array[$i+1]->ID, 'thumbnailPic', true);
 					$fallbackimg = wp_get_attachment_image_src( get_post_thumbnail_id( $posts_array[$i+1]->ID ));
 					$image = ($image[0]) ? $image : $fallbackimg[0];
@@ -234,6 +235,7 @@ if(is_post_type_archive() && $post_type=='project') {
 							}
 							echo '</span>';
 						}
+					}	
 						?>
 					</div>
 				</div>
@@ -280,6 +282,7 @@ if(is_post_type_archive() && $post_type=='project') {
 				</div>
 				<div class="thumbnail">
 					<?php
+					if (!!$posts_array[$i+1]) {
 					$image = get_post_meta($posts_array[$i+1]->ID, 'thumbnailPic', true);
 					$fallbackimg = wp_get_attachment_image_src( get_post_thumbnail_id( $posts_array[$i+1]->ID ));
 					$image = ($image[0]) ? $image : $fallbackimg[0];
@@ -299,6 +302,7 @@ if(is_post_type_archive() && $post_type=='project') {
 							}
 							echo '</span>';
 						}
+					}	
 						?>
 					</div>
 				</div>
@@ -336,6 +340,7 @@ if(is_post_type_archive() && $post_type=='project') {
 					?>
 				</div>
 				<div>
+					<?php if (!!$posts_array[$i+1]): ?>
 					<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i+1]->post_date); ?></span>
 					<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i+1]->ID)) ?>"><?php echo $posts_array[$i+1]->post_title ?></a></span>
 					<?php 
@@ -350,6 +355,7 @@ if(is_post_type_archive() && $post_type=='project') {
 							echo '</span>';
 						}
 					?>
+					<?php endif; ?>
 				</div>
 			<?php } ?>
 		</ul>
@@ -382,6 +388,7 @@ if(is_post_type_archive() && $post_type=='project') {
 					?>
 				</div>
 				<div>
+					<?php if (!!$posts_array[$i+1]): ?>
 					<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i+1]->post_date); ?></span>
 					<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i+1]->ID)) ?>"><?php echo $posts_array[$i+1]->post_title ?></a></span>
 					<?php 
@@ -396,6 +403,7 @@ if(is_post_type_archive() && $post_type=='project') {
 							echo '</span>';
 						}
 					?>
+					<?php endif; ?>
 				</div>
 			<?php } ?>
 		</ul>
@@ -428,6 +436,7 @@ if(is_post_type_archive() && $post_type=='project') {
 					?>
 				</div>
 				<div>
+					<?php if (!!$posts_array[$i+1]): ?>
 					<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i+1]->post_date); ?></span>
 					<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i+1]->ID)) ?>"><?php echo $posts_array[$i+1]->post_title ?></a></span>
 					<?php 
@@ -442,6 +451,7 @@ if(is_post_type_archive() && $post_type=='project') {
 							echo '</span>';
 						}
 					?>
+					<?php endif; ?>
 				</div>
 			<?php } ?>
 		</ul>
