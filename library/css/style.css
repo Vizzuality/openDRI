@@ -2694,7 +2694,7 @@ POSTS & CONTENT STYLES
       height: 20px;
       position: relative;
       display: inline-block;
-      background-size: cover;
+      background-size: contain;
       left: 10px;
       top: 2px; }
     .archive .about-content .card-third ol li:nth-child(2n+0) h4:after,
@@ -2705,7 +2705,7 @@ POSTS & CONTENT STYLES
       height: 20px;
       position: relative;
       display: inline-block;
-      background-size: cover;
+      background-size: contain;
       left: 10px;
       top: 2px; }
     .archive .about-content .card-third ol li:nth-child(3n+0) h4:after,
@@ -2716,7 +2716,7 @@ POSTS & CONTENT STYLES
       height: 20px;
       position: relative;
       display: inline-block;
-      background-size: cover;
+      background-size: contain;
       left: 10px;
       top: 2px; }
     .archive .about-content .card-third ol li:nth-child(4n+0) h4:after,
@@ -2727,7 +2727,7 @@ POSTS & CONTENT STYLES
       height: 20px;
       position: relative;
       display: inline-block;
-      background-size: cover;
+      background-size: contain;
       left: 10px;
       top: 2px; }
     .archive .about-content .card-third ol li:nth-child(5n+0) h4:after,
@@ -2738,7 +2738,7 @@ POSTS & CONTENT STYLES
       height: 20px;
       position: relative;
       display: inline-block;
-      background-size: cover;
+      background-size: contain;
       left: 10px;
       top: 2px; }
     .archive .about-content .card-third ol li:nth-child(6n+0) h4:after,
@@ -2749,7 +2749,7 @@ POSTS & CONTENT STYLES
       height: 20px;
       position: relative;
       display: inline-block;
-      background-size: cover;
+      background-size: contain;
       left: 10px;
       top: 2px; }
     .archive .about-content .card-third ol li:nth-child(7n+0) h4:after,
@@ -2760,7 +2760,7 @@ POSTS & CONTENT STYLES
       height: 20px;
       position: relative;
       display: inline-block;
-      background-size: cover;
+      background-size: contain;
       left: 10px;
       top: 2px; }
     .archive .about-content .card-third ol li:nth-child(8n+0) h4:after,
@@ -2771,7 +2771,7 @@ POSTS & CONTENT STYLES
       height: 20px;
       position: relative;
       display: inline-block;
-      background-size: cover;
+      background-size: contain;
       left: 10px;
       top: 2px; }
     .archive .about-content .card-third ol li:nth-child(9n+0) h4:after,
@@ -2782,7 +2782,7 @@ POSTS & CONTENT STYLES
       height: 20px;
       position: relative;
       display: inline-block;
-      background-size: cover;
+      background-size: contain;
       left: 10px;
       top: 2px; }
 .archive .newsletter .subscribe,
