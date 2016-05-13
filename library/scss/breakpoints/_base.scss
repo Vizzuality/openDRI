@@ -1689,21 +1689,21 @@ margin: 0;
 			    	li:nth-child(#{$i}n+0) {
 			    		h4:before {
 				    		content: ' ';
-				    		background-color: #1477c9;
 						    -webkit-mask:  url("../images/principles_icons/princ"+ $i +".svg") no-repeat 50% 50%;
 						    mask: url("../images/principles_icons/princ"+ $i +".svg") no-repeat 50% 50%;
 				    		width: 20px;
 				    		height: 20px;
 				    		position: relative;
 						    display: inline-block;
-						    background-size: contain;
 						    -webkit-mask-size: contain;
   							mask-size: contain;
 						    margin: 0 12px 0 0;
 						    top: 5px;
 				    		@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+				    			background-color: #1477c9 !important;
 								/* IE10+ CSS styles go here */
 						    	background: url("../images/principles_icons/princ"+ $i +".svg") no-repeat 50% 50%;
+						    	background-size: 20px 20px !important;
 							}
 						}
 			    	}
