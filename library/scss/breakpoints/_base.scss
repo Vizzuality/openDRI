@@ -1689,10 +1689,6 @@ margin: 0;
 			    	li:nth-child(#{$i}n+0) {
 			    		h4:before {
 				    		content: ' ';
-				    		@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-								/* IE10+ CSS styles go here */
-						    background: url("../images/principles_icons/princ"+ $i +".svg") no-repeat 50% 50%;
-							}
 				    		background-color: #1477c9;
 						    -webkit-mask:  url("../images/principles_icons/princ"+ $i +".svg") no-repeat 50% 50%;
 						    mask: url("../images/principles_icons/princ"+ $i +".svg") no-repeat 50% 50%;
@@ -1705,6 +1701,10 @@ margin: 0;
   							mask-size: contain;
 						    margin: 0 12px 0 0;
 						    top: 5px;
+				    		@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+								/* IE10+ CSS styles go here */
+						    	background: url("../images/principles_icons/princ"+ $i +".svg") no-repeat 50% 50%;
+							}
 						}
 			    	}
 			    }
