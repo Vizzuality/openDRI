@@ -520,8 +520,6 @@ POSTS & CONTENT STYLES
     }
 }
 .explore-buttons {
-	width: inherit;
-    position: relative;
     display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
   	display: -ms-flexbox;      /* TWEENER - IE 10 */
   	display: -webkit-flex;     /* NEW - Chrome */
@@ -529,6 +527,9 @@ POSTS & CONTENT STYLES
     justify-content: center;
     width: 100%;
     position: absolute;
+  	@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    	position: relative;
+	}
     .what-explore {
     	margin: 0 30px;
     	&:first-child {
