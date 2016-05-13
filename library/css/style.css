@@ -2686,6 +2686,105 @@ POSTS & CONTENT STYLES
       margin: 5px 0;
       color: #555;
       font-weight: bold; }
+    .archive .about-content .card-third ol li:nth-child(1n+0) h4:after,
+    .page .about-content .card-third ol li:nth-child(1n+0) h4:after {
+      content: ' ';
+      background: url("../images/principles_icons/princ1.svg") no-repeat 50% 50%;
+      width: 20px;
+      height: 20px;
+      position: relative;
+      display: inline-block;
+      background-size: cover;
+      left: 10px;
+      top: 2px; }
+    .archive .about-content .card-third ol li:nth-child(2n+0) h4:after,
+    .page .about-content .card-third ol li:nth-child(2n+0) h4:after {
+      content: ' ';
+      background: url("../images/principles_icons/princ2.svg") no-repeat 50% 50%;
+      width: 20px;
+      height: 20px;
+      position: relative;
+      display: inline-block;
+      background-size: cover;
+      left: 10px;
+      top: 2px; }
+    .archive .about-content .card-third ol li:nth-child(3n+0) h4:after,
+    .page .about-content .card-third ol li:nth-child(3n+0) h4:after {
+      content: ' ';
+      background: url("../images/principles_icons/princ3.svg") no-repeat 50% 50%;
+      width: 20px;
+      height: 20px;
+      position: relative;
+      display: inline-block;
+      background-size: cover;
+      left: 10px;
+      top: 2px; }
+    .archive .about-content .card-third ol li:nth-child(4n+0) h4:after,
+    .page .about-content .card-third ol li:nth-child(4n+0) h4:after {
+      content: ' ';
+      background: url("../images/principles_icons/princ4.svg") no-repeat 50% 50%;
+      width: 20px;
+      height: 20px;
+      position: relative;
+      display: inline-block;
+      background-size: cover;
+      left: 10px;
+      top: 2px; }
+    .archive .about-content .card-third ol li:nth-child(5n+0) h4:after,
+    .page .about-content .card-third ol li:nth-child(5n+0) h4:after {
+      content: ' ';
+      background: url("../images/principles_icons/princ5.svg") no-repeat 50% 50%;
+      width: 20px;
+      height: 20px;
+      position: relative;
+      display: inline-block;
+      background-size: cover;
+      left: 10px;
+      top: 2px; }
+    .archive .about-content .card-third ol li:nth-child(6n+0) h4:after,
+    .page .about-content .card-third ol li:nth-child(6n+0) h4:after {
+      content: ' ';
+      background: url("../images/principles_icons/princ6.svg") no-repeat 50% 50%;
+      width: 20px;
+      height: 20px;
+      position: relative;
+      display: inline-block;
+      background-size: cover;
+      left: 10px;
+      top: 2px; }
+    .archive .about-content .card-third ol li:nth-child(7n+0) h4:after,
+    .page .about-content .card-third ol li:nth-child(7n+0) h4:after {
+      content: ' ';
+      background: url("../images/principles_icons/princ7.svg") no-repeat 50% 50%;
+      width: 20px;
+      height: 20px;
+      position: relative;
+      display: inline-block;
+      background-size: cover;
+      left: 10px;
+      top: 2px; }
+    .archive .about-content .card-third ol li:nth-child(8n+0) h4:after,
+    .page .about-content .card-third ol li:nth-child(8n+0) h4:after {
+      content: ' ';
+      background: url("../images/principles_icons/princ8.svg") no-repeat 50% 50%;
+      width: 20px;
+      height: 20px;
+      position: relative;
+      display: inline-block;
+      background-size: cover;
+      left: 10px;
+      top: 2px; }
+    .archive .about-content .card-third ol li:nth-child(9n+0) h4:after,
+    .page .about-content .card-third ol li:nth-child(9n+0) h4:after {
+      content: ' ';
+      background: url("../images/principles_icons/princ9.svg") no-repeat 50% 50%;
+      width: 20px;
+      height: 20px;
+      position: relative;
+      display: inline-block;
+      background-size: cover;
+      left: 10px;
+      top: 2px; }
 .archive .newsletter .subscribe,
 .page .newsletter .subscribe {
   width: 100%;
