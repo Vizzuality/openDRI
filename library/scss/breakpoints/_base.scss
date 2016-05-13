@@ -983,7 +983,7 @@ POSTS & CONTENT STYLES
 	font-size: 48px;
 	line-height: 0.9;
 	color: #1477c9;
-	margin: 65px 0 0;
+	margin: 45px 0 0;
 	width: 100%;
 }
 .resources-anchor {
@@ -1000,6 +1000,9 @@ POSTS & CONTENT STYLES
 	.resource-list-new {
 		display: inline;
 		width: 100%;
+		&:last-child {
+			margin: 0 0 30px;
+		}
 		li {
 			border-bottom: solid 1px rgba(151, 151, 151, 0.2);
 			min-height: 70px;
@@ -2129,6 +2132,7 @@ margin: 0;
 		}
 	}
 }
+.post-type-archive-resource #main >p {margin: 0;}
 .search #main, .tag #main {
 	>h1,
 	>p {
