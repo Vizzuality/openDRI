@@ -1071,7 +1071,7 @@
 				$('#content article').last().after('<article class="index-row article project" style="visibility:hidden"> </article>');
 			}else if ($('body').hasClass('single') && ($('#more-content article').length) % 2 == 0) {
 				$('#more-content article').last().after('<article class="index-row article project" style="visibility:hidden"> </article>');
-			}else if ($('body').hasClass('archive') && ($('article').length) % 2 == 0) {
+			}else if (($('body').hasClass('archive') || $('body').hasClass('search')) && ($('article').length) % 2 == 0) {
 				$('article').last().after('<article class="index-row article project" style="visibility:hidden"> </article>');
 			}
 		}
