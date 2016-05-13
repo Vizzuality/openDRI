@@ -2677,14 +2677,13 @@ POSTS & CONTENT STYLES
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 700px;
+    height: 720px;
     width: 100%; }
     .archive .about-content .card-third ol li,
     .page .about-content .card-third ol li {
       width: 50%;
       padding: 0 50px 0 0;
-      list-style: none;
-      overflow: visible; }
+      list-style: none; }
       .archive .about-content .card-third ol li p,
       .page .about-content .card-third ol li p {
         padding: 0 0 0 33px; }
