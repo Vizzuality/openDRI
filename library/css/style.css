@@ -1680,6 +1680,7 @@ POSTS & CONTENT STYLES
   /* TWEENER - IE 10 */
   display: -webkit-flex;
   /* NEW - Chrome */
+  display: flex;
   justify-content: center;
   width: 100%;
   position: absolute; }
