@@ -205,8 +205,8 @@ if(is_post_type_archive() && $post_type=='project') {
 							echo '<span class="tags">';
 							$t = 0;
 							foreach($posttags as $tag) {
-								if(++$t === count($posttags)) echo '<a href="'.home_url().'/tagstr_replace(' ', '-', $tag->name)">'.$tag->name.'</a>'; 
-								else echo '<a href="'.home_url().'/tagstr_replace(' ', '-', $tag->name)">'.$tag->name.'</a>, '; 
+								if(++$t === count($posttags)) echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>'; 
+								else echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>, '; 
 							}
 							echo '</span>';
 						}
@@ -229,8 +229,8 @@ if(is_post_type_archive() && $post_type=='project') {
 							echo '<span class="tags">';
 							$t = 0;
 							foreach($posttags as $tag) {
-								if(++$t === count($posttags)) echo '<a href="'.home_url().'/tagstr_replace(' ', '-', $tag->name)">'.$tag->name.'</a>'; 
-								else echo '<a href="'.home_url().'/tagstr_replace(' ', '-', $tag->name)">'.$tag->name.'</a>, '; 
+								if(++$t === count($posttags)) echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>'; 
+								else echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>, '; 
 							}
 							echo '</span>';
 						}
@@ -270,8 +270,8 @@ if(is_post_type_archive() && $post_type=='project') {
 							echo '<span class="tags">';
 							$t = 0;
 							foreach($posttags as $tag) {
-								if(++$t === count($posttags)) echo '<a href="'.home_url().'/tagstr_replace(' ', '-', $tag->name)">'.$tag->name.'</a>'; 
-								else echo '<a href="'.home_url().'/tagstr_replace(' ', '-', $tag->name)">'.$tag->name.'</a>, '; 
+								if(++$t === count($posttags)) echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>'; 
+								else echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>, '; 
 							}
 							echo '</span>';
 						}
@@ -294,8 +294,8 @@ if(is_post_type_archive() && $post_type=='project') {
 							echo '<span class="tags">';
 							$t = 0;
 							foreach($posttags as $tag) {
-								if(++$t === count($posttags)) echo '<a href="'.home_url().'/tagstr_replace(' ', '-', $tag->name)">'.$tag->name.'</a>'; 
-								else echo '<a href="'.home_url().'/tagstr_replace(' ', '-', $tag->name)">'.$tag->name.'</a>, '; 
+								if(++$t === count($posttags)) echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>'; 
+								else echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>, '; 
 							}
 							echo '</span>';
 						}
@@ -328,8 +328,8 @@ if(is_post_type_archive() && $post_type=='project') {
 							echo '<span class="tags">';
 							$t = 0;
 							foreach($posttags as $tag) {
-								if(++$t === count($posttags)) echo '<a href="'.home_url().'/tagstr_replace(' ', '-', $tag->name)">'.$tag->name.'</a>'; 
-								else echo '<a href="'.home_url().'/tagstr_replace(' ', '-', $tag->name)">'.$tag->name.'</a>, '; 
+								if(++$t === count($posttags)) echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>'; 
+								else echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>, '; 
 							}
 							echo '</span>';
 						}
@@ -344,8 +344,8 @@ if(is_post_type_archive() && $post_type=='project') {
 							echo '<span class="tags">';
 							$t = 0;
 							foreach($posttags as $tag) {
-								if(++$t === count($posttags)) echo '<a href="'.home_url().'/tagstr_replace(' ', '-', $tag->name)">'.$tag->name.'</a>'; 
-								else echo '<a href="'.home_url().'/tagstr_replace(' ', '-', $tag->name)">'.$tag->name.'</a>, '; 
+								if(++$t === count($posttags)) echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>'; 
+								else echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>, '; 
 							}
 							echo '</span>';
 						}
@@ -374,8 +374,8 @@ if(is_post_type_archive() && $post_type=='project') {
 							echo '<span class="tags">';
 							$t = 0;
 							foreach($posttags as $tag) {
-								if(++$t === count($posttags)) echo '<a href="'.home_url().'/tagstr_replace(' ', '-', $tag->name)">'.$tag->name.'</a>'; 
-								else echo '<a href="'.home_url().'/tagstr_replace(' ', '-', $tag->name)">'.$tag->name.'</a>, '; 
+								if(++$t === count($posttags)) echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>'; 
+								else echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>, '; 
 							}
 							echo '</span>';
 						}
@@ -390,8 +390,8 @@ if(is_post_type_archive() && $post_type=='project') {
 							echo '<span class="tags">';
 							$t = 0;
 							foreach($posttags as $tag) {
-								if(++$t === count($posttags)) echo '<a href="'.home_url().'/tagstr_replace(' ', '-', $tag->name)">'.$tag->name.'</a>'; 
-								else echo '<a href="'.home_url().'/tagstr_replace(' ', '-', $tag->name)">'.$tag->name.'</a>, '; 
+								if(++$t === count($posttags)) echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>'; 
+								else echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>, '; 
 							}
 							echo '</span>';
 						}
@@ -420,8 +420,8 @@ if(is_post_type_archive() && $post_type=='project') {
 							echo '<span class="tags">';
 							$t = 0;
 							foreach($posttags as $tag) {
-								if(++$t === count($posttags)) echo '<a href="'.home_url().'/tagstr_replace(' ', '-', $tag->name)">'.$tag->name.'</a>'; 
-								else echo '<a href="'.home_url().'/tagstr_replace(' ', '-', $tag->name)">'.$tag->name.'</a>, '; 
+								if(++$t === count($posttags)) echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>'; 
+								else echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>, '; 
 							}
 							echo '</span>';
 						}
@@ -436,8 +436,8 @@ if(is_post_type_archive() && $post_type=='project') {
 							echo '<span class="tags">';
 							$t = 0;
 							foreach($posttags as $tag) {
-								if(++$t === count($posttags)) echo '<a href="'.home_url().'/tagstr_replace(' ', '-', $tag->name)">'.$tag->name.'</a>'; 
-								else echo '<a href="'.home_url().'/tagstr_replace(' ', '-', $tag->name)">'.$tag->name.'</a>, '; 
+								if(++$t === count($posttags)) echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>'; 
+								else echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>, '; 
 							}
 							echo '</span>';
 						}
