@@ -1672,10 +1672,26 @@ margin: 0;
 			    	width: 50%;
 			    	padding: 0 50px 0 0;
 			    }
+
 			    h4 {
 			    	margin: 5px 0;
 				    color: #555;
 				    font-weight: bold;
+			    }
+			    @for $i from 1 to 10 {
+			    	li:nth-child(#{$i}n+0) {
+			    		h4:after {
+				    		content: ' ';
+				    		background: url("../images/principles_icons/princ"+ $i +".svg") no-repeat 50% 50%;
+				    		width: 20px;
+				    		height: 20px;
+				    		position: relative;
+						    display: inline-block;
+						    background-size: cover;
+						    left: 10px;
+						    top: 2px;
+						}
+			    	}
 			    }
 			}
 		}
