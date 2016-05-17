@@ -1267,6 +1267,9 @@ body {
   -moz-hyphens: none;
   hyphens: none; }
 
+iframe {
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.2); }
+
 /********************
 WORDPRESS BODY CLASSES
 style a page via class
