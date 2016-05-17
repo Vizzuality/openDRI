@@ -2710,6 +2710,12 @@ POSTS & CONTENT STYLES
           /* IE10+ CSS styles go here */
           background: url("../images/principles_icons/princ1.svg") no-repeat 50% 50%;
           background-size: 20px 20px !important; } }
+@-moz-document url-prefix() {
+  .archive .about-content .card-third ol li:nth-child(1n+0) h4:before,
+  .page .about-content .card-third ol li:nth-child(1n+0) h4:before {
+    /* Firefox CSS styles go here */
+    background: url("../images/principles_icons/princ1.svg") no-repeat 50% 50%;
+    background-size: 20px 20px !important; } }
     .archive .about-content .card-third ol li:nth-child(2n+0) h4:before,
     .page .about-content .card-third ol li:nth-child(2n+0) h4:before {
       content: ' ';
@@ -2730,6 +2736,12 @@ POSTS & CONTENT STYLES
           /* IE10+ CSS styles go here */
           background: url("../images/principles_icons/princ2.svg") no-repeat 50% 50%;
           background-size: 20px 20px !important; } }
+@-moz-document url-prefix() {
+  .archive .about-content .card-third ol li:nth-child(2n+0) h4:before,
+  .page .about-content .card-third ol li:nth-child(2n+0) h4:before {
+    /* Firefox CSS styles go here */
+    background: url("../images/principles_icons/princ2.svg") no-repeat 50% 50%;
+    background-size: 20px 20px !important; } }
     .archive .about-content .card-third ol li:nth-child(3n+0) h4:before,
     .page .about-content .card-third ol li:nth-child(3n+0) h4:before {
       content: ' ';
@@ -2750,6 +2762,12 @@ POSTS & CONTENT STYLES
           /* IE10+ CSS styles go here */
           background: url("../images/principles_icons/princ3.svg") no-repeat 50% 50%;
           background-size: 20px 20px !important; } }
+@-moz-document url-prefix() {
+  .archive .about-content .card-third ol li:nth-child(3n+0) h4:before,
+  .page .about-content .card-third ol li:nth-child(3n+0) h4:before {
+    /* Firefox CSS styles go here */
+    background: url("../images/principles_icons/princ3.svg") no-repeat 50% 50%;
+    background-size: 20px 20px !important; } }
     .archive .about-content .card-third ol li:nth-child(4n+0) h4:before,
     .page .about-content .card-third ol li:nth-child(4n+0) h4:before {
       content: ' ';
@@ -2770,6 +2788,12 @@ POSTS & CONTENT STYLES
           /* IE10+ CSS styles go here */
           background: url("../images/principles_icons/princ4.svg") no-repeat 50% 50%;
           background-size: 20px 20px !important; } }
+@-moz-document url-prefix() {
+  .archive .about-content .card-third ol li:nth-child(4n+0) h4:before,
+  .page .about-content .card-third ol li:nth-child(4n+0) h4:before {
+    /* Firefox CSS styles go here */
+    background: url("../images/principles_icons/princ4.svg") no-repeat 50% 50%;
+    background-size: 20px 20px !important; } }
     .archive .about-content .card-third ol li:nth-child(5n+0) h4:before,
     .page .about-content .card-third ol li:nth-child(5n+0) h4:before {
       content: ' ';
@@ -2790,6 +2814,12 @@ POSTS & CONTENT STYLES
           /* IE10+ CSS styles go here */
           background: url("../images/principles_icons/princ5.svg") no-repeat 50% 50%;
           background-size: 20px 20px !important; } }
+@-moz-document url-prefix() {
+  .archive .about-content .card-third ol li:nth-child(5n+0) h4:before,
+  .page .about-content .card-third ol li:nth-child(5n+0) h4:before {
+    /* Firefox CSS styles go here */
+    background: url("../images/principles_icons/princ5.svg") no-repeat 50% 50%;
+    background-size: 20px 20px !important; } }
     .archive .about-content .card-third ol li:nth-child(6n+0) h4:before,
     .page .about-content .card-third ol li:nth-child(6n+0) h4:before {
       content: ' ';
@@ -2810,6 +2840,12 @@ POSTS & CONTENT STYLES
           /* IE10+ CSS styles go here */
           background: url("../images/principles_icons/princ6.svg") no-repeat 50% 50%;
           background-size: 20px 20px !important; } }
+@-moz-document url-prefix() {
+  .archive .about-content .card-third ol li:nth-child(6n+0) h4:before,
+  .page .about-content .card-third ol li:nth-child(6n+0) h4:before {
+    /* Firefox CSS styles go here */
+    background: url("../images/principles_icons/princ6.svg") no-repeat 50% 50%;
+    background-size: 20px 20px !important; } }
     .archive .about-content .card-third ol li:nth-child(7n+0) h4:before,
     .page .about-content .card-third ol li:nth-child(7n+0) h4:before {
       content: ' ';
@@ -2830,6 +2866,12 @@ POSTS & CONTENT STYLES
           /* IE10+ CSS styles go here */
           background: url("../images/principles_icons/princ7.svg") no-repeat 50% 50%;
           background-size: 20px 20px !important; } }
+@-moz-document url-prefix() {
+  .archive .about-content .card-third ol li:nth-child(7n+0) h4:before,
+  .page .about-content .card-third ol li:nth-child(7n+0) h4:before {
+    /* Firefox CSS styles go here */
+    background: url("../images/principles_icons/princ7.svg") no-repeat 50% 50%;
+    background-size: 20px 20px !important; } }
     .archive .about-content .card-third ol li:nth-child(8n+0) h4:before,
     .page .about-content .card-third ol li:nth-child(8n+0) h4:before {
       content: ' ';
@@ -2850,6 +2892,12 @@ POSTS & CONTENT STYLES
           /* IE10+ CSS styles go here */
           background: url("../images/principles_icons/princ8.svg") no-repeat 50% 50%;
           background-size: 20px 20px !important; } }
+@-moz-document url-prefix() {
+  .archive .about-content .card-third ol li:nth-child(8n+0) h4:before,
+  .page .about-content .card-third ol li:nth-child(8n+0) h4:before {
+    /* Firefox CSS styles go here */
+    background: url("../images/principles_icons/princ8.svg") no-repeat 50% 50%;
+    background-size: 20px 20px !important; } }
     .archive .about-content .card-third ol li:nth-child(9n+0) h4:before,
     .page .about-content .card-third ol li:nth-child(9n+0) h4:before {
       content: ' ';
@@ -2870,6 +2918,12 @@ POSTS & CONTENT STYLES
           /* IE10+ CSS styles go here */
           background: url("../images/principles_icons/princ9.svg") no-repeat 50% 50%;
           background-size: 20px 20px !important; } }
+@-moz-document url-prefix() {
+  .archive .about-content .card-third ol li:nth-child(9n+0) h4:before,
+  .page .about-content .card-third ol li:nth-child(9n+0) h4:before {
+    /* Firefox CSS styles go here */
+    background: url("../images/principles_icons/princ9.svg") no-repeat 50% 50%;
+    background-size: 20px 20px !important; } }
 .archive .newsletter .subscribe,
 .page .newsletter .subscribe {
   width: 100%;

@@ -1703,6 +1703,11 @@ margin: 0;
 						    	background: url("../images/principles_icons/princ"+ $i +".svg") no-repeat 50% 50%;
 						    	background-size: 20px 20px !important;
 							}
+							@-moz-document url-prefix() {
+								/* Firefox CSS styles go here */
+						    	background: url("../images/principles_icons/princ"+ $i +".svg") no-repeat 50% 50%;
+						    	background-size: 20px 20px !important;
+							}
 						}
 			    	}
 			    }
