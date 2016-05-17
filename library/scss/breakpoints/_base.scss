@@ -1656,6 +1656,14 @@ margin: 0;
         		 columns: 	 350px;
         		 padding: 0 40px 0 0;
         		 column-gap: 40px;
+        		 &.principles-column-title {
+			    	display: table-cell;
+				    width: 50%;
+				    font-size: 20px;
+				    font-family: $bariol;
+				    padding: 30px 0 0px;
+				    font-weight: bold;
+			    }
 			}
 			ol {
 				list-style: decimal;
