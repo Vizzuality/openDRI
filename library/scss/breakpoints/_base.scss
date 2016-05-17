@@ -525,9 +525,6 @@ POSTS & CONTENT STYLES
 	position: absolute;
 	bottom: calc(48px / 2);
 	left: 0;
-  	@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    	position: relative;
-	}
     .what-explore {
     	margin: 0 30px;
     	&:first-child {

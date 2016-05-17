@@ -1680,9 +1680,6 @@ POSTS & CONTENT STYLES
   position: absolute;
   bottom: calc(48px / 2);
   left: 0; }
-  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    .explore-buttons {
-      position: relative; } }
   .explore-buttons .what-explore {
     margin: 0 30px; }
     .explore-buttons .what-explore:first-child {
