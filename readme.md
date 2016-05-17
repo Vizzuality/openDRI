@@ -11,6 +11,9 @@ WordPress Theme for Open Data for Resilience Initiative
 # install
 - Move this project to your current WP directory and install as any other theme (/wp-content/themes)
 
+# todo
+- ![list of issues](https://github.com/Vizzuality/openDRI/issues)
+
 # original components
 - WordPress Version 4.3.1
 - [Bones Theme](https://github.com/eddiemachado/bones) as base 
