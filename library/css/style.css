@@ -504,6 +504,8 @@ FONT FACE (IN YOUR FACE)
 @font-face {
   font-family: 'Bariol';
   src: url("../fonts/Bariol_Bold.otf") format("opentype");
+  src: url("../fonts/bariol_regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bariol_regular-webfont.woff2") format("woff2"), url("../fonts/bariol_regular-webfont.woff") format("woff"), url("../fonts/bariol_regular-webfont.ttf") format("truetype"), url("../fonts/bariol_regular-webfont.svg#svgFontName") format("svg");
+  /* Legacy iOS */
   font-weight: bold;
   font-style: normal; }
 /*
