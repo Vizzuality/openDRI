@@ -605,12 +605,15 @@ POSTS & CONTENT STYLES
   	display: -webkit-flex;     /* NEW - Chrome */
 	display: flex;
     justify-content: space-between;
-    margin: 80px 0 -50px;
+    margin: 0px 0 -50px;
     h3 {
 	    font-size: 48px;
 	    text-transform: capitalize;
 	    color: #555;
 	    margin: 0;
+    }
+    &:first-child {
+    	margin: 40px 0 -50px;
     }
 }
 .index-separator {
@@ -1876,7 +1879,7 @@ margin: 0;
 		h3 {
 			color: #1477c9;
     		width: 100%;
-    		margin: 0 0 30px;
+    		margin: 50px 0 20px;
 		}
 	}
 	#members,
@@ -1938,7 +1941,6 @@ margin: 0;
 	#about.index-row,
 	#principles.index-row,
 	#newsletter.index-row,
-	#contact.index-row,
 	#members.index-row,
 	#more-content.index-row {margin: 0; display: block;}
 	#principles h3,
@@ -1965,7 +1967,12 @@ margin: 0;
 		&.double {
 			justify-content: flex-start;
 			p {
-				width: calc(100%/3 *2); // 66%
+				width: 100%;
+				-webkit-columns: 2;
+   				-moz-columns: 2;
+        		columns: 2;
+        		margin: 0;
+        		padding: 0;
 			}
 		}
 		h4 {
@@ -1983,6 +1990,13 @@ margin: 0;
 			font-size: 15px;
 			width: 315px;
 		}
+	}
+	.-m-team-member p {
+		-webkit-columns: 2;
+		-moz-columns: 2;
+		columns: 2;
+		margin: 0;
+		padding: 0;
 	}
 	.img-bridge {
 		width: 100%;
@@ -3164,7 +3178,7 @@ div.cartodb-popup .cartodb-popup-close-button {
 .home .index-row .row-container {justify-content: space-between;}
 .archive #contact .contact-form textarea, .page #contact .contact-form textarea {width: 50%;}
 .home .index-row .resource-list {max-height: 345px; min-height: 100%;}
-.page #principles, .page #contact, .page #more-content, .page #partners, .page #members, .page #newsletter {margin: 0; padding: 47px 0 0;}
+.page #principles, .page #contact, .page #more-content, .page #partners, .page #members, .page #newsletter {margin: 0; padding: 0px 0 0;}
 .page #partners p a {color: #0475cc;}
 @media (min-width: 1024px) {
 	.home .index-row#news .row-container {padding-right: 45px;}
