@@ -3037,7 +3037,7 @@ POSTS & CONTENT STYLES
   /* NEW - Chrome */
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: row; }
   .archive #contact .index-row,
   .page #contact .index-row {
