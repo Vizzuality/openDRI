@@ -4491,10 +4491,6 @@ div.cartodb-popup .cartodb-popup-close-button {
   .post-type-archive-resource #main .row-container article {
     margin: 10px auto; }
 
-  .post-type-archive-resource #main .index-row {
-    -webkit-flex-direction: row;
-    flex-direction: row; }
-
   .page .about-content .card-third ol {
     height: 100%; }
 
