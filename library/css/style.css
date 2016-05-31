@@ -3047,7 +3047,8 @@ POSTS & CONTENT STYLES
       margin: 0; }
   .archive #contact .-m-form,
   .page #contact .-m-form {
-    width: calc(50% - 20px); }
+    width: calc(50% - 20px);
+    margin: 70px 0 0; }
   .archive #contact .contact-form,
   .page #contact .contact-form {
     background: #fff;

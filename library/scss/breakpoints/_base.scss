@@ -1825,7 +1825,10 @@ margin: 0;
 				margin: 0;
 			}
 		}
-		.-m-form { width: calc(50% - 20px);}
+		.-m-form { 
+			width: calc(50% - 20px);
+			margin: 70px 0 0;
+		}
 		.contact-form {
 			background: $white;
 			box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
