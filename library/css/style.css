@@ -4747,7 +4747,7 @@ div.cartodb-popup .cartodb-popup-close-button {
   .blue-bar-top.about {
     align-items: center;
     height: 180px;
-    margin: 0 0 -60px; }
+    margin: 0 0 -20px; }
 
   .home .index-row article.resource-cont, .index-row .card-third.resource-cont {
     width: 50vh; }
