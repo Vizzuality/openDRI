@@ -3337,11 +3337,12 @@ POSTS & CONTENT STYLES
   /* NEW - Chrome */
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  flex-wrap: wrap; }
+  width: 100%; }
   .archive .pillars-list-about .p-info,
   .page .pillars-list-about .p-info {
-    display: inline; }
+    display: inline;
+    min-height: 370px;
+    padding: 0 3px; }
     .archive .pillars-list-about .p-info > i,
     .page .pillars-list-about .p-info > i {
       height: 110px;
@@ -4495,11 +4496,14 @@ div.cartodb-popup .cartodb-popup-close-button {
     height: 100%; }
 
   .page .about-content .card-third ol li {
-    width: 100%; }
+    width: 100%;
+    padding: 0;
+    height: auto; }
 
   .page .about-content .card-third p {
     -webkit-columns: 1;
-    columns: 1; }
+    columns: 1;
+    padding: 0 0 20px; }
 
   .blue-bar-top .wrapper.filters span.title {
     display: none; }
@@ -4668,7 +4672,20 @@ div.cartodb-popup .cartodb-popup-close-button {
     margin: 30px 0; }
 
   .home .what-explore {
-    width: 230px; } }
+    width: 230px; }
+
+  .archive .pillars-list-about, .page .pillars-list-about {
+    flex-direction: column; }
+
+  .archive .pillars-list-about .p-info, .page .pillars-list-about .p-info {
+    min-height: auto;
+    margin: 0; }
+
+  .archive .pillars-list-about .p-info .explore-projects, .page .pillars-list-about .p-info .explore-projects {
+    position: relative; }
+
+  .page .about-content .card-third > p.principles-column-title {
+    display: none; } }
 @media (max-width: 768px) {
   .index-separator {
     margin: -70px 0px 0px; }
@@ -4730,7 +4747,7 @@ div.cartodb-popup .cartodb-popup-close-button {
   .blue-bar-top.about {
     align-items: center;
     height: 180px;
-    margin: 0 0 -90px; }
+    margin: 0 0 -60px; }
 
   .home .index-row article.resource-cont, .index-row .card-third.resource-cont {
     width: 50vh; }

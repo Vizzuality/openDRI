@@ -268,6 +268,9 @@ function query_post_type($query) {
     return $query;
   }
 }
+
+remove_filter( 'the_content', 'wpautop' );
+remove_filter( 'the_excerpt', 'wpautop' );
 /************* ACTIVE SIDEBARS ********************/
 
 // Sidebars & Widgetizes Areas

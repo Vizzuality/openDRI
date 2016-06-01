@@ -2052,9 +2052,10 @@ margin: 0;
 		display: flex;
 		justify-content: space-between;
 		width: 100%;
-		flex-wrap: wrap;
 		.p-info {
 			display: inline;
+			min-height: 370px;
+			padding: 0 3px;
 			> i {
 					height: 110px;
 				    background-size: 50px;
@@ -3214,8 +3215,8 @@ div.cartodb-popup .cartodb-popup-close-button {
   .blue-bar-top .wrapper span {font-size: 14px; padding: 3px 1px;}
   .post-type-archive-resource #main .row-container article {margin: 10px auto;}
   .page .about-content .card-third ol {height: 100%;}
-  .page .about-content .card-third ol li {width: 100%;}
-  .page .about-content .card-third p { -webkit-columns: 1; columns: 1;}
+  .page .about-content .card-third ol li {width: 100%; padding: 0; height: auto;}
+  .page .about-content .card-third p { -webkit-columns: 1; columns: 1; padding: 0 0 20px;}
   .blue-bar-top .wrapper.filters span.title {display: none;}
   div#principles.m-all.cf.index-row.about-content { height: 700px; }
   div#principles.m-all.cf.index-row.about-content ol { display: block;}
@@ -3257,6 +3258,10 @@ div.cartodb-popup .cartodb-popup-close-button {
   .resources-page-list .index-row.last-resources {flex-direction: column;}
   .resources-page-list .index-row.last-resources .resource-cont {width: 100%;max-width: 100%; margin: 30px 0;}
   .home .what-explore {width: 230px;}
+  .archive .pillars-list-about, .page .pillars-list-about {flex-direction: column;}
+  .archive .pillars-list-about .p-info, .page .pillars-list-about .p-info {min-height: auto; margin: 0;}
+  .archive .pillars-list-about .p-info .explore-projects, .page .pillars-list-about .p-info .explore-projects {position: relative;}
+  .page .about-content .card-third > p.principles-column-title {display: none;}
 }
 @media (max-width: 768px) {
 	.index-separator {margin: -70px 0px 0px;}
@@ -3273,7 +3278,7 @@ div.cartodb-popup .cartodb-popup-close-button {
 	.header nav a:hover:before {content: none;}
 	.home #map-fake .what-list {width: 100%;padding: 20px;}
 	.home .what-explore {display: none;}
-	.blue-bar-top.about {align-items: center; height: 180px; margin: 0 0 -90px;}
+	.blue-bar-top.about {align-items: center; height: 180px; margin: 0 0 -60px;}
 	.home .index-row article.resource-cont, .index-row .card-third.resource-cont { width: 50vh; }
 	.blue-bar-top .wrapper .region-filter li:first-child i {display: none;}
 	.archive .cdbmap, .page .cdbmap {height: 330px;}
