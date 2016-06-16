@@ -11,6 +11,7 @@ if ( is_page( 'resources' ) ) {
 						<span><a href="#newsletters">newsletters</a></span>
 						<span><a href="#tools">tools and training materials</a></span>
 						<span><a href="#other">other resources</a></span>
+						&nbsp;
 					</div>
 				</div>
 				<div id="inner-content" class="wrap cf">
