@@ -176,285 +176,285 @@ if(is_post_type_archive() && $post_type=='project') {
 										<p><?php echo $description; ?></p>
 									</div>
 								<?php } // if projects ?>
-									<?php if (is_post_type_archive() && $post_type=='resource') : ?>
-		<div id="publications" class="resources-anchor"></div>
-		<h3 class="resource-list-title">Guides and Publications</h3>
-		<ul class="resource-list-new">
-			<?php
-				$posts_array = get_posts( array('category_name'	=> 'Resources Guides',
-										  'orderby' 		=> 'date',
-										  'order'           => 'DESC',
-										  'post_type'       => 'resource',
-										  'post_status'     => 'publish'));
-				for($i = 0; $i < count($posts_array); $i+=2) {
-			?>
-			<li>
-				<div class="thumbnail">
-					<?php
-					$image = get_post_meta($posts_array[$i]->ID, 'thumbnailPic', true);
-					$fallbackimg = wp_get_attachment_image_src( get_post_thumbnail_id( $posts_array[$i]->ID ));
-					$image = ($image[0]) ? $image : $fallbackimg[0];
-					?>
-					<a href="<?php echo esc_url( get_permalink($posts_array[$i]->ID)) ?>"><img src="<?php echo $image?>" alt="" /></a>
-					<div class="text-thumbnail">
-						<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i]->post_date); ?></span>
-						<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i]->ID)) ?>"><?php echo $posts_array[$i]->post_title ?></a></span>
-						<?php 
-						$posttags = get_the_tags($posts_array[$i]->ID);
-						if ($posttags) {
-							echo '<span class="tags">';
-							$t = 0;
-							foreach($posttags as $tag) {
-								if(++$t === count($posttags)) echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>'; 
-								else echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>, '; 
-							}
-							echo '</span>';
-						}
-						?>
-					</div>
-				</div>
-				<div class="thumbnail">
-					<?php
-					if (!!$posts_array[$i+1]) {
-					$image = get_post_meta($posts_array[$i+1]->ID, 'thumbnailPic', true);
-					$fallbackimg = wp_get_attachment_image_src( get_post_thumbnail_id( $posts_array[$i+1]->ID ));
-					$image = ($image[0]) ? $image : $fallbackimg[0];
-					?>
-					<a href="<?php echo esc_url( get_permalink($posts_array[$i+1]->ID)) ?>"><img src="<?php echo $image?>" alt="" /></a>
-					<div class="text-thumbnail">
-						<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i+1]->post_date); ?></span>
-						<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i+1]->ID)) ?>"><?php echo $posts_array[$i+1]->post_title ?></a></span>
-						<?php 
-						$posttags = get_the_tags($posts_array[$i+1]->ID);
-						if ($posttags) {
-							echo '<span class="tags">';
-							$t = 0;
-							foreach($posttags as $tag) {
-								if(++$t === count($posttags)) echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>'; 
-								else echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>, '; 
-							}
-							echo '</span>';
-						}
-					}	
-						?>
-					</div>
-				</div>
-			</li>
-			<?php 
-				}
-			?>
-		</ul>
-		<div id="notes" class="resources-anchor"></div>
-		<h3 class="resource-list-title">Short Notes</h3>
-		<ul class="resource-list-new">
-			<?php
-				$posts_array = get_posts( array('category_name'	=> 'Resources Short Notes',
-										  'orderby' 		=> 'date',
-										  'order'           => 'DESC',
-										  'post_type'       => 'resource',
-										  'post_status'     => 'publish'));
-				for($i = 0; $i < count($posts_array); $i+=2) {
-			?>
-			<li>
-				<div class="thumbnail">
-					<?php
-					$image = get_post_meta($posts_array[$i]->ID, 'thumbnailPic', true);
-					$fallbackimg = wp_get_attachment_image_src( get_post_thumbnail_id( $posts_array[$i]->ID ));
-					$image = ($image[0]) ? $image : $fallbackimg[0];
-					?>
-					<a href="<?php echo esc_url( get_permalink($posts_array[$i]->ID)) ?>"><img src="<?php echo $image?>" alt="" /></a>
-					<div class="text-thumbnail">
-						<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i]->post_date); ?></span>
-						<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i]->ID)) ?>"><?php echo $posts_array[$i]->post_title ?></a></span>
-						<?php 
-						$posttags = get_the_tags($posts_array[$i]->ID);
-						if ($posttags) {
-							echo '<span class="tags">';
-							$t = 0;
-							foreach($posttags as $tag) {
-								if(++$t === count($posttags)) echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>'; 
-								else echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>, '; 
-							}
-							echo '</span>';
-						}
-						?>
-					</div>
-				</div>
-				<div class="thumbnail">
-					<?php
-					if (!!$posts_array[$i+1]) {
-					$image = get_post_meta($posts_array[$i+1]->ID, 'thumbnailPic', true);
-					$fallbackimg = wp_get_attachment_image_src( get_post_thumbnail_id( $posts_array[$i+1]->ID ));
-					$image = ($image[0]) ? $image : $fallbackimg[0];
-					?>
-					<a href="<?php echo esc_url( get_permalink($posts_array[$i+1]->ID)) ?>"><img src="<?php echo $image?>" alt="" /></a>
-					<div class="text-thumbnail">
-						<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i+1]->post_date); ?></span>
-						<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i+1]->ID)) ?>"><?php echo $posts_array[$i+1]->post_title ?></a></span>
-						<?php 
-						$posttags = get_the_tags($posts_array[$i+1]->ID);
-						if ($posttags) {
-							echo '<span class="tags">';
-							$t = 0;
-							foreach($posttags as $tag) {
-								if(++$t === count($posttags)) echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>'; 
-								else echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>, '; 
-							}
-							echo '</span>';
-						}
-					}	
-						?>
-					</div>
-				</div>
-			</li>
-			<?php 
-				}
-			?>
-		</ul>
-		<div id="newsletters" class="resources-anchor"></div>
-		<h3 class="resource-list-title">Newsletters</h3>
-		<ul class="resource-list-new">
-			<?php
-			$posts_array = get_posts( array('category_name'	=> 'Resources Newsletter',
-										  'orderby' 		=> 'date',
-										  'order'           => 'DESC',
-										  'post_type'       => 'resource',
-										  'post_status'     => 'publish'));
-			for($i = 0; $i < count($posts_array); $i+=2) {
-			?>
-			<li>
-				<div>
-					<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i]->post_date); ?></span>
-					<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i]->ID)) ?>"><?php echo $posts_array[$i]->post_title ?></a></span>
-					<?php 
-						$posttags = get_the_tags($posts_array[$i]->ID);
-						if ($posttags) {
-							echo '<span class="tags">';
-							$t = 0;
-							foreach($posttags as $tag) {
-								if(++$t === count($posttags)) echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>'; 
-								else echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>, '; 
-							}
-							echo '</span>';
-						}
-					?>
-				</div>
-				<div>
-					<?php if (!!$posts_array[$i+1]): ?>
-					<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i+1]->post_date); ?></span>
-					<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i+1]->ID)) ?>"><?php echo $posts_array[$i+1]->post_title ?></a></span>
-					<?php 
-						$posttags = get_the_tags($posts_array[$i+1]->ID);
-						if ($posttags) {
-							echo '<span class="tags">';
-							$t = 0;
-							foreach($posttags as $tag) {
-								if(++$t === count($posttags)) echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>'; 
-								else echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>, '; 
-							}
-							echo '</span>';
-						}
-					?>
-					<?php endif; ?>
-				</div>
-			<?php } ?>
-		</ul>
-		<div id="tools" class="resources-anchor"></div>
-		<h3 class="resource-list-title">Tools and Training Materials</h3>
-		<ul class="resource-list-new">
-			<?php
-			$posts_array = get_posts( array('category_name'	=> 'Resources Tools and Training Materials',
-										  'orderby' 		=> 'date',
-										  'order'           => 'DESC',
-										  'post_type'       => 'resource',
-										  'post_status'     => 'publish'));
-			for($i = 0; $i < count($posts_array); $i+=2) {
-			?>
-			<li>
-				<div>
-					<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i]->post_date); ?></span>
-					<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i]->ID)) ?>"><?php echo $posts_array[$i]->post_title ?></a></span>
-					<?php 
-						$posttags = get_the_tags($posts_array[$i]->ID);
-						if ($posttags) {
-							echo '<span class="tags">';
-							$t = 0;
-							foreach($posttags as $tag) {
-								if(++$t === count($posttags)) echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>'; 
-								else echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>, '; 
-							}
-							echo '</span>';
-						}
-					?>
-				</div>
-				<div>
-					<?php if (!!$posts_array[$i+1]): ?>
-					<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i+1]->post_date); ?></span>
-					<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i+1]->ID)) ?>"><?php echo $posts_array[$i+1]->post_title ?></a></span>
-					<?php 
-						$posttags = get_the_tags($posts_array[$i+1]->ID);
-						if ($posttags) {
-							echo '<span class="tags">';
-							$t = 0;
-							foreach($posttags as $tag) {
-								if(++$t === count($posttags)) echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>'; 
-								else echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>, '; 
-							}
-							echo '</span>';
-						}
-					?>
-					<?php endif; ?>
-				</div>
-			<?php } ?>
-		</ul>
-		<div id="other" class="resources-anchor"></div>
-		<h3 class="resource-list-title">Other Resources</h3>
-		<ul class="resource-list-new">
-			<?php
-			$posts_array = get_posts( array('category_name'	=> 'Resources Others',
-										  'orderby' 		=> 'date',
-										  'order'           => 'DESC',
-										  'post_type'       => 'resource',
-										  'post_status'     => 'publish'));
-			for($i = 0; $i < count($posts_array); $i+=2) {
-			?>
-			<li>
-				<div>
-					<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i]->post_date); ?></span>
-					<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i]->ID)) ?>"><?php echo $posts_array[$i]->post_title ?></a></span>
-					<?php 
-						$posttags = get_the_tags($posts_array[$i]->ID);
-						if ($posttags) {
-							echo '<span class="tags">';
-							$t = 0;
-							foreach($posttags as $tag) {
-								if(++$t === count($posttags)) echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>'; 
-								else echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>, '; 
-							}
-							echo '</span>';
-						}
-					?>
-				</div>
-				<div>
-					<?php if (!!$posts_array[$i+1]): ?>
-					<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i+1]->post_date); ?></span>
-					<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i+1]->ID)) ?>"><?php echo $posts_array[$i+1]->post_title ?></a></span>
-					<?php 
-						$posttags = get_the_tags($posts_array[$i+1]->ID);
-						if ($posttags) {
-							echo '<span class="tags">';
-							$t = 0;
-							foreach($posttags as $tag) {
-								if(++$t === count($posttags)) echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>'; 
-								else echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>, '; 
-							}
-							echo '</span>';
-						}
-					?>
-					<?php endif; ?>
-				</div>
-			<?php } ?>
-		</ul>
+								<?php if (is_post_type_archive() && $post_type=='resource') : ?>
+									<div id="publications" class="resources-anchor"></div>
+									<h3 class="resource-list-title">Guides and Publications</h3>
+									<ul class="resource-list-new">
+										<?php
+											$posts_array = get_posts( array('category_name'	=> 'Resources Guides',
+																	  'orderby' 		=> 'date',
+																	  'order'           => 'DESC',
+																	  'post_type'       => 'resource',
+																	  'post_status'     => 'publish'));
+											for($i = 0; $i < count($posts_array); $i+=2) {
+										?>
+										<li>
+											<div class="thumbnail">
+												<?php
+												$image = get_post_meta($posts_array[$i]->ID, 'thumbnailPic', true);
+												$fallbackimg = wp_get_attachment_image_src( get_post_thumbnail_id( $posts_array[$i]->ID ));
+												$image = ($image[0]) ? $image : $fallbackimg[0];
+												?>
+												<a href="<?php echo esc_url( get_permalink($posts_array[$i]->ID)) ?>"><img src="<?php echo $image?>" alt="" /></a>
+												<div class="text-thumbnail">
+													<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i]->post_date); ?></span>
+													<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i]->ID)) ?>"><?php echo $posts_array[$i]->post_title ?></a></span>
+													<?php 
+													$posttags = get_the_tags($posts_array[$i]->ID);
+													if ($posttags) {
+														echo '<span class="tags">';
+														$t = 0;
+														foreach($posttags as $tag) {
+															if(++$t === count($posttags)) echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>'; 
+															else echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>, '; 
+														}
+														echo '</span>';
+													}
+													?>
+												</div>
+											</div>
+											<div class="thumbnail">
+												<?php
+												if (!!$posts_array[$i+1]) {
+												$image = get_post_meta($posts_array[$i+1]->ID, 'thumbnailPic', true);
+												$fallbackimg = wp_get_attachment_image_src( get_post_thumbnail_id( $posts_array[$i+1]->ID ));
+												$image = ($image[0]) ? $image : $fallbackimg[0];
+												?>
+												<a href="<?php echo esc_url( get_permalink($posts_array[$i+1]->ID)) ?>"><img src="<?php echo $image?>" alt="" /></a>
+												<div class="text-thumbnail">
+													<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i+1]->post_date); ?></span>
+													<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i+1]->ID)) ?>"><?php echo $posts_array[$i+1]->post_title ?></a></span>
+													<?php 
+													$posttags = get_the_tags($posts_array[$i+1]->ID);
+													if ($posttags) {
+														echo '<span class="tags">';
+														$t = 0;
+														foreach($posttags as $tag) {
+															if(++$t === count($posttags)) echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>'; 
+															else echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>, '; 
+														}
+														echo '</span>';
+													}
+												echo '</div>';
+												}	
+													?>
+											</div>
+										</li>
+										<?php 
+											}
+										?>
+									</ul>
+									<div id="notes" class="resources-anchor"></div>
+									<h3 class="resource-list-title">Short Notes</h3>
+									<ul class="resource-list-new">
+										<?php
+											$posts_array = get_posts( array('category_name'	=> 'Resources Short Notes',
+																	  'orderby' 		=> 'date',
+																	  'order'           => 'DESC',
+																	  'post_type'       => 'resource',
+																	  'post_status'     => 'publish'));
+											for($i = 0; $i < count($posts_array); $i+=2) {
+										?>
+										<li>
+											<div class="thumbnail">
+												<?php
+												$image = get_post_meta($posts_array[$i]->ID, 'thumbnailPic', true);
+												$fallbackimg = wp_get_attachment_image_src( get_post_thumbnail_id( $posts_array[$i]->ID ));
+												$image = ($image[0]) ? $image : $fallbackimg[0];
+												?>
+												<a href="<?php echo esc_url( get_permalink($posts_array[$i]->ID)) ?>"><img src="<?php echo $image?>" alt="" /></a>
+												<div class="text-thumbnail">
+													<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i]->post_date); ?></span>
+													<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i]->ID)) ?>"><?php echo $posts_array[$i]->post_title ?></a></span>
+													<?php 
+													$posttags = get_the_tags($posts_array[$i]->ID);
+													if ($posttags) {
+														echo '<span class="tags">';
+														$t = 0;
+														foreach($posttags as $tag) {
+															if(++$t === count($posttags)) echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>'; 
+															else echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>, '; 
+														}
+														echo '</span>';
+													}
+													?>
+												</div>
+											</div>
+											<div class="thumbnail">
+												<?php
+												if (!!$posts_array[$i+1]) {
+												$image = get_post_meta($posts_array[$i+1]->ID, 'thumbnailPic', true);
+												$fallbackimg = wp_get_attachment_image_src( get_post_thumbnail_id( $posts_array[$i+1]->ID ));
+												$image = ($image[0]) ? $image : $fallbackimg[0];
+												?>
+												<a href="<?php echo esc_url( get_permalink($posts_array[$i+1]->ID)) ?>"><img src="<?php echo $image?>" alt="" /></a>
+												<div class="text-thumbnail">
+													<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i+1]->post_date); ?></span>
+													<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i+1]->ID)) ?>"><?php echo $posts_array[$i+1]->post_title ?></a></span>
+													<?php 
+													$posttags = get_the_tags($posts_array[$i+1]->ID);
+													if ($posttags) {
+														echo '<span class="tags">';
+														$t = 0;
+														foreach($posttags as $tag) {
+															if(++$t === count($posttags)) echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>'; 
+															else echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>, '; 
+														}
+														echo '</span>';
+													}
+												echo '</div>';
+												}	
+													?>
+											</div>
+										</li>
+										<?php 
+											}
+										?>
+									</ul>
+									<div id="newsletters" class="resources-anchor"></div>
+									<h3 class="resource-list-title">Newsletters</h3>
+									<ul class="resource-list-new">
+										<?php
+										$posts_array = get_posts( array('category_name'	=> 'Resources Newsletter',
+																	  'orderby' 		=> 'date',
+																	  'order'           => 'DESC',
+																	  'post_type'       => 'resource',
+																	  'post_status'     => 'publish'));
+										for($i = 0; $i < count($posts_array); $i+=2) {
+										?>
+										<li>
+											<div>
+												<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i]->post_date); ?></span>
+												<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i]->ID)) ?>"><?php echo $posts_array[$i]->post_title ?></a></span>
+												<?php 
+													$posttags = get_the_tags($posts_array[$i]->ID);
+													if ($posttags) {
+														echo '<span class="tags">';
+														$t = 0;
+														foreach($posttags as $tag) {
+															if(++$t === count($posttags)) echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>'; 
+															else echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>, '; 
+														}
+														echo '</span>';
+													}
+												?>
+											</div>
+											<div>
+												<?php if (!!$posts_array[$i+1]): ?>
+												<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i+1]->post_date); ?></span>
+												<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i+1]->ID)) ?>"><?php echo $posts_array[$i+1]->post_title ?></a></span>
+												<?php 
+													$posttags = get_the_tags($posts_array[$i+1]->ID);
+													if ($posttags) {
+														echo '<span class="tags">';
+														$t = 0;
+														foreach($posttags as $tag) {
+															if(++$t === count($posttags)) echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>'; 
+															else echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>, '; 
+														}
+														echo '</span>';
+													}
+												?>
+												<?php endif; ?>
+											</div>
+										<?php } ?>
+									</ul>
+									<div id="tools" class="resources-anchor"></div>
+									<h3 class="resource-list-title">Tools and Training Materials</h3>
+									<ul class="resource-list-new">
+										<?php
+										$posts_array = get_posts( array('category_name'	=> 'Resources Tools and Training Materials',
+																	  'orderby' 		=> 'date',
+																	  'order'           => 'DESC',
+																	  'post_type'       => 'resource',
+																	  'post_status'     => 'publish'));
+										for($i = 0; $i < count($posts_array); $i+=2) {
+										?>
+										<li>
+											<div>
+												<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i]->post_date); ?></span>
+												<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i]->ID)) ?>"><?php echo $posts_array[$i]->post_title ?></a></span>
+												<?php 
+													$posttags = get_the_tags($posts_array[$i]->ID);
+													if ($posttags) {
+														echo '<span class="tags">';
+														$t = 0;
+														foreach($posttags as $tag) {
+															if(++$t === count($posttags)) echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>'; 
+															else echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>, '; 
+														}
+														echo '</span>';
+													}
+												?>
+											</div>
+											<div>
+												<?php if (!!$posts_array[$i+1]): ?>
+												<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i+1]->post_date); ?></span>
+												<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i+1]->ID)) ?>"><?php echo $posts_array[$i+1]->post_title ?></a></span>
+												<?php 
+													$posttags = get_the_tags($posts_array[$i+1]->ID);
+													if ($posttags) {
+														echo '<span class="tags">';
+														$t = 0;
+														foreach($posttags as $tag) {
+															if(++$t === count($posttags)) echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>'; 
+															else echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>, '; 
+														}
+														echo '</span>';
+													}
+												?>
+												<?php endif; ?>
+											</div>
+										<?php } ?>
+									</ul>
+									<div id="other" class="resources-anchor"></div>
+									<h3 class="resource-list-title">Other Resources</h3>
+									<ul class="resource-list-new">
+										<?php
+										$posts_array = get_posts( array('category_name'	=> 'Resources Others',
+																	  'orderby' 		=> 'date',
+																	  'order'           => 'DESC',
+																	  'post_type'       => 'resource',
+																	  'post_status'     => 'publish'));
+										for($i = 0; $i < count($posts_array); $i+=2) {
+										?>
+										<li>
+											<div>
+												<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i]->post_date); ?></span>
+												<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i]->ID)) ?>"><?php echo $posts_array[$i]->post_title ?></a></span>
+												<?php 
+													$posttags = get_the_tags($posts_array[$i]->ID);
+													if ($posttags) {
+														echo '<span class="tags">';
+														$t = 0;
+														foreach($posttags as $tag) {
+															if(++$t === count($posttags)) echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>'; 
+															else echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>, '; 
+														}
+														echo '</span>';
+													}
+												?>
+											</div>
+											<div>
+												<?php if (!!$posts_array[$i+1]): ?>
+												<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i+1]->post_date); ?></span>
+												<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i+1]->ID)) ?>"><?php echo $posts_array[$i+1]->post_title ?></a></span>
+												<?php 
+													$posttags = get_the_tags($posts_array[$i+1]->ID);
+													if ($posttags) {
+														echo '<span class="tags">';
+														$t = 0;
+														foreach($posttags as $tag) {
+															if(++$t === count($posttags)) echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>'; 
+															else echo '<a href="'.home_url().'/tag/'.str_replace(' ', '-', $tag->name).'">'.$tag->name.'</a>, '; 
+														}
+														echo '</span>';
+													}
+												?>
+												<?php endif; ?>
+											</div>
+										<?php } ?>
+									</ul>
 									<?php else: ?> 
 								<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 							 	 <?php $cats = array();
