@@ -2114,7 +2114,7 @@ POSTS & CONTENT STYLES
   font-size: 48px;
   line-height: 0.9;
   color: #1477c9;
-  margin: 25px 0 0;
+  margin: 35px 0 0;
   width: 100%; }
 
 .resources-anchor {
@@ -2136,7 +2136,7 @@ POSTS & CONTENT STYLES
   display: inline;
   width: 100%; }
   .resources-page-list .resource-list-new:last-child {
-    margin: 0 0 30px; }
+    margin: 0 0 60px; }
   .resources-page-list .resource-list-new li {
     border-bottom: solid 1px rgba(151, 151, 151, 0.2);
     min-height: 70px;
