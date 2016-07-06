@@ -394,6 +394,78 @@ function post_modified_column_register_sortable( $columns ) {
     return $columns;
 }
 add_filter( 'manage_edit-post_sortable_columns', 'post_modified_column_register_sortable' );
+
+
+
+
+
+
+// PROJECTS
+// Register the column
+function project_modified_column_register( $columns ) {
+    $columns['post_modified'] = __( 'Modified', 'mytextdomain' );
+    return $columns;
+}
+add_filter( 'manage_edit-project_columns', 'project_modified_column_register' );
+
+// Display the column content
+function project_modified_column_display( $column_name, $post_id ) {
+    if ( 'post_modified' != $column_name ){
+        return;
+    }
+    $post_modified = get_post_field('post_modified', $post_id);
+    if ( !$post_modified ){
+        $post_modified = '' . __( 'undefined', 'mytextdomain' ) . '';
+    }
+    echo $post_modified;
+}
+add_action( 'manage_projects_custom_column', 'project_modified_column_display', 10, 2 );
+
+// Register the column as sortable
+function project_modified_column_register_sortable( $columns ) {
+    $columns['post_modified'] = 'post_modified';
+    return $columns;
+}
+add_filter( 'manage_edit-project_sortable_columns', 'project_modified_column_register_sortable' );
+
+
+
+
+
+
+
+// RESOURCES
+// Register the column
+function resource_modified_column_register( $columns ) {
+    $columns['post_modified'] = __( 'Modified', 'mytextdomain' );
+    return $columns;
+}
+add_filter( 'manage_edit-resource_columns', 'resource_modified_column_register' );
+
+// Display the column content
+function resource_modified_column_display( $column_name, $post_id ) {
+    if ( 'post_modified' != $column_name ){
+        return;
+    }
+    $post_modified = get_post_field('post_modified', $post_id);
+    if ( !$post_modified ){
+        $post_modified = '' . __( 'undefined', 'mytextdomain' ) . '';
+    }
+    echo $post_modified;
+}
+add_action( 'manage_resources_custom_column', 'resource_modified_column_display', 10, 2 );
+
+// Register the column as sortable
+function resource_modified_column_register_sortable( $columns ) {
+    $columns['post_modified'] = 'post_modified';
+    return $columns;
+}
+add_filter( 'manage_edit-resource_sortable_columns', 'resource_modified_column_register_sortable' );
+
+
+
+
+
 //PAGES
 // Register the column
 function page_modified_column_register( $columns ) {
