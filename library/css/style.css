@@ -2168,7 +2168,7 @@ POSTS & CONTENT STYLES
           align-self: center; }
           .resources-page-list .resource-list-new li > div.thumbnail > a img {
             width: 100%;
-            height: 100%;
+            height: 160px;
             box-shadow: 0px 0px 5px #c0c0c0; }
         .resources-page-list .resource-list-new li > div.thumbnail .text-thumbnail {
           display: -webkit-box;
@@ -2396,7 +2396,8 @@ POSTS & CONTENT STYLES
             color: #1477c9; }
           .hentry.-odri-post .entry-content .project-box .project-text .uri-data,
           .hentry.-odri-post .entry-content .project-box .project-text .title-data {
-            color: #555; }
+            color: #555;
+            max-width: 550px; }
         .hentry.-odri-post .entry-content .project-box .project-figures {
           display: -webkit-box;
           /* OLD - iOS 6-, Safari 3.1-6 */
