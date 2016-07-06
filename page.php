@@ -16,11 +16,11 @@ if ( is_page( 'resources' ) ) {
 				</div>
 				<div id="inner-content" class="wrap cf">
 
-						<main id="main" class="m-all cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+						<div id="main" class="m-all cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 							<?php if (have_posts()) : while (have_posts()) : the_post();
 								the_content();
 							endwhile; endif; ?>
-						</main>
+						</div>
 
 						<?php /* get_sidebar();*/ ?>
 
