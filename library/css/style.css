@@ -2657,6 +2657,14 @@ POSTS & CONTENT STYLES
 .page .about-content .hentry header {
   bottom: auto;
   top: 17px; }
+.archive .about-content .hentry footer,
+.page .about-content .hentry footer {
+  display: none; }
+.archive .about-content .index-row article .entry-content, .archive .about-content .index-row .card-third .entry-content,
+.page .about-content .index-row article .entry-content,
+.page .about-content .index-row .card-third .entry-content {
+  height: 255px;
+  -webkit-line-clamp: 10; }
 .archive .about-content .card-third,
 .page .about-content .card-third {
   max-width: none;

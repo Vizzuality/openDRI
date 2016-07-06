@@ -1653,6 +1653,13 @@ margin: 0;
 			bottom: auto;
 			top: 17px;
 		}
+		.hentry footer {
+			display: none;
+		}
+		.index-row article .entry-content, .index-row .card-third .entry-content {
+			height: 255px;
+			-webkit-line-clamp: 10;
+		}
 		.card-third {
 			max-width: none;
 			margin: 0;
