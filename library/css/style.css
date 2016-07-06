@@ -5295,6 +5295,9 @@ div.cartodb-popup .cartodb-popup-close-button {
 
   .single #explore-more .what-explore a {
     line-height: 34px; } }
+@media all and (-ms-high-contrast: none) {
+  p.principles-column-title {
+    width: 60% !important; } }
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
