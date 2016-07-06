@@ -158,7 +158,7 @@ if(is_post_type_archive() && $post_type=='project') {
 			<div id="content" class="resources-page-list">
 						<?php echo ($hascornermap) ? '<span class="corner-map"></span>' : ''; ?>
 				<div id="inner-content" class="wrap">
-						<main id="main" class="" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+						<div id="main" class="" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 							<?php 
 							if ($post_type!='project') { ?>
 							<?php
@@ -563,7 +563,7 @@ if(is_post_type_archive() && $post_type=='project') {
 
 				<div id="inner-content" class="wrap cf">
 
-					<main id="main" class="m-all t-2of3 d-5of7 cf no-results" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+					<div id="main" class="m-all t-2of3 d-5of7 cf no-results" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
 
 							<section class="search">
@@ -574,7 +574,7 @@ if(is_post_type_archive() && $post_type=='project') {
 							<section>
 								<a href="<?php echo home_url(); ?>" class="home-404">go to homepage</a>
 							</section>
-					</main>
+					</div>
 
 				</div>
 
@@ -583,12 +583,13 @@ if(is_post_type_archive() && $post_type=='project') {
 							<?php endif; ?>
 								<?php endif; ?>
 
-						</main>
+						</div>
 
 					<?php // get_sidebar(); ?>
 
 				</div>
 
+			</div>
 			</div>
 
 <?php get_footer(); ?>
