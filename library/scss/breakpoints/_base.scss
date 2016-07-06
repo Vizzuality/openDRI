@@ -1649,6 +1649,10 @@ margin: 0;
 	#contact.index-row,
 	#more-content.index-row {margin: 40px 0;}
 	.about-content {
+		.hentry header {
+			bottom: auto;
+			top: 17px;
+		}
 		.card-third {
 			max-width: none;
 			margin: 0;

@@ -2653,6 +2653,10 @@ POSTS & CONTENT STYLES
 .page #contact.index-row,
 .page #more-content.index-row {
   margin: 40px 0; }
+.archive .about-content .hentry header,
+.page .about-content .hentry header {
+  bottom: auto;
+  top: 17px; }
 .archive .about-content .card-third,
 .page .about-content .card-third {
   max-width: none;
