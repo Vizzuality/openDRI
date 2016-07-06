@@ -3479,3 +3479,8 @@ div.cartodb-popup .cartodb-popup-close-button {
 	.resource-list-title {font-size: 28px;margin: 35px 0 0;}
 	.single #explore-more .what-explore a {line-height: 34px;}
 }
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	.archive .about-content .card-third > p.principles-column-title, .page .about-content .card-third > p.principles-column-title {
+		width: 60%;
+	}
+}
