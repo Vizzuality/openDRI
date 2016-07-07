@@ -2180,7 +2180,8 @@ POSTS & CONTENT STYLES
           /* NEW - Chrome */
           display: flex;
           flex-direction: column;
-          margin: 0 0 0 20px; }
+          margin: 0 0 0 20px;
+          width: 80%; }
     .resources-page-list .resource-list-new li .date {
       font-family: Helvetica;
       font-size: 11px;
