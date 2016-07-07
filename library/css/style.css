@@ -3760,6 +3760,8 @@ SIDEBARS & ASIDES
     letter-spacing: 0.5px;
     text-transform: uppercase;
     margin: 60px 0 15px; }
+    .sidebar h4 a {
+      color: currentColor; }
   .sidebar i {
     font-style: normal !important; }
   .sidebar li {
