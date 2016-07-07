@@ -2530,6 +2530,9 @@ SIDEBARS & ASIDES
     	letter-spacing: 0.5px;
     	text-transform: uppercase;
     	margin: 60px 0 15px;
+    	a {
+    		color: currentColor;
+    	}
     }
     i {font-style: normal !important;}
     li {
