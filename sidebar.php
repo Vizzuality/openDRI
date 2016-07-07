@@ -8,7 +8,7 @@
 			<?php if (strlen($news) > 0) {
 			?>
 			<div id="recent-posts-2" class="">
-				<h4 class="">Project's news</h4>
+				<h4 class=""><a href="<?php echo home_url(); ?>/tag/<?php echo $post->post_name; ?>">Project's news</a></h4>
 				<ul>
 				<?php
 					foreach(explode("\n", $news) as $line) {
