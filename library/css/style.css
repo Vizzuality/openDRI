@@ -5312,13 +5312,14 @@ div.cartodb-popup .cartodb-popup-close-button {
     line-height: 34px; }
 
   h5 {
-    margin: -55px 0 0;
+    margin: -40px 0 10px !important;
     position: relative;
-    top: 0px;
+    top: -0px !important;
     letter-spacing: 1px;
     text-transform: inherit;
-    width: 80%;
-    text-align: center; } }
+    width: 90%;
+    text-align: center;
+    line-height: 15px; } }
 @media all and (-ms-high-contrast: none) {
   p.principles-column-title {
     width: 60% !important; } }
