@@ -4434,7 +4434,8 @@ div.cartodb-popup .cartodb-popup-close-button {
     margin: 20px auto 0; }
 
   .home .index-row.last-resources a {
-    width: 100%; }
+    width: 100%;
+    margin: 5px 0; }
 
   .index-separator {
     margin: 0; }
@@ -4636,7 +4637,8 @@ div.cartodb-popup .cartodb-popup-close-button {
     height: auto; }
 
   .home #resources.index-row > .row-container, .home #resources.index-row > .row-container > a {
-    width: 100%; }
+    width: 100%;
+    margin: 0 0 2.5px; }
 
   .home #resources.index-row article.resource-cont, .index-row .card-third.resource-cont {
     width: calc(100% - 20px);
@@ -5307,7 +5309,16 @@ div.cartodb-popup .cartodb-popup-close-button {
     margin: 35px 0 0; }
 
   .single #explore-more .what-explore a {
-    line-height: 34px; } }
+    line-height: 34px; }
+
+  h5 {
+    margin: -55px 0 0;
+    position: relative;
+    top: 0px;
+    letter-spacing: 1px;
+    text-transform: inherit;
+    width: 80%;
+    text-align: center; } }
 @media all and (-ms-high-contrast: none) {
   p.principles-column-title {
     width: 60% !important; } }

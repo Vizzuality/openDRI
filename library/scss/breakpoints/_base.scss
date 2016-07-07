@@ -3210,7 +3210,7 @@ div.cartodb-popup .cartodb-popup-close-button {
 	.index-title h3 {font-size: 38px; margin: -70px auto 40px;}
 	.home .index-title h3 {font-size: 38px; margin: -30px auto 40px;}
 	.home .index-row .card-third span:not(#current-total-post-count) {margin: 20px auto 0}
-	.home .index-row.last-resources a {width: 100%;}
+	.home .index-row.last-resources a {width: 100%; margin:5px 0;}
 	.index-separator {margin: 0;}
 	.contact-form input[type=email], .contact-form input[type=text],.page #contact .contact-form textarea {width: 70% !important;}
 	.archive #contact .contact-form .contact-submit .pushbutton-wide, .page #contact .contact-form .contact-submit .pushbutton-wide {right: 12px;}
@@ -3262,7 +3262,7 @@ div.cartodb-popup .cartodb-popup-close-button {
   .index-row .card-third .twitter {width: auto;}
   .home #resources.index-row {align-items: flex-start;}
   .home #resources.index-row .first-text {width: 100%;max-width: calc(100% - 20px);height: auto;}
-  .home #resources.index-row >.row-container,.home #resources.index-row >.row-container > a {width: 100%;}
+  .home #resources.index-row >.row-container,.home #resources.index-row >.row-container > a {width: 100%; margin:0 0 2.5px}
   .home #resources.index-row article.resource-cont, .index-row .card-third.resource-cont {width: calc(100% - 20px);margin: 0;max-width: 100%;height: auto;display: inline-block;}
   .home #inner-content >.last-resources {margin: 0 0 50px !important;}
   .home #inner-content >.last-resources article {width: 100%;max-width: calc(100% - 20px);display: inline-block;margin: 0 !important; height: auto;}
@@ -3485,6 +3485,7 @@ div.cartodb-popup .cartodb-popup-close-button {
 	}
 	.resource-list-title {font-size: 28px;margin: 35px 0 0;}
 	.single #explore-more .what-explore a {line-height: 34px;}
+	h5 {margin: -55px 0 0; position: relative; top: 0px; letter-spacing: 1px; text-transform: inherit;width:80%; text-align: center;	}
 }
 @media all and (-ms-high-contrast: none) {
 	p.principles-column-title {
