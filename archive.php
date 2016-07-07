@@ -192,7 +192,9 @@ if(is_post_type_archive() && $post_type=='project') { ?>
 																	  'orderby' 		=> 'date',
 																	  'order'           => 'DESC',
 																	  'post_type'       => 'resource',
+																	  'posts_per_page'  => '1000',
 																	  'post_status'     => 'publish'));
+
 											for($i = 0; $i < count($posts_array); $i+=2) {
 										?>
 										<li>
@@ -258,6 +260,7 @@ if(is_post_type_archive() && $post_type=='project') { ?>
 											$posts_array = get_posts( array('category_name'	=> 'Resources Short Notes',
 																	  'orderby' 		=> 'date',
 																	  'order'           => 'DESC',
+																	  'post_type'       => 'resource',
 																	  'post_type'       => 'resource',
 																	  'post_status'     => 'publish'));
 											for($i = 0; $i < count($posts_array); $i+=2) {
@@ -326,6 +329,7 @@ if(is_post_type_archive() && $post_type=='project') { ?>
 																	  'orderby' 		=> 'date',
 																	  'order'           => 'DESC',
 																	  'post_type'       => 'resource',
+																	  'post_type'       => 'resource',
 																	  'post_status'     => 'publish'));
 										for($i = 0; $i < count($posts_array); $i+=2) {
 										?>
@@ -374,6 +378,7 @@ if(is_post_type_archive() && $post_type=='project') { ?>
 																	  'orderby' 		=> 'date',
 																	  'order'           => 'DESC',
 																	  'post_type'       => 'resource',
+																	  'post_type'       => 'resource',
 																	  'post_status'     => 'publish'));
 										for($i = 0; $i < count($posts_array); $i+=2) {
 										?>
@@ -421,6 +426,7 @@ if(is_post_type_archive() && $post_type=='project') { ?>
 										$posts_array = get_posts( array('category_name'	=> 'Resources Others',
 																	  'orderby' 		=> 'date',
 																	  'order'           => 'DESC',
+																	  'post_type'       => 'resource',
 																	  'post_type'       => 'resource',
 																	  'post_status'     => 'publish'));
 										for($i = 0; $i < count($posts_array); $i+=2) {
