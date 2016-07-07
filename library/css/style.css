@@ -1779,7 +1779,8 @@ POSTS & CONTENT STYLES
   /* NEW - Chrome */
   display: flex;
   justify-content: space-between;
-  margin: -40px 0 0px; }
+  margin: -40px 0 0px;
+  clear: both; }
   .index-separator span {
     display: block;
     height: 1px;
