@@ -11,7 +11,14 @@ if ( is_category() ) {
 }
 global $post_type;
 
-if(is_post_type_archive() && $post_type=='project') {
+if(is_post_type_archive() && $post_type=='project') { ?>
+	<?php show_admin_bar( false ); ?>
+	<style type="text/css">
+	html {
+		margin-top: 0 !important;
+	}
+	</style>
+<?
 	$title = 'Projects';
 	$description = '';
 	$postsInAfrica = get_term_by('slug','africa','category');
