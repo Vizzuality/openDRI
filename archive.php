@@ -18,7 +18,7 @@ if(is_post_type_archive() && $post_type=='project') { ?>
 		margin-top: 0 !important;
 	}
 	</style>
-<?
+<?php
 	$title = 'Projects';
 	$description = '';
 	$postsInAfrica = get_term_by('slug','africa','category');
