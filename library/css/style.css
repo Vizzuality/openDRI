@@ -4423,6 +4423,16 @@ div.cartodb-popup .cartodb-popup-close-button {
     font-size: 38px;
     margin: -70px auto 40px; }
 
+  .home .index-title h3 {
+    font-size: 38px;
+    margin: -30px auto 40px; }
+
+  .home .index-row .card-third span:not(#current-total-post-count) {
+    margin: 20px auto 0; }
+
+  .home .index-row.last-resources a {
+    width: 100%; }
+
   .index-separator {
     margin: 0; }
 
@@ -5208,7 +5218,7 @@ div.cartodb-popup .cartodb-popup-close-button {
     margin: 20px 0 0 0; }
 
   .home #inner-content > .last-resources {
-    margin: 20px 0 50px !important; }
+    margin: 0px 0 50px !important; }
 
   .page #contact .contact-form input, .page #contact .contact-form textarea {
     border: 1px solid #eee;

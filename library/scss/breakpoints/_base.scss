@@ -3204,6 +3204,9 @@ div.cartodb-popup .cartodb-popup-close-button {
 }
 @media (max-width: 1024px) {
 	.index-title h3 {font-size: 38px; margin: -70px auto 40px;}
+	.home .index-title h3 {font-size: 38px; margin: -30px auto 40px;}
+	.home .index-row .card-third span:not(#current-total-post-count) {margin: 20px auto 0}
+	.home .index-row.last-resources a {width: 100%;}
 	.index-separator {margin: 0;}
 	.contact-form input[type=email], .contact-form input[type=text],.page #contact .contact-form textarea {width: 70% !important;}
 	.archive #contact .contact-form .contact-submit .pushbutton-wide, .page #contact .contact-form .contact-submit .pushbutton-wide {right: 12px;}
@@ -3447,7 +3450,7 @@ div.cartodb-popup .cartodb-popup-close-button {
 	.post-type-archive-resource .index-row.last-resources a article {height: 100px;}
 	.home #resources.index-row article.resource-cont, .home #inner-content > .last-resources article{width: 100%;  max-width: 100%;}
 	.home .index-row .resource-list.home {margin: 20px 0 0 0;}
-	.home #inner-content > .last-resources {margin: 20px 0 50px !important;}
+	.home #inner-content > .last-resources {margin: 0px 0 50px !important;}
 	.page #contact .contact-form input, .page #contact .contact-form textarea {border: 1px solid #eee;width: 100% !important}
 	.archive #contact .contact-form .contact-submit .pushbutton-wide, .page #contact .contact-form .contact-submit .pushbutton-wide {width: 71px !important;left: 0;}
 	.index-row article.resource-cont section h3, .index-row .card-third.resource-cont section h3 {font-size: 17px;}
