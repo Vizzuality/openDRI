@@ -4715,6 +4715,9 @@ div.cartodb-popup .cartodb-popup-close-button {
   .page .about-content .card-third > p.principles-column-title {
     display: none; } }
 @media (max-width: 768px) {
+  .home #resources {
+    margin: 0px 0px 0px; }
+
   .index-separator {
     margin: -70px 0px 0px; }
 
