@@ -4429,10 +4429,16 @@ div.cartodb-popup .cartodb-popup-close-button {
 
   .home .index-title h3 {
     font-size: 38px;
-    margin: -30px auto 40px; }
+    margin: 0px auto 40px; }
+
+  .home .index-title:first-child {
+    margin: 20px 0 -50px; }
+
+  .home #resources .card-third:last-child a:last-child span {
+    margin: 40px auto 0; }
 
   .home .index-row .card-third span:not(#current-total-post-count) {
-    margin: 20px auto 0; }
+    margin: 40px auto 0px; }
 
   .home .index-row.last-resources a {
     width: 100%;
