@@ -59,7 +59,11 @@ if(is_post_type_archive() && $post_type=='project') { ?>
 							<ul class="region-filter" id="pick-region">
 								<li><input type="text" id="searchCountries" placeholder="Search country"><i></i></li>
 								<li class="pickable" data-option="africa" data-lat="6.3152" data-lng="5.80" data-zoom="3">africa</li>
+								<li class="pickable grp" data-option="grp1" data-lat="6.3152" data-lng="5.80" data-zoom="3">Horn of Africa</li>
+								<li class="pickable grp" data-option="grp2" data-lat="6.3152" data-lng="5.80" data-zoom="3">Sahel</li>
+								<li class="pickable grp" data-option="grp3" data-lat="6.3152" data-lng="5.80" data-zoom="3">West Africa</li>
 								<li class="pickable" data-option="eastasia" data-lat="9.968" data-lng="118.3" data-zoom="3">east asia pacific</li>
+								<li class="pickable grp" data-option="grp4" data-lat="9.968" data-lng="118.3" data-zoom="3">Pacific islands</li>
 								<li class="pickable" data-option="europe" data-lat="64.32" data-lng="99.84" data-zoom="3">europe and central asia</li>
 								<li class="pickable" data-option="latam" data-lat="-10.314" data-lng="-68.027" data-zoom="3">latin america and caribbean</li>
 								<li class="pickable" data-option="middleeast" data-lat="30.75" data-lng="28.03" data-zoom="4">middle east and north africa</li>

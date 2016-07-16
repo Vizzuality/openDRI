@@ -195,6 +195,14 @@ function save_on_cartodb( $post_id ) {
         array_push($region,'nonwp');
       } if (in_array(15, $categories)) {
         array_push($region,'southasia');
+      } if (in_array(281, $categories)) {
+        array_push($region,'grp1');
+      } if (in_array(282, $categories)) {
+         array_push($region,'grp2');
+      } if (in_array(283, $categories)) {
+         array_push($region,'grp3');
+      } if (in_array(284, $categories)) {
+        array_push($region,'grp4');
       }
       $pillar = implode("|",$pillar);
       $region = implode("|",$region);

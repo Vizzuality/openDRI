@@ -148,6 +148,7 @@
 				filterRegion  = '',
 				filterPillar  = '',
 				cartocss = "#wp_projects{ marker-file: url(https://s3.amazonaws.com/f.cl.ly/items/3s301k2k3m2P450n1A2A/marker@2x.png); marker-fill-opacity: 1; marker-allow-overlap: true; marker-width:26;}";
+				cartocssGR = "#wp_projects{ marker-file: url(https://s3.amazonaws.com/f.cl.ly/items/3s301k2k3m2P450n1A2A/marker@2x.png); marker-fill-opacity: 1; marker-allow-overlap: true; marker-width:52;}";
 		    function init(){
 		    	if ($(window).width() <= 768 && $('body').hasClass('archive')) {
 		    		$('.blue-bar-top').remove();
@@ -178,66 +179,12 @@
 					    position:'topright'
 					}).addTo(map);
 				}
-				var marker1,marker2,marker3,marker4,marker5,marker6,marker7 = null;
-				var addMarkers = function() {
-					<?php 
-						// $postsInall = new WP_Query( array( 'post_type' => 'project', 'category_name' => 'non-wb-countries' ) );
-						// $postsInall = $postsInall->post_count;
-					?>
-					// var postsInall = '<?php echo $postsInall ?>';
-					// marker1 = L.marker(new L.LatLng(0, 0), {icon:createLabelIcon(((postsInall.length > 1) ? "amount-of-posts-2" : "amount-of-posts"),postsInall)}).addTo(map);
-
-					<?php 
-						// $postsInAfrica = new WP_Query( array( 'post_type' => 'project', 'category_name' => 'africa' ) );
-						// $postsInAfrica = $postsInAfrica->post_count;
-					?>
-					// var postsInAfrica = '<?php echo $postsInAfrica ?>';
-					// marker2 = L.marker(new L.LatLng(7, 21), {icon:createLabelIcon((postsInAfrica.length > 1) ? "amount-of-posts-2" : "amount-of-posts",postsInAfrica)}).addTo(map);
-
-					<?php 
-						// $postsIneastasia = new WP_Query( array( 'post_type' => 'project', 'category_name' => 'east-asia-pacific' ) );
-						// $postsIneastasia = $postsIneastasia->post_count;
-					?>
-					// var postsIneastasia = '<?php echo $postsIneastasia ?>';
-					// marker3 = L.marker(new L.LatLng(35, 103), {icon:createLabelIcon((postsIneastasia.length > 1) ? "amount-of-posts-2" : "amount-of-posts",postsIneastasia)}).addTo(map);
-
-					<?php 
-						// $postsInEurope = new WP_Query( array( 'post_type' => 'project', 'category_name' => 'europe-and-central-asia' ) );
-						// $postsInEurope = $postsInEurope->post_count;
-					?>
-					// var postsInEurope = '<?php echo $postsInEurope ?>';
-					// marker4 = L.marker(new L.LatLng(55, 25), {icon:createLabelIcon((postsInEurope.length > 1) ? "amount-of-posts-2" : "amount-of-posts",postsInEurope)}).addTo(map);
-
-					<?php 
-						// $postsInlatam = new WP_Query( array( 'post_type' => 'project', 'category_name' => 'latin-america-and-caribbean' ) );
-						// $postsInlatam = $postsInlatam->post_count;
-					?>
-					// var postsInlatam = '<?php echo $postsInlatam ?>';			
-					// marker5 = L.marker(new L.LatLng(13, -59), {icon:createLabelIcon((postsInlatam.length > 1) ? "amount-of-posts-2" : "amount-of-posts",postsInlatam)}).addTo(map);
-
-					<?php 
-						// $postsInmiddleeast = new WP_Query( array( 'post_type' => 'project', 'category_name' => 'middle-east-and-north-africa' ) );
-						// $postsInmiddleeast = $postsInmiddleeast->post_count;
-					?>
-					// var postsInmiddleeast = '<?php echo $postsInmiddleeast ?>';
-					// marker6 = L.marker(new L.LatLng(29, 41), {icon:createLabelIcon((postsInmiddleeast.length > 1) ? "amount-of-posts-2" : "amount-of-posts",postsInmiddleeast)}).addTo(map);
-
-					<?php 
-						// $postsInsouthasia = new WP_Query( array( 'post_type' => 'project', 'category_name' => 'south-asia' ) );
-						// $postsInsouthasia = $postsInsouthasia->post_count;
-					?>
-					// var postsInsouthasia = '<?php echo $postsInsouthasia ?>';			
-					// marker7 = L.marker(new L.LatLng(27, 72), {icon:createLabelIcon((postsInsouthasia.length > 1) ? "amount-of-posts-2" : "amount-of-posts","<?php echo $postsInsouthasia; ?>")}).addTo(map);
-				}
 				var basemap = 'https://a.tiles.mapbox.com/v4/opendri.0ouhqxkv/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoib3BlbmRyaSIsImEiOiJjaWpvZjcwbTYwMHVldG9tNXlhajMwb2dyIn0.fWimK0QhrBpQVX5Zu2bWNg';
 				if (window.matchMedia("(-webkit-device-pixel-ratio: 2)").matches) {
 				  basemap = 'https://a.tiles.mapbox.com/v4/opendri.0ouhqxkv/{z}/{x}/{y}@2x.png?access_token=pk.eyJ1Ijoib3BlbmRyaSIsImEiOiJjaWpvZjcwbTYwMHVldG9tNXlhajMwb2dyIn0.fWimK0QhrBpQVX5Zu2bWNg';
 				}
 				L.tileLayer(basemap, { noWrap: false
 				}).addTo(map);
-				// addMarkers();
-
-
 				var query 		  = "SELECT * FROM wp_projects",
 					queryTemplate = query + " WHERE region = ",
 					queryTPillar  = query + " WHERE pillar like ",
@@ -663,7 +610,155 @@
 								      line-opacity: 0.4;\
 								    }");
 				    return true;
-				  },			
+				  },
+				  grp1: function(){
+				  	$filterPosts.hide();
+				  	var $target = $filterPosts.parent().find(filterPillar+'.type-project.category-grp1');
+				  	filterRegion = '.category-grp1';
+				  	$target.show();
+				  	$('#current-total-post-count').text($target.length);			  	
+				  	if (currentPillar.length > 0)
+				    	sublayers[0].setSQL("SELECT * FROM wp_projects WHERE region = 'grp1' AND pillar LIKE '%" + currentPillar + "%'"+ visible);
+				    else 
+					    sublayers[0].setSQL( "SELECT * FROM wp_projects WHERE region = 'grp1'" + visible);
+				    currentRegion = "grp1";
+				    sublayers[0].setCartoCSS(cartocss);
+				    sublayers[1].setSQL("SELECT * FROM country_mask");
+				    sublayers[1].setCartoCSS(
+				    			"\
+								    #country_mask {\
+								      polygon-fill: #000;\
+								      polygon-opacity: 0.2;\
+								      line-color: #999;\
+								      line-width: 0;\
+								      line-opacity: 0;\
+								    }\
+								    #country_mask[name='Ethiopia'],\
+								    #country_mask[name='Kenya'],\
+								    #country_mask[name='Somalia'],\
+								    #country_mask[name='Uganda']{\
+								      polygon-opacity: 0;\
+								      line-color: #fff;\
+								      line-width: 1;\
+								      line-opacity: 0.4;\
+								    }");
+				    return true;
+				  },
+				  grp2: function(){
+				  	$filterPosts.hide();
+				  	var $target = $filterPosts.parent().find(filterPillar+'.type-project.category-grp2');
+				  	filterRegion = '.category-grp2';
+				  	$target.show();
+				  	$('#current-total-post-count').text($target.length);			  	
+				  	if (currentPillar.length > 0)
+				    	sublayers[0].setSQL("SELECT * FROM wp_projects WHERE region = 'grp2' AND pillar LIKE '%" + currentPillar + "%'"+ visible);
+				    else 
+					    sublayers[0].setSQL( "SELECT * FROM wp_projects WHERE region = 'grp2'" + visible);
+				    currentRegion = "grp2";
+				    sublayers[0].setCartoCSS(cartocss);
+				    sublayers[1].setSQL("SELECT * FROM country_mask");
+				    sublayers[1].setCartoCSS(
+				    			"\
+								    #country_mask {\
+								      polygon-fill: #000;\
+								      polygon-opacity: 0.2;\
+								      line-color: #999;\
+								      line-width: 0;\
+								      line-opacity: 0;\
+								    }\
+								    #country_mask[name='Chad'],\
+								    #country_mask[name='Eritrea'],\
+								    #country_mask[name='Mali'],\
+								    #country_mask[name='Niger'],\
+								    #country_mask[name='Senegal'],\
+								    #country_mask[name='South Sudan'],\
+								    #country_mask[name='Sudan'],\
+								    #country_mask[name='Algeria'],\
+								    #country_mask[name='Mauritania']{\
+								      polygon-opacity: 0;\
+								      line-color: #fff;\
+								      line-width: 1;\
+								      line-opacity: 0.4;\
+								    }");
+				    return true;
+				  },	
+				  grp3: function(){
+				  	$filterPosts.hide();
+				  	var $target = $filterPosts.parent().find(filterPillar+'.type-project.category-grp3');
+				  	filterRegion = '.category-grp3';
+				  	$target.show();
+				  	$('#current-total-post-count').text($target.length);			  	
+				  	if (currentPillar.length > 0)
+				    	sublayers[0].setSQL("SELECT * FROM wp_projects WHERE region = 'grp3' AND pillar LIKE '%" + currentPillar + "%'"+ visible);
+				    else 
+					    sublayers[0].setSQL( "SELECT * FROM wp_projects WHERE region = 'grp3'" + visible);
+				    currentRegion = "grp3";
+				    sublayers[0].setCartoCSS(cartocss);
+				    sublayers[1].setSQL("SELECT * FROM country_mask");
+				    sublayers[1].setCartoCSS(
+				    			"\
+								    #country_mask {\
+								      polygon-fill: #000;\
+								      polygon-opacity: 0.2;\
+								      line-color: #999;\
+								      line-width: 0;\
+								      line-opacity: 0;\
+								    }\
+								    #country_mask[name='Liberia'],\
+								    #country_mask[name='Sierra Leone'],\
+								    #country_mask[name='Mali'],\
+								    #country_mask[name='Guinea']{\
+								      polygon-opacity: 0;\
+								      line-color: #fff;\
+								      line-width: 1;\
+								      line-opacity: 0.4;\
+								    }");
+				    return true;
+				  },
+				  grp4: function(){
+				  	$filterPosts.hide();
+				  	var $target = $filterPosts.parent().find(filterPillar+'.type-project.category-grp4');
+				  	filterRegion = '.category-grp4';
+				  	$target.show();
+				  	$('#current-total-post-count').text($target.length);			  	
+				  	if (currentPillar.length > 0)
+				    	sublayers[0].setSQL("SELECT * FROM wp_projects WHERE region = 'grp4' AND pillar LIKE '%" + currentPillar + "%'"+ visible);
+				    else 
+					    sublayers[0].setSQL( "SELECT * FROM wp_projects WHERE region = 'grp4'" + visible);
+				    currentRegion = "grp4";
+				    sublayers[0].setCartoCSS(cartocss);
+				    sublayers[1].setSQL("SELECT * FROM country_mask");
+				    sublayers[1].setCartoCSS(
+				    			"\
+								    #country_mask {\
+								      polygon-fill: #000;\
+								      polygon-opacity: 0.2;\
+								      line-color: #999;\
+								      line-width: 0;\
+								      line-opacity: 0;\
+								    }\
+								    #country_mask[name='Cook Islands, Fiji, Kiribati, Marshall Islands, Federated States of Micronesia, Nauru, Niue, Palau, Papua New Guinea, Samoa, Solomon Islands, Timor-Leste, Tonga, Tuvalu, Vanuatu'],\
+								    #country_mask[name='Fiji'],\
+								    #country_mask[name='Kiribati'],\
+								    #country_mask[name='Federated States of Micronesia'],\
+								    #country_mask[name='Nauru'],\
+								    #country_mask[name='Niue'],\
+								    #country_mask[name='Palau'],\
+								    #country_mask[name='Papua New Guinea'],\
+								    #country_mask[name='Samoa'],\
+								    #country_mask[name='Solomon Islands'],\
+								    #country_mask[name='Timor-Leste'],\
+								    #country_mask[name='Tonga'],\
+								    #country_mask[name='Tuvalu'],\
+								    #country_mask[name='Vanuatu'],\
+								    #country_mask[name='Marshall Islands']{\
+								      polygon-opacity: 0;\
+								      line-color: #fff;\
+								      line-width: 1;\
+								      line-opacity: 0.4;\
+								    }");
+				    return true;
+				  },		
 				  nonwp: function(){
 				  	if (currentPillar.length > 0)
 				    	sublayers[0].setSQL("SELECT * FROM wp_projects WHERE region = 'nonwp' AND pillar LIKE '%" + currentPillar + "%'"+ visible);
@@ -786,7 +881,6 @@
 				if (typeof jsonValues != 'undefined') jsonValues = JSON.parse(jsonValues);
 				$('#pick-region').on('click', '.pickable', function(option) {
 					if ($(option.target).hasClass('selected')) return false;
-					// removeMarkers();
 					$('#blue-bar-m').removeClass('active');
 					$(this).siblings().removeClass('selected');
 					if (!! $(this).hasClass('selected')) {
@@ -845,17 +939,7 @@
 				    	map.setView(latlong,zoom);
 				    }
 				});
-				var removeMarkers = function() {				
-					map.removeLayer(marker1);
-					map.removeLayer(marker2);
-					map.removeLayer(marker3);
-					map.removeLayer(marker4);
-					map.removeLayer(marker5);
-					map.removeLayer(marker6);
-					map.removeLayer(marker7);
-				}
 				$('#blue-bar-pick-pillar').on('click', 'span, li', function(e) {
-					// removeMarkers();
 					$('#blue-bar-m').toggleClass('active');
 					if ($(this).hasClass('current')) {
 						$(this).removeClass('current');
@@ -864,7 +948,6 @@
 							var option = $('#pick-region').find('li.selected').data('option');
 						} else {
 							var option = 'all';
-							// addMarkers();
 						}
 					} else {
 						$(e.target).closest('span').addClass('current');
