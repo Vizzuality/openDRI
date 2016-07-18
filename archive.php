@@ -226,7 +226,7 @@ if(is_post_type_archive() && $post_type=='project') { ?>
 													<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i]->ID)) ?>"><?php echo $posts_array[$i]->post_title ?></a></span>
 													<?php 
 														echo $posts_array[$i]->post_excerpt;
-														echo '<span style="display: block">Created by: '.get_userdata($posts_array[$i]->post_author)->user_login.'</span>';
+														// echo '<span style="display: block">Created by: '.get_userdata($posts_array[$i]->post_author)->user_login.'</span>';
 													?>
 												</div>
 											</div>
@@ -243,7 +243,7 @@ if(is_post_type_archive() && $post_type=='project') { ?>
 													<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i+1]->ID)) ?>"><?php echo $posts_array[$i+1]->post_title ?></a></span>
 													<?php 
 														echo $posts_array[$i+1]->post_excerpt;
-														echo '<span style="display: block">Created by: '.get_userdata($posts_array[$i+1]->post_author)->user_login.'</span>';
+														// echo '<span style="display: block">Created by: '.get_userdata($posts_array[$i+1]->post_author)->user_login.'</span>';
 												echo '</div>';
 												}	
 													?>
@@ -278,7 +278,7 @@ if(is_post_type_archive() && $post_type=='project') { ?>
 													<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i]->ID)) ?>"><?php echo $posts_array[$i]->post_title ?></a></span>
 													<?php 
 													echo $posts_array[$i]->post_excerpt;
-													echo '<span style="display: block">Created by: '.get_userdata($posts_array[$i]->post_author)->user_login.'</span>';
+													// echo '<span style="display: block">Created by: '.get_userdata($posts_array[$i]->post_author)->user_login.'</span>';
 													?>
 												</div>
 											</div>
@@ -295,7 +295,7 @@ if(is_post_type_archive() && $post_type=='project') { ?>
 													<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i+1]->ID)) ?>"><?php echo $posts_array[$i+1]->post_title ?></a></span>
 													<?php 
 													echo $posts_array[$i+1]->post_excerpt;
-													echo '<span style="display: block">Created by: '.get_userdata($posts_array[$i+1]->post_author)->user_login.'</span>';
+													// echo '<span style="display: block">Created by: '.get_userdata($posts_array[$i+1]->post_author)->user_login.'</span>';
 												echo '</div>';
 												}	
 													?>
@@ -330,7 +330,7 @@ if(is_post_type_archive() && $post_type=='project') { ?>
 													<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i]->ID)) ?>"><?php echo $posts_array[$i]->post_title ?></a></span>
 													<?php 
 														echo $posts_array[$i]->post_excerpt;
-														echo '<span style="display: block">Created by: '.get_userdata($posts_array[$i]->post_author)->user_login.'</span>';
+														// echo '<span style="display: block">Created by: '.get_userdata($posts_array[$i]->post_author)->user_login.'</span>';
 													?>
 												</div>
 											</div>
@@ -347,7 +347,7 @@ if(is_post_type_archive() && $post_type=='project') { ?>
 													<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i+1]->ID)) ?>"><?php echo $posts_array[$i+1]->post_title ?></a></span>
 													<?php 
 														echo $posts_array[$i+1]->post_excerpt;
-														echo '<span style="display: block">Created by: '.get_userdata($posts_array[$i+1]->post_author)->user_login.'</span>';
+														// echo '<span style="display: block">Created by: '.get_userdata($posts_array[$i+1]->post_author)->user_login.'</span>';
 												echo '</div>';
 												}	
 													?>
@@ -382,7 +382,7 @@ if(is_post_type_archive() && $post_type=='project') { ?>
 													<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i]->ID)) ?>"><?php echo $posts_array[$i]->post_title ?></a></span>
 													<?php 
 														echo $posts_array[$i]->post_excerpt;
-														echo '<span style="display: block">Created by: '.get_userdata($posts_array[$i]->post_author)->user_login.'</span>';
+														// echo '<span style="display: block">Created by: '.get_userdata($posts_array[$i]->post_author)->user_login.'</span>';
 													?>
 												</div>
 											</div>
@@ -399,7 +399,7 @@ if(is_post_type_archive() && $post_type=='project') { ?>
 													<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i+1]->ID)) ?>"><?php echo $posts_array[$i+1]->post_title ?></a></span>
 													<?php 
 														echo $posts_array[$i+1]->post_excerpt;
-														echo '<span style="display: block">Created by: '.get_userdata($posts_array[$i+1]->post_author)->user_login.'</span>';
+														// echo '<span style="display: block">Created by: '.get_userdata($posts_array[$i+1]->post_author)->user_login.'</span>';
 												echo '</div>';
 												}	
 													?>
@@ -434,7 +434,7 @@ if(is_post_type_archive() && $post_type=='project') { ?>
 													<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i]->ID)) ?>"><?php echo $posts_array[$i]->post_title ?></a></span>
 													<?php 
 														echo $posts_array[$i]->post_excerpt;
-														echo '<span style="display: block">Created by: '.get_userdata($posts_array[$i]->post_author)->user_login.'</span>';
+														// echo '<span style="display: block">Created by: '.get_userdata($posts_array[$i]->post_author)->user_login.'</span>';
 													?>
 												</div>
 											</div>
@@ -451,7 +451,7 @@ if(is_post_type_archive() && $post_type=='project') { ?>
 													<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i+1]->ID)) ?>"><?php echo $posts_array[$i+1]->post_title ?></a></span>
 													<?php 
 														echo $posts_array[$i+1]->post_excerpt;
-														echo '<span style="display: block">Created by: '.get_userdata($posts_array[$i+1]->post_author)->user_login.'</span>';
+														// echo '<span style="display: block">Created by: '.get_userdata($posts_array[$i+1]->post_author)->user_login.'</span>';
 												echo '</div>';
 												}	
 													?>

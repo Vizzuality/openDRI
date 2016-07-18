@@ -168,7 +168,7 @@ function save_on_cartodb( $post_id ) {
     $geodata__country   = $_REQUEST['_wppl_country'];
     $geodata__c_name    = $_REQUEST['_wppl_country_long'];
     $categories         = $_REQUEST['post_category'];
-    $geodata__content   = (strlen($_REQUEST['excerpt']) > 0) ? wp_strip_all_tags($_REQUEST['excerpt']) : wp_strip_all_tags(str_replace("'","`",substr($_REQUEST['content'], 0, 60)));
+    $geodata__content   = (strlen($_REQUEST['excerpt']) > 0) ? wp_strip_all_tags($_REQUEST['excerpt']) : wp_strip_all_tags(str_replace("'","`",substr($_REQUEST['content'], 0, 180)));
     $visibility         = $_REQUEST['visibility'];
 
     //check pillars and regions
