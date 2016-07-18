@@ -167,7 +167,7 @@ resilience to natural hazards and the impacts of climate change across the globe
 						</article>
 					</a>
 					<a href="#">
-						<article class="resource-cont" style="background-image:url(http://i0.wp.com/dev-gfdrr-opendri.pantheonsite.io/wp-content/uploads/2016/02/opendri_fg_web_20140629b_0.jpg)">
+						<article class="resource-cont" style="background-image:url(http://i0.wp.com/dev-gfdrr-opendri.pantheonsite.io/wp-content/uploads/2016/07/OpenDRI_Principles.png)">
 							<section>
 								<h3>OpenDRI Principles</h3>
 							</section>
