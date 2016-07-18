@@ -71,7 +71,7 @@
 			</footer>
 		</div>
 
-		<script src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+		<script src="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/cartodb.js"></script>
 		<script type="text/javascript">
 		if (!String.prototype.includes) {
 			// ie polyfill

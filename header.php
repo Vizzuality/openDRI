@@ -38,7 +38,7 @@
 		<?php // drop Google Analytics Here ?>
 		<?php // end analytics ?>
 
-		<link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" />
+		<link rel="stylesheet" href="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/themes/css/cartodb.css" />
 		<script type="text/javascript">
 			var LAT_VIS   = null;
 			var LONG_VIS  = null;
