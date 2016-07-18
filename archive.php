@@ -35,6 +35,14 @@ if(is_post_type_archive() && $post_type=='project') { ?>
 	$postsInall = $postsInall->count;
 	$postsInsouthasia = get_term_by('slug','south-asia','category');
 	$postsInsouthasia = $postsInsouthasia->count;
+	$postsIngrp1 = get_term_by('slug','grp1','category');
+	$postsIngrp1 = $postsIngrp1->count;
+	$postsIngrp2 = get_term_by('slug','grp2','category');
+	$postsIngrp2 = $postsIngrp2->count;
+	$postsIngrp3 = get_term_by('slug','grp3','category');
+	$postsIngrp3 = $postsIngrp3->count;
+	$postsIngrp4 = get_term_by('slug','grp4','category');
+	$postsIngrp4 = $postsIngrp4->count;
 
 	$postsInTotal = array('africa' => $postsInAfrica,
 						  'eastasia' => $postsIneastasia,
@@ -42,7 +50,11 @@ if(is_post_type_archive() && $post_type=='project') { ?>
 						  'latam' => $postsInlatam,
 						  'middleeast' => $postsInmiddleeast,
 						  'all' => $postsInall,
-						  'southasia' => $postsInsouthasia);
+						  'southasia' => $postsInsouthasia,
+						  'grp1' => $postsIngrp1,
+						  'grp2' => $postsIngrp2,
+						  'grp3' => $postsIngrp3,
+						  'grp4' => $postsIngrp4);
 
 	echo '<script>var jsonValues = \''.json_encode($postsInTotal).'\'</script>';
 
@@ -306,24 +318,44 @@ if(is_post_type_archive() && $post_type=='project') { ?>
 										for($i = 0; $i < count($posts_array); $i+=2) {
 										?>
 										<li>
-											<div>
-												<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i]->post_date); ?></span>
-												<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i]->ID)) ?>"><?php echo $posts_array[$i]->post_title ?></a></span>
-												<?php 
-													echo $posts_array[$i]->post_excerpt;
-													echo '<span style="display: block">Created by: '.get_userdata($posts_array[$i]->post_author)->user_login.'</span>';
+											<div class="thumbnail">
+												<?php
+												$image = get_post_meta($posts_array[$i]->ID, 'thumbnailPic', true);
+												$fallbackimg = wp_get_attachment_image_src( get_post_thumbnail_id( $posts_array[$i]->ID ));
+												$image = ($image[0]) ? $image : $fallbackimg[0];
 												?>
+												<a href="<?php echo esc_url( get_permalink($posts_array[$i]->ID)) ?>"><img src="<?php echo $image?>" alt="" /></a>
+												<div class="text-thumbnail">
+													<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i]->post_date); ?></span>
+													<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i]->ID)) ?>"><?php echo $posts_array[$i]->post_title ?></a></span>
+													<?php 
+														echo $posts_array[$i]->post_excerpt;
+														echo '<span style="display: block">Created by: '.get_userdata($posts_array[$i]->post_author)->user_login.'</span>';
+													?>
+												</div>
 											</div>
-											<div>
-												<?php if (!!$posts_array[$i+1]): ?>
-												<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i+1]->post_date); ?></span>
-												<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i+1]->ID)) ?>"><?php echo $posts_array[$i+1]->post_title ?></a></span>
-												<?php 
-													echo $posts_array[$i+1]->post_excerpt;	
-													echo '<span style="display: block">Created by: '.get_userdata($posts_array[$i+1]->post_author)->user_login.'</span>';											?>
-												<?php endif; ?>
+											<div class="thumbnail">
+												<?php
+												if (!!$posts_array[$i+1]) {
+												$image = get_post_meta($posts_array[$i+1]->ID, 'thumbnailPic', true);
+												$fallbackimg = wp_get_attachment_image_src( get_post_thumbnail_id( $posts_array[$i+1]->ID ));
+												$image = ($image[0]) ? $image : $fallbackimg[0];
+												?>
+												<a href="<?php echo esc_url( get_permalink($posts_array[$i+1]->ID)) ?>"><img src="<?php echo $image?>" alt="" /></a>
+												<div class="text-thumbnail">
+													<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i+1]->post_date); ?></span>
+													<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i+1]->ID)) ?>"><?php echo $posts_array[$i+1]->post_title ?></a></span>
+													<?php 
+														echo $posts_array[$i+1]->post_excerpt;
+														echo '<span style="display: block">Created by: '.get_userdata($posts_array[$i+1]->post_author)->user_login.'</span>';
+												echo '</div>';
+												}	
+													?>
 											</div>
-										<?php } ?>
+										</li>
+										<?php 
+											}
+										?>
 									</ul>
 									<div id="tools" class="resources-anchor"></div>
 									<h3 class="resource-list-title">Tools and Training Materials</h3>
@@ -338,25 +370,44 @@ if(is_post_type_archive() && $post_type=='project') { ?>
 										for($i = 0; $i < count($posts_array); $i+=2) {
 										?>
 										<li>
-											<div>
-												<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i]->post_date); ?></span>
-												<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i]->ID)) ?>"><?php echo $posts_array[$i]->post_title ?></a></span>
-												<?php 
-													echo $posts_array[$i]->post_excerpt;
-													echo '<span style="display: block">Created by: '.get_userdata($posts_array[$i]->post_author)->user_login.'</span>';
+											<div class="thumbnail">
+												<?php
+												$image = get_post_meta($posts_array[$i]->ID, 'thumbnailPic', true);
+												$fallbackimg = wp_get_attachment_image_src( get_post_thumbnail_id( $posts_array[$i]->ID ));
+												$image = ($image[0]) ? $image : $fallbackimg[0];
 												?>
+												<a href="<?php echo esc_url( get_permalink($posts_array[$i]->ID)) ?>"><img src="<?php echo $image?>" alt="" /></a>
+												<div class="text-thumbnail">
+													<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i]->post_date); ?></span>
+													<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i]->ID)) ?>"><?php echo $posts_array[$i]->post_title ?></a></span>
+													<?php 
+														echo $posts_array[$i]->post_excerpt;
+														echo '<span style="display: block">Created by: '.get_userdata($posts_array[$i]->post_author)->user_login.'</span>';
+													?>
+												</div>
 											</div>
-											<div>
-												<?php if (!!$posts_array[$i+1]): ?>
-												<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i+1]->post_date); ?></span>
-												<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i+1]->ID)) ?>"><?php echo $posts_array[$i+1]->post_title ?></a></span>
-												<?php 
-													echo $posts_array[$i+1]->post_excerpt;
-													echo '<span style="display: block">Created by: '.get_userdata($posts_array[$i+1]->post_author)->user_login.'</span>';
+											<div class="thumbnail">
+												<?php
+												if (!!$posts_array[$i+1]) {
+												$image = get_post_meta($posts_array[$i+1]->ID, 'thumbnailPic', true);
+												$fallbackimg = wp_get_attachment_image_src( get_post_thumbnail_id( $posts_array[$i+1]->ID ));
+												$image = ($image[0]) ? $image : $fallbackimg[0];
 												?>
-												<?php endif; ?>
+												<a href="<?php echo esc_url( get_permalink($posts_array[$i+1]->ID)) ?>"><img src="<?php echo $image?>" alt="" /></a>
+												<div class="text-thumbnail">
+													<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i+1]->post_date); ?></span>
+													<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i+1]->ID)) ?>"><?php echo $posts_array[$i+1]->post_title ?></a></span>
+													<?php 
+														echo $posts_array[$i+1]->post_excerpt;
+														echo '<span style="display: block">Created by: '.get_userdata($posts_array[$i+1]->post_author)->user_login.'</span>';
+												echo '</div>';
+												}	
+													?>
 											</div>
-										<?php } ?>
+										</li>
+										<?php 
+											}
+										?>
 									</ul>
 									<div id="other" class="resources-anchor"></div>
 									<h3 class="resource-list-title">Other Resources</h3>
@@ -371,25 +422,44 @@ if(is_post_type_archive() && $post_type=='project') { ?>
 										for($i = 0; $i < count($posts_array); $i+=2) {
 										?>
 										<li>
-											<div>
-												<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i]->post_date); ?></span>
-												<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i]->ID)) ?>"><?php echo $posts_array[$i]->post_title ?></a></span>
-												<?php 
-													echo $posts_array[$i]->post_excerpt;
-													echo '<span style="display: block">Created by: '.get_userdata($posts_array[$i]->post_author)->user_login.'</span>';
+											<div class="thumbnail">
+												<?php
+												$image = get_post_meta($posts_array[$i]->ID, 'thumbnailPic', true);
+												$fallbackimg = wp_get_attachment_image_src( get_post_thumbnail_id( $posts_array[$i]->ID ));
+												$image = ($image[0]) ? $image : $fallbackimg[0];
 												?>
+												<a href="<?php echo esc_url( get_permalink($posts_array[$i]->ID)) ?>"><img src="<?php echo $image?>" alt="" /></a>
+												<div class="text-thumbnail">
+													<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i]->post_date); ?></span>
+													<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i]->ID)) ?>"><?php echo $posts_array[$i]->post_title ?></a></span>
+													<?php 
+														echo $posts_array[$i]->post_excerpt;
+														echo '<span style="display: block">Created by: '.get_userdata($posts_array[$i]->post_author)->user_login.'</span>';
+													?>
+												</div>
 											</div>
-											<div>
-												<?php if (!!$posts_array[$i+1]): ?>
-												<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i+1]->post_date); ?></span>
-												<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i+1]->ID)) ?>"><?php echo $posts_array[$i+1]->post_title ?></a></span>
-												<?php 
-													echo $posts_array[$i+1]->post_excerpt;
-													echo '<span style="display: block">Created by: '.get_userdata($posts_array[$i+1]->post_author)->user_login.'</span>';
+											<div class="thumbnail">
+												<?php
+												if (!!$posts_array[$i+1]) {
+												$image = get_post_meta($posts_array[$i+1]->ID, 'thumbnailPic', true);
+												$fallbackimg = wp_get_attachment_image_src( get_post_thumbnail_id( $posts_array[$i+1]->ID ));
+												$image = ($image[0]) ? $image : $fallbackimg[0];
 												?>
-												<?php endif; ?>
+												<a href="<?php echo esc_url( get_permalink($posts_array[$i+1]->ID)) ?>"><img src="<?php echo $image?>" alt="" /></a>
+												<div class="text-thumbnail">
+													<span class="date"><?php echo mysql2date('j M Y', $posts_array[$i+1]->post_date); ?></span>
+													<span class="title"><a href="<?php echo esc_url( get_permalink($posts_array[$i+1]->ID)) ?>"><?php echo $posts_array[$i+1]->post_title ?></a></span>
+													<?php 
+														echo $posts_array[$i+1]->post_excerpt;
+														echo '<span style="display: block">Created by: '.get_userdata($posts_array[$i+1]->post_author)->user_login.'</span>';
+												echo '</div>';
+												}	
+													?>
 											</div>
-										<?php } ?>
+										</li>
+										<?php 
+											}
+										?>
 									</ul>
 									<?php else: ?> 
 								<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
