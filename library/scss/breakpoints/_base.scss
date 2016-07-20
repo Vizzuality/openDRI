@@ -2568,6 +2568,16 @@ SIDEBARS & ASIDES
     	letter-spacing: 0.5px;
     	line-height: 17px;
     }
+    .seemorenews {
+    	width: 148px;
+	    background-color: #1477c9;
+	    height: 40px;
+	    line-height: 40px;
+	    display: block;
+	    a {
+	    	line-height: 40px;
+	    }
+    }
 }
 
 	.widgettitle {}
@@ -3173,6 +3183,12 @@ div.cartodb-popup .cartodb-popup-close-button {
     right: 0px !important;
     transform: scale(1.5) !important;
     background-color: transparent !important;
+}
+div.cartodb-popup.v2 div.cartodb-popup-content p:first-child {
+	min-height: 120px !important;
+}
+div.cartodb-popup .jspContainer {
+	height: 230px !important;
 }
 .popup-link-project {
 	background-color: #1477c9;

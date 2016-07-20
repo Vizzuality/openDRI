@@ -473,7 +473,7 @@
 								    #country_mask[name='Croatia'],\
 								    #country_mask[name='Hungary'],\
 								    #country_mask[name='Kazakhstan'],\
-								    #country_mask[name='Kyrgyz Republic'],\
+								    #country_mask[name='Kyrgyzstan'],\
 								    #country_mask[name='Kosovo'],\
 								    #country_mask[name='Lithuania'],\
 								    #country_mask[name='Latvia'],\

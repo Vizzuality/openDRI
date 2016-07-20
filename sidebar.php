@@ -11,7 +11,10 @@
 				<h4 class=""><a href="<?php echo home_url(); ?>/tag/<?php echo $post->post_name; ?>">Project's news</a></h4>
 				<ul>
 				<?php
+					$newsCounter = 0;
 					foreach(explode("\n", $news) as $line) {
+						if ($newsCounter > 3) break;
+						$newsCounter++;
 						$current_post = url_to_postid( $line );
 						$resource 	  = get_post($current_post);
 						$image = get_post_meta($current_post, 'thumbnailPic', true);
@@ -25,6 +28,11 @@
 					} // end loop
 				?>
 				</ul>
+				<?php
+					if ($newsCounter > 3) {
+						echo '<span class="seemorenews"><a href="'.home_url().'/tag/'.$post->post_name.'">See more</a></span>';
+					}
+				?>
 			</div>
 				<?php
 			} // end if meta
