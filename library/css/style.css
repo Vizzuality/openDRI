@@ -1862,7 +1862,8 @@ POSTS & CONTENT STYLES
       text-decoration: none;
       width: calc(100%/3); }
     .index-row.last-resources .resource-cont {
-      width: 100%; }
+      width: 100%;
+      background-size: contain; }
   .index-row article {
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.2); }
   .index-row article,
