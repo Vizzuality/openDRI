@@ -1654,7 +1654,7 @@ margin: 0;
 	#principles.index-row,
 	#contact.index-row,
 	#more-content.index-row {margin: 40px 0;}
-	#partners.about-content {
+	.about-content:not(#more-content) {
 		.hentry header {
 			bottom: auto;
 			top: 17px;
