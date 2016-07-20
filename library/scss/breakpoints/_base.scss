@@ -30,6 +30,7 @@ body {
 }
 iframe {
 	box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+	margin: 20px 0;
 }
 /********************
 WORDPRESS BODY CLASSES
@@ -1652,7 +1653,7 @@ margin: 0;
 	#principles.index-row,
 	#contact.index-row,
 	#more-content.index-row {margin: 40px 0;}
-	.about-content {
+	#partners.about-content {
 		.hentry header {
 			bottom: auto;
 			top: 17px;
