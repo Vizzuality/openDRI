@@ -4410,7 +4410,7 @@ div.cartodb-popup .cartodb-popup-close-button {
 
 .home .index-row .resource-list {
   max-height: 345px;
-  min-height: 100%; }
+  min-height: 80%; }
 
 .page #principles, .page #contact, .page #more-content, .page #partners, .page #members, .page #newsletter {
   margin: 0;
