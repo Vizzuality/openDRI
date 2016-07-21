@@ -102,7 +102,7 @@ if(is_post_type_archive() && $post_type=='project') { ?>
 					<li class="pickable clear-map" data-option="reload" data-lat="27" data-lng="72" id="reset-map">Clear map</li>
 				</ul>
 			  </div>'; //end menu mobile filter projects	$hascornermap = false;
-	echo '<div id="map" class="cdbmap"></div>';
+	echo '<div class="maplegend"><span><img src="https://s3.amazonaws.com/f.cl.ly/items/3s301k2k3m2P450n1A2A/marker@2x.png" /><i>Country Project</i></span><span><img src="http://opendri.simbiotica.es/wp-content/themes/openDRI/library/images/markerYellow@2x.png"><i>Multiple Countries Project</i></span></div><div id="map" class="cdbmap"></div>';
 } elseif (is_category() && 
 	($title === 'news' 							|| 
 	 $title === 'Open Data Platforms' 			|| 

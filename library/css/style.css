@@ -2118,7 +2118,8 @@ POSTS & CONTENT STYLES
   line-height: 0.9;
   color: #1477c9;
   margin: 35px 0 0;
-  width: 100%; }
+  width: 100%;
+  color: white; }
 
 .resources-anchor {
   position: relative;
@@ -2630,6 +2631,31 @@ POSTS & CONTENT STYLES
   height: 600px;
   margin: 0 0 50px;
   background-color: #0073cf; }
+.archive .maplegend,
+.page .maplegend {
+  position: absolute;
+  top: 124px;
+  z-index: 2;
+  width: 360px;
+  height: 50px;
+  background-color: rgba(2, 99, 168, 0.8);
+  color: white;
+  font-size: 13px; }
+  .archive .maplegend span,
+  .page .maplegend span {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 6px 0 0; }
+    .archive .maplegend span:first-child img,
+    .page .maplegend span:first-child img {
+      transform: scale(0.6); }
+    .archive .maplegend span img,
+    .page .maplegend span img {
+      transform: scale(0.8); }
+    .archive .maplegend span i,
+    .page .maplegend span i {
+      font-style: normal; }
 .archive .corner-map,
 .page .corner-map {
   height: 460px;
