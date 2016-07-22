@@ -2634,6 +2634,13 @@ POSTS & CONTENT STYLES
 .archive .maplegend,
 .page .maplegend {
   position: absolute;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
   top: 124px;
   z-index: 2;
   width: 360px;
