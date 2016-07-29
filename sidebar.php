@@ -16,7 +16,7 @@
 						if ($newsCounter > 3) break;
 						$newsCounter++;
 						$current_post = url_to_postid( $line );
-						var_dump($current_post);
+						
 						$resource 	  = get_post($current_post);
 						$image = get_post_meta($current_post, 'thumbnailPic', true);
 						$fallbackimg = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ));
