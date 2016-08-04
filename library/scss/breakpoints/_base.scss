@@ -1935,6 +1935,7 @@ margin: 0;
     		margin: 50px 0 20px;
 		}
 	}
+	#more-content > .card-third {width: 100%;max-width: 100%;}
 	#members,
 	#partners {
 		margin: 60px 0;
@@ -3382,7 +3383,7 @@ div.cartodb-popup .cartodb-popup-close-button {
 	.page #partners .-m-partner {width: 100%;}
 	.archive #contact, .page #contact {display: table;}
 	.archive .corner-map, .page .corner-map {display: none}
-	.page #more-content h3 {width: 100%;}
+	.page #more-content > .card-third {width: 100%;}
 	.page #members h3 {width: 100%;}
 	.page #partners h3 {width: 100%;}
 	.page #contact .index-row .card-third {padding: 0 0 10px;}

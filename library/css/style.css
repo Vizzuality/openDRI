@@ -3158,6 +3158,10 @@ POSTS & CONTENT STYLES
   color: #1477c9;
   width: 100%;
   margin: 50px 0 20px; }
+.archive #more-content > .card-third,
+.page #more-content > .card-third {
+  width: 100%;
+  max-width: 100%; }
 .archive #members,
 .archive #partners,
 .page #members,
@@ -4953,7 +4957,7 @@ div.cartodb-popup .cartodb-popup-close-button {
   .archive .corner-map, .page .corner-map {
     display: none; }
 
-  .page #more-content h3 {
+  .page #more-content > .card-third {
     width: 100%; }
 
   .page #members h3 {
