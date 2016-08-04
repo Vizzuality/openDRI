@@ -166,7 +166,7 @@ if(is_post_type_archive() && $post_type=='project') { ?>
 					<div class="wrap wrapper">
 						<span><a href="#publications">guides</a></span>
 						<span><a href="#notes">short notes</a></span>
-						<span><a href="#newsletters">newsletters</a></span>
+						<!--<span><a href="#newsletters">newsletters</a></span>-->
 						<span><a href="#tools">tools and training materials</a></span>
 						<span><a href="#other">other resources</a></span>
 					</div>
@@ -301,7 +301,7 @@ if(is_post_type_archive() && $post_type=='project') { ?>
 											}
 										?>
 									</ul>
-									<div id="newsletters" class="resources-anchor"></div>
+									<!--<div id="newsletters" class="resources-anchor"></div>
 									<h3 class="resource-list-title">Newsletters</h3>
 									<ul class="resource-list-new">
 										<?php
@@ -352,7 +352,7 @@ if(is_post_type_archive() && $post_type=='project') { ?>
 										<?php 
 											}
 										?>
-									</ul>
+									</ul>-->
 									<div id="tools" class="resources-anchor"></div>
 									<h3 class="resource-list-title">Tools and Training Materials</h3>
 									<ul class="resource-list-new">
