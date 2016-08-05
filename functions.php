@@ -156,7 +156,14 @@ function my_trash_post_function($post_id){
 
     wp_remote_get("https://opendri.cartodb.com/api/v2/sql?q=".urlencode("UPDATE wp_projects SET visible = false WHERE wp_post_id = ".$post_id.";").$api_bit);
 }
+add_action('untrash_post', 'custom_restore_function');
+function custom_restore_function($post_id){
+    $cdb_api_key = get_option('CDB_API_KEY');
+    $url = "https://opendri.cartodb.com/api/v2/sql?q=";
+    $api_bit = "&api_key=$cdb_api_key";
 
+    wp_remote_get("https://opendri.cartodb.com/api/v2/sql?q=".urlencode("UPDATE wp_projects SET visible = true WHERE wp_post_id = ".$post_id.";").$api_bit);
+}
 add_action( 'customize_register', 'bones_theme_customizer' );
 function save_on_cartodb( $post_id ) {
 
