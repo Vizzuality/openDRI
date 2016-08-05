@@ -4377,6 +4377,7 @@ div.cartodb-popup.v2 {
 
 div.cartodb-popup {
   width: 315px !important;
+  min-height: 150px !important;
   margin-left: calc(-315px/2) !important; }
 
 div.cartodb-popup.v2 div.cartodb-popup-tip-container {
@@ -4398,8 +4399,8 @@ div.cartodb-popup h1 {
   font-weight: bold !important; }
 
 div.cartodb-popup .cartodb-popup-content p {
-  font-size: 15px  !important;
-  line-height: 18px  !important;
+  font-size: 14px  !important;
+  line-height: 16px  !important;
   letter-spacing: 0.3px  !important; }
 
 div.cartodb-popup .cartodb-popup-content p.meta {
@@ -4407,6 +4408,9 @@ div.cartodb-popup .cartodb-popup-content p.meta {
   color: rgba(85, 85, 85, 0.5);
   text-align: justify;
   text-transform: uppercase; }
+
+div.cartodb-popup .jspContainer:after {
+  background: none !important; }
 
 div.cartodb-popup .cartodb-popup-close-button {
   box-shadow: none !important;
