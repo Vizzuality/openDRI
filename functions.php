@@ -148,6 +148,14 @@ function bones_theme_customizer($wp_customize) {
   // $wp_customize->get_section('background_image')->title = __( 'Images' );
 }
 
+add_action('trash_post','my_trash_post_function',1,1);
+function my_trash_post_function($post_id){
+    $url = "https://opendri.cartodb.com/api/v2/sql?q=";
+    $api_bit = "&api_key=$cdb_api_key";
+
+    $response_safe = wp_remote_get("https://opendri.cartodb.com/api/v2/sql?q=UPDATE wp_projects SET visible = false WHERE wp_post_id = ".$post_id." ".$api_bit);
+}
+
 add_action( 'customize_register', 'bones_theme_customizer' );
 function save_on_cartodb( $post_id ) {
 
