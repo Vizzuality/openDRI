@@ -150,6 +150,7 @@ function bones_theme_customizer($wp_customize) {
 
 add_action('trash_post','my_trash_post_function',1,1);
 function my_trash_post_function($post_id){
+    $cdb_api_key = get_option('CDB_API_KEY');
     $url = "https://opendri.cartodb.com/api/v2/sql?q=";
     $api_bit = "&api_key=$cdb_api_key";
 
