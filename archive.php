@@ -257,6 +257,7 @@ if(is_post_type_archive() && $post_type=='project') { ?>
 																	  'orderby' 		=> 'date',
 																	  'order'           => 'DESC',
 																	  'post_type'       => 'resource',
+																	  'posts_per_page'  => '1000',
 																	  'post_type'       => 'resource',
 																	  'post_status'     => 'publish'));
 											for($i = 0; $i < count($posts_array); $i+=2) {
@@ -309,6 +310,7 @@ if(is_post_type_archive() && $post_type=='project') { ?>
 																	  'orderby' 		=> 'date',
 																	  'order'           => 'DESC',
 																	  'post_type'       => 'resource',
+																	  'posts_per_page'  => '1000',
 																	  'post_type'       => 'resource',
 																	  'post_status'     => 'publish'));
 										for($i = 0; $i < count($posts_array); $i+=2) {
@@ -361,6 +363,7 @@ if(is_post_type_archive() && $post_type=='project') { ?>
 																	  'orderby' 		=> 'date',
 																	  'order'           => 'DESC',
 																	  'post_type'       => 'resource',
+																	  'posts_per_page'  => '1000',
 																	  'post_type'       => 'resource',
 																	  'post_status'     => 'publish'));
 										for($i = 0; $i < count($posts_array); $i+=2) {
@@ -413,6 +416,7 @@ if(is_post_type_archive() && $post_type=='project') { ?>
 																	  'orderby' 		=> 'date',
 																	  'order'           => 'DESC',
 																	  'post_type'       => 'resource',
+																	  'posts_per_page'  => '1000',
 																	  'post_type'       => 'resource',
 																	  'post_status'     => 'publish'));
 										for($i = 0; $i < count($posts_array); $i+=2) {
