@@ -20,7 +20,7 @@ resilience to natural hazards and the impacts of climate change across the globe
 			</nav>
 			<div class="explore-buttons">
 				<div class="what-explore">
-					<a href="<?php echo home_url(); ?>/about">open dri in 110 sec</a>
+					<a href="<?php echo home_url(); ?>/about">opendri in 110 sec</a>
 				</div>
 				<div class="what-explore">
 					<a href="<?php echo home_url(); ?>/project">explore projects</a>
