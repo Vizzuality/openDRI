@@ -147,7 +147,7 @@
 				$filterPosts  = $('.type-project'),
 				filterRegion  = '',
 				filterPillar  = '',
-				cartocss = "#wp_projects{marker-file: url(https://opendri.org/wp-content/uploads/2016/07/marker@2x.png);marker-width: 32;marker-allow-overlap: true;}#wp_projects[region=~'grp.*']{marker-width: 25;marker-file: url(https://opendri.org/wp-content/uploads/2016/07/markerYellow@2xnew.png)}";
+				cartocss = "#wp_projects{marker-file: url(https://opendri.org/wp-content/uploads/2016/07/marker@2x.png);marker-width: 32;marker-allow-overlap: true;}#wp_projects[region=~'.*grp.*']{marker-width: 25;marker-file: url(https://opendri.org/wp-content/uploads/2016/07/markerYellow@2xnew.png)}";
 		    function init(){
 		    	if ($(window).width() <= 768 && $('body').hasClass('archive')) {
 		    		$('.blue-bar-top').remove();
