@@ -235,7 +235,6 @@ function save_on_cartodb( $post_id ) {
 
     // clean
     wp_remote_get("https://opendri.cartodb.com/api/v2/sql?q=".urlencode("UPDATE wp_projects SET visible = false WHERE wp_post_id = ".$post_id.";").$api_bit);
-    }
     if ($_REQUEST["original_publish"] != 'Update') {
       // insert new row
       $query = "INSERT INTO wp_projects (wp_post_id, the_geom, name, location, url, pillar, region, iso, description, visible, country_name) VALUES ($post_id, ST_SetSRID(ST_Point($geodata__long, $geodata__lat),4326), '$geodata__title', '$geodata__address', '$geodata__url_title', '$pillar', '$region', '$geodata__country', '$geodata__content', '$visibility', '$geodata__c_name')"; 
