@@ -232,10 +232,9 @@ function save_on_cartodb( $post_id ) {
     } else {
       $visibility = 'true';
     }
-    if ($_REQUEST["original_post_status"] == 'auto-draft' || $_REQUEST["original_post_status"] == 'draft') {
-      $api_bit = "&api_key=$cdb_api_key";
-      wp_remote_get("https://opendri.cartodb.com/api/v2/sql?q=".urlencode("UPDATE wp_projects SET visible = false WHERE wp_post_id = ".$post_id.";").$api_bit);
-      return;
+
+    // clean
+    wp_remote_get("https://opendri.cartodb.com/api/v2/sql?q=".urlencode("UPDATE wp_projects SET visible = false WHERE wp_post_id = ".$post_id.";").$api_bit);
     }
     if ($_REQUEST["original_publish"] != 'Update') {
       // insert new row
