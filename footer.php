@@ -182,7 +182,9 @@
 				if (window.matchMedia("(-webkit-device-pixel-ratio: 2)").matches) {
 				  basemap = 'https://a.tiles.mapbox.com/v4/opendri.0ouhqxkv/{z}/{x}/{y}@2x.png?access_token=pk.eyJ1Ijoib3BlbmRyaSIsImEiOiJjaWpvZjcwbTYwMHVldG9tNXlhajMwb2dyIn0.fWimK0QhrBpQVX5Zu2bWNg';
 				}
-				L.tileLayer(basemap, { noWrap: false
+				L.tileLayer(basemap, {
+					noWrap: false,
+					attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 				}).addTo(map);
 				var query 		  = "SELECT * FROM wp_projects",
 					queryTemplate = query + " WHERE region = ",
