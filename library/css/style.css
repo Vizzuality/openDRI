@@ -4406,7 +4406,6 @@ div.cartodb-popup .cartodb-popup-content p {
 div.cartodb-popup .cartodb-popup-content p.meta {
   font-size: 11px !important;
   color: rgba(85, 85, 85, 0.5);
-  text-align: justify;
   text-transform: uppercase; }
 
 div.cartodb-popup .jspContainer:after {
