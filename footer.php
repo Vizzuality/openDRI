@@ -195,6 +195,7 @@
 				cartodb.createLayer(map, layerUrl)
 				.addTo(map)
 				.on('done', function(layer) {
+					$('.leaflet-bottom.leaflet-left').html('<div class="leaflet-control-attribution leaflet-control"><a href="/disclaimer">Disclaimer</a></div>');
 				    // change the query for the first layer
 				    var subLayerOptions = {
 				      sql: (! !!POST_ID || isNaN(POST_ID)) ? "SELECT * FROM wp_projects where visible = true" : "SELECT * FROM wp_projects where visible = true AND wp_post_id = "+ POST_ID,
