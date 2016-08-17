@@ -2359,7 +2359,8 @@ POSTS & CONTENT STYLES
         line-height: 28px;
         color: #555;
         font-feature-settings: "liga" 0;
-        letter-spacing: 0.3px; }
+        letter-spacing: 0.3px;
+        overflow: initial; }
         .hentry.-odri-post .entry-content p a {
           color: #1477c9; }
       .hentry.-odri-post .entry-content .project-box {
