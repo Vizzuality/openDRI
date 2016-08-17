@@ -123,7 +123,7 @@
 		       </div>
 		       <div class="cartodb-popup-content">
 		         <p>{{content.data.description}}</p>
-		         <p class="meta">{{content.data.country_name}} | {{content.data.pillar}}</p>
+		         <p class="meta">{{content.data.country_name}}|{{content.data.pillar}}</p>
 		     	<span class="popup-link-project"><a href="<?php echo home_url(); ?>/project/{{content.data.url}}">VIEW PROJECT</a></span>
 		       </div>
 		     </div>
@@ -211,6 +211,10 @@
 					    sublayer.infowindow.set('template', $('#infowindow_template').html());
 					    sublayer.on('featureClick', function(e, latlng, pos, data, subLayerIndex) {
 					    	changeIn_regions(data.cartodb_id);
+					    	window.setTimeout(function(){
+					    		var $elem = $('.cartodb-popup-content .meta');
+					    		$elem.text($elem.text().replace(/\|/g,' | '));
+					    	},500)
 					    });
 				    } else {
 				    	map.dragging.disable();
