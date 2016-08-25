@@ -3012,6 +3012,27 @@ POSTS & CONTENT STYLES
     color: #555555;
     font-weight: normal;
     margin: 35px 0; }
+  .archive .newsletter .subscribe a,
+  .page .newsletter .subscribe a {
+    padding: 0;
+    background: #1477c9;
+    position: absolute;
+    bottom: calc(0% - 100px);
+    height: 50px;
+    width: 140px;
+    z-index: 1;
+    text-transform: uppercase;
+    color: white;
+    transition: background 0.3s ease;
+    box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.4);
+    border: none;
+    margin: 0;
+    font-family: "Bariol", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    left: calc(50% - 70px); }
+    .archive .newsletter .subscribe a:hover,
+    .page .newsletter .subscribe a:hover {
+      background: #2791e9; }
   .archive .newsletter .subscribe form,
   .page .newsletter .subscribe form {
     display: -webkit-box;
