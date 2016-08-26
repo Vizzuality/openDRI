@@ -2990,7 +2990,7 @@ POSTS & CONTENT STYLES
 .archive .newsletter .subscribe,
 .page .newsletter .subscribe {
   width: 100%;
-  height: 130px;
+  height: 150px;
   background: white;
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
   position: relative;
