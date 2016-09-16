@@ -2191,6 +2191,8 @@ POSTS & CONTENT STYLES
           margin: 0 0 0 20px;
           width: 80%;
           font-size: 11px; }
+          .resources-page-list .resource-list-new li > div.thumbnail .text-thumbnail a {
+            color: currentColor; }
     .resources-page-list .resource-list-new li .date {
       font-family: Helvetica;
       font-size: 11px;
