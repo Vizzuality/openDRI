@@ -148,7 +148,7 @@ resilience to natural hazards and the impacts of climate change across the globe
 					</div>
 				</div>
 				<div class="row-container">
-					<a href="http://dev-gfdrr-opendri.pantheonsite.io/resource/open-data-for-resilience-initiative-field-guide/">
+					<a href="https://opendri.org/resource/planning-an-open-cities-mapping-project/">
 						<article class="resource-cont"  style="background-image:url(https://opendri.org/wp-content/uploads/2016/07/opendri_fg_web_20140629b_0.jpg)">
 							<section>
 								<h3>Open Data for Resilience Initiative Field Guide</h3>
@@ -159,7 +159,7 @@ resilience to natural hazards and the impacts of climate change across the globe
 			</div>
 			<div class="m-all cf index-row last-resources" role="resources" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 				<div class="row-container">
-					<a href="http://dev-gfdrr-opendri.pantheonsite.io/resource/planning-an-open-cities-mapping-project/" >
+					<a href="https://opendri.org/resource/opendri-policy-note-principles/" >
 						<article class="resource-cont --scnd-img"  style="background-image:url(https://opendri.org/wp-content/uploads/2016/07/Planning-an-Open-Cities-Mapping-Project_0.jpg)">
 							<section>
 								<h3>Planning An Open Cities Mapping Project</h3>
