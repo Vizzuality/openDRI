@@ -1404,6 +1404,9 @@ HEADER STYLES
   .no-home .header {
     height: 80px;
     display: list-item; }
+@-moz-document url-prefix() {
+  .no-home .header {
+    display: flex; } }
   .header nav {
     display: -webkit-box;
     /* OLD - iOS 6-, Safari 3.1-6 */
@@ -1503,6 +1506,9 @@ HEADER STYLES
     margin: 0.4em 0; }
     .no-home .header #logo {
       display: inline; }
+@-moz-document url-prefix() {
+  .no-home .header #logo {
+    display: inline-block; } }
     .header #logo a {
       color: #fff; }
 

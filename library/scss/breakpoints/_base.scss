@@ -187,6 +187,9 @@ HEADER STYLES
 	.no-home & {
 		height: 80px;
 		display: list-item;
+		@-moz-document url-prefix() {
+	    	display: flex;
+		}
 	}
 	nav {
 		display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
@@ -301,6 +304,9 @@ HEADER STYLES
 		margin: 0.4em 0;
 		.no-home & {
 			display: inline;
+			@-moz-document url-prefix() {
+		    	display: inline-block;
+			}
 		}
 		a {
 			color: $white;
