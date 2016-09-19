@@ -64,7 +64,7 @@ resilience to natural hazards and the impacts of climate change across the globe
 							<p class="byline entry-meta vcard">
 	                            <?php printf( __( '', 'bonestheme' ).' %1$s',
 	   								/* the time the post was published */
-	   								'<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time('d M') . '</time>'
+	   								'<time class="updated entry-time" datetime="' . get_the_date('Y-m-d', $recent['ID']) . '" itemprop="datePublished">' . get_the_date('d M', $recent['ID']) . '</time>'
 								); ?>
 							</p>
 						</footer>
